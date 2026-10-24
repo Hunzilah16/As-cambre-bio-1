@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4.2 Equilibrium of Forces - Multiple Choice Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">4.2 Equilibrium of Forces</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 4. Forces, Density & Pressure</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 23 Questions (23 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagrams show the forces acting on different bodies.</p><p> Which body <strong>cannot</strong> be in equilibrium?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q2.png' alt='cie-ial-physics-mcq-4-1-q2' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A force of 5 N pushes a ball due north, and another force of 12 N pushes it due east.</p><p>What is the magnitude of the net force acting on the ball?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>7 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>11 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>13 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>17 N</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A street lamp is fixed to a wall by a metal rod and a cable.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q5-diagram-1.png' alt='cie-ial-physics-mcq-4-1-q5-diagram-1' /></div><p>Which vector triangle represents the forces acting at point P?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/4-1-q5-diagram-2.png' alt='4-1-q5-diagram-2' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform metre rule of weight 4.0 N is pivoted at the 60 cm mark. A 6.0 N weight is suspended from one end, causing the rule to rotate about the pivot.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q6.png' alt='cie-ial-physics-mcq-4-1-q6' /></div><p>At the instant when the rule is horizontal, what is the resultant turning moment about the pivot?</p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Resultant moment</strong></p></td><td><p style='text-align: center;'><strong>Direction</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>2.0 N m</p><p style='text-align: center;'>2.0 N m</p><p style='text-align: center;'>2.8 N m</p><p style='text-align: center;'>2.8 N m</p></td><td><p style='text-align: center;'>clockwise</p><p style='text-align: center;'>anticlockwise</p><p style='text-align: center;'>clockwise</p><p style='text-align: center;'>anticlockwise</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a plan view of a door which requires a moment of 14 N m to open it.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q8.png' alt='cie-ial-physics-mcq-4-1-q8' /></div><p>What is the minimum force that must be applied at the door’s midpoint to ensure it opens?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>4.9 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>9.8 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>20 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>40 N</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Forces of 3 N, 4 N and 5 N act at one point on an object. The angles at which the forces act can vary.</p><p>What is the value of the minimum resultant force of these forces?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>between 0 and 2 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>2 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>between 2 N and 4 N </p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform metre rule is hung from the ceiling as shown</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q11.png' alt='cie-ial-physics-mcq-4-1-q11' /></div><p>The rule balances when a 75 g mass is hung from one end of the ruler </p><p>What is the mass of the metre rule?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>38 g</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>51 g</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>141 g</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>159 g</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Four beams of the same length each have three forces acting on them.</p><p>Which beam has both zero resultant force and zero resultant torque acting?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q12.png' alt='cie-ial-physics-mcq-4-1-q12' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a child’s balancing game.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q13.png' alt='cie-ial-physics-mcq-4-1-q13' /></div><p>The wooden rod is uniform and all the rings are of equal mass. Two rings are hung on peg 14 and one on peg 2. The rod is pivoted at peg 9.</p><p>On which hook must a fourth ring be hung in order to balance the rod?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>2</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>3</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>5</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>6</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 10 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An object, made from two equal masses joined by a light rod, falls with uniform speed through air. The rod remains horizontal.</p><p>Which statement about this system is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>it is not in equilibrium because it is falling steadily</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>it is not in equilibrium because it is in motion</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>it is not in equilibrium because there is a resultant torque</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>it is in equilibrium because there is no resultant force and no resultant torque</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 11 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A man holds a 200 N load stationary in his hand. The combined weight of the forearm and hand is 25 N. The forearm is held horizontal, as shown</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q15.png' alt='cie-ial-physics-mcq-4-1-q15' /></div><p>What is the vertical force <em>F</em> needed in the biceps?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>1340 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>1400 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>1460 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1520 N</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 12 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A spindle is attached at one end to the centre of a lever of length 1.60 m and at its other end to the centre of a disc of radius 0.25 m. A string is wrapped round the disc, passes over a pulley and is attached to an 800 N weight.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q17.png' alt='cie-ial-physics-mcq-4-1-q17' /></div><p>What is the minimum force <em>F</em>, applied to each end of the lever, that could lift the weight?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>62.5 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>125 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>250 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>750 N</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 13 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform beam of length 1.10 m and mass 1.2 kg is pivoted at P as shown. The pivot P is 0.40 m from one end. Loads of masses 5.0 kg and 7.0 kg are suspended 0.65 m and 0.35 m from the pivot, respectively, as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q18.png' alt='cie-ial-physics-mcq-4-1-q18' /></div><p>What torque must be applied to the beam in order to maintain it in equilibrium?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.62 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0.98 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>6.1 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>9.6 N m</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 14 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A rigid L-shaped lever arm is pivoted at point P.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q19.png' alt='cie-ial-physics-mcq-4-1-q19' /></div><p>Three forces act on the lever arm, as shown in the diagram.</p><p>What is the magnitude of the resultant moment of these forces about point P?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>5 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>65 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>95 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>155 N m</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 15 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A ladder is positioned on icy ground and is leant against a rough wall. At the instant of release, it begins to slide.</p><p>Which diagram correctly shows the directions of the forces <em>P</em>, <em>W</em> and <em>R</em> acting on the ladder as it slides?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q20.png' alt='cie-ial-physics-mcq-4-1-q20' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 16 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagrams show two ways of hanging the same picture.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q21-diagram-1.png' alt='cie-ial-physics-mcq-4-1-q21-diagram-1' /></div><p>In both cases, a string is attached to the same points on the picture and looped symmetrically over a nail in a wall. The forces shown are those that act on the nail.</p><p>In diagram 1, the string loop is shorter than in diagram 2.</p><p>Which information about the magnitude of the forces is correct?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'><em>R</em><sub><em>1</em></sub><em> = R</em><sub><em>2</em></sub></p></td><td><p style='text-align: center;'><em>T</em><sub><em>1</em></sub><em> &lt; T</em><sub><em>2</em></sub></p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'><em>R</em><sub><em>1</em></sub><em> = R</em><sub><em>2</em></sub></p></td><td><p style='text-align: center;'><em>T</em><sub><em>1</em></sub><em> &gt; T</em><sub><em>2</em></sub></p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'><em>R</em><sub><em>1</em></sub><em> &gt; R</em><sub><em>2</em></sub></p></td><td><p style='text-align: center;'><em>T</em><sub><em>1</em></sub><em> &lt; T</em><sub><em>2</em></sub></p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'><em>R</em><sub><em>1</em></sub><em> &lt; R</em><sub><em>2</em></sub></p></td><td><p style='text-align: center;'><em>T</em><sub><em>1</em></sub><em> = T</em><sub><em>2</em></sub></p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 17 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform ladder rests against a smooth vertical wall, as shown in the diagram. The bottom of the ladder rests on rough ground where friction is not negligible. The top of the ladder is a vertical height <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> up the wall, and the foot of the ladder is a horizontal distance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> from the wall.</p><p>The weight <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the ladder acts at its centre. At the foot of the ladder, the ground exerts a vertical reaction <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and a horizontal frictional force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q22.png' alt='cie-ial-physics-mcq-4-1-q22' /></div><p>Which equation represents the moments when the ladder is in equilibrium?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>F</mi><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>W</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>2</mn><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>F</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 18 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An archer draws his bowstring back to position X. The bowstring and arrow are shown. The tension <em>T</em> in the string is also shown. Then he draws the bowstring back further to position Y.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q23-diagram-1.png' alt='cie-ial-physics-mcq-4-1-q23-diagram-1' /></div><p>The archer finds the resultant force on the arrow is greater when the arrow is released from position Y.</p><p>What is the increase in force?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>51 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>55 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>102 N </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>110 N</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 19 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows two fixed pins, Y and Z. A length of elastic is stretched between Y and Z and around pin X, which is attached to a trolley.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images194png.png' alt='cie-ial-images194png' /></div><p>X is at the centre of the elastic and the trolley is to be propelled in the direction P at right angles to YZ. The tension in the elastic is 4 N.</p><p>What is the force accelerating the trolley in the direction P when the trolley is released?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>2.4 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>3.2 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>4.8 N </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>6.4 N</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 20 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a rope bridge that a student makes on an adventure training course. The student has a weight <em>W</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images196png.png' alt='cie-ial-images196png' /></div><p>Which formula gives the tension <em>T</em> in the rope?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mn>2</mn><mo> </mo><mi>cos</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mn>2</mn><mo> </mo><mi>sin</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mi>cos</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mi>sin</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 21 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform beam is pivoted at P as shown. Weights of <em>W</em> and 2 <em>W</em> are attached to its ends. The beam is marked at <em>x</em> intervals. The weight of the beam is 10 <em>W</em> </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images198png.png' alt='cie-ial-images198png' /></div><p>At which point should a 2 <em>W</em> weight be attached to achieve equilibrium?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 22 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform metre rule of mass 100 g is supported by a pivot and a string as shown in the diagram. The beam is marked at intervals of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>. The string passes round a frictionless pulley and carries a mass of 20 g.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images200png.png' alt='cie-ial-images200png' /></div><p>At which mark on the rule must a 50 g mass be suspended so that the rule balances?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>4</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>.</mo><mn>6</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>.</mo><mn>4</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>.</mo><mn>4</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 23 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A trailer of weight 30 kN is attached to a truck. The trailer is raised until it is held at 50˚ to the horizontal by a vertical force <em>F</em> as shown in the diagram.</p><p>The trailer is 2.7 m in length and the position of its centre of gravity G is a third of the length from the hinge at O.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images202png.png' alt='cie-ial-images202png' /></div><p>What is the vertical force <em>F </em>applied to the end of the trailer?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>10 kN</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>15 kN</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>30 kN</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>60 kN</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

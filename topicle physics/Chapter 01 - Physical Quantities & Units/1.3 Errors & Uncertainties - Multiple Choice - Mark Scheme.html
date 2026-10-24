@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1.3 Errors & Uncertainties - Multiple Choice Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">1.3 Errors & Uncertainties</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 1. Physical Quantities & Units</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 22 Questions (22 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows part of a thermometer.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images16.png' alt='cie-ial-images16' /></div><p>What is the correct reading on the thermometer and the uncertainty in this reading?</p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Reading/°C</strong></p></td><td><p style='text-align: center;'><strong>Uncertainty in reading/°C</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>24</p></td><td><p style='text-align: center;'>±1</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>24</p></td><td><p style='text-align: center;'>±0.1</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>24.0</p></td><td><p style='text-align: center;'>±0.2</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>24.0</p></td><td><p style='text-align: center;'>±0.5</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The uncertainty of a measuring instrument is estimated as plus or minus half the smallest scale division.</p></li><li><p>For the thermometer in the question, each mark represents 1.0° C, so the uncertainty is ± 0.5° C</p></li><li><p>The reading from this thermometer is 24.0° C, so the result can be written as 24.0 ± 0.5° C</p></li></ul><p><strong>A &amp; B </strong>are incorrect because the readings are not quoted to the correct precision, and the uncertainties are incorrect</p><p><strong>C </strong>is incorrect because even though the precision of the reading is correct, the uncertainty is too low</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In an experiment to determine the acceleration of free fall using a falling body, what would lead to a value that is too large?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>air resistance</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>dimensions of the body are too large</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>measured distance longer than true distance</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>measured time longer than true-time</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is</em><em><strong> C</strong></em><em> because:</em></p><ul><li><p>To determine the acceleration of free fall, we will need to consider the equation</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>u</mi><mo> </mo><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mo> </mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p>We can simplify this to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><mo> </mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><msup><mi>t</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  since the falling body will initially be at rest, so <em>u</em> = 0 (<em>h</em> = height, <em>g</em> = acceleration of free fall, <em>t</em> = time)</p></li></ul></li><li><p>If the measured distance, <em>h</em>, was measured to be longer than the true distance, this would increase the measured value of <em>g</em> as the two quantities are directly proportional</p></li></ul><p><strong>A</strong> is incorrect because air resistance can be treated as negligible in this experiment, but even if we did factor it in, air resistance would increase the time which would lead to a decreased value of <em>g</em>  </p><p><strong>B</strong> is incorrect because the dimensions of the body are not relevant to the experiment</p><p><strong>D</strong> is incorrect because if the time were measured to be longer than the true time, this would lead to a decreased value of <em>g</em> since it is inversely proportional to the square of the time (inverse square law)</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A metre rule is used to measure the length of a piece of wire. It is found to be 70 cm long to the nearest millimetre.</p><p>How should this result be recorded in a table of results?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.7 m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0.70 m</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>0.700 m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>0.7000 m</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>The metre rule can measure to the nearest millimetre, so the answer must be recorded to 3 significant figures</p></li><li><p>This is because:</p><ul><li><p>A metre rule has a resolution of 1 mm = 0.1 cm = 0.001 m</p></li><li><p>So the measurement of 70 cm must be recorded to the same level of precision = 70.0 cm = 0.700 m</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An experiment is done to measure the acceleration of free fall of a body from rest.</p><p>Which measurements are needed?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>The height of fall and the time of fall</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>The height of fall and the weight of the body</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>The mass of the body and the height of fall</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>The mass of the body and the time of fall</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>To determine the measurements needed to calculate the acceleration of free fall, we will need to consider the equation</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>u</mi><mo> </mo><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mo> </mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>We can simplify this to<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo> </mo><mi>g</mi><mo> </mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> since the falling body will initially be at rest, i.e. <em>u</em> = 0  (<em>h</em> = height, <em>g</em> = acceleration of free fall, <em>t </em>= time)</p></li></ul></li><li><p>Rearranging the equation above we can see <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><msup><mi>t</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> so the only measurements required are the height and time of the fall</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A micrometer is used to measure the diameters of two cylinders</p><p>diameter of first cylinder = 12.78 ± 0.02 mm</p><p>diameter of second cylinder = 16.24 ± 0.03 mm</p><p>The difference in the diameters is calculated.</p><p>What is the uncertainty in this difference?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p> ± 0.01 mm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p> ± 0.02 mm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>± 0.03 mm</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>± 0.05 mm</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>If we are adding or subtracting quantities then we simply add the absolute uncertainties together</p><ul><li><p>0.02 + 0.03 = 0.05</p></li></ul></li><li><p>So the uncertainty in the difference in diameters is ± 0.05 mm</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A student carries out a series of determinations of the acceleration of free fall <em>g</em>. The table shows the results.</p><table class='data-table'><tr><td><p style='text-align: center;'><em>g</em> / m s<sup>-2</sup></p></td></tr><tr><td><p style='text-align: center;'>4.91</p><p style='text-align: center;'>4.89</p><p style='text-align: center;'>4.88</p><p style='text-align: center;'>4.90</p><p style='text-align: center;'>4.93</p><p style='text-align: center;'>4.92</p></td></tr></table><p>What can be said about this experiment?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>it is accurate and precise</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>it is accurate but not precise</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>it is not accurate and not precise</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>it is not accurate but is precise</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Precise measurements are consistent, they fluctuate slightly about a mean value</p></li><li><p>The measurements are, however, consistent so they are precise</p></li><li><p>The true value of <em>g</em> is 9.81 m s<sup>-2</sup> so the values are not accurate</p></li><li><p>The measurements are, however, consistent so they are precise</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The measurement of a physical quantity may be subject to random errors and systematic errors.</p><p>Which statement is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>random errors can be reduced by taking the average of several measurements</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>random errors are always caused by the person taking the measurement</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>a systematic error cannot be reduced by adjusting the apparatus</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>a systematic error results in a different reading each time the measurement is taken</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>Random errors affect precision, meaning they cause differences in measurements which causes a spread about the mean</p></li><li><p>Repeating the measurements at least three times and taking an average of them is one way to reduce random error because it reduces spread about the mean and also enables any anomalies to be spotted and discounted from the results</p></li></ul><p><strong>B </strong>is incorrect because random errors can be the result of either the person taking the measurement or the equipment being used</p><p><strong>C </strong>is incorrect because systematic error affects accuracy and occurs due to the apparatus used or faults in the experimental method so adjusting the apparatus would help reduce systematic error</p><p><strong>D </strong>is incorrect because systematic error affects accuracy, which causes all results to be too high or too low by the same amount each time</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In an experiment, a radio-controlled car takes 2.50 ± 0.05 s to travel 40.0 ± 0.1 m.</p><p>What is the car’s average speed and the uncertainty in this value?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>16 ± 1 m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>16.0 ± 0.2 m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>16.0 ± 0.4 m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>16.0 ± 0.36 m s<sup>–1</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo> </mo><mi>s</mi><mi>p</mi><mi>e</mi><mi>e</mi><mi>d</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>i</mi><mi>s</mi><mi>tan</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>40</mn><mo>.</mo><mn>0</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>50</mn></mrow></mfrac><mo>=</mo><mn>16</mn><mo>.</mo><mn>0</mn><mo> </mo><mi>m</mi><mo> </mo><msup><mi>s</mi><mrow><mo>-</mo><mn>1</mn><mo> </mo></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>(3 s.f.)</p></li><li><p>To work out uncertainty in data which is multiplied or divided we add the percentage uncertainties</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>%</mo><mo>&#160;</mo><mi>u</mi><mi>n</mi><mi>c</mi><mi>e</mi><mi>r</mi><mi>t</mi><mi>a</mi><mi>i</mi><mi>n</mi><mi>t</mi><mi>y</mi><mo>=</mo><mfrac><mrow><mi>u</mi><mi>n</mi><mi>c</mi><mi>e</mi><mi>r</mi><mi>t</mi><mi>a</mi><mi>i</mi><mi>n</mi><mi>t</mi><mi>y</mi></mrow><mrow><mi>v</mi><mi>a</mi><mi>l</mi><mi>u</mi><mi>e</mi></mrow></mfrac><mo>&#215;</mo><mn>100</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mfrac><mrow><mn>0</mn><mo>.</mo><mn>05</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>50</mn></mrow></mfrac><mo>×</mo><mn>100</mn></mrow></mfenced><mo>+</mo><mfenced><mrow><mfrac><mrow><mn>0</mn><mo>.</mo><mn>1</mn></mrow><mn>40</mn></mfrac><mo>×</mo><mn>100</mn></mrow></mfenced><mo>=</mo><mo> </mo><mn>2</mn><mo>.</mo><mn>0</mn><mo> </mo><mo>%</mo><mo> </mo><mo>+</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>25</mn><mo> </mo><mo>%</mo><mo> </mo><mo>=</mo><mo> </mo><mn>2</mn><mo>.</mo><mn>25</mn><mo> </mo><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Then we find 2.25 % of 16 which is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mo>×</mo><mfrac><mrow><mn>2</mn><mo>.</mo><mn>25</mn></mrow><mn>100</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>36</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The precision of the uncertainty must match the precision of the value so average speed = 16.0 ± 0.4 m s<sup>–1</sup></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Four students each made a series of measurements of the acceleration of free fall <em>g</em>. The table shows the results obtained.</p><p>Which set of results could be described as precise but not accurate? </p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><em><strong>g</strong></em><strong> / ms</strong><sup><strong>-2</strong></sup></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>9.81</p></td><td><p style='text-align: center;'>9.79</p></td><td><p style='text-align: center;'>9.84</p></td><td><p style='text-align: center;'>9.83</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>9.81</p></td><td><p style='text-align: center;'>10.12</p></td><td><p style='text-align: center;'>9.89</p></td><td><p style='text-align: center;'>9.94</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>9.45</p></td><td><p style='text-align: center;'>9.21</p></td><td><p style='text-align: center;'>8.99</p></td><td><p style='text-align: center;'>8.76</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>8.45</p></td><td><p style='text-align: center;'>8.46</p></td><td><p style='text-align: center;'>8.50</p></td><td><p style='text-align: center;'>8.41</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>An accurate measurement is one which is close to the true value</p></li><li><p>Precise measurements are consistent and they fluctuate slightly about a mean value</p></li><li><p>The true value of <em>g</em> is 9.81 m s<sup>-2</sup> so the values given in <strong>D</strong> are not accurate</p></li><li><p>The measurements in <strong>D</strong> are, however, consistent so they can be described as precise</p></li></ul><p><strong>A </strong>is incorrect because these measurements can be described as accurate and precise</p><p><strong>B </strong>is incorrect because these measurements can be described as accurate but not precise</p><p><strong>C </strong>is incorrect because these measurements are neither accurate or precise</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which experimental technique reduces the systematic error of the quantity being investigated?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>adjusting an ammeter to remove its zero error before measuring a current</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>measuring several internodal distances on a standing wave to find the mean internodal distance</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>measuring the diameter of a wire repeatedly and calculating the average</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>timing a large number of oscillations to find a period</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>Systematic error affects accuracy and occurs due to the apparatus used or faults in the experimental method so adjusting the apparatus would help reduce systematic error</p></li></ul><p><strong>B, C &amp; D </strong>are incorrect because these all involve repeating measurements and taking an average which is a way to reduce random error but not systematic error</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A steel rule can be read to the nearest millimetre. It is used to measure the length of a bar whose true length is 895 mm. Repeated measurements give the following readings. </p><table class='data-table'><tr><td><p style='text-align: center;'><strong>length / mm</strong></p></td><td><p style='text-align: center;'>892, 891, 892, 891, 891, 892</p></td></tr></table><p>Are the readings accurate and precise to within 1 mm? </p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Results are accurate to within 1 mm</strong></p></td><td><p style='text-align: center;'><strong>Results are precise to within 1 mm</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>no</p></td><td><p style='text-align: center;'>no</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>no</p></td><td><p style='text-align: center;'>yes</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>yes</p></td><td><p style='text-align: center;'>no</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>yes</p></td><td><p style='text-align: center;'>yes</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>An accurate measurement is one which is close to the true value</p></li><li><p>Precise measurements are consistent and they fluctuate slightly about a mean value</p></li><li><p>The mean value of the measurements is 891.5 mm and the true value is 895 mm so the values are not accurate within 1mm</p></li><li><p>The measurements are, however, consistent within 1 mm so they can be described as precise</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 12 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The Young modulus of the material of a wire is to be found. The Young modulus E is given by the equation below.</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mi>F</mi><mi>l</mi></mrow><mrow><msup><mi>πd</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>The wire is extended by a known force and the following measurements are made.</p><p>Which measurement has the largest effect on the uncertainty in the value of the calculated Young modulus? </p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Measurement</strong></p></td><td><p style='text-align: center;'><strong>Symbol</strong></p></td><td><p style='text-align: center;'><strong>Value</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>length of wire before force applied</p></td><td><p style='text-align: center;'><em>l</em></p></td><td><p style='text-align: center;'>2.043 ± 0.002 m</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>diameter of wire</p></td><td><p style='text-align: center;'><em>d</em></p></td><td><p style='text-align: center;'>0.54 ± 0.02 mm</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>force applied</p></td><td><p style='text-align: center;'><em>F</em></p></td><td><p style='text-align: center;'>19.62 ± 0.01 N</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>extension of wire with force applied</p></td><td><p style='text-align: center;'><em>x</em></p></td><td><p style='text-align: center;'>5.2 ± 0.2 mm</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>To find out which value has the greatest effect on the overall uncertainty, we have to compare the percentage uncertainty of each value</p><ul><li><p>length, <em>l </em>: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>0</mn><mo>.</mo><mn>002</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>043</mn></mrow></mfrac><mo>×</mo><mn>100</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>1</mn><mo> </mo><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>diameter, <em>d</em><sup><em> </em></sup><sup>2 </sup>: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>×</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>54</mn></mrow></mfrac><mo>×</mo><mn>100</mn><mo>=</mo><mn>7</mn><mo>.</mo><mn>4</mn><mo> </mo><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>force, <em>F </em>: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>0</mn><mo>.</mo><mn>01</mn></mrow><mrow><mn>19</mn><mo>.</mo><mn>62</mn></mrow></mfrac><mo>×</mo><mn>100</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>05</mn><mo> </mo><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>extension, <em>x :</em> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>0</mn><mo>.</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>.</mo><mn>2</mn></mrow></mfrac><mo>×</mo><mn>100</mn><mo>=</mo><mn>3</mn><mo>.</mo><mn>8</mn><mo> </mo><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The value with the largest percentage uncertainty is diameter</p></li></ul><p> <strong>Exam Tip:</strong> The diameter has the largest effect on the value of Young Modulus due it being squared. When a quantity is raised to a power, you must multiply the percentage uncertainty by the power</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 13 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Four different students use a ruler to measure the length of a 15.0 cm pencil. Their measurements are recorded on four different charts.</p><p>Which chart shows measurements that are precise but <strong>not</strong> accurate?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images25png.png' alt='cie-ial-images25png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>An accurate measurement is one which is close to the true value</p></li><li><p>Precise measurements are consistent and they fluctuate slightly about a mean value</p></li><li><p>The values fall outside of the 14.8 - 15.2 cm range which would be considered accurate, so the measurements in <strong>B</strong> can be described as not accurate</p></li><li><p>The measurements are, however, consistent within the 14.0 - 14.4 cm range so they can be described as precise</p></li></ul><p><strong>A </strong>is incorrect because these measurements are not precise or accurate</p><p><strong>C </strong>is incorrect because three of the measurements can be described as accurate and precise, but the outlier makes it neither of those </p><p><strong>D </strong>is incorrect because these measurements are both precise and accurate</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 14 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>What is the ratio <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><msup><mn>10</mn><mn>2</mn></msup><mtext>&#xA0;THz</mtext></mrow><mrow><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup><mtext>&#xA0;pHz</mtext></mrow></mfrac></math></span> ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>10<sup>-30</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>10<sup>-2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>10<sup>2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>10<sup>30</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is D</em></p><ul><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mtext>tera</mtext><mo>=</mo><msup><mn>10</mn><mn>12</mn></msup></math></span></p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>10</mn><mn>2</mn></msup><mo>&#xD7;</mo><msup><mn>10</mn><mn>12</mn></msup><mo>=</mo><msup><mn>10</mn><mrow><mo>(</mo><mn>12</mn><mo>+</mo><mn>2</mn><mo>)</mo></mrow></msup><mo>=</mo><msup><mn>10</mn><mn>14</mn></msup></math></span></p><ul><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mtext>pico</mtext><mo>=</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup></math></span></p></li></ul><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>&#xD7;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup><mo>=</mo><msup><mn>10</mn><mrow><mo>(</mo><mo>-</mo><mn>12</mn><mo>-</mo><mn>4</mn><mo>)</mo></mrow></msup><mo>=</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>16</mn></mrow></msup></math></span></p><ul><li><p>Determine the ratio</p></li></ul><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mn>10</mn><mn>14</mn></msup><msup><mn>10</mn><mrow><mo>-</mo><mn>16</mn></mrow></msup></mfrac><mo>=</mo><msup><mn>10</mn><mrow><mn>14</mn><mo>-</mo><mfenced><mrow><mo>-</mo><mn>16</mn></mrow></mfenced></mrow></msup><mo>=</mo><msup><mn>10</mn><mn>30</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>This is answer <strong>D</strong></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 15 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A student uses a digital ammeter to measure a current. The reading of the ammeter is found to fluctuate between 1.98 A and 2.02 A.</p><p>The manufacturer of the ammeter states that any reading has a systematic uncertainty of ±1%. </p><p>Which value of current should be quoted by the student?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>(2.00 ± 0.01) A</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>(2.00 ± 0.02) A</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>(2.00 ± 0.03) A</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>(2.00 ± 0.04) A</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The mean value of the current is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>1</mn><mo>.</mo><mn>98</mn><mo>+</mo><mn>2</mn><mo>.</mo><mn>02</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mo>.</mo><mn>00</mn><mo> </mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The fluctuation between 1.98 A and 2.02 A is caused by random errors, so the random uncertainty is ±0.02 A</p></li><li><p>The systematic uncertainty is ±1% which is 2.00 × <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>100</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.02 A</p></li><li><p>The total uncertainty = random uncertainty + systematic uncertainty</p><ul><li><p>0.02 + 0.02 = ±0.04 A</p></li></ul></li><li><p>So the current quoted should be 2.00 ± 0.04 A</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 16 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The uncertainty in the value of the momentum of a trolley passing between two points X and Y varies with the choice of measuring devices.</p><p>Measurements for the same trolley made by different instruments were recorded. </p><table class='data-table'><tr><td><p>1</p></td><td><p>distance between X and Y using a metre rule with cm divisions = 0.55 m</p></td></tr><tr><td><p>2</p></td><td><p>distance between X and Y using a metre rule with mm divisions = 0.547 m</p></td></tr><tr><td><p>3</p></td><td><p>timings using a wristwatch measuring to the nearest 0.5 s at X = 0.0 s and at Y = 4.5 s</p></td></tr><tr><td><p>4</p></td><td><p>timings using light gates measuring to the nearest 0.1 s at X = 0.0s and at Y = 4.3 s</p></td></tr><tr><td><p>5</p></td><td><p>mass of trolley using a balance measuring to the nearest g = 6.4 × 10<sup>–2</sup> kg</p></td></tr><tr><td><p>6</p></td><td><p>mass of trolley using a balance measuring to the nearest 10g = 6 × 10<sup>–2</sup> kg</p></td></tr></table><p>Which measurements, one for each quantity measured, leads to the least uncertainty in the value of the momentum of the trolley?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>1, 3 and 6</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>1, 4 and 6</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>2, 3 and 6</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>2, 4 and 5</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Looking at the equation for momentum</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>m</mi><mi>v</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>s</mi></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>∆</mo><mi>p</mi></mrow><mi>p</mi></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>m</mi></mrow><mi>m</mi></mfrac><mo>+</mo><mfrac><mrow><mo>∆</mo><mi>s</mi></mrow><mi>s</mi></mfrac><mo>+</mo><mfrac><mrow><mo>∆</mo><mi>t</mi></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>We can see that for the uncertainty in momentum (Δ p) to have the least value, the uncertainties in all the quantities should be as small as possible</p></li><li><p>The instruments which measure to a higher degree of precision will lead to less uncertainty in the value of momentum</p><ul><li><p>The metre rule in 2 has a greater precision than 1 because the smallest scale division is in mm which is more accurate than cm.</p></li><li><p>The light gate in 4 has a greater precision than the wristwatch in 3 because 4.3 s is more accurate than 4.5 s</p></li><li><p>The balance which measures to the nearest g has a greater precision than the balance which measures to the nearest 10 g as it measures to an extra decimal point making the measurement more accurate</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 17 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In an experiment to determine the acceleration of free fall <em>g</em>, a ball bearing is held by an electromagnet. When the current to the electromagnet is switched off, a clock starts and the ball bearing falls. After falling a distance <em>h</em>, the ball bearing strikes a switch to stop the clock which measures the time <em>t</em> of the fall.</p><p>If systematic errors cause <em>t</em> and <em>h</em> to be measured incorrectly, which error <strong>must</strong> cause <em>g</em> to appear greater than 9.81 m s<sup>–2</sup>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><em>h</em> measured as being <strong>smaller</strong> than it actually is and <em>t</em> is measured correctly</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><em>h</em> measured as being <strong>smaller</strong> than it actually is and<em> t</em> measured as being <strong>larger</strong> than it actually is</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><em>h</em> measured as being<strong> larger</strong> than it actually is and <em>t</em> measured as being <strong>larger</strong> than it actually is</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><em>h</em> is measured correctly and <em>t</em> measured as being <strong>smaller</strong> than it actually is</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>To determine the relationship between <em>g, h </em>and<em> t</em> we will need to consider the equation</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>u</mi><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mo> </mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Since the falling body will initially be at rest, <em>u</em> = 0, the equation simplifies to</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><mo> </mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Rearranging the equation above we can see</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><msup><mi>t</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>We can see that <em>g</em> and <em>h</em> are directly proportional so as <em>h</em> increases, <em>g</em> increases and vice versa</p></li><li><p>We can see that <em>g</em> and <em>t</em> are inversely proportional, so as <em>t</em> increases, <em>g</em> decreases and vice versa</p></li><li><p>Therefore, if <em>h</em> is measured correctly, <em>g</em> will be calculated correctly but if <em>t</em> is measured to be lower than it should this will cause <em>g</em> to be larger than it should be</p></li></ul><p><strong>A </strong>is incorrect because this would lead to a value of g which is smaller than it should be</p><p><strong>B &amp; C </strong>are incorrect because without knowing how much larger or smaller these quantities are, it’s not possible to say if <em>g</em> will be larger or smaller</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 18 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows an experiment to measure the speed of a small ball falling at constant speed through a clear liquid in a glass tube.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images33png.png' alt='cie-ial-images33png' /></div><p>There are two marks on the tube. The top mark is positioned at 115 ± 1 mm on the adjacent rule and the lower mark at 385 ± 1 mm. The ball passes the top mark at 1.50 ± 0.02 s and passes the lower mark at 3.50 ± 0.02 s. </p><p>The constant speed of the ball is calculated to be 135 mm s<sup>-1</sup> </p><p>Which expression calculates the fractional uncertainty in the value of this speed?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>2</mn><mn>270</mn></mfrac><mo> </mo><mo>+</mo><mo> </mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>04</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>00</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>270</mn></mfrac><mo> </mo><mo>+</mo><mo> </mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>00</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>115</mn></mfrac><mo> </mo><mo>+</mo><mo> </mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>50</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>385</mn></mfrac><mo> </mo><mo>+</mo><mo> </mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow><mrow><mn>3</mn><mo>.</mo><mn>50</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The equation relating speed, distance and time is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>p</mi><mi>e</mi><mi>e</mi><mi>d</mi><mo> </mo><mfenced><mi>v</mi></mfenced><mo>=</mo><mfrac><mrow><mi>d</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi><mo> </mo><mfenced><mi>s</mi></mfenced></mrow><mrow><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi><mo> </mo><mfenced><mi>t</mi></mfenced></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The value and uncertainty in distance is:</p><ul><li><p>s = 385 – 115 = 270 mm</p></li><li><p>Δ s = ± (1 + 1) = ± 2 mm</p></li></ul></li><li><p>The value and uncertainty in time is:</p><ul><li><p>t = 3.50 – 1.50 = 2.00 s</p></li><li><p>Δ t = ± (0.02 + 0.02) = ± 0.04 s</p></li></ul></li><li><p>To work out the fractional uncertainty in speed:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>∆</mo><mi>v</mi></mrow><mi>v</mi></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>s</mi></mrow><mi>s</mi></mfrac><mo>+</mo><mfrac><mrow><mo>∆</mo><mi>t</mi></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>∆</mo><mi>v</mi></mrow><mi>v</mi></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>270</mn></mfrac><mo>+</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>04</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>00</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 19 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A fixed quantity <em>x</em><sub><em>0</em></sub> is measured many times in an experiment that has experimental uncertainty. A graph is plotted to show the number <em>n</em> of times that a particular value <em>x</em> is obtained.</p><p>Which graph could be obtained if the measurement of <em>x</em><sub><em>0</em></sub> has a large systematic error but a small random error?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images34png.png' alt='cie-ial-images34png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images35png.png' alt='cie-ial-images35png' /></div></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images36png.png' alt='cie-ial-images36png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images37png.png' alt='cie-ial-images37png' /></div></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>Random errors affect precision, meaning they cause differences in measurements which causes a spread about the mean. Graph <strong>C</strong> shows a narrow curve, with a high peak so the measurements are close to each other, meaning the random error is low</p></li><li><p>Systematic error affects accuracy, which causes all results to be too high or too low by the same amount each time. Graph <strong>C</strong> shows the measurements are consistent but they are much lower meaning the systematic error is high</p></li></ul><p><strong>A </strong>is incorrect because this graph shows a set of results with both low random and systematic errors</p><p><strong>B </strong>is incorrect because this graph shows a set of results which have a low systematic error and a high random error</p><p><strong>D </strong>is incorrect because this graph shows a set of results with both high random and systematic errors</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 20 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A student finds the density of a liquid by measuring its mass and volume. The following is a summary of his measurements.</p><p>mass of empty beaker = (20 ± 1) g</p><p>mass of beaker + liquid = (70 ± 1) g</p><p>volume of liquid = (10.0 ± 0.5) cm<sup>3</sup></p><p>He correctly calculates the density of the liquid as 5.0 g cm<sup>–3</sup>.</p><p>What is the uncertainty in this value?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.3 g cm<sup>–3</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0.5 g cm<sup>–3</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>0.6 g cm<sup>–3</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>2.6 g cm<sup>–3</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>The equation relating density, mass and volume is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo> </mo><mfenced><mi>ρ</mi></mfenced><mo>=</mo><mfrac><mrow><mi>m</mi><mi>a</mi><mi>s</mi><mi>s</mi><mfenced><mi>m</mi></mfenced></mrow><mrow><mi>v</mi><mi>o</mi><mi>l</mi><mi>u</mi><mi>m</mi><mi>e</mi><mfenced><mi>v</mi></mfenced></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The value and uncertainty in mass is:</p><ul><li><p><em>m</em> = 70 – 20 = 50 g</p></li><li><p><em>Δ m</em> = ± (1 + 1) = ± 2 g</p></li></ul></li><li><p>The value and uncertainty in volume is:</p><ul><li><p><em>V</em> = 10 cm<sup>3</sup></p></li><li><p><em>ΔV</em> = ± 0.5 cm<sup>3</sup></p></li></ul></li><li><p>To work out the uncertainty in density:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>∆</mo><mi>ρ</mi></mrow><mi>ρ</mi></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>m</mi></mrow><mi>m</mi></mfrac><mo>+</mo><mfrac><mrow><mo>∆</mo><mi>V</mi></mrow><mi>V</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>∆</mo><mi>ρ</mi></mrow><mi>ρ</mi></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>50</mn></mfrac><mo>+</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>5</mn></mrow><mn>10</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>04</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>05</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>09</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>∆</mo><mi>ρ</mi></mrow><mi>ρ</mi></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>09</mn><mo>,</mo><mi>w</mi><mi>h</mi><mi>e</mi><mi>r</mi><mi>e</mi><mo> </mo><mi>ρ</mi><mo>=</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo> </mo><mi mathvariant="normal">g</mi><mo> </mo><msup><mi>cm</mi><mrow><mo>-</mo><mn>3</mn><mo> </mo></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>so</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>ρ</mi><mo>=</mo><mn>5</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>09</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>45</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo> </mo><mi mathvariant="normal">g</mi><mo> </mo><msup><mi>cm</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup><mfenced><mrow><mn>2</mn><mo> </mo><mi>s</mi><mo>.</mo><mi>f</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 21 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A steel wire is stretched in an experiment to determine the Young modulus for steel.</p><p>The uncertainties in the measurements are given below. </p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Measurement</strong></p></td><td><p style='text-align: center;'><strong>Uncertainty</strong></p></td></tr><tr><td><p style='text-align: center;'>load on wire</p><p style='text-align: center;'>length of wire</p><p style='text-align: center;'>diameter of wire</p><p style='text-align: center;'>extension</p></td><td><p style='text-align: center;'>±2%</p><p style='text-align: center;'>±0.2%</p><p style='text-align: center;'>±1.5%</p><p style='text-align: center;'>±1%</p></td></tr></table><p>What is the percentage uncertainty in the Young modulus?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>1.3%</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>1.8%</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>4.7%</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>6.2%</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The equation for Young Modulus is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>g</mi><mo> </mo><mi>M</mi><mi>o</mi><mi>d</mi><mi>u</mi><mi>l</mi><mi>u</mi><mi>s</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mi>F</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi><mfenced><mi>F</mi></mfenced></mrow><mrow><mi>A</mi><mi>r</mi><mi>e</mi><mi>a</mi><mfenced><mi>A</mi></mfenced></mrow></mfrac><mo>×</mo><mfrac><mrow><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi><mfenced><mi>l</mi></mfenced></mrow><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mfenced><mi>x</mi></mfenced></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>l</mi><mi>o</mi><mi>a</mi><mi>d</mi><mo>×</mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>4</mn></mfrac></mstyle><mo>×</mo><mi>d</mi><mi>i</mi><mi>a</mi><mi>m</mi><mi>e</mi><mi>t</mi><mi>e</mi><msup><mi>r</mi><mn>2</mn></msup><mo>×</mo><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>To find the percentage uncertainty in Young Modulus we must add the uncertainties in the measurements</p></li><li><p>We can ignore the <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi mathvariant="normal">π</mi><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  since it is a constant with no units, and it is important to multiply the uncertainty in the diameter by 2 since the diameter is squared</p><ul><li><p>% uncertainty = 2 + 0.2 + (2 × 1.5) + 1 = 6.2%</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 22 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A mass is dropped from rest and falls through a distance of 2.0 m in a vacuum. An observer records the time taken for the mass to fall through this distance using a manually operated stopwatch and repeats the measurements a further two times. The average result of these measured times, displayed in the table below, was used to determine a value for the acceleration of free fall. This was calculated to be 9.8 m s<sup>–2</sup>.</p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>First measurement</strong></p></td><td><p style='text-align: center;'><strong>Second measurement</strong></p></td><td><p style='text-align: center;'><strong>Third measurement</strong></p></td><td><p style='text-align: center;'><strong>Average</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>Time/ s</strong></p></td><td><p style='text-align: center;'>0.6</p></td><td><p style='text-align: center;'>0.73</p></td><td><p style='text-align: center;'>0.59</p></td><td><p style='text-align: center;'>0.64</p></td></tr></table><p>Which statement best relates to the experiment?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>The measurements are precise and accurate with no evidence of random errors.</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>The measurements are not accurate and not always recorded to the degree of precision of the measuring device but the calculated experimental result is accurate.</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>The measurements are not always recorded to the degree of precision of the measuring device but are accurate. Systematic errors may be present.</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>The range of results shows that there were random errors made but the calculated value is correct so the experiment was successful.</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>Precision is how close the measured values are to each other</p></li><li><p>In a measuring instrument, the precision is indicated by the number of significant figures given by the instrument</p></li><li><p>From the measurements, we can see that the readings are not very close to each other. This scatter of readings indicates the presence of random errors</p></li><li><p>Even though the same instrument is used, the measurements are not given to the same number of decimal places, so the measurements are not precise</p></li><li><p>Accuracy is how close a measured value is to the true value</p></li><li><p>We can see that the individual measurements are not close to the average value of time. So, the measurements are not accurate, but the calculated experimental is correct</p></li></ul><p><strong>A </strong>is incorrect because even though the correct experimental value was achieved, the results do not show accuracy or precision so the experiment was not successful</p><p><strong>C </strong>is incorrect because systematic error affects accuracy and occurs due to the apparatus used or faults in the experimental method, so if systematic errors are present then the measurements are not accurate</p><p><strong>D </strong>is incorrect because the significant random errors indicate that the experiment was not successful, even though the calculated value is close to the actual value</p>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

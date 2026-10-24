@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6.1 Stress & Strain - Multiple Choice Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">6.1 Stress & Strain</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 6. Deformation of Solids</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 25 Questions (25 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A student wanted to measure the Young modulus of a wire, to do this they needed to take a number of measurements.</p><p>In which row could the measurement <strong>not</strong> be made <strong>directly</strong> with the listed apparatus?</p><table class='data-table'><tr><td><p></p></td><td><p style='text-align: center;'><strong>Measurement</strong></p></td><td><p style='text-align: center;'><strong>Apparatus</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>extension of wire</p></td><td><p style='text-align: center;'>vernier scale</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>area of cross-section of wire</p></td><td><p style='text-align: center;'>micrometer screw gauge</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>original length of wire</p></td><td><p style='text-align: center;'>metre rule</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>mass of load applied to a wire</p></td><td><p style='text-align: center;'>electronic balance</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>The area of the cross-section of the wire<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><msup><mi>πr</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>A micrometer can measure the diameter of the wire with a resolution of 0.001 mm</p></li><li><p>Therefore, a micrometer cannot directly measure the cross-sectional area of the wire</p></li></ul><p><strong>A </strong>is incorrect because the vernier scale will measure the extension of the wire </p><p><strong>C </strong>is incorrect because the length of wire could be measured directly by a metre rule</p><p><strong>D </strong>is incorrect because an electronic balance will measure the mass of the load directly</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>What is the unit of the Young modulus?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>N m<sup>–2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>N m<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>N m<sup>2</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>&#963;</mi><mi>&#949;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#963;</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac><mo>=</mo><mfenced open="[" close="]"><mi mathvariant="normal">N</mi></mfenced><msup><mfenced open="[" close="]"><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mfenced><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac><mo>=</mo><mfenced open="[" close="]"><mi mathvariant="normal">m</mi></mfenced><msup><mfenced open="[" close="]"><mi mathvariant="normal">m</mi></mfenced><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Strain is dimensionless, so, the units for the Young modulus are N m<sup>−2</sup></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A material is extended elastically within the limit of proportionality. What is equal to the Young modulus of the material?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>gradient of the stress-strain graph </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>area under the force-extension graph </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>area under the stress-strain graph </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>gradient of the force-extension graph</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The Young modulus is equal to the gradient of the stress-strain graph</p></li></ul><p><strong>B </strong>is incorrect because the area under a force-extension graph is the energy stored in the spring</p><p><strong>C </strong>is incorrect because the area under a stress-strain graph is the toughness</p><p><strong>D </strong>is incorrect because the gradient of a force-extension graph is the spring constant, <em>k</em></p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An experiment was carried out to determine the Young modulus of steel using a steel wire.</p><p>The uncertainties in the measurements are given below. </p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Measurement</strong></p></td><td><p style='text-align: center;'><strong>Uncertainty</strong></p></td></tr><tr><td><p style='text-align: center;'>load on wire</p><p style='text-align: center;'>length of wire</p><p style='text-align: center;'>diameter of wire</p><p style='text-align: center;'>extension</p></td><td><p style='text-align: center;'>±2%</p><p style='text-align: center;'>±0.2%</p><p style='text-align: center;'>±1.5%</p><p style='text-align: center;'>±1%</p></td></tr></table><p>What is the percentage uncertainty in the Young modulus?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>1.3%</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>1.8%</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>4.7%</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>6.2%</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is D because:</em></p><ul><li><p>The equation for Young&#x27;s modulus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>F</mi><mi>A</mi></mfrac><mo>&#215;</mo><mfrac><mi>L</mi><mi>x</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = force (load), <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = area, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = length, and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = extension</p></li></ul></li><li><p>For a wire, the cross-sectional area <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>2</mn></msup><mo mathvariant="italic">&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mfenced><mfrac><mi>d</mi><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi mathvariant="normal">&#960;</mi><msup><mi>d</mi><mn mathvariant="italic">2</mn></msup></mrow><mn>4</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = diameter</p></li></ul></li><li><p>To find the percentage uncertainty in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, we add the percentage uncertainties in the measurements</p><ul><li><p>% uncertainty in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 2%</p></li><li><p>% uncertainty in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 0.2%</p></li><li><p>% uncertainty in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 1.5%</p></li><li><p>% uncertainty in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 1%</p></li></ul></li><li><p>We can ignore any constants, such as <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi mathvariant="normal">π</mi><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The uncertainty in the diameter must be multiplied by 2 since it is squared</p><ul><li><p>% uncertainty in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 2% + 0.2% + (2 × 1.5%) + 1% </p></li><li><p>% uncertainty in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 6.2%</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A glass rod was put under stress and strain until it broke. The graph of this is shown below.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images247png.png' alt='cie-ial-images247png' /></div><p>Which of the following statements is correct about the glass rod?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the glass shows plastic deformation</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>when the cross-sectional area of the rod is doubled, the ultimate tensile stress of the rod is halved</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>Hooke’s law is obeyed for all values of stress up to the breaking point</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the glass is ductile</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>Hooke’s law states that the strain in a solid is proportional to the applied stress within the elastic limit</p></li><li><p>The graph is a straight line going through the origin, showing proportionality</p></li><li><p>Therefore, Hooke’s law is obeyed for all values of stress up to the breaking point</p></li></ul><p><strong>A </strong>is incorrect because plastic deformation occurs after the limit of proportionality and is after the elastic limit, glass is brittle and does not show plastic deformation</p><p><strong>B </strong>is incorrect because ultimate tensile stress is a material property independent of cross-sectional area — it is the stress at fracture, so it remains constant regardless of geometry. Doubling the area would double the breaking force, not the ultimate tensile stress</p><p><strong>D </strong>is incorrect because glass is brittle and does not show plastic deformation as a ductile material would</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Two wires S and T, with the same initial dimensions, were put under stress and strain, the graph shows the results up to their breaking points.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images248png.png' alt='cie-ial-images248png' /></div><p>Which statement is <strong>not</strong> correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>material S has a larger ultimate tensile stress</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>material S extends elastically</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>material S extends more than material T when loaded with the same force</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>material S is brittle</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#963;</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> </p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The strain is determined by the extension of the material and T has a larger strain than S</p></li></ul><p><strong>A </strong>is incorrect because the ultimate tensile strength is the maximum stress a material can withstand before breaking; this is higher for S than T</p><p><strong>B </strong>is incorrect because material S shows proportionality and extends elastically</p><p><strong>D </strong>is incorrect because material S shows no plastic deformation and is brittle</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The graphs below show the stress-strain graphs of three materials. The graphs do not have the same scales. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images249png.png' alt='cie-ial-images249png' /></div><p>The three materials are copper, rubber and glass.</p><p>Which materials are represented by the graphs?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>1</strong></p></td><td><p style='text-align: center;'><strong>2</strong></p></td><td><p style='text-align: center;'><strong>3</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>rubber</p><p style='text-align: center;'>rubber</p><p style='text-align: center;'>glass</p><p style='text-align: center;'>copper</p></td><td><p style='text-align: center;'>copper</p><p style='text-align: center;'>glass</p><p style='text-align: center;'>copper</p><p style='text-align: center;'>glass</p></td><td><p style='text-align: center;'>glass</p><p style='text-align: center;'>copper</p><p style='text-align: center;'>rubber</p><p style='text-align: center;'>rubber</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>Material 1 shows an unusual shape stress-strain graph associated with a polymer, such as rubber</p><ul><li><p>Rubber deforms elastically up to a certain point as the polymers chains, which were previously curled up, uncurl</p></li><li><p>After its yield point is reached it will no longer return to its original shape as it undergoes hysteresis</p></li></ul></li><li><p>Material 2 shows a brittle material that shows no plastic deformation, such as glass</p><ul><li><p>Glass is described as brittle as it does not extend very much and when subjected to stress, it breaks with little elastic deformation</p></li></ul></li><li><p>Material 3 shows a ductile material that shows plastic deformation, such as a metal wire</p><ul><li><p>A metal wire tends to be described as ductile as it will experience a large amount of extension when subjected to stress, especially beyond the elastic limit</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The stress-strain graph for bone is shown below.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images250png.png' alt='cie-ial-images250png' /></div><p>What is the Young modulus of bone?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>2 × 10<sup>6 </sup>N m<sup>−2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>2 × 10<sup>8 </sup>N m<sup>−2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>1 × 10<sup>6 </sup>N m<sup>−2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1 × 10<sup>8 </sup>N m<sup>−2</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>From the graph:</p><ul><li><p>Stress = 2 × 10<sup>6</sup> N m<sup>−2</sup></p></li><li><p>Strain<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn><mo>%</mo><mo>=</mo><mfrac><mn>1</mn><mn>100</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>01</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Young modulus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup></mrow><mrow><mn>0</mn><mo>.</mo><mn>01</mn></mrow></mfrac><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup><mo> </mo><mi mathvariant="normal">N</mi><mo> </mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><strong> </strong></p></li></ul><p><strong>Exam Tip: </strong>a common error students make is that they tend to forget to check the units on the graph’s axes. It would be an easy mistake to make to take the percentage strain from the graph and not convert it back to the ratio extension/original length.</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A student wanted to determine the spring constant of a spring. They did this by using different loads to extend the spring by varying amounts.</p><p>To find the spring constant, which quantities are required?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the elastic limit, extensions and the length of the spring</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the loads and the extensions of the spring </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the elastic limit and the loads</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the loads and the length of the spring</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>Hooke’s law states that the strain in a solid is proportional to the applied stress within the elastic limit</p></li><li><p>Hooke’s law states that <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> , where <em>k</em> is the spring constant, <em>F</em> is the force and <em>e</em> is the extension</p><ul><li><p>So, to calculate the spring constant <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mfrac><mi>F</mi><mi>x</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>To do this, the force (load) and the extension of the spring are required</p></li></ul><p><strong>A &amp; D </strong>are incorrect because the elastic limit is the point that the material will no longer obey Hooke’s law, it is calculated using the extension not the length of the material</p><p><strong>C </strong>is incorrect because the elastic limit is the point that the material will no longer obey Hooke’s law</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A metal tube of diameter <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> with a thin wall thickness <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is shown in the diagram. The thickness of the wall is small when compared to the diameter of the tube.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images253png.png' alt='cie-ial-images253png' /></div><p>A force of magnitude <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is applied parallel to the axis of the tube, putting the tube under tension. It is proposed that making the wall thicker would reduce the stress on the tube.</p><p>If the tube diameter and the tension remain the same, which wall thickness would half the stress?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>W</mi><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is C because:</em></p><ul><li><p>The metal tube is hollow with a wall of width <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>It is the area of the tube, not the hollow space, that is taken into account</p><ul><li><p>Stress<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo>&#160;</mo><mfrac><mi>force</mi><mi>area</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Area of the wall = circumference × width<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi mathvariant="normal">&#960;</mi><mi>d</mi><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>As diameter <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><em> </em>is constant, the area of the wall is proportional to the width <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>The tension force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is kept constant, so the stress is inversely proportional to the area</p><ul><li><p>Stress <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8733;</mo><mo>&#160;</mo><mfrac><mn>1</mn><mrow><mi mathvariant="normal">&#960;</mi><mi>d</mi><mi>W</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>So, to halve the stress, the thickness <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the wall would need to be doubled</p><ul><li><p>Therefore, the new wall thickness would be <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li></ul><p>The expression for area, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><mi>d</mi><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> , is an approximation which is valid since the walls of the tube are said to be very thin. The cross-sectional area of a hollow cylindrical tube is the difference between the areas of the outer radius and the inner radius:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mfenced><mfrac><mi>d</mi><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mfenced><mfrac><mrow><mi>d</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>2</mn><mi>W</mi></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi mathvariant="normal">&#960;</mi><mn>4</mn></mfrac><mfenced><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msup><mfenced><mrow><mi>d</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>2</mn><mi>W</mi></mrow></mfenced><mn>2</mn></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi mathvariant="normal">&#960;</mi><mn>4</mn></mfrac><mfenced><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfenced><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>4</mn><msup><mi>W</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>4</mn><mi>d</mi><mi>W</mi></mrow></mfenced></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p>Since <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>&#8810;</mo><mo>&#160;</mo><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, this means the <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><msup><mi>W</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> term can be ignored, leading to:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mfrac><mi mathvariant="normal">&#960;</mi><mn>4</mn></mfrac><mfenced><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msup><mi>d</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>4</mn><mi>d</mi><mi>W</mi></mrow></mfenced><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mfrac><mi mathvariant="normal">&#960;</mi><mn>4</mn></mfrac><mfenced><mrow><mn>4</mn><mi>d</mi><mi>W</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><mi>d</mi><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A steel metal wire has the following properties:</p><p>diameter = 5.0 × 10<sup>–4</sup> m</p><p>Young modulus = 2.0 × 10<sup>11</sup> Pa</p><p>tension = 20 N</p><p>The string snaps and contracts elastically.</p><p>By what percentage does a length <em>l</em> of a piece of the string contract?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>.</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>.</mo><mn>1</mn><mo> </mo><mo>×</mo><mo> </mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>The strain of the metal wire is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The percentage of the length that contracts = strain × 100%</p><ul><li><p>So, the percentage of the length that contracts<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mrow><mo>&#8710;</mo><mi>L</mi></mrow><mi>L</mi></mfrac><mo>&#215;</mo><mn>100</mn><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The cross-sectional area of the wire <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><msup><mi>πd</mi><mn>2</mn></msup><mn>4</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, strain is equal to </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mi>σ</mi><mi>E</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>E</mi></mfrac><mfenced><mfrac><mi>F</mi><mi>A</mi></mfrac></mfenced><mo>=</mo><mfrac><mi>F</mi><mi>E</mi></mfrac><mfenced><mfrac><mn>4</mn><msup><mi>πd</mi><mn>2</mn></msup></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#949;</mi><mo>=</mo><mfrac><mn>20</mn><mrow><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mn>11</mn></msup></mrow></mfrac><mo>&#215;</mo><mfrac><mn>4</mn><mrow><mi mathvariant="normal">&#960;</mi><msup><mfenced><mrow><mn>5</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></mrow></mfenced><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mn>5</mn><mo>.</mo><mn>09</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>So, as a percentage this is:</p><ul><li><p>Strain × 100% = 5.09 × 10<sup>–4</sup> × 100% = 5.09 × 10<sup>–2 </sup>%</p></li></ul></li><li><p>Therefore, the percentage of the length that contracts is equal to 5.1 × 10<sup>–2</sup> %</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 12 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The Young modulus of a metal wire is dependent on which property?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>spring constant </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>ductility </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>ultimate tensile stress </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>elastic limit</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, Young modulus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><mi>F</mi><mi>A</mi></mfrac></mstyle></mfenced><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><mi>x</mi><mi>L</mi></mfrac></mstyle></mfenced></mfrac><mo>=</mo><mfrac><mrow><mi>F</mi><mi>L</mi></mrow><mrow><mi>A</mi><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Hooke’s law states <em>F</em> = <em>ke</em>, where <em>k</em> is the spring constant</p></li><li><p>A metal wire will obey Hooke’s law up to a point, the spring constant depends on the force, and this can be found in the equation for the Young modulus:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mfenced><mrow><mi>k</mi><mi>e</mi></mrow></mfenced><mi>L</mi></mrow><mrow><mi>A</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>k</mi><mi>L</mi></mrow><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, Young modulus <em>E </em>depends on the <strong>spring constant</strong> (and original length <em>L</em> and cross-sectional area <em>A</em>)</p></li></ul><p><strong>B </strong>is incorrect because not all materials are ductile, but all materials can have a Young modulus</p><p><strong>C </strong>is incorrect because the ultimate tensile strength is the maximum stress a material can withstand before breaking; the Young modulus does not depend on this</p><p><strong>D </strong>is incorrect because the elastic limit is beyond the limit of proportionality; the Young modulus does not depend on this</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 13 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The Young modulus <em>E</em> and the force per unit extension <em>k</em> describes the behaviour of a wire under tensile stress.</p><p>For a wire of length <em>L</em> and cross-sectional area <em>A</em>, what is the relationship between <em>E</em> and <em>k </em>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mi>A</mi><mrow><mi>k</mi><mi>L</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>k</mi><mi>A</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>k</mi><mi>L</mi></mrow><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mi>L</mi><mrow><mi>k</mi><mi>A</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, Young modulus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><mi>F</mi><mi>A</mi></mfrac></mstyle></mfenced><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><mi>x</mi><mi>L</mi></mfrac></mstyle></mfenced></mfrac><mo>=</mo><mfrac><mrow><mi>F</mi><mi>L</mi></mrow><mrow><mi>A</mi><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Hooke’s law states that <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  , so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mfrac><mi>F</mi><mi>x</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, Young modulus is equal to</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mi>L</mi></mrow><mrow><mi>A</mi><mi>e</mi></mrow></mfrac><mo>=</mo><mfrac><mi>L</mi><mi>A</mi></mfrac><mfenced><mfrac><mi>F</mi><mi>e</mi></mfrac></mfenced><mo>=</mo><mfrac><mrow><mi>k</mi><mi>L</mi></mrow><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 14 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A steel bar, shown in the diagram, has a circular cross-section that is under tension <em>T</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/diagram-7.png' alt='diagram-7' /></div><p>The diameter of the thinner portion is half the wider portion.</p><p>What is the value of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi><mo>&#160;</mo><mi>o</mi><mi>n</mi><mo mathvariant="italic">&#160;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mo mathvariant="italic">&#160;</mo><mi>w</mi><mi>i</mi><mi>d</mi><mi>e</mi><mo mathvariant="italic">&#160;</mo><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi><mo mathvariant="italic">&#160;</mo><mi>o</mi><mi>n</mi><mo mathvariant="italic">&#160;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mo mathvariant="italic">&#160;</mo><mi>n</mi><mi>a</mi><mi>r</mi><mi>r</mi><mi>o</mi><mi>w</mi><mo mathvariant="italic">&#160;</mo><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>4.0</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>2.0</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>0.50</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>0.25</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The steel tube is thicker at one end by double that of the thinner end</p></li><li><p>The tension force is kept constant, so the stress is inversely proportional to the area</p></li><li><p>The ratio of the stress in the two sections would be 0.25</p></li></ul><p>Example of working:</p><table class='data-table'><tr><td><p style='text-align: center;'>narrow portion</p></td><td><p style='text-align: center;'>wide portion</p></td></tr><tr><td><p>Diameter = 0.2 m, force = 10 </p><p></p><p>Area <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><mo>&#215;</mo><mn>0</mn><mo>.</mo><msup><mn>1</mn><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>0314</mn><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Stress <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p></p><p>Stress <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mn>10</mn><mrow><mn>0</mn><mo>.</mo><mn>0314</mn></mrow></mfrac><mo>=</mo><mn>318</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p> </p></td><td><p>Diameter 0.4 m, force 10 N</p><p></p><p>Area<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><msup><mi>&#960;r</mi><mn>2</mn></msup><mo>=</mo><mi mathvariant="normal">&#960;</mi><mo>&#215;</mo><mn>0</mn><mo>.</mo><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>.</mo><mn>1256</mn><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p></p><p>Stress <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p></p><p>Stress <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo>&#160;</mo><mfrac><mn>10</mn><mrow><mn>0</mn><mo>.</mo><mn>1256</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>79</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></td></tr></table><ul><li><p>So, the value of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi><mo>&#160;</mo><mi>o</mi><mi>n</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mo>&#160;</mo><mi>w</mi><mi>i</mi><mi>d</mi><mi>e</mi><mo>&#160;</mo><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi><mo>&#160;</mo><mi>o</mi><mi>n</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mo>&#160;</mo><mi>n</mi><mi>a</mi><mi>r</mi><mi>r</mi><mi>o</mi><mi>w</mi><mo>&#160;</mo><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>79</mn><mo>.</mo><mn>6</mn></mrow><mrow><mn>318</mn><mo>.</mo><mn>5</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>25</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 15 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A student wanted to find the young modulus of a wire. The equation for the young modulus <em>E</em> is:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mi>F</mi><mi>l</mi></mrow><mrow><mi>π</mi><msup><mi>d</mi><mn mathvariant="italic">2</mn></msup><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>The student extended the wire with a known force and made a series of measurements.</p><p>Which measurement has the largest effect on the uncertainty in the value of the calculated Young modulus?</p><table class='data-table'><tr><td><p></p></td><td><p style='text-align: center;'><strong>Measurement</strong></p></td><td><p style='text-align: center;'><strong>Symbol</strong></p></td><td><p style='text-align: center;'><strong>Value</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>length of wire before force applied</p></td><td><p style='text-align: center;'><em>l</em></p></td><td><p style='text-align: center;'>2.043 ± 0.002 m</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>force applied</p></td><td><p style='text-align: center;'><em>F</em></p></td><td><p style='text-align: center;'>19.62 ± 0.01 N</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>extension of wire with force applied</p></td><td><p style='text-align: center;'><em>x</em></p></td><td><p style='text-align: center;'>5.2 ± 0.2 mm</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>diameter of wire</p></td><td><p style='text-align: center;'><em>d</em></p></td><td><p style='text-align: center;'>0.54 ± 0.02 mm</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>l</mi></mrow><mi>l</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The cross-sectional area of the wire <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>d</mi><mn mathvariant="italic">2</mn></msup></mrow><mn>4</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, the Young Modulus for a wire is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mi>F</mi><mi>l</mi></mrow><mrow><mi>π</mi><msup><mi>d</mi><mn mathvariant="italic">2</mn></msup><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The percentage uncertainty in the diameter needs to be doubled as it is squared in the equation</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>∆</mo><mi>E</mi></mrow><mi>E</mi></mfrac><mo>=</mo><mfenced><mfrac><mrow><mo>∆</mo><mi>F</mi></mrow><mi>F</mi></mfrac></mfenced><mo>+</mo><mfenced><mfrac><mrow><mo>∆</mo><mi>l</mi></mrow><mi>l</mi></mfrac></mfenced><mo>+</mo><mn>2</mn><mfenced><mfrac><mrow><mo>∆</mo><mi>d</mi></mrow><mi>d</mi></mfrac></mfenced><mo>+</mo><mfenced><mfrac><mrow><mo>∆</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mfrac><mrow><mo>∆</mo><mi>F</mi></mrow><mi>F</mi></mfrac></mfenced><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>01</mn></mrow><mrow><mn>19</mn><mo>.</mo><mn>62</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>00051</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mfrac><mrow><mo>∆</mo><mi>l</mi></mrow><mi>l</mi></mfrac></mfenced><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>002</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>043</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>00098</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mfenced><mfrac><mrow><mo>∆</mo><mi>d</mi></mrow><mi>d</mi></mfrac></mfenced><mo>=</mo><mn>2</mn><mfenced><mfrac><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>54</mn></mrow></mfrac></mfenced><mo>=</mo><mn>0</mn><mo>.</mo><mn>07407</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mfrac><mrow><mo>∆</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mfenced><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>.</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>03846</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the diameter has the largest effect on the uncertainty of the Young modulus</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 16 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A spring was stretched with increasing load. The graph of the results is shown below.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images255png.png' alt='cie-ial-images255png' /></div><p>What is the spring constant?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.080 N m<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0.13 N m<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>2.7 N m<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>8.0 N m<sup>–1</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Hooke’s law states <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  , where <em>k</em> is the spring constant</p></li><li><p>The gradient of a force-extension graph is the spring constant</p><ul><li><p>Load = 0.4 N</p></li></ul></li><li><p>Extension of the spring <em>x</em> = 15 – 10 = 5 cm = 0.05 m</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mfrac><mi>F</mi><mi>x</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>4</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>05</mn></mrow></mfrac><mo>=</mo><mn>8</mn><mo>.</mo><mn>0</mn><mo> </mo><mi mathvariant="normal">N</mi><mo> </mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the spring constant is equal to 8.0 N m<sup>–1</sup></p></li></ul><p>Your answer will be more accurate if you use the entire line to calculate the gradient.</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 17 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The graph below shows the stress-strain for a metal.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-6-1-q19.png' alt='cie-ial-physics-mcq-6-1-q19' /></div><p>When the strain on the rod is 0.010, what is the strain energy per unit volume of a rod made from this metal?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>10 kJ m<sup>−3</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>10 MJ m<sup>−3</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>100 kJ m<sup>−3</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1.0 MJ m<sup>−3</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>When a material behaves elastically, the work done is stored as energy per unit volume – <strong>strain energy</strong></p></li><li><p>The strain energy is derived from the area under the stress-strain graph</p><ul><li><p>Area under the graph <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi><mo>×</mo><mi>h</mi><mi>e</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain energy <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mn>0</mn><mo>.</mo><mn>010</mn><mo>×</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup><mo>=</mo><mn>1</mn><mo>×</mo><msup><mn>10</mn><mn>7</mn></msup><mi mathvariant="normal">J</mi><mo> </mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>=</mo><mn>10</mn><mo> </mo><mi mathvariant="normal">M</mi><mo> </mo><mi mathvariant="normal">J</mi><mo> </mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the strain energy is equal to 10 MJ m<sup>−3</sup></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 18 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A steel spring was stretched to a length of 55 cm when a 25 N weight was hung from it. The spring has a spring constant of 150 N m<sup>–1</sup>.</p><p>What was the original length of the spring?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.61 m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0.72 m</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>0.38 m </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>0.49 m </p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>Hooke’s law states that <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> , where <em>k</em> is the spring constant</p></li><li><p>Let the original length = <em>l</em></p></li><li><p>When the force <em>F</em> = 25 N, the extension <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>55</mn><mo> </mo><mi>c</mi><mi>m</mi><mo>-</mo><mi>l</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>55</mn><mo> </mo><mi>m</mi><mo>-</mo><mi>l</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mo>×</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>55</mn><mo>-</mo><mi>l</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>F</mi><mi>k</mi></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>55</mn><mo>-</mo><mi>l</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>55</mn><mo>-</mo><mfenced><mfrac><mi>F</mi><mi>k</mi></mfrac></mfenced><mo>=</mo><mn>0</mn><mo>.</mo><mn>55</mn><mo>-</mo><mfenced><mfrac><mn>25</mn><mn>150</mn></mfrac></mfenced><mo>=</mo><mn>0</mn><mo>.</mo><mn>383</mn><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the original length of the spring is 0.38 m</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 19 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A steel cable used in a construction crane has a Young&#x27;s modulus of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>.</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mn>9</mn></msup><mo>&#8202;</mo><mtext>Pa</mtext></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>. The cable has a cross-sectional area of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>05</mn><mo>&#x200A;</mo><msup><mtext>mm</mtext><mn>2</mn></msup></math></span> and is subjected to a tensile force of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>210</mn><mo>&#x200A;</mo><mtext>N</mtext></math></span>. The cable obeys Hooke&#x27;s law.</p><p>What is the stress in the steel cable?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>.</mo><mn>2</mn><mo>&#xD7;</mo><msup><mn>10</mn><mn>3</mn></msup><mo>&#x200A;</mo><mtext>Pa</mtext></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>.</mo><mn>2</mn><mo>&#xD7;</mo><msup><mn>10</mn><mn>6</mn></msup><mo>&#x200A;</mo><mtext>Pa</mtext></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>.</mo><mn>2</mn><mo>&#xD7;</mo><msup><mn>10</mn><mn>9</mn></msup><mo>&#x200A;</mo><mtext>Pa</mtext></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>.</mo><mn>2</mn><mo>&#xD7;</mo><msup><mn>10</mn><mn>12</mn></msup><mo>&#x200A;</mo><mtext>Pa</mtext></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is C </em></p><ul><li><p>The stress is given by </p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3C3;</mi><mo>=</mo><mfrac><mtext>force</mtext><mtext>area</mtext></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></math></span></p><ul><li><p>Where:</p><ul><li><p>Force,  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>F</mi><mo>=</mo><mn>210</mn><mo>&#x200A;</mo><mtext>N</mtext></math></span></p></li><li><p>Area,  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>05</mn><mo>&#x200A;</mo><msup><mtext>mm</mtext><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>.</mo><mn>05</mn><mo>&#xD7;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo>&#x200A;</mo><msup><mtext>m</mtext><mn>2</mn></msup></math></span></p></li></ul></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3C3;</mi><mo>=</mo><mfrac><mn>210</mn><mrow><mn>0</mn><mo>.</mo><mn>05</mn><mo>&#xD7;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>4</mn><mo>.</mo><mn>2</mn><mo>&#xD7;</mo><msup><mn>10</mn><mn>9</mn></msup><mo>&#x200A;</mo><mtext>Pa</mtext></math></span></p><ul><li><p>Therefore, the stress in the steel cable is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>.</mo><mn>2</mn><mo>&#xD7;</mo><msup><mn>10</mn><mn>9</mn></msup><mo>&#x200A;</mo><mtext>Pa</mtext></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 20 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A glass-reinforced plastic rod and a nylon rod attached, as shown, was used to make a composite rod.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images259png.png' alt='cie-ial-images259png' /></div><p>Each rod has a length of 1.00 m and the same cross-sectional area. The Young modulus <em>E</em><sub><em>n</em></sub> of the nylon is 2.0 GPa, and the Young modulus <em>E</em><sub><em>p</em></sub> of the plastic is 40 GPa</p><p>The composite rod will break when its total extension reaches 3.0 mm.</p><p>What is the greatest tensile stress that can be applied to the composite rod before it breaks?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>.</mo><mn>7</mn><mo>×</mo><msup><mn>10</mn><mrow><mn>6</mn><mo> </mo></mrow></msup><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>.</mo><mn>7</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup><mo> </mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>.</mo><mn>1</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>14</mn></mrow></msup><mo> </mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>.</mo><mn>1</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn><mo> </mo></mrow></msup><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Tensile stress is the force applied per cross-sectional area</p></li><li><p>In both materials the same force is applied, the materials have different extensions for this force</p></li><li><p>The total extension can’t be equal to 3.0 mm as the rod would then have broken</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>=</mo><mi>σ</mi><mo>×</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>0</mn></mrow><mfenced><mrow><mn>40</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac><mo>=</mo><mfrac><mi>σ</mi><mfenced><mrow><mn>40</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mi>σ</mi><mo>×</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>0</mn></mrow><mfenced><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac><mo>=</mo><mfrac><mi>σ</mi><mfenced><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The greatest stress that can be added is the sum of the stress of both materials, and this should be equal to 3.0 mm</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>+</mo><msub><mi>E</mi><mi>P</mi></msub><mo>=</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>σ</mi><mfenced><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac><mo>+</mo><mfrac><mi>σ</mi><mfenced><mrow><mn>40</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac><mo>=</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>×</mo><mfenced><mrow><mfrac><mn>1</mn><mfenced><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac><mo>+</mo><mfrac><mn>1</mn><mfenced><mrow><mn>40</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac></mrow></mfenced><mo>=</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo> </mo><mo>/</mo><mfenced><mrow><mfrac><mn>1</mn><mfenced><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac><mo>+</mo><mfrac><mn>1</mn><mfenced><mrow><mn>40</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mfrac></mrow></mfenced><mo>=</mo><mn>5</mn><mo>.</mo><mn>71</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup><mo> </mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the greatest tensile stress that can be applied is<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>.</mo><mn>7</mn><mo>×</mo><msup><mn>10</mn><mrow><mn>6</mn><mo> </mo></mrow></msup><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 21 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A child with a mass of 40 kg was standing on a diving board. The diving board has a length of 5.0 m and is hinged at one end then supported by a spring 2.0 m from the hinged end. The spring has a spring constant of 10 kN m<sup>–1</sup></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images260png.png' alt='cie-ial-images260png' /></div><p>What is the extra compression of the spring caused by the child standing on the end of the board?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>16 cm </p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>9.8 cm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>1.6 cm </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1.0 cm</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>Hooke’s law states <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  , where <em>k</em> is the spring constant </p></li><li><p>The child and the spring will cause a moment at a distance from the hinge</p></li><li><p>At equilibrium, the torque of the child (anticlockwise) should be equal to the torque of the spring (clockwise)</p></li><li><p>Let the force of the spring = <em>F</em></p><ul><li><p>Clockwise moments <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>m</mi><mi>g</mi><mi>x</mi><mo>=</mo><mn>40</mn><mo>×</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>×</mo><mn>5</mn><mo>.</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Anticlockwise moments <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>F</mi><mi>d</mi><mo>=</mo><mi>F</mi><mo>×</mo><mn>2</mn><mo>.</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mo>×</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>×</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo>=</mo><mi>F</mi><mo>×</mo><mn>2</mn><mo>.</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mn>40</mn><mo>×</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>×</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>981</mn><mo> </mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, the spring force is equal to <em>F</em> = 981 N</p></li><li><p>Spring constant, <em>k</em> = 10 kN m<sup>−1</sup> = 10000 N m<sup>−1</sup></p><ul><li><p>Extension <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mi>F</mi><mi>k</mi></mfrac><mo>=</mo><mfrac><mn>981</mn><mn>10000</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0981</mn><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the compression of the spring caused by the child is 9.8 cm</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 22 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a metal cube is placed between two board and compressed elastically by two opposing forces <em>F</em>. The cube has a length of each side of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images262png.png' alt='cie-ial-images262png' /></div><p>How will ∆<em>l</em>, the amount of compression, relate to <em>l</em> ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>l</mi><mo> </mo><mi>α</mi><mo> </mo><mi>l</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>l</mi><mo> </mo><mi>α</mi><mo> </mo><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>l</mi><mo> </mo><mi>α</mi><mo> </mo><mfrac><mn>1</mn><msup><mi>l</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>l</mi><mo> </mo><mi>α</mi><mo> </mo><mfrac><mn>1</mn><mi>l</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, Young modulus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><mi>F</mi><mi>A</mi></mfrac></mstyle></mfenced><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><mi>e</mi><mi>L</mi></mfrac></mstyle></mfenced></mfrac><mo>=</mo><mfrac><mrow><mi>F</mi><mi>L</mi></mrow><mrow><mi>A</mi><mi>e</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Where:</p><ul><li><p>Area <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Compression <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mo>∆</mo><mi>l</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, Young modulus is proportional to:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo> </mo><mi>α</mi><mo> </mo><mfrac><mi>l</mi><mrow><msup><mi>l</mi><mn>2</mn></msup><mo>×</mo><mo>∆</mo><mi>l</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo> </mo><mi>α</mi><mo> </mo><mfrac><mn>1</mn><mrow><mi>l</mi><mo>×</mo><mo>∆</mo><mi>l</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>l</mi><mo> </mo><mi>α</mi><mo> </mo><mfrac><mn>1</mn><mrow><mi>E</mi><mi>l</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>,  giving <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>l</mi><mo> </mo><mi>α</mi><mo> </mo><mfrac><mn>1</mn><mi>l</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em> </em>as the Young modulus is constant</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 23 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A metal wire that is supported vertically from a fixed point has a load of 84 N applied to the lower end. The wire has a cross-sectional area of 0.02 mm<sup>2</sup> and obeys Hooke’s law. The length of the wire increases by 0.30 %.</p><p>What is the Young modulus of the metal wire?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mn>5</mn><mo>&#160;</mo></mrow></msup><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#160;</mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>9</mn></msup><mo>&#160;</mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>12</mn></msup><mo>&#160;</mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Where:</p><ul><li><p>Force <em>F</em> = 84 N</p></li><li><p>Area <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>02</mn><mo>&#160;</mo><msup><mi>mm</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>.</mo><mn>02</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn><mo>&#160;</mo></mrow></msup><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>The wire increases in length by 0.3 %, this is equal to the strain, so:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>3</mn><mo>%</mo><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>3</mn></mrow><mn>100</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0030</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Young modulus = stress / strain</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>84</mn><mrow><mfenced><mrow><mn>0</mn><mo>.</mo><mn>02</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfenced><mo>×</mo><mn>0</mn><mo>.</mo><mn>003</mn></mrow></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>4</mn><mo>×</mo><msup><mn>10</mn><mn>12</mn></msup><mo> </mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the Young modulus of the metal wire is 1.4 × 10<sup>12</sup> Pa</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 24 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Two wires S and T is joined, S has a length of 3.0 m and T a length of 1.0 m, both wires have a uniform cross-sectional area.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images263png.png' alt='cie-ial-images263png' /></div><p>When a load was hung from the wires S stretched by 1.5 mm and T by 1.0 mm.</p><p>The same load is then hung from a second wire of the same cross-section, consisting of 1.0 m of metal S and 3.0 m of metal T.</p><p>What is the total extension of this second wire?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>3.5 mm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>2.5 mm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>5.0 mm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>4.8 mm</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>∆</mo><mi>L</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>In a material the Young modulus remains constant</p></li><li><p>As the load and cross-sectional area are the same, the stress <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  is going to be the same</p></li><li><p>Metal S</p><ul><li><p>1<sup>st</sup> experiment, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>3</mn><mrow><mn>1</mn><mo>.</mo><mn>5</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>2<sup>nd</sup> experiment <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>3</mn><mrow><mn>1</mn><mo>.</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>   </p></li><li><p>Extension, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>5</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo> </mo><mi>mm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Metal T</p><ul><li><p>1<sup>st</sup> experiment, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>1</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>2<sup>nd</sup> experiment <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>3</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mn>3</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, extension <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo> </mo><mi>mm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Total extension <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>5</mn><mo>+</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>=</mo><mn>3</mn><mo>.</mo><mn>5</mn><mo> </mo><mi>mm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 25 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Two steel wires X and Y that both obey Hooke’s law were used in an experiment. Wire X has a length <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and a cross-sectional area A. Wire Y has a length of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>l</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and cross-sectional area of  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>A</mi><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p><p>What is the ratio <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo> </mo><mi>i</mi><mi>n</mi><mo> </mo><mi>X</mi></mrow><mrow><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo> </mo><mi>i</mi><mi>n</mi><mo> </mo><mi>Y</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  when both wires are stretched to the same extension?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>4</mn><mn>1</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>2</mn><mn>1</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>The Young modulus is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow><mrow><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Stress is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Strain is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>x</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mi>x</mi><mi>L</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>As both wires are made of steel they have the same Young modulus, <em>E</em></p></li><li><p>Young modulus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><mi>F</mi><mi>A</mi></mfrac></mstyle></mfenced><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><mi>x</mi><mi>L</mi></mfrac></mstyle></mfenced></mfrac><mo>=</mo><mfrac><mrow><mi>F</mi><mi>L</mi></mrow><mrow><mi>A</mi><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, tension is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mi>E</mi><mi>A</mi><mi>x</mi></mrow><mi>l</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>For wire X : <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>=</mo><mfrac><mrow><mi>E</mi><mi>A</mi><mi>x</mi></mrow><mi>l</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>For wire Y : <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>Y</mi></msub><mo>=</mo><mfrac><mrow><mi>E</mi><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><mi>A</mi><mn>2</mn></mfrac></mstyle></mfenced><mi>x</mi></mrow><mrow><mn>2</mn><mi>l</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>E</mi><mi>A</mi><mi>x</mi></mrow><mrow><mn>4</mn><mi>l</mi></mrow></mfrac><mo>=</mo><mfrac><msub><mi>F</mi><mi>X</mi></msub><mn>4</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, the ratio <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><msub><mi>F</mi><mi>X</mi></msub><msub><mi>F</mi><mi>Y</mi></msub></mfrac><mo>=</mo><mfrac><msub><mi>F</mi><mi>X</mi></msub><mfenced><mstyle displaystyle="true"><mfrac bevelled="true"><msub><mi>F</mi><mi>X</mi></msub><mn>4</mn></mfrac></mstyle></mfenced></mfrac><mo>=</mo><mfrac><mn>4</mn><mn>1</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8.1 Stationary Waves - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">8.1 Stationary Waves</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 8. Superposition</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 8 Questions (84 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the principle of superposition.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The principle of superposition states that:</p><ul><li><p>When two or more waves move with the <u>same frequency</u> arrive at a point; <em>[1 mark]</em></p></li><li><p>The resultant displacement is the <u>sum</u><strong> </strong>of the displacements of each wave; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>When writing definitions and principles remember to include the key words from the topic. In this case ‘frequency’ and ‘displacement’ instead of ‘at the same time’ or ‘the same size’.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>two</strong> necessary conditions for a stationary wave to be set up on a string.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Two conditions for a stationary wave are:</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>Two waves of the <u>same</u> frequency / wavelength; <em>[1 mark]</em></p></li><li><p>Moving in opposite directions; <em>[1 mark]</em></p></li><li><p>Reflected at the end of the string; <em>[1 mark]</em></p></li><li><p>With the same / similar amplitude; <em>[1 mark]</em></p></li><li><p>There is an integer number of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> wavelengths between the walls; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>This is an extremely common exam question, so make sure to remember these conditions! Most importantly, two waves must have the same frequency (and therefore wavelength) and same or similar amplitude to superpose and become a stationary wave. Avoid saying ‘</em><em><strong>it</strong></em><em> has the same frequency’, always refer to ‘waves’ or the ‘reflected wave’ at the end of the string.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A stationary wave is made up of nodes and antinodes. </p><p>State what is meant by: </p><p>(i) a node</p><p style='text-align: right;'>[1]</p><p>(ii) an antinode.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) A node represents the points where:</p><ul><li><p>There are no vibrations / oscillations (of the wave); <em>[1 mark] </em><strong>OR</strong></p></li><li><p>Two waves between a boundary <u>destructively</u> interfere; <em>[1 mark]</em></p></li></ul><p>(ii) An antinode the points where:</p><ul><li><p>The vibrations / oscillations are at their maximum amplitude; <em>[1 mark] </em></p><p><strong>OR</strong></p></li><li><p>Two waves between a boundary <u>constructively</u> interfere; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig 1.1 shows a stationary wave on a string which is fixed at both ends.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q1d-easy-aqa-a-level-physics.png' alt='3-2-s-q--q1d-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>On Fig. 1.1, label the nodes (N) and antinodes (A).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The correct positions of the nodes and antinodes are as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-1-stationary-waves-e-q1-ma.png' alt='8-1-stationary-waves-e-q1-ma' /></div><ul><li><p>A:  6 antinodes at the maximum displacement (positive or negative); <em>[1 mark]</em></p></li><li><p>N:  7 nodes at the points of zero displacement; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>Remember that the points of zero displacement where the string is fixed to the boundaries also count as nodes!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain the difference between energy transfers in progressive waves and stationary waves.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The difference between progressive waves and stationary waves are:</p><ul><li><p>In a progressive wave, energy is transferred along the wave (without transferring the medium);<em> [1 mark]</em></p></li><li><p>In a stationary wave, energy is <u>stored</u> / not transferred; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig 1.1 shows a violin string. One way to produce a musical note is to pull the centre of the string to one side and then release it quickly. This produces a stationary wave.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q4b-easy-aqa-a-level-physics.png' alt='3-2-s-q--q4b-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Explain why a stationary wave is formed on the string.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A stationary wave is formed on the string because:</p><p><em>Any </em><em><strong>three</strong></em><em> from:</em></p><ul><li><p>A (progressive) wave travels from the centre to the ends and reflects; <em>[1 mark]</em></p></li><li><p>Two (progressive) waves travel in opposite directions along the string; <em>[1 mark]</em></p></li><li><p>The waves have the same frequency / wavelength; <em>[1 mark]</em></p></li><li><p>The waves have the same / similar amplitude; <em>[1 mark]</em></p></li><li><p>Superposition occurs / the two waves superpose; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em><strong> </strong></em></p><p><em>Try not to say that just ‘interference’ occurs. Although this is correct, ‘superposition’ is the term that sums up both the destructive and constructive interference that occurs to gain full marks.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a clarinet producing notes of different pitch. Each note corresponds to a stationary wave of a different number of wavelengths, or half wavelengths.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/eSENGSCP_8-1-stationary-waves-e-q2.png' alt='8-1-stationary-waves-e-q2' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>On Fig 1.1, draw lines from each stationary wave formed in the clarinet to its corresponding wavelength.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The correct stationary waves and corresponding wavelengths are as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-1-stationary-waves-e-q2-ma.png' alt='8-1-stationary-waves-e-q2-ma' /></div><ul><li><p><em>[1 mark]</em> for each correct match<em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>When figuring out the number of wavelengths of a stationary wave, count the number of half wavelengths you can see first. In a tube with two open ends, there will always be a quarter of a wavelength at each end, so both ends make a half wavelength.</em></p><p><em>For example, here we can see 2 half wavelengths plus the two-quarter wavelengths at each end. This gives a total of 3 half wavelengths, or 1.5λ</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-1-stationary-waves-e-q2-ma1.png' alt='8-1-stationary-waves-e-q2-ma1' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State and explain the number of wavelengths that would produce the highest note. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The number of wavelengths that would produce the highest note is:</p><ul><li><p>2.5λ; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p>Explanation:</p><ul><li><p>A note (or pitch) refers to the frequency of a wave; <em>[1 mark]</em></p></li><li><p>The shortest wavelength corresponds to the highest frequency; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Describe the phase difference between two points on</p><p>(i) a progressive transverse wave</p><p style='text-align: right;'>[1]</p><p>(ii) a stationary wave. </p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) On a progressive transverse wave:</p><ul><li><p>Two adjacent points vibrate with different phases; <em>[1 mark]</em> </p></li></ul><p>(ii) On a stationary wave:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>All points between two adjacent nodes vibrate in phase; <em>[1 mark]</em> </p></li><li><p>If separated by an even number of nodes, two adjacent points vibrate in phase; <em>[1 mark]</em> </p></li><li><p>If separated by an odd number of nodes, two adjacent points vibrate out of phase; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>On </em><em><strong>both </strong></em><em>progressive and stationary waves, the phase of a particle constantly changes as it vibrates up or down through its cycle</em></p><p><em>On a </em><em><strong>progressive </strong></em><em>wave, the phase difference between two points is constantly changing</em></p><ul><li><p><em>This phase difference can be described by </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>2</mn><mi mathvariant="normal">&#960;</mi><mi>d</mi></mrow><mi>&#955;</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>, where </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> is the distance between the two points</em></p></li><li><p><em>This expression does </em><em><strong>not </strong></em><em>apply to stationary waves</em></p></li></ul><p><em>On a </em><em><strong>stationary </strong></em><em>wave, two points are either completely in phase or completely out of phase:</em></p><ul><li><p><em>When two points are on either side of a node, they are out of phase (phase difference = π)</em></p></li><li><p><em>When two points have none or a factor of two nodes (i.e. 2 nodes, 4 nodes) in between them, they are in phase (phase difference = 0)</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-1-stationary-waves-e-q3-ma.png' alt='8-1-stationary-waves-e-q3-ma' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows four progressive transverse waves.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q5b-easy-aqa-a-level-physics.png' alt='3-2-s-q--q5b-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>State the pair of waves from Fig. 1.1 which superpose to create the following</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/r8Ip5QkY_8-1-stationary-waves-e-q3i.png' alt='r8Ip5QkY_8-1-stationary-waves-e-q3i' /></div><p style='text-align: right;'>[1]</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-1-stationary-waves-e-q3ii.png' alt='8-1-stationary-waves-e-q3ii' /></div><p style='text-align: right;'>[1]</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-1-stationary-waves-e-q3iii.png' alt='8-1-stationary-waves-e-q3iii' /></div><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The pairs of waves which superpose are:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/r8Ip5QkY_8-1-stationary-waves-e-q3i.png' alt='r8Ip5QkY_8-1-stationary-waves-e-q3i' /></div><ul><li><p>Wave 1 and wave 3; <em>[1 mark]</em></p></li><li><p>This is destructive interference</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-1-stationary-waves-e-q3ii.png' alt='8-1-stationary-waves-e-q3ii' /></div><ul><li><p>Wave 2 and wave 2; <em>[1 mark]</em></p></li><li><p>This is constructive interference</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-1-stationary-waves-e-q3iii.png' alt='8-1-stationary-waves-e-q3iii' /></div><ul><li><p>Wave 1 and wave 2; <em>[1 mark]</em></p></li><li><p>This is a mix of constructive and destructive interference<strong>  </strong></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Complete destructive interference, as in part (i), occurs when the peaks of one wave line up with the troughs of the other. This results in a wave with no amplitude.</em></p><p><em>Complete constructive interference, as in part (ii), occurs when the peaks of one wave line up with the peak of another. This results in a wave with double the amplitude.</em></p><p><em>Superposition can also occur with any two waves, it doesn’t have to be completely constructive or destructive, as in part (iii).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows a stationary wave on a stretched guitar string of length 0.58 m when it is plucked.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q5c-easy-aqa-a-level-physics.png' alt='3-2-s-q--q5c-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Determine the wavelength of the stationary wave.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Determine the wavelength of the stationary wave:</p><p>List the known quantities:</p><ul><li><p>Length of string, <em>L</em> = 0.58 m </p></li></ul><p>Determine the number of wavelengths:</p><ul><li><p>Over the length of the string, there is half a wavelength, or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>&#955;</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, the wavelength is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>L</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p>Calculate the wavelength:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#955;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2 × 0.58 = 1.16 m = 1.2 m <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The frequency of the note played on the guitar string is 276 Hz. </p><p>Calculate the speed of the stationary wave in Fig. 1.2. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the speed of the stationary wave:</p><p>List the known quantities:</p><ul><li><p>Frequency, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 276 Hz</p></li><li><p>Wavelength, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#955;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.16 m (from part c)</p></li></ul><p>Substitute the values into the wave equation:</p><ul><li><p>Wave speed:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Substitute:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 276 × 1.16 <em> </em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 320 m s<sup>–1</sup> (2 s.f.) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>You would also get both marks if you used </em><em><em>λ</em></em><em> = 1.2 m and obtained </em><em><em>v</em></em><em> = 330 m s</em><em><sup>–1</sup></em><em> (2 s.f.)</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[3 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) By reference to the direction of transfer of energy, state what is meant by a transverse wave.</p><p style='text-align: right;'>[1]</p><p>(ii) State the principle of superposition.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) A transverse wave is defined as:</p><ul><li><p>(Particle) vibrations / oscillations that are <u>perpendicular</u> to the direction of energy transfer; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) The principle of superposition states that:</p><ul><li><p>Waves meet / overlap at a point; <em>[1 mark]</em></p></li><li><p>The resultant displacement is the sum of the individual displacements; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A stationary wave on a string is shown in Fig. 1.1.</p><p>Explain how the wave is formed, referring to the principle of superposition in your answer.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/8-1-2a-m-standing-wave.png' alt='8-1-2a-m-standing-wave' /></div>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Explain how the wave is formed, referring to the principle of superposition in your answer:</p><p>Explain how the wave is formed:</p><ul><li><p>Travelling waves move (from the centre of the string) to the fixed end(s) and then <u>reflect</u> back into the centre; <em>[1 mark]</em></p></li><li><p>Two travelling waves move in opposite directions along the string having the same / similar frequency / wavelength / amplitude; <em>[1 mark]</em></p></li></ul><p>Use the principle of superposition:</p><ul><li><p>(The two waves) superpose/interfere to produce the stationary wave; <em>[1 mark]</em></p></li><li><p>The (maximum) displacement in the centre is twice the initial maximum displacement / equal to the sum of the displacements of the individual waves; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig. 1.1, draw the stationary wave that would be formed on the string in part <strong>(a)</strong> with two more nodes and two more antinodes.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>On Fig. 1.1, draw the stationary wave that would be formed on the string in part (a) with two more nodes and two more antinodes.</p><p>Count the nodes and antinodes:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/screenshot-2023-02-27-at-12-44-27.png' alt='screenshot-2023-02-27-at-12-44-27' /></div><p>Draw a stationary wave with 4 nodes and three antinodes:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/screenshot-2023-02-22-at-14-51-58.png' alt='screenshot-2023-02-22-at-14-51-58' /></div><ul><li><p>Diagram as shown above; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows the appearance of a stationary wave on a stretched string at one instant in time.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/8-1-2c--m-stationary-wave-1-q.png' alt='8-1-2c--m-stationary-wave-1-q' /></div><p>Mark clearly on the diagram</p><p>(i) the equilibrium position,</p><p style='text-align: right;'>[1]</p><p>(ii) at least two nodes by labelling them <strong>N</strong>, and two antinodes by labelling them <strong>A</strong>,</p><p style='text-align: right;'>[2]</p><p>(iii) the direction in which points <strong>Q</strong>, <strong>R</strong>, <strong>S</strong> and <strong>T</strong> are about to move.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>A correctly annotated diagram looks like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-01-at-14-31-58.png' alt='screenshot-2023-03-01-at-14-31-58' /></div><p>(i) Mark clearly on the diagram the equilibrium position</p><ul><li><p>Equilibrium position horizontal and meets fixed end; <em>[1 mark]</em></p></li></ul><p>(ii) Mark clearly on the diagram at least two nodes by labelling them <strong>N</strong>, and two antinodes by labelling them <strong>A</strong></p><ul><li><p>At least two correct <strong>N</strong> <em>[1 mark]</em></p></li><li><p>At least two correct <strong>A</strong> <em>[1 mark]</em></p></li></ul><p>(iii) Mark clearly on the diagram the direction in which points <strong>Q</strong>, <strong>R</strong>, <strong>S</strong> and <strong>T</strong> are about to move.</p><ul><li><p><strong>Q</strong>, <strong>R</strong> and <strong>T</strong> moving downwards;<em> [1 mark]</em></p></li><li><p><strong>S</strong> moving upwards; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For the wave in Fig. 1.2 the frequency of vibration is 180 Hz and the speed of the waves along the string is 60 m s<sup>–1</sup>.</p><p>For this wave  </p><p>(i) Calculate the time period the stationary wave on the string.</p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the length of the string.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) Calculate the time period the stationary wave on the string:</p><p>Use the equation relating frequency and time period:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mn>1</mn><mn>180</mn></mfrac><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mi>ms</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) Calculate the length of the string:</p><p>List the known quantities:</p><ul><li><p>Frequency, <em>f</em> = 180 Hz</p></li><li><p>Speed, <em>v</em> = 60 m s<sup>–1</sup></p></li><li><p>Number of complete wavelengths = 2.5 (counted from the diagram)</p></li></ul><p>Use the wave equation to find wavelength:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>v</mi><mi>f</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>60</mn><mn>180</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>33</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p>Multiply λ by the number of wavelengths:</p><ul><li><p>Length = 2.5 × 0.33 = 0.83 m or 83 cm <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a stationary wave formed on a guitar string fixed at <strong>P</strong> and <strong>Q</strong> when it is plucked at its centre.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/8-1-3a-m-standing-wave.png' alt='8-1-3a-m-standing-wave' /></div><p><strong>X</strong> is a point on the string at maximum displacement.</p><p>Explain why a stationary wave is formed on the string</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Explain why a stationary wave is formed on the string:</p><p><em>Any </em><em><strong>three </strong></em><em>from:</em></p><ul><li><p>The travelling waves of the string move (from the centre) to the ends / points P and Q and reflect back into the centre; <em>[1 mark]</em></p></li><li><p>Two travelling waves move in opposite directions along the string; <em>[1 mark]</em></p></li><li><p>(The two waves have) the same frequency / wavelength; <em>[1 mark]</em></p></li><li><p>(The two waves have) the same / similar amplitude; <em>[1 mark]</em></p></li><li><p>(The two waves) superpose / interfere to produce the stationary wave; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The stationary wave in Fig. 1.1 is the D string of the guitar which has a frequency of 146.83 Hz.</p><p>Calculate the time taken for the string at point X to move from maximum displacement to its next maximum displacement.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the time taken for the string at point <strong>X</strong> to move from maximum displacement to its next maximum displacement:</p><p>List the known quantities:</p><ul><li><p>Frequency, <em>f</em> = 146.83 Hz</p></li></ul><p>Determine how much time elapses between maxima:</p><ul><li><p>The next maximum displacement is after ½ a cycle; <em>[1 mark]</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/screenshot-2023-02-27-at-12-54-04.png' alt='screenshot-2023-02-27-at-12-54-04' /></div></li></ul><p>Calculate the time taken:</p><ul><li><p>Time period for one cycle, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mrow><mn>146</mn><mo>.</mo><mn>83</mn></mrow></mfrac><mo>=</mo><mn>6</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Time period for ½ a cycle = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><mfenced><mrow><mn>6</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The progressive waves on the string travel at a speed of 190 m s<sup>–1</sup>.</p><p>Calculate length of the D string.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate length of the D string:</p><p>List the known quantities:</p><ul><li><p>Frequency, <em>f</em> = 146.83 Hz</p></li><li><p>Speed, <em>v</em> = 190 m s<sup>–1</sup></p></li></ul><p>Determine the wavelength using the wave equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>v</mi><mi>f</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>190</mn><mrow><mn>146</mn><mo>.</mo><mn>83</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mn>1</mn><mo>.</mo><mn>29</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Count the number of wavelengths and calculate the length of the string:</p><ul><li><p>Fig 1.1 shows half a wavelength</p></li><li><p>Length of string, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>29</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>65</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mn>65</mn><mo>&#160;</mo><mi>cm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>In a question like this one you can use a certain amount of common sense. You may not play guitar, but you have some idea of how large they are.</em></p><p><em>A person holding a guitar is nearly twice as long as the whole instrument, so a guitar must be about a metre long. The strings take up much less than the full length, so they must be less than one metre.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/screenshot-2023-02-22-at-13-59-04.png' alt='screenshot-2023-02-22-at-13-59-04' /></div><p><em>Picturing a guitar player in this way shows that the strings are very likely much less than a meter long, not quite a lot more. This should remind you to halve the wavelength. Try to become confident estimating real-life values by practicing visualisation, and even by measuring things to check your estimate!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A guitarist presses on the string at point R to shorten it and create the higher note ‘E’. The distance between R and Q in Fig. 1.2 is 0.29 m.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/8-1-3d-m-shortened-string.png' alt='8-1-3d-m-shortened-string' /></div><p>The speed of the progressive wave remains at 190 m s<sup>–1</sup> and the tension remains constant.</p><p>Calculate the frequency of note E.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the frequency of note E:</p><p>List the known quantities:</p><ul><li><p>Speed of the wave, <em>v</em> = 190 m s<sup>–1</sup></p></li><li><p>Distance RQ = 0.29 m</p></li></ul><p>Determine the wavelength:</p><ul><li><p>wavelength = 2 × length of string (RQ) <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>29</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>58</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p>Frequency calculation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>v</mi><mi>&#955;</mi></mfrac><mo>=</mo><mo>&#160;</mo><mfrac><mn>190</mn><mrow><mn>0</mn><mo>.</mo><mn>58</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>327</mn><mo>.</mo><mn>586</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>330</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Sound waves, like waves on a string, can produce stationary waves inside air columns. </p><p>A physics technician demonstrates how sound can set up stationary waves using a tall tube of cross-sectional area 4.0 × 10<sup>–3</sup> m<sup>2</sup> and a loudspeaker connected to a signal generator, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q2a-hard-aqa-a-level-physics.png' alt='3-2-s-q--q2a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The signal generator is switched on so that sound waves enter the tube. He slowly pours water into the tube and the sound gradually increases in volume, reaching a first maximum at a particular instant. Immediately after the volume begins to decrease. </p><p>Water continues to be added until the volume rises again, reaching a second and final maximum after a further 3.2 × 10<sup>–3 </sup>m<sup>3</sup> of water is poured in. </p><p>Determine the wavelength of the sound waves.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Cross-sectional area of the tube = 4.0 × 10<sup>–3</sup> m<sup>2</sup></p></li><li><p>Volume of water between two sound maxima = 3.2 × 10<sup>–3 </sup>m<sup>3</sup> </p></li></ul><p>Calculate the length of the water column between the first and second maxima of sound:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>v</mi><mi>o</mi><mi>l</mi><mi>u</mi><mi>m</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, the length of the water column between the first maxima and second maxima = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>3</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><mrow><mn>4</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 0.8 m <em>[1mark]</em> </p></li></ul><p>Calculate the wavelength:</p><ul><li><p>The length of the water column corresponds to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>λ</em></p></li><li><p>Therefore <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>λ </em>= 0.8 m</p></li><li><p><em>λ = </em>0.8 × 2 = 1.6 m <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>The first maxima of sound is heard when some water is already inside the tube. This is sketched below:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q2a-answer-hard-aqa-a-level-physics.png' alt='3-2-s-q--q2a-answer-hard-aqa-a-level-physics' /></div><p><em>The second maxima of sound is heard when some more water is poured in – according to the question, an additional volume of 3.2 × 10</em><em><sup>–3</sup></em><em> m</em><em><sup>3</sup></em><em>.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>To help explain the demo, the technician sketches how particles of air move around in a tube when a stationary sound wave is set up. This sketch is shown in Fig. 1.2. </p><p>A displacement anti-node is the maximum movement of particles in the air column. A displacement node is where there is no movement of particles in the air column. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q2b-hard-aqa-a-level-physics.png' alt='3-2-s-q--q2b-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>On Fig. 1.2, label all positions where there are displacement nodes.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Labels which would gain full credit are shown in the sketch below:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q2b-answer-hard-aqa-a-level-physics.png' alt='3-2-s-q--q2b-answer-hard-aqa-a-level-physics' /></div><ul><li><p>A displacement node is labelled at the closed end of the tube; <em>[1 mark]</em></p></li><li><p>Displacement nodes are labelled in the middle of each compression and rarefaction; <em>[1 mark]</em></p></li><li><p>All displacement nodes (5) correctly identified; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em> </em></p><p><em>Displacement nodes are places where the air does not move (zero displacement). It is displacement antinodes where the air moves the most.</em></p><p><em>Since sound waves are longitudinal, it helps to consider an analogy of a slinky spring to understand the displacement anti-nodes in this question. </em></p><p><em>A slinky spring fixed at one end and pushed back and forth is sketched below. Note: the fixed end corresponds to the closed end of the tube – which, in this case, is ‘closed’ by the surface of the water!</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q2b-answer1-hard-aqa-a-level-physics.png' alt='3-2-s-q--q2b-answer1-hard-aqa-a-level-physics' /></div><p><em>Using this sketch, you should be able to visualise a gas molecule in the centre of each compression / rarefaction which doesn’t move (because the compression / rarefaction oscillates around it). Hence, the centre of compressions and rarefactions act as displacement nodes.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When air passes through a displacement node it is squeezed through the node and it expands away from it, so the change in pressure is at a maximum. </p><p>One of the technician’s students asks, “Are positions of displacement nodes the same as positions where the air pressure is maximum?” </p><p>With reference to the meaning of a displacement node, and using Fig. 1.2, suggest how the technician might respond to the student.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>State the meaning of a displacement node:</p><ul><li><p>A displacement node is a position in the tube where the <u>air is not displaced</u> / the <u>displacement</u> of air <u>is zero</u>; <em>[1 mark]</em> </p></li></ul><p>Refer to the position of displacement nodes in the tube using Fig. 1.2:</p><ul><li><p>Displacement nodes are always set up <u>at the closed end of a tube</u> as shown in Fig. 1.2</p><p><em><strong>OR</strong></em></p><p>Fig. 1.2 shows displacement nodes at the centre of <u>compressions</u> and <u>rarefactions </u>of air; <em>[1 mark]</em> </p></li></ul><p>Link displacement nodes to pressure:</p><ul><li><p>Therefore, displacement nodes must exist where the pressure is maximum / displacement nodes are <u>pressure antinodes</u>; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>This is a tricky concept to grasp. That pressure nodes = displacement anti-nodes and vice versa. This diagram below should help. </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/file-000-13.png' alt='file-000-13' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In the space provided in Fig. 1.3 below, sketch the shape of the stationary sound wave set up in Fig. 1.2 </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q2d-hard-aqa-a-level-physics.png' alt='3-2-s-q--q2d-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>A sketch which would gain full credit is shown below:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-2-s-q--q2d-answer-hard-aqa-a-level-physics.png' alt='3-2-s-q--q2d-answer-hard-aqa-a-level-physics' /></div><ul><li><p>Standing wave shape with node at the closed end of the tube; <em>[1 mark]</em></p></li><li><p>5 displacement nodes; <em>[1 mark]</em></p></li><li><p>Dotted line indicating oscillating wave; <em>[1 mark]</em></p></li><li><p>Displacement anti-node at the open end of the tube; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>It is important to realise for this part of the question that a displacement anti-node will form the anti-node part of the standing wave and the node part will form the node part of the standing wave. You should sketch here a standing wave as normally expected in a pipe closed at one end and open at the other. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The diagram shows a common piece of laboratory equipment used to demonstrate wave phenomena.   </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/ib-sl-sq-h-q3a-question.png' alt='ib-sl-sq-h-q3a-question' /></div><p>Explain how waves from the loudspeaker form stationary waves in the tube. Include in your answer a condition for the formation of the wave and describe the wave which is formed.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Describe the wave which is formed:</p><ul><li><p>The wave will be a <u>stationary</u> wave <em><strong>AND </strong></em>with an <u>anti-node</u> at the open end; <em>[1 mark]</em></p><p>   </p></li></ul><p>Explain how the wave is formed:</p><ul><li><p><u>Longitudinal</u> waves from the loudspeaker <u>reflect at the closed end</u> of the tube</p><p><strong>AND</strong></p><p>The reflected wave travels in the <u>opposite direction</u> to the incident wave, causing <u>interference /  superposition</u>; <em>[1 mark]</em></p><p>   </p></li></ul><p>Describe the condition which must be met:</p><ul><li><p>A wave forms if the length of the tube is equivalent to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>n</mi><mi>&#955;</mi></mrow><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> /  an integral multiple of one-quarter of the wavelength; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Remember a node is always formed at the closed end of a tube and an anti-node at the open end.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Construct a three-part diagram linking the wave shape, node formation and pressure differences within the tube, for the third harmonic of the wave formed. Start with the template below in Fig. 1.1,   </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/ib-sl-sq-4-5-3b-question-phy.png' alt='ib-sl-sq-4-5-3b-question-phy' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>To construct a diagram linking aspects of the wave:</p><p>Start with three sections and complete in the first one the shape of the third harmonic:</p><ul><li><p>A diagram which would score one mark looks like:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/ib-sl-sq-h-q3b-model-answer-part-1.png' alt='ib-sl-sq-h-q3b-model-answer-part-1' /></div><ul><li><p>Third harmonic drawn correctly <strong>AND</strong> three identical tubes &#x27;stacked&#x27; above each other; <em>[1 mark]</em></p></li></ul><p>Sketch the formation of nodes and antinodes so they can be linked to the wave shape:</p><ul><li><p>A diagram which would score two marks looks like:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/ib-sl-sq-h-q3b-model-answer-part-2.png' alt='ib-sl-sq-h-q3b-model-answer-part-2' /></div><ul><li><p>Antinodes and nodes are all marked correctly; <em>[1 mark]</em></p></li><li><p>The antinode / node pattern is (by eye) situated correctly relative to the wave shape above; <em>[1 mark]</em></p></li></ul><p>Sketch the compressions and rarefactions so they can be linked to the wave shape:</p><ul><li><p>A diagram which would score two marks looks like:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/ib-sl-sq-h-q3b-model-answer-part-3.png' alt='ib-sl-sq-h-q3b-model-answer-part-3' /></div><ul><li><p>Compressions and rarefactions marked correctly and labelled as either a compression / rarefaction or high pressure / low pressure (<u>not</u> C and R unless a key explains the meaning); <em>[1 mark]</em></p></li><li><p>The pattern is (by eye) situated correctly relative to either the wave shape or the antinodes / nodes above; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>A 3-part diagram basically means three lots of Fig. 1.1 need to be drawn. It is much clearer to draw three separate pipes to show the information but you would still gain the marks for showing this information on one pipe.</em></p><p><em>It can be helpful in long questions like this to tick off each requirement:</em></p><ul><li><p><em>Wave shape</em></p></li><li><p><em>Node formation</em></p></li><li><p><em>Pressure difference</em></p></li></ul><p><em>Drawing accurate diagrams is a key skill. With any diagram, you are communicating a great deal. If your diagram is wrong, then what it communicates is also wrong. So it really matters!</em></p><p><em>Note that although the mark scheme says parts of the diagram should stack up &#x27;by eye&#x27;, in the example ruled, dashed lines are shown. Why not take that extra moment to be sure that both you (and the Examiner) are clear how the parts of the diagram connect?</em></p><p><em>Finally, although a key is not mentioned in the question, one is shown in the solution. This is because using the abbreviations A, N, C and R makes for a neater diagram, but as with defining variables in equations, they must be explained.</em></p><p><em>Try not to get confused with sketching standing waves for harmonics. A second harmonic standing wave does not exist for a pipe open at one end, so the third harmonic must have an anti-node at the open end. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The speed of sound in the tube is 340 m s<sup>−1</sup> and the frequency of the sound emitted by the loudspeaker is 920 Hz for the third harmonic of the wave.</p><p>For this equipment calculate:</p><p>(i) The length of the tube, giving the answer in cm.</p><p style='text-align: right;'>  [2]</p><p>(ii) The wavelength of the seventh harmonic, giving the answer in S.I. units.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed of sound in the tube, <em>v</em> = 340 m s<sup>−1</sup></p></li><li><p>Frequency of the wave, <em>f</em> = 920 Hz</p></li></ul><p>(i) Calculate the wavelength using the wave equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>v</mi><mi>f</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>340</mn><mn>920</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>3696</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>40</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the length of the tube:</p><ul><li><p>Length, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>75</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>3696</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>2772</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>L</em> = 0.28 m = 28 cm <em>[1 mark]</em></p></li></ul><p>(ii) Express wavelength in terms of <em>n</em> and <em>L</em> for the seventh harmonic:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>4</mn><mi>L</mi></mrow><mi>n</mi></mfrac><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>4</mn><mo>&#160;</mo><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>28</mn></mrow><mn>7</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>16</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>λ</em> = 0.16 m <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>It is important to realise that part (i) of this question requires you to use the information about the third harmonic and diagram from part b). </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A pipe of the same length has its closed end removed to create a pipe open at both ends. </p><p>Show that the seventh harmonic of sound is also produced for sound of the same wavelength as the seventh harmonic when one end of the pipe is closed. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Wavelength of sound, <em>λ </em>= 0.16 m (from part c)</p></li><li><p>Length of pipe, <em>L </em>= 0.28 m (from part c)</p></li><li><p>Speed of sound in the closed-ended pipe, <em>v </em>= 340 m s<sup>−1</sup> (from part c)</p></li></ul><p>Calculate the new frequency of sound for the seventh harmonic in the closed pipe, <em>f</em><sub><em>c</em></sub>:</p><ul><li><p>Recall: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>c</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>n</mi><mo>&#160;</mo><mi>v</mi></mrow><mrow><mn>4</mn><mi>L</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>c</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>7</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>340</mn></mrow><mrow><mn>4</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>28</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>c</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2125</mn><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>Hz <em>[1 mark]</em></p></li></ul><p>Calculate the frequency of sound in the open-ended pipe, <em>f</em><sub><em>o</em></sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>c</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>n</mi><mo>&#160;</mo><mi>v</mi></mrow><mrow><mn>4</mn><mi>L</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and recall <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>n</mi><mo>&#160;</mo><mi>v</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>c</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>f</mi><mi>o</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2125</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4250</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> Hz <em>[1 mark]</em></p></li></ul><p>Calculate the speed of sound, <em>v </em>in the open-ended pipe:</p><ul><li><p><em>v </em>= <em>fλ </em></p></li><li><p><em>v </em>= 4250 × 0.16 = 680 m s<sup>−1</sup> <em>[1 mark]</em></p></li></ul><p>Calculate the harmonic of the sound, <em>n</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>c</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>n</mi><mo>&#160;</mo><mi>v</mi></mrow><mrow><mn>4</mn><mi>L</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mo>&#8594;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><msub><mi>f</mi><mi>c</mi></msub><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>4</mn><mi>L</mi></mrow><mi>v</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>4250</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>28</mn></mrow><mn>680</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>It can be tricky to visualise the seventh harmonic, so make a quick sketch to help. </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/file-000-15.png' alt='file-000-15' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

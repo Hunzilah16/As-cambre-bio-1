@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1.3 Errors & Uncertainties - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">1.3 Errors & Uncertainties</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 1. Physical Quantities & Units</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 12 Questions (146 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A physics teacher tells a class:</p><p>&quot;Measurements may give a precise value for the quantity being determined but this may not necessarily be an accurate value”</p><p>Describe what is meant by </p><p>(i) accuracy</p><p style='text-align: right;'>[1]</p><p>(ii) precision</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Draw lines on Fig. 1.1 to show how accuracy and precision are affected by different types of error</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/DF5RXTw3_1-2-accuracy-precision-errors-box-connector.png' alt='DF5RXTw3_1-2-accuracy-precision-errors-box-connector' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The teacher uses the diagram shown in Fig. 1.2 to illustrate the difference between accuracy and precision.</p><p>The circles represent targets A, B, C and D and the dots represent arrows hitting the targets.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-2-1c-e-1-2-e-precision-and-accuracy-targets-cie-ial-sq.png' alt='1-2-1c-e-1-2-e-precision-and-accuracy-targets-cie-ial-sq' /></div><p>Complete the following sentences to explain how targets A, B, C and D represent differing degrees of accuracy and precision. </p><table class='data-table'><tr><td><p style='text-align: center;'><strong>neither accurate nor precise</strong></p></td><td><p style='text-align: center;'><strong>accurate but not precise</strong></p></td><td><p style='text-align: center;'><strong>precise but not accurate</strong></p></td><td><p style='text-align: center;'><strong>  both accurate and precise</strong></p></td></tr></table><p>A is ................................................................................ </p><p>B is ................................................................................ </p><p>C is ................................................................................ </p><p>D is ................................................................................</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The temperature of the air in a room is measured using a mercury-in-glass thermometer.</p><p>For each of the following, tick [<strong>✓</strong>] one box to indicate whether the experimental technique would improve accuracy, precision or neither. The first row has been completed as an example. </p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>improves accuracy</strong></p></td><td><p style='text-align: center;'><strong>improves precision </strong></p></td><td><p style='text-align: center;'><strong>improves neither</strong></p></td></tr><tr><td><p>correcting for an incorrectly calibrated thermometer</p></td><td><p style='text-align: center;'></p><p style='text-align: center;'><strong>✓</strong></p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>taking repeat readings of temperature and finding an average</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>using a thermometer with a linear scale</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>keeping your eye in line with the scale and the liquid level for each temperature reading</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr></table>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Distinguish between random and systematic errors.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>From a set of metal discs, one has a mass of 9.5 g and a thickness of approximately 2 mm.</p><p>State the instrument that should be used to measure</p><p>(i) the mass of one or more discs</p><p style='text-align: right;'>[1]</p><p>(ii) the thickness of one disc</p><p style='text-align: right;'>[1]</p><p>(iii) the thickness of a stack of 20 discs.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student takes five repeat readings of the thickness of the disc. The readings are shown in Table 1.1.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p><strong>thickness / mm</strong></p></td><td><p style='text-align: center;'>2.012</p></td><td><p style='text-align: center;'>2.001</p></td><td><p style='text-align: center;'>1.998</p></td><td><p style='text-align: center;'>2.008</p></td><td><p style='text-align: center;'>1.994</p></td></tr></table><p>Using the readings in Table 1.1, calculate</p><p>(i) the mean value of thickness</p><p style='text-align: right;'>[2]</p><p>(ii) the range of the results</p><p style='text-align: right;'>[1]</p><p>(iii) the uncertainty in the mean value of thickness.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State how the instrument used to measure thickness can </p><p>(i) reduce or avoid a systematic error</p><p style='text-align: right;'>[1]</p><p>(ii) reduce random errors</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student uses a stopwatch to measure the time taken for one complete swing of a pendulum.</p><p>They measure the time for 10 complete oscillations to be 16.4 ± 0.1 s.</p><p>Calculate </p><p>(i) the mean value of the time taken for one complete swing</p><p style='text-align: right;'>[1]</p><p>(ii) the absolute uncertainty in this mean value</p><p style='text-align: right;'>[1]</p><p>(iii) the percentage uncertainty in this mean value.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student is using the pendulum to determine a value for the acceleration of free fall <em>g</em>.</p><p>As well as the period <em>T</em> of oscillation, they also take measurements of the length <em>L</em> of the pendulum.</p><p>The value obtained, with its uncertainty, is <em>L</em> = 67 ± 1 cm.</p><p>Calculate the percentage uncertainty in the measurement of the length <em>L</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The relationship between <em>T</em>, <em>L</em> and <em>g</em> is given by</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo> </mo><mo>=</mo><mo> </mo><mn>4</mn><msup><mi mathvariant="normal">π</mi><mn>2</mn></msup><mfrac><mi>L</mi><msup><mi>T</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Using your answers in <strong>(a)</strong> and <strong>(b)</strong>, show that the percentage uncertainty in the value of <em>g</em> is 2.7%.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>There are some occasions where the resolution of an instrument is not the only limiting factor of uncertainty in a measurement.</p><p>State </p><p>(i) the meaning of the &#x27;resolution of an instrument&#x27;</p><p style='text-align: right;'>[1]</p><p>(ii) <strong>one</strong> limiting factor that affects the uncertainty in the measurement of time using a stopwatch.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[4 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The speed <em>v</em> of a transverse wave on a uniform string is given by the expression</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo> </mo><mo>=</mo><mo> </mo><msqrt><mfrac><mrow><mi>T</mi><mi>l</mi></mrow><mi>m</mi></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <em>T</em> is the tension in the string, <em>l</em> is its length and <em>m</em> is its mass.</p><p>An experiment is performed to determine the speed <em>v</em> of the wave. The measurements are shown in Table 1.1.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>quantity</strong></p></td><td><p style='text-align: center;'><strong>measurement</strong></p></td><td><p style='text-align: center;'><strong>uncertainty</strong></p></td></tr><tr><td><p style='text-align: center;'><em>T</em></p></td><td><p style='text-align: center;'>1.8 N</p></td><td><p style='text-align: center;'>± 5%</p></td></tr><tr><td><p style='text-align: center;'><em>l</em></p></td><td><p style='text-align: center;'>126 cm</p></td><td><p style='text-align: center;'>± 1%</p></td></tr><tr><td><p style='text-align: center;'><em>m</em></p></td><td><p style='text-align: center;'>5.1 g</p></td><td><p style='text-align: center;'>± 2%</p></td></tr></table><p>Use the data in Table 1.1 to calculate the speed <em>v</em>.</p><p style='text-align: right;'><em>v</em> = ................................................. m s<sup>–1</sup> </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use your answer in <strong>(a)</strong> and the data in Table 1.1 to calculate the absolute uncertainty in the value of <em>v</em>.</p><p style='text-align: right;'>absolute uncertainty = ................................................. m s<sup>–1</sup> </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[18 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student used the apparatus shown to investigate the time taken for a hollow cylinder to roll down a ramp as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-2-2a-m-1-2-ramp-g-experiment-cie-ial-sq.png' alt='1-2-2a-m-1-2-ramp-g-experiment-cie-ial-sq' /></div><p>State the most appropriate instrument for the measurement of the following, and describe how they can ensure the measurements are as accurate as possible </p><p>(i) the heights <em>h</em><sub>1</sub> and <em>h</em><sub>2</sub></p><p style='text-align: right;'>[2]</p><p>(ii) the time taken for the cylinder to roll down the ramp</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student wants to find the difference in height Δ<em>h</em> between the start line and finish line</p><p>The heights are recorded as</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 67.5 ± 0.1 cm</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 8.6 ± 0.1 cm</p><p>Determine the change in height Δ<em>h</em>, quoting your answer with its uncertainty</p><p style='text-align: right;'>Δ<em>h</em> = …………………… ± …………………… cm </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student placed the cylinder on the start line and released it. She measured the time<em> t</em> for the cylinder to roll to the finish line. She repeated the measurements several times as shown in Table 1.1.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><em><strong>t</strong></em><strong> / s</strong></p></td><td><p style='text-align: center;'>0.88</p></td><td><p style='text-align: center;'>0.82</p></td><td><p style='text-align: center;'>0.80</p></td><td><p style='text-align: center;'>0.86</p></td></tr></table><p>(i) Use the data in Table 1.1 to calculate the mean value of <em>t</em> and its uncertainty.</p><p style='text-align: right;'>mean value of <em>t</em> = ............................... ± ..........................  [2]</p><p>(ii) Comment on the accuracy and precision of the data the student collected.</p><p style='text-align: right;'>[2]</p><p>(iii) Explain how reducing the value of <em>h</em><sub><em>1</em></sub> could improve the measurement of <em>t</em>.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The relationship between <em>t</em> and the acceleration of free fall <em>g</em> is given by</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mo> </mo><mfrac><mrow><mn>4</mn><msup><mi>s</mi><mn>2</mn></msup></mrow><mrow><mi>g</mi><mo>∆</mo><mi>h</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <em>s</em> is the distance along the ramp between the start line and the finish line.</p><p>The student recorded the ramp length as <em>s</em> = 102.0 cm ± 0.1 cm</p><p>(i) Determine a value for <em>g</em>.</p><p style='text-align: right;'>[2]</p><p>(ii) Determine the percentage uncertainty in the value of <em>g</em>.</p><p style='text-align: right;'>[2]</p><p>(iii) Deduce whether the value of <em>g</em> is accurate.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[15 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cube made from aluminium is placed on a horizontal surface, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-2-3a-m-1-2-cube-pressure-density-uncertainty-cie-ial-sq.png' alt='1-2-3a-m-1-2-cube-pressure-density-uncertainty-cie-ial-sq' /></div><p>The following measurements were made on the cube:</p><p style='text-align: center;'>mass = 0.59 ± 0.01 kg</p><p style='text-align: center;'>length of one side = 6.0 ± 0.1 cm</p><p>Calculate the pressure produced by the cube on the surface.                                                                               </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Calculate the percentage uncertainty in the pressure.</p><p style='text-align: right;'>[2]</p><p>(ii) State the pressure, with its actual uncertainty.</p><p style='text-align: right;'>pressure = .................... ± .................... Pa  [2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the density of aluminium with its uncertainty. </p><p>Express your answer to an appropriate number of significant figures.</p><p style='text-align: right;'>density .................. ± .................. g cm<sup>−3</sup>  </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student uses vernier callipers to measure the length of the side of the cube. After completing the experiment, he realises that when the callipers are fully closed, the reading is not zero. </p><p>(i) State and explain whether this introduces a random error or a systematic error in the readings of the length.</p><p style='text-align: right;'>[2]</p><p>(ii) Explain why the readings are precise but not accurate.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[18 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Analogue voltmeters and cathode-ray oscilloscopes (c.r.o.) are both devices which can measure potential differences.</p><p>For the analogue voltmeter and the c.r.o., describe <strong>one</strong> example of:</p><p>(i) a systematic error that can affect both devices</p><p style='text-align: right;'>[1]</p><p>(ii) a systematic error that can only affect the analogue voltmeter</p><p style='text-align: right;'>[1]</p><p>(iii) a random error that can affect both devices</p><p style='text-align: right;'>[1]</p><p>(iv) a random error that can only affect the analogue voltmeter.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The potential difference across a resistor is measured using the analogue voltmeter shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-2-4b-m-1-2-analogue-voltmeter-cie-ial.png' alt='1-2-4b-m-1-2-analogue-voltmeter-cie-ial' /></div><p>The resistor is labelled as having a resistance of 125 Ω ± 3%.</p><p>(i) Calculate the power dissipated by the resistor.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the percentage uncertainty in the calculated power.</p><p style='text-align: right;'>[2]</p><p>(iii) Determine the value of the power, with its absolute uncertainty, to an appropriate number of significant figures.</p><p style='text-align: right;'>  power = ..................................... ± ..................................... W  [2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A microphone connected to a cathode ray oscilloscope (c.r.o.) detects a sound wave of frequency <em>f</em>. The signal from the microphone is observed on the c.r.o. as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-2-4c-m-1-2-oscilloscope-trace-uncertainty-sq-cie-ial.png' alt='1-2-4c-m-1-2-oscilloscope-trace-uncertainty-sq-cie-ial' /></div><p>The time-base setting of the c.r.o. is 0.50 ms cm<sup>–1</sup>. The Y-plate setting is 2.5 mV cm<sup>–1</sup>.</p><p>Using the trace in Fig. 1.2, determine</p><p>(i) the amplitude of the signal, in mV</p><p style='text-align: right;'>amplitude = ................................................... mV  [2]</p><p>(ii) the frequency, in Hz</p><p style='text-align: right;'>frequency = .................................................... Hz  [3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Determine the percentage uncertainty in amplitude caused by reading the scale on the c.r.o.</p><p style='text-align: right;'>[2]</p><p>(ii) State the amplitude with its actual uncertainty.</p><p style='text-align: right;'>amplitude = ................................ ± ................................ mV  [1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student participates in an experiment to measure <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, the acceleration due to gravity on Earth. This is done using a simple pendulum.</p><p>The student suggests the period of oscillation <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is related to the length <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the pendulum by the equation:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo> </mo><mo>=</mo><mo> </mo><mn>2</mn><mi mathvariant="normal">π</mi><mo> </mo><msqrt><mfrac><mi>L</mi><mi>g</mi></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Table 1.1 shows the ten repeat readings of period <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'>0.67</p></td><td><p style='text-align: center;'>0.66</p></td><td><p style='text-align: center;'>0.67</p></td><td><p style='text-align: center;'>0.68</p></td><td><p style='text-align: center;'>0.69</p></td><td><p style='text-align: center;'>0.64</p></td><td><p style='text-align: center;'>0.66</p></td><td><p style='text-align: center;'>0.65</p></td><td><p style='text-align: center;'>0.68</p></td><td><p style='text-align: center;'>0.65</p></td></tr></table><p>Determine the mean period of oscillation and its percentage uncertainty.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a new experiment, the length <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the pendulum is measured with a percentage uncertainty of 1.8% and the acceleration due to free-fall <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is measured with a percentage uncertainty of 1.6%.</p><p>If the time for the pendulum to complete 20 oscillations is 18.4 s, determine the time period for one oscillation and the absolute uncertainty in this value.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Measurements of time periods for different lengths of pendula were taken using a stopwatch and plotted on the graph shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q2c_uncertainties-and-errors_ib-sl-physics-sq.png' alt='q2c_uncertainties-and-errors_ib-sl-physics-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Explain how the graph in Fig. 1.1 indicates that the readings are subject to systematic and random uncertainties.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The period <em>T</em> for a mass <em>m</em> hanging on a spring performing simple harmonic motion is given by the equation:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo> </mo><mo>=</mo><mo> </mo><mn>2</mn><mi mathvariant="normal">π</mi><msqrt><mfrac><mi>m</mi><mi>k</mi></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Such a system is used to determine the spring constant <em>k</em>. The fractional error in the measurement of the period <em>T</em> is <em>α</em> and the fractional error in the measurement of the mass <em>m</em> is <em>β</em>.</p><p>Determine the fractional error in the calculated value of <em>k</em> in terms of <em>α</em> and <em>β</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The drag force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> acting on a car moving with speed <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> along a straight horizontal road is given by</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>k</mi><mi>&#961;</mi><mi>A</mi><msup><mi>v</mi><mi>n</mi></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p>where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is an integer, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is the density of air, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is the cross-sectional area of the car, and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is a constant with no units.</p><p>An experiment is performed to determine the drag force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> on the car. The measurements are shown in Table 1.1.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><p style='text-align: center;'>quantity</p><p style='text-align: center;'>measurement</p><p style='text-align: center;'>uncertainty</p></tr><tr><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'>1.20 kg m<sup>-3</sup></p></td><td><p style='text-align: center;'>± 2%</p></td></tr><tr><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'>5.1 m<sup>2</sup></p></td><td><p style='text-align: center;'>± 4%</p></td></tr><tr><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'>13.4 m s<sup>-1</sup></p></td><td><p style='text-align: center;'>± 1%</p></td></tr></table><p>Use SI base units to show that <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is equal to 2.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The value of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> for the car in <strong>(c)</strong> is 0.28. The uncertainty in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is negligible.</p><p>(i) Use the data in Table 1.1 to calculate the percentage uncertainty in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p><p style='text-align: right;'>[1]</p><p>(ii) Determine <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> with its absolute uncertainty. Give your values to the appropriate number of significant figures.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In an experiment to determine the emissivity of a circular surface, the diameter <em>d </em>of the object is measured using the vernier scale shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-2-1a-h-1-2-h-vernier-scale-cie-ial-sq.png' alt='1-2-1a-h-1-2-h-vernier-scale-cie-ial-sq' /></div><p>Determine the diameter of the circular object from the reading in Fig. 1.1 and its associated uncertainty.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The energy per unit time <em>P</em> radiated by an object with surface area <em>A</em> at absolute temperature <em>T</em> is given by</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mi>e</mi><mi>σ</mi><mi>A</mi><msup><mi>T</mi><mn>4</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <em>e</em> is the emissivity of the object and <em>σ </em>is the Stefan-Boltzmann constant.</p><p>Show that the emissivity <em>e</em> has no unit.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>As well as diameter <em>d</em>,<em> </em>the following measurements were taken: </p><p style='text-align: center;'><em>P</em> = 3.0 ± 0.1 W</p><p style='text-align: center;'><em>T</em> = 500 ± 1 K</p><p>Determine the value of the emissivity <em>e</em> of the surface and its uncertainty. Give your answer to an appropriate degree of precision.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a circuit designed by a student investigating the variation of potential difference with time as a capacitor charges and discharges whilst maintaining a constant current.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/1-2-2a-h-1-2-h-capacitor-uncertainty-circuit-cie-ial-sq.png' alt='1-2-2a-h-1-2-h-capacitor-uncertainty-circuit-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The power supply has an e.m.f. of 6.0 V and negligible internal resistance. During the charging process, the maximum value of the resistance of the variable resistor is 100 kΩ.</p><p>(i) Suggest <strong>one</strong> advantage of using an analogue ammeter rather than a digital ammeter for this experiment.</p><p style='text-align: right;'>[1]</p><p>(ii) Fig. 1.2 shows three analogue ammeters which can detect currents up to a maximum of 50 µA, 100 µA or 500 µA. Suggest, with a calculation, which of the analogue ammeters in Fig. 1.2 would be most suitable for the experiment.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-2-2a-h--analogue-ammeters-cie-ial-sq.png' alt='1-2-2a-h--analogue-ammeters-cie-ial-sq' /></div><p style='text-align: right;'>[3]</p><p>(iii) State the uncertainty in a reading of current using the ammeter you choose in <strong>(ii)</strong>.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A digital voltmeter with a three-digit display is used to measure the potential difference across the capacitor. A reading made during the charging process is shown in Fig. 1.3.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-2-2b-h-1-2-h-voltmeter-reading-cie-ial-sq.png' alt='1-2-2b-h-1-2-h-voltmeter-reading-cie-ial-sq' /></div><p>The manufacturers of the meter state that its accuracy is ±2% and ±1 digit.</p><p>(i) Determine the maximum possible value of the potential difference across the capacitor at the moment the reading in Fig. 1.3 was taken.</p><p style='text-align: right;'>[2]</p><p>(ii) The reading on the voltmeter has high precision. State and explain why the reading may not be accurate.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Initially, the shorting lead is connected across the capacitor, as shown in Fig. 1.1, to fully discharge it. The timer is started at the moment the shorting lead is disconnected as the capacitor begins to charge.</p><p>The student measures the potential difference across the capacitor at 5 s intervals while adjusting the variable resistor to keep the charging current constant.</p><p>The label on the capacitor states its capacitance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is 510 μF.</p><p>Determine the number of different readings the student will be able to take before the capacitor becomes fully charged. </p><p>The charge on the capacitor is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo> </mo><mo>=</mo><mo> </mo><mi>C</mi><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The capacitor used in the experiment has a manufacturing tolerance of ±10%. Throughout the experiment, the charging current is maintained at the value calculated in <strong>(a)</strong>.</p><p>The data from the experiment produces a straight-line graph for the variation of potential difference with time. This shows that the potential difference across the capacitor increases at a rate of 110 mV s<sup>−1</sup>.</p><p>(i) Calculate the true capacitance of the capacitor.</p><p style='text-align: right;'>[2]</p><p>(ii) Deduce whether the capacitor is within the manufacturer’s tolerance.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 12 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>An object of mass 50.00 g is placed on four different balances. For each balance, the reading is taken five times, as shown in Table 1.1.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Balance</strong></p></td><td><p style='text-align: center;'><strong>Mass Reading / g</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>1st</strong></p></td><td><p style='text-align: center;'><strong>2nd</strong></p></td><td><p style='text-align: center;'><strong>3rd</strong></p></td><td><p style='text-align: center;'><strong>4th</strong></p></td><td><p style='text-align: center;'><strong>5th</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>1</strong></p></td><td><p style='text-align: center;'>50.00</p></td><td><p style='text-align: center;'>50.00</p></td><td><p style='text-align: center;'>50.02</p></td><td><p style='text-align: center;'>50.01</p></td><td><p style='text-align: center;'>50.02</p></td></tr><tr><td><p style='text-align: center;'><strong>2</strong></p></td><td><p style='text-align: center;'>50.12</p></td><td><p style='text-align: center;'>49.94</p></td><td><p style='text-align: center;'>50.04</p></td><td><p style='text-align: center;'>49.89</p></td><td><p style='text-align: center;'>49.95</p></td></tr><tr><td><p style='text-align: center;'><strong>3</strong></p></td><td><p style='text-align: center;'>50.52</p></td><td><p style='text-align: center;'>50.53</p></td><td><p style='text-align: center;'>50.52</p></td><td><p style='text-align: center;'>50.54</p></td><td><p style='text-align: center;'>50.54</p></td></tr><tr><td><p style='text-align: center;'><strong>4</strong></p></td><td><p style='text-align: center;'>48.9</p></td><td><p style='text-align: center;'>49.6</p></td><td><p style='text-align: center;'>50.2</p></td><td><p style='text-align: center;'>50.9</p></td><td><p style='text-align: center;'>51.1</p></td></tr></table><p>Analyse the data and conclude which sets of readings are accurate, precise or neither.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A titanium sphere and a titanium cylinder were used in an experiment to measure the density of titanium. The diameter of the sphere was measured using a micrometer, and the diameter of the cylinder was measured using vernier callipers, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-2-3b-h-vernier-micrometer-scales-diameter-reading-cie-ial-sq.png' alt='1-2-3b-h-vernier-micrometer-scales-diameter-reading-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Using Fig. 1.1, determine</p><p>(i) the diameter of the titanium sphere, in cm, with its uncertainty.</p><p style='text-align: right;'>[2]</p><p>(ii) the diameter of the titanium cylinder, in cm, with its uncertainty.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The measurements for the mass and height of the cylinder with their fractional uncertainties are shown in Table 1.2.</p><p style='text-align: center;'><strong>Table 1.2</strong></p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>measurement</strong></p></td><td><p style='text-align: center;'><strong>fractional uncertainty</strong></p></td></tr><tr><td><p style='text-align: center;'>cylinder mass / g</p></td><td><p style='text-align: center;'>774.8</p></td><td><p style='text-align: center;'>0.03</p></td></tr><tr><td><p style='text-align: center;'>cylinder height / cm</p></td><td><p style='text-align: center;'>15.0</p></td><td><p style='text-align: center;'>0.01</p></td></tr></table><p>The object used in <strong>(a)</strong> was the titanium sphere. The mass of the sphere was measured using the balance 2 shown in Table 1.1.</p><p>Determine </p><p>(i) the density of the titanium sphere, in g cm<sup>−3</sup>, and its associated percentage uncertainty.</p><p style='text-align: right;'>[3]</p><p>(ii) the density of the titanium cylinder, in g cm<sup>−3</sup>, and its associated percentage uncertainty.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The true value of the density of the titanium used in both the cylinder and the sphere was found to be 4.51 g cm<sup>–3</sup>. </p><p>The student assumes that the percentage difference between the density of the titanium cylinder and the true value is solely due to the uncertainty in the volume and the uncertainty in the mass. </p><p>Assess the validity of this assumption.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

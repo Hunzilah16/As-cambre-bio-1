@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>9.1 Electric Current - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">9.1 Electric Current</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 9. Electricity</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 7 Questions (62 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define the amp.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A charge of 60 × 10<sup>–6</sup> C flows through a given section of a conductor in 140 × 10<sup>–3</sup> s. Calculate the electric current, stating the final answer in mA.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use words from the list below to complete the description of the movement of charge carriers in a conductor.</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>average current</strong></p></td><td><p style='text-align: center;'><strong>delocalised</strong></p></td><td><p style='text-align: center;'><strong>electric force</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>electric field</strong></p></td><td><p style='text-align: center;'><strong>randomly</strong></p></td><td><p style='text-align: center;'><strong>drift</strong></p></td></tr></table><p>The charge carriers in a metal conductor are ...................... electrons.</p><p>Normally the electrons move ..................... in all directions, but if a potential difference is applied between two points on the conductor, then an ..................... is created.</p><p>This causes an ..................... to act on the charge carriers, causing them to ..................... along the conductor in a resultant direction. </p><p>Therefore we can say that a steady ..................... flows through the conductor.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The conductor described in part (d) has a cross-sectional area of 1.1 × 10<sup>−7</sup> m<sup>2</sup> and the electrons have an average drift speed of 18 mm s<sup>−1</sup>.</p><p>Calculate the number density of electrons in this conductor.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The Standard International System of Units (SI) is a system of measurement based on seven base units. </p><p>State the <strong>symbol </strong>and the <strong>SI unit </strong>for electric charge.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a circuit, a current of 2.0 A flows through a resistor for 90 minutes.</p><p>Calculate the total charge passing through the resistor in this time.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the number of electrons that pass a point in the resistor in part (b).</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When a copper wire is exposed to a potential difference, a current is detected in it.</p><p>Explain, with reference to charge carriers and electric fields, why there is a current detected in the wire.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Electric current is defined as the rate of flow of electric charge.</p><p>(i) State the particle responsible for carrying electric charge around a circuit </p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the total electric charge carried by ten million of these particles</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A lamp forms part of a circuit. A current of 0.3 mA passes through the lamp for a period of 5 minutes.</p><p>Calculate the amount of charge which passes a point in the lamp over those 5 minutes.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A section of wire in the lamp in part (b) has a cross-sectional area of 4.5 × 10<sup>−5</sup> m<sup>2</sup>. </p><p>Using the current calculated in part (b), calculate the average drift velocity of the electrons when the number density of electrons in this section of wire is 3.6 × 10<sup>22</sup> m<sup>−3</sup>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a typical electric circuit involving a battery, lamp and two resistors.<strong> </strong></p><p>There is a gap in the circuit between points <strong>X</strong> and <strong>Y</strong>.  </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-1-s-q--q1b-easy-aqa-a-level-physics.png' alt='5-1-s-q--q1b-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Draw on<strong> </strong>Fig. 1.1: </p><p>(i) An <strong>ammeter</strong> between <strong>X</strong> and <strong>Y</strong> that would measure the current in the circuit </p><p style='text-align: right;'>[2]</p><p>(ii) The direction of <strong>conventional current</strong> in the circuit</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The smallest conductor within a computer processing chip can be represented as a rectangular block that is one atom high, four atoms wide and twenty atoms long. One such block is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/9-1-2a-m-conducting-chip.png' alt='9-1-2a-m-conducting-chip' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>The block is made from phosphorus atoms of diameter <em>d</em> = 3.8 × 10<sup>–10</sup> m. The atoms are deposited on an insulating surface. This ensures that the atoms touch each other.</p><p>The processing chip has a resistance, measured from <strong>P</strong> to <strong>Q</strong>, of 220 Ω.</p><p>(i) Define current.</p><p style='text-align: right;'>[1]</p><p>(ii) Describe for this processing chip the properties which will affect the current.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the number density of free electrons within the block.</p><p>Assume that each phosphorus atom contributes one free electron.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the current between P and Q when the mean drift velocity of free electrons in the block is 1.9 × 10<sup>–5</sup> m s<sup>–1</sup>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>There are about 10<sup>9</sup> of these tiny conductors in a single chip each carrying the current calculated in part (c).</p><p>Estimate the total power dissipated in these conductors in a single chip.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>A power source is connected across a component. The current in the component is 40 mA.</p><p>Calculate the total charge that flows past a point in the component in 3 minutes.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the number of electron charge carriers passing the same point in the conductor in this time.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>8.6 J of energy are transferred to the conductor in this time.      </p><p>(i) Calculate the potential difference across the component.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the resistance of the conductor.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Nancy is testing a new type of light bulb. She records the amount of current and the relative brightness of the light coming from the bulb. </p><p>Sketch a possible circuit diagram to show this experimental setup. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the ammeter needs to be connected in series.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain the results Nancy should expect to obtain, assuming the resistance of the bulb, ammeter and circuit remain constant.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Nancy sets up her circuit and begins to conduct her experiment. Her first readings are negative values of current. </p><p>Identify the problem and suggest a solution. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[4 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define the <em>coulomb</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>An electric current is a flow of charge carriers.</p><p>In the following list, underline the possible charges for a charge carrier.</p><p style='text-align: center;'>1.6 × 10<sup>–20</sup> C ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 1.6 × 10<sup>–19</sup> C ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 4.0 × 10<sup>–19</sup> C ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 8.0 × 10<sup>–19</sup> C</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The diameter of a wire XY varies linearly with distance along the wire as shown in Fig. 6.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/1258-cie-paper-2-q6-drift-speed-wire.png' alt='A cylindrical conductor with current I flowing from left to right. Diameter at point X is 2d, narrowing to d at point Y. Drift speed at X is indicated as Vx.' /></div><p style='text-align: center;'><strong>Fig. 6.1</strong></p><p>There is a current <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> in the wire. At end X of the wire, the diameter is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and the average drift speed of the free electrons is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi mathvariant="normal">X</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>. At end Y of the wire, the diameter is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p><p>On Fig. 6.2, sketch a graph to show the variation of the average drift speed with position along the wire between X and Y.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/37152-cie-paper-2-q6-drift-speed-vs-position-graph.png' alt='Grid graph with x-axis labelled &quot;position along wire&quot; from X to Y, and y-axis labelled &quot;average drift speed&quot; with increments vx to 4vx.' /></div><p style='text-align: center;'><strong>Fig. 6.2</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

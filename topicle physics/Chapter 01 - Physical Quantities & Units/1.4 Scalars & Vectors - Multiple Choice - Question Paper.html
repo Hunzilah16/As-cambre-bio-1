@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1.4 Scalars & Vectors - Multiple Choice Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">1.4 Scalars & Vectors</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 1. Physical Quantities & Units</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 16 Questions (16 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which pair contains one vector and one scalar quantity?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>Displacement</p></td><td><p style='text-align: center;'>Acceleration</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>Force</p></td><td><p style='text-align: center;'>Kinetic energy</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>Momentum</p></td><td><p style='text-align: center;'>Velocity</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>Power</p></td><td><p style='text-align: center;'>Speed</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Two physical quantities <strong>P</strong> and <strong>Q</strong> are added together. The sum of <strong>P</strong> and <strong>Q</strong> is <strong>R</strong>, as shown in the diagram.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/q9-easy-1-1-cie-ial-physics.png' alt='q9-easy-1-1-cie-ial-physics' /></div><p>Which quantity could be represented by <strong>P</strong> and by <strong>Q</strong>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>Kinetic energy</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>Power</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>Speed</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>Velocity</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The arrow represents the vector <strong>R</strong>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/q10-1-easy-1-1-cie-ial-physics.png' alt='q10-1-easy-1-1-cie-ial-physics' /></div><p>Which diagram does <strong>not</strong> represent <strong>R</strong> as two perpendicular components?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images437png.png' alt='cie-ial-images437png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images438png.png' alt='cie-ial-images438png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images439png.png' alt='cie-ial-images439png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images440png.png' alt='cie-ial-images440png' /></div></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a resultant force <em>F</em> at an angle of <em>θ</em> to the horizontal. The horizontal component <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>x</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>and vertical component <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>y</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> are labelled on the diagram.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/cie-1-4-mcq-easy-q4-cie-ial-physics.png' alt='cie-1-4-mcq-easy-q4-cie-ial-physics' /></div><p>What is the horizontal component of <em>F</em>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi mathvariant="normal">&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mi mathvariant="normal">&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mi>tan</mi><mo>&#160;</mo><mi mathvariant="normal">&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>y</mi></msub><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mi mathvariant="normal">&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which one of the following statements is <strong>true</strong>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>A scalar quantity has both magnitude and direction</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>A scalar quantity has only direction</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>A vector quantity has only magnitude</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>A vector quantity has both magnitude and direction</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The speed of an aeroplane in still air is 200 km h<sup>-1</sup>. The wind blows from the west at a speed of 85.0 km h<sup>-1</sup>.</p><p>In which direction must the pilot steer the aeroplane in order to fly due north?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>23.0° east of north</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>23.0° west of north</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>25.2° east of north</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>25.2° west of north</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Vectors <strong>P</strong> and <strong>Q</strong> are drawn to scale.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/q4-medium-1-2-cie-ial-physics.png' alt='q4-medium-1-2-cie-ial-physics' /></div><p>Which diagram represents the vector (<strong>P</strong> – <strong>Q</strong>)?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images441png.png' alt='cie-ial-images441png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images442png.png' alt='cie-ial-images442png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images443png.png' alt='cie-ial-images443png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images444png.png' alt='cie-ial-images444png' /></div></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A vector has magnitude <strong>R</strong> and perpendicular components <strong>P</strong> and <strong>Q</strong>, as shown in the diagram.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/q7-1-1-medium-cie-ial-physics.png' alt='q7-1-1-medium-cie-ial-physics' /></div><p>Which row correctly describes the perpendicular components?</p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Vertical component</strong></p></td><td><p style='text-align: center;'><strong>Horizontal component</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'><em>Q</em></p><p style='text-align: center;'><em>R </em>cos <em>θ</em></p><p style='text-align: center;'><em>R </em>cos <em>θ</em></p><p style='text-align: center;'><em>R </em>sin <em>θ</em></p></td><td><p style='text-align: center;'>sin <em>θ</em></p><p style='text-align: center;'><em>P</em></p><p style='text-align: center;'><em>R </em>sin <em>θ</em></p><p style='text-align: center;'><em>R </em>cos <em>θ</em></p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A resultant force of 20 N is 30° to the horizontal.</p><p>What is the horizontal and vertical component of the resultant force?</p><table class='data-table'><tr><td><p> </p></td><td><p><strong>Horizontal</strong></p><p><strong>Component / N</strong></p></td><td><p><strong>Vertical Component / N</strong></p></td></tr><tr><td><p><strong>A</strong></p></td><td><p>17</p></td><td><p>10</p></td></tr><tr><td><p><strong>B</strong></p></td><td><p>10</p></td><td><p>17</p></td></tr><tr><td><p><strong>C</strong></p></td><td><p>11.5</p></td><td><p>10</p></td></tr><tr><td><p><strong>D</strong></p></td><td><p>17</p></td><td><p>11.5</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 10 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Fig 1.1 shows three coplanar forces which are in equilibrium.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/cie-1-4-mcq-med-q5-cie-ial-physics.png' alt='cie-1-4-mcq-med-q5-cie-ial-physics' /></div><p>What is the value of force <em>F</em>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>5 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>8.7 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>11 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>15 N</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 11 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A ship’s speed in still water is 20 km h<sup>−1</sup>. A current coming from the east pushes the ship at a constant speed of 5 km h<sup>−1</sup>. At what bearing should the captain direct the ship so that it travels perfectly due north?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>014.5°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>075.5°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>284.5°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>345.5°</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 12 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Two forces, each of 10 N, act at a point <em>P</em> as shown in the diagram. The angle between the force vectors is 120° </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images3.png' alt='cie-ial-images3' /></div><p>What is the magnitude of the resultant force?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>5 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>10 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>17 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>20 N</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 13 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagrams represent systems of coplanar forces acting at a point. The lengths of the force vectors represent the magnitudes of the forces.</p><p>Which system of forces is in equilibrium?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/mVHLqCWI_cie-ial-images4.png' alt='mVHLqCWI_cie-ial-images4' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images5.png' alt='cie-ial-images5' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images6.png' alt='cie-ial-images6' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images7.png' alt='cie-ial-images7' /></div></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 14 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A glider is descending at a constant speed at an angle of 15° to the horizontal. The diagram shows the directions of the lift <strong>L</strong>, air resistance <strong>R</strong> and weight <strong>W</strong> acting on the glider.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images9.png' alt='cie-ial-images9' /></div><p>Which vector triangle could represent the forces acting on the glider?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images10.png' alt='cie-ial-images10' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images11.png' alt='cie-ial-images11' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images12.png' alt='cie-ial-images12' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images13.png' alt='cie-ial-images13' /></div></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 15 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Figure 1.1 shows two coplanar forces, <em>R</em> and <em>N</em>, which act at point <em>P</em>. The angle between the forces is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#952;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>></mo><mn>90</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> .</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/cie-mcq-1-4-q4-cie-ial-physics.png' alt='cie-mcq-1-4-q4-cie-ial-physics' /></div><p>What is the magnitude of the resultant force <em>F</em> equal to?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>N</mi><mn>2</mn></msup><mo>-</mo><msup><mi>F</mi><mn>2</mn></msup></msqrt><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>N</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>R</mi><mi>N</mi><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mo>(</mo><mn>180</mn><mo>-</mo><mi>&#952;</mi><mo>)</mo></msqrt><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>N</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>R</mi><mi>N</mi><mo>&#160;</mo><mi>cos</mi><mo mathvariant="italic">&#160;</mo><mo>(</mo><mi>&#952;</mi><mo>)</mo></msqrt><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>N</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>R</mi><mi>N</mi><mo>&#160;</mo><mi>sin</mi><mo>(</mo><mi>F</mi><mo>)</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 16 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A boat is being pulled along by two equal forces of 700 kN, both at angle<em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#952;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> to the direction of motion. The boat experiences a resistive force of 40 kN. The net force on the boat is 1270 kN.</p><p>What is the value of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#952;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>21°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>25°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>57°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>61°</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

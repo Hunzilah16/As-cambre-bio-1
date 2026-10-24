@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4.2 Equilibrium of Forces - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">4.2 Equilibrium of Forces</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 4. Forces, Density & Pressure</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 10 Questions (106 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define the following</p><p>(i) moment of a force</p><p style='text-align: right;'>[2]</p><p>(ii) centre of gravity.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) A moment of a force is defined as:</p><ul><li><p>The turning effect of a force; <em>[1 mark]</em></p></li><li><p>Moment = Force × perpendicular distance from the pivot <strong>OR </strong><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>;<em> [1 mark]</em></p><p> </p></li></ul><p>(ii) Centre of gravity is defined as:</p><ul><li><p>The single point where the weight (of a body) can be taken as acting from; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em> </p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A teacher sets some Physics students the task of finding the weight of a broom using only a ruler, some thin, light string, and a set of laboratory masses. The equipment is initially arranged as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-1b-e-moments-weighing-a-broom-1.png' alt='4-1-1b-e-moments-weighing-a-broom-1' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>The students are not allowed to use scales.</p><p>For the arrangement in Fig. 1.1.   </p><p>(i) State why the broom is hanging horizontally.</p><p style='text-align: right;'>[2]</p><p>(ii) State what measurement the students should make to start their investigation to find the weight of the broom.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>For the arrangement in Fig. 1.1.</p><p>(i) State why the broom is hanging horizontally:</p><ul><li><p>The broom is in equilibrium; <em>[1 mark]</em></p></li><li><p>The string is fixed at the centre of mass;<em> [1 mark]</em></p></li></ul><p>(ii) State what measurement the students should make to start their investigation to find the weight of the broom:</p><ul><li><p>Distance from either end to the string;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The students will need to know the position of the centre of mass, so they definitely need the distance from one end to the string, which must be at the centre of mass for equilibrium.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The measurement to the position of the string found in part (b) is shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-1c-e-moments-weighing-a-broom-2.png' alt='4-1-1c-e-moments-weighing-a-broom-2' /></div><p style='text-align: center;'><strong>Fig. 1.2.</strong></p><p>Distance from string to the end of the handle = 0.75 m</p><p>The string is moved towards the end of the handle, so that the broom is in equilibrium when a 0.5 kg mass is hung a distance of 0.45 m from the string as shown in Fig. 1.3.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-1c-e-moments-weighing-a-broom-3.png' alt='4-1-1c-e-moments-weighing-a-broom-3' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>Determine</p><p>(i) the distance between the centre of mass of the broom and the point where the string is attached.</p><p style='text-align: right;'>[1]</p><p>(ii) the force exerted by the 0.5 kg mass.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) Determine the distance between the centre of mass of the broom and the point where the string is attached:</p><ul><li><p>Total distance from end of handle to centre of mass = 0.75 m</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-22-at-11-56-11.png' alt='screenshot-2023-03-22-at-11-56-11' /></div><ul><li><p>Distance to centre of mass, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>75</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>45</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>12</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>18</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>; <em>[1 mark]</em></p></li></ul><p>(ii) Determine the force exerted by the 0.5 kg mass:</p><ul><li><p>force exerted = weight acting downwards</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>9</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the weight of the broom.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the weight of the broom:</p><p>Sketch a diagram to show the forces and distances:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/trumpet-train-2009.png' alt='moments broom MA' /></div><p>Apply the principle of moments to the point where the string is attached to the broom:</p><ul><li><p>Sum of anti-clockwise moments = sum of clockwise moments</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>18</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>9</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>45</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>4</mn><mo>.</mo><mn>9</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>45</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>18</mn></mrow></mfrac><mo>=</mo><mo>&#160;</mo><mn>12</mn><mo>.</mo><mn>25</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>12</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Many students are reluctant to &#x27;waste time&#x27; sketching diagrams which don&#x27;t get marks. This is not a waste of time!</em></p><p><em>The diagram ensures you write the correct values in your calculation.</em></p><p><em>Although not marked directly, it is an essential part of the process to find the solution.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A metre rule is balanced on a pivot at its mid-point.</p><p>A force of 10.0 N acts at a distance of 8.0 cm from one end of the rule as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-2a-e-moments-metre-rule-1.png' alt='4-1-2a-e-moments-metre-rule-1' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the moment of the 10.0 N force about the pivot.</p><p style='text-align: right;'>moment = .................................................... N m</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To calculate the moment:</p><p>List the known quantities:</p><ul><li><p>Force, <em>F</em> = 10 N</p></li><li><p>Distance of force from the end of the ruler = 8.0 cm</p></li><li><p>Therefore distance of force from pivot, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>50</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>8</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>42</mn><mo>&#160;</mo><mi>cm</mi><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo mathvariant="bold">&#160;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>42</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Recall the equation for a moment and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>10</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>42</mn><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>In a question like this one the first mark is for identifying the correct distance, so at that stage you could answer in cm or m and still get the mark.</em></p><p><em>However the question specifies N</em><em><strong>m</strong></em><em> as the final unit, so to get the next two marks you have to convert to </em><em><strong>metres</strong></em><em>.</em></p><p><em>Keep an eye on units in moments questions as they can be tricky.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A mass is placed at a point 35 cm from the pivot, which makes the metre rule balance.</p><p>On Fig. 1.1, draw an arrow to show the position of the mass and the direction of the force it exerts.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>On Fig. 1.1, draw an arrow to show the position of the mass and the direction of the force it exerts.</p><p>A correctly annotated diagram looks like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-2b-e-moments-metre-rule-2.png' alt='4-1-2b-e-moments-metre-rule-2' /></div><ul><li><p>Downwards arrow marked on the right of the pivot (so it causes a clockwise moment); <em>[1 mark]</em></p></li><li><p>Mass / force arrow 35 cm from pivot (distance labelled or by eye); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the <strong>mass </strong>which has been placed to balance the ruler in part (a).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Calculate the <strong>mass </strong>which has been placed to balance the ruler in part (a):</p><p>Use the diagram and distances from parts (a) and (b):</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-22-at-12-01-29.png' alt='screenshot-2023-03-22-at-12-01-29' /></div><p>Apply the principle of moments since the ruler is in equilibrium:</p><ul><li><p>sum of clockwise moments = sum of anti-clockwise moments</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#215;</mo><mn>35</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>10</mn><mo>&#215;</mo><mn>42</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>420</mn><mn>35</mn></mfrac><mo>=</mo><mn>12</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Convert weight to mass:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>g</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>12</mn><mrow><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi>kg</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A team of decorators set up a raised bench to allow them to reach the ceiling.</p><p>The bench consists of a plank which is resting in a horizontal position on two supports <strong>B</strong> and <strong>C</strong>. The plank is modelled as a uniform rod <strong>AD</strong> of length 2.7 m and mass 15 kg. The supports at <strong>B</strong> and <strong>C</strong> are 0.4 m from each end of the plank, as shown in Fig 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-1a-m-moments-decorators.png' alt='4-1-1a-m-moments-decorators' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>Two decorators, Ruby and Luke, stand on the plank. Luke has a mass of 85 kg and stands in the middle of the plank. </p><p>Ruby has a mass of 72 kg and stands at end <strong>A</strong>.</p><p>The plank remains horizontal and in equilibrium. The decorators can be modelled as point masses.</p><p>Calculate:  </p><p>(i) The magnitude of the normal reaction force at <strong>B</strong>.</p><p style='text-align: right;'>[3]</p><p>(ii) The magnitude of the normal reaction force at <strong>C</strong>.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of Ruby, <em>M</em><sub>R </sub>= 72 kg</p></li><li><p>Mass of Luke, <em>M</em><sub>L</sub> = 85 kg</p></li><li><p>Mass of the plank, <em>M</em><sub>P</sub> = 15 kg</p></li><li><p>Length of plank, AD = 2.7 m</p></li><li><p>Acceleration due to gravity, <em>g</em> = 9.81 m s<sup>–2</sup></p></li></ul><p>Sketch a simplified diagram showing measurements and point masses:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-09-at-09-21-34.png' alt='screenshot-2023-03-09-at-09-21-34' /></div><p>(i) Calculate the magnitude of the normal reaction force at <strong>B</strong></p><p>Apply the principle of moments to take moments about point <strong>C</strong>:</p><ul><li><p>sum of clockwise moments = sum of anticlockwise moments</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><msub><mi>R</mi><mi>B</mi></msub><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>9</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>W</mi><mi>R</mi></msub><mo>&#215;</mo><mfenced><mrow><mn>2</mn><mo>.</mo><mn>7</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfenced></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>W</mi><mi>P</mi></msub><mo>+</mo><msub><mi>W</mi><mi>L</mi></msub></mrow></mfenced><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>95</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>B</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced><mrow><mn>72</mn><mi>g</mi><mo>&#215;</mo><mn>2</mn><mo>.</mo><mn>3</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>100</mn><mi>g</mi><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>95</mn></mrow></mfenced></mrow><mrow><mn>1</mn><mo>.</mo><mn>9</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>B</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1346</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1300</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) Calculate the magnitude of the normal reaction force at <strong>C</strong></p><p>Equate vertical forces:</p><ul><li><p>Since the plank is in equilibrium, the sum of upwards forces upwards = sum of forces downwards /<strong> </strong><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#931;</mi><mo>&#160;</mo><msub><mi>F</mi><mrow><mi>u</mi><mi>p</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#931;</mi><mo>&#160;</mo><msub><mi>F</mi><mrow><mi>d</mi><mi>o</mi><mi>w</mi><mi>n</mi></mrow></msub><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>/<strong> </strong><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>B</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>W</mi><mi>R</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>L</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>P</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate normal reaction force at <strong>C</strong>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>W</mi><mi>R</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>L</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>P</mi></msub></mrow></mfenced><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>R</mi><mi>B</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>72</mn><mi>g</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>85</mn><mi>g</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>15</mn><mi>g</mi></mrow></mfenced><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>1346</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>341</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>340</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p><p><em>It&#x27;s very common for students to think that creating their own diagrams is a waste of time since &#x27;it doesn&#x27;t get any marks&#x27;. </em></p><p><em>It&#x27;s true that the diagram isn&#x27;t marked by the examiner directly, </em><em><strong>but </strong></em><em>it allows you to get the correct answer quickly, meaning you not only get these marks, but have </em><em><strong>time</strong></em><em> to answer the rest of the paper too!</em></p><p><em>For part (ii) you may have decided to take moments again. Any correct method that gets a correct answer will score full marks in the exam. </em></p><p><em>If you chose this method, your calculation should look like:</em></p><ul><li><p><em>Apply the principle of moments to take moments about point </em><em><strong>B</strong></em><em>:</em></p><ul><li><p><em>sum of clockwise moments = sum of anticlockwise moments</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo> </mo><mfenced><mrow><msub><mi>W</mi><mi>P</mi></msub><mo>+</mo><msub><mi>W</mi><mi>L</mi></msub></mrow></mfenced><mo>×</mo><mn>0</mn><mo>.</mo><mn>95</mn><mo> </mo><mo>=</mo><mo> </mo><mfenced><mrow><msub><mi>R</mi><mi>C</mi></msub><mo> </mo><mo>×</mo><mo> </mo><mn>1</mn><mo>.</mo><mn>9</mn></mrow></mfenced><mo> </mo><mo>+</mo><mo> </mo><mfenced><mrow><msub><mi>W</mi><mi>R</mi></msub><mo>×</mo><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo> </mo><msub><mi>R</mi><mi>C</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mfenced><mrow><mn>100</mn><mi>g</mi><mo>×</mo><mn>0</mn><mo>.</mo><mn>95</mn></mrow></mfenced><mo> </mo><mo>-</mo><mo> </mo><mfenced><mrow><mn>72</mn><mi>g</mi><mo>×</mo><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfenced><mo> </mo></mrow><mrow><mn>1</mn><mo>.</mo><mn>9</mn></mrow></mfrac><mo> </mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>C</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mn>342</mn><mo> </mo><mo>=</mo><mo> </mo><mn>340</mn><mo> </mo><mi mathvariant="normal">N</mi><mo> </mo><mfenced><mrow><mn>2</mn><mo> </mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Whilst Ruby stays at point <strong>A</strong>, Luke now moves along the plank to a point <strong>X</strong>.</p><p>The plank remains horizontal and in equilibrium, and the magnitude of the normal reaction force at <strong>B</strong> is now twice the magnitude of the normal reaction force at <strong>C</strong>.</p><p>Calculate the distance <strong>BX</strong>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of Ruby, <em>M</em><sub>R </sub>= 72 kg</p></li><li><p>Mass of Luke, <em>M</em><sub>L</sub> = 85 kg</p></li><li><p>Mass of the plank, <em>M</em><sub>P</sub> = 15 kg</p></li><li><p>Length of plank, <strong>AD</strong> = 2.7 m</p></li><li><p>Acceleration due to gravity, <em>g</em> = 9.81 m s<sup>–2</sup></p></li></ul><p>Sketch a simplified diagram showing the new position of Luke:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-09-at-10-04-54.png' alt='screenshot-2023-03-09-at-10-04-54' /></div><p>Equate vertical forces:</p><ul><li><p>Since the plank is in equilibrium, the sum of upwards forces upwards = sum of forces downwards /<strong> </strong><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#931;</mi><mo>&#160;</mo><msub><mi>F</mi><mrow><mi>u</mi><mi>p</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#931;</mi><mo>&#160;</mo><msub><mi>F</mi><mrow><mi>d</mi><mi>o</mi><mi>w</mi><mi>n</mi></mrow></msub><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>/<strong> </strong><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>B</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>W</mi><mi>R</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>L</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>P</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Write an expression, in terms of <em>R</em><sub>C</sub>, the reaction force at <strong>C</strong>:</p><ul><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>2</mn><mo>&#215;</mo><msub><mi>R</mi><mi>C</mi></msub></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mfenced><mrow><msub><mi>W</mi><mi>R</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>L</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>P</mi></msub></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>&#215;</mo><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>W</mi><mi>R</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>L</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>W</mi><mi>P</mi></msub></mrow></mfenced><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mfenced><mrow><mn>72</mn><mi>g</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>85</mn><mi>g</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>15</mn><mi>g</mi></mrow></mfenced><mn>3</mn></mfrac><mo>=</mo><mn>562</mn><mo>.</mo><mn>44</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>560</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine distance <strong>BX</strong> by taking moments about <strong>B</strong>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><msub><mi>W</mi><mi>P</mi></msub><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>95</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>W</mi><mi>L</mi></msub><mo>&#215;</mo><mo>&#160;</mo><mi>x</mi></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mfenced><mrow><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>9</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mfenced><mrow><msub><mi>W</mi><mi>R</mi></msub><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mfenced><mrow><msub><mi>R</mi><mi>C</mi></msub><mo>&#160;</mo><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>9</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mfenced><mrow><msub><mi>W</mi><mi>R</mi></msub><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfenced><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>W</mi><mi>P</mi></msub><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>95</mn></mrow></mfenced></mrow><msub><mi>W</mi><mi>L</mi></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mfenced><mrow><mn>560</mn><mo>&#160;</mo><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>9</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mfenced><mrow><mn>72</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfenced><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfenced><mrow><mn>15</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>95</mn></mrow></mfenced></mrow><mfenced><mrow><mn>85</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>45</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em><em><strong> </strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student investigates the principle of moments using the apparatus shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-2b-m-moments-table-with-books.png' alt='4-1-2b-m-moments-table-with-books' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The scale on the forcemeter reads from 0 N to 10 N.</p><p>A 3.0 N weight is positioned so that it hangs straight downwards from the 70 cm mark on the ruler.</p><p>Describe what the student could do to ensure that the ruler is horizontal.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Describe what the student could do to ensure that the ruler is horizontal:</p><p><em>Any one </em><em><strong>pair </strong></em><em>from:</em></p><ul><li><p>Measure height from bench to ruler in several places; <em>[1 mark]</em></p></li><li><p>Check the measurements are all the same; <em>[1 mark]</em></p><p></p></li><li><p>Place spirit level on the ruler; <em>[1 mark]</em></p></li><li><p>Bubble should be central; <em>[1 mark]</em></p><p></p></li><li><p>Measure angle between the ruler and the stand; <em>[1 mark]</em></p></li><li><p>Check it is a right angle; <em>[1 mark]</em></p><p></p></li><li><p>Place set square (triangle) at the join of the ruler and stand; <em>[1 mark]</em></p></li><li><p>Make sure the angle is a right angle; <em>[1 mark]</em></p><p></p></li><li><p>Set a marker level with the pivot; <em>[1 mark]</em></p></li><li><p>Ensure it is the same height as the end of the ruler; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student intends to investigate moments around the pivot.</p><p>(i) State the equation linking moment, force and distance from the pivot.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the moment of the 3.0 N weight.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The student intends to investigate moments around the pivot:</p><p>(i) State the equation linking moment, force and distance from the pivot:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#215;</mo><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>OR </strong>moment = force × distance; <em>[1 mark]</em></p></li><li><p>Where <em>F</em> = force / applied load and <em>d</em> = <u>perpendicular</u> distance from the pivot; <em>[1 mark]</em></p></li></ul><p>(ii) Calculate the moment of the 3.0 N weight:</p><p>List the known quantities:</p><ul><li><p><em>F</em> = 3.0 N</p></li><li><p><em>d</em> = 70 cm = 0.7 m</p></li></ul><p>Calculate the moment and write final answer with units:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>7</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>Nm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>When calculating moments it is acceptable to calculate distance using centimetres rather than metres (unless stated otherwise), but you </em><em><strong>must </strong></em><em>state the unit, which would be N cm in that case.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student positions the forcemeter at the 15 cm mark and uses it to hold the ruler horizontal.</p><p>He expects the reading on the forcemeter to be 14 N.</p><p>The actual reading is 10 N.</p><p>(i) Infer, showing your calculation, why the student made this assumption.</p><p style='text-align: right;'>[2]</p><p>(ii) Explain why the correct reading should be <strong>larger </strong>than 14 N.</p><p style='text-align: right;'>[2]</p><p>(iii) Explain why the actual reading is only 10 N.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>(i) Infer, showing your calculation, why the student made this assumption:</p><p>Apply the principle of moments:</p><ul><li><p>clockwise moment = anti-clockwise moment <strong>OR </strong><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>Nm</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>F</mi><mi>m</mi></msub><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>15</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Force read from forcemeter, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>m</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>2</mn><mo>.</mo><mn>1</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>15</mn></mrow></mfrac><mo>=</mo><mn>14</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) Explain why the correct reading should be <strong>larger </strong>than 14 N:</p><ul><li><p>The mass / weight of the ruler; <em>[1 mark]</em></p></li><li><p>Acts in the clockwise direction / has been ignored;<em> [1 mark]</em></p></li></ul><p>(iii) Explain why the actual reading is only 10 N:</p><ul><li><p>The scale on the forcemeter only goes up to 10 N; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>If you found yourself stuck for the final part of this question, then you had forgotten that in part (a) the question told you the forcemeter </em><em><strong>only went up to 10 N</strong></em><em>.</em></p><p><em>When you find yourself at a loss to answer any question it is </em><em><strong>always </strong></em><em>worth going back to the start and reading the previous subparts again. Often you will have forgotten small details which didn&#x27;t seem important but are relevant now.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The teacher asks the student and his friend to move a table with some books on it. They carry the table as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-2d-m-moments-table-with-books.png' alt='4-1-2d-m-moments-table-with-books' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Use ideas about moments to explain why student <strong>A</strong> feels more force on their hands than student <strong>B</strong>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Student <strong>A</strong> feels more force on their hands than student <strong>B </strong>because:</p><ul><li><p>The desk is in <u>equilibrium</u> so the clockwise moment = anti-clockwise moment; <em>[1 mark]</em></p></li><li><p>The books are closer to <strong>A</strong> / further from <strong>B</strong> <strong>OR </strong><em>d</em><sub>A</sub> &lt; <em>d</em><sub>B</sub>; <em>[1 mark]</em></p></li><li><p>Therefore force at A is larger / force at B is smaller /<strong> </strong><em>F</em><sub>A</sub> &gt; <em>F</em><sub>B  </sub>/ force and distance are inversely proportional to create the same moment; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>If you are writing your mark scheme with reference to </em><em><em>d</em></em><em><sub>A</sub></em><em> &lt; </em><em><em>d</em></em><em><sub>B</sub></em><em> and </em><em><em>F</em></em><em><sub>A</sub></em><em> &gt; </em><em><em>F</em></em><em><sub>B</sub></em><em>, make sure these are correctly labelled on Fig 1.2 so the examiner can see exactly what you&#x27;re referring to. You should avoid stating variables that you have no stated the meaning of or annotated on a diagram.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A pole <strong>PR </strong>has a length 6.0 m and a weight <em>W</em> N. The pole is held in a horizontal position in equilibrium by two vertical ropes attached to the pole as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-3a-m-pole-with-vertical-ropes.png' alt='4-1-3a-m-pole-with-vertical-ropes' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>A load of weight 10 N is attached to the rod at <strong>R</strong>.</p><p>The tension in the rope attached at <strong>Q</strong> is six times as large as the tension in the rope attached at <strong>P</strong>. </p><p>The pole is uniform and the ropes are light inextensible strings.</p><p>Calculate the value of <em>W</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>Calculate the value of <em>W</em></p><p>Write an expression for <em>T</em><sub>P</sub> in terms of <em>T</em><sub>Q</sub> :</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>Q</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>&#160;</mo><msub><mi>T</mi><mi>P</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine the value of <em>W</em> by setting up simultaneous equations:</p><p>Apply the principle of moments around <strong>P</strong>:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-13-at-12-36-07.png' alt='screenshot-2023-03-13-at-12-36-07' /></div><ul><li><p>sum of the clockwise moments = sum of the anti-clockwise moments</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>W</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>10</mn><mo>&#215;</mo><mn>6</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>4</mn><mo>.</mo><mn>1</mn><mo>&#215;</mo><mn>6</mn><mo>&#160;</mo><msub><mi>T</mi><mi>P</mi></msub><mo>&#160;</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>W</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>60</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>24</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><msub><mi>T</mi><mi>P</mi></msub><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>P</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mi>W</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>60</mn></mrow><mrow><mn>24</mn><mo>.</mo><mn>6</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>(equation 1)</em><em> [1 mark] </em></p></li></ul><p>Apply the principle of moments around <strong>Q</strong>:</p><p>Sketch a diagram showing measurements and forces:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-13-at-12-29-02.png' alt='screenshot-2023-03-13-at-12-29-02' /></div><ul><li><p>sum of the clockwise moments = sum of the anti-clockwise moments</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>10</mn><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>9</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><msub><mi>T</mi><mi>P</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><msub><mi>T</mi><mi>P</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>-</mo><mn>19</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>P</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>-</mo><mn>19</mn></mrow><mrow><mn>4</mn><mo>.</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>(equation 2)</em><em> [1 mark]</em></p></li></ul><p>Combine <em>equations 1</em> and<em> 2</em> to find <em>W</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>3</mn><mo>&#160;</mo><mi>W</mi><mo>+</mo><mn>60</mn></mrow><mrow><mn>24</mn><mo>.</mo><mn>6</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#160;</mo><msub><mi>T</mi><mi>P</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>W</mi><mo>-</mo><mn>19</mn></mrow><mrow><mn>4</mn><mo>.</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>.</mo><mn>1</mn><mo>&#215;</mo><mfenced><mrow><mn>3</mn><mo>&#160;</mo><mi>W</mi><mo>+</mo><mn>60</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mn>24</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>19</mn></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mo>.</mo><mn>3</mn><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>246</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>27</mn><mo>.</mo><mn>06</mn><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>467</mn><mo>.</mo><mn>4</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>27</mn><mo>.</mo><mn>06</mn><mo>-</mo><mn>12</mn><mo>.</mo><mn>3</mn></mrow></mfenced><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>246</mn><mo>+</mo><mn>467</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mn>14</mn><mo>.</mo><mn>76</mn><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>713</mn><mo>.</mo><mn>4</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>48</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>Without a clear sketch showing all the distances and forces, you have a </em><em><strong>much</strong></em><em> smaller chance of setting up the correct simultaneous equations, especially with the different distances. It also helps clearly see which forces are clockwise or anticlockwise depending on where you take moments from. Although the sketch doesn&#x27;t earn marks directly, it is good practice for getting the calculation right.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p><strong>Q</strong> is now moved to a point further along the pole until the length <strong>QR</strong> is 0.8 m , as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-3b-m-moments-balanced-beam.png' alt='4-1-3b-m-moments-balanced-beam' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>The pole remains in equilibrium. The load of 10 N is now moved to a point <em>x</em> metres from <strong>P</strong>.</p><p>The beam remains in equilibrium in a horizontal position.</p><p>The rope at <strong>Q</strong> will break if its tension exceeds 32 N. The rope at <strong>P</strong> cannot break.</p><p>Find the range of possible positions on the beam where the load can be attached without the rope at <strong>Q</strong> breaking.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Find the range of possible positions on the beam where the load can be attached without the rope at Q.</p><p>List the known quantities:</p><ul><li><p>Weight of load, <em>F</em> = 10 N</p></li><li><p>Distance <strong>PR</strong> = 6.0 m</p></li><li><p>Distance <strong>QR</strong> = 0.8 m</p></li><li><p>Weight of the pole, <em>W</em> = 48 N (from part a)</p></li><li><p>Maximum tension in rope at <strong>Q</strong>, <em>T</em><sub>Qmax</sub> = 32 N </p></li></ul><p>Make a sketch showing the forces and distances:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-13-at-12-52-39.png' alt='screenshot-2023-03-13-at-12-52-39' /></div><p>Apply principle of moments by taking moments about <strong>P</strong>:</p><ul><li><p>sum of clockwise moments = sum of anti-clockwise moments</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>10</mn><mo>&#160;</mo><mi>x</mi></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>3</mn><mo>&#215;</mo><mn>48</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>5</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><msub><mi>T</mi><mrow><mi>Q</mi><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>+</mo><mn>144</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>166</mn><mo>.</mo><mn>4</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>166</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>144</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>22</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>22</mn><mo>.</mo><mn>4</mn></mrow><mn>10</mn></mfrac><mo>=</mo><mn>2</mn><mo>.</mo><mn>24</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Deduce the range:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><mo>&#8804;</mo><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>&#8804;</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>24</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Notice that the question asks for a </em><em><strong>range</strong></em><em>, meaning just an answer of 2.24 m will not get you full marks. </em><em><em>x = </em></em><em>2.24 m is just the maximum distance before exceeding the tension limit of the rope at </em><em><strong>Q</strong></em><em>. The load could be placed at a smaller </em><em><em>x</em></em><em> (i.e. closer to </em><em><strong>P</strong></em><em>).</em></p><p><em>If you used the unrounded answer for weight from part a),  the calculated range would be </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><mo>&#8804;</mo><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>&#8804;</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>14</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><em> which would be awarded a mark.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State what is meant by the centre of gravity of an object.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Centre of gravity is defined as...</p><ul><li><p>The point on an object at which a (resultant) force acts such that it will not create a moment / will not cause rotation<strong>OR</strong>The point at which all the (object’s) mass / weight acts; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 1 mark]</strong></em>  </p><p><em>Careful with your wording, do </em><em><strong>not</strong></em><em> use definitions such as:</em></p><ul><li><p><em>Where mass is most concentrated</em></p></li><li><p><em>It has the same mass on both sides</em></p></li><li><p><em>All forces act through this point</em></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A uniform plank of wood of mass 40 kg and length 5.0 m is used by a boy to help him cross a ditch.</p><p>In the ditch is a rock, which is used to support the plank horizontally 1.1 m from one end, as shown in Fig. 1.1. The other end of the plank is supported by the bank.<strong> </strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q3b-medium-aqa-a-level-physics.png' alt='4-2-s-q--q3b-medium-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the vertical supporting force from the rock when the plank is placed in position as shown in Fig 1.1.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the vertical supporting force from the rock:</p><ul><li><p>The weight of 40 × <em>g</em> occurs at the centre of the (uniform) plank so <em>d</em> = ½ × 5.0</p></li><li><p>Moment of plank from the bank = <em>mg</em> × <em>d</em></p></li><li><p>Moment of plank from the bank = (40 × <em>g</em>) × (½ × 5.0)</p></li><li><p>Moment of plank from the bank = 40 × 9.81 × 2.5 = 981 N m <em>[1 mark]</em></p></li></ul><p>This moment is balanced by the reaction force from the rock </p><ul><li><p>Moment of plank from the rock = <em>F</em> × (5.0 – 1.1)</p></li><li><p>Moment of plank from the rock = <em>F</em> × 3.9 <em>[1 mark]</em></p></li></ul><ul><li><p>Vertical force from rock:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>981</mn><mrow><mn>3</mn><mo>.</mo><mn>9</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 251.5 = 250 N <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The boy begins to walk across the plank. The position of the boy is shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/B3ujkRlg_4-2-s-q--q3b-medium-aqa-a-level-physics.png' alt='B3ujkRlg_4-2-s-q--q3b-medium-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>On Fig. 1.2, draw arrows to show the forces acting on the plank when the boy has crossed some of the plank. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The forces acting on the plank when the boy has crossed some of the plank are:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q3c-ma-medium-aqa-a-level-physics.png' alt='4-2-s-q--q3c-ma-medium-aqa-a-level-physics' /></div><ul><li><p>Correctly drawn arrows; <em>[1 mark]</em></p></li><li><p>Correctly labelled arrows; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em>  </p><p><em>When labelling the weight of an object, make sure to draw from the centre of mass of the object.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The boy has a mass of 50 kg.</p><p>Determine whether the boy can walk to the far end of the plank without it tipping. Support your answer with a calculation.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Determine whether the boy can walk to the far end of the plank without it tipping:</p><ul><li><p>(At the point of tipping) there is no (reaction) force from the bank; <em>[1 mark]</em></p><p><em>This point must be in words, not implied from a calculation</em></p></li><li><p>So, moments on the RHS of the rock must be lower than moments on the LHS </p></li></ul><p><strong>Supporting calculation 1:</strong></p><ul><li><p>Taking moments about the rock to show RHS &lt; LHS; <em>[1 mark]</em></p></li><li><p>540 N m &lt; 550 N m, therefore, plank will not tilt; <em>[1 mark]</em></p><p></p><p><em>Example of calculation:</em></p><ul><li><p>LHS = (2.5 – 1.1) × 40 × <em>g </em>= 56 × 9.81 = 549.36 = 550 N m</p></li><li><p>RHS = 1.1 × 50 × <em>g </em>= 55 × 9.81 = 539.6 = 540 N m</p></li></ul></li></ul><p><strong>OR   Supporting calculation 2:</strong></p><ul><li><p>Showing a moment calculation that gives the maximum boy’s weight / mass that can be supported on the far edge of the plank (500 N / 51 kg) <em>[1 mark]</em></p></li><li><p>50 kg &lt; 51 kg, therefore, plank will not tilt; <em>[1 mark]</em></p><p></p><p><em>Example of calculation:</em></p><ul><li><p>Maximum weight = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>40</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>4</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>1</mn></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 499 = 500 N (or 51 kg)</p></li></ul></li></ul><p><strong>OR   Supporting calculation 3:</strong></p><ul><li><p>Showing a moment calculation that gives the maximum distance the boy can be from the rock without tipping (1.12 m) <em>[1 mark]</em></p></li><li><p>1.1 m &lt; 1.12 m, therefore, plank will not tilt; <em>[1 mark]</em></p><p></p><p><em>Example of calculation:</em></p><ul><li><p>Maximum distance = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>40</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>4</mn></mrow><mn>50</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.12 m</p></li></ul></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>It is said that Archimedes used huge levers to sink Roman ships invading the city of Syracuse.</p><p>A possible system is shown in  Fig. 1.1 where a rope is hooked onto the front of the ship and the lever is pulled by several men. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q4a-medium-aqa-a-level-physics.png' alt='4-2-s-q--q4a-medium-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the mass of the ship if its weight is 4.6 × 10<sup>4</sup> N. Give your answer to an appropriate number of significant figures.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the mass of the ship</p><ul><li><p>Weight:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>g</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Mass:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>4</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mn>4</mn></msup></mrow><mrow><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 4689 kg <em>[1 mark]</em><em><strong> </strong></em></p></li><li><p>Mass:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 4700 kg (2 s.f.) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the moment of the ship’s weight about point <strong>P</strong>. State an appropriate unit for your answer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the moment of the ship’s weight about point <strong>P</strong>:</p><ul><li><p>Moment about point <strong>P</strong> = Weight × Distance</p></li><li><p>Moment = 46 000 × 6.0 = 2.8 × 10<sup>5</sup> <em>[1 mark]</em> N m <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>When quoting a unit for moments, it is crucial to get the capitalisation correct i.e. do not write NM / nM / nm</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the minimum vertical force <em>T</em> required to start raising the front of the ship. Assume the ship pivots about point <strong>P</strong>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the minimum vertical force <em>T</em>:</p><ul><li><p>Total clockwise moments (tension in rope) about P = <em>T </em>× 15</p></li><li><p>Total anticlockwise moments (weight of the ship) about P = <em>W</em> × 6.0</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/08/4-1-s-q--q5b-medium-cie-a-level-ma.png' alt='4-1-s-q--q5b-medium-cie-a-level-ma' /></div><p>Use the principle of moments to find tension <em>T</em>:</p><ul><li><p>Total clockwise moments = Total anticlockwise moments</p></li><li><p><em>T </em>× 15 = (4.6 × 10<sup>4</sup>) × 6.0 <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced><mrow><mn>4</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mn>4</mn></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>0</mn></mrow><mn>15</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.8 × 10<sup>4</sup> N <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em>Allow T = 1.9 × 10</em><sup><em>4</em></sup><em> N if 2.8 × 10</em><sup><em>5</em></sup><em> used</em><em><strong> </strong></em></p><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the minimum force <em>F</em> that must be exerted to start to raise the front of the ship.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the minimum force <em>F</em>:</p><ul><li><p>Perpendicular component of <em>T </em>= <em>T</em> cos (21°) <em>[1 mark]</em></p></li></ul><p>The front of the ship will raise when...</p><ul><li><p>Total clockwise moments (pulling force <em>F</em>) &gt; Total anticlockwise moments (perpendicular component of <em>T</em>)</p></li><li><p><em>F</em> × 7.5 &gt; <em>T</em> cos (21°) × 3.0</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/08/2BJMfWDd_4-1-s-q--q5c-medium-cie-a-level-ma.png' alt='2BJMfWDd_4-1-s-q--q5c-medium-cie-a-level-ma' /></div><p>The minimum force required to raise the ship is...</p><ul><li><p>Total clockwise moments = Total anticlockwise moments</p></li><li><p><em>F</em> × 7.5 = <em>T</em> cos (21°) × 3.0 <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced><mrow><mn>1</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mn>4</mn></msup></mrow></mfenced><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mn>21</mn><mo>&#176;</mo><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>0</mn></mrow><mrow><mn>7</mn><mo>.</mo><mn>5</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>= 6722 = 6700 N (2 s.f.) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em>Allow F = 7100 N if 1.9 × 10</em><sup><em>4</em></sup><em> used</em><strong> </strong></p><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State what is meant by the <em>centre of gravity</em> of an object.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <div class='callout-box'><p>The centre of gravity of an object is:</p><ul><li><p>The point where the (entire) <u>weight</u> (of an object) is considered to act <em>[1 mark]</em></p></li></ul></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the <strong>two </strong>conditions required for an object to be in equilibrium.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <div class='callout-box'><p>The two conditions required for an object to be in equilibrium are:</p><ul><li><p>Resultant force is zero <em>[1 mark]</em></p></li><li><p>Resultant moment / torque (about any point) is zero <em>[1 mark]</em></p></li></ul></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A uniform beam AB of length 2.40 m and weight 50 N is hinged at end A. The beam is held in a horizontal position by a vertical wire attached to end B, as shown in Fig. 2.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/64156-cie-paper-2-q2-beam-equilibrium.png' alt='A horizontal beam AB of length 2.40 metres. The left end A is hinged at the wall and the right end B is held by a vertical wire with tension T. The beam&#x27;s weight of 50 newtons acts at its centre and a cube of density 2800 kilograms per cubic metre hangs at 0.8 m from A.' /></div><p style='text-align: center;'><strong>Fig. 2.1</strong> (not to scale)</p><p>A cube of side length 0.075 m is suspended from the beam at a distance of 0.80 m from A. The cube is made from a material of density 2800 kg m<sup>−3</sup>.</p><p>The beam is in equilibrium. Assume that the hinge is frictionless.</p><p>(i) Show that the weight of the cube is about 12 N.</p><p style='text-align: right;'>[2]</p><p>(ii) By taking moments about A, calculate the tension <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> in the wire.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>(i) To show that the weight of the cube is about 12 N:</p><ul><li><p>List the known quantities</p><ul><li><p>Side length of the cube, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 0.075 m</p></li><li><p>Density of the cube, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 2800 kg m<sup>−3</sup></p></li><li><p>Acceleration of free fall, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 9.81 m s<sup>−2</sup></p></li></ul></li><li><p>Calculate the volume of the cube:</p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>l</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><msup><mn>075</mn><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p><ul><li><p>Use the density equation to calculate the weight of the cube:</p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>m</mi><mi>V</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>V</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2800</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><msup><mn>075</mn><mn>3</mn></msup><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>11</mn><mo>.</mo><mn>58</mn><mo>.</mo><mo>.</mo><mo>.</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mn>12</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><em> </em>(2 s.f.) <em>[1 mark]</em></p><p>(ii) To calculate the tension <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> in the wire:</p><ul><li><p>Identify the moments acting about A</p></li></ul><p style='text-align: center;'>Anticlockwise moment = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>40</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'>Clockwise moments = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>50</mn><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>20</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>11</mn><mo>.</mo><mn>58</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>80</mn></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p><ul><li><p>Apply the principle of moments and calculate <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>:</p></li></ul><p>Since the beam is in equilibrium, anticlockwise moments = clockwise moments</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>40</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>50</mn><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>20</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>11</mn><mo>.</mo><mn>58</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>80</mn></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced><mrow><mn>50</mn><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>20</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>11</mn><mo>.</mo><mn>58</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>80</mn></mrow></mfenced></mrow><mrow><mn>2</mn><mo>.</mo><mn>40</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>28</mn><mo>.</mo><mn>86</mn><mo>.</mo><mo>.</mo><mo>.</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>29</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p><div class='callout-box'><p>1 mark for <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mi>T</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>40</mn></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <strong>OR</strong>  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mn>50</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>20</mn></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <strong>OR</strong>  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mn>11</mn><mo>.</mo><mn>58</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>80</mn></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p>1 mark for the correct application of the principle of moments to calculate <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cube in <strong>(c)</strong> is now completely submerged in a beaker of water, as shown in Fig. 2.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/24934-cie-paper-2-q2-upthrust-on-beam.png' alt='Beam AB with its weight of 50 newtons still acting at its centre and vertical tension T still acting at B but now the cube is hanging into a beaker of water.' /></div><p style='text-align: center;'><strong>Fig. 2.2</strong></p><p>The magnitude of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is unchanged.</p><p>State and explain the effect of this change on the magnitude and direction of the resultant moment of the forces on the beam about A.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <div class='callout-box'><p>State the effect of this change on the magnitude and direction of the resultant moment of the forces on the beam about A:</p><ul><li><p>Resultant/net moment is anticlockwise (no longer zero) <em>[1 mark]</em></p></li></ul><p>Explanation:</p><ul><li><p>The clockwise moment decreases as the apparent weight of the cube decreases <em>[1 mark]</em></p></li></ul></div><div class='callout-box'><p>It would be incorrect to say that the anticlockwise moment increases due to upthrust acting on the cube. This is because the upthrust does not act directly on the beam; therefore, it does not introduce a new clockwise moment about A on the beam; it simply reduces the tension in the cube&#x27;s support. Hence, it is the clockwise moment on the beam that decreases. </p></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a double-decker bus there are two passenger decks, stacked one above the other.</p><p>The dimensions of an older, &#x27;Routemaster&#x27; bus are:</p><p>Height = 4.38 m</p><p>Width = 2.44 m</p><p>Mass = 7.47 tons</p><p>To ensure safety, buses are tested for stability using a tilting platform as shown in Fig. 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-2a-h-moments-stability-routemaster-bus.png' alt='4-1-2a-h-moments-stability-routemaster-bus' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Weights are attached to the underside of the bus, then the angle the bus makes with the horizontal is gradually increased until the bus begins to topple to the left.  </p><p>(i) State the reason that the bus would topple to the left.</p><p style='text-align: right;'>[1]</p><p>(ii) Explain the effect of adding weights to the underside of the bus.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) State the reason that the bus would topple to the left:</p><p>The bus begins to topple because:</p><ul><li><p>The line of action of the centre of gravity falls outside the base of the bus <strong>OR</strong> the anticlockwise moment (of the bus) is greater than the clockwise moment; <em>[1 mark]</em></p></li></ul><p>(ii) Explain what effect adding weights to the underside of the bus would be:</p><ul><li><p>Lower the centre of gravity; <em>[1 mark]</em></p></li><li><p>It could tilt more before toppling (to the left); <em>[1 mark]</em></p></li><li><p>Increases stability;<em> [1 mark]</em></p></li></ul><p> <em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The bus is first tested completely empty, and is found to tilt to an angle of 40° from the horizontal before it starts to tip.</p><p>Determine the height above the ground of the centre of mass of the bus when it is empty and normally parked.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Determine the height above the ground of the centre of mass of the bus when it is empty and normally parked:</p><p>Redraw the diagram as a triangle:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-22-at-12-22-14.png' alt='screenshot-2023-03-22-at-12-22-14' /></div><p>Either on the diagram or seen in later calculation</p><ul><li><p>Angle to be used in calculation = 50° <strong>OR </strong>short side of triangle = 1.22 m <em>[1 mark]</em></p></li></ul><p>Calculate the height of the centre of mass:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>22</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>tan</mi><mfenced><mn>50</mn></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Since A-level questions are more complex there are often &#x27;intermediary&#x27; or &#x27;working&#x27; marks for numbers seen within a calculation. In this case you are being awarded one mark for correctly deriving at least one of the values you will need to calculate.</em></p><p><em>Your working is being rewarded so it&#x27;s well worth showing it.</em></p><p><em>The bus is not of uniform density, so it&#x27;s centre of mass will not be in the centre of the object.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>To be considered safe to use on the road the bus must be safe when carrying passengers.</p><p>To test this the top deck is weighted with iron blocks or sandbags to the equivalent of 60 passengers, while the lower deck is left empty.</p><p>The average passenger is assumed to have a mass of 65 kg and their centres of mass can be considered to act at a height of 3.28 m above the road.</p><p>1 ton = 1000 kg</p><p>For this safety test</p><p>(i) Calculate the new height of the centre of mass of the bus above the road.</p><p style='text-align: right;'>[2]</p><p>(ii) Suggest why the test is done with the top deck weighted to capacity and the bottom deck left empty.</p><p style='text-align: right;'> [1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) Calculate the new height of the centre of mass of the bus:</p><p>Determine the total mass of the &#x27;passengers&#x27; and the empty bus:</p><ul><li><p>Mass of &#x27;passengers&#x27;, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>p</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>65</mn><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>60</mn><mo>&#160;</mo><mi>passengers</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3900</mn><mo>&#160;</mo><mi>kg</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Mass of empty bus, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>b</mi></msub><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>.</mo><mn>47</mn><mo>&#160;</mo><mi>tons</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1000</mn><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7470</mn><mo>&#160;</mo><mi>kg</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Model the bus as a horizontal rod and take moments:</p><p><strong>Method 1: take moments around the new centre of mass and calculate:</strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-27-at-08-43-34.png' alt='screenshot-2023-03-27-at-08-43-34' /></div><p>Set up simultaneous equations for <em>x</em> and <em>y</em>:</p><ul><li><p>In equilibrium, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7470</mn><mi>g</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3900</mn><mi>g</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>y</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mn mathvariant="bold">7470</mn><mi mathvariant="bold-italic">x</mi><mo mathvariant="bold">&#160;</mo><mo mathvariant="bold">=</mo><mo mathvariant="bold">&#160;</mo><mn mathvariant="bold">3900</mn><mi mathvariant="bold-italic">y</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (<em>equation 1</em>)</p></li><li><p>Taking distance measurements, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>y</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>28</mn><mo>&#160;</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant="bold-italic">y</mi><mo mathvariant="bold">&#160;</mo><mo mathvariant="bold">=</mo><mn mathvariant="bold">1</mn><mo mathvariant="bold">.</mo><mn mathvariant="bold">78</mn><mo mathvariant="bold">&#160;</mo><mo mathvariant="bold">-</mo><mo mathvariant="bold">&#160;</mo><mi mathvariant="bold-italic">x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (<em>equation 2</em>)</p></li></ul><p>Substitute <em>equation 2</em> into <em>equation 1</em> and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7470</mn><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3900</mn><mi>y</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7470</mn><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3900</mn><mo>&#215;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>78</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>x</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7470</mn><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mo>&#160;</mo><mn>3900</mn><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6942</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>61</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Add distances together to find the height of C above the road:</p><ul><li><p>new height, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>61</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>11</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><strong>Method 2: take moments about the road, assuming a combined mass, and calculate:</strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-27-at-08-47-54.png' alt='screenshot-2023-03-27-at-08-47-54' /></div><p>Apply the principle of moments around <strong>R</strong>::</p><ul><li><p>In equilibrium, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>7470</mn><mi>g</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>5</mn></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>3900</mn><mi>g</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>28</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced><mrow><mn>7470</mn><mi>g</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>3900</mn><mi>g</mi></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>X</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>11</mn><mo>&#160;</mo><mn>205</mn><menclose notation="updiagonalstrike"><mi>g</mi></menclose></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>12</mn><mo>&#160;</mo><mn>792</mn><menclose notation="updiagonalstrike"><mi>g</mi></menclose></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced><mrow><mn>11</mn><mo>&#160;</mo><mn>370</mn><menclose notation="updiagonalstrike"><mi>g</mi></menclose></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>X</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>11</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) Suggest why the test is done with the top deck weighted to capacity and the bottom deck left empty:</p><ul><li><p>This moves the centre of mass to the highest position / makes the bus the least stable it could be; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>To pass the safety test the bus must be able to tilt to 28° when loaded as in part (c).</p><p>(i) Deduce whether the bus has passed the safety test.</p><p style='text-align: right;'>[2]</p><p>(ii) The safety testers imagine that the bus had 60 passengers upstairs, no passengers downstairs and that <strong>all </strong>the passengers on the top deck stood up simultaneously. This would shift their centres of mass by a mean distance of 40 cm higher.   </p><p>Explain whether this will make the bus fail its safety test.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) Deduce whether the bus has passed the safety test:</p><p>Set up a triangle to calculate the angle using trigonometry:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-27-at-08-54-48.png' alt='screenshot-2023-03-27-at-08-54-48' /></div><ul><li><p>Angle inside triangle, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mrow><mn>2</mn><mo>.</mo><mn>11</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>22</mn></mrow></mfrac></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>60</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Angle between bus and road, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#952;</mi><mi>R</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>90</mn><mo>-</mo><mn>60</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>30</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Draw a conclusion:</p><ul><li><p>The bus <u>tilted to more than 28°</u> without tipping so <u>yes</u> it does pass the safety test; <em>[1 mark]</em></p></li></ul><p>(ii) Explain whether all the passengers upstairs standing will make the bus fail its safety test.:</p><p>Calculate new angle between bus and road by moving the centre of mass 40 cm higher:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mrow><mn>2</mn><mo>.</mo><mn>11</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>4</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>22</mn></mrow></mfrac></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>64</mn><mo>&#160;</mo><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>New angle between bus and road, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#952;</mi><mi>R</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>90</mn><mo>-</mo><mn>64</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>26</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Draw a conclusion:</p><ul><li><p>The bus <u>tilts to less than 28°</u> without tipping so <u>yes</u> it will fail the safety test; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>For the final part of the question you could have recalculated the new centre of mass due to the passengers standing up. However, for only one mark, there is probably a quicker way.</em></p><p><em>By simply moving the centre of mass up by the full 40 cm (which is the maximum it could possibly shift) we still find that the bus fails the safety test, so the question has been answered without the need for further calculation.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[15 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A bench consists of a plank which is resting in a horizontal position on two supports B and C. The plank is modelled as a uniform rod AD of length 2.7 m and mass 20 kg. The supports at B and C are 0.5 m from each end of the plank, as shown in Fig. 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q3a-hard-aqa-a-level-physics.png' alt='4-2-s-q--q3a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Two animals sit on the plank. The rabbit has a mass of 2.5 kg and sits in the middle of the plank and the quail has a mass of 4.3 kg and sits at the end A. The plank remains horizontal and in equilibrium. The animals can be modelled as point masses. </p><p>Calculate:</p><p>(i) The magnitude of the normal reaction force at B</p><p style='text-align: right;'>[2]</p><p>(ii) The magnitude of the normal reaction force at C</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of rabbit, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>m</mi><mi>R</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 2.5 kg</p></li><li><p>Mass of quail, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mi>Q</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 4.3 kg</p></li><li><p>Mass of the plank, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mi>P</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 20 kg</p></li><li><p>Acceleration due to gravity, <em>g</em> = 9.81 m s<sup>–2</sup></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q3a-ma-hard-aqa-a-level-physics.png' alt='4-2-s-q--q3a-ma-hard-aqa-a-level-physics' /></div><p>(i) The magnitude of the normal reaction force at B</p><p>Take moments about point C:</p><ul><li><p>Principle of moments: Sum of anti–clockwise moments = sum of clockwise moments about a pivot</p></li><li><p>Anti­–clockwise moments about C = (<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfenced><mrow><msub><mi>W</mi><mi>Q</mi></msub><mo>×</mo><msub><mi>d</mi><mi>Q</mi></msub></mrow></mfenced></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ ( <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>R</mi></msub><mo>+</mo><msub><mi>W</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ) × <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>P</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>C</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> are perpendicular distances from the pivot to the weight of the quail and the plank, respectively</p></li><li><p>Clockwise moment about C = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>B</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>× <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>B</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Calculate the normal reaction force at B, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>B</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>(4.3<em>g</em> × (2.7 – 0.5)) + ((2.5<em>g + </em>20<em>g</em>) × (0.85) = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathsize="16px">R</mi><mi mathsize="16px">B</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>× (0.85 + 0.85) <em>[1 mark]</em></p></li><li><p>9.46<em>g</em> + 19.125<em>g</em> = <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>B</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>× 1.7</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>B</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>9</mn><mo>.</mo><mn>46</mn><mi>g</mi><mo>+</mo><mn>19</mn><mo>.</mo><mn>125</mn><mi>g</mi></mrow><mrow><mn>1</mn><mo>.</mo><mn>7</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 16.81<em>g</em> = 16.81 × 9.81 = 164.9 = 165 N <em>[1 mark]</em> </p></li></ul><p>(ii) The magnitude of the normal reaction force at C</p><p>Equate vertical forces:</p><ul><li><p>Since the plank is in equilibrium, all the forces upwards = all forces downwards</p></li><li><p>Forces upwards =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>B</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Forces downwards = <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>R</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> +<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Calculate normal reaction force at C, <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>16.81<em>g </em>+<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 4.3<em>g</em> + 2.5<em>g </em>+ 20<em>g </em>= 26.8<em>g </em><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>c</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 26.8<em>g</em> – 16.81<em>g</em> = 9.99<em>g</em> = 9.99 × 9.81 = 98.00 = 98 N (2 s. f.) <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em><strong> </strong></p><p><em>This question gives the masses of the animals instead of their weight. Whether you multiply by </em><em><em>g</em></em><em> to get the weight during the calculation or at the end is up to you. In some instances where there are a lot of calculations, it is easier to only multiply by </em><em><em>g </em></em><em>(to calculate their weight) at the very end to avoid numerical errors. </em></p><p><em>Students often forget about the fact that the vertically upwards forces must also equal the vertically downwards forces for a system to be in equilibrium too. Therefore, you do not need to take moments again for part (ii).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Whilst the quail stays at point A the rabbit now moves along the plank to point X. </p><p>Given that the plank remains horizontal and in equilibrium, and that the magnitude of the normal reaction force at B is now twice the magnitude of the normal reaction force at C, calculate the distance BX.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of rabbit, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>m</mi><mi>R</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 2.5 kg</p></li><li><p>Mass of quail, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>m</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 4.3 kg</p></li><li><p>Mass of the plank, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>m</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 20 kg</p></li><li><p>Acceleration due to gravity, <em>g</em> = 9.81 m s<sup>–2</sup></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q3b-ma-hard-aqa-a-level-physics.png' alt='4-2-s-q--q3b-ma-hard-aqa-a-level-physics' /></div><p>Equate vertical forces:</p><ul><li><p>Since the plank is in equilibrium, all the forces upwards = all forces downwards</p></li><li><p>Forces upwards = <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>B</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 2<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 3<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Forces downwards = <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>R</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Calculate normal reaction force at C, <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>3<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 4.3<em>g</em> + 2.5<em>g </em>+ 20<em>g </em>= 26.8<em>g </em><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>26</mn><mo>.</mo><mn>8</mn><mi>g</mi></mrow><mn>3</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 8.933<em>g</em> (= 87.636 N) <em>[1 mark]</em> </p></li></ul><p>Take moments about<strong> </strong>B:</p><ul><li><p>Anti–clockwise moments about B = ( <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>Q</mi></msub><mo>&#215;</mo><msub><mi>d</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) + ( <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>c</mi></msub><mo>&#215;</mo><msub><mi>d</mi><mi>c</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> )</p></li><li><p>Clockwise moments about B = (<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>P</mi></msub><mo>&#215;</mo><msub><mi>d</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ) + (<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>W</mi><mi>R</mi></msub><mo>&#215;</mo><msub><mi>d</mi><mi>R</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>)</p></li></ul><p>Calculate distance BX, <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>R</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>(4.3<em>g</em> × 0.5) + (8.933<em>g </em>× (0.85 + 0.85) = (20<em>g </em>× 0.85) + (2.5<em>g </em>× <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>R</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) <em>[1 mark]</em></p></li><li><p>2.15<em>g</em> + 15.1861<em>g</em> = 17<em>g</em> + (2.5<em>g </em>×<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>R</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>)</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>R</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= BX<strong> </strong>= <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>15</mn><mi>g</mi><mo>+</mo><mn>15</mn><mo>.</mo><mn>1861</mn><mi>g</mi><mo>-</mo><mn>17</mn><mi>g</mi></mrow><mrow><mn>2</mn><mo>.</mo><mn>5</mn><mi>g</mi></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.13 m <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em><em><strong> </strong></em></p><p><em>Labelling all the forces and distances on the diagram in your exam is essential for moments questions. This helps calculate any missing distances. </em></p><p><em>Whenever any point moves in a moments question, the reaction forces upwards will also change. Therefore, </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>c</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> and </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>B</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> are not the same as in part (a) for this part (b). </em></p><p><em>The point where the pivot is taken from doesn’t actually matter (because the Principle of Moments will always be true, about any pivot), so you will still get the same final answer. However, since we do not know in this question (it is different to part (a)), then if we take moments about B then we do not need to worry about this force. The key is to take moments about a point where you don’t know the value of the force: this way, the unknown force will not appear in your moments equations (since </em><em><em>d</em></em><em> will be 0).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A pole PR has a length 4 m and a weight <em>W</em> newton. The pole is held in a horizontal position in equilibrium by two vertical ropes attached to the pole at the points P and R where PR = 4 m, as shown in Fig. 1.2. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/M7bW4f~v_4-2-s-q--q3c-hard-aqa-a-level-physics.png' alt='M7bW4f~v_4-2-s-q--q3c-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>A load of weight 17 N is attached to the rod at R. The pole is uniform and the ropes are light inextensible strings. </p><p>Given that the tension in the rope attached to the pole at Q is seven times the tension in the rope attached to the pole at P, calculate the value of <em>W</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Weight of load, <em>F</em> = 17 N</p></li><li><p>Distance PR = 4 m</p></li><li><p>Distance QR = 4 − 2.4 = 1.6 m</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>Q</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><msub><mi>T</mi><mi>P</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/r5MDu_r3_4-2-s-q--q3c-ma-hard-aqa-a-level-physics.png' alt='r5MDu_r3_4-2-s-q--q3c-ma-hard-aqa-a-level-physics' /></div><p>Equate vertical forces:</p><ul><li><p>Since the plank is in equilibrium, all the forces upwards = all forces downwards</p></li><li><p>Forces upwards: <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> + 7<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 8<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Forces downwards: <em>W</em> + <em>F</em></p></li><li><p>8<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <em>W</em> + <em>F</em> = <em>W</em> + 17 <em>[1 mark]</em> </p></li></ul><p>Determine the equation for the tension in the rope at P, <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>Taking moments about point Q</p></li><li><p>Anti­–clockwise moment about Q = (<em>W</em> × <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>W</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ) where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>W</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the distance of the weight <em>W</em> from Q</p></li><li><p>Clockwise moments about Q = (<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>× <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>P</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) + (<em>F </em>× <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>F</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>P</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>F</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> are the distance of P and the force from the load <em>F</em> from Q respectively</p></li><li><p>(<em>W</em> × (2.4 – 2)) = (<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>× 2.4) + (17 × 1.6)</p></li><li><p>0.4<em>W</em> = 2.4<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ 27.2 <em>[1 mark]</em> </p></li></ul><p>Calculate the weight of the pole, <em>W</em>:</p><ul><li><p>8<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <em>W</em> + 17 and 0.4<em>W</em> = 2.4<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ 27.2</p></li><li><p><span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>W</mi><mn>8</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ 2.125</p></li><li><p>0.4<em>W</em> = 2.4(<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>W</mi><mn>8</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>+ 2.125) + 27.2 = 0.3<em>W</em> + 5.1 + 27.2 <em> [1 mark]</em></p></li><li><p>0.1<em>W</em> = 32.3</p></li><li><p><em>W</em> = 323 N <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em><em><strong> </strong></em></p><p><em>Look out for simultaneous equations! This is where you can set up the same number of unique equations as there are unknown variables. In this question, there are two equations with two unknowns (</em><em><em>W</em></em><em> and </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>P</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>). </em></p><p><em>If you’d like to refresh your maths skills on this topic, then check out the Save My Exams GCSE Maths revision notes on ‘Linear Simultaneous Equations’.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Q is now moved to a point further along the pole until the length QR is 0.8 m, as shown in Fig. 1.3. The pole still remains in equilibrium. The load of 17 N is now moved to a point <em>x</em>  metres from P. The beam remains in equilibrium in a horizontal position. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q3d-hard-aqa-a-level-physics.png' alt='4-2-s-q--q3d-hard-aqa-a-level-physics' /></div><p style='text-align: center;'>Fig. 1.3</p><p>The rope at Q will break if its tension exceeds 212 N. The rope at P cannot break. </p><p>Find the range of possible positions on the beam where the load can be attached without the rope at Q breaking.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Weight of load, <em>F</em> = 17 N</p></li><li><p>Distance PR = 4 m</p></li><li><p>Distance QR = 0.8 m</p></li><li><p>Distance PQ = 3.2 m</p></li><li><p>Weight of the pole, <em>W</em> = 323 N (from part c)</p></li><li><p>Max <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>Q</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 212 N</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q3d-ma-hard-aqa-a-level-physics.png' alt='4-2-s-q--q3d-ma-hard-aqa-a-level-physics' /></div><p>Determine equation for tension at Q, <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>P</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>Take moments about P</p></li><li><p>Anti­–clockwise moment about P =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the distance of Q from P</p></li><li><p>Clockwise moments about P = (<em>F</em> × <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>F</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) + (<em>W </em>× <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>W</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>d</mi><mi>F</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>W</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> are the distance of the force <em>F</em> and the weight <em>W</em> from P respectively</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 3.2 = 17<em>x </em>+ (323 × 2) <em>[1 mark]</em></p></li><li><p>3.2 <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 17<em>x </em>+ 646</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 5.31<em>x</em> + 202 <em>[1 mark]</em></p></li></ul><p>Calculate the range of values for <em>x</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>T</mi><mi>Q</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>&lt; 212 therefore, 5.31<em>x</em> + 202 &lt; 212</p></li><li><p><em>x </em>&lt; 1.88</p></li><li><p>0 &lt; <em>x </em>&lt; 1.88 m <em>[1 mark]</em><strong> </strong></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><strong> </strong></p><p><em>When you are asked for a ‘range’ of values, there is likely to be inequality. These are equations with the ‘less than’ (&lt;) or ‘more than’ (&gt;) symbols, and they can be rearranged exactly like regular equations. Just remember if you multiply or divide both sides of an inequality by a negative number, the direction of the inequality sign switches! </em></p><p><em>The details of the rearranging for the inequality are shown below:</em></p><p style='text-align: center;'><em>5.31</em><em><em>x</em></em><em> + 202 &lt; 212</em></p><p><em>Subtract 202 from both sides:</em></p><p style='text-align: center;'><em>5.31</em><em><em>x</em></em><em> &lt; 10</em></p><p><em>Divide both sides by 5.31:</em></p><p style='text-align: center;'><em><em>x</em></em><em> &lt; 1.88 </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

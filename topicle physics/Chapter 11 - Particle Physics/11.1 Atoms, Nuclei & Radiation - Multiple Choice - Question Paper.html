@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>11.1 Atoms, Nuclei & Radiation - Multiple Choice Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">11.1 Atoms, Nuclei & Radiation</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 11. Particle Physics</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 35 Questions (35 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A Geiger-muller tube held at a distance of about 12 cm from a radioactive source. The radiation emitted from the nuclear isotope was entirely stopped by a 2 mm thick sheet of lead.</p><p>Which of the statements can be deduced from the above information about the emission from the isotope?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>it could be alpha, beta and gamma radiation</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>it could be beta and gamma radiation, but not alpha radiation</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>it could be alpha and gamma radiation, but not beta radiation</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>it could be alpha and beta radiation, but not gamma radiation</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>When β<sup>−</sup> particles are emitted from identical nuclei in a substance, which of the following remain constant?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>proton number of the nuclei</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>nucleon number of the nuclei</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>neutron number of the nuclei</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>energy of the β-particles</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>When aluminium <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>A</mi><mprescripts/><mn>13</mn><mn>27</mn></mmultiscripts><mi>l</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> was bombarded with α-particles the first radioactive substance was made. The product of this reaction was an unstable isotope of phosphorus, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>P</mi><mprescripts/><mn>15</mn><mn>30</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p><p>Which of the following is a by-product of this reaction?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>a neutron</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>a γ-ray</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>a β-particle</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>an α-particle</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The atom <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>C</mi><mprescripts/><mn>55</mn><mn>133</mn></mmultiscripts><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is a neutral atom</p><p>How many protons, neutrons and electrons are in this atom?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Protons</strong></p></td><td><p style='text-align: center;'><strong>Neutrons</strong></p></td><td><p style='text-align: center;'><strong>Electrons</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>133</p><p style='text-align: center;'>55</p><p style='text-align: center;'>78</p><p style='text-align: center;'>55</p></td><td><p style='text-align: center;'>55</p><p style='text-align: center;'>78</p><p style='text-align: center;'>55</p><p style='text-align: center;'>133</p></td><td><p style='text-align: center;'>133</p><p style='text-align: center;'>55</p><p style='text-align: center;'>78</p><p style='text-align: center;'>55</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The following statements are about α-particles.</p><p>Which is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>α-particles emitted from a single radioactive isotope have a continuous distribution of energies</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>α-particles have less ionising power than β-particles</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the speeds of α-particles can be as high as 1.5 × 10<sup>7</sup> m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the charge of an α-particle is +1.60 × 10<sup>–19</sup> C</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which of the following statements about the nucleus of the atom is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>nucleon numbers are unchanged by the emission of β-particles</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>in some nuclear processes, mass-energy is not conserved</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>for some nuclei, the nucleon number can be less than the proton number</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>different isotopic nuclei have different proton numbers</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>When an α-particle is produced by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>U</mi><mprescripts/><mn>92</mn><mn>258</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> it produces a new atom X.</p><p> What are the values of the proton number and nucleon number for atom X?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Protons</strong></p></td><td><p style='text-align: center;'><strong>Nucleons</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>92</p><p style='text-align: center;'>90</p><p style='text-align: center;'>92</p><p style='text-align: center;'>88</p></td><td><p style='text-align: center;'>256</p><p style='text-align: center;'>254</p><p style='text-align: center;'>250</p><p style='text-align: center;'>254</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A nucleus Q decays into a nucleus R by emitting an alpha particle followed by two beta particles.</p><p>Which statement about this nuclear decay is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>nucleus R is an isotope of nucleus Q</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>nucleus R has the same nucleon number as nucleus Q</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>beta particle decay occurs when a proton changes into a neutron</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the total mass of the products is equal to the mass of the initial nucleus Q</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 9 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Four nuclei are represented below</p><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>Q</mi><mprescripts/><mn>13</mn><mn>24</mn></mmultiscripts><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mmultiscripts><mi>E</mi><mprescripts/><mn>14</mn><mn>28</mn></mmultiscripts><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mmultiscripts><mi>G</mi><mprescripts/><mn>15</mn><mn>25</mn></mmultiscripts><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mmultiscripts><mi>M</mi><mprescripts/><mn>12</mn><mn>25</mn></mmultiscripts></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Which of the following statements about these nuclei is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>an uncharged atom of element Q has 24 orbital electrons</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>when E absorbs a neutron and then emits an alpha particle, nucleus E transforms into M</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>nuclei G and M are isotopes of the same element</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>nucleus M could transform into Q by emitting a beta particle</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 10 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Plutonium-239 <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mmultiscripts><mi>P</mi><mprescripts/><mn>94</mn><mn>239</mn></mmultiscripts><mi>u</mi></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> decays by emitting α-radiation.</p><p>Which nuclide is formed from one of these decay reactions? (The product nuclides are represented by X.)</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>X</mi><mprescripts/><mn>95</mn><mn>239</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>X</mi><mprescripts/><mn>92</mn><mn>237</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>X</mi><mprescripts/><mn>93</mn><mn>239</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>X</mi><mprescripts/><mn>92</mn><mn>235</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 11 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>One of the rows in the table shows a pair of nuclei that are isotopes of one another.</p><p>Which row is it?</p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Nucleon number</strong></p></td><td><p style='text-align: center;'><strong>Number of neutrons</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>186 </p><p style='text-align: center;'>180</p></td><td><p style='text-align: center;'>112 </p><p style='text-align: center;'>118</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>184 </p><p style='text-align: center;'>187</p></td><td><p style='text-align: center;'>110 </p><p style='text-align: center;'>110</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>186 </p><p style='text-align: center;'>182</p></td><td><p style='text-align: center;'>112 </p><p style='text-align: center;'>108</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>186 </p><p style='text-align: center;'>186</p></td><td><p style='text-align: center;'>110 </p><p style='text-align: center;'>112</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 12 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which statement about alpha, beta and gamma radiation is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>gamma radiation has the greatest ionising power</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>beta radiation has the greatest ionising power</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>alpha radiation has the greatest ionising power</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>alpha, beta and gamma radiation have nearly equal ionising powers</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 13 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Alpha, beta and gamma radiations have various depths of penetration in matter and different charges.</p><p>Which row in the table best shows the penetration and charge of each radiation?</p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Alpha</strong></p></td><td><p style='text-align: center;'><strong>Beta</strong></p></td><td><p style='text-align: center;'><strong>Gamma</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>absorbed by a sheet of card </p><p style='text-align: center;'></p><p style='text-align: center;'>negative charge</p></td><td><p style='text-align: center;'>absorbed by several mm of aluminium </p><p style='text-align: center;'></p><p style='text-align: center;'></p><p style='text-align: center;'>no charge</p></td><td><p style='text-align: center;'>not fully absorbed by several mm of lead </p><p style='text-align: center;'></p><p style='text-align: center;'>no charge</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>absorbed by several mm of aluminium </p><p style='text-align: center;'></p><p style='text-align: center;'></p><p style='text-align: center;'>positive charge</p></td><td><p style='text-align: center;'>not fully absorbed by several mm of lead </p><p style='text-align: center;'></p><p style='text-align: center;'>negative charge</p></td><td><p style='text-align: center;'>absorbed by a sheet of card </p><p style='text-align: center;'></p><p style='text-align: center;'></p><p style='text-align: center;'></p><p style='text-align: center;'>no charge</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>absorbed by a sheet of card </p><p style='text-align: center;'></p><p style='text-align: center;'>negative charge</p></td><td><p style='text-align: center;'>absorbed by several mm of aluminium </p><p style='text-align: center;'></p><p style='text-align: center;'>positive charge</p></td><td><p style='text-align: center;'>not fully absorbed by several mm </p><p style='text-align: center;'>of lead </p><p style='text-align: center;'></p><p style='text-align: center;'>no charge</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>absorbed by a sheet of card </p><p style='text-align: center;'></p><p style='text-align: center;'>positive charge</p></td><td><p style='text-align: center;'>absorbed by several mm of aluminium </p><p style='text-align: center;'></p><p style='text-align: center;'>negative charge</p></td><td><p style='text-align: center;'>not fully absorbed by several mm of lead </p><p style='text-align: center;'></p><p style='text-align: center;'>no charge</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 14 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Most α-particles pass straight through when fired at a thin sheet of metal foil, but a few are deflected by a large angle.</p><p>Which change would increase the <strong>proportion</strong> of α-particles deflected by a large angle?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>using a double thickness foil </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>using a foil made of a metal with fewer protons in its nuclei</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>using α-particles with greater kinetic energy</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>using an alpha source with a higher activity</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 15 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>New insights were discovered when α-particles were fired at a sheet of gold foil.</p><p>Which conclusion can be drawn from the results of the experiment?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the atomic nucleus contains protons and neutrons</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>electrons orbit the atomic nucleus</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>some atoms of the same element contain different numbers of neutrons</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>atomic nuclei occupy a very small fraction of the volume of an atom</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 16 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A radioactive nucleus is formed by β-decay. This nucleus then decays by α-emission.</p><p>The graphs below show the nucleon number N plotted against proton number Z. Which one shows the β-decay followed by the α-emission?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images609png.png' alt='cie-ial-images609png' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images610png.png' alt='cie-ial-images610png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 17 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Nucleus X decays in two stages to produce nucleus Y.</p><p>Which decay sequence will result in the highest number of neutrons in nucleus Y ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>an α-particle followed by a β-particle</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>a β-particle followed by a γ-ray </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>a β-particle followed by another β-particle</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>an α-particle followed by a γ-ray</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 18 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The isotope <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi mathvariant="bold-italic">R</mi><mprescripts></mprescripts><mn mathvariant="bold">86</mn><mn mathvariant="bold">222</mn></mmultiscripts><mi mathvariant="bold-italic">n</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> decays in a sequence of emissions to form the isotope <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi mathvariant="bold-italic">P</mi><mprescripts></mprescripts><mn mathvariant="bold">82</mn><mn mathvariant="bold">206</mn></mmultiscripts><mi mathvariant="bold-italic">b</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p><p>It will either emit an α-particle or a β-particle at each stage of the decay sequence.</p><p>What is the number of stages in the decay sequence?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>20</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>16</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>8</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>4</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 19 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An element emits an alpha particle from its radioactive nucleus.</p><p>The daughter nucleus then emits a beta particle, and then the daughter nucleus of that reaction emits another beta particle.</p><p>Which statement describes the final nuclide that is formed ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>it is a nuclide of the same element but with different proton number</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>it is a nuclide of a different element of higher proton number</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>it is a different isotope of the original element</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>it is identical to the original nuclide</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 20 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Alpha, beta and gamma radiations: </p><table class='data-table'><tr><td><p><strong>1</strong></p></td><td><p>are absorbed to different extents in solids</p></td></tr><tr><td><p><strong>2</strong></p></td><td><p>behave differently in an electric field</p></td></tr><tr><td><p><strong>3</strong></p></td><td><p>behave differently in a magnetic field</p></td></tr></table><p>Diagrams 1, 2 and 3 illustrate these behaviours .</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images611png.png' alt='cie-ial-images611png' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images612png.png' alt='cie-ial-images612png' /></div><p>Which three labels on these diagrams refer to the <strong>same</strong> kind of radiation?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>X, L, R </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>W. L, R</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>W, L, P</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>Y, M, P</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 21 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The nuclides shown in the grid below are arranged according to the number of protons and neutrons in each.</p><p>A nucleus of the nuclide <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>L</mi><mprescripts/><mn>3</mn><mn>8</mn></mmultiscripts><mi>i</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  decays by emitting a β-particle.</p><p>What is the resulting nuclide ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images614png.png' alt='cie-ial-images614png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 22 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A thorium isotope has a nucleon number of 232 and a proton number of 90. It decays to form another isotope of with a nucleon number of 228.</p><p>How many alpha particles and beta particles are emitted during this decay? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Alpha particles</strong></p></td><td><p style='text-align: center;'><strong>Beta particles</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>0</p><p style='text-align: center;'>1</p><p style='text-align: center;'>1</p><p style='text-align: center;'>2</p></td><td><p style='text-align: center;'>4</p><p style='text-align: center;'>2</p><p style='text-align: center;'>1</p><p style='text-align: center;'>1</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 23 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Three successive radioactive decays are shown in the diagram below; each one results in a particle being emitted.</p><p>The first decay results in the emission of a β-particle. The second decay results in the emission of an α-particle. The third decay results in the emission of another β-particle.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images616png.png' alt='cie-ial-images616png' /></div><p>Nuclides W and Z are compared.  Which statement is correct ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>W and Z are isotopes of the same element</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>Z is a different element of reduced mass</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>Z is a different element of lower atomic number</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>W and Z are identical in all respects</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 24 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Antimatter is a particle that is an antiparticle to the corresponding particle. A positron is the antiparticle of an electron.</p><p>What is the difference between a positron and an electron ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>Mass</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>magnitude of charge</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>Charge</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>Spin</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 25 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A sequence of radioactive decays is shown in the graph of neutron number against proton number.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images617png.png' alt='cie-ial-images617png' /></div><p>Nucleus S is at the start of the sequence and, after the decays have occurred, nucleus T is formed.</p><p>What is emitted during the sequence of decays?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>one α-particle followed by one β-particle</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>two β-particles followed by one α-particle</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>two α-particles followed by two β-particles</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>one α-particle followed by two β-particles </p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 26 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A radioactive substance with a nucleon number of 234 and a proton number of 90, decays by β-emission into a daughter product which in turn decays by further β-emission into a granddaughter product.</p><p>Which letter in the diagram represents the granddaughter product ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images618png.png' alt='cie-ial-images618png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 27 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Astatine is a radioactive substance; it has a nucleon number of 218 and a proton number of 85. When it decays it forms a polonium nucleus, emitting a β<sup>−</sup> particle and an α-particle.</p><p>What are the nucleon number and the proton number of the polonium nucleus? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Nucleon number</strong></p></td><td><p style='text-align: center;'><strong>Proton number</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>214</p><p style='text-align: center;'>214</p><p style='text-align: center;'>216</p><p style='text-align: center;'>215</p></td><td><p style='text-align: center;'>84</p><p style='text-align: center;'>83</p><p style='text-align: center;'>83</p><p style='text-align: center;'>82</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 28 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An element with an unstable nucleus decays by emitting an alpha particle to become the nucleus of a different element.</p><p>The nucleus of the new element is unstable and will emit either an α-particle or a β<sup>−</sup> particle. This process continues until an isotope of the original element is formed.</p><p>What is the minimum possible number of the particles emitted ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>5</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>4</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>3</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>2</p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 29 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>When α-particles are directed at gold leaf                 </p><table class='data-table'><tr><td><p><strong>1</strong></p></td><td><p>almost all α-particles pass through without deflection,</p></td></tr><tr><td><p><strong>2</strong></p></td><td><p>a few α-particles deviate through large angles.</p></td></tr></table><p>What are the reasons for these effects?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>1</strong></p></td><td><p style='text-align: center;'><strong>2</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>the positive charge in an atom is not concentrated enough to deflect an α-particle</p></td><td><p style='text-align: center;'>occasionally an α-particle experiences many small deflections in the same direction</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>the gold nucleus is very small so</p><p style='text-align: center;'>most α-particles miss all nuclei</p></td><td><p style='text-align: center;'>occasionally the path of an α-particle is close to a nucleus</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>most α-particles miss all gold atoms</p></td><td><p style='text-align: center;'>a few α-particles bounce off gold atoms</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>most α-particles have enough energy to pass right through the gold leaf</p></td><td><p style='text-align: center;'>gold is very dense so a few low energy</p><p style='text-align: center;'>α-particles bounce back from the gold surface</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 30 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Two α-particles with equal energies are deflected by a gold nucleus.</p><p>Which diagram best represents their paths ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images615png.png' alt='cie-ial-images615png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 31 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A stationary decay <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>P</mi><mprescripts/><mn>84</mn><mn>210</mn></mmultiscripts><mi>o</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> of  by <em>α</em>-emission has a total kinetic energy of <em>E</em><sub><em>k</em></sub></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>P</mi><mprescripts/><mn>84</mn><mn>210</mn></mmultiscripts><mi>o</mi><mo> </mo><mo>→</mo><mo> </mo><mmultiscripts><mi>P</mi><mprescripts/><mn>82</mn><mn>206</mn></mmultiscripts><mi>b</mi><mo> </mo><mo>+</mo><mo> </mo><mi>α</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>What is the kinetic energy of the daughter nucleus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>P</mi><mprescripts/><mn>82</mn><mn>206</mn></mmultiscripts><mi>b</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>between 0 and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msub><mi>E</mi><mi>k</mi></msub><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>between <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msub><mi>E</mi><mi>k</mi></msub><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 32 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which of the following equations correctly shows an <em>α</em>-particle causing a nuclear reaction ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>N</mi><mprescripts/><mn>7</mn><mn>14</mn></mmultiscripts><mo> </mo><mo>+</mo><mo> </mo><mmultiscripts><mi>H</mi><mprescripts/><mn>2</mn><mn>4</mn></mmultiscripts><mi>e</mi><mo> </mo><mo>→</mo><mmultiscripts><mi>O</mi><mprescripts/><mn>8</mn><mn>17</mn></mmultiscripts><mo> </mo><mo>+</mo><mo> </mo><mmultiscripts><mi>n</mi><mprescripts/><mn>1</mn><mn>1</mn></mmultiscripts></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>O</mi><mprescripts/><mn>8</mn><mn>17</mn></mmultiscripts><mo> </mo><mo>+</mo><mo> </mo><mmultiscripts><mi>H</mi><mprescripts/><mn>2</mn><mn>4</mn></mmultiscripts><mi>e</mi><mo> </mo><mo>→</mo><mo> </mo><mmultiscripts><mi>F</mi><mprescripts/><mn>9</mn><mn>20</mn></mmultiscripts><mo> </mo><mo>+</mo><mo> </mo><mmultiscripts><mi>P</mi><mprescripts/><mn>1</mn><mn>1</mn></mmultiscripts></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>O</mi><mprescripts/><mn>8</mn><mn>17</mn></mmultiscripts><mo> </mo><mo>+</mo><mo> </mo><mmultiscripts><mi>e</mi><mprescripts/><mrow><mo>-</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><mo> </mo><mo>→</mo><mo> </mo><mmultiscripts><mi>B</mi><mprescripts/><mn>5</mn><mn>13</mn></mmultiscripts><mo> </mo><mo>+</mo><mo> </mo><mmultiscripts><mi>H</mi><mprescripts/><mn>2</mn><mn>4</mn></mmultiscripts><mi>e</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>N</mi><mprescripts/><mn>7</mn><mn>14</mn></mmultiscripts><mo> </mo><mo>+</mo><mo> </mo><mmultiscripts><mo> </mo><mprescripts/><mn>1</mn><mn>1</mn></mmultiscripts><mi>p</mi><mo> </mo><mo>→</mo><mo> </mo><mmultiscripts><mi>C</mi><mprescripts/><mn>6</mn><mn>11</mn></mmultiscripts><mo> </mo><mo>+</mo><mmultiscripts><mi>H</mi><mprescripts/><mn>2</mn><mn>4</mn></mmultiscripts><mi>e</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 33 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Thorium <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>T</mi><mprescripts/><mn>90</mn><mn>232</mn></mmultiscripts><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> decays through a series of transformations. The particles emitted in successive transformations are</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo> </mo><mo> </mo><mi>β</mi><mo> </mo><mo> </mo><mi>β</mi><mo> </mo><mo> </mo><mi>γ</mi><mo> </mo><mo> </mo><mi>α</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p> The resulting nuclide may be represented by</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>P</mi><mprescripts/><mn>82</mn><mn>230</mn></mmultiscripts><mi>b</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>A</mi><mprescripts/><mn>85</mn><mn>227</mn></mmultiscripts><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>F</mi><mprescripts/><mn>87</mn><mn>225</mn></mmultiscripts><mi>r</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>R</mi><mprescripts/><mn>88</mn><mn>224</mn></mmultiscripts><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 34 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In an <em>α</em>-particle scattering experiment, a student set up the apparatus below to determine the number <em>n</em> of <em>α</em>-particles incident per unit time on a detector held at various angles <em>θ</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images619png.png' alt='cie-ial-images619png' /></div><p>Which of the following graph best represents the variation of <em>n</em> with <em>θ </em>?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images620png.png' alt='cie-ial-images620png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 35 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An unknown isotope <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>X</mi><mprescripts></mprescripts><mi>Z</mi><mi>A</mi></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> decays through a series of transformations into Thorium-228. The atomic number of thorium is 90.</p><p>The successive transformations are: </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#947;</mi><mo>&#160;</mo><msup><mi>&#946;</mi><mo>-</mo></msup><mo>&#160;</mo><mi>&#945;</mi><mo>&#160;</mo><mi>&#945;</mi><mo>&#160;</mo><mi>&#947;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Which row states the correct isotope name, atomic number and mass number of the unknown isotope <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>X</mi><mprescripts></mprescripts><mi>Z</mi><mi>A</mi></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>?</p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Isotope name</strong></p></td><td><p style='text-align: center;'><strong>Atomic number / Z</strong></p></td><td><p style='text-align: center;'><strong>Mass number / A</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A.</strong></p></td><td><p style='text-align: center;'>Neptunium</p></td><td><p style='text-align: center;'>93</p></td><td><p style='text-align: center;'>235</p></td></tr><tr><td><p style='text-align: center;'><strong>B.</strong></p></td><td><p style='text-align: center;'>Plutonium</p></td><td><p style='text-align: center;'>94</p></td><td><p style='text-align: center;'>237</p></td></tr><tr><td><p style='text-align: center;'><strong>C.</strong></p></td><td><p style='text-align: center;'>Neptunium</p></td><td><p style='text-align: center;'>93</p></td><td><p style='text-align: center;'>236</p></td></tr><tr><td><p style='text-align: center;'><strong>D.</strong></p></td><td><p style='text-align: center;'>Uranium</p></td><td><p style='text-align: center;'>92</p></td><td><p style='text-align: center;'>232</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

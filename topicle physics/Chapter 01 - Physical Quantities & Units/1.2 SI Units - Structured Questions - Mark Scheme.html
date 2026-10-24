@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1.2 SI Units - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">1.2 SI Units</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 1. Physical Quantities & Units</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 8 Questions (85 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Table 1.1 shows some SI base quantities and their corresponding unit.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>quantity</strong></p></td><td><p style='text-align: center;'><strong>SI base unit</strong></p></td></tr><tr><td><p style='text-align: center;'>mass</p></td><td><p style='text-align: center;'>kg</p></td></tr><tr><td><p style='text-align: center;'>time</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>length</p></td><td><p style='text-align: center;'> </p></td></tr></table><p>(i) Complete Table 1.1 to show the SI base unit of each quantity.</p><p style='text-align: right;'>[2]</p><p>(ii) State two other SI base quantities and their corresponding units.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) The SI base units are:</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>SI base quantity</strong></p></td><td><p style='text-align: center;'><strong>SI base unit</strong></p></td></tr><tr><td><p style='text-align: center;'>mass</p></td><td><p style='text-align: center;'>kg</p></td></tr><tr><td><p style='text-align: center;'>time</p></td><td><p style='text-align: center;'><em><strong>s</strong></em></p></td></tr><tr><td><p style='text-align: center;'>length</p></td><td><p style='text-align: center;'><em><strong>m</strong></em></p></td></tr></table><ul><li><p>time = second <strong>OR</strong> s <em>[1 mark]</em></p></li><li><p>length = metre <strong>OR</strong> m <em>[1 mark]</em></p></li></ul><p>(ii) Two other SI base quantities &amp; their units are:</p><p>Any<strong> two</strong> from:</p><ul><li><p>Temperature <strong>AND</strong> Kelvin / K <em>[1 mark]</em></p></li><li><p>Current <strong>AND</strong> amp / ampere / A <em>[1 mark]</em></p></li><li><p>Amount of substance <strong>AND</strong> mole / mol <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Newton&#x27;s second law of motion describes the relationship between force <em>F</em> mass <em>m</em> and acceleration <em>a</em>:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>The derived unit for force is the newton (N).</p><p>Use Newton&#x27;s second law to write 1 N in SI units.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Write 1 N in SI base units:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>F</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>m</mi></mfenced><mfenced open="[" close="]"><mi>a</mi></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>m</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>= kg</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>a</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m s<sup>−2</sup> </p></li></ul></li></ul><ul><li><p>1 N = (kg) × (m s<sup>−2</sup>) <em>[1 mark]</em></p></li><li><p>1 N = kg m s<sup>−2</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>It is really important that you learn the SI base units in case you are asked a question like this in the exam</em></p><p><em>Once you know the SI base units, it is fairly straightforward to deduce the base units for any derived unit because the method is exactly the same as the method given here.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The kinetic energy equation describes the relationship between energy <em>E</em>, mass, <em>m</em>, and velocity, <em>v</em>.</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>The derived unit for energy is the joule (J).</p><p>Use the equation linking kinetic energy and speed to write 1 J in SI base units.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Write 1 J in SI base units:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced open="[" close="]"><msub><mi>E</mi><mi>k</mi></msub></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>m</mi></mfenced><msup><mfenced open="[" close="]"><mi>v</mi></mfenced><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>m</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>v</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m s<sup>−1</sup> </p></li></ul></li></ul><ul><li><p>1 J = (kg) × (m s<sup>−1</sup>)<sup>2</sup><em> [1 mark]</em></p></li><li><p>1 J = kg m<sup>2</sup> s<sup>−2</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>The same method is used to determine the SI base units for any derived unit</em></p><p><em>Practice this skill as part of your revision. It will help you to remember the SI base units (if you don&#x27;t already know them) rather than having to learn them by rote.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The derived unit for power <em>P</em> is the watt W.</p><p>Given that power is the energy transferred <em>E</em> per unit time <em>t</em>, deduce the SI base units for power</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Deduce the SI base unit for W:</p><ul><li><p>Power: <em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>E</mi><mi>t</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>P</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mfenced open="[" close="]"><mi>E</mi></mfenced><mfenced open="[" close="]"><mi>t</mi></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>E</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>2</sup> s<sup>−2</sup> (from <strong>(c)</strong>)</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>t</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = s</p></li></ul></li></ul><ul><li><p>W = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi mathvariant="italic">k</mi><mi mathvariant="italic">g</mi><mo mathvariant="italic">&#160;</mo><msup><mi mathvariant="italic">m</mi><mn mathvariant="italic">2</mn></msup><mo mathvariant="italic">&#160;</mo><msup><mi mathvariant="italic">s</mi><mrow><mo mathvariant="italic">-</mo><mn mathvariant="italic">2</mn></mrow></msup><mo mathvariant="italic">&#160;</mo></mrow><mi mathvariant="italic">s</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>W = kg m<sup>2</sup> s<sup>−3</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>It would be a good idea to practice deducing the SI base units for a variety of derived units so that you get comfortable with the method and familiar with the SI units</em></p><p><em>Try it for each topic as part of your revision. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In the following list, underline all the units that are SI base units</p><p style='text-align: center;'>kilogram ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ newton ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ metre ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ coulomb ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ volt ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ampere</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Underline all the units that are SI base units:</p><p style='text-align: center;'><u>kilogram</u> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ newton ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <u>metre</u> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ coulomb ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ volt ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <u>ampere</u></p><ul><li><p>kilogram <em>[1 mark]</em></p></li><li><p>metre <em>[1 mark]</em></p></li><li><p>ampere <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Make sure you can quickly recall the SI quantities! This will save you a lot of time in your exam. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete Table 1.1 to show the name and symbol of each prefix and the corresponding power of ten.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>prefix</strong></p></td><td><p style='text-align: center;'><strong>power of ten</strong></p></td></tr><tr><td><p style='text-align: center;'>tera (T)</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>10<sup>9</sup> </p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>10<sup>3 </sup></p></td></tr><tr><td><p style='text-align: center;'> centi (c)</p></td><td><p style='text-align: center;'> 10<sup>−2</sup></p></td></tr><tr><td><p style='text-align: center;'>milli (m)</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>micro (μ)</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>10<sup>−9</sup></p></td></tr><tr><td><p style='text-align: center;'>pico (p)</p></td><td><p style='text-align: center;'>10<sup>−12</sup></p></td></tr></table>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The correct table of prefixes and powers of ten is as follows:</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Prefix</strong></p></td><td><p style='text-align: center;'><strong>Power of ten</strong></p></td></tr><tr><td><p style='text-align: center;'>tera (T)</p></td><td><p style='text-align: center;'><em><strong> 10</strong></em><em><sup><strong>12</strong></sup></em><strong> </strong></p></td></tr><tr><td><p style='text-align: center;'><em><strong>giga (G)</strong></em></p></td><td><p style='text-align: center;'>10<sup>9</sup> </p></td></tr><tr><td><p style='text-align: center;'><em><strong> kilo (k)</strong></em></p></td><td><p style='text-align: center;'>10<sup>3 </sup></p></td></tr><tr><td><p style='text-align: center;'> centi (c)</p></td><td><p style='text-align: center;'> 10<sup>−2</sup></p></td></tr><tr><td><p style='text-align: center;'>milli (m)</p></td><td><p style='text-align: center;'><em><strong>10</strong></em><em><sup><strong>−3</strong></sup></em></p></td></tr><tr><td><p style='text-align: center;'>micro (μ)</p></td><td><p style='text-align: center;'> <em><strong>10</strong></em><em><sup><strong>−6</strong></sup></em></p></td></tr><tr><td><p style='text-align: center;'><em><strong> nano (n)</strong></em></p></td><td><p style='text-align: center;'>10<sup>−9</sup></p></td></tr><tr><td><p style='text-align: center;'>pico (p)</p></td><td><p style='text-align: center;'>10<sup>−12</sup></p></td></tr></table><ul><li><p><em>[3 marks] </em>for all six correct</p></li><li><p><em>[2 marks]</em> for four or five correct</p></li><li><p><em>[1 mark]</em> for two or three correct</p></li><li><p><em>[0 marks]</em> for less than two correct</p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Convert the following measurements into standard form and to the specified number of significant figures.</p><p>i) 0.71 GJ to 3 s. f.</p><p style='text-align: right;'>[1]</p><p>ii) 24.5 kW to 4 s .f.</p><p style='text-align: right;'>[1]</p><p>iii) 0.003823 mm to 1 s. f.</p><p style='text-align: right;'>[1]</p><p>iv) 644.9 pN to 2 s.f.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) 0.71 GJ in standard form and 3 s.f. is:</p><ul><li><p>1 GJ = 1 × 10<sup>9</sup> J</p></li><li><p>0.71 GJ = 0.71 × (1 × 10<sup>9</sup> J)</p></li><li><p>0.71 GJ = 7.10 × 10<sup>8</sup> J (3 s.f.) <em>[1 mark]</em></p></li></ul><p>(ii) 24.5 kW in standard form and 4 s.f. is:</p><ul><li><p>1 kW = 1 × 10<sup>3</sup> W</p></li><li><p>24.5 kW = 24.5 × (1 × 10<sup>3</sup> W)</p></li><li><p>24.5 kW = 2.450 × 10<sup>4</sup> W (4 s.f.) <em>[1 mark]</em></p></li></ul><p>(iii) 0.003823 mm in standard form and 1 s.f. is:</p><ul><li><p>1 mm = 1 × 10<sup>−3</sup> m</p></li><li><p>0.003823 mm = 0.003823 × (1 × 10<sup>−3</sup> m)</p></li><li><p>0.003823 mm = 4 × 10<sup>−6 </sup>m (1 s.f) <em>[1 mark]</em></p></li></ul><p>(iv) 644.9 pN in standard form and 2 s.f. is:</p><ul><li><p>1 pN = 1 × 10<sup>–12</sup> N</p></li><li><p>644.9 pN = 644.9 × (1 × 10<sup>–12</sup> N)</p></li><li><p>644.9 pN = 6.4 × 10<sup>–10</sup> N (2 s.f.) <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>You should be familiar with using scientific notation from IGCSE, but it can be tricky when you are first learning. Practice makes perfect.</em></p><p><em>Make sure you are confident in using and converting numbers in standard form well before your exams. And make sure you know how to quote numbers to appropriate numbers of significant figures, as this is something that can cost you marks in an exam if you don&#x27;t do it correctly!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Convert the following from their standard form into measurements with the most suitable prefixes </p><p>9.3 × 10<sup>6</sup> J = ......................... J</p><p>7.4 × 10<sup>3</sup> W = ......................... W</p><p>1.0 × 10<sup>−2 </sup>m = ......................... m</p><p>5.3 × 10<sup>−9</sup> C = ......................... C</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The measurements with suitable prefixes are:</p><ul><li><p>9.3 × 10<sup>6</sup> J = 9.3 MJ <em>[1 mark]</em></p></li><li><p>7.4 × 10<sup>3</sup> W = 7.4 kW <em>[1 mark]</em></p></li><li><p>1.0 × 10<sup>−2 </sup>m = 1.0 cm <strong>OR</strong> 10 mm <em>[1 mark]</em></p></li><li><p>5.3 × 10<sup>−9</sup> C = 5.3 nC <em>[1 mark]</em></p></li></ul><p><strong> </strong><em><strong>[Total: 4 marks]</strong></em></p><p><em>Learn the prefixes and their magnitudes. This can give you easy marks in your exam. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Scientists around the world use the same internationally agreed system of units. These are called the fundamental SI base units and are listed in Fig. 1.1. <strong> </strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Quantity</strong></p></td><td><p style='text-align: center;'><strong>Name</strong></p></td><td><p style='text-align: center;'><strong>Symbol</strong></p></td></tr><tr><td><p style='text-align: center;'>length</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>kilogram</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>s</p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>ampere</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>temperature</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>K</p></td></tr></table><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Complete the missing quantities, names and symbols in Fig. 1.1.     </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>A correctly completed table that would score 5 marks should look like this:</p><p><em>One mark for each correct row:</em></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Quantity</strong></p></td><td><p style='text-align: center;'><strong>Name</strong></p></td><td><p style='text-align: center;'><strong>Symbol</strong></p></td><td><p style='text-align: center;'><strong> </strong></p></td></tr><tr><td><p style='text-align: center;'>length</p></td><td><p style='text-align: center;'><em><strong>metre</strong></em></p></td><td><p style='text-align: center;'><em><strong>m</strong></em></p></td><td><p style='text-align: center;'><em><strong>[1 mark]</strong></em></p></td></tr><tr><td><p style='text-align: center;'><em><strong>mass</strong></em></p></td><td><p style='text-align: center;'>kilogram</p></td><td><p style='text-align: center;'><em><strong>kg </strong></em></p></td><td><p style='text-align: center;'><em><strong>[1 mark]</strong></em></p></td></tr><tr><td><p style='text-align: center;'><em><strong>time</strong></em></p></td><td><p style='text-align: center;'><em><strong>second</strong></em></p></td><td><p style='text-align: center;'>s</p></td><td><p style='text-align: center;'><em><strong>[1 mark]</strong></em></p></td></tr><tr><td><p style='text-align: center;'><em><strong>current</strong></em></p></td><td><p style='text-align: center;'>ampere</p></td><td><p style='text-align: center;'><em><strong>A </strong></em></p></td><td><p style='text-align: center;'><em><strong>[1 mark]</strong></em></p></td></tr><tr><td><p style='text-align: center;'>temperature</p></td><td><p style='text-align: center;'><em><strong>kelvin </strong></em></p></td><td><p style='text-align: center;'>K</p></td><td><p style='text-align: center;'><em><strong>[1 mark]</strong></em></p></td></tr></table><p><em><strong> </strong></em><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the equation linking kinetic energy and speed to write 1 Joule in SI base units. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Using the equation linking kinetic energy and speed to write 1 Joule in SI base units:</p><ul><li><p>Kinetic energy [J] = mass [kg] × (speed)<sup>2</sup> [m s<sup>–1</sup>]<sup>2</sup> <em>[1 mark]</em></p></li><li><p>1 joule = kg m<sup>2</sup> s<sup>–2</sup> <em>[1 mark]</em></p></li></ul><p> <em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the equation <em>Charge</em> = <em>Current </em>× <em>Time</em> to write 1 Coulomb in SI base units.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Using the equation <em>Charge</em> = <em>Current </em>× <em>Time</em> to write 1 Coulomb in SI base units:</p><ul><li><p>Charge [C] = Current [A] × Time [s] <em>[1 mark]</em></p></li><li><p>1 coulomb = 1 A s <em>[1 mark]</em></p></li></ul><p><em> </em><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the equation <em>Energy</em> = <em>Charge</em> × <em>Potential Difference</em> to write 1 volt in SI base units.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Using the equation <em>Energy</em> = <em>Charge</em> × <em>Potential Difference</em> to write 1 volt in SI base units:</p><ul><li><p>Energy [J] = Charge [C] × Potential Difference [V] <em>[1 mark]</em></p></li><li><p>V = [J] [C]<sup>–1</sup> = [kg m<sup>2</sup> s<sup>–2</sup>] [A s]<sup>–1</sup></p></li><li><p>1 volt = 1 kg m<sup>2</sup> s<sup>–3</sup> A<sup>–1</sup> <em>[1 mark]</em></p></li></ul><p> <em><strong>[Total: 2 marks]</strong></em></p><p><em>Recall that potential difference is defined as the energy transferred per unit charge, hence the units ‘J C</em><em><sup>–1</sup></em><em>’. Parts (b) and (c) of this question can be used to answer part (d). It can save time to look back through previous question parts to see if they can help you. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define the following quantities and state their SI base units</p><p>(i) velocity</p><p style='text-align: right;'>[2]</p><p>(ii) acceleration</p><p style='text-align: right;'>[2]</p><p>(iii) density</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) Velocity is defined as </p><ul><li><p>Change in displacement per unit time; <em>[1 mark]</em></p></li><li><p>SI base unit = m s<sup>−1</sup> <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Acceleration is defined as </p><ul><li><p>Change in velocity per unit time; <em>[1 mark]</em></p></li><li><p>SI base unit = m s<sup>−2</sup> <em>[1 mark]</em></p><p> </p></li></ul><p>(iii) Density is defined as</p><ul><li><p>Mass per unit volume; <em>[1 mark]</em></p></li><li><p>SI base unit = kg m<sup>−3</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The pressure <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> due to a liquid of density <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is related to the depth <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> by the expression</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mi>ρ</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>   </p><p>where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the acceleration of free fall.</p><p>Use this expression to determine the derived units of pressure <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Use the expression to determine the derived unit for pressure:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Unit of density <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>&#961;</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>−3</sup></p></li><li><p>Unit of acceleration <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>g</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m s<sup>−2</sup></p></li><li><p>Unit of height <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>h</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m</p></li></ul><p>Determine the unit of pressure:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>P</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>&#961;</mi></mfenced><mfenced open="[" close="]"><mi>g</mi></mfenced><mfenced open="[" close="]"><mi>h</mi></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>P</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = (kg m<sup>−3</sup>) × (m s<sup>−2</sup>) × (m) <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>P</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>−1</sup> s<sup>−2</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The speed <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> of a sound wave through a gas of pressure <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and density <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is given by the equation</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo> </mo><mo>=</mo><mo> </mo><msqrt><mfrac><mrow><mi mathvariant="normal">γ</mi><mi>P</mi></mrow><mi>ρ</mi></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">γ</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is a constant.</p><p>Show that the constant <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">γ</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> has no unit.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Show that the constant <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&#947;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> has no unit:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mi mathvariant="normal">&#947;</mi><mi>P</mi></mrow><mi>&#961;</mi></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Unit of density <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>&#961;</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>−3</sup></p></li><li><p>Unit of velocity <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>v</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m s<sup>−1</sup></p></li><li><p>Unit of pressure <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>P</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>−1</sup> s<sup>−2</sup></p></li></ul><p>Determine the units on both sides of the expression:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>v</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mfenced open="[" close="]"><mi mathvariant="normal">&#947;</mi></mfenced><mfenced open="[" close="]"><mi>P</mi></mfenced></mrow><mfenced open="[" close="]"><mi>&#961;</mi></mfenced></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>LHS: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>v</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m s<sup>−1</sup> <em>[1 mark]</em></p></li><li><p>RHS: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mfrac><mfenced open="[" close="]"><mi>P</mi></mfenced><mfenced open="[" close="]"><mi>&#961;</mi></mfenced></mfrac></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mi>k</mi><mi>g</mi><mo>&#160;</mo><msup><mi>m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><msup><mi>s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><mrow><mi>k</mi><mi>g</mi><mo>&#160;</mo><msup><mi>m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>RHS: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mfrac><mfenced open="[" close="]"><mi>P</mi></mfenced><mfenced open="[" close="]"><mi>&#961;</mi></mfenced></mfrac></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><msup><mi>m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><msup><mi>m</mi><mn>3</mn></msup><mo>&#160;</mo><msup><mi>s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><msup><mi>m</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi>s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mo mathvariant="italic">&#160;</mo><msup><mi>s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>LHS = RHS, so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&#947;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> has no unit</p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[4 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Derive the SI base unit of force.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Derive the SI base unit of force:</p><ul><li><p>Force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Unit of mass: kg</p></li><li><p>Unit of acceleration: m s<sup>−2</sup></p></li></ul><p>Determine the unit of force:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>F</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>m</mi></mfenced><mfenced open="[" close="]"><mi>a</mi></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>F</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m s<sup>−2</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>As a spherical object of radius <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> moves through the air at speed <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, it experiences a force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> due to air resistance.</p><p>The resistive force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is given by </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo> </mo><mo>=</mo><mo> </mo><mi>k</mi><mi>r</mi><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is a constant.</p><p>Derive the SI base unit of the constant <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Derive the SI base unit of the constant <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>k</mi><mi>r</mi><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Unit of force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>F</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m s<sup>−2</sup></p></li><li><p>Unit of radius <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>r</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m</p></li><li><p>Unit of speed <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>v</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m s<sup>−1</sup></p></li></ul><p>Determine the units on both sides of the expression:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>F</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>k</mi></mfenced><mfenced open="[" close="]"><mi>r</mi></mfenced><mfenced open="[" close="]"><mi>v</mi></mfenced><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>k</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mfenced open="[" close="]"><mi>F</mi></mfenced><mrow><mfenced open="[" close="]"><mi>r</mi></mfenced><mfenced open="[" close="]"><mi>v</mi></mfenced></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>k</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>k</mi><mi>g</mi><mo>&#160;</mo><mi>m</mi><mo>&#160;</mo><msup><mi>s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><mrow><mfenced><mi>m</mi></mfenced><mfenced><mrow><mi>m</mi><mo>&#160;</mo><msup><mi>s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>k</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>−1</sup> s<sup>−1</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig 1.2 shows a turbine that is used to generate electrical power <em>P</em> from wind travelling with velocity <em>v</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-1-wind-turbine-catalogue-cie-sq-ial.png' alt='1-1-wind-turbine-catalogue-cie-sq-ial' /></div><p>The useful power output <em>P</em> of the turbine is given by</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><msub><mi>C</mi><mi>P</mi></msub><msup><mi>L</mi><mn>2</mn></msup><mi>ρ</mi><msup><mi>v</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Where <em>L </em>is the length of each blade, <em>ρ</em> is the density of air, <em>v</em> is the wind velocity and <em>C</em><sub><em>P</em></sub> is a constant.</p><p>Show that the constant <em>C</em><sub><em>P</em></sub> has no units.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>Show that the constant <em>C</em><sub><em>P</em></sub> has no units:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>C</mi><mi>P</mi></msub><msup><mi>L</mi><mn>2</mn></msup><mi>&#961;</mi><msup><mi>v</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Unit of length <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>L</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m</p></li><li><p>Unit of density <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>&#961;</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mfenced open="[" close="]"><mi>m</mi></mfenced><mfenced open="[" close="]"><mi>V</mi></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>−3</sup> <em>[1 mark]</em></p></li><li><p>Unit of velocity <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>v</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = m s<sup>−1</sup></p></li></ul><p>Determine the SI unit of power:</p><ul><li><p>Unit of power <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>P</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mfenced open="[" close="]"><mi>E</mi></mfenced><mfenced open="[" close="]"><mi>t</mi></mfenced></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced open="[" close="]"><mi>m</mi></mfenced><msup><mfenced open="[" close="]"><mi>v</mi></mfenced><mn>2</mn></msup></mrow><mfenced open="[" close="]"><mi>t</mi></mfenced></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced><mrow><mi>k</mi><mi>g</mi></mrow></mfenced><mo>&#160;</mo><msup><mfenced><mrow><mi>m</mi><mo>&#160;</mo><msup><mi>s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced><mn>2</mn></msup></mrow><mi>s</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>P</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>2</sup> s<sup>−2</sup> s<sup>−3</sup> = kg m<sup>2</sup> s<sup>−3</sup> <em>[1 mark]</em></p></li></ul><p>Determine the units on both sides of the expression:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>P</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced open="[" close="]"><msub><mi>C</mi><mi>P</mi></msub></mfenced><msup><mfenced open="[" close="]"><mi>L</mi></mfenced><mn>2</mn></msup><mfenced open="[" close="]"><mi>&#961;</mi></mfenced><msup><mfenced open="[" close="]"><mi>v</mi></mfenced><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>LHS: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced open="[" close="]"><mi>P</mi></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>2</sup> s<sup>−3</sup></p></li><li><p>RHS: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mfenced open="[" close="]"><mi>L</mi></mfenced><mn>2</mn></msup><mfenced open="[" close="]"><mi>&#961;</mi></mfenced><msup><mfenced open="[" close="]"><mi>v</mi></mfenced><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = (m)<sup>2</sup> (kg m<sup>−3</sup>) (m s<sup>−1</sup>)<sup>3</sup> <em>[1 mark]</em></p></li><li><p>RHS: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mfenced open="[" close="]"><mi>L</mi></mfenced><mn>2</mn></msup><mfenced open="[" close="]"><mi>&#961;</mi></mfenced><msup><mfenced open="[" close="]"><mi>v</mi></mfenced><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = kg m<sup>2</sup> m<sup>−3</sup> m<sup>3</sup> s<sup>−1</sup> = kg m<sup>2</sup> s<sup>−3</sup> <em>[1 mark]</em></p></li><li><p>LHS = RHS, so <em>C</em><sub><em>P</em></sub> has no unit</p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A local council is looking into building wind turbines to supply power to 2500 households in a village. The average energy consumption of a household in the village is 2800 kWh a year.</p><p>Fig. 1.3 shows an image from a catalogue detailing the different sizes and power outputs of available wind turbines.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-1-4d-m-1-1-vector-force-triangle-cie-ial-sq.png' alt='1-1-4d-m-1-1-vector-force-triangle-cie-ial-sq' /></div><p>They decide to build 8 identical wind turbines to supply the entire village with electricity. </p><p>(i) Determine which of the wind turbines in Fig. 1.3 the council decided to build.</p><p style='text-align: right;'>[3]</p><p>(ii) The chosen turbine delivers the power specified at a<em> C</em><sub><em>P</em></sub> value of 0.45. This value can only be achieved above certain wind velocities.</p><p>Estimate the average wind velocity needed to power the village for a year. The density of air is 1.3 kg m<sup>−3</sup>.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Number of households = 2500</p></li><li><p>Average energy consumption per household per year = 2800 kWh</p></li><li><p>Number of turbines = 8</p></li><li><p>Constant, <em>C</em><sub><em>P</em></sub> = 0.45</p></li><li><p>Density of air, <em>ρ</em> = 1.3 kg m<sup>−3</sup></p></li></ul><p>(i) Determine the power rating of the wind turbine the council decided to build:</p><ul><li><p>Total energy (kWh) required by the village in a year:  2500 × 2800 = 7 000 000 kWh</p></li><li><p>Total energy required per day:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>7</mn><mo>&#160;</mo><mn>000</mn><mo>&#160;</mo><mn>000</mn></mrow><mn>365</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 19 178 kW h</p></li><li><p>Power output required:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>19</mn><mo>&#160;</mo><mn>178</mn></mrow><mn>24</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 799 kW <em>[1 mark]</em></p></li><li><p>Power output required per turbine:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>799</mn><mn>8</mn></mfrac><mo>&#160;</mo><mo>&#8776;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> 100 kW <em>[1 mark]</em></p></li><li><p>The council chose the 100 kW turbine; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Estimate the average wind velocity required to power the entire village:</p><ul><li><p>(From Fig 1.3) there are about 2 ¾ 100 kW turbine diameters in 50 m</p></li><li><p>So, the diameter of the 1 turbine ≈ <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>50</mn><mrow><mn>2</mn><mo>.</mo><mn>75</mn></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ≈ 18 m</p></li><li><p>The length of a blade <em>L</em> ≈ 9 m <em>[1 mark]</em></p><p><em>Acceptable range for blade length L = 7 to 11 m</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-wind-turbine-catalogue-cie-sq-ial-ma.png' alt='1-1-wind-turbine-catalogue-cie-sq-ial-ma' /></div><p>Determine the average wind velocity:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>C</mi><mi>P</mi></msub><msup><mi>L</mi><mn>2</mn></msup><mi>&#961;</mi><msup><mi>v</mi><mn>3</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mroot><mfrac><mi>P</mi><mrow><msub><mi>C</mi><mi>P</mi></msub><msup><mi>L</mi><mn>2</mn></msup><mi>&#961;</mi></mrow></mfrac><mn>3</mn></mroot></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mroot><mfrac><mrow><mn>100</mn><mo>&#160;</mo><mn>000</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>45</mn><mo>&#215;</mo><msup><mn>9</mn><mn>2</mn></msup><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>3</mn></mrow></mfrac><mn>3</mn></mroot><mo>&#160;</mo><mo>&#8776;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> 13 m s<sup>−1 </sup><em>[1 mark]</em></p></li><li><p>The wind velocity must average at least 13 m s<sup>−1</sup> in order for the turbines to maintain a power output of 100 kW</p></li></ul><p><em><strong>[Total: 5 marks] </strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Convert the following measurements </p><p>(i) 42 km<sup>3</sup> into mm<sup>3</sup> </p><p style='text-align: right;'>[2]</p><p>(ii) 25 light-years into nm</p><p style='text-align: right;'>[2]</p><p>(iii) 0.05 kWh into PeV</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) Convert 42 km<sup>3</sup> into mm<sup>3</sup>:</p><ul><li><p>Convert km into mm: </p><ul><li><p>1 km = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1 × 10<sup>6</sup> mm</p></li></ul></li><li><p>Convert km<sup>3</sup> into mm<sup>3</sup>:  </p><ul><li><p>1 km<sup>3</sup> = (1 × 10<sup>6</sup>)<sup>3</sup> mm<sup>3</sup> = 1 × 10<sup>18</sup> mm<sup>3</sup> <em>[1 mark] </em></p></li></ul></li><li><p>42 km<sup>3</sup> = 42 × (1 × 10<sup>18</sup>)</p></li><li><p>42 km<sup>3</sup> = 4.2 × 10<sup>19</sup> mm<sup>3</sup> <em>[1 mark]</em></p></li></ul><p>(ii) Convert 25 light-years into nm:</p><ul><li><p>1 light year = the distance light travels in 1 year</p></li><li><p>Speed of light = 3.0 × 10<sup>8</sup> m s<sup>−1</sup></p></li><li><p>Convert 1 year into s:  </p><ul><li><p>1 year = 60 × 60 × 24 × 365 = 3.15 × 10<sup>7</sup> s  </p></li></ul></li><li><p>Convert 1 ly into m:  </p><ul><li><p>distance = speed × time </p></li><li><p>1 ly = (3.0 × 10<sup>8</sup>) × (3.15 × 10<sup>7</sup>) = 9.46 × 10<sup>15</sup> m <em>[1 mark]</em></p></li></ul></li><li><p>Convert m into nm:   </p><ul><li><p>1 ly = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>9</mn><mo>.</mo><mn>46</mn><mo>&#215;</mo><msup><mn>10</mn><mn>15</mn></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 9.46 × 10<sup>24</sup> nm</p></li></ul></li><li><p>25 ly = 25 × (9.46 × 10<sup>24</sup>) </p></li><li><p>25 ly = 2.4 × 10<sup>26</sup> nm <em>[1 mark]</em></p></li></ul><p>(iii) Convert 0.05 kWh into PeV:</p><ul><li><p>Convert from kW h to W h:  </p><ul><li><p>1 kW = 1000 W h </p></li><li><p>0.05 kWh = 0.05 × 1000 = 50 W h</p></li></ul></li><li><p>Convert from W h to J:  </p><ul><li><p>1 h = 60 × 60 = 3600 s </p></li><li><p>50 W h = 50 × 3600 = 180 000 W s = 180 000 J</p></li></ul></li><li><p>Convert J to eV:  </p><ul><li><p>1 eV = 1.60 × 10<sup>–19</sup> J </p></li><li><p>180 000 J = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>180</mn><mo>&#160;</mo><mn>000</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>60</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 1.125 × 10<sup>24</sup> eV <em>[1 mark]</em></p></li></ul></li><li><p>Convert from eV to PeV:  </p><ul><li><p>1 PeV = 1 × 10<sup>15</sup> eV</p></li></ul></li><li><p>0.05 kWh = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>1</mn><mo>.</mo><mn>125</mn><mo>&#215;</mo><msup><mn>10</mn><mn>24</mn></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mn>15</mn></msup></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>0.05 kWh = 1.1 × 10<sup>9</sup> PeV <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The frequency <em>f</em> of a stationary wave on a string is given by </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>k</mi></msup><mo> </mo><mo>=</mo><mo> </mo><mfrac><mi>T</mi><mrow><mn>4</mn><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <em>L</em> is the length of the string, <em>T</em> is the tension in the string, <em>m</em> is the mass per unit length of the string and <em>k</em> is a dimensionless constant.</p><p>By considering the homogeneity of the equation, determine the value of <em>k</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>By considering the homogeneity of the equation, determine the value of <em>k</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>k</mi></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>T</mi><mrow><mn>4</mn><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Consider the units on the LHS: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mfenced><mi>Hz</mi></mfenced><mi>k</mi></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mfenced><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mfenced><mi>k</mi></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mi>k</mi></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Consider the units on the RHS: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi mathvariant="normal">N</mi><mrow><mfenced><mrow><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi mathvariant="normal">N</mi><mrow><mi>kg</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Simplify the units on the RHS:</p><ul><li><p>From <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, the SI base unit of N is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>kg</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>Hence <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi mathvariant="normal">N</mi><mrow><mfenced><mrow><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>kg</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><mrow><mi>kg</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>Comparing RHS with LHS:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">s</mi><mrow><mo mathvariant="italic">-</mo><mi mathvariant="italic">k</mi></mrow></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>Therefore, <em>k</em> = 2 <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The current <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> through a semiconductor diode given by </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo> </mo><mo>=</mo><mo> </mo><msub><mi>I</mi><mn>0</mn></msub><mo> </mo><msup><mi>e</mi><mrow><mo>-</mo><mfrac><mrow><mi>q</mi><mi>V</mi></mrow><mrow><mi>n</mi><mi>T</mi></mrow></mfrac></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>0</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the initial current, <em>q</em> is the charge of an electron, <em>V</em> is the applied potential difference, <em>T</em> is the temperature and <em>n</em> is a constant.</p><p>(i) By considering the homogeneity of the equation, determine the units of <em>n</em>.</p><p style='text-align: right;'>[3]</p><p>(ii) Use the datasheet to determine the name of this constant.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) By considering the homogeneity of the equation, determine the units of <em>n</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>I</mi><mn>0</mn></msub><mo>&#160;</mo><msup><mi>e</mi><mrow><mo>-</mo><mfrac><mrow><mi>q</mi><mi>V</mi></mrow><mrow><mi>n</mi><mi>T</mi></mrow></mfrac></mrow></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfrac><mi>I</mi><msub><mi>I</mi><mn>0</mn></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>e</mi><mrow><mo>-</mo><mfrac><mrow><mi>q</mi><mi>V</mi></mrow><mrow><mi>n</mi><mi>T</mi></mrow></mfrac></mrow></msup><mo>&#160;</mo><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Since the units on the LHS <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>A</mi><mi>A</mi></mfrac><mo>=</mo><mo>&#160;</mo><mn>1</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, the units of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>q</mi><mi>V</mi></mrow><mrow><mi>n</mi><mi>T</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> will also be dimensionless</p></li></ul><p>State the SI units of temperature <em>T</em>:</p><ul><li><p>Units of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>T</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">K</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul><p>Determine the SI units of charge <em>q</em>:</p><ul><li><p>Charge:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>q</mi><mi>t</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>q</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Units of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>q</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">C</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">A</mi><mo>&#160;</mo><mi mathvariant="normal">s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine the SI units of potential difference <em>V</em>:</p><ul><li><p>Potential difference:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>q</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Work done:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#215;</mo><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  or  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Units of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>W</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>m</mi></mfenced><msup><mfenced open="[" close="]"><mi>v</mi></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">J</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>Units of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>V</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">J</mi><mo>&#160;</mo><msup><mi mathvariant="normal">C</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">J</mi><mo>&#160;</mo><msup><mi mathvariant="normal">A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>Units of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>V</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine the units of constant <em>n</em>:</p><ul><li><p>Units of <em>n</em>:    <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>n</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced open="[" close="]"><mi>q</mi></mfenced><mfenced open="[" close="]"><mi>V</mi></mfenced></mrow><mfenced open="[" close="]"><mi>T</mi></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>n</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi mathvariant="normal">A</mi><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>&#160;</mo><mfenced><mrow><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced></mrow><mi mathvariant="normal">K</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>n</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">K</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) Determine the name of the constant:</p><ul><li><p>Since <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">J</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, the derived unit of <em>n</em> is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">J</mi><mo>&#160;</mo><msup><mi mathvariant="normal">K</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>Therefore, this is the <u>Boltzmann constant</u>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.38 × 10<sup>–23</sup> J K<sup>–1</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The diameter of a proton is approximately 1 fm.</p><p>Estimate the time it takes light to cross the nucleus of a hydrogen atom.</p><p>1 fm = 1 × 10<sup>-15</sup> m</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Estimate the time it takes light to cross the nucleus of a hydrogen atom:</p><ul><li><p>Speed of light in vacuum, <em>c</em> = 3.00 × 10<sup>8</sup> m s<sup>–1</sup></p></li></ul><p>Estimate the diameter of the nucleus of a hydrogen atom:</p><ul><li><p>A hydrogen atom has a nucleus made of 1 proton</p></li><li><p>The size of a hydrogen nucleus is 1 fm = 1 × 10<sup>–15</sup> m</p></li></ul><p>Estimate the time using the equation relating speed, time and distance:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>time</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>distance</mi><mi>speed</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>time</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>15</mn></mrow></msup></mrow><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>time</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>24</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A foil made from gold has a thickness of 0.132 µm. A gold atom has a radius of 146 pm.</p><p>(i) Estimate the number of layers of atoms in the gold foil to the nearest hundred.</p><p style='text-align: right;'>[1]</p><p>(ii) The radius of a gold nucleus is about 20 000 times smaller than its atomic radius. The cross-sectional area of a nucleus is commonly measured using the unit <em>barn</em>, which is represented by the symbol <em>b</em>.  </p><p>Estimate the cross-sectional area of a gold nucleus in barns (b). </p><p>1 b = 100 fm<sup>2</sup></p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Thickness of gold foil = 0.132 µm = 0.132 × 10<sup>−6 </sup>m</p></li><li><p>Radius of gold atom = 146 pm = 146 × 10<sup>−12</sup> m</p></li><li><p>Radius of gold nucleus = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>radius</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi>gold</mi><mo>&#160;</mo><mi>atom</mi></mrow><mrow><mn>20</mn><mo>&#160;</mo><mn>000</mn></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul><p>(i) Estimate the number of layers of atoms in the gold foil to the nearest hundred:</p><ul><li><p>Diameter of a gold atom = (146 × 10<sup>−12</sup>) × 2 = 292 × 10<sup>–12 </sup>m</p></li><li><p>Number of layers = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>0</mn><mo>.</mo><mn>132</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow><mrow><mn>292</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 452.05 = 500 layers (1 s.f.) <em>[1 mark]</em></p></li></ul><p>(ii) Calculate the cross-sectional area of a gold nucleus in barns (b):</p><ul><li><p>Convert fm<sup>2</sup> into m<sup>2</sup>:</p><ul><li><p>1 fm = 1 × 10<sup>–15</sup> m</p></li><li><p>1 fm<sup>2</sup> = (1 × 10<sup>–15</sup>)<sup>2</sup> m<sup>2</sup> = 1 × 10<sup>–30</sup> m<sup>2</sup></p></li></ul></li></ul><ul><li><p>Calculate the value of 1 barn in m<sup>2</sup>:</p><ul><li><p>1 b = 100 fm<sup>2</sup> = 100 × (1 × 10<sup>–30</sup>) m<sup>2 </sup>= 1 × 10<sup>–28</sup> m<sup>2 </sup><em>[1 mark]</em></p></li></ul></li></ul><p>Determine the cross-sectional area and convert to barns:</p><ul><li><p>Radius of a gold nucleus:   <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mfrac><mrow><mn>146</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup></mrow><mrow><mn>20</mn><mo>&#160;</mo><mn>000</mn></mrow></mfrac><mo>&#160;</mo><mo>&#8776;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> 7.3 × 10<sup>−15</sup> m</p></li><li><p>Cross-sectional area of a gold nucleus = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>2</mn></msup><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mfenced><mrow><mn>7</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>15</mn></mrow></msup></mrow></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>&#8776;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> 1.67 × 10<sup>−28</sup> m<sup>2</sup> <em>[1 mark]</em></p></li><li><p>Cross-sectional area of a gold nucleus = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>1</mn><mo>.</mo><mn>67</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>28</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>28</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>&#8776;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> 1.67 b <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Although the values in the question are given to three significant figures, it makes sense to round to the nearest hundred in part (i), since we are ignoring factors such as spaces between atoms and layers in the lattice.</em></p><p><em>The barn described in this question is a real unit. Other less well-known units include the ‘outhouse’ (1 µb) and the ‘shed’ (10</em><em><sup>–24</sup></em><em> b). Particle physicists are clearly quite creative!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The atomic mass unit <em>u</em> is a common unit used in nuclear physics. 1<em>u</em> is equivalent to 931.5 MeV c<sup>–2</sup></p><p>Show that 1<em>u</em> is approximately equal to the mass of a proton in kg.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Show that 1<em>u</em> is approximately equal to the mass of a proton in kg:</p><p>List the known quantities:</p><ul><li><p>Atomic mass unit, 1 <em>u</em> = 931.5 MeV c<sup>–2</sup></p></li><li><p>Speed of light in vacuum, <em>c</em> = 3.00 × 10<sup>8</sup> m s<sup>–1</sup></p></li><li><p>Mass of a proton, <em>m</em><sub><em>p</em></sub> = 1.67 × 10<sup>–27</sup> kg</p></li></ul><p>Convert 1<em>u</em> to J:</p><ul><li><p>1<em>u</em> = 931.5 MeV = 931.5 × 10<sup>6</sup> eV <em>[1 mark]</em></p></li><li><p>1 eV = 1.60 × 10<sup>–19</sup> J</p></li><li><p>1<em>u</em> = (931.5 × 10<sup>6</sup>) × (1.60 × 10<sup>–19</sup>) = 1.4904 × 10<sup>–10 </sup>J <em>[1 mark]</em></p></li></ul><p>Convert energy in J to mass in kg:</p><ul><li><p>Energy-mass equivalence:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#8710;</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8710;</mo><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mo>&#8710;</mo><mi>E</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>4904</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>10</mn></mrow></msup></mrow><msup><mrow><mo>(</mo><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>=</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>1.66 × 10<sup>–27</sup> kg <em>[1 mark]</em></p></li><li><p>Therefore, 1<em>u</em> is approximately equal to the mass of a proton <em>m</em><sub><em>p</em></sub> = 1.67 × 10<sup>–27</sup> kg</p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>You will be expected to remember the definition of an electronvolt 1 eV = 1.60 × 10</em><em><sup>–19</sup></em><em> J for your exam, however, you will be given the charge on an electron </em><em><em>e</em></em><em> on your data sheet which is also equal to 1.60 × 10</em><em><sup>–19</sup></em><em> C</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>An acre is a unit of land measurement approximately equal to 4050 m<sup>2</sup>, which is roughly equivalent to the size of a football field.</p><p>An Astronomical Unit, or 1 AU, is defined as the average distance between the Earth and the Sun and is approximately equal to 150 million km.</p><p>Estimate the number of football fields that could fit lengthwise between the Earth and the Sun.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Estimate the number of football fields that could fit lengthwise between the Earth and the Sun:</p><ul><li><p>1 AU = 150 million km = 150 × 10<sup>6</sup> × 10<sup>3</sup> m = 150 × 10<sup>9</sup> m <em>[1 mark]</em></p></li><li><p>1 acre = 1 football field = 4050 m<sup>2</sup></p></li></ul><p>Estimate the length of a football field</p><ul><li><p>A football field is rectangular, so a reasonable ratio of the length to the width of a football field might be 3:2</p></li><li><p>This means area:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>L</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>w</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mi>x</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = the constant of proportionality in the 3:2 ratio, i.e. <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4050</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mn>4050</mn><mn>6</mn></mfrac></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>25</mn><mo>.</mo><mn>981</mn><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mn>26</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Hence, length:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mi>x</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mn>3</mn><mo>&#215;</mo><mn>26</mn><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mn>78</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Estimate the number of lengths that would fit in 1 AU:</p><ul><li><p>Number of football fields in 1 AU = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>150</mn><mo>&#215;</mo><msup><mn>10</mn><mn>9</mn></msup></mrow><mn>78</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.9231 × 10<sup>9</sup> ≈ 2 × 10<sup>9</sup> (1 s.f.) <em>[1 mark]</em></p></li><li><p>Therefore, approximately 2 billion football fields could fit lengthwise between the Earth and the Sun</p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Questions such as this are all about your problem-solving skills. While approximating a football field to a square might not be exactly right, if you took this approach, then you would still end up with the same answer once you round down to 1 significant figure</em></p><p><em>Approximating the field as a square: length = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>4050</mn></msqrt><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> ≈ 64 m</em></p><p><em>Number of football fields in 1 AU = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>150</mn><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow><mn>64</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> = 2.3438 × 10</em><em><sup>9</sup></em><em> ≈ 2 × 10</em><em><sup>9</sup></em><em> (1 s.f.)</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

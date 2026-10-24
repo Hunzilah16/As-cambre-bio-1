@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6.1 Stress & Strain - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">6.1 Stress & Strain</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 6. Deformation of Solids</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 8 Questions (99 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Forces can change the motion of a body, or cause deformation.</p><p>State</p><p>(i) the definition of <em>deformation</em>.</p><p style='text-align: right;'>[1]</p><p>(ii) the name of the force which stretches an object.</p><p style='text-align: right;'>[1]</p><p>(iii) the name of the force which squashes an object.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hooke&#x27;s Law can be applied to objects which are stretched or compressed.</p><p>State the equation for Hooke&#x27;s Law, defining any terms used.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A spring is suspended from a stand as shown in Fig. 1.1 and has a load of 5.0 N applied to it. The spring extends by 4.2 cm.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/6-1-1c-e--hookes-law-tension.png' alt='6-1-1c-e--hookes-law-tension' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the spring constant, expressing your answer in S.I. units.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Another, thicker spring is attached to a base so that it stands upright, as shown in Fig. 1.2.</p><p>A force of 6.3 N pushes down on the spring which compresses it by 2.4 cm.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/6-1-1d-e-hookes-law-compression.png' alt='6-1-1d-e-hookes-law-compression' /></div><p style='text-align: center;'><strong>Fig. 1.2.</strong></p><p>Calculate the spring constant, expressing your answer in S.I. units.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[15 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define</p><p>(i) tensile stress</p><p style='text-align: right;'>[1]</p><p>(ii) tensile strain</p><p style='text-align: right;'>[1]</p><p>(iii) the Young modulus.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows stress-strain graphs for two different metal wires X and Y.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/6-1-2b-e-6-1-e-stress-strain-graph-two-wires-cie-ial-sq.png' alt='6-1-2b-e-6-1-e-stress-strain-graph-two-wires-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Fill in the missing labels on Fig. 1.1 and state the definitions of these terms.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State and explain which wire, X or Y, has the greater Young modulus.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the graph in Fig. 1.1 to determine</p><p>(i) the Young modulus of wire X and state the unit.</p><p style='text-align: right;'>[3]</p><p>(ii) the extension of wire Y when the stress is 1.2 GPa, and state the unit.</p><p>original length of wire Y = 2.0 m</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student is carrying out an experiment to determine the Young modulus of a wire. The student sets up the apparatus as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-a-figure-1.png' alt='3-a-figure-1' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Fill in the missing labels for the apparatus in Fig. 1.1.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State and explain a safety consideration for this experiment.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On the axis of Fig. 1.2 below, draw a graph to show the expected variation of strain with stress for this experiment. </p><p>Assume that the wire does not stretch beyond the limit of proportionality.  </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3c-figure-2.png' alt='3c-figure-2' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain how the student could use the graph in Fig. 1.2 to determine the Young modulus of the wire.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Define force.</p><p style='text-align: right;'>[1]</p><p>(ii) State what is meant by work done.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[10 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A block of mass 0.40 kg slides in a straight line with a constant speed of 0.30 m s<sup>–1</sup> along a horizontal surface, as shown in Fig. 3.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/11/q3b-paper-2-specimen-2022-cie-ial-physics.png' alt='q3b-paper-2-specimen-2022-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 3.1</strong></p><p>Assume that there are no resistive forces opposing the motion of the block.</p><p>The block hits a spring and decelerates. The speed of the block becomes zero when the compression of the spring is 8.0 cm.</p><p>(i) Calculate the initial kinetic energy of the block.</p><p style='text-align: right;'>kinetic energy = ....................................................... J [2]</p><p>(ii) The variation of the compression x of the spring with the force F applied to the spring is shown in Fig. 3.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/11/q3b-ii-paper-2-specimen-2022-cie-ial-physics.png' alt='q3b-ii-paper-2-specimen-2022-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 3.2</strong></p><p>Assume that the elastic potential energy of the spring when its compression is 8.0 cm is equal to the initial kinetic energy of the block.</p><p>Use your answer in <strong>(b)(i)</strong> to calculate the maximum force <em>F</em><sub>max</sub> exerted on the spring by the block.</p><p style='text-align: right;'><em>F</em><sub>max</sub> = ...................................................... N [2]</p><p>(iii) Calculate the maximum deceleration of the block.</p><p style='text-align: right;'>deceleration = ................................................. m s<sup>–2</sup> [2]</p><p>(iv) State and explain whether the block is in equilibrium:</p><ul><li><p>before it hits the spring</p></li></ul><p>.......................................................................................................</p><ul><li><p>when its speed becomes zero.</p></li></ul><p>.........................................................................................................</p><p style='text-align: right;'>[2]</p><p>(v) The block is now replaced by another block of the same mass. Frictional forces affect the motion of this block so that it has a speed of 0.25 m s<sup>–1</sup> when it makes contact with the spring.</p><p>A short time later, the block has a speed of 0.15 m s<sup>–1</sup> as it loses contact with the spring and moves back along its original path.</p><p>Calculate the magnitude of the change in momentum of the block.</p><p style='text-align: right;'>change in momentum = .................................................... N s [2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define work done by a force.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A heavy suitcase is placed on a weighing machine consisting of a platform mounted on a spring as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/6-1-2b-m-spring-compression-1-q.png' alt='6-1-2b-m-spring-compression-1-q' /></div><p>Describe and explain how work is done in this situation.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The diagram in Fig.1.2 shows a suitcase of mass 22.6 kg positioned on the weighing platform.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/11/6-1-2c-m-spring-compression-2-q.png' alt='6-1-2c-m-spring-compression-2-q' /></div><p>The platform sinks down 3 cm when the suitcase is placed on it, and then returns to its original position when the suitcase is removed.</p><p>Calculate the spring constant of the spring.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For the weighing platform described in part (c) sketch a graph to show the known properties of the spring.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Nichrome is a common alloy used to make coins and heating elements in electrical appliances. It consists of 80% by volume of nickel and 20% by volume of chromium.</p><p>Determine the mass of nickel and the mass of chromium required to make a wire of nichrome of volume 0.50 × 10<sup>−3</sup> m<sup>3</sup>.</p><p>Density of nickel = 8.9 × 10<sup>3</sup> kg m<sup>−3</sup></p><p>Density of chromium = 7.1 × 10<sup>3</sup> kg m<sup>−3</sup></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>To calculate the breaking stress of the nichrome wire both the cross-sectional area of the wire and the applied load must be known.</p><p>For each value, briefly describe an experimental method to determine the value, mentioning any equipment required.   </p><p>(i) The cross-sectional area of the wire.</p><p style='text-align: right;'>[2]</p><p>(ii) The applied load.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The diameter of the nichrome wire is 5.7 mm. The wire breaks under an applied force of 72 kN.</p><p>Calculate the breaking stress of nichrome.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student adds a series of masses to a vertical metal wire with a circular cross–section and measures the extension of the wire produced. This is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-8-s-q--q1a-hard-aqa-a-level-physics.png' alt='4-8-s-q--q1a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Suggest how the student can determine the Young Modulus of the wire using the graph in<strong> </strong>Fig. 1.1.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The metal wire is used to make a cable of diameter 4.9 mm. The Young Modulus of the metal in the cable is 154 GPa. </p><p>Calculate the force necessary to produce a strain of 0.40 % in the cable.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cable is used in a crane to lift a mass of <em>m</em> kg which is a third of the maximum possible mass it can lift. </p><p>Determine the maximum acceleration of the crane when it is lifting an object of mass <em>m </em>kg if the strain in the cable does not exceed 0.40%. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two different cables with spring constants <em>k</em><sub>1</sub> and <em>k</em><sub><em>2</em></sub> are connected in series. </p><p>Starting from Hooke&#x27;s law, show that the combined spring constant, <em>K</em> of the two springs is given by the equation <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><msub><mi>k</mi><mn>1</mn></msub><msub><mi>k</mi><mn>2</mn></msub></mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mo>&#160;</mo><msub><mi>k</mi><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[18 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>As part of a quality check, a manufacturer of dog leads selects a sample of the wires used for the leads to a tensile test. </p><p>The sample of wires used is 3.0 m long and is of constant circular cross–section of diameter 0.92 mm. Hooke’s law is obeyed up to the point when the wire has been extended by 20 mm at a tensile stress of 4.6 × 10<sup>8</sup> Pa.</p><p>The maximum load the wire can support before breaking is 350 N at an extension of 12 cm. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/6-1-q2a-h-sq-cie-ial-physics.png' alt='6-1-q2a-h-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Sketch a graph on Fig. 1.1<strong> </strong>to show how you expect the tensile stress to vary with strain and mark the values of stress with corresponding strain at the limit of Hooke&#x27;s law and the breaking point.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A different 3.0 m dog lead sample has a larger diameter. It is made of the same material and is subject to the same force. </p><p>Compare the advantages and disadvantages of this dog lead compared to the first.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the force needed to extend a piece of 3.0 m leather dog leash with a radius of 2.3 mm to change its surface area by 4.1 × 10<sup>–3</sup> m<sup>2</sup>. Assume that the cross–sectional area is kept constant throughout the extension. </p><p>Young Modulus of leather = 0.05 GPa.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>To prevent the walls of old buildings collapsing a metal rod is often used to tie opposite walls together, as shown in Fig. 1.2 below. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-8-s-q--q5a-hard-aqa-a-level-physics.png' alt='4-8-s-q--q5a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>In one case a steel tie rod of diameter 15 mm is used. When the nuts are tightened, the rod extends by 6 %. The Young Modulus of steel is 2.5 × 10<sup>11</sup> Pa. </p><p>Calculate the force exerted on the walls by the rod.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

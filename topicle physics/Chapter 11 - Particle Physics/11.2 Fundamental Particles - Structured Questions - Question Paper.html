@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>11.2 Fundamental Particles - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">11.2 Fundamental Particles</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 11. Particle Physics</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 7 Questions (53 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student is listing the flavours of quarks they can recall from memory. Their list is below:</p><ul><li><p>Bottom</p></li><li><p>Strange</p></li><li><p>Down</p></li></ul><p>Name the flavours of quarks missing from their list.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete Table 1.1 below. The right hand column is in units of the elementary charge, <em>e</em>.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Quark Flavour</strong></p></td><td><p style='text-align: center;'><strong>Charge / </strong><em><strong>e</strong></em></p></td></tr><tr><td><p style='text-align: center;'>Strange</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>Charm</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>Down</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>Top</p></td><td><p style='text-align: center;'> </p></td></tr></table>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why a proton is not a fundamental particle.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Describe the difference between quarks and antiquarks.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the particles that form a meson.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student proposes an undiscovered baryon with the following structure:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>tt</mi><menclose notation="top"><mi mathvariant="normal">b</mi></menclose></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>State whether it is possible for this baryon to exist.</p><p>Explain your answer.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Describe the changes to a proton&#x27;s quark composition when it undergoes beta plus decay.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Show that an anti-proton has a relative charge of −<em>e</em>, where <em>e</em>  is the elementary charge, using its quark composition.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[3 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the quark composition of a meson.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A hadron consists of two down quarks and a charm quark.</p><p>Determine the charge of the hadron. Show your working.</p><p style='text-align: right;'>charge = ..................................... C </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Carbon–10 <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><mn>6</mn><mn>10</mn></mmultiscripts></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is an isotope that decays to an isotope of boron (symbol <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mi mathvariant="normal">B</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) by the emission of a β<sup>+</sup> particle. </p><p>(i) Complete the nuclear equation for this decay, including the proton and nucleon numbers of all the particles involved.</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><mn>6</mn><mn>10</mn></mmultiscripts><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[3] </p><p>(ii) During the decay, a quark in the carbon-10 nucleus changes into a different type. </p><p>State the change of quark that occurs.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the two leptons in this decay.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State and explain why a hadron with charge –3<em>e </em>cannot exist. </p><p><em>e</em> is the elementary charge.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the possible quark combination for a hadron of charge +2<em>e</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the quark composition of an alpha particle.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the quark model to show that the charge on the anti-neutron is 0.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A sigma baryon Σ is a hadron that consists of an up (u) quark, a down (d) quark and a strange (s) quark. </p><p>State the quark composition of Σ<sup>+</sup> , Σ<sup>0</sup> and Σ<sup>–</sup> .</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why a baryon with the quark composition <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mover><mi>d</mi><mo>¯</mo></mover><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> cannot exist.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[7 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the number of &#x27;up&#x27; quarks in the nucleus of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>Al</mi><mprescripts/><mn>13</mn><mn>27</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mi mathvariant="normal">D</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> particle has a quark structure <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mover><mi>c</mi><mo>&#175;</mo></mover></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> .</p><p>Determine </p><p>(i) the classification of the <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mi mathvariant="normal">D</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> particle,</p><p style='text-align: right;'>[1]</p><p>(ii) the charge on the <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mi mathvariant="normal">D</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> particle.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Using the quark model, show that the magnitude of the charge of a proton is equal to the charge of an electron. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Using the quark model for β<sup>+</sup> decay, show that charge is conserved in this decay.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[3 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the quark composition of:</p><p>(i) a proton</p><p style='text-align: right;'>[1]</p><p>(ii) a neutron</p><p style='text-align: right;'>[1]</p><p>(iii) an alpha-particle.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

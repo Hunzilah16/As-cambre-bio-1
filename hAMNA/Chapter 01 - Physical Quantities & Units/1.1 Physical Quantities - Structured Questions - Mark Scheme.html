@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1.1 Physical Quantities - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">1.1 Physical Quantities</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 1. Physical Quantities & Units</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 8 Questions (59 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[4 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State what is meant by a physical quantity. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>A physical quantity is:</p><ul><li><p>A property that can be measured</p><p><strong>OR</strong></p></li><li><p>Something that consists of a magnitude / numerical value and a unit; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>one </strong>physical quantity that can be represented by the symbol <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>A<strong> </strong>physical quantity that can be represented by the symbol <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is:</p><ul><li><p>Density<strong>OR</strong></p></li><li><p>Resistivity; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>one </strong>physical quantity that can be represented by the capital letter <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> or the lowercase letter <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>A physical quantity that can be represented by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is:</p><p>Any <strong>one </strong>from:</p><ul><li><p>Pressure; <em>[1 mark]</em></p></li><li><p>Momentum; <em>[1 mark]</em></p></li><li><p>Power; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain how the quantities represented by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> can be distinguished from each other.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The quantities represented by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> can be distinguished from each other by:</p><p>Any <strong>one </strong>from:</p><ul><li><p>Looking at the units (of measurement); <em>[1 mark]</em></p></li><li><p>Interpreting the context of the quantity; <em>[1 mark]</em></p></li><li><p>Using units to check the homogeneity of physical equations; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete Table 1.1 to show the name and symbol of each physical quantity and the corresponding unit. </p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><p style='text-align: center;'>physical quantity</p><p style='text-align: center;'>symbol</p><p style='text-align: center;'>unit</p></tr><tr><td><p style='text-align: center;'>velocity</p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'>m s<sup>-1</sup></p></td></tr><tr><td><p></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'>N m</p></td></tr><tr><td><p style='text-align: center;'>stress</p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#963;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p></p></td></tr><tr><td><p></p></td><td><p></p></td><td><p style='text-align: center;'>kg m<sup>-3</sup></p></td></tr></table>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The correctly completed table is as follows:</p><table class='data-table'><tr><p style='text-align: center;'>physical quantity</p><p style='text-align: center;'>symbol</p><p style='text-align: center;'>unit</p></tr><tr><td><p style='text-align: center;'>velocity</p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'>m s<sup>-1</sup></p></td></tr><tr><td><p style='text-align: center;'><em><strong>work done</strong></em></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'>N m</p></td></tr><tr><td><p style='text-align: center;'>stress</p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#963;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'><em>N m</em><em><sup>-2</sup></em></p></td></tr><tr><td><p style='text-align: center;'><em>density</em></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'>kg m<sup>-3</sup></p></td></tr></table><ul><li><p>One mark for each correct row:</p><ul><li><p>work done <em>[1 mark]</em></p></li><li><p>N m<sup>−2</sup> <em>[1 mark]</em></p></li><li><p>density <strong>AND</strong> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate a reasonable estimate for the work done by a person lifting a dining room chair 1.0 m above the ground.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Estimate the work done by an average adult person lifting a dining room chair 1.0 m above the ground:</p><p>Estimate the average mass of a dining room chair:</p><ul><li><p>Mass of chair = 1 kg - 10 kg <em>[1 mark]</em></p></li></ul><p>Calculate an estimate of the work done, <em>W</em>:</p><ul><li><p><em>W</em> = <em>Fd </em>=<em> mgd </em><em>[1 mark]</em></p></li><li><p>Range: <em>W </em>= 10 J - 100 J <em>[1 mark]</em></p></li><li><p>Example calculation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>Where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mn>5</mn><mo>&#160;</mo><mi>kg</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mn>10</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><msup><mi>kg</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mn>5</mn><mo>&#215;</mo><mn>10</mn><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mn>50</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>In an estimation answer, a range of estimated values will be acceptable. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A physics student is investigating the properties of materials. She has a stack of 500 sheets of paper and needs to determine the thickness of a single sheet.</p><p>(i) Describe a method she could use to find the thickness of one sheet of paper without using a micrometer.</p><p style='text-align: right;'>[2]</p><p>(ii) State an appropriate unit for the thickness of one sheet of paper.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) To find the thickness of one sheet of paper without using a micrometer:</p><ul><li><p>Use a ruler to measure the total thickness (of the stack); <em>[1 mark]</em></p></li><li><p>Divide the measurement by 500; <em>[1 mark]</em></p></li></ul><p>(ii) A suitable unit for the thickness of paper is:</p><ul><li><p>millimetres / mm</p><p><strong>OR</strong></p></li><li><p>micrometres / µm; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student then investigates simple harmonic motion using a mass-spring system. She wishes to determine the period of oscillation of the system.</p><p>Describe a method the student could use to obtain an accurate value for the period of one complete oscillation.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A method the student could use to obtain an accurate value for the period of one complete oscillation:</p><ul><li><p>Measure the time for 10 complete oscillations; <em>[1 mark]</em></p></li><li><p>Divide the total time by 10 to find the period; <em>[1 mark]</em></p></li><li><p>Repeat the measurement several times and calculate a mean; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>During a break in her experiments, the student scrunches up a sheet of paper and throws it horizontally from shoulder height across the laboratory.</p><p>Estimate the horizontal distance travelled by the paper ball before it hits the floor.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The paper ball is thrown:</p><ul><li><p>2 m <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>Any value between 1 and 5 m is acceptable to gain the marks in this question. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student then throws a tennis ball of the same size using the same technique from the same height.</p><p>State whether the tennis ball travels a greater horizontal distance than the paper ball. Explain your answer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The tennis ball will:</p><ul><li><p>Travel further (than the paper ball); <em>[1 mark]</em></p></li></ul><p>Explanation:</p><ul><li><p>The tennis ball has a greater mass, so it experiences a smaller deceleration due to air resistance; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Estimate the speed of an apple as it hits the ground after falling from a tree.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Estimate the speed of an apple as it hits the ground after falling from a tree:</p><ul><li><p>Height of apple on a tree, <em>h</em> ≈ 5 m <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for h = 2 to 20 m</em></p><p>Use energy conservation to estimate the speed:</p><ul><li><p>Change in GPE = Gain in KE</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>g</mi><mi>h</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mn>2</mn><mi>g</mi><mi>h</mi></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><msqrt><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>5</mn></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>v</em> ≈ 9.91 ≈ 10 m s<sup>−1</sup> <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for v = 6 to 20 m</em> s<sup>−1</sup></p><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Estimate the number of kilowatt-hours used by a lightbulb if switched on for a whole day.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Estimate the number of kilowatt-hours used by a lightbulb if switched on for a whole day:</p><ul><li><p>Power output of a lightbulb ≈ 70 W <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for power = 20 to 100 W</em></p><p>Convert from W to kWh in 24 hours:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>E</mi><mi>t</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>P</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Kilowatt-hours is a unit of energy, so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mfenced><mrow><mi>k</mi><mi>W</mi><mi>h</mi></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>P</mi><mfenced><mi>W</mi></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>t</mi><mfenced><mrow><mi>h</mi><mi>r</mi></mrow></mfenced></mrow><mn>1000</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mfenced><mrow><mi>k</mi><mi>W</mi><mi>h</mi></mrow></mfenced><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mfrac><mrow><mn>70</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>24</mn></mrow><mn>1000</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>E</em>(kWh) ≈ 1.68 ≈ 1.7 kWh per day <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for E(kWh) = 0.5 to 2.4 kWh</em></p><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Estimate the density, in g cm<sup>−3</sup>, of the head of an adult person.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Estimate the density, in g cm<sup>−3</sup>, of the head of an adult person:</p><ul><li><p>Radius of a head, <em>r</em> ≈ 10 cm <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for radius = 7 to 12 cm</em></p><ul><li><p>Mass of a head, <em>m</em> ≈ 5 kg = 5000 g <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for mass = 1 to 10 kg (1000 to 10 000 g)</em></p><p>Use the equation for volume of a sphere with the density equation:</p><ul><li><p>Volume of an adult&#x27;s head ≈ volume of a sphere</p></li><li><p>Volume of a sphere:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Density:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>m</mi><mi>V</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>m</mi><mrow><mstyle displaystyle="true"><mfrac><mn>4</mn><mn>3</mn></mfrac></mstyle><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>5000</mn><mstyle displaystyle="true"><mfrac><mn>4</mn><mn>3</mn></mfrac><mi mathvariant="normal">&#960;</mi><mo>&#215;</mo><msup><mfenced><mn>10</mn></mfenced><mn>3</mn></msup></mstyle></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.194 = 1.2 g cm<sup>−3</sup> <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for density = 0.1 to 7.0 g cm</em><sup><em>−3</em></sup></p><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>When asked a question, such as this, where you likely have no reference to make a reasonable estimate for something, like the mass of a person&#x27;s head, think about reasonable approximations you could make</em></p><p><em>For example, if the mass of an adult person is about 70 kg, you could make a reasonable assumption that their head might make up about 10% of this mass, which would be 7 kg</em></p><p><em>It&#x27;s important that you communicate this in your answer so the examiner can see your lines of thought, and even if you are outside of the acceptable range, you could still earn extra marks for method and reasoning</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The radius of the Earth is approximately 6.4 × 10<sup>6</sup> m.</p><p>Estimate the number of people it would take to circle the Earth holding hands.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Estimate the number of people it would take to circle the Earth holding hands:</p><ul><li><p>Radius of Earth, <em>r</em> = 6.4 × 10<sup>6</sup> m</p></li><li><p>Arm span ≈ 2 m <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for arm span estimate = 1 to 3 m</em></p><p>Calculate the circumference of Earth:</p><ul><li><p>Circumference of a circle = 2π<em>r</em></p></li><li><p>Circumference of Earth = 2π<em> </em>× (6.4 × 10<sup>6</sup>) = 4 × 10<sup>7</sup> m <em>[1 mark]</em></p></li></ul><p>Calculate how many people would be needed:</p><ul><li><p>Each person spans approximately 2 m</p></li><li><p>Number of people ≈ <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>c</mi><mi>i</mi><mi>r</mi><mi>c</mi><mi>u</mi><mi>m</mi><mi>f</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>e</mi><mo mathvariant="italic">&#160;</mo><mi>o</mi><mi>f</mi><mo mathvariant="italic">&#160;</mo><mi>E</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>h</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>m</mi><mo mathvariant="italic">&#160;</mo><mi>s</mi><mi>p</mi><mi>a</mi><mi>n</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Number of people ≈ <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>7</mn></msup></mrow><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Number of people ≈ 2 × 10<sup>7</sup> <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for number of people estimate = 1.3 × 10</em><sup><em>7</em></sup><em> to 4 × 10</em><sup><em>7</em></sup></p><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>If you have approximated the arm span of a person to a different value than 2 m, that&#x27;s ok, as long as it is a </em><em><strong>reasonable</strong></em><em> approximation. You may have said, 1.5 m or somewhere in between, and that&#x27;s ok. You would still get the marks. But, if you approximated it to 5 m, this is </em><em><strong>not</strong></em><em> a reasonable estimation and you would not get the first mark. However, you would still get the other two marks if your calculations were correct, no matter what number you used.</em></p><p><em>Questions that ask you to </em><em><strong>estimate</strong></em><em> may not always contain an unknown value that you need to approximate, like arm span in this question. They may just use inexact values such as the diameter of the Earth, or the mass of a proton as 1 atomic mass unit. Don&#x27;t let this throw you, the calculation is just the same as it would be if you were using exact values. If you do approximate something, like the hand span, just remember to use the &#x27;approximately equal to&#x27; sign ≈</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>X–ray pulsars are detected by X–ray telescopes on a satellite in low Earth orbit 2000 km above the surface of the Earth. </p><p>Calculate the number of cubic millimetres (mm<sup>3</sup>) in a volume of 2000 km<sup>3</sup>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List known quantities:</p><ul><li><p>Volume = 2000 km<sup>3</sup></p></li></ul><p>Recall the metric multipliers:</p><ul><li><p>k = kilo = 10<sup>3</sup></p></li><li><p>m = milli = 10<sup>–3</sup></p></li></ul><p>Convert km<sup>3</sup> into mm<sup>3</sup>:</p><ul><li><p>1 km = 1 × 10<sup>6</sup> mm <em>[1 mark]</em></p></li><li><p>1 km<sup>3</sup> = (1 × 10<sup>6</sup>)<sup>3 </sup>mm<sup>3</sup> = 1 × 10<sup>18</sup> mm<sup>3</sup> <em>[1 mark]</em></p></li></ul><p>Convert 2000 km<sup>3</sup> into mm<sup>3</sup>:</p><ul><li><p>2000 km<sup>3</sup> = 2000 × (1 × 10<sup>18</sup>) = 2 × 10<sup>21</sup> mm<sup>3 </sup><em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Recognising that there are 1 × 10</em><em><sup>18</sup></em><em> mm</em><em><sup>3</sup></em><em> in 1 km</em><em><sup>3</sup></em><em> is the key to answering this question correctly.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma4a_measurements-in-physics_sl-ib-physics-sq-medium.png' alt='ma4a_measurements-in-physics_sl-ib-physics-sq-medium' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma4a-2_measurements-in-physics_sl-ib-physics-sq-medium.jpg' alt='ma4a-2_measurements-in-physics_sl-ib-physics-sq-medium' /></div><p><em> Volume of a cube = length × width × height = (1 × 10</em><em><sup>6</sup></em><em>) × (1 × 10</em><em><sup>6</sup></em><em>) × (1 × 10</em><em><sup>6</sup></em><em>) = 1 × 10</em><em><sup>18</sup></em><em> mm</em><em><sup>3</sup></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>X–rays from a pulsar travel at the speed of light and are detected on Earth with a wavelength of 8.0 nm. </p><p>Calculate the frequency of the X–rays. Give your answer to an appropriate number of significant figures.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities and expand the multipliers:</p><ul><li><p>Wavelength of pulsar = 8.0 nm = 8.0 × 10<sup>–9 </sup>m <em>[1 mark]</em></p></li></ul><p>From the data page:</p><ul><li><p>Speed of light in free space, <em>c</em> = 3.00 × 10<sup>8</sup> m s<sup>-1</sup></p></li></ul><p>Recall the metric multiplier:</p><ul><li><p>Nano = × 10<sup>–9</sup></p></li></ul><p>Recall and rearrange the wave speed equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>c</mi><mi>&#955;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the frequency:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>8</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 3.75 × 10<sup>16</sup> Hz  <em>[1 mark]</em></p></li></ul><p>Write answer to an appropriate number of significant figures:</p><ul><li><p><em>f</em> = 3.8 × 10<sup>16</sup> Hz <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Make sure you read the question correctly, so you write your final answer in the correct form. 8.0 nm is the only quantity in the question. This is written to 2 significant figures. So, the final answer must also be written to 2 significant figures.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>X–rays from the nearest pulsar PSR J0109–1431 take 8.82 Gs to travel to Earth. </p><p>Calculate the number of oscillations of the X–rays from the pulsar to the surface of the Earth. Give your answer to an appropriate number of significant figures.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List known quantities and expand the multipliers:</p><ul><li><p>Time from pulsar to Earth = 8.82 Gs = 8.82 × 10<sup>9</sup> s</p></li><li><p>Frequency, <em>f</em> = 3.75 × 10<sup>16</sup> Hz (from part (b))</p></li></ul><p>Calculate the time period for one oscillation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>f</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>.</mo><mn>75</mn><mo>&#215;</mo><msup><mn>10</mn><mn>16</mn></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Find the number of oscillations:</p><ul><li><p>Number of oscillations = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>total</mi><mo>&#160;</mo><mi>time</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi>journey</mi><mo>&#160;</mo></mrow><mrow><mi>time</mi><mo>&#160;</mo><mi>for</mi><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mi>oscillation</mi><mo>&#160;</mo></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>Number of oscillations = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>3</mn><mo>.</mo><mn>75</mn><mo>&#215;</mo><msup><mn>10</mn><mn>16</mn></msup></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>8</mn><mo>.</mo><mn>82</mn><mo>&#215;</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 3.3075 × 10<sup>26</sup> <em>[1 mark]</em></p></li></ul><p>State to an appropriate number of significant figures:</p><ul><li><p>Number of oscillations = 3.31 × 10<sup>26</sup> (3 s.f) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Use the metric multipliers to correctly calculate the value of the giga prefix in standard form. Use your knowledge of time period and frequency to find the time for one oscillation of the pulsar. 8.82 Gs is the only quantity given in the question. This is to 3 significant figures, so the final answer must also be to 3 significant figures.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Show the distance from Earth to PSR J0109–1431 is around 280 light years.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To show that the distance is around 280 light years:</p><p>List known quantities:</p><ul><li><p>Time = 8.82 Gs = 8.82 × 10<sup>9</sup> s</p></li><li><p>Distance = 280 light years</p></li></ul><p>From the data page:</p><ul><li><p>Speed of light in free space, <em>c</em> = 3.00 × 10<sup>8</sup> m s<sup>-1</sup></p></li></ul><p>Calculate the distance in m:</p><ul><li><p>Distance = speed of light × time</p></li><li><p>Distance = (3 × 10<sup>8</sup>)<sup> </sup>× (8.82 × 10<sup>9</sup>) = 2.646 × 10<sup>18</sup> m <em>[1 mark]</em></p></li></ul><p>Convert distance in m to light years:</p><ul><li><p>1 light year = c × 1 year = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>60</mn><mo>&#215;</mo><mn>60</mn><mo>&#215;</mo><mn>24</mn><mo>&#215;</mo><mn>365</mn></mrow></mfenced><mo>=</mo><mn>9</mn><mo>.</mo><mn>46</mn><mo>&#215;</mo><msup><mn>10</mn><mn>15</mn></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Divide the total distance by the distance in one light year</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>646</mn><mo>&#xD7;</mo><msup><mn>10</mn><mn>18</mn></msup></mrow><mrow><mn>9</mn><mo>.</mo><mn>46</mn><mo>&#xD7;</mo><msup><mn>10</mn><mn>15</mn></msup></mrow></mfrac></math></span>= 279.704 = 280 light years <em>[1 mark]</em></p></li></ul><p><em>[Total: 3 marks]</em></p><p><em>Don&#x27;t forget that light years are a unit of distance not time.</em></p><p><em>Remember to use previous parts of the question for quantities that appear missing from the question.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define the term <em>physical quantity</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>A physical quantity is...</p><ul><li><p>A physical property that can be measured and quantified; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>An example of a physical quantity is mass which is measured in kg.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Physical quantities have symbols and units. Indicate, with a tick (✓), which of the following are <strong>not</strong> valid physical quantities.   </p><table class='data-table'><tr><td><p>kinetic energy <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in kg m<sup>2</sup> s<sup>-2</sup></p></td><td><p><span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="36px"><mo>&#9633;</mo></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td></tr><tr><td><p>pressure <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in N kg<sup>−1</sup></p></td><td><p><span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo mathsize="36px">&#9633;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td></tr><tr><td><p>Young modulus<em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in Pa</p></td><td><p><span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo mathsize="36px">&#9633;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td></tr><tr><td><p>frequency <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in s</p></td><td><p><span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo mathsize="36px">&#9633;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td></tr><tr><td><p>specific heat capacity<em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in J kg<sup>−1</sup></p></td><td><p><span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo mathsize="36px">&#9633;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td></tr><tr><td><p>weight <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in kg m s<sup>-2</sup></p></td><td><p><span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo mathsize="36px">&#9633;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td></tr></table>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The quantities which are not valid physical quantities are:</p><table class='data-table'><tr><td><p>kinetic energy <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in kg m<sup>2</sup> s<sup>-2</sup></p></td><td><p></p></td></tr><tr><td><p>pressure <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in N kg<sup>−1</sup></p></td><td><p><em><strong>✓</strong></em></p></td></tr><tr><td><p>Young modulus<em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in Pa</p></td><td><p></p></td></tr><tr><td><p>frequency <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in s</p></td><td><p><em><strong>✓</strong></em></p></td></tr><tr><td><p>specific heat capacity<em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in J kg<sup>−1</sup></p></td><td><p><em><strong>✓</strong></em></p></td></tr><tr><td><p>weight <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in kg m s<sup>-2</sup></p></td><td><p></p></td></tr></table><ul><li><p>pressure <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in N kg<sup>−1</sup>; <em>[1 mark]</em></p></li><li><p>frequency <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in s; <em>[1 mark]</em></p></li><li><p>specific heat capacity<em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> measured in J kg<sup>−1</sup>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The correct physical quantities are:</em></p><ul><li><p><em><em>E</em></em><em><sub><em>k</em></sub></em><em> = kinetic energy, measured in J or kg m</em><em><sup>2</sup></em><em> s</em><em><sup>-2</sup></em></p></li><li><p><em><em>P</em></em><em> = pressure, measured in Pa or N m</em><em><sup>-2</sup></em></p></li><li><p><em><em>E </em></em><em>= Young modulus, measured in Pa or N m</em><em><sup>-2</sup></em></p></li><li><p><em><em>f</em></em><em> = frequency in Hz or s</em><em><sup>-1</sup></em></p></li><li><p><em><em>c</em></em><em> = specific heat capacity, measured in J kg</em><em><sup>−1 </sup></em><em>K</em><em><sup>−1</sup></em><em> </em></p></li><li><p><em><em>W</em></em><em> = weight measured in N or kg m s</em><em><sup>-2</sup></em></p></li></ul><p><em>You do not need to memorise all the symbols and units listed in the specification, but you do need a good level of recognition and understanding of which units belong to which quantity. Knowing the units will help you with the maths in physics, because the units tell you some of the physical quantities that you need in the calculation. For example the units for latent heat, </em><em><em>L</em></em><em>, are joules per kilogram, so you know you need energy divided by mass in that calculation.</em></p><p><em>In other courses and textbooks, you may find different symbols used for different quantities. It is important that you use the symbols given in the CIE IAL specification.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete the table providing reasonable estimates for some physical quantities.</p><table class='data-table'><tr><td><p style='text-align: center;'>quantity</p></td><td><p style='text-align: center;'>estimated magnitude</p></td></tr><tr><td><p style='text-align: center;'>Weight of an adult human</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> 3600 s</p></td></tr><tr><td><p style='text-align: center;'>Wavelength of green light</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> 20 °C</p></td></tr></table>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>A table scoring 4 marks:</p><table class='data-table'><tr><td><p style='text-align: center;'>quantity</p></td><td><p style='text-align: center;'>estimated magnitude</p></td></tr><tr><td><p style='text-align: center;'>Weight of an adult human</p></td><td><p style='text-align: center;'><em><strong>700 N</strong></em><em> (±100 N)</em><em> [1 mark] </em></p></td></tr><tr><td><p style='text-align: center;'><em><strong>Seconds in an hour</strong></em><em> </em><em>[1 mark]</em></p></td><td><p style='text-align: center;'> 3600 s</p></td></tr><tr><td><p style='text-align: center;'>Wavelength of green light</p></td><td><p style='text-align: center;'><em><strong>550 nm</strong></em><strong> OR </strong><em><strong>550×10</strong></em><em><sup><strong>−9</strong></sup></em><em><strong> m</strong></em> <em>[1 mark]</em></p></td></tr><tr><td><p style='text-align: center;'><em><strong>Room temperature</strong></em> <em>[1 mark]</em></p></td><td><p style='text-align: center;'> 20 °C</p></td></tr></table><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>The CIE IAL specification states that you should be able to make reasonable estimates of physical quantities included within the syllabus. The ones in this question are common ones. </em></p><p><em>To estimate you can use the nearest order of magnitude, or choose rounded numbers to use in your calculation. For example, an estimate for the mass of an adult human is 70 kg, an estimate for the acceleration of freefall is 10 m s</em><em><sup>−2</sup></em><em>, therefore an estimate of weight is 70 × 10 = 700 N. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[4 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete Table 1.1 to show the SI base unit of each physical quantity and a reasonable estimate of the order of magnitude.   </p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>physical quantity</strong></p></td><td><p style='text-align: center;'><strong>SI base unit</strong></p></td><td><p style='text-align: center;'><strong>order of magnitude</strong></p></td></tr><tr><td><p style='text-align: center;'>acceleration of free-fall on Earth (<em>g</em>)</p></td><td><p style='text-align: center;'> m s<sup>−2</sup></p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>Stefan-Boltzmann constant (<em>σ)</em></p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>10<sup>−7</sup></p></td></tr><tr><td><p style='text-align: center;'>speed of a <em>β</em> particle</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>specific heat capacity of water (<em>c</em>)</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr></table>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The correct SI base units and estimates for order of magnitude are:</p><p><em><em><strong>One</strong></em></em><em><em> mark for each correct row:</em></em></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>physical quantity</strong></p></td><td><p style='text-align: center;'><strong>SI base unit</strong></p></td><td><p style='text-align: center;'><strong>order of magnitude</strong></p></td></tr><tr><td><p style='text-align: center;'>acceleration of free-fall on Earth (<em>g</em>)</p></td><td><p style='text-align: center;'> m s<sup>−2</sup></p></td><td><p style='text-align: center;'><em><strong>10</strong></em><em><sup><strong>1</strong></sup></em></p></td></tr><tr><td><p style='text-align: center;'>Stefan-Boltzmann constant (<em>σ)</em></p></td><td><p style='text-align: center;'><em><strong> kg s</strong></em><em><sup><strong>−3</strong></sup></em><em><strong> K</strong></em><em><sup><strong>−4</strong></sup></em></p></td><td><p style='text-align: center;'>10<sup>−7</sup></p></td></tr><tr><td><p style='text-align: center;'>speed of a <em>β</em> particle</p></td><td><p style='text-align: center;'><em><strong>m s</strong></em><em><sup><strong>-1</strong></sup></em></p></td><td><p style='text-align: center;'><em><strong> 10</strong></em><em><sup><strong>8</strong></sup></em></p></td></tr><tr><td><p style='text-align: center;'>specific heat capacity of water (<em>c</em>)</p></td><td><p style='text-align: center;'><em><strong> m</strong></em><em><sup><strong>2</strong></sup></em><em><strong> s</strong></em><em><sup><strong>−2</strong></sup></em><em><strong> K</strong></em><em><sup><strong>−1</strong></sup></em></p></td><td><p style='text-align: center;'><em><strong> 10</strong></em><em><sup><strong>3</strong></sup></em></p></td></tr></table><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>The acceleration of freefall on Earth,</em><em><em> g</em></em><em>, is 9.81 m s</em><em><sup>−2</sup></em><em>. This quantity is already given in SI base units and the order of magnitude is 10</em><em><sup>1</sup></em><em> as 10</em><em><sup>1</sup></em><em> = 10.</em></p><p><em>The Stefan-Boltzmann constant </em><em><em>σ</em></em><em> is given in the data booklet as 5.67 × 10</em><em><sup>−8</sup></em><em> W m</em><em><sup>−2</sup></em><em> K</em><em><sup>−4</sup></em><em>. Rounded to the nearest power of ten, the order of magnitude is 10</em><em><sup>−7</sup></em></p><p><em>The units of the Stefan-Boltzmann constant </em><em><em>σ </em></em><em>are:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/07/file_000-70.png' alt='file_000-70' /></div><p><em>The speed of a </em><em><em>β</em></em><em> particle can be approximated to the speed of light since a </em><em><em>β </em></em><em>particle is a high-speed electron. The speed of light in a vacuum </em><em><em>c</em></em><em> is given in the data booklet as 3.00 × 10</em><em><sup>8</sup></em><em> m s</em><em><sup>−1</sup></em></p><p><em>Metres and seconds are already SI base units, and rounded to the nearest power of 10, the order of magnitude is 10</em><em><sup>8</sup></em></p><p><em>The specific heat capacity </em><em><em>c</em></em><em> of water is not given in the data booklet, but you should be familiar with it from practising calculations. The specific heat capacity of water is about 4200 J kg</em><em><sup>−1</sup></em><em> K</em><em><sup>−1</sup></em><em>, or 4.2 × 10</em><em><sup>3</sup></em><em> J kg</em><em><sup>−1</sup></em><em> K</em><em><sup>−1</sup></em></p><p><em>Rounded to the nearest power of 10, the order of magnitude is 10</em><em><sup>3</sup></em><em> and the units are:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/07/file_000-71.png' alt='file_000-71' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[4 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete Table 2.1 to show a reasonable estimate of the order of magnitude of each physical quantity and the corresponding unit.</p><p style='text-align: center;'><strong>Table 2.1</strong></p><table class='data-table'><tr><p style='text-align: center;'>quantity</p><p style='text-align: center;'>order of magnitude</p><p style='text-align: center;'>unit</p></tr><tr><td><p>mass of a car</p></td><td><p></p></td><td><p style='text-align: center;'>kg</p></td></tr><tr><td><p>thickness of a sheet of paper</p></td><td><p></p></td><td><p style='text-align: center;'>mm</p></td></tr><tr><td><p>density of air</p><p>(at room temperature and pressure)</p></td><td><p></p></td><td><p style='text-align: center;'>g cm<sup>−3</sup></p></td></tr><tr><td><p>time between two heartbeats</p></td><td><p></p></td><td><p style='text-align: center;'>s</p></td></tr></table>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Estimates of the orders of magnitude of the quantities are:</p><table class='data-table'><tr><p style='text-align: center;'>quantity</p><p style='text-align: center;'>order of magnitude</p><p style='text-align: center;'>unit</p></tr><tr><td><p>mass of a car</p></td><td><p style='text-align: center;'><em><strong>1 × 10</strong></em><em><sup><strong>3</strong></sup></em><em><strong> </strong></em><em>[1 mark]</em></p></td><td><p style='text-align: center;'>kg</p></td></tr><tr><td><p>thickness of a sheet of paper</p></td><td><p style='text-align: center;'><em><strong>1 × 10</strong></em><em><sup><strong>−1</strong></sup></em><em> [1 mark]</em></p></td><td><p style='text-align: center;'>mm</p></td></tr><tr><td><p>density of air</p><p>(at room temperature and pressure)</p></td><td><p style='text-align: center;'><em><strong>1 × 10</strong></em><em><sup><strong>-3</strong></sup></em><em> [1 mark]</em></p></td><td><p style='text-align: center;'> g cm<sup>−3</sup></p></td></tr><tr><td><p>time between two heartbeats</p></td><td><p style='text-align: center;'><em><strong>1 × 10</strong></em><em><sup><strong>0</strong></sup></em><em> [1 mark]</em></p></td><td><p style='text-align: center;'>s</p></td></tr></table><p><strong> </strong><em><strong>[Total: 4 marks]</strong></em></p><p><em>You should know that the mass of a car is of the order of 1 ton which is 1000 kg.</em></p><p><em>You can estimate the thickness of a sheet of paper by considering a stack of 500 sheets (think about the stacks of paper that you can buy for printers), these are about 1 inch thick which is 2.5 cm or 25 mm, so 1 sheet of paper is about 25 / 500 = 0.05 mm thick.</em></p><p><em>You should also know that the density of air is about 1 kg m</em><em><sup>−3</sup></em><em> or 0.001 g cm</em><em><sup>-3</sup></em><em>.</em></p><p><em>You can consider a heartbeat and the number of beats per minute to calculate the time between two beats, it&#x27;s roughly 1 s depending on your resting heart rate.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

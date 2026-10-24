@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>5.2 Gravitational Potential Energy & Kinetic Energy - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">5.2 Gravitational Potential Energy & Kinetic Energy</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 5. Work, Energy & Power</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 8 Questions (84 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When an object is lifted, energy is transferred to it.</p><p>State the reason for this energy transfer.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the equation for gravitational potential energy, defining all the units mentioned.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Referring to your answer to part (a), derive the expression for gravitational potential energy stated in part (b).</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ball of mass 1.2 kg is released from the top of a slope and allowed to roll to the bottom, where it stops. The initial and final positions of the ball are shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-2-1d-e-gpe-ramp.png' alt='5-2-1d-e-gpe-ramp' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Calculate the change in gravitational potential energy of the ball.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ball of mass 4.2 kg is placed on a post at a height of 2.1 m as shown in Fig. 1.1.</p><p>The ball is pushed horizontally so that it falls down, reaching a velocity <em>v</em> just before hitting the ground.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-2-2a-e-gpe-to-ke.png' alt='5-2-2a-e-gpe-to-ke' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Calculate the gravitational potential energy stored by the ball before it is pushed.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hence state the total kinetic energy of the ball just before it hits the floor. Assume that air resistance is negligible.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the velocity of the ball just before it hits the ground.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The final speed of the ball in part (a) depends on the height it falls from, but not the mass, as long as air resistance is ignored.</p><p>Using the equations for initial gravitational potential energy and final kinetic energy, show that the mass of the ball does not affect the final speed of the ball.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When an object is accelerated from rest, energy is stored.</p><p>Name the energy store and state the reason for it.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the equation for kinetic energy, defining all the units mentioned.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Referring to your answer to part (a), derive the expression for kinetic energy stated in part (b).</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cylinder of mass 2.8 kg is released from rest so that it rolls down a ramp, accelerating to a velocity of 3.5 ms<sup>−1</sup>. The arrangement is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-2-3c-e-ke-ramp.png' alt='5-2-3c-e-ke-ramp' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Calculate the change in kinetic energy between the two positions shown.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Pumped hydroelectric systems store large bodies of water behind a dam. When electricity is needed in the grid, the dam is lifted, allowing water to flow from the upper reservoir.</p><p>One such power station, known as the Cruachan power station, is shown in Fig. 1.1. This facility has been producing hydroelectric power since 1965.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-5a-m-5-1-energy-sources-power-station-cie-ial-sq.png' alt='5-1-5a-m-5-1-energy-sources-power-station-cie-ial-sq' /></div><p>The vertical distance between the base of the upper reservoir and the turbine is 396 m. This arrangement allows Cruachan power station to produce a power output of 0.62 GW with an efficiency of 76%.</p><p>Determine the energy transferred by the water each second in order to achieve this power output.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Water is made to flow out of the upper reservoir through connecting pipes at a rate of 200 m<sup>3</sup> per second. The density of water is 1.0 × 10<sup>3</sup> kg m<sup>−3</sup>. </p><p>(i) Use this flow rate to determine the energy transferred by the water each second.</p><p style='text-align: right;'>[4]</p><p>(ii) Explain why this value is <strong>not </strong>consistent with the energy transfer rate calculated in <strong>(a)</strong>. </p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Estimate the depth of the water held in the upper reservoir. State any assumptions made.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A BASE jumper of mass 70 kg jumps from the top of a bridge and reaches a speed of 45 m s<sup>−1</sup> after falling a distance of 150 m.</p><p>Calculate the change in the jumper&#x27;s gravitational potential energy.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the kinetic energy gained by the jumper.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the values in <strong>(a)</strong> and<strong> (b)</strong> are not equal.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the average resistive force acting on the BASE jumper as they fall.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A car on a roller coaster has a mass of 4200 kg and is designed to carry up to 10 passengers each with an average mass of 65 kg.</p><p>The car is moving at a speed of 2.0 m s<sup>−1</sup> when it starts to descend through a drop of 50 m. It reaches a top speed of 24 m s<sup>−1</sup> after travelling 75 m along the track.</p><p>For the car with its maximum capacity of passengers, calculate      </p><p>(i) the loss of potential energy</p><p style='text-align: right;'>[2]</p><p>(ii) the initial kinetic energy.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the kinetic energy of the car and passengers after the descent.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For the roller coaster car and passengers  </p><p>(i) State the main resistive forces to the motion.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the work done against these forces during the descent.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the average resistive force that acts on the car during the descent.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Anaisha launches a pebble vertically upwards using a sling shot. The speed of the pebble as it leaves the sling shot is 28 m s<sup>−1</sup>.</p><p>Calculate the height that the pebble gains.</p><p>Assume that air resistance is negligible. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>The mass of the pebble is 300 g. Complete the energy bar chart shown in Fig. 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/5-2-q1b-h-sq-cie-ial-physics.png' alt='5-2-q1b-h-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Anaisha notices a small basket hanging by a string from a tree. The basket has a mass of 280 g and the length of the string is 85 cm. Anaisha uses her slingshot to fire the pebble horizontally, which lands in the basket. The basket then swings out to an angle of 45°.</p><p>Calculate the speed of the pebble as she fired it.</p><p>Assume that air resistance is negligible and that there is no breeze.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows an object at rest at the top of a straight slope which makes a fixed angle with the horizontal at a distance <em>h</em> above the ground. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q4a-hard-aqa-a-level-physics.png' alt='4-6-s-q--q4a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The object is released and slides down the slope from <strong>A</strong> to <strong>B</strong> with negligible friction.</p><p>Assume that the potential energy is zero at <strong>B</strong>. </p><p>Sketch a graph showing: </p><ul><li><p>The variation of potential energy along the slope. Label this <strong>P</strong>.</p></li><li><p>The variation of kinetic energy of the object along the slope. Label this <strong>K</strong>.</p></li><li><p>The variation of kinetic energy along the slope when there is a constant frictional force between the object and the surface. Label this <strong>F</strong>. </p></li></ul><p>Explain the important features of the graphs you have drawn.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a theme park ride, a cage containing passengers falls freely a distance of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>m from <strong>A</strong> to <strong>B</strong> and travels in a circular arc of radius 25 m from <strong>B</strong> to <strong>C</strong>. </p><p>Brakes are applied at <strong>C</strong> after which the cage with its passengers travels 70 m along an upward sloping ramp and comes to rest at <strong>D</strong>. The track, together with relevant distances, is shown in Fig. 1.2. <strong>CD</strong> makes an angle of <em>θ </em>with the horizontal. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q4b-hard-aqa-a-level-physics.png' alt='4-6-s-q--q4b-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>alt: For a passenger of mass 70 kg, the force keeping them in circular motion at <strong>C</strong> is 5.4 kN. </p><p>The force required for circular motion on a passenger of mass 70 kg at <strong>C</strong> is 5.4 kN. </p><p>Calculate height <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>. </p><p>Assume that friction is negligible between <strong>A</strong> and <strong>C</strong>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The total mass of the cage and passengers is 720 kg. The average resistive force exerted by the brakes between <strong>C</strong> and <strong>D</strong> is 4.8 kN.</p><p>By considering energy changes, calculate the value of <em>θ</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

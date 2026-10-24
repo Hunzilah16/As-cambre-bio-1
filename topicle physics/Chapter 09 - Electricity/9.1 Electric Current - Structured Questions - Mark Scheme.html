@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>9.1 Electric Current - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">9.1 Electric Current</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 9. Electricity</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 7 Questions (62 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define the amp.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The amp is defined as:</p><ul><li><p>The current produced when one coulomb of charge passes a point; <em>[1 mark]</em></p></li><li><p>In one second; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A charge of 60 × 10<sup>–6</sup> C flows through a given section of a conductor in 140 × 10<sup>–3</sup> s. Calculate the electric current, stating the final answer in mA.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To calculate current from charge and time:</p><p>List the known quantities:</p><ul><li><p>Charge, <em>Q</em>  =  60 × 10<sup>–6</sup> C</p></li><li><p>Time, <em>t</em>  = 140 × 10<sup>–3</sup> s</p></li></ul><p>Recall the equation for current, <em>I </em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>Q</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Substitute the numbers into the equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>60</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>&#8211;</mo><mn>6</mn></mrow></msup><mo>&#160;</mo></mrow><mrow><mn>140</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>&#8211;</mo><mn>3</mn></mrow></msup><mo>&#160;</mo></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 4.286 × 10<sup>−4</sup> A <em>[1 mark]</em></p></li></ul><p>Calculate the final answer in mA:</p><ul><li><p><em>I</em> = 4.3 × 10<sup>-4</sup> = 0.43 mA <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>The charges in these questions are usually small fractions of a coulomb, so convert to standard form before substituting. In this question it was done for you, but in the exams, always do this right at the start, as it&#x27;s very easy to forget later on.</em></p><p><em>Also remember to round all answers to the same significant figures as those used in the question.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use words from the list below to complete the description of the movement of charge carriers in a conductor.</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>average current</strong></p></td><td><p style='text-align: center;'><strong>delocalised</strong></p></td><td><p style='text-align: center;'><strong>electric force</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>electric field</strong></p></td><td><p style='text-align: center;'><strong>randomly</strong></p></td><td><p style='text-align: center;'><strong>drift</strong></p></td></tr></table><p>The charge carriers in a metal conductor are ...................... electrons.</p><p>Normally the electrons move ..................... in all directions, but if a potential difference is applied between two points on the conductor, then an ..................... is created.</p><p>This causes an ..................... to act on the charge carriers, causing them to ..................... along the conductor in a resultant direction. </p><p>Therefore we can say that a steady ..................... flows through the conductor.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The correct sentences state that:</p><ul><li><p>The charge carriers in a metal conductor are <em><strong>delocalised </strong></em>electrons; <em>[1 mark]</em></p></li><li><p>Normally the electrons move <em><strong>randomly </strong></em>in all directions, but if a potential difference is applied between two points on the conductor, then an <em><strong>electric field</strong></em> is created; <em>[1 mark]</em></p></li><li><p>This causes an <em><strong>electric force</strong></em> to act on on the charge carriers, causing them to <em><strong>drift </strong></em>along the conductor in a resultant direction; <em>[1 mark]</em></p></li><li><p>Therefore we can say that  a steady <em><strong>average current</strong></em> flows through the conductor; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The conductor described in part (d) has a cross-sectional area of 1.1 × 10<sup>−7</sup> m<sup>2</sup> and the electrons have an average drift speed of 18 mm s<sup>−1</sup>.</p><p>Calculate the number density of electrons in this conductor.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To find the number density of electrons:</p><p>List the known quantities:</p><ul><li><p>Cross-sectional area, <em>A</em>  = 1.1 × 10<sup>−7</sup> m<sup>2</sup></p></li><li><p>Drift speed, <em>v</em>  = 18 mm s<sup>−1</sup> = 18 × 10<sup>−3</sup> m s<sup>−1</sup> <em>[1 mark]</em></p></li><li><p>Current, <em>I</em>  = 4.3 × 10<sup>−4</sup> A</p></li><li><p>Charge on each electron (current carrier), <em>q</em>  = 1.60 × 10<sup>−19</sup> C (from the data page)</p></li></ul><p>From the formulae page:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>A</mi><mi>n</mi><mi>v</mi><mi>q</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Rearrange for number density:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>I</mi><mrow><mi>A</mi><mi>v</mi><mi>q</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Substitute the known quantities:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>4</mn><mo>.</mo><mn>3</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></mrow><mrow><mfenced><mrow><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>18</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>60</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup></mrow></mfenced></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mn>24</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Converting units of known quantities should be your very first step in any calculation question. It&#x27;s so easy to forget this once you begin the main calculation.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The Standard International System of Units (SI) is a system of measurement based on seven base units. </p><p>State the <strong>symbol </strong>and the <strong>SI unit </strong>for electric charge.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The symbol for electric charge is:</p><ul><li><p><em>Q </em>; <em>[1 mark] </em></p></li></ul><p>The SI unit for electric charge is:</p><ul><li><p>Coulomb <strong>OR</strong> C;<em> [1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a circuit, a current of 2.0 A flows through a resistor for 90 minutes.</p><p>Calculate the total charge passing through the resistor in this time.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Current <em>I</em> = 2.0 A</p></li><li><p>Time <em>t</em> = 90 minutes = 90 × 60 s = 5400 s</p></li></ul><p>From the data page:</p><ul><li><p>Elementary charge = 1.6 × 10<sup>–19</sup> C</p></li></ul><p>Recall the equation for current:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>Q</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Substitute known quantities into the equation for current:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>Q</mi><mn>5400</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><em>Q</em> = 2.0 × 5400 = 10 800 C <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the number of electrons that pass a point in the resistor in part (b).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Determine the number of electrons in 10 800 C of charge:</p><p>List the known quantities:</p><ul><li><p>Total charge, <em>Q</em>  = 10 800 C (from part (b))</p></li><li><p>Elementary charge, <em>e</em>  = 1.6 × 10<sup>–19</sup> C</p></li></ul><p>Calculate the number of electrons:</p><ul><li><p>The total amount of charge <em>q</em> = <em>Ne</em></p><ul><li><p>where <em>N</em> is the number of charge carriers and <em>e</em> is the elementary charge carried by each</p></li></ul></li><li><p>Therefore, 10 800 = <em>N</em> × (1.6 × 10<sup>–19</sup>)</p></li><li><p><em>N</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>10</mn><mo>&#160;</mo><mn>800</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><em>N</em> = 6.8 × 10<sup>22</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When a copper wire is exposed to a potential difference, a current is detected in it.</p><p>Explain, with reference to charge carriers and electric fields, why there is a current detected in the wire.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Explain why a current is present in the wire:</p><p>Refer to the existence of free electrons in copper:</p><ul><li><p>Copper wire has (many) <u>free</u>/<u>conducting/valence/delocalised</u> electrons; <em>[1 mark]</em></p></li></ul><p>Describe the effect of the potential difference:</p><ul><li><p>The potential difference produces an <u>electric field</u> (in the wire); <em>[1 mark]</em></p></li></ul><p>Explain the effect of an electric field:</p><ul><li><p>(An applied electric field will make these) electrons <u>accelerate</u> (which is detected as a current); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Copper is a good conductor of electricity, which means it has many </em><em><strong>free electrons</strong></em><em>. When placed in an electric field, or a region where there is a difference in electric potential, a force is applied to these free electrons causing them to </em><em><strong>accelerate</strong></em><em>.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Electric current is defined as the rate of flow of electric charge.</p><p>(i) State the particle responsible for carrying electric charge around a circuit </p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the total electric charge carried by ten million of these particles</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) The particle responsible for carrying electric charge around a circuit is:</p><ul><li><p>The electron; <em>[1 mark] </em></p><p><em>  </em></p></li></ul><p>(ii) Calculate the total charge carried by ten million electrons:</p><p>List the known quantities:</p><ul><li><p>Number of particles, <em>N</em>  = ten million = 10 × 10<sup>6</sup> </p></li></ul><p>From the data page:</p><ul><li><p>Elementary charge, <em>e </em> = 1.6 × 10<sup>–19</sup> C </p></li></ul><p>Calculate the total charge:</p><ul><li><p>The total charge <em>Q</em> is given by the number of electrons <em>N</em> × the charge carried by each electron <em>e</em></p></li><li><p>Therefore <em>Q</em> = (10 × 10<sup>6</sup>) × (1.6 × 10<sup>–19</sup>) <em>[1 mark]</em></p></li><li><p><em>Q</em> = 1.6 × 10<sup>–12</sup> C [1 mark]<strong> </strong></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em><strong> </strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A lamp forms part of a circuit. A current of 0.3 mA passes through the lamp for a period of 5 minutes.</p><p>Calculate the amount of charge which passes a point in the lamp over those 5 minutes.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Current, <em>I</em> = 0.3 mA</p></li><li><p>Time, <em>t </em> = 5 minutes </p></li></ul><p>Recall the equation for current:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>Q</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Convert current into amps and time into seconds:</p><ul><li><p><em>I</em> = 0.3 mA = 0.3 × 10<sup>–3</sup> A</p><p><strong>AND</strong></p></li><li><p><em>t</em>  = 5 minutes = 5 × 60 = 300 s <em>[1 mark]</em></p></li></ul><p>Calculate the charge which passes through the lamp:</p><ul><li><p>The charge, <em>Q</em> = <em>I</em> × <em>t</em></p></li><li><p><em>Q</em> = (0.3 × 10<sup>–3</sup>) × 300 <em>[1 mark]</em></p></li><li><p><em>Q</em> = 0.09 C <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em> </em></p><p><em>Remember to convert all quantities into their standard units! Prefixes, like the ‘milliamps (mA)’ used in this question, are common tricks used by examiners to check if students are on their toes: in this question, we have to remember to convert 0.3 mA to A, as well as minutes to seconds, before substituting into the equation for current. This is because the one coulomb (C) is equal to one amp second (A s).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A section of wire in the lamp in part (b) has a cross-sectional area of 4.5 × 10<sup>−5</sup> m<sup>2</sup>. </p><p>Using the current calculated in part (b), calculate the average drift velocity of the electrons when the number density of electrons in this section of wire is 3.6 × 10<sup>22</sup> m<sup>−3</sup>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To find the average drift velocity of electrons:</p><p>List the known quantities:</p><ul><li><p>Cross-sectional area, <em>A</em>  = 4.5 × 10<sup>−5</sup> m<sup>2</sup></p></li><li><p>Number density of electrons, <em>n</em>  =  3.6 × 10<sup>22</sup> m<sup>−3</sup></p></li><li><p>Current, <em>I</em>  = 3.0 × 10<sup>−4</sup> A (from part (b))</p></li><li><p>Charge on each electron (current carrier), <em>q</em>  = 1.60 × 10<sup>−19</sup> C (from the data page)</p></li></ul><p>From the formulae page:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>A</mi><mi>n</mi><mi>v</mi><mi>q</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Rearrange for average drift speed, <em>v </em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>I</mi><mrow><mi>A</mi><mi>n</mi><mi>q</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Substitute the known quantities:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></mrow><mrow><mfenced><mrow><mn>4</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>3</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mn>22</mn></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>60</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup></mrow></mfenced></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a typical electric circuit involving a battery, lamp and two resistors.<strong> </strong></p><p>There is a gap in the circuit between points <strong>X</strong> and <strong>Y</strong>.  </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-1-s-q--q1b-easy-aqa-a-level-physics.png' alt='5-1-s-q--q1b-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Draw on<strong> </strong>Fig. 1.1: </p><p>(i) An <strong>ammeter</strong> between <strong>X</strong> and <strong>Y</strong> that would measure the current in the circuit </p><p style='text-align: right;'>[2]</p><p>(ii) The direction of <strong>conventional current</strong> in the circuit</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A diagram which would score 3 marks is shown below:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-1-s-q--q1b-ma-easy-aqa-a-level-physics.png' alt='5-1-s-q--q1b-ma-easy-aqa-a-level-physics' /></div><p>(i) An <strong>ammeter</strong> between <strong>X</strong> and <strong>Y</strong> that would measure the current in the circuit:<strong> </strong></p><ul><li><p>Correct symbol for an ammeter used;<em> [1 mark]</em></p></li><li><p>Ammeter connected <u>in series</u> between <strong>X</strong> and <strong>Y</strong>; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p>(ii) The direction of <strong>conventional current</strong> in the circuit: </p><ul><li><p>Conventional current labelled in a <u>clockwise direction</u>;<em> </em><em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks] </strong></em></p><p><em>You should know that conventional current flows from the </em><em><strong>positive</strong></em><em> terminal of a battery to the </em><em><strong>negative</strong></em><em> terminal – i.e., it is the flow of positive charge (even though, in reality, </em><em><strong>electrons</strong></em><em> flow around the circuit!) </em></p><p><em>Electron flow, therefore, is in the opposite direction to conventional current: flowing from the negative terminal to the positive terminal.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The smallest conductor within a computer processing chip can be represented as a rectangular block that is one atom high, four atoms wide and twenty atoms long. One such block is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/9-1-2a-m-conducting-chip.png' alt='9-1-2a-m-conducting-chip' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>The block is made from phosphorus atoms of diameter <em>d</em> = 3.8 × 10<sup>–10</sup> m. The atoms are deposited on an insulating surface. This ensures that the atoms touch each other.</p><p>The processing chip has a resistance, measured from <strong>P</strong> to <strong>Q</strong>, of 220 Ω.</p><p>(i) Define current.</p><p style='text-align: right;'>[1]</p><p>(ii) Describe for this processing chip the properties which will affect the current.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Define current:</p><ul><li><p>A flow of charge carriers; <em>[1 mark]</em></p></li></ul><p>(ii) Describe for this processing chip the properties which will affect the current:</p><p><em>Any </em><em><strong>three </strong></em><em>from:</em></p><ul><li><p><em>I</em> = <em>Anvq</em> (any arrangement); <em>[1 mark]</em></p></li><li><p>Charge per carrier / electron = 1.9 × 10<sup>−19</sup> C; <em>[1 mark]</em></p></li><li><p>Number of electrons / charge density is constant; <em>[1 mark]</em></p></li><li><p>Current increases for</p><ul><li><p>increased potential difference / voltage across the component;<em> [1 mark]</em></p></li><li><p>increased cross-sectional area;<em> [1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the number density of free electrons within the block.</p><p>Assume that each phosphorus atom contributes one free electron.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Calculate the number density of free electrons within the block:</p><p>Since each atom contributes one electron, calculate the number of atoms per unit volume:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mn>1</mn><msup><mi>d</mi><mn>3</mn></msup></mfrac><mo>=</mo><mfrac><mn>1</mn><msup><mfenced><mrow><mn>3</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>&#8211;</mo><mn>10</mn></mrow></msup></mrow></mfenced><mn>3</mn></msup></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mn>28</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the current between P and Q when the mean drift velocity of free electrons in the block is 1.9 × 10<sup>–5</sup> m s<sup>–1</sup>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the current between P and Q when the mean drift velocity of free electrons in the block is 1.9 × 10<sup>–5</sup> m s<sup>–1</sup> </p><p>List the known quantities:</p><ul><li><p>Drift velocity of free electrons, <em>v</em> = 1.9 × 10<sup>–5</sup> m s<sup>–1</sup> </p></li><li><p>Charge on an electron, <em>q</em> = −1.6 × 10<sup>−19</sup> C (from the data sheet)</p></li><li><p>Number density of electrons, <em>n</em> = 1.8 × 10<sup>28</sup> m<sup>-3</sup> (from part b)</p></li><li><p>Diameter of atom, <em>d </em>= 3.8 × 10<sup>−10</sup> m (from part a)</p></li></ul><p>Determine the cross-sectional area of the conductor:</p><ul><li><p>The current flowing from P to Q moves through a surface area 4 atoms wide by 1 atom high</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>&#215;</mo><msup><mfenced><mrow><mn>3</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>10</mn></mrow></msup></mrow></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>776</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn><mo>&#160;</mo></mrow></msup><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Use the equation relating current and drift velocity:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>A</mi><mi>n</mi><mi>v</mi><mi>q</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>5</mn><mo>.</mo><mn>776</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn><mo>&#160;</mo></mrow></msup></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mn>28</mn></msup></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>9</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>14</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Using the diameter of a sphere to calculate the surface area of a cuboid may seem odd. It is an approximation - what we call a &#x27;best estimate&#x27; - but using this kind of informed shortcut is an important aspect to calculations in physics.</em></p><p><em>The sketch below shows how the idea works. You can see that although there are gaps, they are small, so the estimation is a valid one.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-01-at-09-26-57.png' alt='screenshot-2023-03-01-at-09-26-57' /></div><p> </p><p><em>You can also see that the cross-sectional area of the conductor is:</em></p><p style='text-align: center;'><em>(4 x atom) × (1 × atom)</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>There are about 10<sup>9</sup> of these tiny conductors in a single chip each carrying the current calculated in part (c).</p><p>Estimate the total power dissipated in these conductors in a single chip.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Estimate the total power dissipated in these conductors in a single chip:</p><p>List the known quantities:</p><ul><li><p>Current, <em>I</em> = 3.2 × 10<sup>−14</sup> A</p></li><li><p>Resistance, <em>R</em> = 220 Ω (from part a)</p></li><li><p>Number of components in series = 10<sup>9</sup></p></li></ul><p>Determine the total resistance:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>220</mn><mo>&#215;</mo><msup><mn>10</mn><mn>9</mn></msup><mo>=</mo><mn>2</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>11</mn></msup><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em> [1 mark]</em></p></li></ul><p>Use the equation for power and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mo>&#160;</mo><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mfenced><mrow><mn>3</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>14</mn></mrow></msup></mrow></mfenced><mrow><mn>2</mn><mo>&#160;</mo></mrow></msup><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>11</mn></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mn>2</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>16</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The resistors are in </em><em><strong>series</strong></em><em>, so the total resistance will be the </em><em><strong>sum</strong></em><em> of all the resistors. </em></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>R</mi><mo> </mo><mo>+</mo><mo> </mo><mi>R</mi><mo> </mo><mo>+</mo><mo> </mo><mi>R</mi><mo> </mo><mo>+</mo><mo> </mo><mi>R</mi><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo> </mo><mo>=</mo><mo> </mo><mi>n</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>A power source is connected across a component. The current in the component is 40 mA.</p><p>Calculate the total charge that flows past a point in the component in 3 minutes.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Calculate the total charge that flows past a point in the component in 3 minutes:</p><p>List the known quantities:</p><ul><li><p>Current, <em>I </em>= 40 mA = 40 × 10<sup>−3</sup> A</p></li><li><p>Time, <em>t</em> = 3 minutes = 180 s</p></li></ul><p>Use the equation for charge and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mi>t</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>40</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced><mo>&#215;</mo><mn>180</mn><mo>=</mo><mn>7</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">C</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the number of electron charge carriers passing the same point in the conductor in this time.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Calculate the number of electron charge carriers passing the same point in the conductor in this time:</p><p>List the known quantities:</p><ul><li><p>Total charge, <em>Q</em> = 7.2 C (from part a)</p></li><li><p>Charge per electron, <em>q</em> = −1.6 × 10<sup>−19</sup> (from the data booklet)</p></li></ul><p>Calculate the total number of electrons:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>Q</mi><mi>q</mi></mfrac><mo>=</mo><mfrac><mrow><mn>7</mn><mo>.</mo><mn>2</mn></mrow><mfenced><mrow><mn>1</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup></mrow></mfenced></mfrac><mo>=</mo><mn>4</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mn>19</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>8.6 J of energy are transferred to the conductor in this time.      </p><p>(i) Calculate the potential difference across the component.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the resistance of the conductor.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Calculate the potential difference across the component:</p><p>List the known quantities:</p><ul><li><p>Energy, <em>W </em>= 8.6 J</p></li><li><p>Charge, <em>Q</em> = 7.2 C</p></li></ul><p>Use the equation defining potential difference:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>Q</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>8</mn><mo>.</mo><mn>6</mn></mrow><mrow><mn>7</mn><mo>.</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">V</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) Calculate the resistance of the conductor:</p><p>List the known quantities:</p><ul><li><p>Potential difference, <em>V</em> = 1.2 V</p></li><li><p>Current, <em>I</em> = 40 × 10<sup>−3</sup> A (from part a)</p></li></ul><p>Use the equation for resistance:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mi>V</mi><mi>I</mi></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>2</mn></mrow><mfenced><mrow><mn>40</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>30</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark].</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Nancy is testing a new type of light bulb. She records the amount of current and the relative brightness of the light coming from the bulb. </p><p>Sketch a possible circuit diagram to show this experimental setup. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>A possible circuit diagram that should score 2 marks would look like this: </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/file-000-5.png' alt='file-000-5' /></div><ul><li><p>Cell / battery / power supply, light bulb and ammeter drawn; <em>[1 mark]</em></p></li><li><p>Components connected with straight lines into a series circuit; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the ammeter needs to be connected in series.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The ammeter needs to be connected in series because:</p><ul><li><p>An ammeter measures the amount of current in a circuit; <em>[1 mark]</em></p></li><li><p>It needs to be in series with the components of the circuit; <em>[1 mark]</em></p></li><li><p>So the same amount of current passes through both the ammeter and the component; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain the results Nancy should expect to obtain, assuming the resistance of the bulb, ammeter and circuit remain constant.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Nancy should expect to obtain results as follows:</p><ul><li><p>As the current through the light bulb increases the brightness of the light bulb also increases; <em>[1 mark]</em></p></li><li><p>This is because <em>P </em>= <em>I</em><sup>2</sup><em>R</em>; <em>[1 mark]</em></p></li><li><p>So, for a constant resistance, <em>R</em>, when <em>I  </em>increases the power <em>P </em>also increases, meaning the light bulb is brighter; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Nancy sets up her circuit and begins to conduct her experiment. Her first readings are negative values of current. </p><p>Identify the problem and suggest a solution. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The problem Nancy has with her circuit is:</p><ul><li><p>The ammeter is connected the wrong way around (in the circuit);</p><p><strong>OR</strong></p></li><li><p>The negative terminal of the ammeter is connected to the positive terminal of the power supply; <em>[1 mark]</em></p><p> </p></li></ul><p>A solution to this problem is:</p><ul><li><p>Change the orientation / direction of the ammeter&#x27;s connection in the circuit;</p><p><strong>OR</strong></p></li><li><p>Connect the positive terminal of the ammeter to the positive terminal of the power supply; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>It can be tricky to remember the nuances of current and electron direction but learn them so you don&#x27;t get confused easily in your exam. Negative values of current are not physically negative current but a polarity convention.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[4 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define the <em>coulomb</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <div class='callout-box'><p>A coulomb is defined as:</p><ul><li><p>An ampere second</p><p><strong>OR</strong></p><p>The charge moved by a current of 1 ampere in 1 second <em>[1 mark]</em></p></li></ul></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>An electric current is a flow of charge carriers.</p><p>In the following list, underline the possible charges for a charge carrier.</p><p style='text-align: center;'>1.6 × 10<sup>–20</sup> C ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 1.6 × 10<sup>–19</sup> C ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 4.0 × 10<sup>–19</sup> C ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 8.0 × 10<sup>–19</sup> C</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Underline the possible charges for a charge carrier:</p><p style='text-align: center;'>1.6 × 10<sup>–20</sup> C ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <u>1.6 × 10</u><sup><u>–19</u></sup><u> C</u> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 4.0 × 10<sup>–19</sup> C ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <u>8.0 × 10</u><sup><u>–19</u></sup><u> C</u></p><p style='text-align: right;'><em>[1 mark]</em></p><div class='callout-box'><p>1 mark is awarded if only 1.6 × 10<sup>–19</sup> C <strong>AND </strong>8.0 × 10<sup>–19</sup> C are underlined <strong>AND </strong>no others are underlined</p></div><div class='callout-box'><p>The charge carried by charged particles is quantised. This means charge always occurs in multiples of the elementary charge <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, which is equal to 1.6 × 10<sup>–19</sup> C.</p></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The diameter of a wire XY varies linearly with distance along the wire as shown in Fig. 6.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/1258-cie-paper-2-q6-drift-speed-wire.png' alt='A cylindrical conductor with current I flowing from left to right. Diameter at point X is 2d, narrowing to d at point Y. Drift speed at X is indicated as Vx.' /></div><p style='text-align: center;'><strong>Fig. 6.1</strong></p><p>There is a current <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> in the wire. At end X of the wire, the diameter is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and the average drift speed of the free electrons is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi mathvariant="normal">X</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>. At end Y of the wire, the diameter is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p><p>On Fig. 6.2, sketch a graph to show the variation of the average drift speed with position along the wire between X and Y.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/37152-cie-paper-2-q6-drift-speed-vs-position-graph.png' alt='Grid graph with x-axis labelled &quot;position along wire&quot; from X to Y, and y-axis labelled &quot;average drift speed&quot; with increments vx to 4vx.' /></div><p style='text-align: center;'><strong>Fig. 6.2</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Sketch a graph to show the variation of the average drift speed with position along the wire:</p><ul><li><p>Determine the relationship between drift speed and wire diameter</p></li></ul><p style='text-align: center;'>Cross-sectional area of wire: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mfenced><mfrac><mi>d</mi><mn>2</mn></mfrac></mfenced><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'>At X: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mfenced><mfrac><mrow><mn>2</mn><mi>d</mi></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mi>d</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'>At Y: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mfenced><mfrac><mi>d</mi><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi mathvariant="normal">&#960;</mi><msup><mi>d</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'>Drift speed: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>A</mi><mi>n</mi><mi>v</mi><mi>q</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>I</mi><mrow><mi>A</mi><mi>n</mi><mi>q</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'>Since <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> are constant <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>v</mi><mi mathvariant="normal">Y</mi></msub><msub><mi>v</mi><mi mathvariant="normal">X</mi></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><mi>d</mi><mn>2</mn></msup><mstyle displaystyle="true"><mfrac bevelled="true"><msup><mi>d</mi><mn>2</mn></msup><mn>4</mn></mfrac></mstyle></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'>Therefore <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi mathvariant="normal">Y</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><msub><mi>v</mi><mi mathvariant="normal">X</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>Sketch a line on the graph:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/34232-cie-paper-2-q6-drift-speed-vs-position-graph-ma.png' alt='Graph of average drift speed versus position along a wire, showing a curve with increasing positive gradient from vx at X to 4vx at Y.' /></div><p style='text-align: right;'><em>[2 marks]</em></p><div class='callout-box'><p>1 mark for a line drawn between (X, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi mathvariant="normal">X</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>) and (Y, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><msub><mi>v</mi><mi mathvariant="normal">X</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>)</p><p>1 mark for a line drawn with an increasing magnitude of gradient</p></div><div class='callout-box'><p>Since diameter <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> varies linearly, area <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> varies as <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>d</mi><mn>2</mn></msup><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mfrac><mn>1</mn><msup><mi>d</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>. This means the variation of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> with <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is a non-linear increase. Hence, the gradient increases towards Y.</p></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

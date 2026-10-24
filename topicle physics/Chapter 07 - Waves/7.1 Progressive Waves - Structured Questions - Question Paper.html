@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7.1 Progressive Waves - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">7.1 Progressive Waves</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 7. Waves</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 6 Questions (59 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the type of wave for which the oscillations are perpendicular to the direction of energy transfer.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State two objects that can be used in the classroom to demonstrate wave motion.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a waveform consisting of compressions and rarefactions. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/longitudinal-wave-form.png' alt='longitudinal-wave-form' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Annotate the diagram to show one complete wavelength, and label it <em>λ.</em></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The compression wave in Fig. 1.1 is a progressive wave in which 5 compressions pass a fixed point every 2 seconds. </p><p>Determine the frequency of the wave.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a displacement-distance graph for a travelling wave.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-2-1a-question-stem-sl-sq-easy-phy.png' alt='4-2-1a-question-stem-sl-sq-easy-phy' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>On Fig. 1.1, add labels to show:</p><p>(i) the wavelength</p><p style='text-align: right;'>[1]</p><p>(ii) the amplitude</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Match the key word to its correct definition</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/ye-K4JGI_4-2-sl-sq-1b-question-stem.png' alt='ye-K4JGI_4-2-sl-sq-1b-question-stem' /></div>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows a displacement-time graph for an oscillating object.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/3b-figure-1.png' alt='3b-figure-1' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Determine the time period <em>T </em>for this oscillation</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The oscillation shown in Fig. 1.2 has a wavelength <em>λ</em> of 5 m.</p><p>Calculate:</p><p>(i) the frequency <em>f </em>of the oscillation</p><p style='text-align: right;'>[2]</p><p>(ii) the wave speed <em>v</em>.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[5 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Circular water waves are produced by vibrating dippers at points P and Q, as illustrated in Fig. 4.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/11/q4b-paper-2-specimen-2022-cie-ial-physics.png' alt='q4b-paper-2-specimen-2022-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 4.1</strong> (not to scale)</p><p>The waves from P alone have the same amplitude at point R as the waves from Q alone. Distance PR is 44 cm and distance QR is 29 cm.</p><p>The dippers vibrate in phase with a period of 1.5 s to produce waves of speed 4.0 cm s<sup>–1</sup>.</p><p>(i) Calculate the wavelength of the waves.</p><p style='text-align: right;'>wavelength = .................................................... cm [2]</p><p>(ii) Calculate the path difference at point R of the waves from P and Q.</p><p>Give your answer in terms of the wavelength λ of the waves.</p><p style='text-align: right;'>path difference = ....................................................... λ [1]</p><p>(iii) Describe the motion, if any, of the water particles at point R.</p><p>Explain your answer.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1<strong> </strong>represents a progressive wave travelling from left to right on a stretched string.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q2a-medium-aqa-a-level-physics.png' alt='3-1-s-q--q2a-medium-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The frequency of the wave is 30 Hz. Calculate the speed of the wave.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the phase difference between points <strong>X</strong> and <strong>Y</strong> on the string, giving an appropriate unit.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Describe how the vertical displacement of point <strong>X</strong> on the string varies in the next period.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the phase difference between the current position of <strong>X</strong> and the position of <strong>X</strong> 0.0825 s later.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a vertical cross-section through a water wave moving from left to right.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1a-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Deduce the point at which the water is moving upwards at maximum speed and explain your reasoning. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>While a microphone is connected to a cathode-ray oscilloscope, a student strikes a tuning fork nearby. The sound wave produced by the tuning fork is displayed as a trace on the screen.</p><p>Fig. 1.2 shows the resulting trace. The time-base and gain are given on the screen.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1b-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1b-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Use Fig. 1.2<strong> </strong>to calculate the wavelength of the sound wave produced. </p><p>(The speed of sound is approximately 330 m s<sup>–1</sup>).</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student’s lab partner strikes another identical tuning fork near the microphone, so that both sound wave signals can be overlaid on the oscilloscope trace. Fig. 1.3 shows the new trace.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1c-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1c-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>Using Fig. 1.3, determine the phase difference between the two signals as shown on the oscilloscope trace. </p><p>Give a suitable unit with your answer.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The oscilloscope trace is known as a ‘time-view’ of the sound wave because it shows the displacement of an oscillating signal against time. One of the students makes a time-view sketch as shown in Fig. 1.4, including a label <em>M</em>. </p><p>An oscillating signal can also be shown in terms of a ‘space-view’, which would show the displacement of the signal against its position. The other student makes a space-view sketch as shown in Fig. 1.5, including a label <em>N</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1d-image1-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1d-image1-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.4</strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/c7YeQlBD_3-1-s-q--q1d-image2-hard-aqa-a-level-physics.png' alt='c7YeQlBD_3-1-s-q--q1d-image2-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.5</strong></p><p>Show that the wave speed <em>v </em>is given by:</p><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mi>N</mi></mrow><mrow><mn>2</mn><mi>M</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Ultrasound is used to measure the depth of oceans, seas and lakes. </p><p>Fig. 1.1 shows a pulse of ultrasound being emitted from the boat, travelling down to the sea bed and being reflected back to the boat.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/sl-sq-4-2-hard-q3a-ultrasound-ship.png' alt='sl-sq-4-2-hard-q3a-ultrasound-ship' /></div><p style='text-align: center;'><strong>Fig.1.1</strong></p><p>State which type of wave ultrasound is and explain your answer.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cathode-ray oscilloscope (C.R.O.) is used to trace the ultrasound pulses sent from the boat and the reflected pulses returning to the boat. The C.R.O. trace is shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/sl-sq-4-2-hard-q3b-trace-of-ultrasound-pulses.png' alt='sl-sq-4-2-hard-q3b-trace-of-ultrasound-pulses' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>The ultrasound travels through water at 1452 m s<sup>−1</sup>, and the wavelength of the pulse is 0.023 m.</p><p>For the ultrasound pulses: </p><p>(i) Calculate the frequency</p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the distance to the sea bed</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[8 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The boat moves out to an area where the sea is deeper. </p><p>(i) State and explain two changes that would occur on the cathode-ray oscilloscope trace. You may include diagrams in your answer.</p><p style='text-align: right;'>[4]</p><p>(ii) When the sea is over 450 m deep, the pulses must be transmitted less frequently. Explain why this is the case.</p><p style='text-align: right;'>[4]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

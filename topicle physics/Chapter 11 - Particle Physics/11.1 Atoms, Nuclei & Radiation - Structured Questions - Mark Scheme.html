@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>11.1 Atoms, Nuclei & Radiation - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">11.1 Atoms, Nuclei & Radiation</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 11. Particle Physics</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 8 Questions (66 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Ionising radiation often comes in three forms: alpha, beta and gamma. </p><p>Table 1.1 below shows information about the properties of each type of radiation. </p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Type</strong></p></td><td><p style='text-align: center;'><strong>Nuclear notation</strong></p></td><td><p style='text-align: center;'><strong>Relative charge</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>Alpha</strong></p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>+2</p></td></tr><tr><td><p style='text-align: center;'><strong>Beta</strong></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi mathvariant="normal">&#946;</mi><mprescripts></mprescripts><mrow><mo>-</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'><strong>Gamma</strong></p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr></table><p style='text-align: center;'><strong>Table 1.1   </strong></p><p>Complete the missing information in Table 1.1.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>A completed Table 1.1 that would score full credit is shown below: </p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Type</strong></p></td><td><p style='text-align: center;'><strong>Nuclear notation</strong></p></td><td><p style='text-align: center;'><strong>Relative charge</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>Alpha</strong></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi mathvariant="normal">&#945;</mi><mprescripts></mprescripts><mn>2</mn><mn>4</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><strong>OR</strong><em><strong> </strong></em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>He</mi><mprescripts></mprescripts><mn>2</mn><mn>4</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'>+2</p></td></tr><tr><td><p style='text-align: center;'><strong>Beta</strong></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi mathvariant="normal">&#946;</mi><mprescripts></mprescripts><mrow><mo>-</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'><em>–1</em></p></td></tr><tr><td><p style='text-align: center;'><strong>Gamma</strong></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi mathvariant="normal">&#947;</mi><mprescripts></mprescripts><mn>0</mn><mn>0</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'><em>0</em></p></td></tr></table><ul><li><p><em>[1 mark]</em> for each correct entry</p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Identify <strong>one</strong> similarity and <strong>one</strong> difference between alpha particles and beta particles<strong>.</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>A similarity between alpha particles and beta particles:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>Both particles are charged;<em> [1 mark]</em></p></li><li><p>Both particles can cause ionisation / are ionising;<em> [1 mark] </em></p></li><li><p>Both particles are emitted from the nucleus during radioactive decay; <em>[1 mark]</em></p></li></ul><p>A difference between alpha particles and beta particles:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>Alpha particles have double the magnitude of charge of beta particles; <em>[1 mark]</em></p></li><li><p>Alpha particles have more mass than beta particles / beta particles have less mass than alpha particles; <em>[1 mark]</em></p></li><li><p>Beta particles are fundamental particles whereas alpha particles are not; <em>[1 mark]</em></p></li><li><p>Alpha particles are positively charged<strong> </strong><u>whereas</u> beta particles are negatively charged; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks] </strong></em></p><p><em>Avoid saying that both particles are ‘radioactive’, as this is technically incorrect. The alpha or beta particles are themselves not radioactive: the nuclei that decayed and emitted these particles are radioactive.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>The properties of ionising radiation that make it so useful is related to the study of the structure of atoms. </p><p>Evidence that atoms had an internal structure was confirmed by Ernest Rutherford. He was able to show that a thin sheet of gold foil scattered ionising radiation in ways that could not be explained by accepted models of atomic structure at the time. </p><p>State the type of ionising radiation that was scattered by gold foil in Rutherford’s experiment.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The type of ionising radiation scattered by gold foil in Rutherford’s experiment was:</p><ul><li><p>Alpha particles / radiation; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Each of the observations from Rutherford’s experiment had profound implications about how atoms were structured. </p><p>In the space provided below, match each observation from Rutherford’s experiment to its corresponding conclusion about atomic structure. </p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Observation</strong></p></td><td><p style='text-align: center;'> </p><p style='text-align: center;'> </p><p style='text-align: center;'> </p><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Conclusion</strong></p></td></tr><tr><td><p style='text-align: center;'>A small proportion of radiation is slightly deflected by the gold foil</p></td><td><p style='text-align: center;'>The atom is mostly empty space</p></td></tr><tr><td><p style='text-align: center;'>The majority of radiation is undeflected by the gold foil </p></td><td><p style='text-align: center;'>The mass of a nucleus is concentrated in a very small volume</p></td></tr><tr><td><p style='text-align: center;'>A very small proportion of radiation is deflected back on itself</p></td><td><p style='text-align: center;'>The nucleus carries a positive charge</p></td></tr></table><p> </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Observations and conclusions have been matched as shown below:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/ms-q1b.png' alt='ms-q1b' /></div><ul><li><p><em>[1 mark]</em> for each correct match</p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em> </em></p><p><em>When revising Rutherford’s experiment, remember to memorise </em><em><strong>both </strong></em><em>the observations </em><em><strong>and</strong></em><em> the conclusions that can be drawn about atomic structure.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The equation below represents the decay of tungsten-184.</p><p>Complete the equation by writing the correct number in each of the <strong>two</strong> boxes.</p><p style='text-align: center;'><span class='math-eq'><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi mathvariant="normal">W</mi><mprescripts></mprescripts><mn>74</mn><mn>184</mn></mmultiscripts><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi>Po</mi><mprescripts></mprescripts><mo>&#9633;</mo><mo>&#9633;</mo></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>alpha</mi><mo>&#160;</mo><mi>particle</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To correctly fill in the boxes for Po:</p><ul><li><p>Top number (mass number) = 180<em><strong> </strong></em><em>[1 mark]</em></p></li><li><p>Bottom number (atomic number) = 72 <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Beta decay does <strong>not</strong> cause the mass number of an atom to change.</p><p>Explain why not.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Explain why mass number does not change:</p><ul><li><p>Number of neutrons decreases by one; <em>[1 mark]</em></p></li><li><p>Number of protons increases by one; <em>[1 mark]</em></p></li><li><p>Both (protons and neutrons) have a (relative) mass of 1 <strong>OR</strong> both have the same (relative) mass; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The equation representing the decay of iodine-128 to xenon is shown below.</p><p>Complete the equation by writing the correct number in each of the <strong>two</strong> boxes.</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mrow><mmultiscripts><mi mathvariant="normal">I</mi><mprescripts></mprescripts><mn>53</mn><mn>128</mn></mmultiscripts><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi>Xe</mi><mprescripts></mprescripts><mo>&#9633;</mo><mo>&#9633;</mo></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>beta</mi><mo>&#160;</mo><mi>particle</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To correctly fill in Xe:</p><ul><li><p>Top number (mass number) = 128<em> [1 mark]</em></p></li><li><p>Bottom number (atomic number) = 54 <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State another particle emitted in beta minus decay.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Another particle emitted in beta minus decay is:</p><ul><li><p>An anti electron neutrino;<em><strong> </strong></em><em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[3 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A nucleus X decays by emitting a β+ particle to form a new nucleus, <span class='math-eq'><math style="font-family:Arial" xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mstyle mathsize="16px"><mmultiscripts><mi>Na</mi><mprescripts/><mn>11</mn><mn>23</mn></mmultiscripts></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p><p>State the number of protons and the number of neutrons in nucleus X.</p><p style='text-align: right;'>number of protons = ..........................................................</p><p style='text-align: right;'>number of neutrons = ...........................................................</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>For the decay:</p><p style='text-align: center;'><span class='math-eq'><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi>Na</mi><mprescripts></mprescripts><mn>11</mn><mn>23</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mmultiscripts><mrow><mo>&#160;</mo><msup><mi mathvariant="normal">&#946;</mi><mo>+</mo></msup></mrow><mprescripts></mprescripts><mrow><mo>+</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mover><mi mathvariant="normal">&#957;</mi><mo>&#175;</mo></mover></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Nucleus X has:</p><ul><li><p>Mass number = 23 + 0 = 23 protons + neutrons</p></li><li><p>Number of protons = 11 + 1 = 12 protons; <em>[1 mark]</em></p></li><li><p>Number of neutrons = 23 − 12 = 11 neutrons; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>one</strong> similarity between a β<sup>+</sup> particle and a β<sup>–</sup> particle.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>β<sup>+</sup> and β<sup>–</sup> particles have the same:</p><p><em>Either </em><em><strong>one </strong></em><em>from:</em></p><ul><li><p>(Rest) mass; <em>[1 mark]</em></p></li><li><p>(Magnitude of) charge; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The deflection of α-particles by a thin metal foil is investigated with the arrangement shown in Fig 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/11-1-2a-m-rutherford-scattering-apparatus.png' alt='11-1-2a-m-rutherford-scattering-apparatus' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>The detector of α-particles, D, is moved around the path labelled WXY.</p><p>State the environment the apparatus must be enclosed in and explain why this is required for the experiment.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>State the environment the apparatus must be enclosed in and explain why this is required for the experiment.</p><p>The apparatus must be enclosed in:</p><ul><li><p>A vacuum; <em>[1 mark]</em></p></li></ul><p>Because:</p><ul><li><p>α-particles travel / are absorbed by a short distance in air; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain the readings detected by D and the conclusions that were made about the nature of atoms at points </p><p>(i) W,</p><p style='text-align: right;'>[2]</p><p>(ii) X.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Explain the readings detected by D and the conclusions that were made about the nature of atoms at points</p><p>(i) W:</p><ul><li><p>A <u>very</u> small proportion deviated in the backwards direction / at large angles; <em>[1 mark]</em></p></li><li><p>This shows that the mass <u>and</u> charge are concentrated in a (very small) nucleus; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) X:</p><ul><li><p>The majority went straight through; <em>[1 mark]</em></p></li><li><p>This shows that most of the atom is <u>empty</u> space / the nucleus is very small compared with the atom; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State what the readings detected by D at position Y conclude about the charge of the nucleus. Explain why.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>State what the readings detected by D at position Y conclude about the charge of the nucleus. Explain why.</p><ul><li><p>The charge of the nucleus is positive; <em>[1 mark]</em></p></li><li><p>Because the alpha particle is positive <strong>AND</strong> it is repelled / deflected (at an angle);<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Remember the alpha particle is just a helium </em><em><strong>nucleus</strong></em><em> with two protons and two neutrons. Only protons have a charge in the nucleus (which is positive) so all nuclei are always positive. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A beam of α-particles produces a current of 3.5 pA. Calculate the number of α-particles per second passing a point in the beam.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the number of α-particles per second passing a point in the beam</p><p>List the known quantities:</p><ul><li><p>Current, <em>I</em> = 3.5 pA = 3.5 × 10<sup>–12</sup> A</p></li></ul><p>State the equation for current, <em>I</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mi>t</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>Q</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine an equation for the number of α-particles, <em>n</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>n</mi><mo>&#160;</mo><mo>&#215;</mo><mfrac><mrow><mo>&#160;</mo><mi>Q</mi></mrow><mi>t</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mfrac><mrow><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>n</mi><mo>&#160;</mo></mrow><mi>t</mi></mfrac><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>I</mi><mo>&#160;</mo></mrow><mi>Q</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>n</mi><mi>t</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup><mo>&#160;</mo></mrow><mrow><mn>2</mn><mo>&#215;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>60</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup></mrow></mfenced></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>n</mi><mi>t</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>094</mn><mo>&#215;</mo><msup><mn>10</mn><mn>7</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mn>7</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>An alpha particle is a helium nucleus of </em><em><strong>2</strong></em><em> protons and </em><em><strong>2</strong></em><em> neutrons. Therefore, its charge is the 2 × charge of a proton (</em><em><em>e</em></em><em> = 1.60 × 10</em><em><sup>–19</sup></em><em> C). You will be expected to remember the composition of an alpha particle, and the charge </em><em><em>e</em></em><em> is given on your data sheet.</em></p><p><em>The wording &#x27;per second&#x27; means &#x27;every 1 second&#x27;. Therefore, the &#x27;number of particles, </em><em><em>n</em></em><em>, per second&#x27; is represented as an equation </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>n</mi><mi>t</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When a nucleus of plutonium-239 absorbs a neutron, the following reaction may take place. </p><p style='text-align: center;'>  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>Pu</mi><mprescripts/><mn>94</mn><mn>239</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">n</mi><mprescripts/><mi>b</mi><mi>a</mi></mmultiscripts><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi>Xe</mi><mprescripts/><mn>54</mn><mi>x</mi></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mo>&#160;</mo><mmultiscripts><mi>Zr</mi><mprescripts/><mi>y</mi><mn>103</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>3</mn><mmultiscripts><mi mathvariant="normal">n</mi><mprescripts/><mi>b</mi><mi>a</mi></mmultiscripts><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p>State the values of <em>a</em>, <em>b</em>, <em>x</em> and <em>y</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The values of <em>a</em>, <em>b</em>, <em>x</em> and <em>y</em> are:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>Pu</mi><mprescripts/><mn>94</mn><mn>239</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">n</mi><mprescripts/><mn mathvariant="bold">0</mn><mn mathvariant="bold">1</mn></mmultiscripts><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi>Xe</mi><mprescripts/><mn>54</mn><mn mathvariant="bold">134</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mo>&#160;</mo><mmultiscripts><mi>Zr</mi><mprescripts/><mn mathvariant="bold">40</mn><mn>103</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>3</mn><mmultiscripts><mi mathvariant="normal">n</mi><mprescripts/><mn mathvariant="bold">0</mn><mn mathvariant="bold">1</mn></mmultiscripts><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p><em>a </em>= 1 <strong>AND</strong> <em>b</em> = 0 <em>[1 mark]</em></p></li></ul><p>Calculate <em>x</em>:</p><ul><li><p>239 + 1 = <em>x</em> + 103 + (3 × 1)</p></li><li><p><em>x</em> = 240 – 106</p></li><li><p><em>x</em> = 134 <em>[1 mark]</em></p></li></ul><p>Calculate <em>y</em>:</p><ul><li><p>94 + 0 = 54 + <em>y</em> + (3 × 0)</p></li><li><p><em>y</em> = 94 – 54</p></li><li><p><em>y</em> = 40 <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>On the right-hand side, </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mmultiscripts><mi>n</mi><mprescripts/><mn>0</mn><mn>1</mn></mmultiscripts><mo> </mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>means that there are </em><em><strong>3</strong></em><em> neutrons, so </em><em><strong>both</strong></em><em> the mass number (1) and the atomic number (0) must be </em><em><strong>multiplied</strong></em><em> by 3.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State two quantities, other than the proton and neutron number, that are conserved in the fission reaction in part (a).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Three quantities that are conserved in the fission reaction in part (a) are:</p><ul><li><p>mass and energy / mass–energy; <em>[1 mark]</em></p></li><li><p>momentum; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Be specific in your wording. Just &#x27;mass&#x27; or &#x27;energy&#x27; conservation would not be accepted here, since energy and mass are interchangeable and are often referred to as the same thing in particle physics (e.g. rest-mass energy).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A Plutonium-239 nucleus has a mean density of 1.3 × 10<sup>17</sup> kg m<sup>–3</sup>. </p><p>Show that the radius of a Plutonium-239 nucleus is 9.0 × 10<sup>–15</sup> m.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the radius of a Plutonium-239 nucleus</p><p>List the known quantities:</p><ul><li><p>Mean density of the Plutonium-239 nucleus,<em> ρ</em> = 1.3 × 10<sup>17</sup> kg m<sup>–3</sup></p></li></ul><p>Calculate the mass of the Plutonium nucleus, <em>m</em>:</p><ul><li><p><em>m</em> = mass number × atomic mass unit = 239 × 1 u</p></li><li><p><em>m</em> = 239 × (1.66 × 10<sup>–27</sup>) = 3.9674 × 10<sup>–25</sup> kg <em>[1 mark]</em></p></li></ul><p>Calculate the radius of the Plutonium nucleus, <em>r</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>=</mo><mfrac><mi>m</mi><mi>V</mi></mfrac><mo>=</mo><mfrac><mi>m</mi><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mi>m</mi></mrow><mrow><mn>4</mn><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mroot><mfrac><mrow><mn>3</mn><mi>m</mi></mrow><mrow><mn>4</mn><mi mathvariant="normal">&#960;</mi><mi>&#961;</mi></mrow></mfrac><mn>3</mn></mroot><mo>=</mo><mroot><mfrac><mrow><mn>3</mn><mo>&#215;</mo><mfenced><mrow><mn>3</mn><mo>.</mo><mn>9674</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>25</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>4</mn><mi mathvariant="normal">&#960;</mi><mo>&#215;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>17</mn></msup></mrow></mfenced></mrow></mfrac><mn>3</mn></mroot></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 8.996 × 10<sup>–15</sup> = 9.0 × 10<sup>–15</sup> m <em>[1 mark]</em></p></li></ul><p><em>[Total: 3 marks]</em></p><p><em>You can approximate a nucleus as a sphere, but you must remember the equation for the volume of a sphere, as this will not be given on your data sheet! However, the value of the atomic mass unit (u) will be given.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Plutonium-239 is an α-emitter whilst Uranium-237 is a β-emitter.</p><p>Aside from their structure, distinguish between an α-particle and a β-particle.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Aside from their structure, distinguish between an α-particle and a β-particle.</p><p><em>Any </em><em><strong>three</strong></em><em> from:</em></p><ul><li><p>The speed of an α-particle is less than the speed of a β-particle; <em>[1 mark]</em></p></li><li><p>An α-particle has discrete values of energy / speed whilst β-particles have a continuous spectrum / range of energies; <em>[1 mark]</em></p></li><li><p>α-particles have greater ionising power than β-particles <strong>OR </strong>α-particles have a shorter range than β-particles; <em>[1 mark]</em></p></li><li><p>α-particles are positive whilst β-particles are negative; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Reverse arguments would be accepted for all of these answers e.g. the speed of a β-particle is greater than the speed of an α-particle. The main thing is to remember that a comparison must mention both.</em></p><p><em>Read the question carefully, as it says &#x27;aside from their structure&#x27;. This means answers such as &#x27;an α-particle is two protons and two neutrons and a β-particle is an electron&#x27; will not be accepted.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[3 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In the alpha-particle scattering experiment, a beam of alpha particles was directed at a thin gold foil.</p><p>State the conclusion that can be drawn about the structure of the atom from </p><p>(i) the observation that most alpha-particles pass through the foil</p><p style='text-align: right;'>[1]</p><p>(ii) the observation that very few alpha-particles were deflected through angles greater than 90°.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <div class='callout-box'><p>(i) The observation that most alpha-particles pass through the foil implies:</p><ul><li><p>Most of an atom is empty space</p><p><strong>OR</strong></p><p>The nucleus (volume) is (very) small compared with the atom <em>[1 mark]</em></p></li></ul><p>(ii) The observation that very few alpha-particles were deflected through angles greater than 90° implies:</p><ul><li><p>The nucleus is charged <em>[1 mark]</em></p></li><li><p>The majority of the mass of an atom is in the nucleus <em>[1 mark]</em></p></li></ul></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The study of beta decay provided early hints to the existence of a yet undiscovered particle. </p><p>Scientists were interested in the energy distribution of the beta particles emitted when a radioactive source decayed. The source has an activity of 120 Bq. </p><p>The energy released by each decaying nucleus was labelled as X and the total energy released each second by the source was measured to be 7.5 × 10<sup>–11</sup> J. </p><p>Sketch a graph to show the energy distribution of the beta particles and indicate X on the diagram. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A graph that would score 3 marks should look like this:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/energy-distribution-of-beta-particles.png' alt='energy-distribution-of-beta-particles' /></div><ul><li><p>The y-axis is labelled with the relative number of beta particles with energy <em>E</em> <strong>AND</strong> the x-axis is labelled with kinetic energy <em>E</em> / 10<sup>−13</sup> J; <em>[1 mark]</em></p></li><li><p>The graph arcs upwards from a positive intercept on the y-axis to a maximum close to the top <strong>AND </strong>then curves back down to the x-axis; <em>[1 mark]</em></p></li><li><p>The graph ends at X marked on the x-axis close to the end of the space allocated; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Read this question carefully. The energy released by each decaying nucleus is not the same as the total energy released per second. After reading the question you should know what type of graph you need to draw for the </em><em><strong>energy distribution of the beta particles</strong></em><em>.</em></p><p><em>Make sure the graph you sketch covers most of the space you have allocated on the axis. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the value of X to an appropriate degree of accuracy.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Activity<em> </em>= 120 Bq</p></li><li><p>Total source energy released per second = 7.5 × 10<sup>–11</sup> J</p></li></ul><p>Calculation of X:</p><ul><li><p>Activity × energy released from one nucleus per decay = total source energy released per second</p></li><li><p>120 × X = 7.5 × 10<sup>–11</sup></p></li><li><p>X = 6.25 × 10<sup>–13</sup> J <em>[1 mark]</em> </p></li></ul><p>State the value of X to 2 significant figures, as used in the question:</p><ul><li><p>X = 6.3 × 10<sup>–13 </sup>J <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em> </p><p><em>Clearly, the mathematics required for this question is quite straightforward, but the underlying physics requires advanced understanding. </em></p><p><em>Reflect on the fact that the total energy released per second is the activity × the energy released per decay. This requires a comfortable knowledge of the definition of activity (the number of decays per second) and a careful appreciation of units.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why no beta particles had an energy equal to X. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>No beta particles have an energy equal to X because:</p><p><em>Any</em><em><strong> one</strong></em><em> from:</em></p><ul><li><p>Another particle is emitted during beta decay; <em>[1 mark]</em></p></li><li><p>A neutrino / an anti-neutrino is emitted; <em>[1 mark]</em></p></li><li><p>The nucleus recoils; <em>[1 mark]</em> </p></li></ul><p>None of the beta particles have an energy equal to X because:</p><ul><li><p>The other particle / anti-neutrino/nucleus takes some of the rest mass energy available; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>It is important to note that there will always be some minimum energy required to form a neutrino so that the maximum energy of a beta particle is</em></p><p style='text-align: center;'><em><strong>X − </strong></em><em><em><strong>E</strong></em></em><em><sub><strong>(mass of neutrino)</strong></sub></em></p><p><em>However, this mass is so small that the difference between X and the maximum energy of a beta particle is not visible on the scale of the X-axis. </em></p><p><em>While the recoil of the nucleus during radioactive decay is true, the main cause for the upper limit on the energy of beta particles was due to the presence of another particle – the neutrino / anti-neutrino (depending on whether it was β+ or β− decay). Remember to link this important discovery to questions asking about the distribution of energy of beta particles.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Suggest the standard form of the two possible equations that represent this decay and define all the terms used. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The first equation represents β− decay:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi mathvariant="normal">X</mi><mprescripts></mprescripts><mi mathvariant="normal">Z</mi><mi mathvariant="normal">A</mi></mmultiscripts><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">Y</mi><mprescripts></mprescripts><mrow><mi mathvariant="normal">Z</mi><mo>+</mo><mn>1</mn></mrow><mi mathvariant="normal">A</mi></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">&#946;</mi><mprescripts></mprescripts><mrow><mo>-</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mmultiscripts><mover><mi>v</mi><mo>&#175;</mo></mover><mi>e</mi><none></none><mprescripts></mprescripts><mn>0</mn><mn>0</mn></mmultiscripts></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p>The second equation represents β+ decay:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi mathvariant="normal">X</mi><mprescripts></mprescripts><mi mathvariant="normal">Z</mi><mi mathvariant="normal">A</mi></mmultiscripts><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">Y</mi><mprescripts></mprescripts><mrow><mi mathvariant="normal">Z</mi><mo>-</mo><mn>1</mn></mrow><mi mathvariant="normal">A</mi></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">&#946;</mi><mprescripts></mprescripts><mrow><mo>+</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><none></none><mprescripts></mprescripts><mn>0</mn><mn>0</mn></mmultiscripts></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Where:</p><ul><li><p>X is the <u>parent</u> nuclei with nucleon number A and proton number Z</p><p><strong>AND</strong></p></li><li><p>Y is the <u>daughter</u> nuclei with the nucleon number A and proton number Z ±1</p><p><strong>AND</strong></p></li><li><p><span class='math-eq'><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi mathvariant="normal">&#946;</mi><mprescripts></mprescripts><mrow><mo>&#177;</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the beta particle</p><p><strong>AND</strong></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mover><mi>v</mi><mo>&#175;</mo></mover><mi>e</mi><none></none><mprescripts></mprescripts><mn>0</mn><mn>0</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the (electron) anti-neutrino <strong>AND </strong><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>v</mi><mi mathvariant="normal">e</mi><none></none><mprescripts></mprescripts><mn>0</mn><mn>0</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><strong> </strong>the (electron) neutrino; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em> </p><p><em>The question does not say whether the decay is β+ or β−, so you must include both equations. You should think of these equations automatically when considering β decay. </em></p><p><em>You are asked to define all the terms in your equations so make sure you do so carefully. This is time-consuming but easy marks! Make sure you use the correct language of </em><em><strong>parent </strong></em><em>and </em><em><strong>daughter </strong></em><em>nuclei. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A radioactive nucleus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi mathvariant="normal">X</mi><mprescripts></mprescripts><mn>85</mn><mn>229</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> undergoes a beta−minus decay followed by an alpha decay to form a daughter nucleus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi mathvariant="normal">Y</mi><mprescripts></mprescripts><mi mathvariant="normal">Z</mi><mi mathvariant="normal">A</mi></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>.</p><p>Write a decay equation for this interaction and hence determine the values of A and Z.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Alpha particle = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>&#945;</mi><mprescripts></mprescripts><mn>2</mn><mn>4</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li><li><p>Beta–minus particle = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>&#946;</mi><mprescripts></mprescripts><mrow><mo>-</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li></ul><p>Combine the equations for alpha and beta–minus into one decay equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi mathvariant="normal">X</mi><mprescripts></mprescripts><mn>85</mn><mn>229</mn></mmultiscripts><mo>&#8594;</mo><mmultiscripts><mi mathvariant="normal">Y</mi><mprescripts></mprescripts><mi mathvariant="normal">Z</mi><mi mathvariant="normal">A</mi></mmultiscripts><mo>+</mo><mmultiscripts><mi mathvariant="normal">&#945;</mi><mprescripts></mprescripts><mn>2</mn><mn>4</mn></mmultiscripts><mo>+</mo><mmultiscripts><mi mathvariant="normal">&#946;</mi><mprescripts></mprescripts><mrow><mo>-</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mover><msub><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi></msub><mo>&#175;</mo></mover></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>State the values of A and Z:</p><ul><li><p>A = 225, Z = 84 <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Don&#x27;t forget to include the anti-neutrino! </em></p><p><em>Read the question carefully. It tells you what the daughter nucleus is, so don&#x27;t get confused with using the daughter nucleus from either the alpha or beta decay. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Thorium, <span class='math-eq'><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>Th</mi><mprescripts></mprescripts><mn>90</mn><mn>232</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> decays to an isotope of Radium (Ra) through a series of transformations. The particles emitted in successive transformations are:</p><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#945;</mi><mo>&#160;</mo><mo>&#160;</mo><mi>&#946;</mi><mo>&#160;</mo><mo>&#160;</mo><mi>&#946;</mi><mo>&#160;</mo><mo>&#160;</mo><mi>&#947;</mi><mo>&#160;</mo><mo>&#160;</mo><mi>&#945;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p><p>Determine the resulting nuclide after these successive transformations. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Determine the resulting nuclide after these successive transformations:</p><ul><li><p>During <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#945;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> emission, an alpha particle <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>&#945;</mi><mprescripts></mprescripts><mn>2</mn><mn>4</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> is released from each starting atom</p><ul><li><p>The mass number decreases by 4 and the proton number decreases by 2</p></li></ul></li><li><p>During <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#946;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> emission, an electron (or positron) is released</p><ul><li><p>The proton number increases by 1, but there is no change in the mass number</p></li></ul></li><li><p>During <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#947;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> emission, electromagnetic gamma rays are emitted</p><ul><li><p>There is no reduction in mass or proton number</p></li></ul></li></ul><p>A flow diagram of the processes involved is obtained using the periodic table:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mrow><mmultiscripts><mi>Th</mi><mprescripts></mprescripts><mn>90</mn><mn>232</mn></mmultiscripts><mo>&#8594;</mo><mmultiscripts><mi>Ra</mi><mprescripts></mprescripts><mn>88</mn><mn>228</mn></mmultiscripts><mo>&#8594;</mo><mmultiscripts><mi>Ac</mi><mprescripts></mprescripts><mn>89</mn><mn>228</mn></mmultiscripts><mo>&#8594;</mo><mmultiscripts><mi>Th</mi><mprescripts></mprescripts><mn>90</mn><mn>228</mn></mmultiscripts><mo>&#8594;</mo><mmultiscripts><mi>Th</mi><mprescripts></mprescripts><mn>90</mn><mn>228</mn></mmultiscripts><mo>&#8594;</mo><mmultiscripts><mi>Ra</mi><mprescripts></mprescripts><mn>88</mn><mn>224</mn></mmultiscripts></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p><ul><li><p>All <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#945;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> decays correct; <em>[1 mark]</em></p></li><li><p>All  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#946;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>decays correct; <em>[1 mark]</em></p></li></ul></li></ul><p>State the final decay product:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>Ra</mi><mprescripts></mprescripts><mn>88</mn><mn>224</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Remember that the proton number of each element in the periodic table is unique. Look up each proton number to obtain the correct element. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Through a combination of successive alpha and beta decays, the isotope of any original nucleus can be formed. </p><p>Explain the simplest sequence of alpha and beta decays required to do this.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Determine the condition required for the formation of the isotope:</p><ul><li><p>For the decay sequence to result in the formation of an isotope of the original nucleus, the proton number must remain the same; <em>[1 mark]</em></p></li></ul><p>Determine the simplest sequence that can achieve this:</p><ul><li><p>(The simplest sequence is) 1 alpha (decay) <em><strong>and</strong></em> 2 beta (decays); <em>[1 mark]</em></p><p><strong>OR</strong></p><p>In equation form: <span class='math-eq'><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi mathvariant="normal">Z</mi><mprescripts></mprescripts><mi mathvariant="normal">X</mi><mi mathvariant="normal">A</mi></mmultiscripts><mo>&#8594;</mo><mmultiscripts><mi mathvariant="normal">&#945;</mi><mprescripts></mprescripts><mn>2</mn><mn>4</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mmultiscripts><mi mathvariant="normal">&#946;</mi><mprescripts></mprescripts><mrow><mo>-</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">Y</mi><mprescripts></mprescripts><mi mathvariant="normal">X</mi><mrow><mi mathvariant="normal">A</mi><mo>-</mo><mn>4</mn></mrow></mmultiscripts></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>An explanation is:</p><ul><li><p>Change in proton number: 2 + 2 × (–1) = 0 <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>When explaining your reasoning, make it clear why your answer is correct by backing it up with any calculations for full marks (like is done in this explanation). It is not enough just to say ‘the proton number remains the same’.</em></p><ul><li><p><em>Alpha decay decreases the proton number by 2</em></p></li><li><p><em>Beta decay increases the proton number by 1</em></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A nucleus of Bohrium <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi>Bh</mi><mprescripts></mprescripts><mi mathvariant="normal">Y</mi><mi mathvariant="normal">X</mi></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> decays to Mendelevium <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi>Md</mi><mprescripts></mprescripts><mn>101</mn><mn>255</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> by a sequence of three alpha particle emissions.</p><p>Determine the number of neutrons in a nucleus of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>Bh</mi><mprescripts></mprescripts><mi mathvariant="normal">Y</mi><mi mathvariant="normal">X</mi></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Write a decay equation for this reaction:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mrow><mmultiscripts><mi>Bh</mi><mprescripts></mprescripts><mi mathvariant="normal">Y</mi><mi mathvariant="normal">X</mi></mmultiscripts><mo>&#8594;</mo><mmultiscripts><mi>Md</mi><mprescripts></mprescripts><mn>101</mn><mn>255</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">&#945;</mi><mprescripts></mprescripts><mn>2</mn><mn>4</mn></mmultiscripts></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the number of neutrons:</p><ul><li><p>X = 255 + (3 × 4) = 267</p></li><li><p>Y = 101 + (3 × 2) = 107</p></li><li><p>Therefore, Bohrium = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi>Bh</mi><mprescripts></mprescripts><mn>107</mn><mn>267</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> </p><ul><li><p>Hence, the number of neutrons = 267 – 107 = 160<strong> </strong><em>[1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3.3 Linear Momentum & its Conservation - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">3.3 Linear Momentum & its Conservation</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 3. Dynamics</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 12 Questions (148 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the principle of conservation of linear momentum.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A pellet of mass <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>20</mn><mtext>&#xA0;g</mtext></math></span> is fired from an air rifle with a momentum of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>2</mn><msup><mtext>&#xA0;kg m s</mtext><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></span>.</p><p>Calculate the velocity of the pellet just after the rifle is fired.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the principle of conservation of momentum to state:</p><p>(i) the total momentum of the air rifle and the pellet</p><p style='text-align: right;'>[1]</p><p>(ii) the recoil momentum of the air rifle.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The pellet hits a target. It becomes embedded and takes <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>0025</mn><mtext>&#xA0;s</mtext></math></span> to come to rest.</p><p>(i) State the relation between force and momentum.</p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the average force needed to stop the pellet.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A collision can be described as being elastic or inelastic when there are no external forces acting on the collision.</p><p>In Table 1.1, place a tick (✓) next to the quantities that are conserved in each type of collision</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Quantity</strong></p></td><td><p style='text-align: center;'><strong>Elastic Collision</strong></p></td><td><p style='text-align: center;'><strong>Inelastic Collision</strong></p></td></tr><tr><td><p style='text-align: center;'>Momentum</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>Total Energy</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>Kinetic Energy</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr></table>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A trolley <strong>X</strong> with mass of 400 g is moving on a track with a velocity of 1.2 m s<sup>−1</sup> towards a stationary trolley <strong>Y</strong> with mass of 800 g as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-2-2b-e-momentum-trolley-collision-cie-ial-sq.png' alt='3-2-2b-e-momentum-trolley-collision-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>(i) Calculate the initial momentum of trolley <strong>X</strong>.</p><p style='text-align: right;'>[2]</p><p>(ii) Trolley <strong>X</strong> collides with trolley <strong>Y</strong> and subsequently, they stick together.</p><p>State the combined momentum of the trolleys after the collision.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Calculate the velocity of the two trucks after the collision.</p><p style='text-align: right;'>[3]</p><p>(ii) State the direction of the velocity of the trolleys after the collision.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the collision cannot be described as elastic.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the difference between an elastic and an inelastic collision.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ball collides with a wall at a velocity of 35 m s<sup>−1</sup> and rebounds with velocity <em>v</em>. The ball has a mass of 0.025 kg.</p><p>The motion of the ball is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-2-3b-e-momentum-ball-rebound-cie-ial-sq.png' alt='3-2-3b-e-momentum-ball-rebound-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the momentum of the ball at the start, before it hits the wall.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The collision is perfectly elastic.</p><p>Determine</p><p>(i) the rebound velocity of the ball</p><p style='text-align: right;'>[1]</p><p>(ii) the magnitude of the change in momentum of the ball.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The ball is in contact with the wall for 0.1 s.</p><p>Calculate the force exerted on the ball by the wall.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ball X of mass 140 g travelling at constant velocity <em>v</em> collides head-on with a stationary ball Y of mass 620 g, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-2-1a-m-3-2-ball-x-y-conservation-of-momentum-cie-ial-sq.png' alt='3-2-1a-m-3-2-ball-x-y-conservation-of-momentum-cie-ial-sq' /></div><p>After the collision, ball X comes to a stop. Ball Y moves off in the same initial direction as X with a velocity of 0.8 m s<sup>−1</sup>.</p><p>Determine the velocity <em>v</em> of ball X before the collision. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Show that the collision in <strong>(a)</strong> is inelastic.</p><p style='text-align: right;'>[3]</p><p>(ii) Explain why the collision in <strong>(a)</strong> is inelastic.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The balls are replaced by an aluminium sphere of mass 2.7 kg and a steel sphere of 7.9 kg as shown in Fig. 1.2.</p><p>The aluminium sphere has an initial velocity of 10.0 m s<sup>–1</sup> when it collides with the stationary steel sphere. Immediately after the collision, the velocity of the steel sphere is 5.1 m s<sup>–1</sup>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-2-1c-m-3-2-metal-spheres-conservation-of-momentum-cie-ial-sq.png' alt='3-2-1c-m-3-2-metal-spheres-conservation-of-momentum-cie-ial-sq' /></div><p>Calculate the velocity <em>v</em> of the aluminium sphere immediately after the collision.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Verify that the collision in <strong>(c)</strong> is elastic.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two identical blocks A and B each of mass 400 g are travelling towards each other along a straight line through their centre, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-2-2a-m-3-2-momentum-blocks-same-speed-cie-ial-sq.png' alt='3-2-2a-m-3-2-momentum-blocks-same-speed-cie-ial-sq' /></div><p>Both blocks are moving at a speed of 0.36 m s<sup>–1</sup> relative to the surface.</p><p>As a result of the collision, the blocks reverse their direction of motion and travel at the same speed as each other. During the collision, 33% of the kinetic energy of the blocks is transferred to the surroundings as thermal energy.</p><p>(i) State the total momentum of the blocks before the collision.</p><p style='text-align: right;'>[1]</p><p>(ii) State and explain whether the collision is elastic or inelastic.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the final speed of the blocks.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The duration of the collision between the blocks is 750 ms.</p><p>Determine the average force exerted by one block on the other.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The same blocks are investigated with different initial speeds. Block A is launched towards B at a speed of 0.6 m s<sup>−1</sup> and B is launched towards A at a speed of 0.4 m s<sup>−1</sup>.</p><p>Once the blocks collide, they stick together and move as one after the collision.</p><p>Determine the speed of the combined blocks after the collision and state the direction.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A fast-moving asteroid B collides with a slower-moving asteroid A as shown in Fig. 1.1. Asteroid B becomes embedded within asteroid A as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-2-3a-m-3-2-linear-momentum-asteroid-collision-cie-ial-sq.png' alt='3-2-3a-m-3-2-linear-momentum-asteroid-collision-cie-ial-sq' /></div><p>Before the collision, asteroid A had a velocity of 3.61 km s<sup>−1</sup> and a momentum of 2.00 × 10<sup>17</sup> kg m s<sup>−1</sup>.</p><p>(i) State the principle of conservation of linear momentum.</p><p style='text-align: right;'>[2]</p><p>(ii) Show that the mass of asteroid A was about 5.5 × 10<sup>13</sup> kg.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the combined velocity, in km s<sup>−1</sup>, of the asteroids after the collision.</p><p>mass of asteroid B = 6.40 × 10<sup>12</sup> kg </p><p>velocity of asteroid B before the collision = 14.0 km s<sup>−1</sup></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A short time later, the combined asteroid AB collides with a stationary asteroid C. Immediately following the collision, the asteroids are deflected by the angles shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/11/25344-3-2-3c-m-3-2-momentum-asteroid-collision-2d-cie-ial-sq.png' alt='Asteroid AB travels at 2.6 kilometres per second at an 8-degree angle to the initial direction of AB, and asteroid C travels at 6.5 kilometres per second at a 10-degree angle to the initial direction of AB.' /></div><p>Show that the mass of asteroid C is about 2.0 × 10<sup>13</sup> kg.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine if the collision in <strong>(c)</strong> is elastic or inelastic.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Ball X has a mass of 50 g and is supported by a long string, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/08/cie-ial-3-2-q4a-conservation-of-momentum-ball-and-wall.png' alt='cie-ial-3-2-q4a-conservation-of-momentum-ball-and-wall' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The ball is pulled back and released. The ball collides normally with a flat surface at a velocity of 4.5 m s<sup>−1</sup> and rebounds elastically.</p><p>The positive direction is horizontal and to the right.</p><p>Determine the total change in momentum of ball X. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Ball X is hung next to ball Y which is supported by a string of the same length, as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/08/cie-ial-3-2-q4b-conservation-of-momentum-two-balls.png' alt='cie-ial-3-2-q4b-conservation-of-momentum-two-balls' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Ball Y has a mass of 125 g.</p><p>The balls are each pulled back and pushed towards each other. When the balls collide, the strings are vertical. The balls rebound in opposite directions.</p><p>The velocities of X and Y just before and just after the collision are shown in Fig. 1.2.</p><p>Use the conservation of linear momentum to determine the rebound velocity <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> of Y.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Deduce whether the collision in <strong>(b)</strong> is elastic or inelastic.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use Newton’s laws to explain why the magnitude of the change in momentum of each ball is the same.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A shell of mass 30 g is fired from the barrel of a rifle of mass 1.9 kg. Immediately after being fired, the bullet has a momentum of 36 kg m s<sup>−1</sup>.</p><p>State the total momentum of the rifle and the bullet before the rifle is fired and give a reason for your answer.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the velocity of the shell just after the rifle is fired.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Using the principle of conservation of momentum, and your answer to part (a), determine the total momentum of the rifle and the shell.</p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the recoil momentum of the rifle.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The shell has a momentum of 9.8 kg m s<sup>−1</sup> just before it hits a target.</p><p>It takes 4.5 ms for the bullet to be stopped by the target.</p><p>Calculate the average force needed to stop the bullet.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the principle of conservation of momentum.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two spheres, A and B, are moving in a straight line on a smooth horizontal surface. Sphere A has a mass of 0.20 kg and a velocity of 5.0 m s<sup>−1</sup>. Sphere B has a mass of 0.30 kg and a velocity of 2.0 m s<sup>−1</sup>. Both spheres move in the same direction, as shown in Fig. 3.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/46517-cie-paper-2-q3-sphere-collision.png' alt='Two spheres move to the right before and after a collision. Before: sphere A has mass 0.30 kilograms and velocity 5 metres per second; sphere B has mass 0.20 kilograms and velocity 2 m/s metres per second. After: A has velocity 2.6 metres per second and B has velocity v.' /></div><p style='text-align: center;'><strong>Fig. 3.1</strong></p><p>Sphere A collides with sphere B. After the collision, sphere A continues to move in the same direction with a velocity of 2.6 m s<sup>−1</sup>.</p><p>(i) Calculate the velocity <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of sphere B after the collision.</p><p style='text-align: right;'>[2]</p><p>(ii) By calculation of kinetic energies, state and explain whether the collision of the spheres is inelastic or perfectly elastic.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[22 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A stationary firework explodes into three different fragments that move in a horizontal plane. Fig. 1.1. shows the masses and velocities of the fragments A, B and C in terms of <em>M</em> and <em>v</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-2-1a-h-momentum-explosion-unequal-fragments-cie-ial-sq.png' alt='3-2-1a-h-momentum-explosion-unequal-fragments-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Use the principle of conservation of momentum to determine the speed <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>B</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> of fragment B in terms of <em>v</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the principle of conservation of momentum to determine the angle <em>θ</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Another stationary firework explodes into four fragments which travel in different directions in a horizontal plane.</p><p>Fig. 1.2 shows the velocity and mass of each fragment.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-2-1c-h-momentum-explosion-four-unequal-fragments-cie-ial-sqa.png' alt='3-2-1c-h-momentum-explosion-four-unequal-fragments-cie-ial-sqa' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Apply the principle of conservation of momentum to determine </p><p>(i) the velocity <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[2]</p><p>(ii) the mass <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Both fireworks have the same initial mass and release the same amount of kinetic energy.</p><p>Calculate </p><p>(i) the value of <em>M</em></p><p style='text-align: right;'>[1]</p><p>(ii) the magnitude of <em>v</em>.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (e)</span>
+                    <span class="question-marks">[8 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A firework similar to the one in <strong>(c)</strong> explodes into four fragments.</p><p>Fig. 1.3 shows the velocity and mass of each fragment.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-2-1c-h-momentum-explosion-four-unequal-fragments-cie-ial-sq.png' alt='3-2-1c-h-momentum-explosion-four-unequal-fragments-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>(i) By applying the principle of conservation of momentum, show that</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>v</mi><mn>3</mn></msub><msub><mi>v</mi><mn>4</mn></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>m</mi><mn>3</mn></msub><msub><mi>m</mi><mn>4</mn></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>v</mi><mn>1</mn></msub><msub><mi>v</mi><mn>2</mn></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[6]</p><p>(ii) Hence, determine the values of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[18 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A pellet of mass 2.7 g is fired into a stationary block of mass 540 g suspended from a rigid support as shown in Fig. 1.1.</p><p>The pellet becomes completely embedded in the block. The block can swing freely at the end of a light inextensible string of length 1.5 m measured from the pivot to the centre of the block. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/qu-5b-figure-2.png' alt='qu-5b-figure-2' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The centre of mass of the block rises by a height <em>h</em> at an angle of 35° to the vertical. </p><p>Determine the velocity of the pellet and the block immediately after the pellet is embedded.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the velocity of the pellet just before it strikes the block. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The block is replaced by a metal block of the same mass. The experiment is repeated with the wooden block and an identical pellet. The pellet rebounds after striking the block.</p><p>A student makes an assumption that the angle that the metal block makes with the vertical will be greater than 35° because the block doesn’t have the additional mass of the pellet embedded within it.</p><p>Discuss the validity of the student&#x27;s assumptions.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A popular demonstration of the conservation of momentum and conservation of energy is Newton’s cradle. It features several identical polished steel balls hung in a straight line in contact with each other, as shown in Fig. 1.2.</p><p>If one ball is pulled back and allowed to strike the line, one ball is released from the other end whilst the rest are stationary. If two are pulled out, two are released on the other end and so forth.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/qu-5a-figure-1.png' alt='qu-5a-figure-1' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Explain why swinging one ball from the left will not release two balls on the right. </p><p>Assume that the demonstration takes place in a vacuum.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 12 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A body of mass <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and moving with velocity <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> explodes into three equal fragments each of mass <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>M</mi><mn>3</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-2-3a-h-momentum-explosion-equal-fragments-cie-ial-sq.png' alt='3-2-3a-h-momentum-explosion-equal-fragments-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Fragment 2 continues to move along the horizontal plane with velocity <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, while fragments 1 and 3 move off at an angle of 60° to the horizontal with velocities <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> respectively, as shown. </p><p>By applying the principle of conservation of momentum in the vertical plane, show that  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo> </mo><mo>=</mo><mo> </mo><msub><mi>v</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>By applying conservation of momentum in the horizontal plane, show that  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>V</mi><mo> </mo><mo>=</mo><mo> </mo><mfenced><mrow><msub><mi>v</mi><mn>1</mn></msub><mo> </mo><mo>+</mo><mo> </mo><msub><mi>v</mi><mn>2</mn></msub></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The ratio of the kinetic energy of fragment 1 to mass <em>M</em> is</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>k</mi><mi>i</mi><mi>n</mi><mi>e</mi><mi>t</mi><mi>i</mi><mi>c</mi><mo> </mo><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi><mo> </mo><mi>o</mi><mi>f</mi><mo> </mo><mi>f</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>m</mi><mi>e</mi><mi>n</mi><mi>t</mi><mo> </mo><mn>1</mn></mrow><mrow><mi>k</mi><mi>i</mi><mi>n</mi><mi>e</mi><mi>t</mi><mi>i</mi><mi>c</mi><mo> </mo><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi><mo> </mo><mi>o</mi><mi>f</mi><mo> </mo><mi>m</mi><mi>a</mi><mi>s</mi><mi>s</mi><mo> </mo><mi>M</mi></mrow></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>4</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Express velocities <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> in terms of the velocity <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> of mass <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Determine the total kinetic energy transferred to the fragments.</p><p style='text-align: right;'>[3]</p><p>(ii) Suggest why the total kinetic energy of the fragments is greater than the initial kinetic energy of the original mass.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7.3 Doppler Effect for Sound Waves - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">7.3 Doppler Effect for Sound Waves</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 7. Waves</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 7 Questions (64 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State what happens to the frequency and pitch of a sound as the source moves away from an observer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>As the source moves away from an observer...</p><ul><li><p>The frequency decreases; <em>[1 mark]</em></p></li><li><p>The pitch decreases / gets lower; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the name of the effect in which the frequency of a sound wave changes as the source of the sound moves relative to an observer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The name of the effect is...</p><ul><li><p>The doppler effect / doppler shift; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The change in frequency of a sound wave as the source of the sound moves relative to an observer can be described by the equation</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mfenced><mrow><mi>v</mi><mo>&#160;</mo><mo>&#177;</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>State the meaning of the following terms and their associated units</p><p>(i) <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[1]</p><p>(ii) <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[1]</p><p>(iii) <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[1]</p><p>(iv) <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> represents:</p><ul><li><p>The observed frequency, measured in hertz (Hz); <em>[1 mark]</em></p></li></ul><p>(ii) <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> represents:</p><ul><li><p>The frequency of source, measured in hertz (Hz); <em>[1 mark]</em></p></li></ul><p>(iii) <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> represents:</p><ul><li><p>The wave velocity / speed of sound, measured in m s<sup>−1</sup>; <em>[1 mark]</em></p></li></ul><p>(iv) <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> represents:</p><ul><li><p>The velocity of the source relative to the observer, measured in m s<sup>−1</sup>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the equation as it would be used to calculate the frequency of an observed sound moving away from an observer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>When an observed sound is moving away from an observer:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mfenced><mrow><mi>v</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>If you forget which is + and which is − just think about it logically.</em></p><p><em>A sound moving away from the observer decreases in pitch and therefore frequency. For the frequency to decrease, the denominator needs to be larger, hence (</em><em><em>v</em></em><em> + </em><em><em>v</em></em><em><sub>s</sub></em><em>).</em></p><p><em>A sound moving toward the observer increases in pitch and therefore frequency. For the frequency to increase, the denominator needs to be smaller, hence (</em><em><em>v</em></em><em> − </em><em><em>v</em></em><em><sub>s</sub></em><em>).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Circle the correct words to complete the following sentences about the Doppler effect</p><p>When the source of a sound is moving towards an observer, the wavelength of the sound wave <strong>increases / decreases</strong>, the frequency of the sound <strong>increases / decreases</strong>, and the pitch of the sound <strong>increases / decreases</strong>.</p><p>When the source of a sound is moving away from an observer, the wavelength of the sound wave <strong>increases / decreases</strong>, the frequency of the sound <strong>increases / decreases</strong>, and the pitch of the sound <strong>increases / decreases</strong>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>When the source of a sound is moving towards an observer:</p><ul><li><p>The wavelength of the sound wave<strong> </strong><em><strong>decreases</strong></em>; <em>[1 mark]</em></p></li><li><p>The frequency of the sound <em><strong>increases</strong></em>; <em>[1 mark]</em></p></li><li><p>The pitch of the sound <em><strong>increases</strong></em>; <em>[1 mark]</em></p></li></ul><p>When the source of a sound is moving away from an observer:</p><ul><li><p>The wavelength of the sound wave <em><strong>increases</strong></em>; <em>[1 mark]</em></p></li><li><p>The frequency of the sound <em><strong>decreases</strong></em>; <em>[1 mark]</em></p></li><li><p>The pitch of the sound <em><strong>decreases</strong></em>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A police car siren emits a sound of 1.11 kHz. </p><p>Determine the frequency of the sound an observer would hear as the police car speeds toward them at 27 m s<sup>−1</sup>.</p><p>Speed of sound = 340 m s<sup>−1</sup>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Determine the observed frequency as the car moves towards the observer:</p><p>List the known quantities:</p><ul><li><p>Emitted frequency, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.11 kHz = 1110 Hz</p></li><li><p>Velocity of source, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 27 m s<sup>−1</sup></p></li><li><p>Wave speed, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>= 340 m s<sup>−1</sup></p></li></ul><p>Use the Doppler equation to calculate observed frequency:</p><ul><li><p>Doppler effect for sound waves:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mrow><mi>v</mi><mo>&#160;</mo><mo>&#177;</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (from the data page)</p></li><li><p>When moving towards an observer:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mrow><mi>v</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1110</mn><mo>&#215;</mo><mfrac><mrow><mo>&#160;</mo><mn>340</mn></mrow><mfenced><mrow><mn>340</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>27</mn></mrow></mfenced></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1206</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Always do a logic check at the end of your calculation. The sound is moving toward the observer, so the observed frequency should be higher than the source frequency.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Another observer hears the same siren. The police car is travelling away from this observer. </p><p>Calculate the frequency of the siren as heard by this observer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Determine the observed frequency as the sound moves away from the observer:</p><p>List the known quantities:</p><ul><li><p>Emitted frequency, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.11 kHz = 1110 Hz</p></li><li><p>Velocity of source, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 27 m s<sup>−1</sup></p></li><li><p>Wave speed, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>= 340 m s<sup>−1</sup></p></li></ul><p>Use the Doppler equation to calculate observed frequency:</p><ul><li><p>Doppler effect for sound waves:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mrow><mi>v</mi><mo>&#160;</mo><mo>&#177;</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (from the data page)</p></li><li><p>When moving away from an observer:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mrow><mi>v</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><msub><mi>f</mi><mi>o</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1110</mn><mo>&#215;</mo><mfrac><mrow><mo>&#160;</mo><mn>340</mn></mrow><mfenced><mrow><mn>340</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>27</mn></mrow></mfenced></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1028</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Always do a logic check at the end of your calculation. The sound is moving away from the observer, so the observed frequency should be lower than the source frequency.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A scientist is conducting an experiment on bees. Fig 1.1 shows the set up monitoring equipment near a hive, including a microphone which picks up the buzz from individual bees flying past.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/07/9-5-hl-sq-medium-q2a.png' alt='9-5-hl-sq-medium-q2a' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>A single bee flies at a constant speed in a straight line past the microphone, and the frequency of the buzz is detected.</p><p>Explain the sound pattern detected by the microphone as the bee moves towards and away from the microphone.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To explain the pattern of sound detected by the microphone:</p><p>Describe how the pitch of sound changes:</p><ul><li><p>As the bee moves towards the microphone pitch increases <strong>OR</strong> as the bee moves away from the microphone, pitch decreases; <em>[1 mark]</em></p></li></ul><p>Explain the cause of this change:</p><ul><li><p>This is due to the Doppler effect; <em>[1 mark]</em></p></li><li><p>The Doppler effect is defined as the <u>observed change</u> in the frequency of the wave emitted by a source moving relative to an observer; <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>A higher pitch indicates a higher frequency, and therefore a lower pitch indicates a lower frequency.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The speed of the bee is 8.9 m s<sup>−1</sup>. The maximum frequency of sound recorded by the microphone is 271 Hz. The speed of sound in air is 340 m s<sup>−1</sup>.</p><p>(i) Calculate the frequency of sound produced by the bee.</p><p style='text-align: right;'>[2]</p><p>(ii) Determine the minimum frequency recorded by the microphone.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed of the bee, <em>u</em><sub>s</sub><em> </em>= 8.9 m s<sup>−1</sup></p></li><li><p>Maximum frequency of sound, <em>f</em><sub>max</sub><sub><em> </em></sub>= 271 Hz</p></li><li><p>Speed of sound in air, <em>v</em> = 340 m s<sup>−1</sup></p></li></ul><p>From the formula page:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mfenced><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>(i) To determine the frequency of sound produced by the bee, <em>f</em><sub><em>S</em></sub>:</p><p>State the conditions for maximum frequency of sound:</p><ul><li><p>The maximum frequency is found when the bee is moving towards the microphone</p></li><li><p>Therefore, the equation becomes <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mfenced><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Rearrange the equation and substitute in values to find<em> f</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>&#160;</mo><mo>(</mo><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub><mo>)</mo><mo>=</mo><msub><mi>f</mi><mi>S</mi></msub><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mo>=</mo><mfrac><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>&#160;</mo><mo>&#160;</mo><mo>(</mo><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub><mo>)</mo></mrow><mi>v</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mn>271</mn><mo>&#215;</mo><mo>(</mo><mn>340</mn><mo>-</mo><mn>8</mn><mo>.</mo><mn>9</mn><mo>)</mo></mrow><mn>340</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>264</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) To determine the minimum frequency of sound recorded by the microphone, <em>f</em><sub>min</sub>:</p><p>State the conditions for minimum frequency of sound:</p><ul><li><p>The minimum frequency is found when the bee is moving away from the microphone</p></li><li><p>Therefore, the equation becomes <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>&#160;</mo><mo>=</mo><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mfenced><mfrac><mi>v</mi><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <em>[1 mark]</em></p></li></ul><p>Calculate minimum <em>f</em><sub><em>S</em></sub><em>:</em></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mo>&#160;</mo><mn>264</mn><mo>&#215;</mo><mfenced><mfrac><mn>340</mn><mrow><mn>340</mn><mo>+</mo><mn>8</mn><mo>.</mo><mn>9</mn></mrow></mfrac></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>257</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>The approximation equation, </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">&#916;</mi><mi>&#955;</mi></mrow><mi>&#955;</mi></mfrac><mo>=</mo><mfrac><mi>v</mi><mi>c</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>, cannot be used as the speed of sound is too similar in magnitude to the speed of the bee.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When bees are about to swarm, they produce a higher-pitched buzz, known as &#x27;piping&#x27;. The frequency of the piping sound is 550.0 Hz. The scientist moves the microphone closer to the hive during this process. Whilst they are moving, the change in observed frequency is 3.4 Hz. The scientist wants to calculate the speed with which they walk to the hive.</p><p>Explain the effect of any assumptions they would have to make in determining this speed.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To explain the assumptions and their effects:</p><p><em>Any</em><em><strong> two </strong></em><em>from:</em></p><ul><li><p>The scientist walks in a straight line towards the hive</p><ul><li><p>If they did not walk straight, then the observed frequency would be <u>incorrect</u>; <em>[1 mark]</em></p></li></ul></li><li><p>The scientist walks at a constant speed towards the hive</p><ul><li><p>A non-constant speed would give a varying value for <em>f</em><sub><em>0</em></sub></p></li><li><p>Hence accurate calculation of speed is impossible; <em>[1 mark]</em></p></li></ul></li><li><p>The swarm emits a constant frequency of sound</p><ul><li><p>The equations are based on a constant emitted frequency from the source, <em>f</em><sub><em>S</em></sub></p></li><li><p>If <em>f</em><sub><em>S</em></sub> is varying, then the equations cannot be used; <em>[1 mark]</em></p></li></ul></li><li><p>The microphone is only detecting sound from the swarm</p><ul><li><p>Other frequencies of sound could give inaccurate values for <em>f</em><sub><em>S</em></sub> and <em>f</em><sub><em>0</em></sub>; <em>[1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Questions which ask about assumptions often have more than one possible answer. Make sure you always give both the assumption </em><em><strong>and</strong></em><em> the effect it would have on the answer calculated. Sometimes this can include a calculation which describes mathematically the change you would see. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>An ambulance siren emits two pure sounds. The lower of the two sounds has a frequency of 650 Hz. It is travelling towards a stationary observer at 13.4 m s<sup>−1</sup>. The speed of sound in air is 340 m s<sup>−1</sup>.</p><p>Calculate the change in frequency, Δ<em>f</em>,<em> </em>between the source frequency and that heard by the observer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To calculate the change in frequency:</p><p>List the known quantities:</p><ul><li><p>Speed of the ambulance, <em>v</em><sub>s</sub><em> </em>= 13.4 m s<sup>−1</sup></p></li><li><p>Frequency of sound emitted by the ambulance,<em> f</em><sub><em>S</em></sub><em> </em>= 650 Hz</p></li><li><p>Speed of sound in air, <em>v</em> = 340 m s<sup>−1</sup></p></li></ul><p>From the formula page:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mfenced><mrow><mi>v</mi><mo>&#160;</mo><mo>&#177;</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Calculate the frequency heard by the observer, <em>f</em><sub><em>0</em></sub><em>:</em></p><ul><li><p>A source moving <u>towards</u> a stationary observer has a denominator <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub><mo>)</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, the equation becomes <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mfenced><mrow><mi>v</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>650</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mfrac><mn>340</mn><mrow><mn>340</mn><mo>-</mo><mn>13</mn><mo>.</mo><mn>4</mn></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 677 Hz <em>[1 mark]</em></p></li></ul><p>Determine the change in frequency, Δ<em>f</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mn>0</mn></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>677</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>650</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>27</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>This is a straightforward question, with a twist that you&#x27;re being asked for the change in frequency, Δ</em><em><em>f </em></em><em>not just the observed frequency, </em><em><em>f</em></em><em><sub><em>0</em></sub></em><em><em>.</em></em><em> This means an extra step is required to calculate Δ</em><em><em>f</em></em><em>.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The ratio between the two frequencies emitted by the ambulance is 0.722. </p><p>(i) Determine the second frequency as heard by the observer.</p><p style='text-align: right;'>[4]</p><p>(ii) Explain the effect a change in speed of the ambulance will have on the ratio between the two observed frequencies.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Lower frequency emitted sound, <em>f</em><sub><em>S</em></sub><em> </em><sub>1</sub> = 650 Hz (from part (a))</p></li><li><p>Lower frequency observed sound, <em>f</em><sub><em>0 </em></sub><sub>1</sub><sub><em> </em></sub>= 677 Hz (from part (a))</p></li><li><p>Higher frequency emitted sound = <em>f</em><sub><em>S 2</em></sub></p></li><li><p>Speed of sound, <em>v</em> = 340 m s<sup>−1</sup></p></li><li><p>Speed of ambulance, <em>v</em><sub>s</sub> = 13.4 m s<sup>−1</sup></p></li></ul><p>(i) Describe the relationship between the ratio of observed frequencies and the ratio of emitted frequencies:</p><ul><li><p>The ratio between the two emitted frequencies is the same as the ratio between the two frequencies as heard by the observer; <em>[1 mark]</em></p></li></ul><p>Determine the higher frequency of emitted sound, <em>f</em><sub><em>S</em></sub><em> </em><sub>2</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mfrac><msub><mi>f</mi><mrow><mi>S</mi><mo>&#160;</mo><mn>1</mn></mrow></msub><msub><mi>f</mi><mrow><mi>S</mi><mo>&#160;</mo><mn>2</mn></mrow></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>722</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>S</mi><mo>&#160;</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>722</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msub><mi>f</mi><mrow><mi>S</mi><mo>&#160;</mo><mn>2</mn></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><msub><mo>&#160;</mo><mrow><mi>S</mi><mo>&#160;</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>f</mi><msub><mo>&#160;</mo><mrow><mi>S</mi><mo>&#160;</mo><mn>1</mn></mrow></msub></mrow><mrow><mn>0</mn><mo>.</mo><mn>722</mn></mrow></mfrac><mo>=</mo><mfrac><mn>650</mn><mrow><mn>0</mn><mo>.</mo><mn>722</mn></mrow></mfrac><mo>=</mo><mn>900</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> Hz <em>[1 mark]</em></p></li></ul><p>Determine the higher frequency of observed sound, <em>f</em><sub>O 2</sub></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>O</mi><mo>&#160;</mo><mn>2</mn></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mrow><mi>s</mi><mo>&#160;</mo><mn>2</mn></mrow></msub><mo>&#160;</mo><mfrac><mi>v</mi><mfenced><mrow><mi>v</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfenced></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>900</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfrac><mn>340</mn><mfenced><mrow><mn>340</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>13</mn><mo>.</mo><mn>4</mn></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>O</mi><mo>&#160;</mo><mn>2</mn></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>937</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) The effect of a change in the speed of the ambulance on the observed frequencies:</p><ul><li><p>If the ambulance is moving faster the observed frequencies will both be higher</p><p><strong>OR</strong></p></li><li><p>If the ambulance is moving slower the observed frequencies will both be lower; <em>[1 mark]</em></p></li></ul><ul><li><p>However, the ratio between them will remain at 0.722; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p><p><em>In part (ii) the key is to recognise that whilst speed will change the pitch of the observed frequencies, the ratio between them does not change. This is because both emitted frequencies are multiplied by the same factor, </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mfrac><mi>v</mi><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>As the ambulance approaches a red light at which a number of cars are stopped, it changes its siren to a single monotone sound which the car drivers observe as 700 Hz. The ambulance slows further to 5.3 m s<sup>−1</sup>.</p><p>Observed wavelength can be calculated using the following equation:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mn>0</mn></msub><mo>=</mo><msub><mi>&#955;</mi><mrow><mi>S</mi><mo>&#160;</mo></mrow></msub><mfenced><mrow><mn>1</mn><mo>&#177;</mo><mfrac><msub><mi>v</mi><mi>s</mi></msub><mi>v</mi></mfrac></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Calculate the wavelength of sound emitted by the ambulance.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Frequency of observed sound, <em>f</em><sub><em>0</em></sub><em> </em>= 700 Hz</p></li><li><p>Speed of the ambulance, <em>v</em><sub><em>s</em></sub> = 5.3 m s<sup>−1</sup></p></li><li><p>Speed of sound, <em>v</em> = 340 m s<sup>−1</sup></p></li></ul><p>Calculate wavelength of the observed sound:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mn>0</mn></msub><mo>=</mo><mfrac><mi>v</mi><msub><mi>f</mi><mn>0</mn></msub></mfrac><mo>=</mo><mfrac><mn>340</mn><mn>700</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 0.486 m <em>[1 mark]</em></p></li></ul><p>State the conditions for calculating the observed wavelength from a source moving away from the observer:</p><ul><li><p>When a source is moving towards the observer, the operator in the brackets will be &#x27;−&#x27;</p></li><li><p>Therefore, the equation <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mi>o</mi></msub><mo>=</mo><msub><mi>&#955;</mi><mi>S</mi></msub><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><msub><mi>v</mi><mi>s</mi></msub><mi>v</mi></mfrac></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is used; <em>[1 mark]</em></p></li></ul><p>Substitute in values and calculate the wavelength, <em>λ </em>of sound emitted by the ambulance:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mi>o</mi></msub><mo>=</mo><msub><mi>&#955;</mi><mi>s</mi></msub><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><msub><mi>v</mi><mi>s</mi></msub><mi>v</mi></mfrac></mrow></mfenced><mspace linebreak="newline"></mspace></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mi>S</mi></msub><mo>=</mo><mfrac><msub><mi>&#955;</mi><mi>o</mi></msub><mfenced><mrow><mn>1</mn><mo>-</mo><mstyle displaystyle="true"><mfrac><msub><mi>v</mi><mi>s</mi></msub><mi>v</mi></mfrac></mstyle></mrow></mfenced></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>486</mn></mrow><mfenced><mrow><mn>1</mn><mo>-</mo><mstyle displaystyle="true"><mfrac><mrow><mn>5</mn><mo>.</mo><mn>3</mn></mrow><mn>340</mn></mfrac></mstyle></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><ul><li><p>Therefore, <em>λ </em>= 0.494 m <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Make sure you know which operators to use with each equation: it is dependent on whether it is the source is moving or the observer, and on whether the motion is towards or away from each other.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a stationary wave source, R, emitting a sound wave. The source produces waves with a constant frequency. The distance between each successive wavefront is equal to the wavelength of the waves produced by R.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/02/7-3-m-q3a-sq-cie-ial-physics.png' alt='7-3-m-q3a-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The speed of sound in air is <em>v</em>.</p><p>Sketch three successive wavefronts produced when the source is moving to the right at a speed of 0.75<em>v</em>. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>A sketch which would obtain 2 marks is:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/05/9-5-doppler-hl-saqs-medium-q4a-ms.png' alt='9-5-doppler-hl-saqs-medium-q4a-ms' /></div><ul><li><p>The time between the emission of each wavefront from the source = time period, <em>T</em> </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>time</mi><mo>&#160;</mo><mi>period</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mi>wave</mi><mo>,</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mrow><mi>wave</mi><mo>&#160;</mo><mi>frequency</mi><mo>,</mo><mo>&#160;</mo><mi>f</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li></ul></li><li><p>The distance travelled by each wavefront is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>v</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>If <em>t</em> = <em>T</em>, then:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>v</mi><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mo>&#160;</mo><mi>v</mi></mrow><mi>f</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Since <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>f</mi><mo>&#215;</mo><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>v</mi><mi>f</mi></mfrac><mo>=</mo><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the distance travelled by the wavefront in one time period, <em>T</em> = <em>λ</em> <em>[1 mark]</em></p></li></ul><ul><li><p>The source is moving at 0.75v. Therefore, at the same time, the source has moved 0.75<em>λ</em></p><ul><li><p>This is one and a half a square on the diagram</p></li><li><p>Therefore, for each successive wavefront the centre of the circle will be half a square further on;<em> [1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>To construct the diagram, it is easiest to think about where the source will have moved to in a unit time, i.e. 0.75</em><em><em>v</em></em><em> each time. This means the wavefront which has travelled the furthest (largest diameter) will be centred on 0.75</em><em><em>λ</em></em><em> from point R (1.5 squares). The next wavefront at 1.5</em><em><em>λ </em></em><em>(3 squares) and the final one at 2.25</em><em><em>λ</em></em><em> (4.5 squares).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A scientist measures the frequency of the waves as they approach from a position to the right of the source.</p><p>Explain the observations the scientist will make.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The scientist will make the following observation:</p><ul><li><p>Due to the Doppler effect, when a source moves relative to a stationary observer, the frequency will change; <em>[1 mark]</em></p></li><li><p>Therefore, as the source is moving towards the scientist, the observed frequency of the waves at the scientist&#x27;s position will be greater than those emitted by the source; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Make sure you can explain the difference in frequency for a source moving towards and away from a stationary observer.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The speed of sound in air is 330 m s<sup>−1</sup>. The wavelength of the waves as emitted by the source is 2.50 m. </p><p>Calculate the frequency of the waves as observed by the scientist.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed of sound, <em>v</em> = 330 m s<sup>−1</sup></p></li><li><p>Speed of the source, <em>v</em><sub>s</sub><em> </em>= 0.75v = 0.75 × 330 = 247.5 m s<sup>−1</sup> (from part (b))</p></li><li><p>Wavelength,<em> λ</em> = 2.50 m</p></li></ul><p>From the formula page:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mfenced><mrow><mi>v</mi><mo>&#160;</mo><mo>&#177;</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Determine the frequency, <em>f</em> of the emitted waves:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>f</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mfrac><mi>v</mi><mi>&#955;</mi></mfrac><mo>=</mo><mfrac><mn>330</mn><mrow><mn>2</mn><mo>.</mo><mn>50</mn></mrow></mfrac><mo>=</mo><mn>132</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> Hz <em>[1 mark]</em></p></li></ul><p>Calculate the frequency as observed by the scientist, <em>f</em><sub><em>0</em></sub><em>:</em></p><ul><li><p>A source moving towards a stationary observer has a denominator <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub><mo>)</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore the equation becomes <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>S</mi></msub><mo>&#160;</mo><mfrac><mi>v</mi><mfenced><mrow><mi>v</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mo>&#160;</mo><mn>132</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mfrac><mn>330</mn><mrow><mn>330</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>247</mn><mo>.</mo><mn>5</mn></mrow></mfrac></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>528</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> Hz <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A train is travelling at 45 m s<sup>−1</sup> and blows a whistle at a frequency of 750 Hz. A person is waiting at a level crossing for the train to pass. Take the speed of sound in air as 340 m s<sup>−1</sup>.</p><p>Calculate the frequency observed by the person: </p><p>(i) In still air.</p><p style='text-align: right;'>[1]</p><p>(ii) When the wind is blowing at 10 m s<sup>−1</sup> towards the train and away from the person.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed of the train, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 45 m s<sup>−1</sup> </p></li><li><p>Frequency of the source, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 750 Hz</p></li><li><p>Speed of sound, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 340 m s<sup>−1</sup> </p></li><li><p>Wind speed = 10 m s<sup>−1</sup> </p></li></ul><p>(i) Substitute in values and calculate the observed frequency in still air:</p><ul><li><p>Recall the Doppler Equation: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mi>v</mi><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The source is moving towards the observer, therefore the operator in the denominator is −</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>750</mn><mo>&#160;</mo><mfenced><mfrac><mn>340</mn><mrow><mn>340</mn><mo>-</mo><mn>45</mn></mrow></mfrac></mfenced><mo>=</mo><mn>864</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) To calculate the frequency observed when the wind is blowing at 10 m s<sup>−1</sup> towards the train and away from the person:</p><p>Determine the speed of sound in the wind:</p><ul><li><p>The wind is blowing towards the source and away from the observer</p><ul><li><p>Therefore the new speed of sound will be lower</p></li></ul></li><li><p>New speed of sound = 340 − 10 = 330 m s<sup>−1</sup> <em>[1 mark]</em></p></li></ul><p>Substitute in known values and calculate the observed frequency:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>750</mn><mo>&#160;</mo><mfenced><mfrac><mn>330</mn><mrow><mn>330</mn><mo>-</mo><mn>45</mn></mrow></mfrac></mfenced><mo>=</mo><mn>868</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>&quot;A person is waiting at a level crossing for the train to pass&quot;. This tells us that the train is travelling towards the observer. </em></p><p><em>Remember that velocity is a vector, so the wind is travelling in the opposite direction to the train, so it will be </em><em><strong>negative</strong></em><em>.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>After the train passes the level crossing, it slows down as it approaches a tunnel. Wind is funnelled down the tunnel towards the train reaching a velocity of 27 m s<sup>−1</sup>. The observer at the level crossing hears the whistle at a frequency of 729 Hz. </p><p>Calculate the new speed of the train.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed of the wind = 27 m s<sup>−1</sup></p></li><li><p>Observed frequency, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>0</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 729 Hz</p></li><li><p>Frequency of the whistle, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 750 Hz (from part (a))</p></li><li><p>Speed of sound, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 340 m s<sup>−1</sup> (from part (a))</p></li></ul><p>Calculate the new speed of sound taking the wind into effect:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>n</mi><mi>e</mi><mi>w</mi></mrow></msub><mo>=</mo><mn>340</mn><mo>-</mo><mn>27</mn><mo>=</mo><mn>313</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> m s<sup>−1</sup> <em>[1 mark]</em></p></li></ul><p>Rearrange the Doppler equation to make <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> the subject:</p><ul><li><p>Recall the Doppler equation: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mi>v</mi><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The train is moving away from the observer, and so the operator is +</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>f</mi><mn>0</mn></msub><mrow><msub><mi>f</mi><mi>s</mi></msub><mi>v</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>f</mi><mi>s</mi></msub><mi>v</mi></mrow><msub><mi>f</mi><mn>0</mn></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>f</mi><mi>s</mi></msub><mi>v</mi></mrow><msub><mi>f</mi><mn>0</mn></msub></mfrac><mo>-</mo><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Substitute in known quantities and calculate <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><mn>750</mn><mo>&#215;</mo><mn>313</mn></mrow><mn>729</mn></mfrac><mo>-</mo><mn>313</mn><mo>=</mo><mn>9</mn><mo>.</mo><mn>02</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Read the question carefully. The wind is blowing towards the train (i.e. against the direction of sound travel from train to observer), so it reduces the effective speed of sound. This is why the effective speed of sound is 313 m s⁻¹. Note the difference between the frequency emitted by the whistle and the frequency heard by the observer and don&#x27;t mix them up!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>After exiting the tunnel, the train stops at a station. The observer from part (a) is now walking to the platform to catch the train at a speed of 1.5 m s<sup>−1</sup>. The human ear can distinguish between frequency differences of around 3.6 Hz.</p><p>The Doppler equation for a moving observer is:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>o</mi></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mi>v</mi></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Show that the change in frequency of the train&#x27;s whistle, as heard by the walking observer, can be considered negligible.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Frequency of the whistle, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 750 Hz (from part (a))</p></li><li><p>Speed of the observer <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>o</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 1.5 m s<sup>−1</sup></p></li><li><p>Speed of sound in air, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 340 m (from part (a))</p></li><li><p>Resolution of human hearing = 3.6 Hz</p></li></ul><p>From the question:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>o</mi></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mi>v</mi></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Calculate <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>s</mi></msub><mo>=</mo><mn>750</mn><mo>&#160;</mo><mfenced><mfrac><mrow><mn>340</mn><mo>+</mo><mn>1</mn><mo>.</mo><mn>5</mn></mrow><mn>340</mn></mfrac></mfenced><mo>=</mo><mn>753</mn><mo>.</mo><mn>3</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Explain why this frequency change is negligible:</p><ul><li><p>The resolution of human hearing is around 3.6 Hz</p><ul><li><p>Therefore any change in frequency less than this will be undetectable</p></li></ul></li><li><p>The change in frequency heard by the moving observer in this case is 753.3 − 750 = 3.3 Hz</p><ul><li><p>This is less than 3.6 Hz </p></li><li><p>Therefore the frequency change can be considered negligible; <em>[1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Here the walker is moving in the same direction as the train was moving in parts a) and b) towards the platform. It can be helpful to sketch a diagram showing the train journey across the crossing, through the tunnel and to the platform, as there is a lot in each question part.</em></p><p><em>The observer is moving towards the stationary source so in the equation the numerator is </em><em><em>v + v</em></em><em><sub><em>o</em></sub></em><em>, and their velocities are added together.</em></p><p><em>It is important to recognise also that the person is moving too slowly to observe a change in the frequency of the sound. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Once the train has left the station, it travels down a line with two tracks. Another train is approaching on the opposite track with a speed of 7.6 m s<sup>−1</sup>. The speed of the departing train is 83% of the speed of the second train.</p><p>When both the observer and source are moving, the following equation can be used to determine the new frequency:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>o</mi></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Calculate the frequency of this same whistle as observed by a passenger on the approaching train as a percentage of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed of approaching train, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>o</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 7.6 m s<sup>−1</sup></p></li><li><p>Frequency of the whistle, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 750 Hz (from part (a))</p></li><li><p>Speed of sound, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 340 m s<sup>−1</sup> (from part (a))</p></li></ul><p>From the question:</p><ul><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>o</mi></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Substitute in values and calculate <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>0</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>750</mn><mo>&#215;</mo><mfenced><mfrac><mrow><mn>340</mn><mo>+</mo><mn>7</mn><mo>.</mo><mn>6</mn></mrow><mrow><mn>340</mn><mo>-</mo><mn>6</mn><mo>.</mo><mn>31</mn></mrow></mfrac></mfenced><mo>=</mo><mn>781</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>0</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> as a percentage of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>781</mn><mn>750</mn></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>04</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>104</mn><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>The signs of the velocities here can be confusing. Always take the observer to be positive and the opposite direction negative. This makes the question much easier, even though it is the reverse of parts a) to c). </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A racing car is travelling at 300 km h<sup>−1</sup> on a race track.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/e9p28~EB_9-5-ib-hl-sqs-hard-q2a-question.png' alt='e9p28~EB_9-5-ib-hl-sqs-hard-q2a-question' /></div><p>The stationary observer hears a frequency of sound of 1550 Hz from the exhaust as the car approaches them (position 1). You can assume the speed of sound to be 340 m s<sup>−1</sup>.</p><p>Determine the frequency of sound heard by: </p><p>(i) A stationary observer standing next to the track as the car passes (position 2) .</p><p style='text-align: right;'>[1]</p><p>(ii) A stationary observer standing next to the track behind the current position of the car (position 3).</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed of the car, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 300 km h<sup>−1</sup></p></li><li><p>Frequency of sound heard by the stationary observer in front of the car, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>o</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1550 Hz</p></li><li><p>Speed of sound in air, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 340 m s<sup>−1</sup></p></li></ul><p>(i) To determine the frequency of the sound heard by a stationary observer as the car passes:</p><p>Note the relationship between <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>0</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> in this situation:</p><ul><li><p>The car is level with the observer, and so is not moving away from or towards them</p><ul><li><p>Therefore, the frequency heard by the observer will be equal to that emitted by the car exhaust, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul></li></ul><p>Convert 300 km h<sup>−1</sup> to m s<sup>−1</sup>:</p><ul><li><p>1 km h<sup>−1</sup> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1000</mn><mn>3600</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>m s<sup>−1</sup></p></li><li><p>300 km h<sup>−1</sup> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1000</mn><mn>3600</mn></mfrac><mo>&#215;</mo><mn>300</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>83</mn><mo>.</mo><mn>3</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> m s<sup>−1</sup></p></li></ul><p>Substitute in known values to the Doppler equation and calculate <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>:</p><ul><li><p>Recall the Doppler equation: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mi>v</mi><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The car is moving towards the original observer and so the denominator is −</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1550</mn><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mn>340</mn><mrow><mn>340</mn><mo>-</mo><mn>83</mn><mo>.</mo><mn>3</mn></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><mn>1550</mn><mo>&#215;</mo><mn>256</mn><mo>.</mo><mn>7</mn></mrow><mn>340</mn></mfrac><mo>=</mo><mn>1170</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) To determine the frequency heard by the stationary observer as the car moves away:</p><p>Substitute in known values and calculate <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>0</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>The car is moving away from the observer so the denominator is +</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>1170</mn><mo>&#160;</mo><mfenced><mfrac><mn>340</mn><mrow><mn>340</mn><mo>+</mo><mn>83</mn><mo>.</mo><mn>3</mn></mrow></mfrac></mfenced><mo>=</mo><mn>940</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The car from part (a) opens its Drag Reduction System (DRS) increasing its top speed by 10 km h<sup>−1</sup>. It then overtakes another car which is travelling at 300 km h<sup>−1</sup>.</p><p>The equation which can be used when both source and observer are moving is:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>o</mi></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>The frequency of the sound emitted by the car exhaust is directly proportional to the speed. When the maximum frequency is observed then <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>&#177;</mo><mo>&#160;</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>&#177;</mo><mo>&#160;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> are both at their minimum. </p><p>Calculate the maximum and minimum frequency of sound heard from the faster car, as heard by the driver of the car being overtaken during this manoeuvre.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>State the known quantities:</p><ul><li><p>Speed of observer, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>o</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 300 km h<sup>−1</sup> = 83.3 m s<sup>−1</sup> (from part (a))</p></li><li><p>Maximum speed of source, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mrow><mi>s</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 310 km h<sup>−1</sup> = 86.1 m s<sup>−1</sup></p></li><li><p>Frequency emitted by a car at 300 km h<sup>−1</sup>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>o</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 1170 Hz (from part (a))</p></li><li><p>Speed of sound in air, <em>v</em> = 340 m s<sup>−1</sup> (from part (a))</p></li></ul><p>From the question:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Calculate <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>s</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> when the source and observer are stationary:</p><ul><li><p>Frequency is directly proportional to the speed</p></li><li><p>Rearrange <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>&#177;</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and make <em>v </em>= 0 m s<sup>−1</sup></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>s</mi></msub><mo>=</mo><mn>1170</mn><mo>&#215;</mo><mfenced><mfrac><mrow><mn>86</mn><mo>.</mo><mn>1</mn></mrow><mrow><mn>83</mn><mo>.</mo><mn>3</mn></mrow></mfrac></mfenced><mo>=</mo><mn>1209</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine the nature of the operators when the observed frequency is at a maximum:</p><ul><li><p>Maximum frequency is observed when the faster car is catching the slower car</p></li><li><p>When the source is moving towards the observer, the operators will be consistent with the denominators when only one is moving</p></li><li><p>The source is moving towards the observer:</p><ul><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> in the denominator</p></li></ul><p><strong>AND</strong></p></li><li><p>The observer is moving away from the source (or at least trying to!) </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> in the numerator; <em>[1 mark]</em></p></li></ul></li></ul><p>Calculate the maximum frequency:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced><mo>=</mo><mn>1209</mn><mo>&#215;</mo><mo>&#160;</mo><mfenced><mfrac><mrow><mn>340</mn><mo>-</mo><mn>83</mn><mo>.</mo><mn>3</mn></mrow><mrow><mn>340</mn><mo>-</mo><mn>86</mn><mo>.</mo><mn>1</mn></mrow></mfrac></mfenced><mo>=</mo><mn>1222</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine the nature of the operators when the observed frequency is at a minimum:</p><ul><li><p>Minimum frequency is observed when the faster car is pulling away from the slower car</p></li><li><p>When the source is moving away from the observer, the operators will be consistent with the denominators when only one is moving.</p></li><li><p>The source is moving away from the observer:</p><ul><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>s</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> in the denominator</p></li></ul><p><strong>AND</strong></p></li><li><p>The observer is moving towards the source (or at least trying to!) </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> in the numerator; <em>[1 mark]</em></p></li></ul></li></ul><p>Calculate the minimum frequency:</p><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>o</mi></msub><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mfenced><mo>=</mo><mn>1209</mn><mo>&#215;</mo><mo>&#160;</mo><mfenced><mfrac><mrow><mn>340</mn><mo>+</mo><mn>83</mn><mo>.</mo><mn>3</mn></mrow><mrow><mn>340</mn><mo>+</mo><mn>86</mn><mo>.</mo><mn>1</mn></mrow></mfrac></mfenced><mo>=</mo><mn>1201</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>Here the overtaking car is the source and the car being overtaken the observer. To determine the operators in the equation for maximum frequency (when the faster car is behind), consider that the source is driving towards the observer, and the observer is driving away from the source, only more slowly.</em></p><ul><li><p><em>This gives </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> in the numerator and </em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> in the denominator</em></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A different scientist uses a speed gun to observe the speed of the car in part c). The car has a speed of 11.7 m s<sup>−1</sup>. The speed gun emits microwaves of wavelength 20 cm and measures the change in frequency between the emitted and received microwaves which is calculated using the equation:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>2</mn><mi>f</mi><mi>v</mi></mrow><mi>c</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Where:</p><ul><li><p><em>f </em>is the frequency of the emitted microwaves</p></li><li><p><em>v </em>is the speed of the approaching car</p></li><li><p><em>c </em>is the speed of the microwaves through the air</p></li></ul><p>Calculate the frequency of the microwaves received by the speed gun. Give your answer as accurately as required.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed of car, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mrow><mi>c</mi><mi>a</mi><mi>r</mi></mrow></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 11.7 m s<sup>−1</sup></p></li><li><p>Wavelength of microwaves, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#955;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 20 cm = 0.2 m</p></li><li><p>Speed of light in free space, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> = </em>3.00 × 10<sup>8</sup> m s<sup>−1</sup></p></li></ul><p>Determine the frequency of the emitted microwaves, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>Recall the wave equation: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>v</mi><mi>&#955;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>11</mn><mo>.</mo><mn>7</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>58</mn><mo>.</mo><mn>5</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> Hz <em>[1 mark]</em></p></li></ul><p>Calculate the change in frequency, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>f</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> detected by the gun:</p><ul><li><p>From the question: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>2</mn><mi>f</mi><mi>v</mi></mrow><mi>c</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>58</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>11</mn><mo>.</mo><mn>7</mn></mrow><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>56</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> Hz <em>[1 mark]</em></p></li></ul><p>Calculate the frequency detected by the gun, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>d</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>f</mi><mi>d</mi></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>d</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#8710;</mo><mi>f</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>f</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>d</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>4</mn><mo>.</mo><mn>56</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>58</mn><mo>.</mo><mn>5</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>d</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>58</mn><mo>.</mo><mn>50000456</mn><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>Hz <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The change in frequency is really small, so don&#x27;t let that confuse you. You must give your answer fully to show that the detected frequency is different to the emitted frequency. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

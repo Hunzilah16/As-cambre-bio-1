@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2.1 Equations of Motion - Multiple Choice Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">2.1 Equations of Motion</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 2. Kinematics</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 32 Questions (32 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An object moves directly from X to Z</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images40png.png' alt='cie-ial-images40png' /></div><p>In a shorter time, a second object moves from X to Y to Z.</p><p>Which statement about the two objects is correct for the journey from X to Z?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>they have the same average speed</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>they have the same average velocity</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>they have the same displacement</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>they travel the same distance</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>Displacement describes an objects change in position, measuring from its starting position to the final position</p></li><li><p>The objects both finish at the same position so despite taking different routes, they have the same displacement</p></li></ul><p><strong>A </strong>is incorrect because the distance travelled by the second object is greater than the first one but it reaches Z in a shorter time, since average speed = total distance / total time its average speed should be greater</p><p><strong>B </strong>is incorrect because the time taken for the second object to reach Z is less than the first and they both have the same displacement, since average velocity = displacement / time the second object has a greater velocity</p><p><strong>D </strong>is incorrect because the first object travels directly from X to Z which is a shorter distance than X to Y to Z</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An experiment is done to measure the acceleration of free fall of a body from rest.</p><p>Which measurements are needed?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the height of fall and the time of fall</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the height of fall and the weight of the body</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the mass of the body and the height of fall</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the mass of the body and the time of fall</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>To determine the measurements needed to determine the acceleration of free fall, we will need to consider the equation</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>u</mi><mo> </mo><mi>t</mi><mo> </mo><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mo> </mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>We need to outline the quantities that we know</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (height)</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (acceleration of free fall)</p></li><li><p><em>  </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>(time)</p></li></ul></li><li><p>Since the falling body will initially be at rest, i.e. <em>u</em> = 0 we can simplify this to</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo> </mo><mi>g</mi><mo> </mo><msup><mi>t</mi><mn>2</mn></msup><mo> </mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Rearranging the equation above we can see</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><msup><mi>t</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, the only measurements required are the height and time of the fall</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which feature of a graph allows acceleration to be determined?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the area under a displacement-time graph</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the area under a velocity-time graph</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the slope of a displacement-time graph</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the slope of a velocity-time graph</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Acceleration is equal to change in velocity / time</p></li><li><p>Looking at a velocity-time graph we can see <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∆</mo><mi>y</mi></mrow><mrow><mo>∆</mo><mi>x</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is equal to  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>v</mi><mo>-</mo><mi>u</mi></mrow><mi>t</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> which is equivalent to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>n</mi><mi>g</mi><mi>e</mi><mo> </mo><mi>i</mi><mi>n</mi><mo> </mo><mi>v</mi><mi>e</mi><mi>l</mi><mi>o</mi><mi>c</mi><mi>i</mi><mi>t</mi><mi>y</mi></mrow><mrow><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, acceleration is equal to the slope of the graph</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images41png.png' alt='cie-ial-images41png' /></div><p><strong>A </strong>is incorrect because the area under a displacement-time graph is displacement × time which is not a physical quantity that has any use in physics</p><p><strong>B </strong>is incorrect because the area under a velocity-time graph is equal to displacement since displacement = velocity × time</p><p><strong>C </strong>is incorrect because the slope of a displacement-time graph is equal to velocity since velocity = displacement / time</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The velocity of an object during the first five seconds of its motion is shown on the graph</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images42png.png' alt='cie-ial-images42png' /></div><p>What is the displacement of the object in this time?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>4 m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>20 m</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>50 m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>100 m</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>Displacement is equal to velocity × time</p></li><li><p>This can be found from the area under the velocity - time graph</p></li><li><p>Area under the graph =  ½ × base × height = ½ × Δ <em>v</em> × Δ <em>t</em></p></li><li><p>Displacement =  ½ × 20 × 5 = 50 m</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The variation with time <em>t</em> of the displacement <em>s</em> moved by a body is shown below.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images43png.png' alt='cie-ial-images43png' /></div><p>What can be deduced from the graph about the motion of the body?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>it accelerates continuously</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>it starts from rest</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the displacement is proportional to time</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the speed changes</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>There are two clear sections on this displacement-time graph</p></li><li><p>At first the object moves with a constant velocity and at a later time it accelerates briefly until reaching a higher velocity, which it continues to travel at for the remainder of the distance</p></li></ul><p><strong>A </strong>is incorrect because if it was accelerating continuously, the line would curve upwards. Instead, it travels constantly at two different velocities</p><p><strong>B </strong>is incorrect because it starts from a velocity which is equal to the gradient of the line, if it started from rest, the line would be horizontal and curve upwards to show an acceleration</p><p><strong>C </strong>is incorrect because the displacement is proportional to time for the sections of the graph which are straight but it is not proportional the entire time</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An object is thrown with velocity 7.1 m s<sup>–1</sup> vertically upwards on the Moon. The acceleration due to gravity on the Moon is 1.62 m s<sup>–2</sup></p><p>What is the time taken for the object to return to its starting point?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>3.5 s</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>4.4 s</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>6.5 s</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>8.8 s</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>First it is a good idea to write down all the quantities that we know</p><ul><li><p>Initial velocity, <em>u</em> = 7.1 m s<sup>–1</sup></p></li><li><p><em>a</em> = 1.62 m s<sup>–2</sup></p></li><li><p>the final velocity, <em>v</em> = 0 m s<sup>–1</sup> (at the maximum height)</p></li><li><p><em>t = ?</em></p></li></ul></li><li><p>The equation that relates <em>u, v, a</em> and <em>t</em> is</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>u</mi><mo> </mo><mo>+</mo><mo> </mo><mi>a</mi><mo> </mo><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>-</mo><mi>u</mi><mo> </mo><mo>=</mo><mo> </mo><mi>a</mi><mo> </mo><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mi>v</mi><mo>-</mo><mi>u</mi></mrow><mi>a</mi></mfrac><mo>=</mo><mfrac><mrow><mn>7</mn><mo>.</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>62</mn></mrow></mfrac><mo>=</mo><mn>4</mn><mo>.</mo><mn>4</mn><mo> </mo><mo> </mo><mi mathvariant="normal">s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>It takes 4.4 s for the object to reach its maximum height, and it will take the same time to reach the ground since the acceleration is the same, and the final velocity will be the same, so:</p><ul><li><p>Total time = 4.4 × 2 = 8.8 s</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A ball is thrown upwards with an initial vertical velocity of 2.2 m s<sup>–1</sup>.</p><p>What is the maximum height reached by the ball?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>10 cm</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>25 cm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>50 cm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>75 cm</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>Write down all the known information:</p><ul><li><p>Initial velocity, <em>u</em> = 2.2 m s<sup>–1</sup></p></li><li><p>At the maximum height, the final velocity is <em>v</em> = 0 m s<sup>–1</sup></p></li><li><p>As the ball moves upwards, <em>a</em> = -<em>g</em> = -9.81 m s<sup>-2</sup></p></li><li><p>Maximum height, s = ?</p></li></ul></li><li><p>The equation which relates <em>u, v, s</em> and <em>a</em> is</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Rearranging for <em>s</em> gives:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>2</mn><mo>.</mo><msup><mn>2</mn><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>0</mn></mrow><mrow><mn>2</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>25</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>This is equivalent to 25 cm</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A car at rest in a traffic queue moves forward in a straight line and then comes to rest again. The graph shows how the car’s displacement varies with time</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images44png.png' alt='cie-ial-images44png' /></div><p>What is its speed while it is moving?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.70 m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0.80 m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>1.25 m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1.40 m s<sup>–1</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>Speed is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>d</mi><mi>i</mi><mi>s</mi><mi>p</mi><mi>l</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>m</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow><mrow><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  which is given by the gradient of the graph <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∆</mo><mi>y</mi></mrow><mrow><mo>∆</mo><mi>x</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Between 0 – 50 s and 100 – 140 s, when the lines are horizontal, the car is stationary</p></li><li><p>Between 50 – 100 s the car is moving with constant speed and is displaced by 70 – 30 = 40 m</p></li><li><p>The speed when the car is moving is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>40</mn><mo> </mo><mi>m</mi></mrow><mrow><mn>50</mn><mo> </mo><mi>s</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.8 m s<sup>-1</sup></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images45png.png' alt='cie-ial-images45png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>On a particular railway, a train driver applies the brake of the train at a yellow signal, a distance of 1.0 km from a red signal, where the train stops.</p><p>The maximum deceleration of the train is 1.1 m s<sup>–2</sup></p><p>Assuming uniform deceleration, what is the maximum safe speed of the train at the yellow signal?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>2.2 m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>20 m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>47 m s<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>220 m s<sup>–1</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>First, we must write down the variables that we know:</p><ul><li><p><em>s</em> = 1000 m</p></li><li><p><em>a</em> = –1.1 m s<sup>–2</sup></p></li><li><p><em>v</em> = 0</p></li><li><p><em>u</em> = ?</p></li></ul></li><li><p>The equation that links<em> s, a, v </em>and<em> u </em>is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul><p>Rearrange for <em>u </em>and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#215;</mo><mo>-</mo><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#215;</mo><mn>1000</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2200</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mn>2200</mn></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>46</mn><mo>.</mo><mn>9</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>47</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> (2 s.f.)</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A golf ball is hit with the same force and direction on the Earth and on the Moon.</p><p>Which diagram best represents the shapes of the paths taken by the golf ball?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images46png.png' alt='cie-ial-images46png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images47png.png' alt='cie-ial-images47png' /></div></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images48png.png' alt='cie-ial-images48png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/cie-ial-images49png.png' alt='cie-ial-images49png' /></div></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>When the golf ball is struck upwards, the force of gravity will always bring it back to the surface</p></li><li><p>The force of gravity is much higher on the Earth so the golf ball is pulled towards the surface faster which is why it has a much shorter range than the ball on the Moon</p></li><li><p>The shape of the golf ball’s path depends on air resistance – on Earth, gravity pulls the ball down while air resistance opposes its motion leading to a path which is not symmetrical</p></li><li><p>On the Moon, however, there is no atmosphere, so there is no air resistance acting on the ball. This means the path of the golf ball will be symmetrical, as shown in C</p></li></ul><p><strong>A &amp; B </strong>are incorrect because these paths are asymmetrical which implies there is an opposing force acting on the ball, such as air resistance, but since there is no atmosphere on the Moon, this is not possible</p><p><strong>D </strong>is incorrect because the gravity on the Moon is small but it is not zero, so the ball would return to the surface</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which feature of a graph allows velocity to be determined?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the area under a displacement-time graph</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the area under a velocity-time graph</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the slope of a displacement-time graph</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the slope of a velocity-time graph</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is C</em></p><ul><li><p>Velocity is equal to change in displacement / time</p></li><li><p> Looking at a displacement-time graph we can see </p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">&#916;</mi><mi>y</mi></mrow><mrow><mi mathvariant="normal">&#916;</mi><mi>x</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mo>&#8710;</mo><mi>s</mi></mrow><mi>t</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>change</mi><mo>&#160;</mo><mi>in</mi><mo>&#160;</mo><mi>displacement</mi></mrow><mi>time</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>Therefore, velocity is equal to the slope of the graph</p></li></ul><p><strong>A</strong> is incorrect because the area under a displacement-time graph is displacement × time which is not a physical quantity that has any use in physics</p><p><strong>B</strong> is incorrect because the area under a velocity-time graph is equal to displacement since displacement = velocity × time</p><p><strong>D</strong> is incorrect because the slope of a velocity-time graph is equal to acceleration since acceleration = change in velocity / time</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 12 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A sphere is released and falls. Its initial acceleration reduces until it eventually begins to travel at constant terminal velocity.</p><p>Which displacement-time graph best represents the motion of the sphere?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images50png.png' alt='cie-ial-images50png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images51png.png' alt='cie-ial-images51png' /></div></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images52png.png' alt='cie-ial-images52png' /></div></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images53png.png' alt='cie-ial-images53png' /></div></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>As the ball falls further from its starting position, the displacement increases meaning the gradient increases</p></li><li><p>Terminal velocity is the maximum velocity reached by the falling sphere, meaning the first section of the graph should curve upwards to show the initial acceleration and the second section should be a straight line to show the constant velocity</p></li></ul><p><strong>A &amp; B </strong>are incorrect because the gradients of these graphs are negative</p><p><strong>C </strong>is incorrect because the horizontal straight line means the velocity is zero and the ball has stopped moving which is not the case</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 13 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A bullet is fired horizontally with speed <em>v</em> from a rifle. For a short time <em>t</em> after leaving the rifle, the only force affecting its motion is gravity. The acceleration of free fall is <em>g</em>.</p><p>Which expression gives the value of  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>horizontal</mi><mo>&#160;</mo><mi>distance</mi><mo>&#160;</mo><mi>travelled</mi><mo>&#160;</mo><mi>in</mi><mo>&#160;</mo><mi>time</mi><mo>&#160;</mo><mi>t</mi></mrow><mrow><mi>vertical</mi><mo>&#160;</mo><mi>distance</mi><mo>&#160;</mo><mi>travelled</mi><mo>&#160;</mo><mi>in</mi><mo>&#160;</mo><mi>time</mi><mo mathvariant="italic">&#160;</mo><mi>t</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>v</mi><mi>t</mi></mrow><mi>g</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>v</mi><mrow><mi>g</mi><mi>t</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>2</mn><mi>v</mi><mi>t</mi></mrow><mi>g</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>2</mn><mi>v</mi></mrow><mrow><mi>g</mi><mi>t</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The acceleration of freefall is downwards and has no effect on horizontal motion</p></li><li><p>We can find the horizontal distance travelled using</p><ul><li><p>distance = speed × time</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>H</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>v</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <strong>(1)</strong></p></li></ul></li><li><p>Since the bullet is fired in a horizontal direction, the vertical component of the velocity is initially zero</p></li><li><p>We can find the vertical distance using</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>u</mi><mi>t</mi><mo>&#160;</mo><mo>+</mo><mo>&#8201;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p><em>u </em>= 0 and <em>a</em> = <em>g</em>, so</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>V</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><em> </em><strong>(2)</strong></p></li></ul></li><li><p>Combining equations <strong>(1)</strong> and <strong>(2)</strong> leads to</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>horizontal</mi><mo>&#160;</mo><mi>distance</mi><mo>&#160;</mo><mi>travelled</mi><mo>&#160;</mo><mi>in</mi><mo>&#160;</mo><mi>time</mi><mo>&#160;</mo><mi>t</mi></mrow><mrow><mo>&#160;</mo><mi>vertical</mi><mo>&#160;</mo><mi>distance</mi><mo>&#160;</mo><mi>travelled</mi><mo>&#160;</mo><mi>in</mi><mo>&#160;</mo><mi>time</mi><mo mathvariant="italic">&#160;</mo><mi>t</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>s</mi><mi>H</mi></msub><msub><mi>s</mi><mi>V</mi></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>s</mi><mi>H</mi></msub><msub><mi>s</mi><mi>V</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mi>v</mi><mi>t</mi></mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>v</mi></mrow><mrow><mi>g</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 14 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The acceleration of free fall on the Moon is one-sixth of that on Earth. On Earth it takes time <em>t</em> for a stone to fall from rest a distance of 2 m.</p><p>What is the time taken for a stone to fall from rest a distance of 2 m on the Moon?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>t</mi><mn>6</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><msqrt><mn>6</mn></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>t</mi><msqrt><mn>6</mn></msqrt></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images54png.png' alt='cie-ial-images54png' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images55png.png' alt='cie-ial-images55png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 15 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A stone is thrown upwards and follows a curved path.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images56png.png' alt='cie-ial-images56png' /></div><p>Air resistance is negligible.</p><p>Why does the path have this shape?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the stone has a constant horizontal velocity and constant vertical acceleration</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the stone has a constant horizontal acceleration and constant vertical velocity</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the stone has a constant upward acceleration followed by a constant downward acceleration</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the stone has a constant upward velocity followed by a constant downward velocity</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The horizontal and vertical components of velocity and acceleration can be treated independently</p></li><li><p>In the absence of air resistance, the horizontal component of velocity is constant while the vertical component of velocity downwards increases at a constant acceleration of 9.81 m s<sup>−2 </sup>(due to the force of gravity)</p></li></ul><p><strong>B &amp; D </strong>are incorrect because once the stone has been thrown, it is no longer being acted on by the force that propelled it into the air so there is no horizontal acceleration. The force of gravity causes the stone to decelerate upwards and accelerate downwards at a constant rate meaning the vertical velocity is not constant </p><p><strong>C </strong>is incorrect because the stone has a constant upward <strong>deceleration</strong> followed by a constant downward acceleration</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 16 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A train passes through a station at a constant speed of 20 m s<sup>–1</sup></p><p>A second train is at rest at the station. It begins to leave the station with a uniform acceleration of 1.0 m s<sup>–2 </sup> just as the first train goes past.</p><p>How much time passes before the second train overtakes the first train?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>5 s</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>10 s</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>20 s</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>40 s</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Train 2 leaves the station as train 1 passes, so the station can be taken as the origin for the time and distance</p></li><li><p>For train 2 to overtake train 1, the distance, <em>s</em>, travelled by both trains must be equal and the time, <em>t</em>, is how long it takes for this to happen</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images57png.png' alt='cie-ial-images57png' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images58png.png' alt='cie-ial-images58png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 17 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The graph shows how the speed <em>v</em> of a sprinter changes with time <em>t</em> during a 100 m race.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images59png.png' alt='cie-ial-images59png' /></div><p>What is the best estimate of the maximum acceleration of the sprinter?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>3 m s<sup>-2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>6 m s<sup>-2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>9 m s<sup>-2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>12 m s<sup>-2</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>Acceleration is represented by the gradient of the velocity-time graph</p></li><li><p>The steeper the gradient the higher the acceleration, so to find the maximum acceleration we need to estimate the gradient of the steepest line</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images60png.png' alt='cie-ial-images60png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 18 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The graph of velocity against time for an object moving in a straight line is shown</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images61png.png' alt='cie-ial-images61png' /></div><p>What is the corresponding graph of displacement against time?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-phy-mcq-2-1-q17-diagram-2.png' alt='cie-ial-phy-mcq-2-1-q17-diagram-2' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>The gradient of the velocity-time graph gives the acceleration and the area under the graph gives the displacement</p></li><li><p>The velocity is always positive, so the displacement is always positive</p></li><li><p>The gradient of the displacement-time graph gives the velocity</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images66png.png' alt='cie-ial-images66png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 19 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In a cathode-ray tube, an electron is accelerated uniformly in a straight line from a speed of 4 × 10<sup>5</sup> m s<sup>–1</sup> to one tenth of the speed of light over a distance of 10 mm</p><p>What is the acceleration of the electron?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>4.5 × 10<sup>3</sup> m s<sup>–2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>4.5 × 10<sup>6</sup> m s<sup>–2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>4.5 × 10<sup>13</sup> m s<sup>–2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>4.5 × 10<sup>16</sup> m s<sup>–2</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>First let’s write out the quantities we have been given</p><ul><li><p><em>u</em> = 4 × 10<sup>5</sup> m s<sup>–1</sup></p></li><li><p><em>s</em> = 10 mm = 10 × 10<sup>-3</sup> m</p></li><li><p><em>v</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup><mo>×</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mn>7</mn></msup><mo> </mo><mi mathvariant="normal">m</mi><mo> </mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>a</em> = ?</p></li></ul></li><li><p>The equation that links <em>u, v, s</em> and <em>a</em> is</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>We need to rearrange this to find <em>a</em></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mi>s</mi><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><mo>-</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>-</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><msup><mfenced><mrow><mn>3</mn><mo>×</mo><msup><mn>10</mn><mn>7</mn></msup></mrow></mfenced><mn>2</mn></msup><mo>-</mo><msup><mfenced><mrow><mn>4</mn><mo>×</mo><msup><mn>10</mn><mn>5</mn></msup></mrow></mfenced><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>×</mo><mn>10</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>4</mn><mo>.</mo><mn>5</mn><mo>×</mo><msup><mn>10</mn><mn>16</mn></msup><mo> </mo><mi mathvariant="normal">m</mi><mo> </mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 20 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A projectile is fired at an angle <em>α</em> to the horizontal at a speed <em>u</em>, as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images67png.png' alt='cie-ial-images67png' /></div><p>What are the vertical and horizontal components of its velocity after a time <em>t</em>?</p><p>Assume that air resistance is negligible. The acceleration of free fall is <em>g</em>. </p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Vertical component</strong></p></td><td><p style='text-align: center;'><strong>Horizontal component</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'><em>u</em> sin <em>α</em></p><p style='text-align: center;'><em>u</em> sin <em>α</em> – <em>gt</em></p><p style='text-align: center;'><em>u</em> sin <em>α</em> – <em>gt</em></p><p style='text-align: center;'><em>u</em> cos <em>α</em></p></td><td><p style='text-align: center;'><em>u</em> cos <em>α</em></p><p style='text-align: center;'><em>u</em> cos <em>α</em> – <em>gt</em></p><p style='text-align: center;'><em>u</em> cos <em>α</em></p><p style='text-align: center;'><em>u</em> sin <em>α</em> – <em>gt</em></p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C </strong></em><em>because:</em></p><ul><li><p>We can use trigonometry to deduce</p><ul><li><p>Horizontal (→) component = <em>u</em> cos <em>α</em></p></li><li><p>Vertical (↑) component = <em>u</em> sin <em>α</em></p></li></ul></li><li><p>Because of gravity, we have to consider the free fall of acceleration, which is equal to <em>g</em></p></li><li><p>This only affects the vertical component of velocity, and acts in the opposite direction to the motion</p></li><li><p>So, at a time, t, the vertical component of velocity = <em>u</em> sin <em>α</em> – <em>gt</em></p></li><li><p>The horizontal component is not influenced by gravity so is equal to <em>u</em> cos <em>α</em></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 21 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A ball is released from rest above a horizontal surface and bounces several times.</p><p>The graph shows how, for this ball, a quantity <em>y</em> varies with time.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images68png.png' alt='cie-ial-images68png' /></div><p>What is the quantity <em>y</em>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>acceleration</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>displacement</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>kinetic energy</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>velocity</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>If we take the point when the ball is at rest as the origin and the horizontal surface as its maximum displacement</p></li><li><p>The graph shows an increasing and decreasing gradient as the ball accelerates and decelerates with each bounce, which is indicative of a displacement-time graph</p></li><li><p>Each time the ball strikes the surface, it loses some energy through sound and heat, which is why its displacement decreases each time but does not come to zero as it does not reach its original height</p></li></ul><p><strong>A </strong>is incorrect because the acceleration is constant, so the lines would be straight, not curved</p><p><strong>C &amp; D </strong>are incorrect because when the ball hits the surface, its velocity at that moment is zero. So, its kinetic energy at that moment would also be zero. The graph does not reduce to zero, so y cannot be kinetic energy or velocity</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 22 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A spacecraft is launched from Earth&#x27;s surface and accelerates uniformly in a straight line from an initial speed of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup><msup><mtext>&#160;m s</mtext><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> to a final speed of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup><msup><mtext>&#160;m s</mtext><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> over a distance of 400 km.</p><p>What is the acceleration of the spacecraft?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>4 × 10<sup>-3</sup> m s<sup>−2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>4 × 10<sup>1</sup> m s<sup>−2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>4 × 10<sup>3</sup> m s<sup>−2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>4 × 10<sup>6</sup> m s<sup>−2</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is B</em></p><ul><li><p>List the known quantities:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup><msup><mtext>&#160;m s</mtext><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>400</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>400</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup><mtext>&#160;m</mtext></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup><msup><mtext>&#160;m s</mtext><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = ?</p></li></ul></li><li><p>The equation that links <em>u</em>, <em>v</em>, <em>s,</em> and <em>a</em> is</p></li></ul><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>Rearrange to find <em>a</em></p></li></ul><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>Substitute in known values to calculate <em>a</em></p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><msup><mfenced><mrow><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msup><mfenced><mrow><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>&#215;</mo><mfenced><mrow><mn>400</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>40</mn><msup><mtext>&#160;m s</mtext><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>1</mn></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 23 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A body having uniform acceleration <em>a</em> increases its velocity from <em>u</em> to <em>v</em> in time <em>t</em>.</p><p>Which expression would <strong>not</strong> give a correct value for the body’s displacement during time <em>t </em>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mi>t</mi><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mfenced><mrow><mi>v</mi><mo>+</mo><mi>u</mi></mrow></mfenced><mfenced><mrow><mi>v</mi><mo>-</mo><mi>u</mi></mrow></mfenced></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mfenced><mrow><mi>v</mi><mo>-</mo><mi>u</mi></mrow></mfenced><mi>t</mi></mrow><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo> </mo><mi>s</mi><mi>p</mi><mi>e</mi><mi>e</mi><mi>d</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mi>v</mi><mo>+</mo><mi>u</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi><mo> </mo><mo>=</mo><mo> </mo><mi>s</mi><mi>p</mi><mi>e</mi><mi>e</mi><mi>d</mi><mo> </mo><mo>×</mo><mo> </mo><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mfenced><mrow><mi>v</mi><mo>+</mo><mi>u</mi></mrow></mfenced><mi>t</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>D would be correct if it had a plus sign</p></li></ul><table class='data-table'><tr><td><p><strong>A </strong>is incorrect as</p></td><td><p>this equation is equal to displacement <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>u</mi><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup><mo> </mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td></tr><tr><td><p><strong>B </strong>is incorrect as</p></td><td><p>if we combine the equations <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>u</mi><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mrow><mn>2</mn><mo> </mo></mrow></msup><mi>a</mi><mi>n</mi><mi>d</mi><mo> </mo><mi>v</mi><mo>=</mo><mi>u</mi><mo>+</mo><mi>a</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>v</mi><mo>-</mo><mi>a</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfenced><mrow><mi>v</mi><mo>-</mo><mi>a</mi><mi>t</mi></mrow></mfenced><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>v</mi><mi>t</mi><mo>-</mo><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>v</mi><mi>t</mi><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td></tr><tr><td><p><strong>C </strong>is incorrect as</p></td><td><p>if we take the equation <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mi>s</mi><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><mo>-</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>-</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>we can factorise <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>-</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></mfenced><mo>=</mo><mfenced><mrow><mi>v</mi><mo>+</mo><mi>u</mi></mrow></mfenced><mfenced><mrow><mi>v</mi><mo>-</mo><mi>u</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> so, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mfenced><mrow><mi>v</mi><mo>+</mo><mi>u</mi></mrow></mfenced><mfenced><mrow><mi>v</mi><mo>-</mo><mi>u</mi></mrow></mfenced></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td></tr></table>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 24 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A cannon fires a cannonball with an initial speed <em>v</em> at an angle α to the horizontal.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images69png.png' alt='cie-ial-images69png' /></div><p>Which equation is correct for the maximum height H reached?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo> </mo><mi>sin</mi><mo> </mo><mi>α</mi><mo> </mo></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mfrac><mrow><mi>g</mi><mo> </mo><mi>sin</mi><mo> </mo><mi>α</mi></mrow><mrow><mn>2</mn><mi>v</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mfrac><msup><mfenced><mrow><mi>v</mi><mo> </mo><mi>sin</mi><mo> </mo><mi>α</mi></mrow></mfenced><mn>2</mn></msup><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mfrac><mrow><msup><mi>g</mi><mn>2</mn></msup><mo> </mo><mi>sin</mi><mo> </mo><mi>α</mi></mrow><mrow><mn>2</mn><mi>v</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images70png.png' alt='cie-ial-images70png' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images71png.png' alt='cie-ial-images71png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 25 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A ball is released from rest on a smooth slope PQR.</p><p>It moves down the slope, along a smooth horizontal surface QR and rebounds inelastically at R.</p><p>Then it moves back to Q and comes to rest momentarily somewhere on PQ.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images72png.png' alt='cie-ial-images72png' /></div><p>Which velocity-time graph represents the motion of the ball?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-phy-mcq-2-1-q23-diagram-2.png' alt='cie-ial-phy-mcq-2-1-q23-diagram-2' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>From P to Q, the weight of the ball causes it to accelerate uniformly. Therefore, the increase in speed is uniform so the gradient is constant</p></li><li><p>From Q to R, the motion of the ball is horizontal, so the acceleration of free fall does not affect its motion which is shown on the graph as a horizontal line</p></li><li><p>After the collision with the wall, the kinetic energy decreases since the collision is inelastic, this results in a decrease in speed (KE =  ½  <em>mv</em><sup><em>2</em></sup>)</p></li><li><p>Therefore, the ball will take longer to return to the slope, meaning the negative horizontal velocity should be longer</p></li></ul><p><strong>B</strong> is incorrect because the gradient of the graph in the final section is too steep. Since the gradient represents the acceleration due to gravity, it should be the same as the gradient in the first section.</p><p><strong>C &amp; D </strong>are incorrect because the negative horizontal velocities on these graphs are too short, and the value of the negative velocity in graph D has not decreased.</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 26 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The dotted line shows the path of a competitor in a ski-jumping competition.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images77png.png' alt='cie-ial-images77png' /></div><p>Ignoring air resistance, which graph best represents the variation of his speed <em>v</em> with the horizontal distance <em>x</em> covered from the start of his jump at Y before landing at Z?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-phy-mcq-2-1-q24-diagram-2.png' alt='cie-ial-phy-mcq-2-1-q24-diagram-2' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>At the skier’s maximum height, the speed is at a minimum since gravitational potential is at a maximum and kinetic energy is at a minimum</p></li><li><p>The speed does not reach zero since it still has horizontal velocity</p></li><li><p>Just before landing, the speed is not zero. Since Y is higher than Z, the person has both potential energy and kinetic energy at Y</p></li><li><p>Because of the conservation of energy, kinetic energy is higher at Z so the speed is higher here</p></li></ul><p><strong>A </strong>is incorrect because this graph shows the skier has maximum kinetic energy (highest <em>v</em>) and minimum gravitational energy at the top of the path, which is the opposite to what really happens</p><p><strong>C </strong>is incorrect because the speed doesn’t reach zero as the skier still has horizontal velocity at the top of the path</p><p><strong>D </strong>is incorrect because the change in <em>v</em> and <em>x</em> is not uniform due to the acceleration due to gravity</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 27 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Two markers <em>M</em><sub><em>1</em></sub> and <em>M</em><sub><em>2</em></sub> are set up a vertical distance <em>h</em> apart.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images82png.png' alt='cie-ial-images82png' /></div><p>A steel ball is released at time zero from a point a distance <em>x</em> above <em>M</em><sub><em>1</em></sub>. The ball reaches <em>M</em><sub><em>1</em></sub> at time <em>t</em><sub><em>1</em></sub> and reaches <em>M</em><sub><em>2</em></sub> at time <em>t</em><sub><em>2</em></sub>. The acceleration of the ball is constant.</p><p>Which expression gives the acceleration of the ball?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><msup><msub><mi>t</mi><mn>2</mn></msub><mn>2</mn></msup></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><mfenced><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub></mrow></mfenced></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><mrow><msup><msub><mi>t</mi><mn>2</mn></msub><mn>2</mn></msup><mo>-</mo><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><msup><mfenced><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>-</mo><msub><mi>t</mi><mn>1</mn></msub></mrow></mfenced><mn>2</mn></msup></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>From the origin to marker M<sub>1</sub>:</p></li><li><p>Initially the ball is at rest, so:</p><ul><li><p><em>u</em> = 0 m s<sup>-1</sup></p></li><li><p><em>t </em>= <em>t</em><sub><em>1</em></sub></p></li><li><p><em>s</em> = <em>x</em></p></li></ul></li><li><p>The equation that links <em>s, u, t</em> and <em>a</em> is</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>u</mi><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>                   <strong>(1)</strong></p></li></ul></li><li><p>From the origin to marker M<sub>2</sub>:</p><ul><li><p>u = 0 m s<sup>-1</sup></p></li><li><p>t = t<sub>2</sub></p></li><li><p>s = x + h</p></li></ul></li><li><p>Using the same equation as before:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mo> </mo><mi>u</mi><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>h</mi><mo>=</mo><mn>0</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><msub><mi>t</mi><mn>2</mn></msub><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>h</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><msub><mi>t</mi><mn>2</mn></msub><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>               <strong>(2)</strong></p></li></ul></li><li><p>If we take equation <strong>(1)</strong> from <strong>(2)</strong>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>h</mi><mo>-</mo><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><msub><mi>t</mi><mn>2</mn></msub><mn>2</mn></msup><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mfenced><mrow><msup><msub><mi>t</mi><mn>2</mn></msub><mn>2</mn></msup><mo>-</mo><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><mfenced><mrow><msup><msub><mi>t</mi><mn>2</mn></msub><mn>2</mn></msup><mo>-</mo><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 28 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A sprinter runs a 200 m race in a straight line. He starts from rest and accelerates at 2.5 m s<sup>–2</sup> until reaching a maximum speed of 10 m s<sup>–1</sup>. He maintains this speed until he crosses the finish line.</p><p>How long does it take the sprinter to run the race?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>8 s</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>20 s</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>22 s</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>40 s</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>There are two parts to this motion</p><ul><li><p>Motion with constant acceleration of 2.5 m s<sup>–2</sup></p></li><li><p>Motion with constant speed of 10 m s<sup>–1</sup></p></li></ul></li><li><p>If the duration of the acceleration is <em>t</em><sub><em>1</em></sub> then we want to use an equation to find this, where: <em>t = t</em><sub><em>1</em></sub>, <em>a</em> = 2.5 m s<sup>–2</sup>, <em>u</em> = 0 m s<sup>–1</sup>, <em>v</em> = 10 m s<sup>–1</sup></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>u</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>a</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>v</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>u</mi></mrow><mi>a</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>10</mn><mrow><mn>2</mn><mo>.</mo><mn>5</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>If the distance travelled during the acceleration is <em>s</em><sub><em>1</em></sub> then we want to use a different equation to find this</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><mn>10</mn><mn>2</mn></msup><mrow><mn>2</mn><mo>&#215;</mo><mn>2</mn><mo>.</mo><mn>5</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>20</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>The remainder of the 200m race is run at a constant speed of 10 m s<sup>–1</sup>, so the remaining distance is equal to 200 – 20 = 180 m</p></li><li><p>If the time taken to cover the remaining distance is <em>t</em><sub><em>2</em></sub>, then we can use</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>speed</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>distance</mi><mi>time</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>180</mn><mn>10</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>18</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Total time = <em>t</em><sub><em>1</em></sub><em> + t</em><sub><em>2</em></sub> = 4 + 18 = 22 s</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 29 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In order that a train can stop safely, it will always pass a signal showing a yellow light before it reaches a signal showing a red light. </p><p>Drivers apply the brake at the yellow light and this results in a uniform deceleration to stop exactly at the red light. The distance between the red and yellow lights is <em>x</em>. </p><p>What must be the minimum distance between the lights if the train speed is increased by 25 %, without changing the deceleration of the trains?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>1.20<em>x</em></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>1.25<em>x</em></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>1.44<em>x</em></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1.56<em>x</em></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Let’s consider the quantities we have been given</p><ul><li><p>The initial speed of the train is <em>u</em></p></li><li><p>The distance between the red and yellow lights is <em>x</em></p></li><li><p>Final speed of train = 0</p></li></ul></li><li><p>The equation that links <em>u, s, v</em> and <em>a</em> is</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mn>2</mn></msup><mo> </mo><mi>α</mi><mo> </mo><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>If the initial speed increases by 25 % : 100 % + 25 % = 125 %</p></li><li><p>Therefore, new speed u<sub>new</sub> = 1.25<em>u</em></p></li><li><p>So, new distance  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mi>e</mi><mi>w</mi><mo> </mo></mrow></msub><mi>α</mi><mo> </mo><msub><msup><mi>u</mi><mn>2</mn></msup><mrow><mi>n</mi><mi>e</mi><mi>w</mi></mrow></msub><mo>=</mo><msup><mfenced><mrow><mn>1</mn><mo>.</mo><mn>25</mn><mi>u</mi></mrow></mfenced><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>.</mo><mn>56</mn><msup><mi>u</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>.</mo><mn>56</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 30 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A raindrop falls vertically from rest in air. The variation with time of the speed of the raindrop is shown in the graph.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images83png.png' alt='cie-ial-images83png' /></div><p>Which statement about the raindrop is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>at point X, the raindrop has an acceleration of 9.81 m s<sup>–2</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>at point Z, the force on the raindrop due to air resistance has reached its maximum value and so the acceleration of the raindrop has also reached its maximum value</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>at point Z, the force due to air resistance is equal and opposite to the weight of the raindrop and so the speed of the raindrop is zero</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the resultant force on the raindrop at point Y is less than the resultant force on the raindrop at point X</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The gradient of a speed-time graph is acceleration</p></li><li><p>Between points X and Z the gradient is decreasing so the acceleration is decreasing until the raindrop reaches a steady speed</p></li><li><p>Force is directly proportional to acceleration</p></li><li><p>The magnitude of the acceleration is lower at Y is less than at X, therefore, the magnitude of the resultant force is lower at Y too</p></li></ul><p><strong>A </strong>is incorrect because the magnitude of air resistance is beginning to increase around point X so the acceleration is less than 9.81 m s<sup>–2</sup></p><p><strong>B </strong>is incorrect because at point Z, it is correct that the force on the raindrop due to air resistance has reached its maximum value but this means the acceleration of the raindrop has reached its <strong>minimum</strong> value as the resultant force is at a minimum </p><p><strong>C </strong>is incorrect because at point Z, it is correct that the force due to air resistance is equal and opposite to the weight of the raindrop but the speed of the raindrop is <strong>not</strong> zero, it has reached a steady speed and is no longer accelerating</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 31 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An aeroplane travels at an average speed of 700 km h<sup>–1</sup> on an outward flight and at 300 km h<sup>–1</sup> on the return flight over the same distance.</p><p>What is the average speed of the whole flight?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>400 km h<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>420 km h<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>480 km h<sup>–1</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>500 km h<sup>–1</sup></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo> </mo><mi>s</mi><mi>p</mi><mi>e</mi><mi>e</mi><mi>d</mi><mo>=</mo><mfrac><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>d</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Let distance travelled for outward flight, which is equal to the distance travelled for inward flight = <em>d</em></p></li><li><p>So, the total distance travelled = 2<em>d</em></p></li><li><p>For each flight speed, the time will be different since the speed is different for the flights</p></li><li><p>Let time for outward flight = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><mfrac><mi>d</mi><mn>700</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Let time for inward flight = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mi>d</mi><mn>300</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Total time, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><msub><mi>t</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>t</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mi>d</mi><mn>300</mn></mfrac><mo>+</mo><mfrac><mi>d</mi><mn>700</mn></mfrac><mo>=</mo><mfrac><mi>d</mi><mn>210</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo> </mo><mi>s</mi><mi>p</mi><mi>e</mi><mi>e</mi><mi>d</mi><mo>=</mo><mfrac><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>d</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo> </mo><mi>s</mi><mi>p</mi><mi>e</mi><mi>e</mi><mi>d</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>d</mi></mrow><mrow><mi>d</mi><mo>/</mo><mn>210</mn></mrow></mfrac><mo>=</mo><mn>420</mn><mo> </mo><mi>km</mi><mo> </mo><msup><mi mathvariant="normal">h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 32 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A small glider moves along a friction-free horizontal air track as shown below.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images84png.png' alt='cie-ial-images84png' /></div><p>At each end of the air track there is a perfectly elastic buffer.</p><p>Which graph represents the variation with time <em>t</em> of the velocity <em>v</em> of the glider as it moves between the two buffers?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-phy-mcq-2-1-q30-diagram-2.png' alt='cie-ial-phy-mcq-2-1-q30-diagram-2' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>A friction-free horizontal air track means that no work needs to be done against friction, therefore, the kinetic energy does not decrease</p></li><li><p>A perfectly elastic buffer means the collision of the glider is perfectly elastic, therefore, both momentum and energy are conserved</p></li><li><p>This means the magnitude of the velocity should not decrease, so the height of the peaks on the graph should be the same</p></li><li><p>Since the speed remains constant, the time between each collision should be the same, so the gaps between each peak should be the same</p></li></ul><p><strong>A &amp; B </strong>are incorrect because these graphs show the magnitude of the velocity changes as the peaks are different sizes</p><p><strong>C </strong>is incorrect because this graph shows the time between collisions varies as the gaps between some of the peaks are not the same</p>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

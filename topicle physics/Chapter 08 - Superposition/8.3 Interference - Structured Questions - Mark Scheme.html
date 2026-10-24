@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8.3 Interference - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">8.3 Interference</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 8. Superposition</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 8 Questions (81 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define <em>coherence</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Waves are said to be coherent if they:</p><ul><li><p>Have a constant / zero phase difference <strong>OR</strong><em><strong> </strong></em>are always in phase; <em>[1 mark]</em></p></li><li><p>Have the same frequency / wavelength; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Coherence is vital in order to produce an observable interference pattern. An example of a coherent light source is a laser. Other light sources such as filament lamps and LEDs produce incoherent light waves. </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/file_000-44.png' alt='file_000-44' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In an experiment, a monochromatic light source is incident upon a single slit before passing through two slits, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-3-s-q--q1a-easy-aqa-a-level-physics.png' alt='3-3-s-q--q1a-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Bright and dark fringes are produced on the screen. </p><p>State</p><p>(i) the <strong>two </strong>conditions required for the fringes to be observed.</p><p style='text-align: right;'>[2]</p><p>(ii) what the bright and dark fringes on the screen represent.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) The fringes will be observed if the light sources are:</p><ul><li><p>Monochromatic; <em>[1 mark]</em> </p></li><li><p>Coherent; <em>[1 mark]</em></p></li></ul><p>(ii) The bright fringes represent:</p><ul><li><p>Constructive interference; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p>The dark fringes represent:</p><ul><li><p>Destructive interference; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em><em><strong> </strong></em></p><p><em>A common mistake when defining a monochromatic source is saying it is a ‘source with one colour’. Although this is technically true, it is better to define it in terms of frequency or wavelength. Stating ‘one colour’ will not unfortunately achieve a mark.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Give a reason why a single slit is included in the experimental setup in Fig. 1.1.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The single slit is included in the setup to ensure that:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>The light is <u>coherent</u> (when it arrives at the double slit); <em>[1 mark]</em></p></li><li><p>The light acts as a point / single source; <em>[1 mark]</em></p></li><li><p>The light diffracts / spreads out by the same amount (by the time it reaches the double slit); <em>[1 mark]</em></p></li><li><p>The path length of the light is constant / the same / fixed (between the slits); <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em><em><strong> </strong></em></p><p><em>It is a common misconception that the single-slit is not needed in this setup at all, but this is not true! The only time you would </em><em><strong>not</strong></em><em> need a single slit before a double slit is when using a laser as it is already a </em><em><strong>coherent</strong></em><em> light source. </em></p><p><em>To ensure the source is as coherent as possible, the slit should be narrow. This eliminates the different paths the light could take between the light source and the double slits. Therefore, it correlates that the </em><em><strong>smaller</strong></em><em> the </em><em><strong>range</strong></em><em> of paths, the more </em><em><strong>coherent</strong></em><em> the source</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows two different waves from sources s<sub>1</sub> and s<sub>2</sub> meeting on the screen at point P.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-4-3d-question-stem-sl-sq-easy-phy.png' alt='4-4-3d-question-stem-sl-sq-easy-phy' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>For the waves meeting at point P, determine:</p><p>(i) the path difference.</p><p style='text-align: right;'>[3]</p><p>(ii) whether a bright or dark fringe forms at P.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Determine the path difference:</p><p>Determine the number of wavelengths in wave s<sub>1</sub>:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-4-3d-ms1-1-sl-sq-easy-phy.png' alt='4-4-3d-ms1-1-sl-sq-easy-phy' /></div><ul><li><p>Number of wavelengths (s<sub>1</sub> → P) = 8<em>λ </em><em>[1 mark]</em></p></li></ul><p>Determine the number of wavelengths<em> </em>in wave s<sub>2</sub>:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-4-3d-ms-2-sl-sq-easy-phy.png' alt='4-4-3d-ms-2-sl-sq-easy-phy' /></div><ul><li><p>Number of wavelengths (s<sub>2</sub> → P) = 6<em>λ </em><em>[1 mark]</em></p></li></ul><p>Determine the path difference between s<sub>1</sub> and s<sub>2</sub>:</p><ul><li><p>Path difference is the distance travelled by s<sub>1</sub> → P minus the distance travelled by s<sub>2</sub> → P </p></li><li><p>Path difference at point P = (8 − 6)<em>λ</em> = 2<em>λ </em><em>[1 mark]</em></p></li></ul><p>(ii) Determine whether a bright or dark fringe forms:</p><ul><li><p>Waves that meet with a path difference of <em>nλ</em> will interfere constructively</p></li><li><p>The path difference between the waves is 2<em>λ, </em>so<em> </em>constructive interference occurs</p></li><li><p>Therefore, a <u>bright</u> fringe will form at point P; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>If the path difference is an integer number of wavelengths </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> then </em><em><strong>constructive </strong></em><em>interference will occur.</em></p><p><em>If the path difference is a half number of wavelengths </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mi>n</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mfenced><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em><em> </em></em><em>then </em><em><strong>destructive </strong></em><em>interference will occur.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State what is meant by the term <em>monochromatic source</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>A monochromatic source is:</p><ul><li><p>A source of light of a single frequency / wavelength;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>Monochromatic waves are a feature of coherent beams. Coherent light is monochromatic and has a constant phase difference.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/file_000-45.png' alt='file_000-45' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Describe the conditions for destructive interference.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Destructive interference occurs when:</p><ul><li><p>The path difference (between two waves) is a half number of wavelengths <strong>OR</strong> path difference = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mi>n</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mfenced><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows the wavefronts emitted from two point sources s<sub>1</sub> and s<sub>2</sub>. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-4-4c-question-stem-sl-sq-easy-phy.png' alt='4-4-4c-question-stem-sl-sq-easy-phy' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>At point P, determine</p><p>(i) the path difference between the waves</p><p style='text-align: right;'>[3]</p><p>(ii) whether constructive or destructive interference occurs.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Determine the path difference of the waves at point P:</p><p>Determine the number of wavelengths between s<sub>1</sub> → P:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-4-4c-ms1-sl-sq-easy-phy.png' alt='4-4-4c-ms1-sl-sq-easy-phy' /></div><ul><li><p>Number of wavelengths (s<sub>1</sub> → P) = 6<em>λ</em><em><em> </em></em><em>[1 mark]</em></p></li></ul><p>Determine the number of wavelengths <em>λ </em>between s<sub>2</sub> → P:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-4-4c-ms-2-sl-sq-easy-phy.png' alt='4-4-4c-ms-2-sl-sq-easy-phy' /></div><ul><li><p>Number of wavelengths (s<sub>2</sub> → P) = 5<em>λ </em><em>[1 mark]</em></p></li></ul><p>Calculate the path difference at point P:</p><ul><li><p>Path difference = (6 − 5)<em>λ = λ </em><em>[1 mark]</em></p></li></ul><p>(ii) Determine whether constructive or destructive interference occurs at point P:</p><ul><li><p>Constructive interference occurs when path difference = <em>nλ </em>(where n is an integer)</p></li><li><p>Therefore, constructive interference will occur; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>On a wavefront diagram, the distance between wavefronts is equal to one wavelength. So, to find the total number of wavelengths, you simply count the number of wavefronts. Be careful to follow the wavefronts from the correct point source. It is easy to make a mistake when the wavefronts overlap such as in this question.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows two sources of coherent light producing a double-slit interference pattern. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-4-4d-question-stem-sl-sq-easy-phy.png' alt='4-4-4d-question-stem-sl-sq-easy-phy' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Determine whether constructive or destructive interference occurs at:</p><p>(i) point A</p><p style='text-align: right;'>[1]</p><p>(ii) point B.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) At point A:</p><ul><li><p>The crest of one wave meets the trough of the other wave</p></li><li><p>(When a crest and trough meet) <u>destructive</u> interference occurs; <em>[1 mark]</em></p></li></ul><p>(ii) At point B:</p><ul><li><p>The crest of one wave meets the crest of the other wave</p></li><li><p>(When a crest and crest meet) <u>constructive</u> interference occurs; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>When two waves meet crest and crest (or trough and trough), constructive interference will occur producing a bright fringe on the screen. When two waves meet at the crest of one wave and the trough of the other wave, destructive interference will occur producing a dark fringe on the screen.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The distance between the bright fringes in a double-slit interference pattern can be determined by the double-slit equation</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>&#955;</mi><mi>D</mi></mrow><mi>a</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Draw lines to match each quantity to its associated symbol.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-3-interference-e-q3.png' alt='8-3-interference-e-q3' /></div>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p><em><strong>One</strong></em><em> mark for each correct line drawn:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-3-interference-e-q3-ma.png' alt='8-3-interference-e-q3-ma' /></div><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>You will </em><em><strong>not </strong></em><em>be</em><em><strong> </strong></em><em>given this equation on the formula page, so make sure you learn it and know what each symbol represents. Since the quantities are all distances, the units for each quantity are in metres (m), so the units don&#x27;t give you an obvious clue!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Red laser light is used to form a double-slit interference pattern on a screen, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/8-3-interference-e-q3b.png' alt='8-3-interference-e-q3b' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The distance between the bright fringes depends on the wavelength of the incident light.</p><p>Describe how the interference pattern would change if blue laser light were used.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>If blue laser light were used:</p><ul><li><p>Blue light has a <u>shorter wavelength</u> than red light; <em>[1 mark]</em></p></li><li><p>So the distance between fringes would <u>decrease</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>If all the other quantities remain the same and only the wavelength </em><em><em>λ </em></em><em>is changed, then the longer the wavelength, the greater the distance between the fringes on the screen. </em></p><p><em>This is because of the equation:</em></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>&#955;</mi><mi>D</mi></mrow><mi>a</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><em>Which shows that </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>, so a decrease in wavelength, </em><em><em>λ</em></em><em> leads to a decrease in the distance between fringes.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When red laser light of wavelength 650 nm is used to form a double-slit interference pattern on the screen, the separation between the slits is 0.2 mm, and the distance between the slits and the screen is 1.2 m.</p><p>Calculate the separation between the fringes on the screen<em>.</em></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the separation distance <em>s</em> between the fringes on the screen<em>:</em></p><p>List the known quantities:</p><ul><li><p>Wavelength, <em>λ</em> = 650 nm = 650 × 10<sup>−9</sup> m</p></li><li><p>Separation between slits, <em>a</em> = 0.2 mm = 0.2 × 10<sup>−3</sup> m</p></li><li><p>Distance between slits and screen, <em>D</em> = 1.2 m</p></li></ul><p>Substitute the known values into the double-slit equation:</p><ul><li><p>Fringe spacing:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>&#955;</mi><mi>D</mi></mrow><mi>a</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Substitute:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced><mrow><mn>650</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow></mfenced><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>2</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the separation of the fringes on the screen:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 3.9 × 10<sup>−3</sup> m (3.9 mm) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Remember that all these quantities need to be in metres (m). Any that are not given in metres must be converted. </em></p><p><em>Forgetting to convert units is a common mistake that students often make under the time pressure of the exam. It is best practice to make it a part of your calculation routine to check that the values given are in the correct units before beginning your calculation. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why there is no bright fringe at point P.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>There is no bright fringe at point P because:</p><ul><li><p>The waves at point P interfere destructively: <em>[1 mark]</em></p></li><li><p>Because the waves meet with a path difference of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mi>n</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mfenced><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>;<em><em> </em></em><em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>You may have phrased your answer slightly differently. Take care when you are phrasing the conditions for destructive interference, it is tricky to get the wording right.</em></p><p><em>Here are some examples of the pitfalls in achieving that second marking point:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/file_000-73.png' alt='file_000-73' /></div><p><em>The phrasing in this example makes the answer simply untrue, so the examiner would not be able to award the mark.</em></p><p><em>Here is another example:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/file_000-74.png' alt='file_000-74' /></div><p><em>Likewise, the phrasing makes the answer incorrect, so the mark cannot be awarded. </em></p><p><em>It is worth spending some time as part of your revision to learn a correct way to phrase the conditions for destructive interference to save you time and marks in the exam.</em></p><p><em>Here is an example that would get the mark:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/file_000-75.png' alt='file_000-75' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows an arrangement for observing the interference pattern produced by laser light passing through two narrow slits S<sub>1 </sub>and S<sub>2</sub>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/07/9-3-hl-sq-medium-q2a-diag.png' alt='9-3-hl-sq-medium-q2a-diag' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The distance S<sub>1</sub>S<sub>2</sub> is <em>d</em>, and the distance between the double slit and the screen is <em>D,</em> where <em>D </em>≫ <em>d</em>, so angles <em>θ</em> and <em>ϕ</em> are small.</p><p>M is the midpoint of S<sub>1</sub>S<sub>2 </sub>and it is observed that there is a bright fringe at point A on the screen, a distance <em>f</em><sub><em>n</em></sub> from point O on the screen. Light from S<sub>2 </sub>travels a distance S<sub>2</sub>Y further to point A than light from S<sub>1</sub>.</p><p>The wavelength of light from the laser is 650 nm and the angular separation of the bright fringes on the screen is 5.00 × 10<sup>−4</sup> rad.</p><p>Calculate the distance between the two slits.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the distance between the two slits:</p><p>List the known quantities:</p><ul><li><p>Wavelength,<em> λ</em> = 650 nm = 650 × 10<sup>−9 </sup>m</p></li><li><p>Angle of diffraction,<em> θ</em> = 5.00 × 10<sup>−4</sup> rad</p></li></ul><p>Write an expression for <em>θ</em> using the small-angle approximation:</p><ul><li><p>From Fig. 1.1:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>tan</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>s</mi><mi>D</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>At small angles, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>tan</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mi>&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>tan</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>s</mi><mi>D</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>s</mi><mi>D</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Combine the equation for Young&#x27;s Double sit with the small-angle approximation:</p><ul><li><p>Fringe spacing:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>&#955;</mi><mi>D</mi></mrow><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>From the small-angle approximation: <em>s</em> = <em>θD</em></p></li><li><p>So,<em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mi>D</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>&#955;</mi><mi>D</mi></mrow><mi>d</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>&#955;</mi><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><em>[1 mark]</em></p></li></ul><p>Rearrange and substitute the values into the combined equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>&#955;</mi><mi>d</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>d</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>&#955;</mi><mi>&#952;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Distance between the two slits, <em>d </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>650</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow><mrow><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 1.3 × 10<sup>−3 </sup>m<em><em> </em></em><em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A bright fringe is observed at A. </p><p>(i) Explain the conditions required in the paths of the rays coming from S<sub>1 </sub>and S<sub>2</sub> to obtain this bright fringe. </p><p style='text-align: right;'>[2]</p><p>(ii) State an equation in terms of wavelength for the distance S<sub>2</sub>Y.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) A bright fringe will occur at A due to: </p><ul><li><p>Constructive interference; <em>[1 mark]</em></p></li></ul><p>The conditions for constructive interference are: </p><ul><li><p>Light (coming from S<sub>1 </sub>and S<sub>2</sub>) must be coherent </p><p><strong>AND</strong></p></li><li><p>The path difference (between S<sub>1</sub>A and S<sub>2</sub>A) must be a whole number of wavelengths;<em> [1 mark]</em></p><p> </p></li></ul><p>(ii) State the equation for the distance S<sub>2</sub>Y:</p><ul><li><p>S<sub>2</sub>Y = <em>nλ</em> (where n is an integer); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Remember constructive interference occurs when waves meet in phase. The phase difference between them is a whole number of wavelengths, so the same place on each wave will meet.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Deduce expressions for the following angles in the double-slit arrangement shown in part a: </p><p>(i) <em>θ</em> in terms of S<sub>2</sub>Y and <em>d</em></p><p style='text-align: right;'>[2]</p><p>(ii) <em>ϕ</em> in terms of <em>D</em> and <em>f</em><sub><em>n</em></sub></p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Deduce an expression for <em>θ</em> in terms of S<sub>2</sub>Y and <em>d:</em></p><p>Consider the trigonometry of the triangle S<sub>1</sub>S<sub>2</sub>Y:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/07/9-3-hl-sq-medium-q2c-ms-1.png' alt='9-3-hl-sq-medium-q2c-ms-1' /></div><ul><li><p>Sin<em>θ </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>e</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>s</mi><mi>e</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><msub><mi>S</mi><mn>2</mn></msub><mi>Y</mi></mrow><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Use the small-angle approximation for sinθ ≈ θ: </p><ul><li><p><em>θ </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>S</mi><mn>2</mn></msub><mi>Y</mi></mrow><mi>d</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Deduce an expression for <em>ϕ</em> in terms of D and f<sub>n</sub>:</p><p>Consider the trigonometry of the triangle MOA: </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/07/9-3-hl-sq-medium-q2c-ms-2.png' alt='9-3-hl-sq-medium-q2c-ms-2' /></div><ul><li><p>tan<em>ϕ </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>d</mi><mi>j</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>f</mi><mi>n</mi></msub><mi>D</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Use small angle approximation for tan<em>ϕ</em> ≈ <em>ϕ</em>: </p><ul><li><p><em>ϕ </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msub><mi>f</mi><mi>n</mi></msub><mi>D</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The separation of the slits S<sub>1 </sub>and S<sub>2 </sub>is 1.30 mm.</p><p>The distance MO is 1.40 m.</p><p>The distance <em>f</em><sub><em>n</em></sub> is the distance of the ninth bright fringe from O and the angle <em>θ </em>is 3.70 × 10<sup>−3</sup> radians. </p><p>Calculate the wavelength of the laser light. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the wavelength of the laser light:</p><ul><li><p>S<sub>2</sub>Y = <em>nλ</em> (from <strong>(b)</strong>)</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><msub><mi>S</mi><mn>2</mn></msub><mi>Y</mi></mrow><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>(from <strong>(c)</strong>)</p></li></ul><p>Combine the equations for path difference and angle of diffraction:</p><ul><li><p><em>dθ</em> = S<sub>2</sub>Y = <em>nλ</em></p></li><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>d</mi><mi>&#952;</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Substitute in the known values to calculate the wavelength:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>d</mi><mi>&#952;</mi></mrow><mi>n</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>)</mo><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mo>(</mo><mn>3</mn><mo>.</mo><mn>7</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>)</mo></mrow><mn>9</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 5.34 × 10<sup>−7 </sup>m <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student is conducting a series of investigations on diffraction and interference with two slits.</p><p>In the first investigation, monochromatic light passes through a double-slit arrangement. The intensity of the fringes varies with distance from the central fringe. This is observed on a screen, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/07/9-3-hl-sq-medium-q1a.png' alt='9-3-hl-sq-medium-q1a' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The intensity of the monochromatic light passing through one of the slits is reduced.</p><p>Explain the effect of this change on the appearance of</p><p>(i) The dark fringes.</p><p style='text-align: right;'>[3]</p><p>(ii) The bright fringes.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) The appearance of the dark fringes is because:</p><ul><li><p>Dark fringes are brighter than before; <em>[1 mark]</em></p></li><li><p>So, the resultant amplitude is no longer zero; <em>[1 mark]</em></p></li><li><p>Complete destructive interference from light sources of different intensities do not cancel each other out; <em>[1 mark]</em></p></li></ul><p></p><p>(ii) The appearance of the bright fringes is because:</p><ul><li><p>Bright fringes are darker than before; <em>[1 mark]</em></p></li><li><p>The resultant amplitude is less; <em>[1 mark]</em></p></li><li><p>Due to the reduction in the intensity of the light causing the interference; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p><p><em>To achieve full marks full descriptions of both situations with reasons must be given. There must be a reference in each reason to the resultant amplitude.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In another experiment, the monochromatic light is replaced by orange light of wavelength 600 nm. The double-slit has a separation of 0.350 mm and the screen is 6.35 m away. </p><p>Calculate the distance between the central and first maximum as seen on the screen.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the distance between the central and first maximum as seen on the screen:</p><p>List the known quantities: </p><ul><li><p>Wavelength of light, <em>λ </em>= 600 nm = 600 × 10<sup>−9 </sup>m</p></li><li><p>Slit separation, <em>d </em>= 0.350 mm = 0.35 × 10<sup>−3 </sup>m</p></li><li><p>Distance from slit to screen, <em>D </em>= 6.35 m</p></li></ul><p>Substitute the known values into Young&#x27;s Double Slit equation: </p><ul><li><p>Fringe separation, <em>s </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>&#955;</mi><mi>D</mi></mrow><mi>d</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li><li><p><em>s</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>(</mo><mn>600</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup><mo>)</mo><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>35</mn></mrow><mrow><mo>(</mo><mn>0</mn><mo>.</mo><mn>35</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>)</mo></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 0.0109 m <em>[1 mark]</em></p></li></ul><p>Explain your answer:</p><ul><li><p>The fringe separation is the distance between successive bright fringes</p></li><li><p>(Hence) the distance between the central and first maximum is equal to the fringe separation;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The light source is now changed to a blue LED of wavelength 450 nm.</p><p>Explain the features of the interference pattern that will now be observed on the screen.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>On the screen, there will be:</p><ul><li><p>No interference pattern; <em>[1 mark]</em></p></li></ul><p>Because:</p><ul><li><p>Light from the LED is not <u>coherent;</u> <em>[1 mark]</em></p></li><li><p>The phase difference between the light from the two slits will be continuously changing (hence interference cannot occur); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Remembering the conditions for constructive and destructive interference in Young&#x27;s Double Slit experiment is important.</em></p><p><em>Light must also be coherent (same frequency and constant phase difference) and monochromatic (contains light of just one wavelength).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows schematically an arrangement for producing interference fringes using a double slit.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/double-slit.png' alt='double-slit' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>There are two slits at points A and B and a bright fringe (maximum intensity) is observed at the point labelled P.</p><p>Explain how the path difference determines that the light intensity at point P is a maximum.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Explain how the path difference determines that the light intensity at point P is a maximum:</p><ul><li><p>When the light intensity at point P is a maximum <u>constructive</u> interference will occur at point P; <em>[1 mark]</em></p></li><li><p>The path difference between the waves BP and AP is a whole number of wavelengths / <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (where <em>n </em>is an integer); <em>[1 mark]</em></p></li><li><p>The waves from A and B that arrive at P<strong> </strong>are in phase / exactly in phase / 0° phase difference; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The light source has a wavelength of 45 mm. </p><p>The distance from A to P = 1.13 m and from B to P is 1.40 m. </p><p>Show that the light intensity at point P is a maximum.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Determine path difference:</p><ul><li><p>Path difference = BP – AP = 1.40 – 1.13 = 0.27 m <em>[1 mark]</em> </p></li></ul><p>Recall constructive interference occurs when:</p><ul><li><p>Path difference = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.27</p></li></ul><p>Calculate the number of wavelengths:</p><ul><li><p>Number of wavelengths = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>path</mi><mo> </mo><mi>difference</mi></mrow><mi>wavelength</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Number of wavelengths =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>0</mn><mo>.</mo><mn>27</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>045</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 6 <em>[1 mark]</em> </p></li></ul><p>Type of interference:</p><ul><li><p>Constructive interference / maximum occurs at P because the path difference is a whole number of wavelengths;, <em>n </em>= 6 <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The light source used in Fig. 1.1 is monochromatic but not coherent. </p><p>Explain the purpose of the single slit to observe clear interference fringes.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Role of the single slit:</p><ul><li><p>(The single slit makes) the waves from the light source coherent / identical / in phase (before they hit the double slit); <em>[1 mark]</em> </p></li></ul><p>Explanation of why coherent light is required:</p><ul><li><p>Coherent light is needed to observe clear interference fringes </p><p><strong>OR</strong></p></li><li><p>The waves (from the double slit) must have a constant phase difference to observe clear interference fringes; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student designs an experiment to replicate Young’s double-slit demonstration. </p><p>The student uses a candle as a light source, with a piece of coloured filter paper to produce monochromatic light. They consider additional apparatus required to observe an interference pattern. </p><p>Sketch a diagram of the experimental setup the student should use to observe an interference pattern.</p><p>Label all apparatus and relevant measurements to be taken.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A sketch that would gain 3 marks is shown below:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/screenshot-2024-01-29-102235.png' alt='screenshot-2024-01-29-102235' /></div><ul><li><p>Apparatus including candle, colour filter, single slit, double slit and screen; <em>[1 mark]</em></p></li><li><p>Slit separation <em>a</em> labelled as the <u>distance between the centre of the slits;</u> <em>[1 mark]</em></p></li><li><p>Distance between the double slit and the screen labelled <em>D</em>; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em> </p><p><em>You do not need to include the interference fringes in your sketch, as the question asks for the </em><em><em>experimental setup </em></em><em>and </em><em><em>relevant measurements</em></em><em> rather than the results or specifically the interference fringes that would be observed.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student labels the two slits on the double-slit grating slit X and slit Y. </p><p>The student then paints over slit X, such that the intensity of light emerging from it is 50% of the intensity emerging from slit Y. </p><p>Discuss the effects, if any, this will have on the student’s observations.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>State the existence of an interference pattern:</p><ul><li><p>There will still be an interference pattern / bright and dark fringes observed (on the screen); <em>[1 mark]</em> </p></li></ul><p>State the effect on the fringes:</p><ul><li><p>Dark fringes increase in intensity / dark lines become even more dark / black; <em>[1 mark]</em></p></li><li><p>Bright fringes decrease in intensity / bright lines become less bright; <em>[1 mark]</em> </p></li></ul><p>Explain the observations:</p><ul><li><p>Even though overall intensity is reduced, light is still emerging from both slits</p></li><li><p>Less intensity means less brightness / more darkness; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student finishes setting up their apparatus and makes a quick note of two separate measurements in a lab book as shown in Fig. 1.1. <strong> </strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-3-s-q--q1c-image-1-hard-aqa-a-level-physics.png' alt='3-3-s-q--q1c-image-1-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>They then plot a graph of the intensity of light against the distance from the centre of the screen, represented by the origin as shown in Fig. 1.2.<strong> </strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-3-s-q--q1c-image-2-hard-aqa-a-level-physics.png' alt='3-3-s-q--q1c-image-2-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Determine which colour of filter paper the student most likely chose for this experiment, using the information in Fig. 1.1 and Fig. 1.2.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Interpret the information in Fig. 1.1:</p><ul><li><p>The two quantities in the equation for fringe spacing are the distance between the slits <em>a</em> and the distance between the double-slit and the screen <em>D</em></p></li><li><p><em>a</em> is much shorter in length than <em>D</em>, hence <em>a &lt;&lt;</em> D</p></li><li><p>Therefore, <em>a</em> = 0.75 mm, <em>D</em> = 2.0 m</p></li></ul><p>Calculate the fringe spacing using Fig. 1.2:</p><ul><li><p>The fringe spacing is determined as the distance between the centre of each maxima</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-3-s-q--q1c-answer-hard-aqa-a-level-physics.png' alt='3-3-s-q--q1c-answer-hard-aqa-a-level-physics' /></div><ul><li><p>(From the graph) fringe spacing = 2.2 mm = 2.2 × 10<sup>–3</sup> m <em>[1 mark]</em></p></li></ul><p>Calculate the wavelength <em>λ </em>of light incident on the screen:</p><ul><li><p>Fringe spacing: <em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>&#955;</mi><mi>D</mi></mrow><mi>a</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Substitute:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>&#955;</mi></mrow><mrow><mn>0</mn><mo>.</mo><mn>75</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Evaluate:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#955;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced><mrow><mn>2</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>75</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn><mo>.</mo><mn>0</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 8.3 × 10<sup>–7</sup> m <em>[1 mark]</em></p></li></ul><p>Assess the most likely colour corresponding to this wavelength:</p><ul><li><p>Visible light lies in the range 400 nm – 900 nm</p></li><li><p>Red light is nearer the longer wavelength end, around 900 nm</p></li><li><p>Since the wavelength of light incident on the screen is about 830 nm, the coloured filter paper was likely <u>red</u>; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Whenever you have multiple fringes, always measure across as many as possible and divide by the number of fringes to get the most accurate value.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the phase angle between the waves meeting at the point that is 2.8 mm from the centre of the screen.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Use Fig. 1.2 to determine the relative intensity of light at a point 2.8 mm from the centre:</p><ul><li><p>At 2.8 mm away from the screen, the intensity falls to 50% of the centre of the bright fringe</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-3-s-q--q1d-answer-hard-aqa-a-level-physics.png' alt='3-3-s-q--q1d-answer-hard-aqa-a-level-physics' /></div><ul><li><p>Lines drawn at 2.2 and 2.8 mm to show 50% drop in intensity; <em>[1 mark]</em> </p></li></ul><p>Calculate the phase difference between waves at this point:</p><ul><li><p>At 2.8 mm, intensity is halfway between maximum and minimum</p></li><li><p>Hence, phase difference must be halfway between 0° and 180°<sup> </sup>/ 0 and π rad</p></li><li><p>Therefore, phase difference = 90° or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi mathvariant="normal">&#960;</mi><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> rad; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two coherent sources, A and B, which are in phase with each other, emit microwaves of wavelength 40.0 mm.</p><p>A detector is placed at the point P where it is 0.93 m from A and 1.19 m from B, as shown in Fig. 1.1. The centre axis is normal and a bisector to the straight line joining A and B.<strong> </strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-3-s-q--q2a-hard-aqa-a-level-physics.png' alt='3-3-s-q--q2a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Deduce whether the detected signal at P is a maximum or minimum. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Deduce whether the detected signal at P is a maximum or minimum:</p><ul><li><p>Path difference BP – AP = 1.19 – 0.93 = 0.26 m <em>[1 mark]</em> </p></li><li><p>Number of wavelengths: <em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>p</mi><mi>a</mi><mi>t</mi><mi>h</mi><mo>&#160;</mo><mi>d</mi><mi>i</mi><mi>f</mi><mi>f</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>w</mi><mi>a</mi><mi>v</mi><mi>e</mi><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>26</mn></mrow><mrow><mn>40</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 6.5 <em>[1 mark]</em> </p></li></ul><p>Explain the magnitude of the signal at<strong> </strong>P in terms of the phase difference:</p><ul><li><p>Constructive interference occurs when path difference = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Destructive interference occurs when path difference = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mi>n</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mfenced><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><ul><li><p>Since path difference = 6.5λ, microwaves arrive at<strong> </strong>P with a phase difference of 180° (π rad) and interfere destructively</p></li><li><p>Therefore, the magnitude of the signal at P is a <u>minimum</u>; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em> </p><p><em>Path difference, in terms of the number of wavelengths, is super popular among examiners – because it links so well with phase difference. And let’s face it: ‘path difference’ and ‘phase difference’ sound very similar – so lots of students are likely to mix them up! </em></p><p><em>You should practice looking out for the length of a path or ray of light in questions to do with interference – if more than one length is given, you’ll likely need the path difference between them. Then you should always think about that path difference in terms of a multiple of wavelengths. </em></p><p><em>A subtle point to bear in mind is that this question specifies whether the two sources A and B are coherent and in phase with each other. This means any phase difference is only due to a path difference – i.e., a difference in the distance travelled by each source of waves.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The amplitude of the waves emitted from source B is twice that of the waves emitted from source A. </p><p>Calculate the ratio of the intensity at<strong> </strong>P to the intensity at O.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the ratio of the intensity at P to the intensity at O:</p><p>List the known quantities:</p><ul><li><p>Amplitude of waves from source A =<em> A</em></p></li><li><p>Amplitude of waves from source B = 2<em>A</em> </p></li></ul><p>Determine the amplitude at O:</p><ul><li><p>The path difference between AO and BO is zero</p></li><li><p>Therefore, the amplitude at O is a maximum; <em>[1 mark]</em> </p></li></ul><p>Write an expression for the ratio of the intensity at P to the intensity at O in terms of amplitude:</p><ul><li><p>Intensity:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><msup><mi>A</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Hence, the ratio:  <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>P</mi></mrow><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>O</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mfenced><mfrac><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>i</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>e</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>P</mi></mrow><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>i</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>e</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>O</mi></mrow></mfrac></mfenced><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The resultant amplitude at P is a minimum = 2<em>A – A</em></p></li><li><p>The resultant amplitude at O is a maximum = 2<em>A </em>+ <em>A</em></p></li><li><p>Therefore, <span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mfenced><mfrac><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>i</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>e</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>P</mi></mrow><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>i</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>e</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>O</mi></mrow></mfrac></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mrow><mo stretchy="true">(</mo><mfrac><mrow><mn>2</mn><mi>A</mi><mo>-</mo><mi>A</mi></mrow><mrow><mn>2</mn><mi>A</mi><mo>+</mo><mi>A</mi></mrow></mfrac><mo stretchy="true">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em> </p></li></ul><p>Simplify the expression to determine the ratio:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>P</mi></mrow><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>O</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mfenced><mfrac><mrow><mn>2</mn><mi>A</mi><mo>-</mo><mi>A</mi></mrow><mrow><mn>2</mn><mi>A</mi><mo>+</mo><mi>A</mi></mrow></mfrac></mfenced><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mfenced><mfrac><mi>A</mi><mrow><mn>3</mn><mi>A</mi></mrow></mfrac></mfenced><mn>2</mn></msup><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mfenced><mfrac><mn>1</mn><mn>3</mn></mfrac></mfenced><mn>2</mn></msup><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>9</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>P</mi></mrow><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>&#160;</mo><mi>a</mi><mi>t</mi><mo>&#160;</mo><mi>O</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.11 <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>To see why the resultant amplitude at O is given by 2</em><em><em>A</em></em><em> + </em><em><em>A</em></em><em>, remember that this question specifies the centre axis is a bisector to the line joining A and B: in other words, AO and BO are the same length. This means the path difference is 0 m, and therefore waves from A arrive in phase with waves from B; point O has a maximum (resultant) amplitude.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-3-s-q--q2a-answer-hard-aqa-a-level-physics.png' alt='3-3-s-q--q2a-answer-hard-aqa-a-level-physics' /></div><p><em>Since</em><em><strong> </strong></em><em>O is a position of maximum resultant amplitude, by the principle of superposition, this is the result of the sum of the two amplitudes which meet: in this case, 2</em><em><em>A</em></em><em> + </em><em><em>A</em></em><em>. </em></p><p><em>Similarly, the resultant amplitude is minimised at P by 2</em><em><em>A</em></em><em> – </em><em><em>A</em></em><em>.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the total number of maxima and minima detected by the detector as it moves from P to O.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>As the detector moves from P to O:</p><ul><li><p>The intensity varies as a series of maxima and minima (due to interference of waves emitted from A and B)</p></li></ul><ul><li><p>When the path difference = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, the waves arrive in phase (constructive interference)</p></li><li><p>When the path difference = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mi>n</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mfenced><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, the waves arrive in antiphase (destructive interference)</p></li></ul><p>Calculate the number of maxima and minima between P and O:</p><ul><li><p>Path difference from P to O = 6.5λ (from part a)</p></li><li><p>At P, the intensity is a minimum</p></li><li><p>At O, the intensity is a maximum</p></li><li><p>Maxima occur at <em>n</em> = 0, 1, 2, 3, 4, 5, 6</p></li><li><p>Minima occur at <em>n</em> = 0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5</p></li><li><p>Therefore, number of maxima = 7 <strong>AND</strong> number of minima = 7; <em>[1 mark]</em> </p></li><li><p>Total maxima and minima = 14 <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Source B is altered to emit waves that are 180° out of phase with source A. </p><p>Describe and explain the change in the appearance of the interference pattern at P.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The type of interference occurring at point P is now:</p><ul><li><p>Constructive interference; <em>[1 mark]</em> </p></li></ul><p>Explain the type of interference in terms of phase:</p><ul><li><p>Waves arriving at P were originally out of phase / originally undergoing destructive interference</p></li><li><p>180° phase change to B means the waves will now be in phase; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

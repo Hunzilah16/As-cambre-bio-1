@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8.4 The Diffraction Grating - Multiple Choice Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">8.4 The Diffraction Grating</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 8. Superposition</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 16 Questions (16 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A diffraction pattern is observed when monochromatic light is incident on a diffraction grating.</p><p>Which row describes the effect of replacing the grating with one that has more lines per metre?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Number of orders of diffraction visible</strong></p></td><td><p style='text-align: center;'><strong>Angle between first and second orders of diffraction</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>increases</p><p style='text-align: center;'>increases</p><p style='text-align: center;'>decreases</p><p style='text-align: center;'>decreases</p></td><td><p style='text-align: center;'>increases</p><p style='text-align: center;'>decreases</p><p style='text-align: center;'>increases</p><p style='text-align: center;'>decreases</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Changing the grating to one with more lines per metre causes the slit separation <em>d</em>, to decrease</p></li><li><p>As the number of order, so diffraction visible decreases the angle between the first order and the second orders of diffraction increases</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi></mrow><mi>λ</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> as <em>d </em>is decreasing</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>=</mo><mi>s</mi><mi>i</mi><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mrow><mi>n</mi><mi>λ</mi></mrow><mi>d</mi></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, this can only be between 0 and 90˚, and the angle increases</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a diffraction grating and a monochromatic source of light with wavelength (<em>λ</em>).</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/03/q5_diffraction_aqa-as-physics-mcq.png' alt='q5_diffraction_aqa-as-physics-mcq' /></div><p>What happens to the angle of diffraction (<em>θ</em>) when the wavelength of light is increased, but all the other equipment remains the same?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>The angle of diffraction remains the same</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>The angle of diffraction is decreased</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>The angle of diffraction is increased</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>There is not enough information to know what will happen</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>When the wavelength of the light is increased, it must diffract through a gap that is much smaller in relation to its length</p></li><li><p>This means it “bends” or diffracts more, creating a larger angle of diffraction (<em>θ</em>)</p></li><li><p>This can also be seen from the diffraction grating equation</p><ul><li><p><em>d</em> sin(<em>θ</em>) = n<em>λ</em></p></li></ul></li><li><p>sin(<em>θ</em>) is directly proportional to <em>λ</em></p><ul><li><p>This means that if <em>λ</em> increases then so does sin(<em>θ</em>)</p></li><li><p>If sin(<em>θ</em>) is increasing then so is <em>θ</em> </p></li></ul></li></ul><p><strong>A</strong> is incorrect as the angle of diffraction increases, so does not remain the same.   </p><p><strong>B</strong> is incorrect as the angle of diffraction increases, so does not decrease.</p><p><strong>D</strong> is incorrect as there is enough information to know that the angle of diffraction will increase because of an increase in wavelength (<em>λ</em>). </p><p>It is important to be confident in how the terms of the diffraction equation (<em>d</em> sin(<em>θ</em>) = n<em>λ</em>) relate to each other. This is the easiest method to answer questions where you are asked how one variable varies with another – always look for the equations linking them both!</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a diffraction grating with a slit distance (<em>d</em>) and a monochromatic source of light incident on the grating.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/03/q6_diffraction_aqa-as-physics-mcq.png' alt='q6_diffraction_aqa-as-physics-mcq' /></div><p>What happens to the angle of diffraction when the distance between the slits on the grating is reduced?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>The angle of diffraction remains the same</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>The angle of diffraction is decreased</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>The angle of diffraction is increased</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>There is not enough information to know what will happen</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>We can use the diffraction grating equation to help understand this</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>n</mi><mi>&#955;</mi></mrow><mi>d</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = sin(<em>θ</em>)</p></li></ul></li><li><p>This means that sin(<em>θ</em>) is inversely proportional to <em>d</em></p><ul><li><p>sin(<em>θ</em>) <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8733;</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li></ul></li><li><p>When the slit separation (<em>d</em>) is decreased then sin(<em>θ</em>) will increase</p></li><li><p>As the angle of diffraction increases, sin(<em>θ</em>) also increases</p><ul><li><p>This can be seen from the graph of sin(<em>θ</em>) between 0 &lt; <em>θ</em> &lt; 90°sin(<em>θ</em>)</p></li><li><p>Until 90º, as <em>θ</em> increases so does sin(<em>θ</em>)</p></li></ul></li></ul><p><strong>A</strong> is incorrect as the angle of diffraction increases, so does not remain the same.   </p><p><strong>B</strong> is incorrect as the angle of diffraction increases, so does not decrease.</p><p><strong>D</strong> is incorrect as there is enough information to know that the angle of diffraction will increase because of a decrease in slit separation (<em>d</em>). </p><p>It is helpful to be able to sketch graphs of sin(<em>θ</em>) and know how it’s size changes with different values of <em>θ</em>, this is not always the case for the other trigonometric functions! As <em>θ</em> increases, so does  sin(<em>θ</em>) only for <strong>certain values of </strong><em><strong>θ</strong></em><strong>.</strong></p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Monochromatic light incident on a diffraction grating creates both primary and secondary maxima in the diffraction pattern.</p><p>What is the relationship between the number of slits in the diffraction grating, when the number of slits is less than 20, and the number of secondary maxima that can be observed on the screen?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>The number of primary and secondary maxima in each diffraction pattern is the same</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>The number of secondary maxima in the diffraction pattern is always one less than the number of primary maxima. </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>The number of secondary maxima in the diffraction pattern is always the same as the number of slits in the diffraction grating</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>The number of secondary maxima between the primary maxima is always two less than the number of slits in the diffraction grating</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>It can be observed by investigating light incident on a diffraction grating with different numbers of slits that:</p><ul><li><p>When the number of slits is <strong>greater</strong> than two (<em>N </em>&gt; 2) then <strong>secondary</strong> maxima appear</p></li></ul></li><li><p>E.g. when there are 3 slits in the diffraction grating then there is 3–2 = 1 secondary maxima between each primary maxima</p></li><li><p>When there are 4 slits in the diffraction grating then there are 4 –2 = 2 secondary maxima between each primary maxima</p><ul><li><p>Hence, the relationship between the number of secondary maxima and the number of slits in the diffraction grating is the <strong>number of slits minus two</strong></p></li></ul></li><li><p>So, option <strong>D </strong>is correct</p></li></ul><p>The diagram illustrates the difference between primary and secondary maxima.  It shows the diffraction pattern for a diffraction grating with <strong>five</strong> slits. The number of secondary maxima visible is N − 2 = 5 − 2 = 3.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/9y-U8QQq_file_000-33.png' alt='9y-U8QQq_file_000-33' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>What is a diffraction grating?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>Two slits created as two gaps within a material through which waves can be diffracted</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>A plate consisting of a very large number of parallel, identical, closely-spaced slits</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>A circular aperture through which light can be diffracted and then images resolved</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>A photographic filter that allows light in only one plane to pass through</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>Diffraction gratings are made up of hundreds of slits per mm of their width</p></li><li><p>The slits must all be:</p><ul><li><p>In the same direction (therefore parallel to each other)</p></li><li><p>Have the same width and height (identical to each other)</p></li><li><p>Very close together</p></li></ul></li><li><p>This arrangement makes it possible to observe:</p><ul><li><p>The diffraction of monochromatic visible light</p></li><li><p>The diffraction of visible white light into its colours</p></li><li><p>Phenomenons such as spectroscopy</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A beam of monochromatic light with a wavelength of 690 nm is directed at a diffraction grating with 300 lines per mm as shown in the diagram</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images409png.png' alt='cie-ial-images409png' /></div><p>This set up produces a series of maxima on the screen, what is the greatest number of maxima that can be observed?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>9</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>8</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>5</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>4</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Where:</p><ul><li><p>Slit separation <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mfrac><mn>1</mn><mn>300</mn></mfrac><mo>=</mo><mn>3</mn><mo>.</mo><mn>33</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo> </mo><mi>mm</mi><mo>=</mo><mn>3</mn><mo>.</mo><mn>33</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Wavelength <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mn>690</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Number of bright fringes on one side of the central maximum = <em>n</em></p></li></ul></li><li><p>The maximum angle <em>θ</em> from the central fringe is 90° on each side </p></li><li><p>Rearrange the diffraction equation to make <em>n </em>the subject:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi></mrow><mi>λ</mi></mfrac><mo>=</mo><mfrac><mrow><mfenced><mrow><mn>3</mn><mo>.</mo><mn>33</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfenced><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mn>90</mn><mo>°</mo></mrow><mrow><mn>690</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>4</mn><mo>.</mo><mn>8</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>This means, the 4th bright fringe can be observed but not the 5th bright fringe </p><ul><li><p>Since 4.8 &lt; 5</p></li></ul></li><li><p>We will also have 4 bright fringes on the other side and one central fringe</p><ul><li><p>Therefore, the total number of fringes = 4 + 1 + 4 = 9</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Monochromatic light with a wavelength of 600 nm is observed through a diffraction grating with 500 lines per mm.</p><p>The light is first passed through a narrow slit where the lines from the slit are parallel to the lines in the grating.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images415png.png' alt='cie-ial-images415png' /></div><p>The observer changes position to; R – parallel with the grating, S – opposite the slit, T – parallel to the grating on the opposite side.</p><p>What is the total number of images they would see from R, S and T combined?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>7</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>6</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>4</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>3</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Where:</p><ul><li><p>Slit separation <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mfrac><mn>1</mn><mn>500</mn></mfrac><mo>=</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo> </mo><mi>mm</mi><mo>=</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Wavelength <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mn>600</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Number of images on one side = <em>n</em></p></li></ul></li><li><p>The maximum angle <em>θ</em> from the central fringe is 90° on each side </p></li><li><p>Rearranging for <em>n </em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi></mrow><mi>λ</mi></mfrac><mo>=</mo><mfrac><mrow><mfenced><mrow><mn>2</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfenced><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mn>90</mn><mo>°</mo></mrow><mrow><mn>600</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>3</mn><mo>.</mo><mn>3</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>This means, the 3rd image can be seen but not the 4th image since we cannot have 3.3 images, so, we can have up to 3 images on one side</p></li><li><p>We will also have 3 bright fringes on the other side and one central fringe</p><ul><li><p>Therefore, the total number of fringes = 3 + 1 + 3 = 7</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A student set up an experiment with a diffraction grating. They put a narrow beam of monochromatic light incident along the normal. They found that the third-order diffracted beams are formed at angles of 45° to the original direction.</p><p>Which of the following gives the highest order of diffracted beam produced by this grating ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>6<sup>th</sup></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>5<sup>th</sup> </p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>4<sup>th</sup> </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>3<sup>rd</sup> </p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Rearrange the equation to obtain the ratio for <em>n </em>and sin<em>θ</em></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>λ</mi><mi>d</mi></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mi>θ</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p> When <em>n</em> = 3 (third order), <em>θ</em> = 45°</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>λ</mi><mi>d</mi></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mn>45</mn></mrow><mn>3</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>λ</mi><mi>d</mi></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><msqrt><mn>2</mn></msqrt><mn>6</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>For the highest order of diffracted beam, the angle <em>θ</em> should be equal to 90˚</p></li><li><p>Consider the angle of 90°:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>λ</mi><mi>d</mi></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mn>90</mn></mrow><mi>n</mi></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><msqrt><mn>2</mn></msqrt><mn>6</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Rearrange to obtain the highest order <em>n</em> </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msqrt><mn>2</mn></msqrt><mn>6</mn></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mfenced><mstyle displaystyle="true"><mfrac><msqrt><mn>2</mn></msqrt><mn>6</mn></mfrac></mstyle></mfenced></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>6</mn><msqrt><mn>2</mn></msqrt></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo> </mo><mo>=</mo><mo> </mo><mn>4</mn><mo>.</mo><mn>2</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p> The order should be an integer, so the highest order is <em>n</em> = 4</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The wavelength of monochromatic light can be determined using a diffraction grating. This is shown in the diagram.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images422png.png' alt='cie-ial-images422png' /></div><p>The angle between the first-order diffraction maxima is 60°, and the spacing of the slits is 1.15 × 10<sup>–6</sup> m.</p><p>What is the wavelength of the light?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>575 nm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>498 nm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>996 nm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>287 nm</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Where:</p><ul><li><p><em>n</em> = 1, since these are first-order lines</p></li><li><p><em>d</em> is the split spacing = 1.15 × 10<sup>–6</sup> m</p></li><li><p><em>θ</em> is the angle between the light and the horizontal =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mn>60</mn><mo>°</mo></msup><mn>2</mn></mfrac><mo>=</mo><mn>30</mn><mo>°</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Rearranging for wavelength λ</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi></mrow><mi>n</mi></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>15</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mfenced><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mn>30</mn></mrow></mfenced><mo>=</mo><mn>5</mn><mo>.</mo><mn>75</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the wavelength of the light is 575 nm</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>When a parallel beam of white light is incident to normally on a diffraction grating the second-order and third-order spectra partially overlap.</p><p>When the second order wavelength is 600 nm, which of the following third-order wavelengths would appear at the same angle?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>900 nm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>600 nm</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>400 nm</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>300 nm</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mi>n</mi></msub><mo>=</mo><mi>n</mi><msub><mi>λ</mi><mi>n</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>When the second-order and third-order spectra overlap:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><msub><mi>θ</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><msub><mi>λ</mi><mn>2</mn></msub><mo>=</mo><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>3</mn></msub><mo>=</mo><mn>3</mn><msub><mi>λ</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><msub><mi>λ</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn><msub><mi>λ</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Rearranging for <em>λ</em><sub><em>3</em></sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mn>3</mn></msub><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><msub><mi>λ</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>×</mo><mn>600</mn><mo>=</mo><mn>400</mn><mo> </mo><mtext>nm</mtext></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, a wavelength of 400 nm would appear at the same angle as the 600 nm wavelength</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Yellow light with a wavelength of 600 nm is used in a diffraction grating experiment. The grating has a slit separation of 2.00 μm.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images416png.png' alt='cie-ial-images416png' /></div><p>What would be the angular separation between the first order and second order maxima?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>54.3°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>36.9°</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>19.4°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>17.5°</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>For <em>n </em>= 1</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><mfrac><mi>λ</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mn>600</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>.</mo><mn>00</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfrac><mo> </mo><mo>=</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>30</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><mi>s</mi><mi>i</mi><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mrow><mn>0</mn><mo>.</mo><mn>30</mn></mrow></mfenced><mo>=</mo><mn>17</mn><mo>.</mo><mn>45</mn><mo>°</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>For <em>n</em> = 2</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>λ</mi></mrow><mi>d</mi></mfrac><mo>=</mo><mn>2</mn><mo> </mo><mo>×</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>30</mn><mo> </mo><mo>=</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>60</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So,<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><mi>s</mi><mi>i</mi><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mrow><mn>0</mn><mo>.</mo><mn>60</mn></mrow></mfenced><mo>=</mo><mn>36</mn><mo>.</mo><mn>87</mn><mo>°</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Angular separation is equal to (<em>θ</em><sub><em>2</em></sub> – <em>θ</em><sub><em>1</em></sub>), so:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><msub><mi>θ</mi><mn>2</mn></msub><mo>-</mo><msub><mi>θ</mi><mn>1</mn></msub></mrow></mfenced><mo>=</mo><mn>36</mn><mo>.</mo><mn>87</mn><mo>°</mo><mo>-</mo><mn>17</mn><mo>.</mo><mn>45</mn><mo>°</mo><mo>=</mo><mn>19</mn><mo>.</mo><mn>42</mn><mo>°</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the angular separation is equal to 19.4°</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 12 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An experiment was set up to investigate light passing through a diffraction grating with slit spacing <em>d</em>. The fringe pattern was observed on a screen.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images418png.png' alt='cie-ial-images418png' /></div><p>Which of the following gives the angle between the two first-order lines?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo> </mo><mi>s</mi><mi>i</mi><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mi>λ</mi><mrow><mn>2</mn><mi>d</mi></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo> </mo><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mi>λ</mi><mi>d</mi></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mi>λ</mi><mrow><mn>2</mn><mi>d</mi></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mi>λ</mi><mi>d</mi></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>For <em>n </em>= 1</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>β</mi><mo>=</mo><mfrac><mi>λ</mi><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mi>s</mi><mi>i</mi><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mi>λ</mi><mi>d</mi></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>From the diagram, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>β</mi><mo>=</mo><mi>α</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>β</mi><mo>=</mo><mi>α</mi><mo>=</mo><mn>2</mn><mo> </mo><mi>s</mi><mi>i</mi><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mi>λ</mi><mi>d</mi></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 13 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A student carried out an experiment on monochromatic light with a wavelength of 5.30 × 10<sup>–7</sup> m. They set up the source so that it was incident normally to the diffraction grating.</p><p>The student observed that the first-order maximum was 15.4° to the direction of the incident light.</p><p>What would be the angle between the first order and second order maxima?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>7.6°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>15.4°</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>16.7°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>32.1°</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo> </mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>When <em>n</em> = 1</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><mfrac><mi>λ</mi><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The angle <em>θ</em><sub><em>1</em></sub> = 15.4°, so, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mn>15</mn><mo>.</mo><mn>4</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>2656</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>When <em>n</em> = 2</p><ul><li><p>The angle is <em>θ</em><sub><em>2</em></sub></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>λ</mi></mrow><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>λ</mi><mi>d</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the same at both the first-order and second-order maxima, so:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>λ</mi><mi>d</mi></mfrac><mo>=</mo><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>2656</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>2656</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>5311</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mrow><mn>0</mn><mo>.</mo><mn>5311</mn></mrow></mfenced><mo>=</mo><mn>32</mn><mo>.</mo><msup><mn>08</mn><mo>°</mo></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the angle between the first order and second order maxima is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mn>2</mn></msub><mo>-</mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><mn>32</mn><mo>.</mo><mn>1</mn><mo>°</mo><mo>-</mo><mn>15</mn><mo>.</mo><mn>4</mn><mo>°</mo><mo>=</mo><mn>16</mn><mo>.</mo><mn>7</mn><mo>°</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-8-2-q26.png' alt='cie-ial-physics-mcq-8-2-q26' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 14 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A monochromatic light beam is incident normally to a diffraction grating and nine maximas are observed on the screen.</p><p>What is the range for the angle <em>θ</em> between the central and first-order maxima?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>5.74° <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&#8804;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>θ</em>  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&#8804;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> 6.38°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>9.59° &lt; <em>θ</em>  ≤ 11.5°</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>11.5° &lt; <em>θ</em>  ≤ 14.5<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&#176;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>11.5° &lt; <em>θ</em>  &lt; 53.1°</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because</em></p><ul><li><p>The diffraction grating equation is given by</p><ul><li><p><em>d</em> sin <em>θ</em> = <em>n</em>λ</p></li></ul></li><li><p>The maximum angle <em>θ</em>  a fringe can be from the central maxima is 90°</p></li><li><p>For the maximum value of <em>n</em></p><ul><li><p><em>d</em> sin (90) = <em>n</em>λ</p></li><li><p><em>d </em>= <em>n</em>λ</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mi>d</mi><mi>&#955;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>There are nine maximas on the screen which means there are four maximas either side of the central maxima</p></li><li><p>If the value of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>d</mi><mi>&#955;</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is not a whole number, it must be rounded down as there cannot be a fraction of a fringe</p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>d</mi><mi>&#955;</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>is greater or equal to 4 and less than 5</p><ul><li><p>4 ≤ n ≤ 5</p></li><li><p>4 ≤ <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>d</mi><mi>&#955;</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>&lt;</em> 5</p></li></ul></li><li><p>When <em>n</em> = 1 for the first-order maxima</p><ul><li><p><em>d</em> sin <em>θ</em> = λ</p></li><li><p>sin <em>θ = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>&#955;</mi><mi>d</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>θ = </em>sin<sup>−1</sup><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mfrac><mi>&#955;</mi><mi>d</mi></mfrac></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>If <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mi>&#955;</mi></mfrac><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>&#955;</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>θ = </em>sin<sup>−1 </sup><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mfrac><mn>1</mn><mn>4</mn></mfrac></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>θ = </em>14.5<em>° </em>(3 s.f)</p></li></ul></li><li><p>If <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mi>&#955;</mi></mfrac><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>&#955;</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>θ = </em>sin<sup>−1 </sup><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mfrac><mn>1</mn><mn>5</mn></mfrac></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>θ = </em>11.5<em>° </em>(3 s.f)</p></li></ul></li><li><p>Therefore the range for the angle between the central and first-order maxima is</p><ul><li><p>11.5° &lt; <em>θ </em>≤ 14.5°</p></li></ul></li><li><p>This is option <strong>C</strong></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 15 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Fig. 1.1 shows a monochromatic light beam which is incident normally to a diffraction grating. The angle between the central and second-order maxima is 18°.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/cie-8-2-mcq-hard-q4-cie-ial-physics.png' alt='cie-8-2-mcq-hard-q4-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>What is the angle between the two third-order maxima lines?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>27.6°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>36.0°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>54.0°</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>55.2°</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The known quantity is</p><ul><li><p>The angle between the central and second-order maxima, <em>θ</em> = 18°</p></li></ul></li><li><p>The diffraction grating equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&#160;</mo><mi>s</mi><mi>i</mi><mi>n</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>n</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>When <em>n</em> = 2 for the second-order maxima</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&#160;</mo><mi>s</mi><mi>i</mi><mi>n</mi><mfenced><mn>18</mn></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>&#955;</mi><mi>d</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mfenced><mn>18</mn></mfenced></mrow><mn>2</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>1545</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>&#955;</mi><mi>d</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> remains constant for all of the maximas</p></li><li><p>When <em>n</em> = 3 for the third-order maxima</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&#160;</mo><mi>s</mi><mi>i</mi><mi>n</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mfrac><mi>&#955;</mi><mi>d</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>1545</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>s</mi><mi>i</mi><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><mfenced><mrow><mn>3</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>1545</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>27</mn><mo>.</mo><mn>6</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>(3 s.f)</p></li></ul></li><li><p>This is the angle between the central and third-order maxima</p></li><li><p>The angle between the two third-order maximas is</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>27</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>55</mn><mo>.</mo><mn>2</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>This is option <strong>D</strong></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 16 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A physics student is investigating the properties of a diffraction grating using laser light with a wavelength of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn><mo>.</mo><mn>20</mn><mo>&#xD7;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><mo>&#x200A;</mo><mtext>m</mtext></math></span>. The laser beam is directed perpendicularly onto the grating surface.</p><p>During the experiment, the student measures the second-order maximum at an angle of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>32</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> from the normal to the grating.</p><p>What is the angle between the second-order and third-order maxima?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>12°</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>21°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>32°</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>53°</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is B</em></p><ul><li><p>The diffraction grating equation is given by</p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>n</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>When <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>=</mo><mn>2</mn></math></span></p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>&#160;</mo><msub><mi>&#952;</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>&#955;</mi></mrow><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>The angle between  n = 2 and the normal is</p></li></ul><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#952;</mi><mn>2</mn></msub><mo>=</mo><mn>32</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>&#160;</mo><mn>32</mn><mo>&#176;</mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>530</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>When <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>=</mo><mn>3</mn></math></span></p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>&#160;</mo><msub><mi>&#952;</mi><mn>3</mn></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mi>&#955;</mi></mrow><mi>d</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>&#x3BB;</mi><mi>d</mi></mfrac></math></span> is the same at both the second-order and third-order maxima, so:</p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>&#955;</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mi>sin</mi><mo>&#160;</mo><msub><mi>&#952;</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>sin</mi><mo>&#160;</mo><msub><mi>&#952;</mi><mn>3</mn></msub></mrow><mn>3</mn></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>530</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>265</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>&#160;</mo><msub><mi>&#952;</mi><mn>3</mn></msub><mo>=</mo><mn>3</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>265</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>795</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#952;</mi><mn>3</mn></msub><mo>=</mo><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mn>0</mn><mo>.</mo><mn>795</mn><mo>)</mo><mo>=</mo><mn>52</mn><mo>.</mo><mn>7</mn><mo>&#8776;</mo><mn>53</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>Therefore, the angle between the second order and third order maxima is:</p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#952;</mi><mn>3</mn></msub><mo>-</mo><msub><mi>&#952;</mi><mn>2</mn></msub><mo>=</mo><mn>53</mn><mo>&#176;</mo><mo>-</mo><mn>32</mn><mo>&#176;</mo><mo>=</mo><mn>21</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

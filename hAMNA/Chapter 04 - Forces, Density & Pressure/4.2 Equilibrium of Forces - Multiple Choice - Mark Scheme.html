@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4.2 Equilibrium of Forces - Multiple Choice Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">4.2 Equilibrium of Forces</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 4. Forces, Density & Pressure</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 23 Questions (23 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagrams show the forces acting on different bodies.</p><p> Which body <strong>cannot</strong> be in equilibrium?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q2.png' alt='cie-ial-physics-mcq-4-1-q2' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>If the vector arrows form a closed triangle, the resultant force is zero</p></li><li><p>However, for a body to be in equilibrium, the resultant moment must also be zero</p></li><li><p>Another way to look at it is that three forces can only be in equilibrium if they all pass through the same point</p><ul><li><p>If not, then there will be a turning force (resultant moment) on the object</p></li></ul></li><li><p>So, if we join the vector arrows to see where they meet, we can see that the only option where the three forces do not meet at a singular point is option A</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images151png.png' alt='cie-ial-images151png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A force of 5 N pushes a ball due north, and another force of 12 N pushes it due east.</p><p>What is the magnitude of the net force acting on the ball?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>7 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>11 N</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>13 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>17 N</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>To find the net force for two forces which are perpendicular to each other we can use</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>F</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msubsup><mi>F</mi><mi>N</mi><mn>2</mn></msubsup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msubsup><mi>F</mi><mi>E</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><msup><mn>5</mn><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msup><mn>12</mn><mn>2</mn></msup></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>13</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images152png.png' alt='cie-ial-images152png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A street lamp is fixed to a wall by a metal rod and a cable.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q5-diagram-1.png' alt='cie-ial-physics-mcq-4-1-q5-diagram-1' /></div><p>Which vector triangle represents the forces acting at point P?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/4-1-q5-diagram-2.png' alt='4-1-q5-diagram-2' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Weight always acts downwards</p></li><li><p>Tension is the pull of the cable on the object so it always acts away from the mass</p></li><li><p>Since the lamp is at rest, the three forces on point P must be in equilibrium</p></li><li><p>That means they form a closed triangle when drawn tip-to-tail:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q5-answer.png' alt='cie-ial-physics-mcq-4-1-q5-answer' /></div><p><strong>A &amp; C </strong>are incorrect because weight always acts downwards but these triangles show the weight acting upwards</p><p><strong>B </strong>is incorrect because the tension in a wire always acts away from the mass whereas this triangle shows it acting towards the mass</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform metre rule of weight 4.0 N is pivoted at the 60 cm mark. A 6.0 N weight is suspended from one end, causing the rule to rotate about the pivot.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q6.png' alt='cie-ial-physics-mcq-4-1-q6' /></div><p>At the instant when the rule is horizontal, what is the resultant turning moment about the pivot?</p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Resultant moment</strong></p></td><td><p style='text-align: center;'><strong>Direction</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>2.0 N m</p><p style='text-align: center;'>2.0 N m</p><p style='text-align: center;'>2.8 N m</p><p style='text-align: center;'>2.8 N m</p></td><td><p style='text-align: center;'>clockwise</p><p style='text-align: center;'>anticlockwise</p><p style='text-align: center;'>clockwise</p><p style='text-align: center;'>anticlockwise</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>To calculate moments, we will need to use</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>moment</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>force</mi><mo>&#215;</mo><mi>perpendicular</mi><mo>&#160;</mo><mi>distance</mi><mo>&#160;</mo><mi>from</mi><mo>&#160;</mo><mi>pivot</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>We will look at the clockwise and anticlockwise moments separately</p></li><li><p>The metre rule is uniform, meaning its weight acts at the centre mark, 50 cm</p></li><li><p>Therefore, the distance between the pivot and the centre of gravity is 10 cm</p></li><li><p>The weight of the ruler produces an anticlockwise moment of</p><ul><li><p>4.0 × 0.1 = 0.4 N m</p></li></ul></li><li><p>The 6.0 N weight acts downwards at a distance of 40 cm from the pivot, producing a clockwise moment of</p><ul><li><p>6.0 × 0.4 = 2.4 N m</p></li></ul></li><li><p>Resultant moment = sum of clockwise and anticlockwise moments</p><ul><li><p>2.4 – 0.4 = 2.0 N m</p></li></ul></li><li><p>Therefore, the resultant turning moment is 2.0 N m clockwise</p></li></ul><p><strong>B &amp; D </strong>are incorrect because a positive value is generally taken as a clockwise moment</p><p><strong>C </strong>is incorrect because this is the answer you get if you add the moments together instead of taking away the anticlockwise moment</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a plan view of a door which requires a moment of 14 N m to open it.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q8.png' alt='cie-ial-physics-mcq-4-1-q8' /></div><p>What is the minimum force that must be applied at the door’s midpoint to ensure it opens?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>4.9 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>9.8 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>20 N</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>40 N</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The moment of a force is given by:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>moment</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>force</mi><mo>&#215;</mo><mi>perpendicular</mi><mo>&#160;</mo><mi>distance</mi><mo>&#160;</mo><mi>from</mi><mo>&#160;</mo><mi>pivot</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>The midpoint of the door is at 0.35 m</p></li><li><p>So minimum force = moment / distance from hinge to midpoint</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>14</mn><mrow><mn>0</mn><mo>.</mo><mn>35</mn></mrow></mfrac><mo>=</mo><mn>40</mn><mo> </mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Forces of 3 N, 4 N and 5 N act at one point on an object. The angles at which the forces act can vary.</p><p>What is the value of the minimum resultant force of these forces?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>between 0 and 2 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>2 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>between 2 N and 4 N </p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The minimum resultant force is found by finding the combination of forces which produces the smallest value</p></li><li><p>Consider the resultant magnitude of 3 N and 4 N when they are perpendicular to each other:</p><ul><li><p>Resultant = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>So, if the 5 N force is then placed in the opposite direction to the resultant force of the perpendicular 3 N and 4 N forces, the overall resultant force is zero</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images167png.png' alt='cie-ial-images167png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform metre rule is hung from the ceiling as shown</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q11.png' alt='cie-ial-physics-mcq-4-1-q11' /></div><p>The rule balances when a 75 g mass is hung from one end of the ruler </p><p>What is the mass of the metre rule?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>38 g</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>51 g</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>141 g</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>159 g</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>To calculate moments, we will need to use</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>moment</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>force</mi><mo>&#215;</mo><mi>perpendicular</mi><mo>&#160;</mo><mi>distance</mi><mo>&#160;</mo><mi>from</mi><mo>&#160;</mo><mi>pivot</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>The metre rule is uniform, meaning its weight acts at the centre mark, 50 cm</p></li><li><p>The 75g mass acts downwards at the 4 cm marker</p></li><li><p>The pivot is positioned at 34 cm, so</p><ul><li><p>distance to the centre of gravity = 50 – 34 = 16 cm</p></li><li><p>distance to the 75 g mass = 34 – 4 = 30 cm</p></li></ul></li><li><p>Clockwise moment due to the ruler&#x27;s weight:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>g</mi><mo>&#215;</mo><mn>16</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Anticlockwise moment due to the 75 g mass:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>75</mn><mi>g</mi><mo>&#215;</mo><mn>30</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>For the system to be in equilibrium, clockwise moment = anticlockwise moment</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>g</mi><mo>&#215;</mo><mn>16</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>75</mn><mi>g</mi><mo>&#215;</mo><mn>30</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>75</mn><mo>&#215;</mo><mn>30</mn></mrow><mn>16</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>141</mn><mo>&#160;</mo><mi mathvariant="normal">g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the metre rule has a mass of 141 g</p></li></ul><p>When dealing with systems in equilibrium (e.g. moments, conservation of momentum) you don’t need to convert units into SI units, you just need to make sure the units are the same on both sides and you need to check your final answer is reported in the correct units, take this question as an example:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images169png.png' alt='cie-ial-images169png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Four beams of the same length each have three forces acting on them.</p><p>Which beam has both zero resultant force and zero resultant torque acting?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q12.png' alt='cie-ial-physics-mcq-4-1-q12' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Torque is the moment of a force, it causes a turning effect</p></li><li><p>Consider option<strong> D</strong></p></li><li><p>Upward force = 42 + 70 = 112 N</p></li><li><p>Downward force = 112 N</p><ul><li><p>Resultant force = 112 – 112 = 0</p></li></ul></li><li><p>Clockwise moment = 42 × 50 = 2100 N cm</p></li><li><p>Anticlockwise moment = 70 × 30 = 2100 N cm</p><ul><li><p>Resultant moment = 2100 – 2100 = 0</p></li></ul></li><li><p>Both the resultant force and moments are zero, so <strong>D</strong> is correct</p></li></ul><table class='data-table'><tr><td><p><strong>A </strong>is incorrect because</p></td><td><p>Upward force = 30 + 50 = 80 N</p><p>Downward force = 90 N</p><ul><li><p>Resultant force = 90 – 80 = 10 N downward</p></li></ul><p>Clockwise moment = 30 × 50 = 1500 N cm</p><p>Anticlockwise moment = 50 × 30 = 1500 N cm</p><ul><li><p>Resultant moment = 1500 – 1500 = <strong>0 N cm</strong></p></li></ul></td></tr><tr><td><p><strong>B </strong>is incorrect because</p></td><td><p>Upward force = 36 + 70 = 106 N</p><p>Downward force = 106 N</p><ul><li><p>Resultant force = 106 – 106 = 0</p></li></ul><p>Clockwise moment = 36 × 50 = 1800 N cm</p><p>Anticlockwise moment = 70 × 30 = 2100 N cm</p><ul><li><p>Resultant moment = 2100 – 1800 = <strong>300 N cm</strong></p></li></ul></td></tr><tr><td><p><strong>C </strong>is incorrect because</p></td><td><p>Upward force = 28 + 35 = 63 N</p><p>Downward force = 63 N</p><ul><li><p>Resultant force = 63 – 63 = 0</p></li></ul><p>Clockwise moment = 28 × 50 = 1400 N cm</p><p>Anticlockwise moment = 35 × 30 = 1050 N cm</p><ul><li><p>Resultant moment = 1400 – 1050 = <strong>350 N cm</strong></p></li></ul></td></tr></table>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a child’s balancing game.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q13.png' alt='cie-ial-physics-mcq-4-1-q13' /></div><p>The wooden rod is uniform and all the rings are of equal mass. Two rings are hung on peg 14 and one on peg 2. The rod is pivoted at peg 9.</p><p>On which hook must a fourth ring be hung in order to balance the rod?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>2</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>3</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>5</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>6</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>The weight of one ring is equal to <em>mg</em></p></li><li><p>In order for the rod to be in equilibrium :</p></li><li><p>Clockwise moments = Anticlockwise moments</p><ul><li><p>Clockwise moment = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>×</mo><mfenced><mrow><mn>14</mn><mo>-</mo><mn>9</mn></mrow></mfenced><mi>m</mi><mi>g</mi><mo>=</mo><mn>10</mn><mo> </mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Let <em>x</em> be the position of the hook where the fourth ring will be hung</p><ul><li><p>Anticlockwise moment = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>9</mn><mo>-</mo><mn>2</mn></mrow></mfenced><mi>m</mi><mi>g</mi><mo>+</mo><mfenced><mrow><mn>9</mn><mo>-</mo><mi>x</mi></mrow></mfenced><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>For equilibrium:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo> </mo><mi>m</mi><mi>g</mi><mo>+</mo><mfenced><mrow><mn>9</mn><mo>-</mo><mi>x</mi></mrow></mfenced><mi>m</mi><mi>g</mi><mo>=</mo><mn>10</mn><mo> </mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>9</mn><mo>-</mo><mi>x</mi></mrow></mfenced><mi>m</mi><mi>g</mi><mo>=</mo><mn>3</mn><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>9</mn><mo>-</mo><mi>x</mi></mrow></mfenced><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>9</mn><mo>-</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An object, made from two equal masses joined by a light rod, falls with uniform speed through air. The rod remains horizontal.</p><p>Which statement about this system is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>it is not in equilibrium because it is falling steadily</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>it is not in equilibrium because it is in motion</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>it is not in equilibrium because there is a resultant torque</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>it is in equilibrium because there is no resultant force and no resultant torque</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>For an object to be in equilibrium, it must be experiencing no acceleration. This means that both the net force and the net torque on the object must be zero</p></li><li><p>Since the masses are both equal, their weight will be the same and pointing downwards, so the clockwise and anticlockwise moments will be the same, therefore their resultant torque must be zero</p></li><li><p>We are told the object moves with uniform speed, or terminal velocity, this means the air resistance on the object will be same as the weight and hence there is no acceleration or resultant force</p></li><li><p>Therefore, the object satisfies both conditions for equilibrium</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q14-answer.png' alt='cie-ial-physics-mcq-4-1-q14-answer' /></div><p><strong>A &amp; B </strong>are incorrect because both these statements argue that the object cannot be in equilibrium if the object is moving, however, this is not true, as long as an object is not accelerating then it can be in equilibrium</p><p><strong>C </strong>is incorrect because a resultant torque could only occur if the forces were unbalanced, however, the object moves with constant speed so the forces must all be balanced</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A man holds a 200 N load stationary in his hand. The combined weight of the forearm and hand is 25 N. The forearm is held horizontal, as shown</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q15.png' alt='cie-ial-physics-mcq-4-1-q15' /></div><p>What is the vertical force <em>F</em> needed in the biceps?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>1340 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>1400 N</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>1460 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1520 N</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>We are told the mass is stationary in this person’s hand, therefore, the system is in equilibrium</p></li><li><p>For a system in equilibrium :</p><ul><li><p>Sum of clockwise moments = Sum of anticlockwise moments</p></li></ul></li><li><p>Clockwise moments = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>25</mn><mo>×</mo><mn>12</mn></mrow></mfenced><mo>+</mo><mfenced><mrow><mn>200</mn><mo>×</mo><mn>35</mn></mrow></mfenced><mo>=</mo><mn>7300</mn><mo> </mo><mi mathvariant="normal">N</mi><mo> </mo><mi>cm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Anticlockwise moments = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>F</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>F</mi><mo>=</mo><mn>7300</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><mn>7300</mn><mn>5</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1460</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 12 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A spindle is attached at one end to the centre of a lever of length 1.60 m and at its other end to the centre of a disc of radius 0.25 m. A string is wrapped round the disc, passes over a pulley and is attached to an 800 N weight.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q17.png' alt='cie-ial-physics-mcq-4-1-q17' /></div><p>What is the minimum force <em>F</em>, applied to each end of the lever, that could lift the weight?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>62.5 N</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>125 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>250 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>750 N</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>Distance of force <em>F</em> from the centre of the spindle <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>60</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>80</mn><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Both forces produce clockwise moments about the spindle</p><ul><li><p>Clockwise moment <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfenced><mrow><mi>F</mi><mo>×</mo><mn>0</mn><mo>.</mo><mn>80</mn></mrow></mfenced><mo>+</mo><mfenced><mrow><mi>F</mi><mo>×</mo><mn>0</mn><mo>.</mo><mn>80</mn></mrow></mfenced><mo>=</mo><mn>1</mn><mo>.</mo><mn>60</mn><mo> </mo><mi>F</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The 800 N weight acts at a distance 0.25 m from the spindle which causes an anticlockwise moment</p><ul><li><p>Anticlockwise moment <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>800</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>25</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The minimum force that can be applied when the clockwise moments are equal to the anticlockwise moments</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mi>F</mi><mo>×</mo><mn>0</mn><mo>.</mo><mn>80</mn></mrow></mfenced><mo>+</mo><mfenced><mrow><mi>F</mi><mo>×</mo><mn>0</mn><mo>.</mo><mn>80</mn></mrow></mfenced><mo>=</mo><mn>800</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>25</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>60</mn><mo> </mo><mi>F</mi><mo>=</mo><mn>200</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><mn>200</mn><mrow><mn>1</mn><mo>.</mo><mn>6</mn></mrow></mfrac><mo>=</mo><mn>125</mn><mo> </mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 13 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform beam of length 1.10 m and mass 1.2 kg is pivoted at P as shown. The pivot P is 0.40 m from one end. Loads of masses 5.0 kg and 7.0 kg are suspended 0.65 m and 0.35 m from the pivot, respectively, as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q18.png' alt='cie-ial-physics-mcq-4-1-q18' /></div><p>What torque must be applied to the beam in order to maintain it in equilibrium?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.62 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0.98 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>6.1 N m</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>9.6 N m</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>To calculate moments, we will need to use</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>moment</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>force</mi><mo>&#215;</mo><mi>perpendicular</mi><mo>&#160;</mo><mi>distance</mi><mo>&#160;</mo><mi>from</mi><mo>&#160;</mo><mi>pivot</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Let the torque be equal to <em>T</em>, and assume it acts in a clockwise direction unless it is calculated to have a negative sign (which would tell us it acts in an anticlockwise direction)</p></li><li><p>Clockwise moments:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>0</mn><mo>.</mo><mn>35</mn><mo>×</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo>×</mo><mi>g</mi></mrow></mfenced><mo>+</mo><mi>T</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The beam is uniform, meaning its weight acts at the centre</p></li><li><p>The length of the beam is 1.10 m, so the centre mark is at 0.55 m, which is 0.15 m from the pivot</p></li><li><p>Anticlockwise moments:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>0</mn><mo>.</mo><mn>15</mn><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><mi>g</mi></mrow></mfenced><mo>+</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>65</mn><mo>&#215;</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><mi>g</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>For the system to be in equilibrium, clockwise moment = anticlockwise moment</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>0</mn><mo>.</mo><mn>15</mn><mo>×</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo>×</mo><mi>g</mi></mrow></mfenced><mo>+</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>65</mn><mo>×</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo>×</mo><mi>g</mi></mrow></mfenced><mo>=</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>35</mn><mo>×</mo><mn>7</mn><mo>.</mo><mn>0</mn><mo>×</mo><mi>g</mi></mrow></mfenced><mo>+</mo><mi>T</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>18</mn><mi>g</mi><mo>+</mo><mn>3</mn><mo>.</mo><mn>25</mn><mi>g</mi><mo>=</mo><mn>2</mn><mo>.</mo><mn>45</mn><mi>g</mi><mo>+</mo><mi>T</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>98</mn><mi>g</mi><mo>=</mo><mn>9</mn><mo>.</mo><mn>6</mn><mo> </mo><mi mathvariant="normal">N</mi><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the torque required to keep the beam in equilibrium is 9.6 N m clockwise</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 14 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A rigid L-shaped lever arm is pivoted at point P.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q19.png' alt='cie-ial-physics-mcq-4-1-q19' /></div><p>Three forces act on the lever arm, as shown in the diagram.</p><p>What is the magnitude of the resultant moment of these forces about point P?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>5 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>65 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>95 N m</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>155 N m</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The force which will cause the lever to rotate clockwise is the 20 N force</p></li><li><p>The forces which will cause the lever to rotate anticlockwise are the 10 N and 15 N forces</p></li><li><p>Perpendicular distance of 10 N force : (4 + 2) – 3 = 3 m</p></li><li><p>Perpendicular distance of 15 N force : 3 m</p></li><li><p>Perpendicular distance of 20 N force : 4 m</p></li><li><p>Magnitude of resultant moment = Clockwise moment – Anticlockwise moment</p></li><li><p>Magnitude of resultant moment <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfenced><mrow><mn>20</mn><mo>×</mo><mn>4</mn></mrow></mfenced><mo>-</mo><mfenced><mrow><mn>10</mn><mo>×</mo><mn>3</mn></mrow></mfenced><mo>-</mo><mfenced><mrow><mn>15</mn><mo>×</mo><mn>3</mn></mrow></mfenced><mo>=</mo><mn>5</mn><mo> </mo><mi mathvariant="normal">N</mi><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 15 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A ladder is positioned on icy ground and is leant against a rough wall. At the instant of release, it begins to slide.</p><p>Which diagram correctly shows the directions of the forces <em>P</em>, <em>W</em> and <em>R</em> acting on the ladder as it slides?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q20.png' alt='cie-ial-physics-mcq-4-1-q20' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>The weight <em>W</em> always acts downwards</p></li><li><p>The reaction force <em>R </em>acts in the opposite direction to the weight, upwards</p></li><li><p>The ground is said to be icy which means it is<strong> frictionless</strong>, so there are no additional forces acting or opposing the motion</p></li><li><p>Before the ladder begins to slide, there is a horizontal force <em>P</em> acting to the right where the ladder comes into contact with the rough wall because the ladder exerts a force to the left on the wall</p></li><li><p>As the ladder begins to slide, the point of contact of the ladder with the wall begins to move down the wall</p></li><li><p>We are told the wall is rough, meaning friction will oppose the motion of the ladder as it begins to move</p></li><li><p>So, at the point of contact, <em>P</em> is now acting to the right along with the upwards frictional force, which leads to a resultant force as shown in diagram B</p></li></ul><p><strong>A &amp; C </strong>are incorrect because these diagrams show the force <em>P</em> as horizontal on the ladder as before it begins to slide there is initially no friction force acting, however the question asks about the forces on the ladder <strong>as</strong> it begins to slide</p><p><strong>C &amp; D </strong>are incorrect because these diagrams show that there is a frictional force acting on the ground causing the resultant force of <em>R</em> to change direction, but this is incorrect since the ground is icy, meaning it is frictionless</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 16 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagrams show two ways of hanging the same picture.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q21-diagram-1.png' alt='cie-ial-physics-mcq-4-1-q21-diagram-1' /></div><p>In both cases, a string is attached to the same points on the picture and looped symmetrically over a nail in a wall. The forces shown are those that act on the nail.</p><p>In diagram 1, the string loop is shorter than in diagram 2.</p><p>Which information about the magnitude of the forces is correct?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'><em>R</em><sub><em>1</em></sub><em> = R</em><sub><em>2</em></sub></p></td><td><p style='text-align: center;'><em>T</em><sub><em>1</em></sub><em> &lt; T</em><sub><em>2</em></sub></p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'><em>R</em><sub><em>1</em></sub><em> = R</em><sub><em>2</em></sub></p></td><td><p style='text-align: center;'><em>T</em><sub><em>1</em></sub><em> &gt; T</em><sub><em>2</em></sub></p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'><em>R</em><sub><em>1</em></sub><em> &gt; R</em><sub><em>2</em></sub></p></td><td><p style='text-align: center;'><em>T</em><sub><em>1</em></sub><em> &lt; T</em><sub><em>2</em></sub></p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'><em>R</em><sub><em>1</em></sub><em> &lt; R</em><sub><em>2</em></sub></p></td><td><p style='text-align: center;'><em>T</em><sub><em>1</em></sub><em> = T</em><sub><em>2</em></sub></p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>In each case, the sum of the vertical components of the two tensions equals the same weight <em>W</em></p></li><li><p>So, the reaction at the nail has the same magnitude in both cases:</p><ul><li><p><em>R</em><sub><em>1</em></sub><em> = R</em><sub><em>2</em></sub></p></li></ul></li><li><p>To determine which is the larger of <em>T</em><sub><em>1</em></sub><em> </em>or <em>T</em><sub><em>2</em></sub>, we must consider the angles between the strings and the vertical, let’s call these <em>θ</em><sub><em>1</em></sub> and <em>θ</em><sub><em>2</em></sub></p></li><li><p>For each diagram, the sum of the vertical downward components of the tensions should be equal to the weight which is also equal to <em>R</em></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mn>2</mn><msub><mi>T</mi><mn>1</mn></msub><mi>cos</mi><mo> </mo><msub><mi>θ</mi><mn>1</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mn>2</mn><msub><mi>T</mi><mn>2</mn></msub><mo> </mo><mi>cos</mi><mo> </mo><msub><mi>θ</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><msub><mi>T</mi><mn>1</mn></msub><mi>cos</mi><mo> </mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><msub><mi>T</mi><mn>2</mn></msub><mi>cos</mi><mo> </mo><msub><mi>θ</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>It is clear from the diagrams that the angle <em>θ</em><sub><em>1</em></sub> is larger than <em>θ</em><sub><em>2</em></sub></p></li><li><p>From the graph of cosine, we know that as the angle <em>θ</em> increases, the value of cos <em>θ</em> decreases</p></li><li><p>Since <em>θ</em><sub><em>1</em></sub> &gt; <em>θ</em><sub><em>2</em></sub>, cos <em>θ</em><sub><em>1</em></sub> is smaller than cos <em>θ</em><sub><em>2</em></sub>, so for the statement to hold true, we can conclude:</p><ul><li><p><em>T</em><sub><em>1</em></sub><em> </em>&gt;<em> T</em><sub><em>2</em></sub></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q21-answer.png' alt='cie-ial-physics-mcq-4-1-q21-answer' /></div><p><strong>A</strong> is incorrect because this implies that <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>θ</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, which is incorrect</p><p><strong>C</strong> &amp; <strong>D</strong> are incorrect because R is equal to the weight of the picture so both of these are incorrect</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 17 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform ladder rests against a smooth vertical wall, as shown in the diagram. The bottom of the ladder rests on rough ground where friction is not negligible. The top of the ladder is a vertical height <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> up the wall, and the foot of the ladder is a horizontal distance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> from the wall.</p><p>The weight <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the ladder acts at its centre. At the foot of the ladder, the ground exerts a vertical reaction <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and a horizontal frictional force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q22.png' alt='cie-ial-physics-mcq-4-1-q22' /></div><p>Which equation represents the moments when the ladder is in equilibrium?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>F</mi><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>W</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>2</mn><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>F</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>The moment of a force is equal to</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>moment</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>force</mi><mo>&#215;</mo><mo>&#160;</mo><mi>perpendicular</mi><mo>&#160;</mo><mi>distance</mi><mo>&#160;</mo><mi>from</mi><mo>&#160;</mo><mi>pivot</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Taking moments about the top of the ladder</p></li><li><p><strong>Clockwise moments:</strong></p><ul><li><p>The horizontal frictional force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> acting at a perpendicular distance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> produces a clockwise moment = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#215;</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p>The weight <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the ladder acting at a perpendicular distance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> produces a clockwise moment = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#215;</mo><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p><strong>Anticlockwise moments:</strong></p><ul><li><p>The vertical reaction force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> acting at a perpendicular distance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> produces an anticlockwise moment = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#215;</mo><mn>2</mn><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>For equilibrium: Sum of clockwise moments = Sum of anticlockwise moments</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>F</mi><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>W</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 18 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>An archer draws his bowstring back to position X. The bowstring and arrow are shown. The tension <em>T</em> in the string is also shown. Then he draws the bowstring back further to position Y.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q23-diagram-1.png' alt='cie-ial-physics-mcq-4-1-q23-diagram-1' /></div><p>The archer finds the resultant force on the arrow is greater when the arrow is released from position Y.</p><p>What is the increase in force?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>51 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>55 N</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>102 N </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>110 N</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>Hopefully you will have quickly guessed that this problem will require trigonometry to solve</p></li><li><p>In both cases, the bowstring is in equilibrium, so we can work out the resultant force in each bow using:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>T</mi><mo> </mo><mi>cos</mi><mo> </mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo>+</mo><mi>T</mi><mo> </mo><mi>cos</mi><mo> </mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mi>T</mi><mo> </mo><mi>cos</mi><mo> </mo><mfrac><mi>θ</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Where <em>T</em> is the tension in the string and <em>θ</em> is the angle between the strings</p></li><li><p>The 2 <em>T</em> is because there is tension on both halves of the string and the ½ <em>θ</em> is because you resolve in line with the direction that the archer is pulling, which is half the angle between the halves of the bow</p><ul><li><p>Resultant force in X = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>T</mi><mo> </mo><mi>cos</mi><mo> </mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mo>×</mo><mn>110</mn><mo> </mo><mi>cos</mi><mo> </mo><mfrac><mn>120</mn><mn>2</mn></mfrac><mo>=</mo><mn>220</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>60</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Resultant force in Y = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>T</mi><mo> </mo><mi>cos</mi><mo> </mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mo>×</mo><mn>150</mn><mo> </mo><mi>cos</mi><mo> </mo><mfrac><mn>90</mn><mn>2</mn></mfrac><mo>=</mo><mn>300</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>45</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Increase in force = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>300</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>45</mn><mo>-</mo><mn>220</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>60</mn><mo>=</mo><mn>102</mn><mo> </mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-physics-mcq-4-1-q23-answer.png' alt='cie-ial-physics-mcq-4-1-q23-answer' /></div><p><strong>Exam Tip: </strong>if there is more than one force triangle in a question, always consider each one separately, many students consider the two strings as one and end up with the wrong answer, so be careful!</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 19 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows two fixed pins, Y and Z. A length of elastic is stretched between Y and Z and around pin X, which is attached to a trolley.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images194png.png' alt='cie-ial-images194png' /></div><p>X is at the centre of the elastic and the trolley is to be propelled in the direction P at right angles to YZ. The tension in the elastic is 4 N.</p><p>What is the force accelerating the trolley in the direction P when the trolley is released?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>2.4 N</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>3.2 N</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>4.8 N </p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>6.4 N</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>The component of the tension in each string along the direction XP is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>Where <em>T</em> is the tension in the string and <em>θ</em> is the angle between segment XY and axis XP</p></li></ul></li><li><p>The elastic string is in equilibrium, so we can work out the resultant force using:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>T</mi><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>The 2<em>T</em> arises because there is tension on both halves of the string</p></li><li><p>The quantity cos θ can be found using</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>adjacent</mi><mi>hypotenuse</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>30</mn><mn>50</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Since <em>T</em> = 4 N, the resultant force is equal to</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#215;</mo><mn>4</mn><mo>&#215;</mo><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images195png.png' alt='cie-ial-images195png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 20 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a rope bridge that a student makes on an adventure training course. The student has a weight <em>W</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images196png.png' alt='cie-ial-images196png' /></div><p>Which formula gives the tension <em>T</em> in the rope?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mn>2</mn><mo> </mo><mi>cos</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mn>2</mn><mo> </mo><mi>sin</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mi>cos</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mi>sin</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B</strong></em><em> because:</em></p><ul><li><p>There is a tension <em>T</em> in the rope on each side of the student</p></li><li><p>The sum of vertical components of tension should be equal to the weight <em>W</em></p></li><li><p>The vertical component of tension is equal to</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo> </mo><mi>sin</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The student is in equilibrium and the vertical forces are shown as in the diagram below, so:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo> </mo><mi>sin</mi><mo> </mo><mi mathvariant="normal">θ</mi><mo>+</mo><mi>T</mi><mo> </mo><mi>sin</mi><mo> </mo><mi mathvariant="normal">θ</mi><mo>=</mo><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>T</mi><mo> </mo><mi>sin</mi><mo> </mo><mi mathvariant="normal">θ</mi><mo>=</mo><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mn>2</mn><mo> </mo><mi>sin</mi><mo> </mo><mi mathvariant="normal">θ</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images197png.png' alt='cie-ial-images197png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 21 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform beam is pivoted at P as shown. Weights of <em>W</em> and 2 <em>W</em> are attached to its ends. The beam is marked at <em>x</em> intervals. The weight of the beam is 10 <em>W</em> </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images198png.png' alt='cie-ial-images198png' /></div><p>At which point should a 2 <em>W</em> weight be attached to achieve equilibrium?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D</strong></em><em> because:</em></p><ul><li><p>Since the beam is uniform, its weight acts at the centre which is a distance <em>x</em> to the left of the pivot</p></li><li><p>For equilibrium : Sum of clockwise moments = Sum of anticlockwise moments</p></li><li><p>Clockwise moments <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>2</mn><mi>W</mi><mo>×</mo><mn>4</mn><mi>x</mi><mo>=</mo><mn>8</mn><mi>W</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Anticlockwise moments <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfenced><mrow><mi>W</mi><mo>×</mo><mn>6</mn><mi>x</mi></mrow></mfenced><mo>+</mo><mfenced><mrow><mn>10</mn><mi>W</mi><mo>×</mo><mi>x</mi></mrow></mfenced><mo>=</mo><mn>6</mn><mi>W</mi><mi>x</mi><mo>+</mo><mn>10</mn><mi>W</mi><mi>x</mi><mo>=</mo><mn>16</mn><mi>W</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Since the anticlockwise moment is greater, the 2<em>W</em> weight should contribute to the sum of the clockwise moments, i.e. to the right of the pivot</p></li><li><p>The 2 <em>W</em> weight acts at a distance <em>d</em> from the pivot</p></li><li><p>Sum of clockwise moments = Sum of anticlockwise moments</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mi>W</mi><mi>x</mi><mo>+</mo><mn>2</mn><mi>W</mi><mi>d</mi><mo>=</mo><mn>16</mn><mi>W</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>W</mi><mi>d</mi><mo>=</mo><mn>8</mn><mi>W</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>4</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>A distance of 4<em>x</em> to the right corresponds to option D</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images199png.png' alt='cie-ial-images199png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 22 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A uniform metre rule of mass 100 g is supported by a pivot and a string as shown in the diagram. The beam is marked at intervals of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>. The string passes round a frictionless pulley and carries a mass of 20 g.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images200png.png' alt='cie-ial-images200png' /></div><p>At which mark on the rule must a 50 g mass be suspended so that the rule balances?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>4</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>.</mo><mn>6</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>.</mo><mn>4</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>.</mo><mn>4</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>Since the metre rule is uniform, its weight acts at its centre, which is 5<em>x</em></p></li><li><p>The weight of the ruler causes a clockwise moment at a distance 5<em>x</em> – 4<em>x</em> = <em>x</em> from the pivot</p><ul><li><p>Clockwise moment due to the weight of the ruler = 100 <em>gx</em></p></li></ul></li><li><p>Where <em>g</em> is the acceleration due to gravity</p></li><li><p>The weight of the 20 g mass causes an anticlockwise moment at a distance of 10<em>x</em> – 4<em>x</em> = 6<em>x</em> from the pivot</p><ul><li><p>Anticlockwise moment due to 20 g mass = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>g</mi><mo>&#215;</mo><mn>6</mn><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>120</mn><mi>g</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>For equilibrium, the clockwise moment should equal the anticlockwise moment</p></li><li><p>Since the anticlockwise moment is greater, the 50 g mass should contribute to the sum of the clockwise moments, i.e. to the right of the pivot</p></li><li><p>Let’s say the 50 g mass acts at a distance <em>d</em> from the pivot</p></li><li><p>Sum of clockwise moments = Sum of anticlockwise moments</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mi>g</mi><mi>x</mi><mo>+</mo><mn>50</mn><mi>g</mi><mi>d</mi><mo>=</mo><mn>120</mn><mi>g</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mi>g</mi><mi>d</mi><mo>=</mo><mn>20</mn><mi>g</mi><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mfrac><mrow><mn>20</mn><mi>x</mi></mrow><mn>50</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>4</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the 50g mass should be hung at</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>x</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>4</mn><mi>x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>4</mn><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 23 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A trailer of weight 30 kN is attached to a truck. The trailer is raised until it is held at 50˚ to the horizontal by a vertical force <em>F</em> as shown in the diagram.</p><p>The trailer is 2.7 m in length and the position of its centre of gravity G is a third of the length from the hinge at O.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images202png.png' alt='cie-ial-images202png' /></div><p>What is the vertical force <em>F </em>applied to the end of the trailer?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>10 kN</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>15 kN</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>30 kN</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>60 kN</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A</strong></em><em> because:</em></p><ul><li><p>So far, we have just looked at situations where the object is uniform so the centre of mass acts through the centre of the object</p></li><li><p>We are told the position of its centre of gravity G is a third of the length from the hinge at O so the weight acts at a distance of  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>7</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>9</mn><mo> </mo><mi mathvariant="normal">m</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> from O</p></li><li><p>For equilibrium, the clockwise moment should equal the anticlockwise moment</p></li><li><p>Let’s consider moments around the pivot O</p></li><li><p>The vertical force <em>F</em> acts at a perpendicular distance of 2.7 cos 50</p></li><li><p>The weight of the trailer acts at a perpendicular distance of 0.9 cos 50</p></li><li><p>The vertical force <em>F</em> provides a clockwise moment and the weight of the trailer provides an anticlockwise moment</p><ul><li><p>Clockwise moment due to force <em>F = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>F</mi><mo>×</mo><mn>2</mn><mo>.</mo><mn>7</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>50</mn></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Anticlockwise moment due to the weight = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mn>30000</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>9</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>50</mn></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Sum of clockwise moments = Sum of anticlockwise moments</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>F</mi><mo>×</mo><mn>2</mn><mo>.</mo><mn>7</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>50</mn><mo> </mo><mo>=</mo><mn>30000</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>9</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>50</mn></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>F</mi><mo>=</mo><mfrac><mrow><mn>30000</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>9</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>50</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>7</mn><mo> </mo><mi>cos</mi><mo> </mo><mn>50</mn></mrow></mfrac><mo>=</mo><mn>10000</mn><mo> </mo><mi mathvariant="normal">N</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The vertical force is therefore equal to 10 000 N or 10 kN</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images203png.png' alt='cie-ial-images203png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

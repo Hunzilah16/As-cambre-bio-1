@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>10.1 Practical Circuits - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">10.1 Practical Circuits</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 10. D.C. Circuits</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 5 Questions (60 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the electromotive force (e.m.f) of a cell with internal resistance may be more than the terminal potential difference (p.d.) of the cell.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The e.m.f of a cell with internal resistance may be more than the terminal p.d. of the cell because:</p><ul><li><p>There are lost volts within the cell <strong>OR</strong> energy used / spent on internal resistance; <em>[1 mark]</em></p></li><li><p>When the cell drives a current; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Compare the definitions of e. m .f and p. d.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Comparing the definitions of e.m.f and p.d.:</p><ul><li><p>E.m.f is the transfer of (chemical) energy from the cell to (electrical) energy in the circuit; <em>[1 mark]</em></p></li><li><p>Whilst p.d. is the transfer of (electrical) energy from the circuit to the surroundings via the components; <em>[1 mark]</em></p></li><li><p>Per unit charge; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>For a cell, explain the term <em>internal resistance</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Internal resistance is:</p><ul><li><p>The resistance <u>of a cell </u>causing loss of voltage / energy loss; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A battery of e.m.f 15.2 V and internal resistance <em>r</em> is connected to a resistor A, as shown in Fig 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2026/07/24346-10-1-2d-e-e-m-f-circuit.png' alt='Simple circuit diagram showing a 15.2 V cell with internal resistance r in series with an external resistor A connected in a single closed loop' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>The current in resistor A is 400 mA and the power dissipated by it is 6 W. </p><p>Calculate <em>r </em>of the battery.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To calculate <em>r</em> of the battery:</p><p>List the known quantities:</p><ul><li><p>Electromotive force, <em>E</em> = 15.2 V</p></li><li><p>Current through resistor <em>A, I</em> = 400 mA = 0.4 A</p></li><li><p>Power dissipated, <em>P</em> = 6 W </p></li></ul><p>Calculate the potential difference <em>V </em>through resistor A:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#8201;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mi>V</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>V</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>P</mi></mrow><mi>I</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>6</mn><mrow><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>15</mn><mo>&#160;</mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the internal resistance, <em>r</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>V</mi><mo>&#160;</mo><mo>+</mo><mo>&#8201;</mo><mi>I</mi><mi>r</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>r</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>E</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>V</mi></mrow><mi>I</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>15</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>15</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The electromotive force, <em>E  </em>is defined by the equation </p><p style='text-align: center;'><em>E </em>= <em>I </em>(<em>R</em> + <em>r</em>) </p><p>State the definition of the following variables and an appropriate unit for each. </p><p>(i) <em>I</em></p><p style='text-align: right;'>[1]</p><p>(ii) <em>R</em></p><p style='text-align: right;'>[1]</p><p>(iii) <em>r</em></p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Definitions and units for the variables:</p><p>(i) <em>I  </em>is:</p><ul><li><p>Current</p><p><strong>AND</strong></p><p>(Measured in) Amps / A; <em>[1 mark]</em> </p></li></ul><p>(ii) <em>R  </em>is:</p><ul><li><p><u>Load</u> resistance / resistance of load</p><p><strong>AND</strong></p><p>(Measured in) Ohms / Ω; <em>[1 mark]</em> </p></li></ul><p>(iii) <em>r </em> is:</p><ul><li><p><u>Internal</u> resistance</p><p><strong>AND</strong></p><p>(Measured in) Ohms / Ω; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A circuit connecting a cell with internal resistance to a resistor is shown in Fig. 1.1. <strong> </strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-4-s-q--q1b-easy-aqa-a-level-physics.png' alt='5-4-s-q--q1b-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Place in each of the grey boxes one of the following variables: </p><table class='data-table'><tr><td><p style='text-align: center;'><em><strong>V</strong></em></p></td><td><p style='text-align: center;'><em><strong>r</strong></em></p></td><td><p style='text-align: center;'><em><strong>E</strong></em></p></td><td><p style='text-align: center;'><em><strong>I</strong></em></p></td><td><p style='text-align: center;'><em><strong>R</strong></em></p></td></tr></table>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>A sketch that would score 5 marks should look like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/ms-ir.png' alt='ms-ir' /></div><ul><li><p><em>[1 mark] </em>for each variable in its correct box<em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A current of 0.6 mA flows through the circuit in Fig. 1.1 and the resistor has a resistance of 2.5 kΩ. </p><p>Calculate the terminal potential difference of the circuit.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Current, <em>I</em> = 0.6 mA</p></li><li><p>Resistance, <em>R</em> = 2.5 kΩ<strong> </strong></p></li></ul><p>Convert <em>I</em> into amps and <em>R</em> into ohms:</p><ul><li><p><em>I</em> = 0.6 mA = 0.6 × 10<sup>–3</sup> A</p><p><strong>AND</strong></p><p><em>R</em> = 2.5 kΩ = 2.5 × 10<sup>3</sup> Ω <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p>Calculate the terminal potential difference, <em>V</em> :</p><ul><li><p>Recall the equation for Ohm&#x27;s Law:<em> V</em> = <em>IR</em></p></li><li><p><em>V</em> = (0.6 × 10<sup>–3</sup>) × (2.5 × 10<sup>3</sup>) <em>[1 mark]</em></p></li><li><p><em>V </em>= 1.5 V <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The internal resistance of the cell is 1.3 kΩ. </p><p>Calculate the emf of the cell using the equation E.m.f. <em>E </em>= <em>I </em>(<em>R</em> + <em>r</em>).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Terminal potential difference <em>V</em> = 1.5 V (from part (c))</p></li><li><p>Internal resistance, <em>r</em> = 1.3 kΩ</p></li><li><p>Current, <em>I</em> = 0.6 mA = 0.6 × 10<sup>–3</sup> A </p></li></ul><p>Convert <em>r</em>  into ohms:</p><ul><li><p><em>r</em> = 1.3 kΩ = 1.3 × 10<sup>3</sup> Ω <em>[1 mark]</em> </p></li></ul><p>Calculate the emf, <em>E</em>:</p><ul><li><p><em>ε</em> = <em>IR</em> + <em>Ir</em> = <em>V</em> + <em>Ir</em></p></li><li><p><em>ε</em> = 1.5 + (0.6 × 10<sup>–3</sup>) × (1.3 × 10<sup>3</sup>) <em>[1 mark]</em></p></li><li><p><em>ε </em>= 2.28 = 2.3 V <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the terminal potential difference (p.d) of a cell with internal resistance may differ from the electromotive force (e.m.f) of the cell.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The terminal p.d of a cell may be different to the e.m.f of the cell because:</p><ul><li><p>The terminal p.d is <u>less</u> than the e.m.f (of the cell); <em>[1 mark]</em></p></li><li><p>(Because) there are lost volts <strong>OR</strong> energy is used / dissipated within the cell; <em>[1 mark]</em></p></li><li><p>Due to internal resistance (in the cell) when a current is supplied; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A battery of e.m.f 6.2 V and internal resistance 7.0 Ω is connected in series with a resistor of resistance 11 Ω as shown in Fig 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/10-1-2b-m-e-m-f-and-internal-resistance-circuit.png' alt='10-1-2b-m-e-m-f-and-internal-resistance-circuit' /></div><p>The current <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> flows through the circuit</p><p>Determine</p><p>(i) the current <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> in the circuit,</p><p style='text-align: right;'>[3]</p><p>(ii) the terminal p.d. of the battery.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Electromotive force (e.m.f), <em>E</em> = 6.2 V</p></li><li><p>Resistance of resistor, <em>R</em> = 11 Ω</p></li><li><p>Internal resistance, <em>r</em> = 7.0 Ω</p></li></ul><p>(i) Determine the internal resistance <em>r</em> of the battery</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mfenced><mrow><mi>R</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>r</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mfrac><mi>E</mi><mrow><mi>R</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>r</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>6</mn><mo>.</mo><mn>2</mn></mrow><mrow><mn>11</mn><mo>&#160;</mo><mo>+</mo><mo>&#8201;</mo><mn>7</mn><mo>.</mo><mn>0</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.34 A <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Determine the terminal p.d. of the battery</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><em>V</em> = 0.34 × 11 = 3.74 = 3.7 V <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>The e.m.f. equation is </em><em><strong>not</strong></em><em> given in your data and formulae sheet, so you must memorise this for your exam and be confident in rearranging it for any variable.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A second identical resistor is added in series with the resistor in Fig 1.1. </p><p>Quantitatively explain the change in the current in the circuit.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The <strong>resistance </strong>in the circuit:</p><ul><li><p>Increases from (7 + 11 =) 18 Ω to (7 + 11 + 11 =) 29 Ω; <em>[1 mark]</em></p></li></ul><p>The <strong>current </strong>in the circuit:</p><ul><li><p>Decreases from <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mfrac><mrow><mn>6</mn><mo>.</mo><mn>2</mn></mrow><mn>18</mn></mfrac><mo>&#160;</mo><mo>=</mo></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> 0.34 A to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mfrac><mrow><mn>6</mn><mo>.</mo><mn>2</mn></mrow><mn>29</mn></mfrac><mo>&#160;</mo><mo>=</mo></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> 0.21 A; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>&#x27;Quantitatively&#x27; means with regard to </em><em><strong>numbers</strong></em><em>. This implies you must do a calculation to support your answer. Therefore, only using the terms &#x27;increases&#x27; or &#x27;decreases&#x27; without any numerical justification will not be enough to get the mark here.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The second 11 Ω resistor is now connected in parallel to the initial 11 Ω resistor in Fig 1.1. </p><p>Qualitatively explain the effect this has on the battery. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>When the 11 Ω resistor is added in parallel to the initial 11 Ω resistor:</p><ul><li><p>The battery heats up / there is a heating effect / gets hotter; <em>[1 mark]</em></p></li><li><p>Because the (circuit) resistance decreases; <em>[1 mark]</em></p></li><li><p>So the current / <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> increases; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The current increase affects all components of the circuit, including the battery. Heating effects are always related to the </em><em><strong>current</strong></em><em> (which links to the power dissipated).</em></p><p><em>&#x27;Qualitatively&#x27; means no calculations are required in this question, however, it may help you to use numerical relationships to help you form your answer. Remember that when resistors are connected in </em><em><strong>parallel</strong></em><em>, their overall resistance is </em><em><strong>less</strong></em><em> than the resistance of each resistor. You can calculate the total resistance for these two resistors connected in parallel to prove this - you should get a value of 5.5 Ω.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two circuits X and Y shown in Fig 1.1 were used by a student to test a battery of four identical cells. In circuit X the battery is connected to a voltmeter registering 12 V and there was no load resistor. In circuit Y a load resistor of 5.2 Ω is connected in parallel with an ammeter registering 0.41 A and a voltmeter registering 4.9 V. Assume that the meters in the circuits are ideal.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/10-1-m-q2a-sq-cie-ial-physics.png' alt='10-1-m-q2a-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Explain why there is a difference in voltages recorded in the two circuits.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Internal resistance:</p><ul><li><p>The battery has <u>internal resistance;</u> <em>[1 mark]</em> </p></li></ul><p>Lost volts:</p><p>Any <strong>one</strong> from:</p><ul><li><p>Some p.d. is used (or lost) to pass current (or charge) through the internal resistance; <em>[1 mark]</em></p></li><li><p>The internal resistance results in / leads to lost volts; <em>[1 mark]</em></p></li><li><p>Terminal p.d. <em>V</em> = e.m.f. – lost volts (= e.m.f. ­– (current × internal resistance)); <em>[1 mark]</em></p></li></ul><p>Difference in lost volts between circuits X and Y:</p><ul><li><p>In X, there is no current / it is an open circuit (therefore) no p.d. is lost; <em>[1 mark]</em></p><p><strong>OR</strong></p></li><li><p>In<strong> </strong>Y, there is a current (therefore) p.d. is lost; <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>In circuit X, there is no closed loop, so no current flows. This is known as an open circuit, and the voltmeter reads the full e.m.f. since no voltage is lost across the internal resistance.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the internal resistance of a single cell from Fig. 1.1.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Terminal p.d., <em>V</em> = 4.9 V</p></li><li><p>E.m.f., <em>ε</em> = 12 V</p></li><li><p>Current, <em>I </em>= 0.41 A</p></li></ul><p>Rearrange e.m.f. equation for internal resistance <em>r</em>:</p><ul><li><p> <em>ε</em> <em>= V + Ir  </em>therefore, <em>r = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mi>ε</mi><mo> </mo><mo>-</mo><mi>V</mi></mrow><mi>I</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em><em> </em></p></li></ul><p>Determine the internal resistance <em>r</em>:</p><ul><li><p><em>r </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>12</mn><mo>-</mo><mn>4</mn><mo>.</mo><mn>9</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>41</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 17.32<em>  </em><em>[1 mark]</em> </p></li></ul><p>Internal resistance <em>r</em> of a single cell:</p><ul><li><p>There are 4 cells</p></li><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>r</mi><mn>4</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> =<em> </em>17.32<em> × </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 4.329 = 4.3 Ω (2 s.f.) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>One of the cells in the battery is reversed.     </p><p>Determine the new reading on the ammeter in circuit<strong> </strong>Y.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Total internal resistance, <em>r</em> = 17.32 Ω (from part (b))</p></li><li><p>p.d. across each cell, p.d. = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>12</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 3.0 V</p></li><li><p>Resistance of load resistor, <em>R</em> = 5.2 Ω</p></li></ul><p>Determine the new e.m.f., <em>ε</em>:</p><ul><li><p>Voltmeter reading in circuit<strong> </strong>X = 3.0 + 3.0 + 3.0 – 3.0 = 6.0 V = new e.m.f. in Y <em>[1 mark]</em> </p></li></ul><p>Rearrange e.m.f. equation for current <em>I</em>:</p><ul><li><p> <em>ε</em> =<em> V </em>+<em> Ir </em>=<em> IR </em>+<em> Ir</em></p></li><li><p><em>I </em>=<em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>ε</mi><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em></p></li></ul><p>Calculate current <em>I </em>in circuit Y:</p><ul><li><p><em>I </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>6</mn><mo>.</mo><mn>0</mn></mrow><mrow><mn>5</mn><mo>.</mo><mn>2</mn><mo>+</mo><mn>17</mn><mo>.</mo><mn>32</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><em> </em><em>[1 mark]</em></p></li><li><p><em>I</em> = 0.27 A <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em><strong> </strong></em></p><p><em>The sum of the p.d. in a closed loop must equal the sum of the e.m.f. (Kirchhoff’s second law). The e.m.f. of each cell can be treated like a vector and the vector sum gives the total e.m.f. of the four connected cells. Despite one of the cells in the battery reversing, the internal resistances are still added up in series. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In circuit Y, the resistance of the load resistor <em>R</em>  is altered so that a series of values on the voltmeter and the corresponding values of the current on the ammeter are obtained. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-4-s-q--q1d-medium-easy-aqa-a-level-physics.png' alt='5-4-s-q--q1d-medium-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Using the axes in Fig.1.2, sketch the graph you would expect to obtain as <em>R </em> is changed. State how the values of <em>ε  </em>and <em>r</em>  can be obtained from the graph.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Graph:</p><ul><li><p>Straight line graph; <em>[1 mark]</em></p></li><li><p>With a negative gradient; <em>[1 mark] </em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-4-s-q--q1d-ma-medium-easy-aqa-a-level-physics.png' alt='5-4-s-q--q1d-ma-medium-easy-aqa-a-level-physics' /></div><p>Values of <em>ε</em> and <em>r</em>:</p><ul><li><p>E.m.f. <em>ε</em> is the intercept on the voltage /  y-axis; <em>[1 mark]</em></p></li><li><p>Internal resistance <em>r</em> is the gradient; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A battery of e.m.f. 60.0 V and internal resistance, <em>r</em>, is connected in a circuit as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/10-1-m-q3a-sq-cie-ial-physics.png' alt='10-1-m-q3a-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>The current in the battery is 2.3 A. </p><p>Calculate the internal resistance <em>r</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Current, <em>I</em> = 2.3 A</p></li><li><p>E.m.f., <em>ε</em> = 60.0 V </p></li></ul><p>Calculate total resistance <em>R</em> of the circuit:</p><ul><li><p>Resistance of parallel combination: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><msub><mi>R</mi><mi>T</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>5</mn><mo>.</mo><mn>0</mn></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>.</mo><mn>0</mn></mrow></mfrac><mo>=</mo><mfrac><mn>8</mn><mn>15</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>R</em><sub><em>T</em></sub><em> </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>15</mn><mn>8</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 1.875 Ω</p></li><li><p>Total resistance <em>R </em> of circuit = 1.875 + 2.0 + 7.0 = 10.875 Ω <em>[1 mark]</em> </p></li></ul><p>Calculate terminal pd <em>V</em>:</p><ul><li><p><em>V = I ×</em> <em>R</em> = 2.3 × 10.875 = 25.0125 V <em>[1 mark]</em> </p></li></ul><p>Calculate the internal resistance <em>r</em>:</p><ul><li><p> <em>ε</em> <em>= V + Ir</em>, therefore <em>r =   </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>&#949;</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>V</mi></mrow><mi>I</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>r</em>  = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>60</mn><mo>.</mo><mn>0</mn><mo>-</mo><mn>25</mn><mo>.</mo><mn>0125</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>3</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><em>r</em> = 15.2 Ω = 15 Ω (2 s.f.) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the energy dissipated in the battery in 4.0 minutes.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Time, <em>t</em> = 4.0 minutes = 4 × 60 = 240 s</p></li><li><p>Current, <em>I</em> = 2.3 A (from part (a)) </p></li><li><p>Internal resistance, <em>r</em> = 15.2 Ω (from part (a)) </p></li></ul><p>Energy dissipation calculation:</p><ul><li><p>Energy dissipated in the battery = energy dissipated by internal resistance</p></li><li><p><em>P</em> = <em>I</em><sup><em>2</em></sup><em>R</em></p></li><li><p>Energy = power × time = (<em>I</em><sup><em>2</em></sup><em> × </em> <em>r) ×</em> <em>t</em> <em>[1 mark]</em></p></li><li><p>Energy = (2.3)<sup>2</sup> × 15.2 × 240 = 19297.92 J = 19 000 J (2 s.f.) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the percentage of the total energy transformed by the battery that is dissipated in the battery in 4.0 minutes.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Time, <em>t</em> = 4.0 minutes = 4 × 60 = 240 s</p></li><li><p>Current, <em>I</em> = 2.3 A  (from part (a)) </p></li><li><p>E.m.f.,  ε = 60.0 V (from part (a)) </p></li><li><p>Energy dissipated by battery = 19297.92 J (from part (b)) </p></li></ul><p>Calculate total energy transformed by battery:</p><ul><li><p><em>P </em>= <em>IV </em>so here <em>P </em>= <em>Iε</em></p></li><li><p>Energy = power × time = <em>I  × ε</em>  ×<em> t</em></p></li><li><p><em>W</em> = 2.3 × 60.0 × 240 = 33 120 J <em>[1 mark]</em> </p></li></ul><p>Calculate the percentage that is dissipated:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi><mo>&#160;</mo><mi>d</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>p</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>d</mi><mo>&#160;</mo><mi>i</mi><mi>n</mi><mo>&#160;</mo><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo>&#160;</mo><mi>r</mi><mi>e</mi><mi>s</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi><mo>&#160;</mo><mi>t</mi><mi>r</mi><mi>a</mi><mi>n</mi><mi>s</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>e</mi><mi>d</mi><mo>&#160;</mo><mi>b</mi><mi>y</mi><mo>&#160;</mo><mi>b</mi><mi>a</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>y</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>× 100 = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>19</mn><mo>&#160;</mo><mn>297</mn><mo>.</mo><mn>92</mn></mrow><mrow><mn>33</mn><mo>&#160;</mo><mn>120</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 100 = 58.3 % (58 %) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The internal resistance of the battery affects the efficiency of the transfer of energy from the battery to the circuit. </p><p>Explain what causes internal resistance and why this affects the efficiency.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Cause of internal resistance:</p><ul><li><p>Internal resistance is due to chemicals / components inside the battery; <em>[1 mark]</em></p></li><li><p>The charge carriers collide (with ions) inside the battery as the current passes through causing internal resistance; <em>[1 mark]</em><strong> </strong></p></li></ul><p>How efficiency is affected:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>The internal resistance of the battery dissipates energy (which is wasted); <em>[1 mark]</em></p></li><li><p>The voltage across the circuit is reduced; <em>[1 mark]</em></p></li><li><p>The terminal p.d. is reduced; <em>[1 mark]</em></p></li><li><p>This results in lost volts; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>5.1 Energy Conservation - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">5.1 Energy Conservation</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 5. Work, Energy & Power</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 11 Questions (123 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A small child does work on a large suitcase by pushing it along a smooth floor, as shown in Fig. 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-1-1a-e-work-done-child-suitcase.png' alt='5-1-1a-e-work-done-child-suitcase' /></div><p style='text-align: center;'><strong>Fig. 1.1. </strong></p><p>State the definition of work done and write the equation.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The suitcase is moved back to its original position by an adult who pulls it at an angle of 70° to the floor, as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-1-1b-e-work-done-adult-suitcase.png' alt='5-1-1b-e-work-done-adult-suitcase' /></div><p style='text-align: center;'><strong>Fig. 1.2.</strong></p><p>Write an expression for the work done on the suitcase by the adult in terms of force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, distance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and the angle 70°.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In moving the suitcase the child and adult both exerted equal forces of 20 N. They each move the suitcase a distance of 2.5 m.</p><p>Calculate the work done by</p><p>(i) the child</p><p style='text-align: right;'>[2]</p><p>(ii) the adult.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State whether the child or the adult are more efficient at moving the suitcase, explaining your reasoning.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A block of weight 4.25 N is placed on a frictionless slope inclined at 30° to the horizontal as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-1-2a-e-vector-block-on-a-slope.png' alt='5-1-2a-e-vector-block-on-a-slope' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>The block is moved up the slope at constant speed by applying a force parallel to the slope.</p><p>Calculate the component of the weight of the block which acts parallel to the slope.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the work done in moving the block a distance of 6.0 m up the slope.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The block in part (a) is pushed 6.0 m up the slope in 18 s.</p><p>Calculate the power needed to move the block in this amount of time.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[5 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A beaker is filled with ice and then an electric heater placed into it, as shown in Fig. 1.1. The heater is turned on and heats up until it glows red.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-1-3a-e-melting-ice.png' alt='5-1-3a-e-melting-ice' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>A student states that when the ice is being heated up the total amount of energy in the ice remains the same.</p><p>State the principle of conservation of energy.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain whether the student is correct, giving your reason.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define work done by a force.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A heavy bag is pulled across a rough surface at a constant speed. </p><p>Describe and explain how work is done in this situation.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A crane is used to lift the bag from the ground onto the loading area of a truck.</p><p>Fig. 1.1 shows the crane moving the bag from the ground to the truck.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-1c-m-5-1-work-bag-crane-lift-cie-ial-sq.png' alt='5-1-1c-m-5-1-work-bag-crane-lift-cie-ial-sq' /></div><p>The mass of the bag is 64 kg. The crane takes 0.1 minutes to lift the bag from the ground to the loading area of the truck.</p><p>Calculate the rate of work done by the crane when moving the bag.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The crane is powered using an electric motor. The efficiency of the crane is 74 %.</p><p>The crane is used to load approximately 400 bags with an average mass of 60 kg each day.</p><p>(i) Calculate the power used by the crane&#x27;s motor to lift the bag in part (c).</p><p style='text-align: right;'>[1]</p><p>(ii) The typical working efficiency of a crane is 80%.     </p><p>Explain how the difference in efficiency may affect the number of bags the crane can lift in a day.</p><p style='text-align: right;'>[3]</p><p>(iii) Suggest <strong>one</strong> change which could increase the efficiency of the motor and explain how it would achieve this.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Engineers around the world are working on ways to provide enough energy to sustain human activity.</p><p>Off-shore wind farms use the kinetic energy of strong offshore winds to generate electricity.</p><p>Fig. 1.1 shows an offshore wind power installation.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-2b-m-offshore-wind-farm-cie-ial-sq.png' alt='5-1-2b-m-offshore-wind-farm-cie-ial-sq' /></div><p>State the definition of power and give the units used to measure power output.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The UK is a world leader in the installation of offshore wind power.</p><p>Located in the North Sea off the east coast of England, the Hornsea Phase 2 (Hornsea Two) offshore wind farm was the largest wind farm in the world when it opened in 2022.</p><p>It uses 165 turbines rated at 8 MW each, to generate 1.4 GW of energy, enough to supply more than 1.3 million homes. Each turbine has blades of length 81 m.</p><p>The power output of a single turbine can be calculated using</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo> </mo><mi>ρ</mi><mi>A</mi><msup><mi>v</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>               </p><p>where <em>ρ</em> is the density of the air, <em>A</em> is the area swept out by the blades and <em>v</em> is the wind speed.</p><p>Calculate the average wind speed at Hornsea Two.</p><p>The density of air is 1.225 kg m<sup>−3</sup>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The Hornsea wind turbines are found to have an efficiency of 40%.   </p><p>(i) Calculate the energy required from the wind every second to achieve the desired power output.</p><p style='text-align: right;'>[2]</p><p>(ii) Explain why it is impossible to transfer all the energy available from the wind.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[17 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A hybrid electric bike is fitted with both pedals and a battery. The cyclist can use pedals only, pedals and battery, or battery only as they ride. Fig 1.1 shows a cyclist riding a hybrid electric bike up an inclined road.</p><p>At one hill the cyclist switches to battery only. A road sign at the base of the hill states that it has an incline of 5%, meaning that for every 100 m travelled horizontally, the height increases by 5 m.</p><p>The bike travels at a steady speed of 6.0 m s<sup>−1</sup>. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-3a-m-bike-incline-cie-ial-sq.png' alt='5-1-3a-m-bike-incline-cie-ial-sq' /></div><p>The mass of the rider and bike combined is 72.8 kg. The distance from the base to the top of the hill is 35 m.</p><p>Calculate the minimum power required from the battery. Assume that there is no energy loss due to friction.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Near the top of the hill, the cyclist stops pedalling and the bicycle freewheels for 1.6 s until coming to a stop.</p><p>The frictional forces which slow down the motion are constant.  </p><p>(i) Show that the bicycle travels about 5 m before coming to a stop.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the magnitude of the frictional force which slows the bicycle down.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Once the cyclist reaches the top, they turn off the motor and head back down to the bottom. At the bottom of the hill, they reach a velocity of 8.8 m s<sup>−1</sup>.   </p><p>(i) Calculate the energy the cyclist has at the top of the hill.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the energy the cyclist has at the bottom of the hill.</p><p style='text-align: right;'>[2]</p><p>(iii) Compare the two values you have calculated and suggest a reason for the difference.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a ride at a water park. Customers are seated in a circular glider which is subject to an accelerating force at point <strong>A</strong>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-4a-m-rollercoaster-gpe-ke-cie-ial-sq.png' alt='5-1-4a-m-rollercoaster-gpe-ke-cie-ial-sq' /></div><p>The first part of the ride is horizontal. In this section, the glider is accelerated from rest at point <strong>A</strong> to 30 m s<sup>−1</sup> at point <strong>B</strong>.</p><p>At point <strong>B</strong>, the track is angled at 30° to the horizontal for 2.5 m.</p><p>The total mass of the glider and passengers is 350 kg.</p><p>Calculate the work done by the glider against gravity when it travels through point <strong>B</strong>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Calculate the maximum height above <strong>A</strong> that the passengers and glider could reach.</p><p style='text-align: right;'>[3]</p><p>(ii) Point <strong>C</strong> is 28 m above <strong>A</strong>. </p><p>Suggest why the ride is built to this height instead of the maximum height calculated in <strong>(i)</strong>.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>At point <strong>C</strong>, the glider stops momentarily before sliding down the incline until it lands in the water pool at point <strong>D</strong> with a speed of 22 m s<sup>−1</sup>.</p><p>Determine the efficiency of the energy transfer between points <strong>C</strong> and <strong>D</strong>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Once the glider reaches point <strong>D</strong>, the water applies a decelerating force until it comes to a stop after 8.5 m.</p><p>Calculate the decelerating force exerted on the glider by the water.   </p><p>State any assumptions you made in your calculation.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a simple arrangement which can be used to investigate how the kinetic energy of a trolley varies with its distance from the top of the ramp.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-2-1a-m-trolley-on-ramp.png' alt='5-2-1a-m-trolley-on-ramp' /></div><p>In order to plan an investigation to determine the kinetic energy of the car at a particular point on the ramp:           </p><p>(i) Describe briefly any additional equipment and the method to be used.</p><p style='text-align: right;'>[3]</p><p>(ii) State the measurements to be taken and the measuring tool in each case.</p><p style='text-align: right;'>[2]</p><p>(iii) Explain how the data will be analysed.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The graph in Fig 1.2 shows the variation of the gravitational potential energy and kinetic energy of the trolley with distance <em>d</em> from the top of the ramp.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-2-1b-m-ke-gpe-graph.png' alt='5-2-1b-m-ke-gpe-graph' /></div><p>(i) On Fig. 1.2, identify the line representing gravitational potential energy with <strong>GPE</strong> and the line representing kinetic energy with <strong>KE</strong>.</p><p style='text-align: right;'>[2]</p><p>(ii) Line <strong>A</strong> is linear and line <strong>B </strong>is not linear. Use your answer to part <strong>(i)</strong> to explain why.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the graph in Fig. 1.2. to estimate the energy transferred to thermal energy.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the average resistive force acting on the toy car.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cyclist of mass 80 kg riding a bicycle of mass 12 kg freewheels from rest 650 m down a hill.</p><p>The foot of the hill is 20 m lower than the cyclist&#x27;s starting point and the cyclist reaches a top speed of 12 m s<sup>−1</sup> before they start to brake at the foot of the hill.</p><p>For this situation, calculate      </p><p>(i) the change in gravitational potential energy</p><p style='text-align: right;'>[2]</p><p>(ii) the kinetic energy gained by the cyclist.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For the cyclist and bicycle    </p><p>(i) State the main resistive forces to the motion.</p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the work done against these forces during the descent.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the average resistive force acting on the cyclist during the descent.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cyclist buys a set of tyres which claim to &#x27;increase efficiency by 30% compared to your old tyres&#x27;.</p><p>The cyclist tests out the new tyres by riding down the same hill. With the new tyres, the cyclist achieves a top speed of 14 m s<sup>−1</sup> at the bottom of the hill.</p><p>Deduce whether the claim is correct or incorrect.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>It has been predicted that in the future, large offshore wind turbines may have a power output ten times that of the largest ones currently in use. These turbines could have a blade length of 50 m or more. A turbine such as this is shown in Fig. 1.1 below. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q1a-hard-aqa-a-level-physics.png' alt='4-6-s-q--q1a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the power this turbine can produce, at a wind speed of 15 m s<sup>–1</sup> assuming that it is 100% efficient.</p><p>Give your answer in MW.</p><p>The density of air is 1.2 kg m<sup>–3</sup>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A factory uses 14 100 kWh of electricity per year. </p><p>Determine the number of factories that the wind turbine from part (a) can power for 1 year. </p><p>Assume that the wind is blowing onto the wind turbine at 15 m s<sup>−1</sup> on average, for 24 hours every day, 365 days a year.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A German physicist Albert Betz concluded in 1919 that no wind turbine can convert more than 59.3 % of the kinetic energy of the wind into mechanical energy turning the rotor, which then becomes electrical energy. This is known as the Betz limit. </p><p>The coefficient of power, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>C</mi><mi>p</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> of a wind turbine is a measure of how efficiently the wind turbine converts the energy in the wind into electricity. A good wind turbine has a <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>p</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> that reaches 70 % of the Betz limit. </p><p>Assuming the wind turbine in part (a) is considered a good turbine, calculate its revised power output.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cyclist rides along a road up an incline at a steady speed of 5.0 m s<sup>–1</sup>. The mass of the rider and bicycle is 70 kg and the bicycle travels 27 m along the road for every 2.0 m gained in height. Neglect energy loss due to frictional forces.</p><p>Calculate the power developed by the cyclist in riding up the slope.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cyclist now travels along a steeper incline at an angle of 6.5º to the horizontal. </p><p>Calculate the power output required from the cyclist on this new plane and discuss</p><p>how this value differs from that in part (a).</p><p>Assume the cyclist maintains the same speed along the road.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cyclist stops pedalling and the bicycle freewheels up the incline for a short time. </p><p>Considering the energy transfers, calculate the distance travelled along the slope from when the cyclist stops pedalling to where the bicycle comes to rest.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

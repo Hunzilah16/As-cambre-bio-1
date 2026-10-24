@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>5.2 Gravitational Potential Energy & Kinetic Energy - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">5.2 Gravitational Potential Energy & Kinetic Energy</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 5. Work, Energy & Power</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 8 Questions (84 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When an object is lifted, energy is transferred to it.</p><p>State the reason for this energy transfer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>State the reason that work is done by lifting objects:</p><ul><li><p><u>Force</u> is used to move the object (against the downward force of gravity); <em>[1 mark]</em></p></li><li><p>The object is displaced; <em>[1 mark]</em></p></li><li><p>Therefore work is done on the object <strong>OR </strong><em>W</em> = <em>F</em> × <em>s; </em><em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the equation for gravitational potential energy, defining all the units mentioned.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>State the equation for gravitational potential energy, defining all the units mentioned:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>P</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi><mo> </mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Where Δ<em>E</em><sub>p</sub>  = change in gravitational potential energy, <em>m</em> = mass, <em>g</em> = gravity / gravitational field strength, Δ<em>h</em> = change in height; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Referring to your answer to part (a), derive the expression for gravitational potential energy stated in part (b).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Referring to your answer to part (a), derive the expression for gravitational potential energy stated in part (b):</p><ul><li><p>Energy transferred = work done, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>d</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>F</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <em>[1 mark]</em></p></li><li><p>When lifting an object, the force is weight, therefore <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo> </mo><mo>=</mo><mo> </mo><mi>W</mi><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Combining these equations shows that <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>d</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>The displacement <em>s</em> is the height, Δ<em>h</em>, hence <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ball of mass 1.2 kg is released from the top of a slope and allowed to roll to the bottom, where it stops. The initial and final positions of the ball are shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-2-1d-e-gpe-ramp.png' alt='5-2-1d-e-gpe-ramp' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Calculate the change in gravitational potential energy of the ball.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the change in gravitational potential energy of the ball:</p><p>List the known quantities:</p><ul><li><p>Mass of the ball, <em>m</em> = 1.2 kg</p></li><li><p>Acceleration due to gravity, <em>g</em> = 9.81 m s<sup>−2</sup></p></li><li><p>Change in height, Δ<em>h</em> = 2.0 m</p></li></ul><p>Use the equation and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>E</mi><mi>p</mi></msub><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#8710;</mo><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark] </em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>E</mi><mi>p</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>24</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ball of mass 4.2 kg is placed on a post at a height of 2.1 m as shown in Fig. 1.1.</p><p>The ball is pushed horizontally so that it falls down, reaching a velocity <em>v</em> just before hitting the ground.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-2-2a-e-gpe-to-ke.png' alt='5-2-2a-e-gpe-to-ke' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Calculate the gravitational potential energy stored by the ball before it is pushed.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the gravitational potential energy stored by the ball before it is pushed Use the equation and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi><mo> </mo><mo>=</mo><mo> </mo><mn>4</mn><mo>.</mo><mn>2</mn><mo> </mo><mo>×</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>×</mo><mn>2</mn><mo>.</mo><mn>1</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo>=</mo><mn>87</mn><mo> </mo><mi mathvariant="normal">J</mi><mo> </mo><mfenced><mrow><mn>2</mn><mo> </mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hence state the total kinetic energy of the ball just before it hits the floor. Assume that air resistance is negligible.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Hence the total kinetic energy of the ball just before it hits the floor is:</p><ul><li><p>From the principle of conservation of energy:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>E</mi><mi>k</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Kinetic energy = 87 J<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the velocity of the ball just before it hits the ground.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the velocity of the ball just before it hits the ground:</p><p>Rearrange the equation for kinetic energy to make velocity the subject:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mn>2</mn><mo>&#215;</mo><msub><mi>E</mi><mi>k</mi></msub></mrow><mi>m</mi></mfrac></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mn>2</mn><mo>&#215;</mo><mn>87</mn></mrow><mrow><mn>4</mn><mo>.</mo><mn>2</mn></mrow></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><msup><mi>ms</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The final speed of the ball in part (a) depends on the height it falls from, but not the mass, as long as air resistance is ignored.</p><p>Using the equations for initial gravitational potential energy and final kinetic energy, show that the mass of the ball does not affect the final speed of the ball.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Show that the mass of the ball does not affect the speed it reaches before hitting the ground;</p><p>Apply conservation of energy to the equations:</p><ul><li><p>Initial gravitational potential energy = final kinetic energy</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>&#8710;</mo><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Cancel out mass and draw a conclusion:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="updiagonalstrike"><mi>m</mi></menclose><mi>g</mi><mo>&#8710;</mo><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><menclose notation="updiagonalstrike"><mi>m</mi></menclose><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Therefore <em>v</em><sup>2</sup> (is proportional to <em>g</em> and <em>h</em>, but) is <u>not proportional to mass</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When an object is accelerated from rest, energy is stored.</p><p>Name the energy store and state the reason for it.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>State the reason for the energy stored in moving objects:</p><ul><li><p><u>Kinetic energy</u> is stored when; <em>[1 mark]</em></p></li><li><p>A <u>force</u> is applied (and makes an object accelerate); <em>[1 mark]</em></p></li><li><p>Work is done by the force (and energy is transferred to the object); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the equation for kinetic energy, defining all the units mentioned.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>State the equation for kinetic energy, defining all the units mentioned:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Where <em>E</em><sub>k</sub> = kinetic energy, <em>m</em> = mass, <em>v</em> = velocity; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Referring to your answer to part (a), derive the expression for kinetic energy stated in part (b).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>Referring to your answer to part (a), derive the expression for kinetic energy stated in part (b):</p><ul><li><p>Energy transferred = work done <strong>OR</strong> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>d</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (by definition) <em>[1 mark]</em></p></li><li><p>Newton&#x27;s Second Law:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Using the SUVAT equation:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, if <em>u</em> = 0 then <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p>Substitute into <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mo>&#215;</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>s</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>s</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p>Substitute into <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>d</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>s</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><msub><mi>W</mi><mi>d</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>s</mi></mfrac><mo>&#215;</mo><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>This derivation is longer than the one for gravitational potential energy and must be learned more carefully. Since these are the Easy questions we have been quite generous with our marks. In the exam this would be worth two or three marks.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cylinder of mass 2.8 kg is released from rest so that it rolls down a ramp, accelerating to a velocity of 3.5 ms<sup>−1</sup>. The arrangement is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-2-3c-e-ke-ramp.png' alt='5-2-3c-e-ke-ramp' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Calculate the change in kinetic energy between the two positions shown.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the change in kinetic energy between the two positions shown:</p><p>Use the equation and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><msup><mn>5</mn><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark] </em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>=</mo><mn>17</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Pumped hydroelectric systems store large bodies of water behind a dam. When electricity is needed in the grid, the dam is lifted, allowing water to flow from the upper reservoir.</p><p>One such power station, known as the Cruachan power station, is shown in Fig. 1.1. This facility has been producing hydroelectric power since 1965.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-5a-m-5-1-energy-sources-power-station-cie-ial-sq.png' alt='5-1-5a-m-5-1-energy-sources-power-station-cie-ial-sq' /></div><p>The vertical distance between the base of the upper reservoir and the turbine is 396 m. This arrangement allows Cruachan power station to produce a power output of 0.62 GW with an efficiency of 76%.</p><p>Determine the energy transferred by the water each second in order to achieve this power output.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Determine the energy transferred by the water falling through the turbines:</p><p>List the known quantities:</p><ul><li><p>Useful output power = 0.62 GW</p></li><li><p>Efficiency = 76% = 0.76</p></li></ul><p>Determine the power input, or energy transferred every second:</p><ul><li><p>Efficiency = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>f</mi><mi>u</mi><mi>l</mi><mo>&#160;</mo><mi>p</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi><mo>&#160;</mo><mi>o</mi><mi>u</mi><mi>t</mi><mi>p</mi><mi>u</mi><mi>t</mi><mo>&#160;</mo></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo>&#160;</mo><mi>p</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi><mo>&#160;</mo><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Total power input = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>62</mn><mo>&#160;</mo></mrow><mrow><mn>0</mn><mo>.</mo><mn>76</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>82</mn><mo>&#160;</mo><mi>GW</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Energy transferred each second = 0.82 GJ or 8.2 × 10<sup>8</sup> J <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Water is made to flow out of the upper reservoir through connecting pipes at a rate of 200 m<sup>3</sup> per second. The density of water is 1.0 × 10<sup>3</sup> kg m<sup>−3</sup>. </p><p>(i) Use this flow rate to determine the energy transferred by the water each second.</p><p style='text-align: right;'>[4]</p><p>(ii) Explain why this value is <strong>not </strong>consistent with the energy transfer rate calculated in <strong>(a)</strong>. </p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Volume of water flowing per second, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∆</mo><mi>V</mi></mrow><mrow><mo>∆</mo><mi>t</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 200 m<sup>3</sup> s<sup>−1</sup></p></li><li><p>Density of water, <em>ρ</em> = 1.0 × 10<sup>3</sup> kg m<sup>−3</sup></p></li><li><p>Vertical height fallen, Δ<em>h</em> = 396 m</p></li><li><p>Power input = 0.82 GW</p></li></ul><p>(i) Calculate the energy transferred by the mass flow rate of water:</p><ul><li><p>Density:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mi>m</mi><mi>V</mi></mfrac><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo>⇒</mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mi>m</mi><mo> </mo><mo>=</mo><mo> </mo><mi>ρ</mi><mo>×</mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Mass flow rate:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo> </mo><mo>=</mo><mo> </mo><mi>ρ</mi><mo>×</mo><mi>V</mi><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo>⇒</mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mfrac><mrow><mo>∆</mo><mi>m</mi></mrow><mrow><mo>∆</mo><mi>t</mi></mrow></mfrac><mo> </mo><mo>=</mo><mo> </mo><mi>ρ</mi><mo>×</mo><mfrac><mrow><mo>∆</mo><mi>V</mi></mrow><mrow><mo>∆</mo><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∆</mo><mi>m</mi></mrow><mrow><mo>∆</mo><mi>t</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = (1.0 × 10<sup>3</sup>) × 200 <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∆</mo><mi>m</mi></mrow><mrow><mo>∆</mo><mi>t</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2.0 × 10<sup>5 </sup>kg s<sup>−1</sup> <em>[1 mark]</em></p></li></ul><p>Calculate the rate of transfer of gravitational potential energy:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo>⇒</mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mfrac><mi>E</mi><mi>t</mi></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mo>∆</mo><mi>m</mi></mrow><mrow><mo>∆</mo><mi>t</mi></mrow></mfrac><mo>×</mo><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>E</mi><mi>t</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = (2.0 × 10<sup>5</sup>) × 9.81 × 396 = 7.8 × 10<sup>8</sup> J s<sup>−1</sup> <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) This is not consistent with the power input of 0.82 GW because:</p><ul><li><p>The depth of the water in the dam is not included in the height; <em>[1 mark]</em></p></li></ul><p><em><strong> </strong></em><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Estimate the depth of the water held in the upper reservoir. State any assumptions made.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Estimate the depth of the water held in the upper reservoir:</p><p>List the known quantities:</p><ul><li><p>Total rate of energy transfer = 8.2 × 10<sup>8</sup> J s<sup>−1</sup></p></li><li><p>Vertical height fallen from base of the reservoir = 396 m</p></li><li><p>Mass flow rate, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∆</mo><mi>m</mi></mrow><mrow><mo>∆</mo><mi>t</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2.0 × 10<sup>5</sup> kg s<sup>−1</sup></p></li></ul><p>Use the GPE equation to find the total vertical height fallen:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo>⇒</mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo>∆</mo><mi>h</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub></mrow><mrow><mi>m</mi><mi>g</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>h</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mn>8</mn><mo>.</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mfenced><mrow><mn>2</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mn>5</mn></msup></mrow></mfenced><mo>×</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac><mo> </mo><mo>=</mo><mo> </mo><mn>418</mn><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em> </p></li><li><p>Therefore the water falls from (418 − 396) = 22 m above the base of the reservoir</p></li></ul><p>Make an assumption to determine the depth:</p><ul><li><p>The height identified is the centre of mass / average depth; <em>[1 mark]</em> </p></li><li><p>Therefore, the depth of the upper reservoir = (22 × 2) = 44 m <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em><strong> </strong></em></p><p><em>To complete this calculation you have to be able to make the assumption that you have found the centre of mass, or average depth, rather than the actual depth. </em></p><p><em>One part of the answer then leads to the next one:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/screenshot-2023-02-27-at-11-24-26.png' alt='screenshot-2023-02-27-at-11-24-26' /></div><p><em>As the water drains out of the upper reservoir through the turbine its depth is constantly changing. This means that the power generated must change too. The power information given is therefore the best estimate, or average, of the changing value.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A BASE jumper of mass 70 kg jumps from the top of a bridge and reaches a speed of 45 m s<sup>−1</sup> after falling a distance of 150 m.</p><p>Calculate the change in the jumper&#x27;s gravitational potential energy.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the jumper&#x27;s change in gravitational potential energy:</p><p>List the known quantities:</p><ul><li><p>Mass, <em>m</em> = 70 kg</p></li><li><p>Height, <em>h</em> = 150 m</p></li><li><p>Gravitational field strength, <em>g</em> = 9.81 ms<sup>−2</sup></p></li></ul><p>Use the equation for gravitational potential energy:</p><ul><li><p>Gravitational potential energy:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 70 × 9.81 × 150 <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 103 005 = 103 kJ (3 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the kinetic energy gained by the jumper.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the jumper&#x27;s gain in kinetic energy:</p><p>List the known quantities:</p><ul><li><p>Mass, <em>m</em> = 70 kg</p></li><li><p>Initial velocity, <em>u</em> = 0 m s<sup>−1</sup></p></li><li><p>Final velocity, <em>v</em> = 45 m s<sup>−1</sup></p></li></ul><p>Use the equation for kinetic energy:</p><ul><li><p>Kinetic energy:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mn>70</mn><mo>×</mo><msup><mn>45</mn><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 70 875 = 70.9 kJ (3 s.f) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the values in <strong>(a)</strong> and<strong> (b)</strong> are not equal.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Explain why the values in part (a) and part (b) are not equal:</p><ul><li><p>More gravitational potential energy is lost than kinetic energy gained;<em> [1 mark]</em></p></li><li><p>(This is because) work is done against air resistance;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the average resistive force acting on the BASE jumper as they fall.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Calculate the average resistive force:</p><p>List the known quantities:</p><ul><li><p>GPE lost = 103 kJ</p></li><li><p>KE gained = 70.9 kJ</p></li><li><p>Distance fallen, <em>s</em> = 150 m</p></li></ul><p>Determine the work done against air resistance:</p><ul><li><p>Work done = total GPE lost − max KE gained</p></li><li><p>Work done = 103 kJ − 70.9 kJ = 32.1 kJ <em>[1 mark]</em></p></li></ul><p>Use the equation relating work done, force and speed:</p><ul><li><p>Work done:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#215;</mo><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>s</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>32</mn><mo>&#160;</mo><mn>100</mn></mrow><mn>150</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 214 = 210 N (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A car on a roller coaster has a mass of 4200 kg and is designed to carry up to 10 passengers each with an average mass of 65 kg.</p><p>The car is moving at a speed of 2.0 m s<sup>−1</sup> when it starts to descend through a drop of 50 m. It reaches a top speed of 24 m s<sup>−1</sup> after travelling 75 m along the track.</p><p>For the car with its maximum capacity of passengers, calculate      </p><p>(i) the loss of potential energy</p><p style='text-align: right;'>[2]</p><p>(ii) the initial kinetic energy.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of the car = 4200 kg</p></li><li><p>Mass of a passenger = 65 kg</p></li><li><p>Change in height, Δ<em>h</em> = 50 m</p></li><li><p>Velocity, <em>v</em> = 2.0 m s<sup>−1</sup> </p></li><li><p>Gravitational field strength, <em>g</em> = 9.81 m s<sup>−2</sup> </p></li></ul><p>(i) Calculate the loss of potential energy:</p><ul><li><p>Total mass of the car and passengers = 4200 + (10 × 65) = 4850 kg</p></li></ul><p>Determine the change in GPE:</p><ul><li><p>Gravitational potential energy:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 4850 × 9.81 × 50 <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2.379 × 10<sup>6</sup> J = 2.4 MJ (2 s.f.)<em> [1 mark]</em></p></li></ul><p>(ii) Calculate the initial kinetic energy:</p><ul><li><p>Kinetic energy:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mn>4850</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 9700 J (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the kinetic energy of the car and passengers after the descent.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the kinetic energy after the descent:</p><p>List the known quantities:</p><ul><li><p>Total mass of the car and passengers, <em>m</em> = 4850 kg</p></li><li><p>Final velocity, <em>v</em> = 24.0 m s<sup>−1</sup> </p></li></ul><p>Use the equation for kinetic energy and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mn>4850</mn><mo>×</mo><msup><mn>24</mn><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.397 × 10<sup>6</sup> J = 1.4 MJ (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For the roller coaster car and passengers  </p><p>(i) State the main resistive forces to the motion.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the work done against these forces during the descent.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>(i) State the main resistive forces to the motion:</p><p><em>Any </em><em><strong>two </strong></em><em>from:</em></p><ul><li><p>Air resistance; <em>[1 mark]</em><strong> </strong></p></li><li><p>Friction in the <u>moving parts</u> (or examples of moving parts, e.g. axles and wheels) of the car;<em> [1 mark]</em></p></li><li><p>Friction between the <u>car / wheels </u>and the <u>rollercoaster / track</u>; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Calculate the work done against these forces during the descent:</p><p>List the known quantities:</p><ul><li><p>Change in GPE = 2.4 MJ</p></li><li><p>Initial KE = 9700 J</p></li><li><p>Final KE = 1.4 MJ</p></li></ul><p>Determine the total initial energy and subtract the total final energy:</p><ul><li><p>Work done = change in GPE − change in KE <em>[1 mark]</em></p></li><li><p>Work done = (2.4 × 10<sup>6</sup>) − (1.4 × 10<sup>6</sup> − 9700) <em>[1 mark]</em> </p></li><li><p>Work done = 1 009 700 J = 1.0 MJ (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the average resistive force that acts on the car during the descent.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the average resistive force during the descent:</p><p>List the known quantities:</p><ul><li><p>Work done, <em>W</em> = 1.0 MJ = 1.0 × 10<sup>6</sup> J (from <strong>(c)</strong>)</p></li><li><p>Distance travelled, <em>s</em> = 75 m</p></li></ul><p>Use the equation relating work done to force and displacement:</p><ul><li><p>Average resistive force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo> </mo><mo>=</mo><mo> </mo><mi>F</mi><mo> </mo><mo>×</mo><mo> </mo><mi>s</mi><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo>⇒</mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mi>F</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mi>W</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup></mrow><mn>75</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 13 333 N = 13 kN (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Recurring numbers learned in maths often fascinate students, who carry their use over into physics solutions. </em></p><p><em>Remember that physics depends on experiments, which means measurement.</em></p><p><em>You couldn&#x27;t measure a piece of string to be </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mo>.</mo><mover><mn>3</mn><mo>˙</mo></mover><mo> </mo><mi>cm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> long, or weigh </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mo>.</mo><mover><mn>3</mn><mo>˙</mo></mover><mo> </mo><mi mathvariant="normal">g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> of a substance. For this reason, you can&#x27;t use recurring numbers in your answer so you must always round up.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Anaisha launches a pebble vertically upwards using a sling shot. The speed of the pebble as it leaves the sling shot is 28 m s<sup>−1</sup>.</p><p>Calculate the height that the pebble gains.</p><p>Assume that air resistance is negligible. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To calculate the height that the pebble reaches:</p><p>List the known quantities:</p><ul><li><p>Initial speed, <em>v</em><sub><em>i</em></sub> = 28 m s<sup>−1</sup> </p></li><li><p>Gravitational field strength, <em>g</em> = 9.81 N kg<sup>−1</sup> </p></li></ul><p>Combine the equations for kinetic energy and gravitational potential energy:</p><ul><li><p>Recall the equations</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>E</mi><mi>p</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#8710;</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The energy in the system is conserved, therefore:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>E</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>f</mi></mrow></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>E</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>f</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><msub><mi>v</mi><mi>i</mi></msub><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><msub><mi>h</mi><mi>i</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><msub><mi>v</mi><mi>f</mi></msub><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><msub><mi>h</mi><mi>f</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul></li></ul><ul><li><p>Define initial height of pebble, <em>h</em><sub><em>i</em></sub> = 0 and final velocity of pebble, <em>v</em><sub><em>f</em></sub> = 0 at the top of its trajectory</p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><msub><mi>v</mi><mi>i</mi></msub><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><msub><mi>h</mi><mi>f</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  and mass cancels out leaving <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><msub><mi>v</mi><mi>i</mi></msub><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>g</mi><msub><mi>h</mi><mi>f</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Hence, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><msub><mi>v</mi><mi>i</mi></msub><mn>2</mn></msup><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Substitute the known values to calculate the final height:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><msup><mn>28</mn><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>40</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>An approach equating loss of energy from the kinetic store with gain in energy in the gravitational potential store produces the exact same result as the method above. It is just a rearrangement of the second line of maths.</em></p><p><em>We can define the initial height of the pebble as 0 m, as we only care about the </em><em><strong>change</strong></em><em> in height. Realising that a projectile has a vertical speed of zero (at the turning point) is crucial for questions like this.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>The mass of the pebble is 300 g. Complete the energy bar chart shown in Fig. 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/5-2-q1b-h-sq-cie-ial-physics.png' alt='5-2-q1b-h-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>To complete the energy bar chart:</p><p>List the known quantities:</p><ul><li><p>Mass, <em>m</em> = 300 g = 0.30 kg</p></li><li><p>Initial speed, <em>v</em><sub><em>i</em></sub> = 28 m s<sup>−1</sup> </p></li><li><p>Final height, <em>h</em><sub><em>f</em></sub> = 40 m (from part (a))</p></li><li><p>Gravitational field strength, <em>g</em> = 9.81 N kg<sup>−1</sup> </p></li></ul><p>Calculate the total energy in the system:</p><p><strong>EITHER</strong></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>30</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>28</mn><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>118</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p><strong>OR</strong></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>E</mi><mi>p</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#8710;</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>E</mi><mi>p</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>30</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>40</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>118</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Plot the values on the graph:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/02/energy-bar-chart-ma.png' alt='energy-bar-chart-ma' /></div><ul><li><p>As the pebble leaves the sling shot:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>118</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <strong>AND</strong>  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul></li></ul><p><strong>AND</strong></p><ul><li><p>As the pebble reaches its maximum height:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <strong>AND</strong>  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>118</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Anaisha notices a small basket hanging by a string from a tree. The basket has a mass of 280 g and the length of the string is 85 cm. Anaisha uses her slingshot to fire the pebble horizontally, which lands in the basket. The basket then swings out to an angle of 45°.</p><p>Calculate the speed of the pebble as she fired it.</p><p>Assume that air resistance is negligible and that there is no breeze.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>To calculate the speed of the pebble:</p><p>List the known quantities:</p><ul><li><p>Mass of basket, <em>m</em><sub>b</sub> = 280 g = 0.28 kg</p></li><li><p>Mass of pebble, <em>m</em><sub>p</sub> = 300 g = 0.30 kg</p></li><li><p>Length of string, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 85 cm = 0.85 m</p></li><li><p>Angle of swing, <em>θ</em> =  45°</p></li></ul><p>Determine an expression for the initial velocity of the pebble:</p><ul><li><p>The collision is inelastic, therefore momentum is conserved</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>b</mi><mi>e</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>e</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>p</mi><mrow><mi>a</mi><mi>f</mi><mi>t</mi><mi>e</mi><mi>r</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>p</mi></msub><msub><mi>v</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>b</mi></msub><msub><mi>v</mi><mrow><mi>b</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>p</mi></msub><msub><mi>v</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>f</mi></mrow></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>b</mi></msub><msub><mi>v</mi><mrow><mi>b</mi><mo>&#160;</mo><mi>f</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Since there is no breeze we can assume that the initial velocity of the basket is zero</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>p</mi></msub><msub><mi>v</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>p</mi></msub><msub><mi>v</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>f</mi></mrow></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>b</mi></msub><msub><mi>v</mi><mrow><mi>b</mi><mo>&#160;</mo><mi>f</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Rearranging for the initial velocity of the pebble</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>v</mi><mrow><mi>b</mi><mo>+</mo><mi>p</mi></mrow></msub><mo>&#160;</mo><mfenced><mfrac><mrow><msub><mi>m</mi><mi>b</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>p</mi></msub></mrow><msub><mi>m</mi><mi>p</mi></msub></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mrow><mi>b</mi><mo>+</mo><mi>p</mi></mrow></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the velocity of the pebble in the basket as it begins to swing</p></li></ul></li></ul><p>Determine <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mrow><mi>b</mi><mo>+</mo><mi>p</mi></mrow></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, labelled as <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mrow><mi>b</mi><mo>+</mo><mi>p</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> below, from an analysis starting when the pebble enters the basket:</p><ul><li><p>During the swing, the energy of the pebble-basket system is constant</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>E</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>f</mi></mrow></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>E</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>f</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mfenced><mrow><msub><mi>m</mi><mi>p</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>b</mi></msub></mrow></mfenced><msup><msub><mi>v</mi><mrow><mi>b</mi><mo>+</mo><mi>p</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>m</mi><mi>p</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>b</mi></msub></mrow></mfenced><mi>g</mi><msub><mi>h</mi><mi>i</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfenced><mrow><msub><mi>m</mi><mi>p</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>b</mi></msub></mrow></mfenced><msup><msub><mi>v</mi><mrow><mi>b</mi><mo>+</mo><mi>p</mi><mo>&#160;</mo><mi>f</mi></mrow></msub><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>m</mi><mi>p</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>b</mi></msub></mrow></mfenced><mi>g</mi><msub><mi>h</mi><mi>f</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Rearrange,  rewriting <em>h</em><sub><em>f</em></sub><em> </em> − <em>h</em><sub><em>i</em></sub>  as Δ<em>h</em>  and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mrow><mi>b</mi><mo>+</mo><mi>p</mi><mo>&#160;</mo><mi>f</mi></mrow></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is zero at the top of the swing</p></li><li><p>Hence, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mfenced><mrow><msub><mi>m</mi><mi>p</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>b</mi></msub></mrow></mfenced><msup><msub><mi>v</mi><mrow><mi>p</mi><mo>+</mo><mi>b</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>m</mi><mi>p</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>b</mi></msub></mrow></mfenced><mi>g</mi><mo>&#8710;</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The total masses cancel out </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><msub><mi>v</mi><mrow><mi>p</mi><mo>+</mo><mi>b</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mn>2</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>g</mi><mi mathvariant="normal">&#916;</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>p</mi><mo>+</mo><mi>b</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mn>2</mn><mi>g</mi><mi mathvariant="normal">&#916;</mi><mi>h</mi></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li><li><p>The height of the swing is</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#916;</mi><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>l</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>l</mi><mi>cos</mi><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>l</mi><mfenced><mrow><mn>1</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>cos</mi><mi>&#952;</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#916;</mi><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>85</mn><mfenced><mrow><mn>1</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>cos</mi><mfenced><mn>45</mn></mfenced></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>249</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>p</mi><mo>+</mo><mi>b</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>249</mn></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>21</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the initial speed of the pebble:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>p</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>v</mi><mrow><mi>b</mi><mo>+</mo><mi>p</mi><mo>&#160;</mo><mi>i</mi></mrow></msub><mo>&#160;</mo><mfenced><mfrac><mrow><msub><mi>m</mi><mi>b</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>p</mi></msub></mrow><msub><mi>m</mi><mi>p</mi></msub></mfrac></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>21</mn><mfenced><mfrac><mrow><mn>0</mn><mo>.</mo><mn>28</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>30</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>30</mn></mrow></mfrac></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>3</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>This is complex multi-step problem that takes some thinking about. It can be helpful to sketch out a diagram so that you can see visually what is going on in the scenario, and which variables you can infer from the situation. This will help you to navigate your way to the answer.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/02/pebble-basket-ma.png' alt='pebble-basket-ma' /></div><p><em>To calculate the answer is it crucial to recognise that we can set the gravitational potential energy to zero when the basket is hanging vertically so that the change in height is equal to the height of the swing.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows an object at rest at the top of a straight slope which makes a fixed angle with the horizontal at a distance <em>h</em> above the ground. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q4a-hard-aqa-a-level-physics.png' alt='4-6-s-q--q4a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The object is released and slides down the slope from <strong>A</strong> to <strong>B</strong> with negligible friction.</p><p>Assume that the potential energy is zero at <strong>B</strong>. </p><p>Sketch a graph showing: </p><ul><li><p>The variation of potential energy along the slope. Label this <strong>P</strong>.</p></li><li><p>The variation of kinetic energy of the object along the slope. Label this <strong>K</strong>.</p></li><li><p>The variation of kinetic energy along the slope when there is a constant frictional force between the object and the surface. Label this <strong>F</strong>. </p></li></ul><p>Explain the important features of the graphs you have drawn.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>A graph that would score 3 marks should look like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q4a-ma-hard-aqa-a-level-physics.png' alt='4-6-s-q--q4a-ma-hard-aqa-a-level-physics' /></div><ul><li><p>Graph P drawn from top of energy axis to point B; <em>[1 mark]</em></p></li><li><p>Graph K drawn from 0 to point B and same height as P and above F; <em>[1 mark]</em></p></li><li><p>Graph F draw from 0 to point below K; <em>[1 mark]</em> </p></li></ul><p>Explanation of the important features:</p><ul><li><p>P + K = constant; <em>[1 mark]</em></p></li><li><p>The loss in gravitational potential energy = gain in kinetic energy <u>for P and K</u></p><p><strong>OR</strong></p><p>potential energy at A = kinetic energy at Q for <u>P and K</u>;<em> [1 mark]</em></p></li><li><p>F is <u>below</u> K because friction causes energy to be transferred from the system (as heat); <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em><em><strong> </strong></em></p><p><em>Don’t be put off by the number of marks for this question! There are multiple parts to it, so make sure to check whether you have gained all the marks accordingly before moving on. </em></p><p><em>Since there are 3 graphs to draw, this would be 3 marks. Therefore, your explanation should be another 3 marks worth, explaining as much as you can about the important features of each graph to complete the full 6 marks.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a theme park ride, a cage containing passengers falls freely a distance of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>m from <strong>A</strong> to <strong>B</strong> and travels in a circular arc of radius 25 m from <strong>B</strong> to <strong>C</strong>. </p><p>Brakes are applied at <strong>C</strong> after which the cage with its passengers travels 70 m along an upward sloping ramp and comes to rest at <strong>D</strong>. The track, together with relevant distances, is shown in Fig. 1.2. <strong>CD</strong> makes an angle of <em>θ </em>with the horizontal. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q4b-hard-aqa-a-level-physics.png' alt='4-6-s-q--q4b-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>alt: For a passenger of mass 70 kg, the force keeping them in circular motion at <strong>C</strong> is 5.4 kN. </p><p>The force required for circular motion on a passenger of mass 70 kg at <strong>C</strong> is 5.4 kN. </p><p>Calculate height <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>. </p><p>Assume that friction is negligible between <strong>A</strong> and <strong>C</strong>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To calculate height <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>. </p><p>List the known quantities:</p><ul><li><p>Mass of passenger, <em>m</em> = 70 kg</p></li><li><p>Height dropped by passenger = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Radius of circular motion, <em>r</em> = 25 m</p></li><li><p>Force required for circular motion, <em>F</em> = 5.4 kN = 5.4 × 10<sup>3</sup> N </p></li></ul><p>Calculate the velocity at <strong>C</strong>, <em>v</em>:</p><ul><li><p>Recall the equation for centripetal force, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>F</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>v</em> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msqrt><mfrac><mrow><mi>F</mi><mi>r</mi></mrow><mi>m</mi></mfrac></msqrt></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>v</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msqrt><mfrac><mrow><mfenced><mrow><mn>5</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mo>&#215;</mo><mn>25</mn></mrow><mn>70</mn></mfrac></msqrt></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 43.92 m s<sup>–1 </sup><em>[1 mark]</em></p></li></ul><p>Consider energy changes between point <strong>A</strong> and <strong>C</strong>:</p><ul><li><p>The gravitational potential energy at <strong>A</strong> is converted to kinetic energy at point <strong>C</strong></p><ul><li><p>Vertical distance from <strong>A </strong>to <strong>C </strong>is <em>h</em></p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>mv</em><sup><em>2</em></sup> = <em>mgh </em><em>[1 mark]</em></p></li></ul><p>Rearrange for <em>h</em> and substitute in values:</p><ul><li><p>Mass cancels out, leaving <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p>Rearranging for h gives <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>x</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>25</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  therefore  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>25</mn><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><msup><mi>v</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>– 25</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><msup><mfenced><mrow><mn>43</mn><mo>.</mo><mn>92</mn></mrow></mfenced><mn>2</mn></msup><mrow><mn>2</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>– 25 = 73 m <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em><strong> </strong></em></p><p><em> </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The total mass of the cage and passengers is 720 kg. The average resistive force exerted by the brakes between <strong>C</strong> and <strong>D</strong> is 4.8 kN.</p><p>By considering energy changes, calculate the value of <em>θ</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>To calculate the value of <em>θ:</em></p><p>List the known quantities:</p><ul><li><p>Mass of cage and passengers, <em>m</em> = 720 kg</p></li><li><p>Resistive force by brakes, <em>F</em> = 4.8 kN = 4.8 × 10<sup>3</sup> N</p></li><li><p>Horizontal distance between <strong>C</strong> and <strong>D</strong>, <em>s</em> = 70 m</p></li><li><p>Height from <strong>A</strong> to <strong>C </strong>= <em>h</em></p></li><li><p>Height from <strong>A</strong> to <strong>B</strong>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 73 m (from part b) </p></li></ul><p>Calculate height <em>h</em>:</p><ul><li><p><em>h</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> + 25 = 73 + 25 = 98 m </p></li></ul><p>Consider energy changes between <strong>A</strong> and <strong>D</strong>:</p><ul><li><p>Gravitational potential energy lost from <strong>A</strong> to <strong>C</strong> = Work done against resistive force from <strong>C</strong> to <strong>D</strong> + gravitational potential energy gained from <strong>C</strong> to <strong>D</strong></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>&#8710;</mo><msub><mi>E</mi><mrow><mi>p</mi><mfenced><mrow><mi>A</mi><mo>&#160;</mo><mi>t</mi><mi>o</mi><mo>&#160;</mo><mi>C</mi></mrow></mfenced></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <em>Fs</em> + <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>&#8710;</mo><msub><mi>E</mi><mrow><mi>p</mi><mfenced><mrow><mi>C</mi><mo>&#160;</mo><mi>t</mi><mi>o</mi><mo>&#160;</mo><mi>D</mi></mrow></mfenced></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em> </p></li></ul><p>Rearrange equation for sin <em>θ</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathsize="16px">&#8710;</mo><msub><mi mathsize="16px">E</mi><mrow><mi mathsize="16px">p</mi><mstyle mathsize="16px"><mo stretchy="true">(</mo><mi>C</mi><mo>&#160;</mo><mi>t</mi><mi>o</mi><mo>&#160;</mo><mi>D</mi><mo stretchy="true">)</mo></mstyle></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathsize="16px">&#8710;</mo><msub><mi mathsize="16px">E</mi><mrow><mi mathsize="16px">p</mi><mstyle mathsize="16px"><mo stretchy="true">(</mo><mi>A</mi><mo>&#160;</mo><mi>t</mi><mi>o</mi><mo>&#160;</mo><mi>C</mi><mo stretchy="true">)</mo></mstyle></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>– <em>Fs</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathsize="16px">&#8710;</mo><msub><mi mathsize="16px">E</mi><mrow><mi mathsize="16px">p</mi><mstyle mathsize="16px"><mo stretchy="true">(</mo><mi>C</mi><mo>&#160;</mo><mi>t</mi><mi>o</mi><mo>&#160;</mo><mi>D</mi><mo stretchy="true">)</mo></mstyle></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>= mgs</em> sin<em>θ</em></p></li><li><p><em>mgs</em> sin<em>θ </em>= <em>mgh</em> – <em>Fs</em></p></li><li><p>sin<em>θ = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>m</mi><mi>g</mi><mi>h</mi><mo>-</mo><mi>F</mi><mi>s</mi></mrow><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em> </p></li></ul><p>Substitute in values and calculate <em>θ:</em></p><ul><li><p><em>θ </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mrow><mfenced><mrow><mn>720</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>98</mn></mrow></mfenced><mo>-</mo><mfenced><mrow><mn>4</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mo>&#215;</mo><mn>70</mn></mrow><mrow><mn>720</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>70</mn></mrow></mfrac></mfenced></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em></p></li><li><p><em>θ </em>= 46º <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em><em><strong> </strong></em></p><p><em>This question can be done by substituting values and calculating </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>E</mi><mrow><mi>p</mi><mfenced><mrow><mi>A</mi><mo>&#160;</mo><mi>t</mi><mi>o</mi><mo>&#160;</mo><mi>C</mi></mrow></mfenced></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>, </em><em><em>Fs </em></em><em>and separately </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>E</mi><mrow><mi>p</mi><mfenced><mrow><mi>C</mi><mo>&#160;</mo><mi>t</mi><mi>o</mi><mo>&#160;</mo><mi>D</mi></mrow></mfenced></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>and then rearranging for </em><em><em>θ, </em></em><em>both methods will still achieve full marks. </em></p><p><em>Remember that </em><em><em>h</em></em><em> in the gravitational potential energy </em><em><em>mgh</em></em><em> is always the </em><em><strong>vertical </strong></em><em>height that the object falls from / gains. In this case, it is </em><em><em>s</em></em><em> sin</em><em><em>θ</em></em><em>. This is seen using trigonometry: </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q4c-ma-hard-aqa-a-level-physics.png' alt='4-6-s-q--q4c-ma-hard-aqa-a-level-physics' /></div><p><em>Note that although this question could be done using SUVAT equations and Newton’s second law, the question specifically asks to consider </em><em><strong>energy </strong></em><em>changes, so this method will not achieve full marks.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

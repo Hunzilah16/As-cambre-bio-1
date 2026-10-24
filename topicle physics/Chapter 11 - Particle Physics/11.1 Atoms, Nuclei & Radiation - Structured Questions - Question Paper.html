@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>11.1 Atoms, Nuclei & Radiation - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">11.1 Atoms, Nuclei & Radiation</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 11. Particle Physics</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 8 Questions (66 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Ionising radiation often comes in three forms: alpha, beta and gamma. </p><p>Table 1.1 below shows information about the properties of each type of radiation. </p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Type</strong></p></td><td><p style='text-align: center;'><strong>Nuclear notation</strong></p></td><td><p style='text-align: center;'><strong>Relative charge</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>Alpha</strong></p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>+2</p></td></tr><tr><td><p style='text-align: center;'><strong>Beta</strong></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi mathvariant="normal">&#946;</mi><mprescripts></mprescripts><mrow><mo>-</mo><mn>1</mn></mrow><mn>0</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'><strong>Gamma</strong></p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr></table><p style='text-align: center;'><strong>Table 1.1   </strong></p><p>Complete the missing information in Table 1.1.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Identify <strong>one</strong> similarity and <strong>one</strong> difference between alpha particles and beta particles<strong>.</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>The properties of ionising radiation that make it so useful is related to the study of the structure of atoms. </p><p>Evidence that atoms had an internal structure was confirmed by Ernest Rutherford. He was able to show that a thin sheet of gold foil scattered ionising radiation in ways that could not be explained by accepted models of atomic structure at the time. </p><p>State the type of ionising radiation that was scattered by gold foil in Rutherford’s experiment.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Each of the observations from Rutherford’s experiment had profound implications about how atoms were structured. </p><p>In the space provided below, match each observation from Rutherford’s experiment to its corresponding conclusion about atomic structure. </p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Observation</strong></p></td><td><p style='text-align: center;'> </p><p style='text-align: center;'> </p><p style='text-align: center;'> </p><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>Conclusion</strong></p></td></tr><tr><td><p style='text-align: center;'>A small proportion of radiation is slightly deflected by the gold foil</p></td><td><p style='text-align: center;'>The atom is mostly empty space</p></td></tr><tr><td><p style='text-align: center;'>The majority of radiation is undeflected by the gold foil </p></td><td><p style='text-align: center;'>The mass of a nucleus is concentrated in a very small volume</p></td></tr><tr><td><p style='text-align: center;'>A very small proportion of radiation is deflected back on itself</p></td><td><p style='text-align: center;'>The nucleus carries a positive charge</p></td></tr></table><p> </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The equation below represents the decay of tungsten-184.</p><p>Complete the equation by writing the correct number in each of the <strong>two</strong> boxes.</p><p style='text-align: center;'><span class='math-eq'><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi mathvariant="normal">W</mi><mprescripts></mprescripts><mn>74</mn><mn>184</mn></mmultiscripts><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi>Po</mi><mprescripts></mprescripts><mo>&#9633;</mo><mo>&#9633;</mo></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>alpha</mi><mo>&#160;</mo><mi>particle</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Beta decay does <strong>not</strong> cause the mass number of an atom to change.</p><p>Explain why not.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The equation representing the decay of iodine-128 to xenon is shown below.</p><p>Complete the equation by writing the correct number in each of the <strong>two</strong> boxes.</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mrow><mmultiscripts><mi mathvariant="normal">I</mi><mprescripts></mprescripts><mn>53</mn><mn>128</mn></mmultiscripts><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi>Xe</mi><mprescripts></mprescripts><mo>&#9633;</mo><mo>&#9633;</mo></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>beta</mi><mo>&#160;</mo><mi>particle</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State another particle emitted in beta minus decay.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[3 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A nucleus X decays by emitting a β+ particle to form a new nucleus, <span class='math-eq'><math style="font-family:Arial" xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mstyle mathsize="16px"><mmultiscripts><mi>Na</mi><mprescripts/><mn>11</mn><mn>23</mn></mmultiscripts></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p><p>State the number of protons and the number of neutrons in nucleus X.</p><p style='text-align: right;'>number of protons = ..........................................................</p><p style='text-align: right;'>number of neutrons = ...........................................................</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>one</strong> similarity between a β<sup>+</sup> particle and a β<sup>–</sup> particle.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The deflection of α-particles by a thin metal foil is investigated with the arrangement shown in Fig 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/11-1-2a-m-rutherford-scattering-apparatus.png' alt='11-1-2a-m-rutherford-scattering-apparatus' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>The detector of α-particles, D, is moved around the path labelled WXY.</p><p>State the environment the apparatus must be enclosed in and explain why this is required for the experiment.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain the readings detected by D and the conclusions that were made about the nature of atoms at points </p><p>(i) W,</p><p style='text-align: right;'>[2]</p><p>(ii) X.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State what the readings detected by D at position Y conclude about the charge of the nucleus. Explain why.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A beam of α-particles produces a current of 3.5 pA. Calculate the number of α-particles per second passing a point in the beam.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When a nucleus of plutonium-239 absorbs a neutron, the following reaction may take place. </p><p style='text-align: center;'>  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mi>Pu</mi><mprescripts/><mn>94</mn><mn>239</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mmultiscripts><mi mathvariant="normal">n</mi><mprescripts/><mi>b</mi><mi>a</mi></mmultiscripts><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mmultiscripts><mi>Xe</mi><mprescripts/><mn>54</mn><mi>x</mi></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mo>&#160;</mo><mmultiscripts><mi>Zr</mi><mprescripts/><mi>y</mi><mn>103</mn></mmultiscripts><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>3</mn><mmultiscripts><mi mathvariant="normal">n</mi><mprescripts/><mi>b</mi><mi>a</mi></mmultiscripts><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p>State the values of <em>a</em>, <em>b</em>, <em>x</em> and <em>y</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State two quantities, other than the proton and neutron number, that are conserved in the fission reaction in part (a).</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A Plutonium-239 nucleus has a mean density of 1.3 × 10<sup>17</sup> kg m<sup>–3</sup>. </p><p>Show that the radius of a Plutonium-239 nucleus is 9.0 × 10<sup>–15</sup> m.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Plutonium-239 is an α-emitter whilst Uranium-237 is a β-emitter.</p><p>Aside from their structure, distinguish between an α-particle and a β-particle.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[3 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In the alpha-particle scattering experiment, a beam of alpha particles was directed at a thin gold foil.</p><p>State the conclusion that can be drawn about the structure of the atom from </p><p>(i) the observation that most alpha-particles pass through the foil</p><p style='text-align: right;'>[1]</p><p>(ii) the observation that very few alpha-particles were deflected through angles greater than 90°.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The study of beta decay provided early hints to the existence of a yet undiscovered particle. </p><p>Scientists were interested in the energy distribution of the beta particles emitted when a radioactive source decayed. The source has an activity of 120 Bq. </p><p>The energy released by each decaying nucleus was labelled as X and the total energy released each second by the source was measured to be 7.5 × 10<sup>–11</sup> J. </p><p>Sketch a graph to show the energy distribution of the beta particles and indicate X on the diagram. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the value of X to an appropriate degree of accuracy.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why no beta particles had an energy equal to X. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Suggest the standard form of the two possible equations that represent this decay and define all the terms used. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A radioactive nucleus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi mathvariant="normal">X</mi><mprescripts></mprescripts><mn>85</mn><mn>229</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> undergoes a beta−minus decay followed by an alpha decay to form a daughter nucleus <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi mathvariant="normal">Y</mi><mprescripts></mprescripts><mi mathvariant="normal">Z</mi><mi mathvariant="normal">A</mi></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>.</p><p>Write a decay equation for this interaction and hence determine the values of A and Z.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Thorium, <span class='math-eq'><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>Th</mi><mprescripts></mprescripts><mn>90</mn><mn>232</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> decays to an isotope of Radium (Ra) through a series of transformations. The particles emitted in successive transformations are:</p><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#945;</mi><mo>&#160;</mo><mo>&#160;</mo><mi>&#946;</mi><mo>&#160;</mo><mo>&#160;</mo><mi>&#946;</mi><mo>&#160;</mo><mo>&#160;</mo><mi>&#947;</mi><mo>&#160;</mo><mo>&#160;</mo><mi>&#945;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p><p>Determine the resulting nuclide after these successive transformations. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Through a combination of successive alpha and beta decays, the isotope of any original nucleus can be formed. </p><p>Explain the simplest sequence of alpha and beta decays required to do this.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A nucleus of Bohrium <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi>Bh</mi><mprescripts></mprescripts><mi mathvariant="normal">Y</mi><mi mathvariant="normal">X</mi></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> decays to Mendelevium <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mmultiscripts><mi>Md</mi><mprescripts></mprescripts><mn>101</mn><mn>255</mn></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> by a sequence of three alpha particle emissions.</p><p>Determine the number of neutrons in a nucleus of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>Bh</mi><mprescripts></mprescripts><mi mathvariant="normal">Y</mi><mi mathvariant="normal">X</mi></mmultiscripts><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>10.2 Kirchhoff’s Laws - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">10.2 Kirchhoff’s Laws</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 10. D.C. Circuits</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 7 Questions (91 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Three resistors of resistances <em>R</em><sub>1</sub>, <em>R</em><sub>2</sub> and <em>R</em><sub>3</sub> are connected as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/10-1-1a-e-resistors-in-series.png' alt='10-1-1a-e-resistors-in-series' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>The potential difference across the resistors are <em>V</em><sub>1</sub>, <em>V</em><sub>2</sub> and <em>V</em><sub>3</sub>. The current in the combination of resistors is <em>I.</em> </p><p>Show that the total resistance <em>R</em> of the combination is given by the equation.</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>R</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#8201;</mo><msub><mi>R</mi><mn>2</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#8201;</mo><msub><mi>R</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Three resistors are placed in a circuit with a cell of 10 V and negligible internal resistance and two switches S<sub>1</sub> and S<sub>2</sub>. This is shown in Fig 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/10-1-1b-e-kirckhhoffs-laws-switches.png' alt='10-1-1b-e-kirckhhoffs-laws-switches' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>Complete table 1.1.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'>Position of switches</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>S<sub>1</sub></p></td><td><p style='text-align: center;'>S<sub>2</sub></p></td><td><p style='text-align: center;'>Total resistance / kΩ</p></td></tr><tr><td><p style='text-align: center;'>open</p></td><td><p style='text-align: center;'>closed</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>closed</p></td><td><p style='text-align: center;'>open</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>closed</p></td><td><p style='text-align: center;'>closed</p></td><td><p style='text-align: center;'> </p></td></tr></table>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cell has an e .m .f of 10 V and negligible internal resistance. </p><p>Calculate the current from the cell when</p><p>(i) switch S<sub>1</sub> is closed,</p><p style='text-align: right;'>[1] </p><p>(ii) both S<sub>1</sub> and S<sub>2</sub> are closed.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Using your answers in part (c), determine the current from the cell if just switch S<sub>2</sub> is closed.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) State Kirchhoff&#x27;s first law.</p><p style='text-align: right;'>[1]</p><p>(ii) State the quantity that is conserved by this law.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) State Kirchhoff&#x27;s second law.</p><p style='text-align: right;'>[1]</p><p>(ii) State the quantity that is conserved by this law.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig 1.1 shows a list of circuit components.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/10-1-3c-e-circuit-symbols-table.png' alt='10-1-3c-e-circuit-symbols-table' /></div><p style='text-align: center;'><strong>Fig 1.1</strong> </p><p>In the right hand column, sketch the circuit symbol for the component in the left hand column of Fig 1.1.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two cells of e.m.f. <em>E</em><sub>1</sub> and <em>E</em><sub>2</sub> are negligible internal resistance are connected to resistors <em>R</em> in a circuit shown in Fig 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/10-1-3d-e-kirckhhoffs-laws-circuit.png' alt='10-1-3d-e-kirckhhoffs-laws-circuit' /></div><p style='text-align: center;'><strong>Fig 1.2</strong></p><p>Use Kirchhoff&#x27;s laws to state the relation between</p><p>(i) <em>I</em><sub>1</sub>, <em>I</em><sub>2</sub> and <em>I</em><sub>3</sub> </p><p style='text-align: right;'>[1]</p><p>(ii) <em>E</em><sub>2</sub>, <em>R</em>, <em>I</em><sub>2</sub> and <em>I</em><sub>3</sub> in loop YZABY.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Three resistors of resistances <em>R</em><sub>1</sub>, <em>R</em><sub>2</sub> and <em>R</em><sub>3</sub> are connected as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/10-1-1a-m-resistors-connected-in-parallel.png' alt='10-1-1a-m-resistors-connected-in-parallel' /></div><p>The currents in the resistors are <em>I</em><sub>1</sub>, <em>I</em><sub>2</sub> and <em>I</em><sub>3</sub>. The total current in the combination of resistors is <em>I</em> and the potential difference across the combination is <em>V</em>.</p><p>Show that the total resistance <em>R</em> of the combination is given by the equation</p><p style='text-align: center;'><span class='math-eq'><math style="font-family:Arial" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="14px"><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>3</mn></msub></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[10 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A battery of electromotive force (e.m.f.) 6.0 V and internal resistance <em>r</em> is connected to an external resistor of resistance 12 Ω and a thermistor X, as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/11/q6b-paper-2-specimen-2022-cie-ial-physics.png' alt='q6b-paper-2-specimen-2022-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>(i) By considering energy, explain why the potential difference across the terminals of the battery is less than the e.m.f.</p><p style='text-align: right;'>[1]</p><p>(ii) A charge of 2.5 kC passes through the battery.</p><p>Calculate:</p><ul><li><p>the total energy transferred by the battery</p></li></ul><p style='text-align: right;'>energy = ............................................................ J</p><ul><li><p>the number of electrons that pass through the battery.</p></li></ul><p style='text-align: right;'>number = .......................................</p><p style='text-align: right;'>[3]</p><p>(iii) The combined resistance of the external resistor and thermistor X connected in parallel is 4.8 Ω.</p><p>Calculate the resistance of X.</p><p style='text-align: right;'>resistance = ........................................ Ω [1]</p><p>(iv) Use your answer in <strong>(b)(iii)</strong> to determine the ratio</p><p style='text-align: center;'><span class='math-eq'><math style="font-family:Arial" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mi>power</mi><mo>&#160;</mo><mi>dissipated</mi><mo>&#160;</mo><mi>in</mi><mo>&#160;</mo><mi>thermistor</mi><mo>&#160;</mo><mi mathvariant="normal">X</mi></mrow><mrow><mi>power</mi><mo>&#160;</mo><mi>dissipated</mi><mo>&#160;</mo><mi>in</mi><mo>&#160;</mo><mn>12</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi><mo>&#160;</mo><mi>resistor</mi></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>ratio = .................................. [2]</p><p>(v) The temperature of thermistor X is now decreased.</p><p>State and explain the effect, if any, of this temperature change on the total power produced by the battery.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[15 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student investigates the potential difference in a circuit. The circuit is set up as shown in Fig. 2.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/11/q2-paper-5-specimen-2022-cie-ial-physics.png' alt='q2-paper-5-specimen-2022-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 2.1</strong></p><p>Two resistors P and Q are connected in series to a power supply of electromotive force (e.m.f.) <em>E</em> and negligible internal resistance. Resistor P has resistance <em>P</em>.</p><p>The potential difference <em>V</em> across resistor P is measured. The experiment is repeated for different values of <em>P</em>.</p><p>It is suggested that <em>V</em> and <em>P </em>are related by the equation</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfenced><mfrac><mi>P</mi><mrow><mi>P</mi><mo>+</mo><mi>Q</mi></mrow></mfrac></mfenced><mi>E</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <em>Q</em> is the resistance of resistor Q. The value of <em>Q</em> is kept constant.</p><p>A graph is plotted of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>V</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> on the y-axis against <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>P</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> on the x-axis.</p><p>Determine expressions for the gradient and the y-intercept.</p><p style='text-align: right;'>gradient = ............................................ </p><p style='text-align: right;'>y-intercept = .......................................</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Values of P, V and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>V</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> are given in Table 2.1.</p><p style='text-align: center;'><strong>Table 2.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><em><strong>P</strong></em><strong> / Ω</strong></p></td><td><p style='text-align: center;'><em><strong>V</strong></em><strong> / V</strong></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>P</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><strong> / 10</strong><sup><strong>–3</strong></sup><strong> Ω</strong><sup><strong>–1</strong></sup></p></td><td><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>V</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><strong> / V</strong><sup><strong>–1</strong></sup></p></td></tr><tr><td><p style='text-align: center;'>250</p></td><td><p style='text-align: center;'>0.66</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>1.52</p></td></tr><tr><td><p style='text-align: center;'>330</p></td><td><p style='text-align: center;'>0.86</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>1.16</p></td></tr><tr><td><p style='text-align: center;'>470</p></td><td><p style='text-align: center;'>1.15</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>0.870</p></td></tr><tr><td><p style='text-align: center;'>560</p></td><td><p style='text-align: center;'>1.30</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>0.769</p></td></tr><tr><td><p style='text-align: center;'>680</p></td><td><p style='text-align: center;'>1.49</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>0.671</p></td></tr><tr><td><p style='text-align: center;'>840</p></td><td><p style='text-align: center;'>1.64</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>0.610</p></td></tr></table><p>  Each value of <em>P</em> has an uncertainty of ±10%.</p><p>Calculate and record values of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>P</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> / 10<sup>–3</sup> Ω<sup>–1</sup> in Table 2.1.</p><p>Include the absolute uncertainties in <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>P</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> .</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[8 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Plot a graph of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>V</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> / V<sup>–1</sup> against <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>P</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> / 10<sup>–3</sup> Ω<sup>–1</sup>.</p><p>Include error bars for <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>P</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> .</p><p style='text-align: right;'>[2]</p><p>(ii) Draw the straight line of best fit and a worst acceptable straight line on your graph. Label both lines.</p><p style='text-align: right;'>[2]</p><p>(iii) Determine the gradient of the line of best fit. Include the absolute uncertainty in your answer.</p><p style='text-align: right;'>gradient = ......................................... [2]</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/11/q2c-paper-5-specimen-2022-cie-ial-physics.png' alt='q2c-paper-5-specimen-2022-cie-ial-physics' /></div><p>(iv) Determine the y-intercept of the line of best fit. Include the absolute uncertainty in your answer.</p><p style='text-align: right;'>y-intercept = ......................................... [2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Using your answers to <strong>(a), (c)(iii)</strong> and <strong>(c)(iv)</strong>, determine the values of E and Q. Include appropriate units.</p><p style='text-align: right;'>E = .............................................. </p><p style='text-align: right;'>Q = ............................................. </p><p style='text-align: right;'>[2]</p><p>(ii) Determine the percentage uncertainty in <em>E</em>.</p><p style='text-align: right;'>percentage uncertainty in <em>E</em> = ......................................... % [1]</p><p>(iii) Determine the absolute uncertainty in <em>Q</em>.</p><p style='text-align: right;'>absolute uncertainty in <em>Q</em> = ........................................ [1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The circuit shown in Fig. 1.1 contains a battery with an e.m.f. <em>E  </em>and negligible internal resistance <em>r</em> connected to four resistors <em>R</em><sub><em>1</em></sub>, <em>R</em><sub><em>2</em></sub>, <em>R</em><sub><em>3</em></sub>  and <em>R</em><sub><em>4</em></sub>, each of resistance <em>R</em>. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/10-2-m-q3a-sq-cie-ial-physics.png' alt='10-2-m-q3a-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The current in <em>R</em><sub><em>3</em></sub>  is 0.40 A and the potential difference across <em>R</em><sub>4</sub> is 3.2 V. </p><p>Determine the resistance <em>R  </em>of each of the fixed resistors. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the e.m.f. of the battery. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A fifth resistor <em>R</em><sub><em>5</em></sub>  also with resistance <em>R  </em>is now added in parallel to <em>R</em><sub><em>2</em></sub>  and <em>R</em><sub><em>3</em></sub>. The current through <em>R</em><sub><em>3</em></sub>  remains at 0.40 A. </p><p>Determine the total current in this circuit. Explain your answer. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The battery in the circuit is now replaced by one with the same e.m.f. but internal resistance is not negligible. </p><p>Explain whether this will change the total power produced by the battery. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A circuit containing a junction P has two power supplies with e.m.f 6.0 V and 2.0 V and two resistors with resistance 30 Ω and 10 Ω is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/10-2-q1a-h-sq-cie-ial-physics.png' alt='10-2-q1a-h-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Draw on the diagram to label the currents in each branch of the circuit and obtain an expression for the current at P. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the values of the currents at P for the circuit in part a). </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A combination of identical resistors each with resistance <em>R</em>  has a total resistance of 250 Ω as shown in Fig. 1.2. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/sl-sq-5-2-hard-q1a-qun-series-resistors.png' alt='sl-sq-5-2-hard-q1a-qun-series-resistors' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Show, without the use of a calculator, how to find the value of resistance of each resistor and hence determine the value of <em>R</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student wishes to determine the resistance for three different resistors. They connect the resistors in a ‘T’ arrangement and change the position of the power source and the voltmeter, as shown in Fig. 1.1<strong>,</strong> to obtain two sets of results, as shown in Table 1.1. The power supply in Circuit 1 causes a current of 0.50 A in one branch of a circuit. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-1-s-q--q2a-hard-aqa-a-level-physics.png' alt='5-1-s-q--q2a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p> </p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Circuit</strong></p></td><td><p style='text-align: center;'><strong>Voltage supplied by power source /V</strong></p></td><td><p style='text-align: center;'><strong>Reading on voltmeter /V</strong></p></td></tr><tr><td><p style='text-align: center;'>1</p></td><td><p style='text-align: center;'>8.0</p></td><td><p style='text-align: center;'>5.0</p></td></tr><tr><td><p style='text-align: center;'>2</p></td><td><p style='text-align: center;'>10</p></td><td><p style='text-align: center;'>4.0</p></td></tr></table><p>Calculate the resistance of resistors <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.  </p><p>You may assume the voltmeter has an infinitely high resistance.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[15 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>There is current flowing from P to R in the resistor network shown. The potential differences across three of the resistors are 3.0 V, 6.0 V and 5.0 V as shown in Fig. 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/10-2-q2a-h-sq-cie-ial-physics.png' alt='10-2-q2a-h-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Determine the potential difference across the other two resistors. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The current through the branch QS is 3.0 A. The total combined resistance of the resistors in the outer loop of the circuit is <em>r</em>. The resistance in the outer loop of the circuit is split according to the ratio of the magnitudes of the potential differences of the resistors on each side of the loop.</p><p>Obtain an expression, in terms of <em>r</em>, for the total resistance of all the resistors in the circuit.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Diagram 1.2 shows a circuit where <em>V</em><sub><em>1</em></sub>  is a battery of 0.5 V, <em>V</em><sub><em>2</em></sub>  a battery of 1 V and <em>V</em><sub><em>3</em></sub>  a battery of 2 V. Each resistor has a resistance of 0.25 Ω.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/EBd_MI14_10-2-q2c-h-sq-cie-ial-physics.png' alt='EBd_MI14_10-2-q2c-h-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Determine the value of each current at junction A.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

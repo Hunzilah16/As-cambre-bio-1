@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2.1 Equations of Motion - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">2.1 Equations of Motion</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 2. Kinematics</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 13 Questions (157 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the difference between</p><p>(i) distance and displacement,</p><p style='text-align: right;'>[2] </p><p>(ii) speed and velocity.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete the table in Table 1.1 to describe the features of displacement-time, velocity-time and acceleration-time graphs represent.</p><p>Place a cross (✘) in any grid space which does not represent anything. Some grid spaces have been completed for you.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p> </p></td><td><p style='text-align: center;'><strong>displacement-time</strong></p></td><td><p style='text-align: center;'><strong>velocity-time</strong></p></td><td><p style='text-align: center;'><strong>acceleration-time</strong></p></td></tr><tr><td><p>gradient represents</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>✘</p></td></tr><tr><td><p>area under curve represents</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>y-intercept represents</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>horizontal line represents</p></td><td><p style='text-align: center;'>zero velocity</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>straight section represents</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>curved section represents</p></td><td><p> </p></td><td><p>non-uniform acceleration</p></td><td><p> </p></td></tr></table>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig. 1.2, sketch the variation of time with distance, velocity, and acceleration for an object moving with <strong>constant velocity</strong>.</p><p>Take the initial position to be zero. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-1-1c-e-2-1-motion-graphs-blank-cie-ial-sq.png' alt='2-1-1c-e-2-1-motion-graphs-blank-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig. 1.3, sketch the variation of time with distance, velocity, and acceleration for an object moving with <strong>uniform acceleration</strong>. </p><p>Take the initial position to be zero. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-1-1c-e-2-1-motion-graphs-blank-cie-ial-sq.png' alt='2-1-1c-e-2-1-motion-graphs-blank-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Place ticks (<strong>✓</strong>) in the table in Table 1.1 to indicate which of the quantities are vectors and which are scalars.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'><strong>velocity</strong></p></td><td><p style='text-align: center;'><strong>speed</strong></p></td><td><p style='text-align: center;'><strong>distance</strong></p></td><td><p style='text-align: center;'><strong>displacement</strong></p></td><td><p style='text-align: center;'><strong>acceleration</strong></p></td></tr><tr><td><p style='text-align: center;'>vector</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>scalar</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr></table>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two of the equations of uniformly accelerated motion are</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>u</mi><mi>t</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>(i) the definition of uniform acceleration,</p><p style='text-align: right;'>[1]</p><p>(ii) the <strong>two</strong> other equations of motion that can be used to derive the above equations.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows an electric motor which is used to lift and lower heavy loads.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-1-2c-e-2-1-pulley-load-kinematics-cie-ial-sq.png' alt='2-1-2c-e-2-1-pulley-load-kinematics-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Initially, the load is on the ground. Fig. 1.3 shows the variation of the displacement<em> s</em> of the load with time<em> t</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-1-2c-e-2-1-displacement-time-graph-pulley-load-cie-ial-sq.png' alt='2-1-2c-e-2-1-displacement-time-graph-pulley-load-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>(i) Complete Table 1.4 to show the magnitude and direction of the velocity of the load during the time intervals shown.</p><p style='text-align: center;'><strong>Table 1.4</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>time interval</strong></p></td><td><p style='text-align: center;'><strong>magnitude of velocity</strong></p></td><td><p style='text-align: center;'><strong>direction of velocity</strong></p></td></tr><tr><td><p style='text-align: center;'><em>t</em> = 0 to 2.0 s</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'><em>t </em>= 2.0 to 3.5 s</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'><em>t</em> = 3.5 to 4.0 s</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'> </p></td></tr></table><p style='text-align: right;'>[3]</p><p>(ii) On Fig. 1.5, sketch a graph to show the variation of the velocity <em>v</em> of the load with time <em>t</em>.</p><p>Include values for velocity on the <em>v</em>-axis.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-1-2c-e-2-1-velocity-time-graph-blank-cie-ial-sq.png' alt='2-1-2c-e-2-1-velocity-time-graph-blank-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.5</strong></p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>As the load is lowered towards the ground, the string breaks when <em>t</em> = 4.0 s. It then falls vertically toward the ground.</p><p>Calculate the velocity<em> </em>of the load just before it hits the ground.</p><p>Assume air resistance is negligible.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student drops a stone into a well and measures the time it takes to hear the stone splash at the bottom.</p><p>Explain how this measurement of time can be used to find the depth of the well.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>It takes 3.2 s for the stone to drop from rest and splash into the water at the bottom. </p><p>Calculate the velocity of the stone when it hits the water.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig. 1.1, sketch the variation of time with velocity for the stone as it falls down the well. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-1-3c-e-2-1-free-fall-motion-graph-blank-cie-ial-sq.png' alt='2-1-3c-e-2-1-free-fall-motion-graph-blank-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use your graph from <strong>(c)</strong> to determine the depth of the well.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[3 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define <em>velocity</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows the velocity–time graph for the car as it travels along a straight road.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/652-cie-paper-2-q1-velocity-time-graph.png' alt='Graph showing velocity on the vertical axis and time on the horizontal axis; linear increase from point u to v over time t.' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>(i) Determine an expression, in terms of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, for the area under the graph.</p><p style='text-align: right;'>[1]</p><p>(ii) State the physical quantity represented by the area under the graph.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define acceleration.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ball is kicked from horizontal ground towards a vertical wall, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/11/q2b-paper-2-specimen-2022-cie-ial-physics.png' alt='q2b-paper-2-specimen-2022-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong> (not to scale)</p><p>The horizontal distance between the initial position of the ball and the base of the wall is 24 m. The ball is kicked with an initial velocity <em>v</em> at an angle of 28° to the horizontal. The ball hits the top of the wall after a time of 1.5 s. Air resistance is negligible.</p><p>(i) Calculate the initial horizontal component <em>v</em><sub>x</sub> of the velocity of the ball.</p><p style='text-align: right;'><em>v</em><sub>x</sub> = ................................................. m s<sup>–1</sup> [1]</p><p>(ii) Show that the initial vertical component <em>v</em><sub>y</sub> of the velocity of the ball is 8.5 m s<sup>–1</sup>.</p><p style='text-align: right;'>[2]</p><p>(iii) Calculate the time taken for the ball to reach its maximum height above the ground.</p><p style='text-align: right;'>time = ....................................................... s [2]</p><p>(iv) The ball is kicked at time t = 0. Assume that the vertical component <em>v</em><sub>y</sub> of the velocity of the ball is positive in the upwards direction. </p><p>On Fig. 1.2, sketch the variation with time t of <em>v</em><sub>y</sub> for the time until the ball hits the wall.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/11/q2b-iv-paper-2-specimen-2022-cie-ial-physics.png' alt='q2b-iv-paper-2-specimen-2022-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Calculate the maximum height above the ground of the ball in <strong>(b)</strong>.</p><p style='text-align: right;'>maximum height = ...................................................... m  [2]</p><p>(ii) The maximum gravitational potential energy of the ball above the ground is 22 J.</p><p>Calculate the mass of the ball.</p><p style='text-align: right;'>mass = ..................................................... kg  [2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ball of greater mass is kicked with the same velocity as the ball in <strong>(b)</strong>.</p><p>Air resistance is still negligible. </p><p>State and explain the effect, if any, of the increased mass on the time taken by the ball to reach its maximum height.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[18 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A boy standing on a cliff shoots a pellet from his pellet gun vertically upwards. The variation of displacement <em>s</em> of the pellet with time <em>t</em> is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/2-1-2a-m-2-1-motion-graph-stone-vertical-throw-displacement-cie-ial.png' alt='2-1-2a-m-2-1-motion-graph-stone-vertical-throw-displacement-cie-ial' /></div><p>(i) Determine the magnitude of the initial velocity of the pellet, at <em>t</em> = 0 s.</p><p style='text-align: right;'>[3]</p><p>(ii) Determine the magnitude of the velocity of the pellet at <em>t</em> = 6.0 s.</p><p style='text-align: right;'>[2]</p><p>(iii) State an assumption made in these calculations.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig. 1.2, sketch the variation of velocity <em>v</em> of the pellet with time <em>t</em>.</p><p>Include your values from <strong>(a) </strong>on the axes. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-1-2b-m-2-1-motion-graph-stone-vertical-throw-velocitycie-ial.png' alt='2-1-2b-m-2-1-motion-graph-stone-vertical-throw-velocitycie-ial' /></div>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Using Fig. 1.2 </p><p>(i) Determine the maximum height reached by the pellet.</p><p style='text-align: right;'>[2]</p><p>(ii) Show that the final position of the pellet after 6.0 s is about 30 m below its initial position.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>An identical pellet gun is fired horizontally off the edge of the cliff at the exact same time the other gun is fired vertically upwards. The vertically fired pellet is in motion for exactly 6.0 s before hitting the ground below the edge of the cliff.</p><p>Both pellets have the same initial speed.</p><p>(i) State which pellet hits the ground first. </p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the time difference between the pellets hitting the ground.</p><p style='text-align: right;'>[4]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ball is projected horizontally at 27 m s<sup>–1</sup> from a vertical cliff. It travels a horizontal distance of 40 m before hitting the ground.</p><p>Assume that air resistance is negligible.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q1a_motion_sl-ib-physics-sq-medium.png' alt='q1a_motion_sl-ib-physics-sq-medium' /></div><p>Calculate the vertical velocity of the ball just before it hits the ground.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the height of the cliff.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Sketch the graphs to show how the horizontal and vertical components of the velocity of the ball, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>x</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>y</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> change with time <em>t</em> just before the ball hits the ground.</p><p>Label any appropriate values on the axes.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q1c_motion_sl-ib-physics-sq-medium.png' alt='q1c_motion_sl-ib-physics-sq-medium' /></div>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the resultant velocity of the ball just before it hits the ground.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[19 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[8 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A particle moves in a straight line with a constant acceleration, <em>a</em>. The initial velocity of the particle at <em>t</em> = 0 is <em>u</em>.  After a further time <em>t</em>, its velocity has increased to <em>v</em>. </p><p>(i) Using the definition of acceleration, show that </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>u</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>a</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[2]</p><p>(ii) Using the definition of average velocity, show that </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>u</mi><mi>t</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[3]</p><p>(iii) Using these two equations, show that </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student investigates the motion of a light ball bearing as it falls from rest alongside a vertical 100 cm scale.</p><p>The student sets up a camera to take flash photographs of the ball at 0.05 s intervals, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/2-1-4b-m-2-1-vertical-drop-100cm-scale-cie-ial.png' alt='2-1-4b-m-2-1-vertical-drop-100cm-scale-cie-ial' /></div><p>The first photograph is taken at time <em>t</em> = 0.</p><p>Using Fig. 1.1, describe and explain the motion of the ball </p><p>(i) in the interval <em>t</em> = 0 to <em>t</em> = 0.35 s</p><p style='text-align: right;'>[2]</p><p>(ii) in the interval <em>t</em> = 0.35 to <em>t</em> = 0.55 s.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The 100 cm scale is suspended 160 cm above the ground.</p><p>Determine the total time of flight for the ball after it is dropped from the starting point of the 100 cm scale.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student repeats the experiment with a lead sphere that falls with constant acceleration and does not reach a constant speed.</p><p>Determine the number of photographs, including the photograph at <em>t</em> = 0, that will be observed against the 100 cm scale.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>An archer fires an arrow towards a target as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/2-1-5a-m-2-1-projectile-arrow-launch-cie-ial-sq.png' alt='2-1-5a-m-2-1-projectile-arrow-launch-cie-ial-sq' /></div><p>The centre of the target is at the same height as the initial position of the arrow.</p><p>The target is a distance of 100 m from the arrow. The arrow has an initial velocity of 62 m s<sup>–1</sup> and is fired at an angle of 11° to the horizontal.</p><p>Describe how the vertical and horizontal components of the arrow&#x27;s velocity change from when it is fired until it reaches its maximum height. </p><p>Assume that the effect of air resistance is negligible.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Show that the time taken for the arrow to reach its maximum height is about 1.2 s.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the horizontal distance, measured along the base line, by which the arrow misses the target.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A motorcyclist practices a stunt on a ramp inclined such that they leave it at an angle of 25º and 3 m high as shown in Fig. 1.1.</p><p>The other ramp is 24 m away and has a height of 1 m, as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-1-2b-h-2-1-h-motorcyclist-projectile-two-ramps-cie-ial-sq.png' alt='2-1-2b-h-2-1-h-motorcyclist-projectile-two-ramps-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the minimum initial velocity the motorcyclist requires in order to reach the other ramp.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The stunt motorcyclist&#x27;s ultimate goal is to jump across a river and land on the other side. Fig. 1.3 shows the motorcyclist driving off a ramp at the edge of a river.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-1-2c-h-2-1-h-motorcyclist-projectile-river-jump-cie-ial-sq.png' alt='2-1-2c-h-2-1-h-motorcyclist-projectile-river-jump-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>The ramp is at an angle of 25° to the horizontal and the height at the end of the ramp is 3.0 m. The width of the river is 100 m. The initial velocity of the motorcyclist is 35 m s<sup>−1</sup>.</p><p>Deduce whether the motorcyclist lands on the other side of the river.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain how air resistance would affect the jump.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>An object is released near the surface of the Moon at time <em>t</em> = 0. Fig. 1.1 shows the variation of displacement <em>s</em> with time <em>t</em> of the object from the point of release.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/sl-sq-2-1-hard-q3a.png' alt='sl-sq-2-1-hard-q3a' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>(i) State the significance of the negative values of <em>s.</em></p><p style='text-align: right;'>[1]</p><p>(ii) State two assumptions about the motion of the object. </p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the graph in Fig. 1.1 to determine a value for the acceleration of free fall close to the surface of the Moon.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use Fig. 1.1 to estimate the instantaneous velocity of the object when <em>t</em> = 1.5 s.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) On Fig. 1.1, sketch the variation of displacement <em>s</em> with time <em>t</em> if the same object was released close to the surface of the Earth instead.</p><p style='text-align: right;'>[2]</p><p>(ii) Describe and explain the features of your sketch. </p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 12 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A rock is thrown horizontally off a 175 m high cliff and lands 105 m away. </p><p>Calculate the resultant velocity at which it hits the ground, assuming air resistance is negligible. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The rock hits the ground at an angle <em>θ</em>  to the horizontal.</p><p>Determine, without calculation, how the angle will change if the stone is thrown in the same way with a greater velocity. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The rock is now attached to a catapult and launched at a castle wall. The rock is launched at an angle of 30° from the horizontal at a speed of 29 m s<sup>–1</sup>. The castle wall is 50 m away and is 15 m high. </p><p>Determine whether the rock makes it over the wall.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The double angle formula is given by sin(2A) = 2sin(A)cos(A).</p><p>Justify that, in the absence of air resistance, the maximum range of any projectile that starts and ends at ground level is achieved when it is launched at 45° to the horizontal. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 13 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A bus driver drives with a constant acceleration of 5.0 m s<sup>–2</sup> from an initial velocity of 3.0 m s<sup>–1</sup>. After 2.5 seconds, they slow down to stop at a set of traffic lights at 4.0 m s<sup>–2</sup>, eventually coming to a complete stop.  Assume that air resistance is negligible.</p><p>Calculate the distance between where the bus began to accelerate and the traffic lights where the bus stops. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig. 1.1 draw the velocity­–time graph for the motion of the bus. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/2-1-h-q5b-sq-cie-ial-physics.png' alt='2-1-h-q5b-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

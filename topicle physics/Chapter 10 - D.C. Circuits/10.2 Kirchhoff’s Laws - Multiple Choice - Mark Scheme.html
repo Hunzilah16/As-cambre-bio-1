@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>10.2 Kirchhoff’s Laws - Multiple Choice Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">10.2 Kirchhoff’s Laws</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 10. D.C. Circuits</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 18 Questions (18 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The principles of conservation of which two quantities are associated with Kirchhoff&#x27;s first and second Laws?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>First Law</strong></p></td><td><p style='text-align: center;'><strong>Second Law</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>charge</p><p style='text-align: center;'>charge</p><p style='text-align: center;'>energy</p><p style='text-align: center;'>voltage</p></td><td><p style='text-align: center;'>energy</p><p style='text-align: center;'>voltage</p><p style='text-align: center;'>charge</p><p style='text-align: center;'>charge</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>Kirchhoff&#x27;s First Law (or current Law) states that current flowing into a junction must be equal to current flowing out of it</p><ul><li><p>This is a consequence of charge conservation</p></li><li><p>It is well known in physics that charge will always be conserved. In the context of circuits this means that, since the current is the rate of flow of charge, the current flowing into a point must be the same as the current flowing out of that point</p></li></ul></li><li><p>Kirchhoff&#x27;s Second Law (or voltage Law) states that the sum of all voltages around any closed loop in a circuit must equal the e.m.f. of the supply</p><ul><li><p>This is a consequence of the principle of conservation of energy</p></li><li><p>This is due to the fact that work is done <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mi>W</mi><mo>=</mo><mi>V</mi><mi>Q</mi></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  on charge carriers by the electric forces inside the circuit components meaning<em> </em>they either gain or lose electrical energy, depending upon the type of component</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In deriving a formula for the combined resistance of three different resistors in series, Kirchhoff&#x27;s Laws are used.</p><p>Which physics principle is involved in this derivation ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the conservation of charge</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the direction of the flow of charge is from negative to positive</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the potential difference across each resistor is the same</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the current varies in each resistor, in proportion to the resistor value</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>The physics principle involved in deriving Kirchhoff&#x27;s Laws for 3 different resistors connected in series is the conservation of charge</p></li><li><p>The shared e .m .f. source V causes a current I to flow through all three resistors, by the conservation of charge, this must be the same at all points in a series circuit</p></li><li><p>From Ohm&#x27;s Law <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The e. m .f. is split into V<sub>1</sub>, V<sub>2</sub> and V<sub>3</sub> between the three resistors</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><mi>I</mi><msub><mi>R</mi><mn>1</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>       <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><mi>I</mi><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>      <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>3</mn></msub><mo>=</mo><mi>I</mi><msub><mi>R</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>    </p></li></ul></li><li><p>From Kirchoff&#x27;s Second Law, we know that the voltages around a loop in a circuit add up to the e.m.f. of the supply</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><msub><mi>V</mi><mn>1</mn></msub><mo>+</mo><msub><mi>V</mi><mn>2</mn></msub><mo>+</mo><msub><mi>V</mi><mn>3</mn></msub><mo>=</mo><mi>I</mi><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><mi>I</mi><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><mi>I</mi><msub><mi>R</mi><mn>3</mn></msub><mo>=</mo><mi>I</mi><mfenced><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><msub><mi>R</mi><mn>3</mn></msub></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>V</mi><mi>I</mi></mfrac><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><msub><mi>R</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>From Ohm&#x27;s Law, we know <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>V</mi><mi>I</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = total resistance of the circuit</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><msub><mi>R</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images538png.png' alt='cie-ial-images538png' /></div><p><strong>B </strong>is incorrect because the flow of charge in a circuit is from the positive terminal of the battery to the negative terminal</p><p><strong>C </strong>is incorrect because in series combination, the p .d. across different resistors is not the same since the resistance of each one is different</p><p><strong>D </strong>is incorrect because in series combination, the current through each resistor is the same</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The combined resistance <em>R</em><sub>T </sub>of two resistors of resistances <em>R</em><sub>1</sub> and <em>R</em><sub>2</sub> connected in parallel is given by the formula</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mi>T</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>Which statement is used in the derivation of this formula?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the currents through the two resistors are equal</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the potential difference across each resistor is the same</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the supply current is split between the two resistors in the same ratio as the ratio of their resistances</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the total power dissipated is the sum of the powers dissipated in the two resistors separately</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>Each resistor in parallel has the same p .d. applied to it, but the total current is split amongst them</p></li><li><p>Let the current through resistor R<sub>1</sub> be I<sub>1</sub> and the current through R<sub>2</sub> be I<sub>2</sub></p></li><li><p>The p. d. across both R<sub>1 </sub>and R<sub>2</sub> is equal to the supply voltage V</p></li><li><p>Therefore from Ohm&#x27;s Law</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><mfrac><mi>V</mi><msub><mi>R</mi><mn>1</mn></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mi>V</mi><msub><mi>R</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>But from Kirchhoff&#x27;s Current Law, we know the current entering a junction is equal to the current leaving the junction</p><ul><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><msub><mi>I</mi><mn>1</mn></msub><mo>+</mo><msub><mi>I</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Substituting the values derived for I<sub>1</sub> and I<sub>2</sub> gives us&#x27;</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>V</mi><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mi>V</mi><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>=</mo><mi>V</mi><mo> </mo><mfenced><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Rearranging gives us</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>I</mi><mi>V</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>From Ohm&#x27;s Law, we know <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>V</mi><mi>I</mi></mfrac><mo>=</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> total resistance of the circuit</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images540png.png' alt='cie-ial-images540png' /></div><p><strong>A </strong>is incorrect because in parallel combination, the current through each resistor is different</p><p><strong>C </strong>is incorrect because the supply current is split between the resistors according to the ratio between the supply p. d. and the resistance of each resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>V</mi><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mi>V</mi><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>=</mo><mi>V</mi><mo> </mo><mfenced><mfrac><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><mrow><msub><mi>R</mi><mn>1</mn></msub><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><strong>D </strong>is incorrect because the equation for power is not required in this derivation<em> </em></p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Each of Kirchhoff&#x27;s two Laws presumes that some quantity is conserved.</p><p> Which row states Kirchhoff&#x27;s <strong>first</strong> Law and names the quantity that is conserved ? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Statement</strong></p></td><td><p style='text-align: center;'><strong>Quantity</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p></td><td><p style='text-align: center;'>The algebraic sum of currents into a junction is zero</p></td><td><p style='text-align: center;'>charge</p></td></tr><tr><td><p style='text-align: center;'><strong>B</strong></p></td><td><p style='text-align: center;'>The algebraic sum of currents into a junction is zero</p></td><td><p style='text-align: center;'>energy</p></td></tr><tr><td><p style='text-align: center;'><strong>C</strong></p></td><td><p style='text-align: center;'>The e. m. f. in a loop is equal to the algebraic sum of the product of current and resistance around the loop</p></td><td><p style='text-align: center;'>charge</p></td></tr><tr><td><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>The e .m .f. in a loop is equal to the algebraic sum of the product of current and resistance around the loop</p></td><td><p style='text-align: center;'>energy</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>Kirchhoff&#x27;s First Law states: the algebraic sum of currents into a junction is zero</p><ul><li><p>This is a consequence of charge conservation</p></li></ul></li></ul><p><strong>B </strong>is incorrect because Kirchhoff&#x27;s First Law is not a consequence of energy conservation</p><p><strong>C </strong>&amp;<strong> D </strong>are incorrect because these two options describe Kirchhoff&#x27;s Second Law</p><p><strong>Exam Tip: </strong>Remember Kirchhoff&#x27;s First and Second Laws like this:</p><ul><li><p>Kirchhoff&#x27;s First Law = Current Law = charge conservation <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mi>Q</mi><mo>=</mo><mi>I</mi><mo> </mo><mi>t</mi></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Kirchhoff&#x27;s Second Law = Voltage Law = energy conservation <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mi>W</mi><mo>=</mo><mi>V</mi><mi>Q</mi></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A circuit consisting of five <strong>identical </strong>resistors is shown:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/03/q8_circuits-_-the-potential-divider_aqa-as-physics-mcq.png' alt='q8_circuits-_-the-potential-divider_aqa-as-physics-mcq' /></div><p>Which of the following statements is <strong>false</strong>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>The potential difference between <strong>P</strong> and <strong>Q</strong> is equal to the potential difference between <strong>X</strong> and <strong>Y</strong></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>The total resistance between <strong>X</strong> and <strong>Y </strong>is equal to the sum of the resistances between <strong>X </strong>and<strong> Y</strong></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>The total resistance between <strong>P</strong> and <strong>Q </strong>is equal to the sum of the resistances along <strong>P </strong>and <strong>Q</strong></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>There is less total resistance between <strong>P</strong> and <strong>Q</strong> than there is between <strong>X </strong>and <strong>Y</strong></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The false answer is </em><em><strong>C </strong></em><em>because:</em></p><ul><li><p>The resistors between <strong>P</strong> and <strong>Q </strong>are not connected in series</p><ul><li><p>Therefore, the total resistance is not equal to the sum of each resistance</p></li></ul></li></ul><p><strong>A </strong>is true because the branch <strong>PQ</strong> is in parallel with the branch <strong>XY</strong>. Therefore, the potential difference across each branch is are equal <strong>B </strong>is true because the resistors between <strong>X</strong> and <strong>Y</strong> are connected in series; therefore, the total resistance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><strong>D</strong> is true because two of the resistors connected between <strong>P </strong>and <strong>Q</strong> are connected in <strong>parallel</strong>. Therefore, the total resistance here is <strong>less</strong> than one individual resistor. This means overall, there is less resistance along <strong>PQ </strong>than there is along <strong>XY</strong></p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A cell of e .m .f. 2.0 V and negligible internal resistance is connected to a network of resistors as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images541png.png' alt='cie-ial-images541png' /></div><p>What is the current <em>I </em>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.25 A</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0.33 A</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>0.50 A</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1.5 A</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>First, we must find the equivalent resistance of all the resistors combined</p></li><li><p>We&#x27;ll start with the two 4.0 Ω resistors, let&#x27;s call these <em>R</em><sub><em>1</em></sub><em> </em>and <em>R</em><sub><em>2</em></sub></p></li><li><p>For resistors in parallel : <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>+</mo><mo>·</mo><mo>·</mo><mo>·</mo><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mi>n</mi></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mn>1</mn><mo>+</mo><mn>2</mn></mrow></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mn>1</mn><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><mn>2</mn><mo>.</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> Ω</p></li></ul></li><li><p>Next, we&#x27;ll add the combined <em>R</em><sub><em>1</em></sub> and <em>R</em><sub><em>2</em></sub> in series with <em>R</em><sub><em>3</em></sub></p></li><li><p>For resistors in series : <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><mo>·</mo><mo>·</mo><mo>·</mo><mo>+</mo><msub><mi>R</mi><mi>n</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn><mo>.</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> Ω</p></li></ul></li><li><p>And then, to get the total resistance, we&#x27;ll add the combined 3 resistors in parallel with <em>R</em><sub><em>4</em></sub></p><ul><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>4</mn></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the total resistance is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> Ω</p></li><li><p>Now, we must find the value of the current <em>I</em> through <em>R</em><sub><em>2</em></sub></p></li><li><p>Ohm&#x27;s Law states <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>V</mi><mi>R</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>So, the current through the cell is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>I</mi><mo>=</mo><mfrac><mi>V</mi><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>.</mo><mn>0</mn><mo> </mo><mi>V</mi></mrow><mrow><mstyle displaystyle="true"><mfrac><mn>4</mn><mn>3</mn></mfrac></mstyle><mi>Ω</mi></mrow></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo> </mo><mi mathvariant="normal">A</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>If we consider there to be three resistors of 2.0 Ω each, the current through each resistor will be <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>2</mn><mn>6</mn></mfrac><mo>×</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo> </mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Since the resistance is equal in both branches, the current will divide equally</p><ul><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>25</mn><mo> </mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images542png.png' alt='cie-ial-images542png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows part of a current-carrying circuit. The ammeter has negligible resistance.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images544png.png' alt='cie-ial-images544png' /></div><p>What is the reading on the ammeter ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.7 A</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>1.3 A</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>1.5 A</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1.7 A</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C </strong></em><em>because:</em></p><ul><li><p>Let the total resistance of the circuit be R</p></li><li><p>For resistors in parallel : <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>+</mo><mo>·</mo><mo>·</mo><mo>·</mo><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mi>n</mi></msub></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>1</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>7</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, the total resistance is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>.</mo><mn>7</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>588</mn><mo> </mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>In other words, the three resistors in parallel is equivalent to a single resistor of resistance 0.588 Ω</p></li><li><p>A current of 5.0 A flows through this resistor</p><ul><li><p>So, the p. d. across the branches <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>I</mi><mi>R</mi><mo>=</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>588</mn><mo>=</mo><mn>2</mn><mo>.</mo><mn>94</mn><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>As the resistors are in parallel, the p. d. across each branch is the same</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>V</mi><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>.</mo><mn>94</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>0</mn></mrow></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>47</mn><mo> </mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the current through ammeter is 1.5 A</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In the circuit shown, all the resistors are identical.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images545png.png' alt='cie-ial-images545png' /></div><p>The reading on voltmeter V<sub>1</sub> is 8.0 V and the reading on voltmeter V<sub>2</sub> is 1.0 V. What are the readings on the other voltmeters? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Reading on voltmeter V</strong><sub><strong>3</strong></sub><strong> / V</strong></p></td><td><p style='text-align: center;'><strong>Reading on voltmeter V</strong><sub><strong>4</strong></sub><strong> / V</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>1.5</p><p style='text-align: center;'>3.0</p><p style='text-align: center;'>4.5</p><p style='text-align: center;'>6.0</p></td><td><p style='text-align: center;'>1.0</p><p style='text-align: center;'>2.0</p><p style='text-align: center;'>3.0</p><p style='text-align: center;'>4.0</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>Let the resistance of each resistor be <em>R</em></p></li><li><p>The p .d. across a resistor is <em>V</em><sub><em>2</em></sub> = 1.0 V</p></li><li><p>The p. d. across the resistor just left of <em>V</em><sub><em>2</em></sub> is also 1.0 V since the resistance is the same and they are in the same branch, so, the same current flows through them both</p><ul><li><p>So, the total p. d. in the lower branch of the parallel combination is equal to = 1.0 + 1.0 = 2.0 V</p></li></ul></li><li><p>The total p .d. across any branch of a parallel combination is the same according to Kirchhoff&#x27;s Second Law</p><ul><li><p>Therefore, <em>V</em><sub><em>4</em></sub> = 2.0 V</p></li></ul></li><li><p>The complete circuit may be described as a series combination of the two single resistor and the parallel combination (as shown in the diagram)</p></li><li><p>The p .d. across the vertical resistor is the same as <em>V</em><sub><em>3</em></sub> since they have the same resistance.</p><ul><li><p><em>V</em><sub><em>1</em></sub> = total e. m .f in circuit = 8.0 V</p></li></ul></li><li><p>The sum of p .d. in any loop is equal to the e. m .f  in the circuit</p><ul><li><p><em>V</em><sub><em>3</em></sub> + <em>V</em><sub><em>3</em></sub> + 2.0 = 8.0 V</p></li><li><p>2<em>V</em><sub><em>3</em></sub> = 6.0 V</p></li></ul></li><li><p>So, <em>V</em><sub><em>3</em></sub> = 3.0 V</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images546png.png' alt='cie-ial-images546png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A cell, two resistors of equal resistance and an ammeter are used to construct four circuits. The resistors are the only parts of the circuits that have resistance.</p><p>In which circuit will the ammeter show the greatest reading ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images547png.png' alt='cie-ial-images547png' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images548png.png' alt='cie-ial-images548png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>Ohm&#x27;s Law states <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> , so, the current in the whole circuit is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>I</mi><mo>=</mo><mfrac><mi>V</mi><msub><mi>R</mi><mi>T</mi></msub></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Where <em>R</em><sub><em>T</em></sub> is the combined resistance of the resistors</p></li></ul></li><li><p>Let the resistance of a resistor = <em>R</em> and the e .m. f of the supply = <em>E</em></p></li><li><p>In circuit <strong>D</strong>, the 2 resistors are in a parallel combination, so the combined resistance is </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mi>T</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>=</mo><mfrac><mn>2</mn><mi>R</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  , therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo>=</mo><mfrac><mi>R</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the current in the circuit is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><mstyle displaystyle="true"><mfrac><mi>R</mi><mn>2</mn></mfrac></mstyle></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>E</mi></mrow><mi>R</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>This is the same current as circuit <strong>C</strong>, however, at a junction, the current splits</p></li><li><p>In circuit <strong>D</strong>, the ammeter is connected directly to the positive terminal, so it reads the value of the current flowing in the whole circuit, whereas the current in <strong>C</strong> will read half the total current</p><ul><li><p>Therefore, the ammeter in circuit <strong>D</strong> will have the greatest reading</p></li></ul></li></ul><p><strong>A </strong>&amp;<strong> B </strong>are incorrect because these two circuits are in a series arrangement, the current will be the lower than in a parallel arrangement: </p><ul><li><p>Circuit <strong>A</strong>: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo>=</mo><mi>R</mi><mo>+</mo><mi>R</mi><mo>=</mo><mn>2</mn><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> , so, the current <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><mrow><mn>2</mn><mi>R</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Circuit <strong>B</strong>: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo>=</mo><mi>R</mi><mo>+</mo><mn>0</mn><mo>=</mo><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  , so, the current  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><mi>R</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p><strong>C </strong>is incorrect because in circuit <strong>C</strong> the current splits at a junction, so, the ammeter in circuit <strong>C</strong> gives only half the total current in the circuit</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a circuit with four voltmeter readings <em>V</em>, <em>V</em><sub>1</sub>, <em>V</em><sub>2</sub> and <em>V</em><sub>3</sub>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images549png.png' alt='cie-ial-images549png' /></div><p>Which equation relating the voltmeter readings must be true?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><em>V</em> = <em>V</em><sub>1</sub> + <em>V</em><sub>2</sub> + <em>V</em><sub>3</sub></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><em>V</em> + <em>V</em><sub>1</sub> = <em>V</em><sub>2</sub> + <em>V</em><sub>3</sub></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><em>V</em><sub>3</sub> = 2(<em>V</em><sub>2</sub>)</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><em>V</em> – <em>V</em><sub>1</sub> = <em>V</em><sub>3</sub></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>The voltmeters are used to give the potential difference across the resistors. The voltmeter reading <em>V</em> gives the e.m.f of the battery</p></li><li><p>The resistors connection in the circuit forms two different loops as shown in the diagram below (the voltmeters are not considered)</p><ul><li><p>Loop 1: battery — resistor R (in parallel) — resistor R</p></li><li><p>Loop 2: battery — resistor 2R (in parallel) — resistor R</p></li></ul></li><li><p>From Kirchhoff&#x27;s Laws, the sum of p. d. in any loop should be equal to the e. m .f in the circuit</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><msub><mi>V</mi><mn>2</mn></msub><mo>+</mo><msub><mi>V</mi><mn>1</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><msub><mi>V</mi><mn>3</mn></msub><mo>+</mo><msub><mi>V</mi><mn>1</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>-</mo><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><msub><mi>V</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images550png.png' alt='cie-ial-images550png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>When four identical resistors are connected as shown in diagram 1, the ammeter reads 1.0 A, and the voltmeter reads zero.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images552png.png' alt='cie-ial-images552png' /></div><p>The resistors and meters are reconnected to the supply, as shown in diagram 2.</p><p>What are the meter readings in diagram 2? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Voltmeter reading / V</strong></p></td><td><p style='text-align: center;'><strong>Ammeter reading / A</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>0</p><p style='text-align: center;'>3.0</p><p style='text-align: center;'>3.0</p><p style='text-align: center;'>6.0</p></td><td><p style='text-align: center;'>1.0</p><p style='text-align: center;'>0.5</p><p style='text-align: center;'>1.0</p><p style='text-align: center;'>0</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>In diagram 1, the voltmeter reads zero because the potential difference across it is zero, meaning that both of its junctions are at the same potential</p></li><li><p>From Kirchhoff&#x27;s First Law, current splits at a junction</p></li><li><p>Since the resistors are identical, the current splits equally into the two branches</p><ul><li><p>The ammeter reads a current of 1.0 A, so the total current in the circuit is 1.0 + 1.0 = 2.0 A</p></li></ul></li><li><p>Now, let&#x27;s consider diagram 2: current flows from the positive terminal of the supply and is split equally at a junction, so, the ammeter still reads the current that has been split equally into two</p><ul><li><p>This current is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>0</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo> </mo><mi mathvariant="normal">A</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>From the junction connected to the positive terminal of the supply, the current splits at the bottom junction and rejoins again at the top junction to return to the negative terminal</p></li><li><p>Since the same amount of current flows through identical resistors the potential of the left and right junctions would be the same</p><ul><li><p>Therefore, the potential difference across the voltmeter is zero</p></li></ul></li></ul><p><strong>B </strong>&amp;<strong> D </strong>are incorrect because the total current in diagram 1 and 2 is 2.0 A so when the current splits at the junction, the reading on both ammeters is  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>2</mn><mo>.</mo><mn>0</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo> </mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><strong>C </strong>is incorrect because to detect a potential difference, the voltmeter would need to be connected across one component at a time</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 12 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows currents <em>I</em><sub> 1</sub>, <em>I</em><sub> 2</sub>, <em>I</em><sub> 3</sub>, <em>I</em><sub> 4</sub> and <em>I</em><sub> 5</sub> in different branches of a circuit.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images553png.png' alt='cie-ial-images553png' /></div><p>Which one of the following is correct?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><em>I</em><sub> 1</sub> = <em>I</em><sub> 2</sub> + <em>I</em><sub> 3</sub></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><em>I</em><sub> 2</sub> = <em>I</em><sub> 1</sub> + <em>I</em><sub> 3</sub></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><em>I</em><sub> 3</sub> = <em>I</em><sub> 4</sub> + <em>I</em><sub> 5</sub></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><em>I</em><sub> 4</sub> = <em>I</em><sub> 5</sub> + <em>I</em><sub> 3</sub></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p> Kirchhoff&#x27;s First Law states that the total current entering a junction is equal to the total current leaving the same junction</p></li><li><p>In other words the algebraic sum of all the current entering and leaving a junction must be equal to zero, so :  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><msub><mi>I</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub><mo>=</mo><mo>∑</mo><msub><mi>I</mi><mrow><mi>O</mi><mi>U</mi><mi>T</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>At the top junction, indicated in the diagram, <em>I</em><sub>1</sub> splits into <em>I</em><sub>2</sub> and <em>I</em><sub>3</sub></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><msub><mi>I</mi><mn>2</mn></msub><mo>+</mo><msub><mi>I</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>At the bottom junction, indicated in the diagram, <em>I</em><sub>3</sub> and <em>I</em><sub>4</sub> join up to become <em>I</em><sub>5</sub></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>5</mn></msub><mo>=</mo><msub><mi>I</mi><mn>3</mn></msub><mo>+</mo><msub><mi>I</mi><mn>4</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images554png.png' alt='cie-ial-images554png' /></div><p><strong>B </strong>is incorrect because current <em>I</em><sub> 2</sub> is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><msub><mi>I</mi><mn>1</mn></msub><mo>-</mo><msub><mi>I</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  </p><p><strong>C </strong>is incorrect because current <em>I</em><sub> 3</sub> is equal to  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>3</mn></msub><mo>=</mo><msub><mi>I</mi><mn>5</mn></msub><mo>-</mo><msub><mi>I</mi><mn>4</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  </p><p><strong>D </strong>is incorrect because current <em>I</em><sub> 4</sub> is equal to  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>4</mn></msub><mo>=</mo><msub><mi>I</mi><mn>5</mn></msub><mo>-</mo><msub><mi>I</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 13 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In the circuit shown, all the resistors are identical and all the ammeters have negligible resistance.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images555png.png' alt='cie-ial-images555png' /></div><p>The reading on ammeter A<sub>1</sub> is 0.6 A.</p><p>What are the readings on the other ammeters? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Reading on ammeter A</strong><sub><strong>2</strong></sub><strong> / A</strong></p></td><td><p style='text-align: center;'><strong>Reading on ammeter A</strong><sub><strong>3</strong></sub><strong> / A</strong></p></td><td><p style='text-align: center;'><strong>Reading on ammeter A</strong><sub><strong>4</strong></sub><strong> / A</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>1.0</p><p style='text-align: center;'>1.4</p><p style='text-align: center;'>1.8</p><p style='text-align: center;'>2.2</p></td><td><p style='text-align: center;'>0.3</p><p style='text-align: center;'>0.6</p><p style='text-align: center;'>0.9</p><p style='text-align: center;'>1.2</p></td><td><p style='text-align: center;'>0.1</p><p style='text-align: center;'>0.2</p><p style='text-align: center;'>0.3</p><p style='text-align: center;'>0.4</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>Current flows from the positive terminal of the battery, so, the current in A<sub>2</sub> should have the highest value</p></li><li><p>Let the resistance of each resistor be <em>R</em></p></li><li><p>The left-hand side of the circuit, in the (A<sub>1</sub> - A<sub>2</sub>) loop, there are two resistors in series, so their total resistance is <em>R</em> + <em>R</em> = 2<em>R</em></p><ul><li><p>The current in the (A<sub>1</sub> - A<sub>2</sub>) loop = 0.6A, as read by ammeter A<sub>1</sub></p></li></ul></li><li><p>So, from Ohm&#x27;s Law <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  , the potential difference in the (A<sub>1</sub> -  A<sub>2</sub>) loop is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>6</mn><mfenced><mrow><mn>2</mn><mi>R</mi></mrow></mfenced><mo>=</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo> </mo><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>From Kirchhoff&#x27;s Second Law, the potential difference is the same as the e .m .f in the circuit for any loop, so, the e. m .f. in the circuit is 1.2<em>R,</em> and this is also the potential difference across all loops</p></li><li><p>Consider the (A<sub>2</sub> - A<sub>3</sub>) loop:</p><ul><li><p>Current in A<sub>3 </sub><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mi>V</mi><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>2</mn><mo> </mo><mi>R</mi></mrow><mi>R</mi></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo> </mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Similarly, consider the (A<sub>2</sub> - A<sub>4</sub>) loop:</p><ul><li><p>Current in A<sub>4 </sub><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>2</mn><mo> </mo><mi>R</mi></mrow><mrow><mn>3</mn><mi>R</mi></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>4</mn><mo> </mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, current in A<sub>2</sub> = total current = 0.6 + 1.2 + 0.4 = 2.2A</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images556png.png' alt='cie-ial-images556png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 14 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Six resistors, each of resistance 5 Ω, are connected to a 2 V cell of negligible internal resistance.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images560png.png' alt='cie-ial-images560png' /></div><p>What is the potential difference between terminals X and Y ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo> </mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>8</mn><mn>9</mn></mfrac><mo> </mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mo> </mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo> </mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>To obtain the potential difference between terminals X and Y, we first need to know the values of the potential at X and Y</p><ul><li><p>The positive terminal of the cell can be taken to be at a potential of 2 V and the negative terminal to be at a potential of 0 V</p></li></ul></li><li><p>It can be seen that the circuit consists of 2 loops, with a junction at the top and one at the bottom</p><ul><li><p>Since there are no components connected between the upper junction and the positive terminal of the cell, the upper junction must be at a potential of 2 V, and the lower junction must be at a potential of 0 V</p></li></ul></li><li><p>Therefore, in any loop, going from up to down, the potential decreases across each component until it is zero at the lower junction</p></li><li><p>From Kirchhoff&#x27;s Law, the sum of p .d. in any loop is equal to the e. m .f in the circuit</p></li><li><p>Consider the first loop (where terminal X is connected):</p></li><li><p>From the potential divider equation:</p><ul><li><p>p. d. across the upper resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>=</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><msub><mi>R</mi><mn>3</mn></msub></mrow></mfrac></mfenced><mo>×</mo><mi>E</mi><mo>=</mo><mfenced><mfrac><mn>5</mn><mrow><mn>5</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>5</mn></mrow></mfrac></mfenced><mo>×</mo><mn>2</mn><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo> </mo><mi>V</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Note that this is the potential difference across the upper resistor. It is also the p. d. across each resistor since they all have the same resistance</p></li></ul></li><li><p>Since the upper junction is at a potential of 2 V, the p .d. at terminal X is equal to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>2</mn><mo>-</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo> </mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Consider the second loop (where terminal Y is connected):</p></li><li><p>From the upper junction to terminal Y, there are 2 resistors and the p. d. across each is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>2</mn><mrow><mn>3</mn><mo> </mo></mrow></mfrac><mo> </mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>   </p><ul><li><p>So, the p. d. at terminal Y <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>2</mn><mo>-</mo><mn>2</mn><mfenced><mfrac><mn>2</mn><mn>3</mn></mfrac></mfenced><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo> </mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the p .d. between X and Y<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo> </mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 15 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Four resistors of equal value are connected as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images561png.png' alt='cie-ial-images561png' /></div><p>How will the powers to the resistors change when resistor W is removed?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the powers to X, Y and Z will all increase</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the power to X will decrease and the powers to Y and Z will increase</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the power to X will increase and the powers to Y and Z will decrease</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the power to X will increase and the powers to Y and Z will remain unaltered</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C </strong></em><em>because:</em></p><ul><li><p>Power dissipated in a resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>=</mo><msup><mi>I</mi><mrow><mo> </mo><mn>2</mn><mo> </mo></mrow></msup><mi>R</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Let&#x27;s say the resistance of each resistor is <em>R</em></p></li><li><p>Two resistors in series causes the overall resistance to increase: <em>R</em> + <em>R</em> = 2<em>R</em></p></li><li><p>Two resistors in parallel causes the overall resistance to decrease : <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msup><mfenced open="[" close="]"><mrow><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>R</mi></mfrac></mrow></mfenced><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mfrac><mi>R</mi><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Since the 4 resistors have the same resistance in the connection shown, the p .d. across each parallel connection will be the same</p><ul><li><p>Overall the resistance in the circuit is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>=</mo><mfrac><mi>R</mi><mn>2</mn></mfrac><mo>+</mo><mfrac><mi>R</mi><mn>2</mn></mfrac><mo>=</mo><mi>R</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Let&#x27;s say the e .m .f. in the circuit is <em>E,</em> so, the current in the circuit is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><mi>R</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The total current splits at the parallel combination</p><ul><li><p>Power dissipated in X <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>=</mo><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mi>R</mi><mo>=</mo><mfrac><mrow><msup><mi>I</mi><mrow><mo> </mo><mn>2</mn></mrow></msup><mi>R</mi></mrow><mn>4</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>25</mn><mo> </mo><msup><mi>I</mi><mrow><mo> </mo><mn>2</mn></mrow></msup><mi>R</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>This is the power dissipated in all the resistors</p></li></ul></li><li><p>When W is removed, the overall resistance of the parallel combination of W and X changes from 0.5<em>R</em> to <em>R</em> as only X is left</p></li><li><p>Total resistance in new circuit = <em>R</em> + 0.5<em>R</em> = 1.5<em>R</em></p><ul><li><p>Current in circuit <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mi>E</mi><mrow><mn>1</mn><mo>.</mo><mn>5</mn><mo> </mo><mi>R</mi></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>I</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The overall current in the circuit will also change — it decreases since the overall resistance in the complete circuit has increased. This current flows through X but is split into half at the combination of Y and Z, so, the current through Y and Z is half that through X, so:</p><ul><li><p>Power dissipated in X <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>=</mo><msup><mfenced><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>I</mi></mrow></mfenced><mn>2</mn></msup><mo> </mo><mi>R</mi><mo>=</mo><mfrac><mn>4</mn><mn>9</mn></mfrac><msup><mi>I</mi><mrow><mo> </mo><mn>2</mn></mrow></msup><mo> </mo><mi>R</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>44</mn><mo> </mo><msup><mi>I</mi><mrow><mo> </mo><mn>2</mn></mrow></msup><mi>R</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Half the current flows through Y and Z, and the same power is dissipated through both resistors, so:</p><ul><li><p>Power dissipated in Y <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>=</mo><msup><mfenced open="[" close="]"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mfenced><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>I</mi></mrow></mfenced></mrow></mfenced><mn>2</mn></msup><mo> </mo><mi>R</mi><mo>=</mo><mfrac><mn>1</mn><mn>9</mn></mfrac><msup><mi>I</mi><mrow><mo> </mo><mn>2</mn></mrow></msup><mi>R</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>11</mn><mo> </mo><msup><mi>I</mi><mrow><mo> </mo><mn>2</mn></mrow></msup><mi>R</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the power in X increases and the power in Y and Z decreases</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 16 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a four-terminal box connected to a battery and two ammeters.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images562png.png' alt='cie-ial-images562png' /></div><p>The currents in the two meters are identical.</p><p>Which circuit, within the box, will give this result ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images563png.png' alt='cie-ial-images563png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>The ammeter connected close to the battery gives the total current in the circuit while the ammeter connected between terminals 3 and 4 gives the current passing through terminal 3 to 4</p></li><li><p>The current in this one will only be equal to the one close to the battery only if all components are connected in series in the whole circuit, including within the box</p></li><li><p>Consider circuit <strong>D </strong>:</p><ul><li><p>The 2 ammeters are in series with the resistor between terminals 1 and 3</p></li><li><p>So, the same current flows through components connected in series</p></li><li><p>Therefore, option <strong>D</strong> is correct</p></li></ul></li></ul><p><strong>A </strong>is incorrect because the section from terminal 2 to 4 and finally to 3 is short-circuited (since 1 and 3 are not connected), so, no current flows through the ammeter</p><p><strong>B </strong>is incorrect because the ammeter connected to 3 and 4 is short-circuited since the wires (which have negligible resistance) are connected between 1 to 3, 3 to 4 and 4 to 2</p><p><strong>C </strong>is incorrect because a parallel connection is formed between the 2 resistors between 1 to 3 and 1 to 2, so, the current splits up at junction 1. The second ammeter is connected in series with one of the resistors, so it only gives the current flowing in one resistor</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 17 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A p. d. of 12 V is connected between P and Q.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images564png.png' alt='cie-ial-images564png' /></div><p>What is the p. d. between X and Y? </p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0 V</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>4 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>6 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>8 V</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>The statement &quot;p. <em>d. of 12 V is connected between P and Q </em>&quot; means that the difference in potential between P and Q is 12 V</p></li><li><p>So, any potential can be assigned to P and Q as long as the difference is 12 V</p><ul><li><p>Let&#x27;s assign a potential of 0 V at P and 12 V at Q</p></li></ul></li><li><p>So, when we go from P to Q, the potential should increase and point X would be at a potential between 0 and 12 V</p></li><li><p>The same is true for point Y; hence, it can be concluded that points P, Q, X and Y are all at different potentials</p></li><li><p>The circuit consists of a parallel combination of resistors</p><ul><li><p>So, the total p. d. across the upper and lower parts of the circuit are both 12 V</p></li></ul></li><li><p>Now, both the upper and lower part of the circuit each consist of two resistors in series</p></li><li><p>For series connection of two resistors R<sub>1</sub> and R<sub>2</sub>, the p. d. across R<sub>1</sub> is given by the potential divider equation</p><ul><li><p> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>V</mi><mo>=</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced><mo>×</mo><mi>E</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  where <em>E</em> is the e. m. f. of the supply</p></li></ul></li><li><p>The potential at point X = p. d. across 500 Ω in the upper part</p><ul><li><p>Potential at point X<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>=</mo><mfenced><mfrac><mn>500</mn><mrow><mn>500</mn><mo>+</mo><mn>1000</mn></mrow></mfrac></mfenced><mo>×</mo><mn>12</mn><mo>=</mo><mn>4</mn><mo> </mo><mi mathvariant="normal">V</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Similarly, the potential at point Y = p. d. across 2000 Ω in the lower part</p><ul><li><p>Potential at point Y<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>=</mo><mfenced><mfrac><mn>2000</mn><mrow><mn>2000</mn><mo>+</mo><mn>1000</mn></mrow></mfrac></mfenced><mo>×</mo><mn>12</mn><mo>=</mo><mn>8</mn><mo> </mo><mi mathvariant="normal">V</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, the p .d. between X and Y is the difference in potential at point X and point Y</p><ul><li><p>Therefore, p .d. between X and Y = 8 – 4 = 4 V<strong> </strong></p></li></ul></li></ul><p><strong>Exam Tip:</strong> Note that 0 V could be assigned at Q and 12 V at P, but the process discussed would have to be reversed</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 18 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows the circuit for a signal to display a green or a red light. It is controlled by the switch S.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images565png.png' alt='cie-ial-images565png' /></div><p>The signal is some way from S to which it is connected by a cable with green, red and black wires. At the signal, the green and red wires are connected to the corresponding lamp and the black wire is connected to a terminal x to provide a common return. The arrangement is shown correctly connected and with the switch set to illuminate the red lamp.</p><p>During maintenance, the wires at the signal are disconnected and, when reconnected, the black wire is connected in error to the green lamp (terminal g) instead of terminal x. The red wire is connected correctly to its lamp and connections at S remain as in the diagram.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images566png.png' alt='cie-ial-images566png' /></div><p>When the system is tested with the switch connection to the red wire, what does the signal show ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the green lamp illuminated normally</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the red lamp illuminated normally</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the red and green lamps both illuminated normally</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the red and green lamps both illuminated dimly</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>The lamps are both lit dimly as they are connected in series</p></li><li><p>From Kirchhoff&#x27;s Second Law, the total e.m.f. is now shared across two lamps in series</p></li><li><p>Each of the lights now receive a voltage lower than 12 V</p></li><li><p>Previously, all the 12 V was being provided to a single lamp which would cause it to be brighter</p></li></ul><p><strong>A </strong>&amp;<strong> B </strong>are incorrect because both lamps are connected in series; hence they will both be lit</p><p><strong>C </strong>is incorrect because both lamps are connected in series, but now the voltage is shared between them; hence they cannot have the same brightness as the single lit lamp previously</p>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

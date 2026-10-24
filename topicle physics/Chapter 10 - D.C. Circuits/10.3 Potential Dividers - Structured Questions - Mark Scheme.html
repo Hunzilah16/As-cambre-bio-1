@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>10.3 Potential Dividers - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">10.3 Potential Dividers</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 10. D.C. Circuits</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 9 Questions (88 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Sketch the circuits symbols for </p><p>(i) the potentiometer</p><p style='text-align: right;'>[1]</p><p>(ii) the galvanometer</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The circuit symbols for:</p><p>(i) the potentiometer is:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/img-9f36eeb32f23-1.jpeg' alt='img-9f36eeb32f23-1' /></div><ul><li><p>Correct circuit symbol as shown above; <em>[1 mark]</em></p></li></ul><p>(ii) the galvanometer is:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/img-9768b27c2d0d-1.jpeg' alt='img-9768b27c2d0d-1' /></div><ul><li><p>Correct circuit symbol as shown above; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a circuit with a potentiometer.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/10-2-1-b-e-abc-potentiometer.png' alt='10-2-1-b-e-abc-potentiometer' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Fixed ends AC are connected across the battery so that there is a full battery voltage across the whole resistor.</p><p>State the voltage output, <em>V</em><sub>out</sub> when the sliding connect is at</p><p>(i) A</p><p style='text-align: right;'>[1]</p><p>(ii) B</p><p style='text-align: right;'>[1]</p><p>(iii) C</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The voltage output at:</p><p>(i) A is:</p><ul><li><p>0 V <em>[1 mark]</em></p></li></ul><p>(ii) B is:</p><ul><li><p>14 V <em>[1 mark]</em></p></li></ul><p>(iii) C is:</p><ul><li><p>28 V <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The resistor is now replaced with a uniform resistance wire connected between ends AC, as shown in Fig. 1.2a. The 28 V cell is replaced with a cell of unknown e.m.f. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/10-2-1c-e-wire-potentiometer.png' alt='10-2-1c-e-wire-potentiometer' /></div><p style='text-align: center;'><strong>Fig. 1.2a</strong></p><p>Sketch a graph of Fig 1.2b to show the voltmeter reading <em>V</em> against length <em>l</em> as the jockey is moved from point A to point C.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/10-2-1c-e-voltage-length-graph.png' alt='10-2-1c-e-voltage-length-graph' /></div><p style='text-align: center;'><strong>Fig 1.2b</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>A graph of the voltmeter reading <em>V</em> and length <em>l</em> of the jockey as it is moved from A to C is</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/08/img-6616f0d22513-1.jpeg' alt='img-6616f0d22513-1' /></div><ul><li><p>Straight line with a positive gradient;<em> [1 mark]</em></p></li><li><p>Through the origin;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A potentiometer can be used to compare e.m.fs of cells or potential differences. </p><p>A test cell is added to the circuit in Fig. 1.2a. A student sets up the circuit shown in Fig. 1.3. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/10-2-1d-e-testing-two-e-mf-.png' alt='10-2-1d-e-testing-two-e-mf-' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>(i) State why the student will not be able to find a point where the current is zero.</p><p style='text-align: right;'>[1]</p><p>(ii) The student fixes the issue from <strong>(a)(i)</strong> and achieves a balance point when the length of the wire AB is 25.6 cm. </p><p>They repeat the experiment with a standard cell of e.m.f 1.545 V. The balance point using this cell is 37.2 cm.</p><p>Calculate the e.m.f of the test cell.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) The student will not be able to find a point where the current in zero because:</p><ul><li><p>The test cell is the wrong way around / the test cell needs to be reversed;<em> [1 mark]</em></p><p><em>  </em></p></li></ul><p>(ii) The e.m.f of the test cell is:</p><p>List the known quantities:</p><ul><li><p>Length AB at first balance point, <em>l</em><sub>1</sub> = 25.6 cm</p></li><li><p>E.m.f of standard cell, <em>E</em><sub>2</sub> = 1.545 V</p></li><li><p>Length AB at second balance point, <em>l</em><sub>2</sub> = 37.2 cm</p></li></ul><p>Determine the equation linking the length and e.m.fs:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>l</mi><mn>1</mn></msub><msub><mi>l</mi><mn>2</mn></msub></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>E</mi><mo>.</mo><mi>m</mi><mo>.</mo><mi>f</mi><mo>&#160;</mo><mi>o</mi><mi>f</mi><mo>&#160;</mo><mi>t</mi><mi>e</mi><mi>s</mi><mi>t</mi><mo>&#160;</mo><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><msub><mi>E</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>.</mo><mi>m</mi><mo>.</mo><mi>f</mi><mo>&#160;</mo><mi>o</mi><mi>f</mi><mo>&#160;</mo><mi>t</mi><mi>e</mi><mi>s</mi><mi>t</mi><mo>&#160;</mo><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>E</mi><mn>2</mn></msub><mo>&#160;</mo><mo>&#215;</mo><mfrac><mrow><mo>&#160;</mo><msub><mi>l</mi><mn>1</mn></msub></mrow><msub><mi>l</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Substitute in the values:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>.</mo><mi>m</mi><mo>.</mo><mi>f</mi><mo>&#160;</mo><mi>o</mi><mi>f</mi><mo>&#160;</mo><mi>t</mi><mi>e</mi><mi>s</mi><mi>t</mi><mo>&#160;</mo><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>545</mn><mo>&#160;</mo><mo>&#215;</mo><mfrac><mrow><mo>&#160;</mo><mn>25</mn><mo>.</mo><mn>6</mn></mrow><mrow><mn>37</mn><mo>.</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>.</mo><mi>m</mi><mo>.</mo><mi>f</mi><mo>&#160;</mo><mi>o</mi><mi>f</mi><mo>&#160;</mo><mi>t</mi><mi>e</mi><mi>s</mi><mi>t</mi><mo>&#160;</mo><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>06</mn><mo>&#160;</mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig 1.1 shows a potential divider circuit containing a fixed resistor and thermistor. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/10-2-2a-e-thermistor-potential-divider.png' alt='10-2-2a-e-thermistor-potential-divider' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p><strong> </strong>Explain what happens to <em>V</em><sub>out</sub> as the temperature of the thermistor increases.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>As the temperature increases:</p><ul><li><p>The resistance of the thermistor decreases; <em>[1 mark]</em></p></li><li><p>So <em>V</em><sub>out</sub> increases;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Potential dividers are all about the </em><em><strong>sharing</strong></em><em> of the potential from the battery (hence the name). When the resistance of the thermistor decreases, this means the voltage through it also decreases (from </em><em><em>V</em></em><em> = </em><em><em>IR</em></em><em> where </em><em><em>I</em></em><em> is the same for both resistors). </em></p><p><em>However, the battery has a set voltage. Therefore, the voltage of the fixed resistor must </em><em><strong>increase</strong></em><em> so the combined voltage of the thermistor and fixed resistor remains the same. </em><em><em>V</em></em><em><sub>out</sub></em><em> is the reading of the voltage from the fixed resistor.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>The thermistor is now replaced with an LDR and the output voltage is now taken from the LDR, as shown in Fig. 1.2a.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/10-2-2b-e-ldr-potential-divider-circuit.png' alt='10-2-2b-e-ldr-potential-divider-circuit' /></div><p style='text-align: center;'><strong>Fig. 1.2a</strong></p><p>Using Fig. 1.2b, determine the resistance of the LDR when the light intensity is 120 lux.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/10-2-2b-e-light-intensity-graph.png' alt='10-2-2b-e-light-intensity-graph' /></div><p style='text-align: center;'><strong>Fig. 1.2b</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The resistance of the LDR when the light intensity is 120 lux is:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/08/img-2b154e0fd346-1.jpeg' alt='img-2b154e0fd346-1' /></div><ul><li><p>8 kΩ <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Using your answer to part <strong>(b)</strong>, calculate <em>V</em><sub>out</sub> when the light intensity is 120 lux.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p><em>V</em><sub>out</sub> when the light intensity is 120 lux is:</p><p>List the known quantities:</p><ul><li><p>Resistance of the LDR, <em>R</em><sub>1</sub> = 8.0 kΩ (from part b)</p></li><li><p>Resistance of the fixed resistor, <em>R</em><sub>2</sub><sub><em> </em></sub>= 6.0 kΩ </p></li><li><p>Voltage of the power supply, <em>V</em><sub>in</sub> = 32 V</p></li></ul><p>Determine the equation for <em>V</em><sub>out</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo> </mo><mo>=</mo><mfrac><mrow><mo> </mo><msub><mi>R</mi><mn>1</mn></msub></mrow><mrow><msub><mi>R</mi><mn>1</mn></msub><mo> </mo><mo>+</mo><mo> </mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac><mo> </mo><mo>×</mo><mo> </mo><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Substitute in the values:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mn>8</mn><mo>.</mo><mn>0</mn><mo> </mo></mrow><mrow><mn>8</mn><mo>.</mo><mn>0</mn><mo> </mo><mo>+</mo><mo> </mo><mn>6</mn><mo>.</mo><mn>0</mn></mrow></mfrac><mo> </mo><mo>×</mo><mo> </mo><mn>32</mn><mo> </mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo> </mo><mo>=</mo><mo> </mo><mn>18</mn><mo>.</mo><mn>2857</mn><mo> </mo><mo>=</mo><mo> </mo><mn>18</mn><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Using your answer to part <strong>(c)</strong>, determine the voltage across the 6.0 kΩ resistor at a light intensity of 120 lux.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The voltage across the 6.0 kΩ resistor is:</p><p>List the known quantities:</p><ul><li><p>Voltage across the LDR, <em>V</em><sub>out</sub> = 18 V</p></li><li><p>Voltage of the power supply, <em>V</em><sub>in</sub> = 32 V</p></li></ul><p>Calculate the voltage across the 6.0 kΩ resistor:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mn>6</mn><mo>.</mo><mn>0</mn><mi>kΩ</mi></mrow></msub><mo> </mo><mo>=</mo><mo> </mo><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo> </mo><mo>-</mo><mo> </mo><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo> </mo><mo>=</mo><mo> </mo><mn>32</mn><mo> </mo><mo>-</mo><mo> </mo><mn>18</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mn>6</mn><mo>.</mo><mn>0</mn><mi>kΩ</mi></mrow></msub><mo> </mo><mo>=</mo><mn>14</mn><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em><em> </em></em><em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A variable resistor is used to control the circuit shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/10-2-3a-e-variable-resistor-circuit.png' alt='10-2-3a-e-variable-resistor-circuit' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The variable resistor is connected in series with a 16 V power supply of negligible internal resistance, an ammeter and an 8.0 Ω resistor. </p><p>The resistance <em>R</em> of the variable resistor can be varied between 0 to 12 Ω. </p><p>Calculate</p><p>(i) the minimum possible current</p><p style='text-align: right;'>[2]</p><p>(ii) the maximum possible current</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Calculate the minimum possible current:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mi>R</mi><mo>&#8201;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>I</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>V</mi></mrow><mi>R</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>R</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> so minimum current occurs with maximum resistance</p></li><li><p>In series:  <em>R</em><sub>max</sub> = 8 + 12 = 20 Ω <em>[1 mark]</em></p></li></ul><p>Calculate the minimum current:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>16</mn><mn>20</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Calculate the maximum possible current:</p><ul><li><p>Maximum current occurs with minimum resistance, <em>R</em><sub>min</sub> = 8 Ω</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>16</mn><mn>8</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig 1.2, sketch the variation with <em>R</em> of current <em>I </em>in the circuit.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/10-2-3b-e-current-resistance-graph.png' alt='10-2-3b-e-current-resistance-graph' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The variation with <em>R</em> of current <em>I </em>in the circuit should look like:</p><p>List the known quantities:</p><ul><li><p>Maximum current = 2.0 A (from part a)</p></li><li><p>Minimum current = 0.8 A (from part a)</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2026/07/35820-img-821d568b826f-1.png' alt='Graph of current I (amps) versus resistance R (ohms), showing a smooth downward curve from 2 A at 0 Ω to about 1 A at 10 Ω, on a square grid.' /></div><ul><li><p>Starting point at (0, 2.0) and end point at (12, 0.8); <em>[1 mark]</em></p></li><li><p>Curve with decreasing gradient; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Galvanometers are used in<em> null methods. </em></p><p>Explain how a galvanometer is used in <em>null methods</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Galvanometers are used in null methods by:</p><ul><li><p>The galvanometer has no deflection;<em> [1 mark]</em></p></li><li><p>When there is no current flow / no potential difference; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A battery is connected in series with resistors P and Q, as shown in Fig 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/10-2-1a-m-potential-divider-circuit-1.png' alt='10-2-1a-m-potential-divider-circuit-1' /></div><p>The resistance of P is 7.5 Ω. The resistance of Q is constant. A variable resistor of resistance <em>R</em> is connected in parallel with Q.</p><p>The current <em>I</em> from the battery is changed by varying <em>R</em> from 5 Ω to 20 Ω. The variation with <em>R</em> of <em>I</em> is shown in Fig 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/10-2-1a-m-variation-of-r-with-i.png' alt='10-2-1a-m-variation-of-r-with-i' /></div><p>Use Fig 1.2 to state and explain the variation of the p.d. across resistor P as <em>R</em> is <strong>decreased</strong>. Numerical values are not required.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Use Fig 1.2 to state and explain the variation of the p.d. across resistor P as <em>R</em> is <strong>decreased</strong></p><p><strong>EITHER</strong></p><ul><li><p>(As <em>R</em> decreases,) the current <em>I </em>increases; <em>[1 mark]</em></p></li><li><p>So the p.d. (across P) increases; <em>[1 mark]</em></p></li></ul><p><strong>OR</strong></p><ul><li><p>The parallel resistance of (of Q and <em>R</em>) decreases; <em>[1 mark]</em></p></li><li><p>The p.d. across the parallel resistors decreases, so p.d. across P increases; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For <em>R</em> = 7.0 Ω, calculate the p.d. between points Y and Z.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>For <em>R</em> = 7.0 Ω, calculate the p.d. between points Y and Z</p><p>List the known quantities:</p><ul><li><p>Resistance of variable resistor, <em>R</em> = 7.0 Ω</p></li><li><p>Resistance of resistor P, <em>R</em><sub>P</sub> = 7.5 Ω</p></li><li><p>E.m.f of the power supply, <em>V</em> = 32 V</p></li></ul><p>Use the graph to determine the current <em>I</em> when <em>R</em> = 7.0 Ω:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/img-7305c24fc61f-1.jpeg' alt='img-7305c24fc61f-1' /></div><ul><li><p><em>I</em> = 2.3 A <em>[1 mark]</em></p></li></ul><p><strong>Method 1: Calculating p.d from current </strong><em><strong>I</strong></em></p><p>Calculate the p.d. across YZ:</p><ul><li><p>P.d across YZ = p.d across XZ – p.d. across XY</p></li><li><p>P.d across YZ = 32 – (2.3 × 7.5) = 14.75 = 15 V <em>[1 mark]</em></p></li></ul><p><strong>Method 2: Calculate p.d. from resistance</strong></p><p>Determine the total resistance in the circuit, <em>R</em><sub>T</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>V</mi></mrow><mi>I</mi></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mn>32</mn><mrow><mn>2</mn><mo>.</mo><mn>3</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>13</mn><mo>.</mo><mn>91</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Calculate the p.d. across YZ:</p><ul><li><p>Resistance in Q-R parallel combination, <em>R</em><sub>QR</sub> = 13.91 – 7.5 = 6.41 Ω</p></li><li><p>P.d across YZ = <em>I </em>×<em> R</em><sub>QR</sub><em> = </em>2.3 × 6.41 = 14.74 = 15 V <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Show that the resistance of Q is 95 Ω.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Show that the resistance of Q is 95 Ω</p><p>List the known quantities:</p><ul><li><p>Resistance of variable resistor, <em>R</em> = 7.0 Ω</p></li><li><p>P.d. across YZ = 15 V (from part b)</p></li><li><p>Current, <em>I</em> = 2.3 A (from part b)</p></li></ul><p>Calculate the total resistance of Q and R parallel combination, <em>R</em><sub>T</sub> :</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo>=</mo><mfrac><mi>V</mi><mi>I</mi></mfrac><mo>=</mo><mfrac><mn>15</mn><mrow><mn>2</mn><mo>.</mo><mn>3</mn></mrow></mfrac><mo>=</mo><mn>6</mn><mo>.</mo><mn>52</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the resistance of resistor Q, <em>R</em><sub>Q</sub> :</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><msub><mi>R</mi><mi>T</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mi>Q</mi></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>R</mi></mfrac></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>Q</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msub><mi>R</mi><mi>T</mi></msub></mfrac></mstyle><mo>-</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>R</mi></mfrac></mstyle></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>6</mn><mo>.</mo><mn>52</mn></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><mn>7</mn><mo>.</mo><mn>0</mn></mrow></mfrac></mstyle></mfrac><mo>=</mo><mn>95</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em>[Total: 3 marks]</em></p><p><em>This question can also be done by calculating the current through Q, and then using </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo>=</mo><mfrac><mi>V</mi><mi>I</mi></mfrac></math></span><em> to calculate the resistance through resistor Q.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State and explain qualitatively how the power provided by the battery changes as the resistance <em>R</em> is decreased.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>State and explain qualitatively how the power provided by the battery changes as the resistance <em>R</em> is decreased</p><ul><li><p>The power increases</p><p><strong>AND </strong></p></li><li><p>Because the e.m.f is constant / power = <em>V </em>×<em> </em>current and the current (<em>I</em>) increases <strong>OR </strong>power = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msup><mi>V</mi><mn>2</mn></msup><mrow><mi>r</mi><mi>e</mi><mi>s</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and the resistance decreases;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig 1.1 shows a potential divider circuit with a battery of electromotive force (e.m.f.) 24.0 V connected to two resistors R<sub>1</sub> and R<sub>2</sub>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/10-2-2a-m-potential-divider-circuit-2.png' alt='10-2-2a-m-potential-divider-circuit-2' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>When the resistance of R<sub>1</sub> is 6.5 Ω, the voltage across it is 7.0 V.</p><p>Show that the resistance of R<sub>2</sub> is 16 Ω.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Show that the resistance of R<sub>2</sub> is 16 Ω</p><p>List the known quantities:</p><ul><li><p>Resistance, <em>R</em><sub>1</sub> = 6.5 Ω</p></li><li><p>Voltage across R<sub>1</sub>, <em>V</em><sub>out</sub> = 7.0 V</p></li><li><p>E.m.f of the power supply, <em>V</em><sub>in</sub> = 24.0 V</p></li></ul><p>State the correct potential divider equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>&#xD7;</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></math></span> <em>[1 mark]</em></p></li></ul><p>Rearrange the potential divider equation for R<sub>2</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>R</mi><mn>2</mn></msub><mo>=</mo><mfenced><mfrac><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>&#xD7;</mo><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub></mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub></mfrac></mfenced><mo>-</mo><msub><mi>R</mi><mn>1</mn></msub></math></span></p></li></ul><p>Substitute the values into the R<sub>2 </sub>equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>R</mi><mn>2</mn></msub><mo>=</mo><mfenced><mfrac><mrow><mn>6</mn><mo>.</mo><mn>5</mn><mo>&#xD7;</mo><mn>24</mn><mo>.</mo><mn>0</mn></mrow><mrow><mn>7</mn><mo>.</mo><mn>0</mn></mrow></mfrac></mfenced><mo>-</mo><mn>6</mn><mo>.</mo><mn>5</mn></math></span> = 15.786 = 16 Ω <em>[1 mark]</em></p></li></ul><p><em>[Total: 2 marks]</em></p><p><em>You must be confident with rearranging the potential divider equation. If you are struggling with this one, have a look at the sketch below:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/img-b4af4204e3b1-1.jpeg' alt='img-b4af4204e3b1-1' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>The resistors are replaced with identical filament lamps A and B and the battery is connected in parallel to a linear potentiometer XY, as shown in Fig 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/iNio3slw_10-2-2b-m-potential-divider-circuit-3.png' alt='iNio3slw_10-2-2b-m-potential-divider-circuit-3' /></div><p style='text-align: center;'><strong>Fig 1.2</strong></p><p>The lamps each have the same<em> I–V </em>characteristic shown in Fig. 1.3.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/10-2-2b-i-v-characteristic.png' alt='10-2-2b-i-v-characteristic' /></div><p style='text-align: center;'><strong>Fig 1.3</strong></p><p>When the slider of the potentiometer is at its midpoint, as shown in Fig. 1.2, the current <em>I</em> in the battery is 4.12 A.</p><p>Determine the current in lamp B.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The current in lamp B is:</p><p>List the known quantities:</p><ul><li><p>Current in the battery, <em>I</em> = 4.12 A</p></li><li><p>E.m.f of the battery = 24.0 V</p></li></ul><p>Determine the potential difference through lamp B:</p><ul><li><p>Since the slider is exactly in the middle, both lamps have a potential difference of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>24</mn><mo>.</mo><mn>0</mn></mrow><mn>2</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>12</mn><mo>&#160;</mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Determine the current through lamp B at 12 V from the graph:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/img-275040611c63-1.jpeg' alt='img-275040611c63-1' /></div><ul><li><p>3.10 A <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the total resistance in the circuit.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the total resistance in the circuit</p><p>List the known quantities:</p><ul><li><p>Current through lamp B, <em>I</em><sub>B</sub> = 3.10 A</p></li><li><p>Current in the battery, <em>I</em> = 4.12 A</p></li><li><p>E.m.f of the battery, <em>V</em> = 24.0 V</p></li></ul><p>Calculate the resistance of the potentiometer between its ends X and Y, <em>R</em><sub>XY</sub><em>:</em></p><ul><li><p>Current through XY, <em>I</em><sub>XY</sub> = <em>I – I</em><sub>B</sub> = 4.12 – 3.10 = 1.02 A</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>XY</mi></msub><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>V</mi></mrow><msub><mi>I</mi><mi>XY</mi></msub></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mn>24</mn><mo>.</mo><mn>0</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>02</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>23</mn><mo>.</mo><mn>529</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the resistance of each lamp, <em>R</em><sub>L</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>L</mi></msub><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>V</mi></mrow><mi>I</mi></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mn>12</mn></mrow><mrow><mn>3</mn><mo>.</mo><mn>10</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>87</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the combined resistance, <em>R</em><sub>T</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>s</mi><mi>e</mi><mi>r</mi><mi>i</mi><mi>e</mi><mi>s</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>R</mi><mi>L</mi></msub><mo>&#160;</mo><mfenced><mrow><mi>l</mi><mi>a</mi><mi>m</mi><mi>p</mi><mo>&#160;</mo><mi mathvariant="normal">A</mi></mrow></mfenced><mo>+</mo><mo>&#8201;</mo><msub><mi>R</mi><mi>L</mi></msub><mo>&#160;</mo><mfenced><mrow><mi>l</mi><mi>a</mi><mi>m</mi><mi>p</mi><mo>&#160;</mo><mi mathvariant="normal">B</mi></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>87</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>87</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>.</mo><mn>74</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mi>T</mi></msub></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mn>1</mn></mrow><msub><mi>R</mi><mrow><mi>s</mi><mi>e</mi><mi>r</mi><mi>i</mi><mi>e</mi><mi>s</mi></mrow></msub></mfrac><mo>+</mo><mo>&#8201;</mo><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mi>X</mi><mi>Y</mi></mrow></msub></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>.</mo><mn>74</mn></mrow></mfrac><mo>&#160;</mo><mo>+</mo><mo>&#8201;</mo><mfrac><mn>1</mn><mrow><mn>23</mn><mo>.</mo><mn>529</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>1</mn><mo>&#160;</mo></mrow><msub><mi>R</mi><mi mathvariant="normal">T</mi></msub></mfrac><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>1712</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi mathvariant="normal">T</mi></msub><mo>=</mo><mn>5</mn><mo>.</mo><mn>824</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>82</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Read carefully which current the question is referring to. Since the potentiometer is connected in </em><em><strong>parallel</strong></em><em> with the lamps, the current from the </em><em><strong>battery</strong></em><em> will </em><em><strong>split</strong></em><em> between them (Kirchhoff&#x27;s first law). Lamp A and B will have the same current through them.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The slider of the potentiometer in (c) is moved to end X. State and explain the effect on the current of lamps A and B.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>State and explain the effect on the current of lamps A and B when the slider of the potentiometer is moved to end X</p><p>For lamp A:</p><ul><li><p>The p.d. across lamp A decreases to zero <strong>AND</strong> so the current is 0 <em>[1 mark]</em></p></li></ul><p>For lamp B:</p><ul><li><p>p.d. across lamp B increases to 24.0 V <strong>AND </strong>so the current is 4.0 A <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>It is important you understand how the sliding contact works for a potentiometer. When it is at point X, </em><em><strong>all</strong></em><em> the p.d. from the power supply is available only to lamp B, so there is 0 for lamp A. </em></p><p><em>Where you </em><em><strong>can</strong></em><em> give values for a &#x27;state and explain&#x27; question, make sure you do! In this case, just saying &#x27;the p.d. across lamp B increases and so a current flows&#x27; will </em><em><strong>not</strong></em><em> be enough detail to obtain the marks, as you can state specific values.</em></p><p><em>The 4.0 A is read from the I-V graph when lamp B has a voltage of 24 V.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A battery of negligible internal resistance is connected to a light-dependent resistor, a switch X and two fixed resistors, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/10-2-3a-m-potential-divider-circuit-ldr.png' alt='10-2-3a-m-potential-divider-circuit-ldr' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>Resistor R<sub>1</sub> has resistance 8.0 kΩ and resistor R<sub>2</sub> has resistance 12.0 kΩ. When switch X is open, the potential difference across R<sub>2</sub> is 18 V. </p><p>Show that the e.m.f of the battery is 30 V.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Show that the e.m.f of the battery is 30 V</p><p>List the known quantities:</p><ul><li><p>Potential difference across R<sub>2</sub>, <em>V</em><sub>out</sub> = 18 V</p></li><li><p>Resistance of R<sub>1, </sub><em>R</em><sub>1</sub> = 8.0 kΩ</p></li><li><p>Resistance of R<sub>2</sub>, <em>R</em><sub>2</sub> = 12.0 kΩ</p></li></ul><p>State the potential divider equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>&#xD7;</mo><mfenced><mfrac><msub><mi>R</mi><mn>2</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></math></span> <em>[1 mark]</em></p></li></ul><p>Rearrange for the e.m.f of the battery, <em>V</em><sub>in</sub> and substitute in the values:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mfenced><mfrac><msub><mi>R</mi><mn>2</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mfrac><mo>=</mo><mfrac><mrow><mn>18</mn><mo>.</mo><mn>0</mn></mrow><mfenced><mfrac><mrow><mn>12</mn><mo>.</mo><mn>0</mn></mrow><mrow><mn>8</mn><mo>.</mo><mn>0</mn><mo>+</mo><mn>12</mn><mo>.</mo><mn>0</mn></mrow></mfrac></mfenced></mfrac></math></span> = 30 V <em>[1 mark]</em></p></li></ul><p><em>[Total: 2 marks]</em></p><p><em>You do not need to convert from kΩ into Ω, since the fraction </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><msub><mi>R</mi><mn>2</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></math></span><em> will have no units (they cancel out) as long as they&#x27;re all in kΩ.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Switch X is now closed. The current in the battery is 1.94 mA. </p><p>Calculate the resistance of the LDR.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the resistance of the LDR.</p><p>List the known quantities:</p><ul><li><p>Resistance of R<sub>1</sub>, <em>R</em><sub>1</sub> = 8.0 kΩ</p></li><li><p>Resistance of R<sub>2</sub>, <em>R</em><sub>2</sub> = 12.0 kΩ</p></li><li><p>Current in the battery, <em>I</em> = 1.94 mA = 1.94 × 10<sup>–3</sup> A</p></li><li><p>E.m.f of the battery, <em>V</em> = 30 V (from part a)</p></li></ul><p>Calculate the total resistance in the circuit, R<sub>T</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi mathvariant="normal">T</mi></msub><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>V</mi></mrow><mi>I</mi></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mn>30</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>94</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>15</mn><mo>.</mo><mn>46</mn><mo>&#160;</mo><mi>k&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the resistance of the LDR, <em>R</em><sub>LDR</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>.</mo><mo>&#160;</mo><mn>46</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>R</mi><mi>parallel</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#8201;</mo><mn>8</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><msub><mi>R</mi><mrow><mi>p</mi><mi>a</mi><mi>r</mi><mi>a</mi><mi>l</mi><mi>l</mi><mi>e</mi><mi>l</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>15</mn><mo>.</mo><mn>46</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>8</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>.</mo><mn>46</mn><mo>&#160;</mo><mi>k&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mi>p</mi><mi>a</mi><mi>r</mi><mi>a</mi><mi>l</mi><mi>l</mi><mi>e</mi><mi>l</mi></mrow></msub></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mn>1</mn></mrow><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>&#160;</mo><mo>+</mo><mfrac><mrow><mo>&#160;</mo><mn>1</mn></mrow><msub><mi>R</mi><mrow><mi>L</mi><mi>D</mi><mi>R</mi></mrow></msub></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfrac><mn>1</mn><mrow><mn>7</mn><mo>.</mo><mn>46</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mn>1</mn></mrow><mrow><mn>12</mn><mo>.</mo><mn>0</mn></mrow></mfrac><mo>&#160;</mo><mo>+</mo><mfrac><mrow><mo>&#160;</mo><mn>1</mn></mrow><msub><mi>R</mi><mrow><mi>L</mi><mi>D</mi><mi>R</mi></mrow></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>LDR</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mo>&#160;</mo><mn>1</mn></mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>7</mn><mo>.</mo><mn>46</mn></mrow></mfrac></mstyle><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mstyle displaystyle="true"><mfrac><mrow><mo>&#160;</mo><mn>1</mn></mrow><mrow><mn>12</mn><mo>.</mo><mn>0</mn></mrow></mfrac></mstyle></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>LDR</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>19</mn><mo>.</mo><mn>7</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>20</mn><mo>&#160;</mo><mi>k&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>You should be confident in combining resistors in parallel and in series. It is better to set out the values algebraically before substituting in values.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The switch X in the circuit in (a) remains closed. The light intensity on the LDR increases. </p><p>By reference to the current in the battery, state and explain the effect, if any, of the increase in light intensity on the power produced by the battery.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>State and explain the effect, if any, of the increase in light intensity on the power produced by the battery</p><ul><li><p>The LDR resistance decreases; <em>[1 mark]</em></p></li><li><p>(So the total resistance decreases) so the current increases (in the battery); <em>[1 mark]</em></p></li><li><p>Therefore, (since <em>P</em> = <em>IV</em> and <em>V</em> is constant) so the power increases; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The light intensity on the LDR decreases. </p><p>State and explain what happens to the potential difference across R<sub>1</sub>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>If the light intensity on the LDR decreases:</p><ul><li><p>The resistance of the LDR increases; <em>[1 mark]</em></p></li><li><p>The combined resistance of the 12.0 kΩ / R<sub>2</sub> and the LDR increases; <em>[1 mark]</em></p></li><li><p>Therefore, the potential difference across R<sub>1</sub> decreases / R<sub>1 </sub>receives a smaller share of the potential difference; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The key to understanding potential divider questions is - if the resistance increases then so does the share of the potential difference (of the power supply) to that component. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State Kirchhoff’s second law.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Kirchhoff&#x27;s second law states:</p><ul><li><p>The sum of the electromotive force(s) is equal to the sum of the potential difference(s) around a (closed) loop <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A battery with negligible internal resistance is connected in series with two resistors of resistances <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, as shown in Fig. 7.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/35019-cie-paper-2-q7-potential-divider-circuit.png' alt='Circuit diagram with two resistors, R1 and R2, in series and a battery connected. Current I flows clockwise through the circuit.' /></div><p style='text-align: center;'><strong>Fig. 7.1</strong></p><p>The potential differences (p.d.s) across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> are <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>, respectively.</p><p>The p.d. across the combination of resistors is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p><p>The current in the circuit is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span>.</p><p>Use Kirchhoff’s laws to show that the total resistance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>T</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the combination is given by</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>R</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To derive an expression for the total resistance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>T</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the combination:</p><ul><li><p>Use Kirchhoff&#x27;s second law to write an expression for the total p.d. across the combination</p></li><li><p>The total p.d. across the resistors = the sum of the p.d.s across each resistor</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>V</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li></ul><ul><li><p>Use Ohm&#x27;s law to determine an expression for the resistances</p><ul><li><p>Ohm&#x27;s law: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li></ul><p>Since, the current is the same in a series combination of resistors</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><msub><mi>R</mi><mi>T</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><msub><mi>R</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>I</mi><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>R</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul><p><strong>OR</strong></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>V</mi><mi>I</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>V</mi><mn>1</mn></msub><mi>I</mi></mfrac><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfrac><msub><mi>V</mi><mn>2</mn></msub><mi>I</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>T</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>R</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> in Fig. 7.1 is replaced by a light-dependent resistor (LDR). The battery has an electromotive force (e.m.f.) of 12.0 V. The resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> has a fixed resistance of 2.40 kΩ.</p><p>A voltmeter is connected across the fixed resistor, as shown in Fig. 7.2. The reading on the voltmeter is 9.00 V.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/12/21590-cie-paper-2-q7-circuit-with-ldr.png' alt='Circuit with a 12-volt battery, a 2.4 kiloohm resistor, and a light-dependent resistor labelled RL, connected in series. A voltmeter is connected in parallel with the fixed resistor.' /></div><p style='text-align: center;'><strong>Fig. 7.2</strong></p><p>(i) Calculate the current in the circuit.</p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the resistance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>L</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the LDR.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>e.m.f. of the battery, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 12.0 V</p></li><li><p>p.d. across the fixed resistor, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 9.00 V</p></li><li><p>Resistance of the fixed resistor, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 2.40 kΩ = 2400 Ω</p></li><li><p>Resistance of the LDR, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>R</mi><mi>L</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul><p>(i) To calculate the current in the circuit:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>R</mi><mn>1</mn></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>9</mn><mo>.</mo><mn>00</mn></mrow><mn>2400</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>.</mo><mn>75</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p><p>(ii) To calculate the resistance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>L</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> of the LDR:</p><ul><li><p>Recall the potential divider equation:</p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced><mi>E</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p><ul><li><p>Substitute the known quantities into the equation to calculate <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>L</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>9</mn><mo>.</mo><mn>0</mn></mrow><mrow><mn>12</mn><mo>.</mo><mn>0</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>2400</mn><mrow><mn>2400</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>R</mi><mi>L</mi></msub></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>L</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>2400</mn><mo>&#215;</mo><mn>12</mn><mo>.</mo><mn>0</mn></mrow><mrow><mn>9</mn><mo>.</mo><mn>0</mn></mrow></mfrac><mo>-</mo><mn>2400</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>L</mi></msub><mo>&#160;</mo><mo>=</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>800</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The intensity of the light illuminating the LDR decreases.</p><p>By reference to the current in the circuit, state and explain the change, if any, to the voltmeter reading.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>As the light intensity decreases, the voltmeter reading:</p><ul><li><p>Decreases <em>[1 mark]</em></p></li></ul><p>Explanation:</p><ul><li><p>The resistance of the LDR / <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>L</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> increases <em>[1 mark]</em></p></li><li><p>The current (in the circuit) decreases (so the p.d. across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> decreases) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A circuit is set up as shown in Fig. 1.1 below: </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q3a-hard-aqa-a-level-physics.png' alt='5-3-s-q--q3a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The cells in Fig. 1.1 have negligible internal resistance. The cell at the top has an e.m.f. of 5 V and the cell at the bottom has an e.m.f. of 6 V.</p><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is a variable resistor with a resistance that varies between 0 and 10 Ω, and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  are fixed resistors with a resistance of 10 Ω and 30 Ω respectively. </p><p>Initially, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  is set such that its resistance is 0 Ω. </p><p>By labelling the direction of current on Fig. 1.1, write down the relationship between three currents <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> , <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  at the junction between <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> .</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Label the direction of currents on Fig. 1.1:</p><ul><li><p>Labels on Fig. 1.1 which would score full marks are shown below:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q3a--ma-hard-aqa-a-level-physics.png' alt='5-3-s-q--q3a--ma-hard-aqa-a-level-physics' /></div><ul><li><p>Arrows indicating correct directions for currents <u>in both loops</u> shown; <em>[1 mark]</em></p></li><li><p>Three distinct currents labelled at the junction between <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> as shown (any subscript is acceptable as long as distinct); <em>[1 mark]</em> </p></li></ul><p>Write down the relationship between the currents at the junction between <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  :</p><ul><li><p>Using Kirchhoff’s first law, the sum of currents into a junction must equal the sum of currents out of the junction</p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  + <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  (or any equation consistent with correct labelling on Fig. 1.1); <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>When you see &#x27;junction&#x27;, this should be a hint to apply Kirchhoff&#x27;s first law. No calculation is needed at this stage, the question only asks for an expression and a labelled diagram.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the current through the resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> .</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 0 Ω</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 10 Ω</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 30 Ω </p></li></ul><p>Apply Kirchhoff&#x27;s second law to the top loop:</p><ul><li><p>Kirchhoff&#x27;s second law states that, in a closed loop, the total e.m.f. is equal to the sum of potential differences</p><ul><li><p>In the top loop, e.m.f. is 5 V so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#949;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>V</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>V</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> must be 0 V, as resistor 1 has no resistance so there is no change in potential across it</p><ul><li><p>Therefore <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>3</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em> </p></li></ul></li></ul><p>Apply Kirchhoff&#x27;s second law to the bottom loop:</p><ul><li><p>In the bottom loop, e.m.f. is 6 V so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#949;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>V</mi><mn>2</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>V</mi><mn>3</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is 5 V so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>V</mi><mn>2</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>5</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li></ul><p>Calculate the current through resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>Using Ohm’s law across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  : <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>2</mn></msub><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, 1 = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 10</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  = 0.10 A <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em> </p><p><em>Equally, you could have applied the second law to the bottom loop then the top loop, or a loop around the whole circuit. All should produce the same potential differences across each resistor. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State and explain what happens to the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  as the resistance of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  is gradually increased from zero.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>State what happens to the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> :</p><ul><li><p>The potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <u>increases</u> (as the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  increases); <em>[1 mark]</em> </p></li></ul><p>To explain, describe how the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  changes: </p><ul><li><p>As the resistance of  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> increases, the potential difference (<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) across it increases; <em>[1 mark]</em> </p></li></ul><p>Describe how the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  affects the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> :</p><ul><li><p>(Because of Kirchhoff’s second law) the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 5 V – potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><strong>AND</strong></p></li><li><p>Therefore, as the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> increases, the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <u>decreases</u>; <em>[1 mark]</em> </p></li></ul><p>Describe how the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> affects the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> :</p><ul><li><p>(Because of Kirchhoff’s second law) the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 6 V – potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><strong>AND</strong></p></li><li><p>Therefore as the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> decreases, the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> increases<u>;</u><em> [1 mark]</em> </p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>This is a potential divider question in an unfamiliar context when you just consider the top loop. As </em><em><em>R</em></em><em><sub><em>1</em></sub></em><em><em> </em></em><em> increases in resistance, the potential difference across it increases. There is only a total e.m.f. of 5 V in this top loop, so less is available to be &#x27;spent&#x27; on </em><em><em>R</em></em><em><sub><em>3</em></sub></em><em>. </em></p><p><em>Then, this becomes a potential divider question for the lower loop. If </em><em><em>R</em></em><em><sub><em>3</em></sub></em><em>  has a greater potential difference, there is less available for </em><em><em>R</em></em><em><sub><em>2</em></sub></em><em>  following the conservation of energy.</em></p><p><em>The thought process for this question is simple, however this mark scheme is large because you needs to </em><em><strong>explain</strong></em><em> every step:</em></p><ul><li><p><em>If p.d. across </em><em><em>R</em></em><em><sub><em>1</em></sub></em><em> increases then p.d. across </em><em><em>R</em></em><em><sub><em>3</em></sub></em><em> decreases</em></p></li><li><p><em>This is because the potential difference in the loop remains constant from </em><em><em>V = IR </em></em></p></li><li><p><em>So, p.d. across </em><em><em>R</em></em><em><sub><em>2</em></sub></em><em> will also increase by the same logic</em></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the current flowing through each resistor when <em>R</em><sub>1</sub> is set to a resistance of 10 Ω.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 10 Ω</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 10 Ω</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 30 Ω</p></li><li><p>EMF<sub>1</sub>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&#949;</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 5 V</p></li><li><p>EMF<sub>2</sub>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&#949;</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 6 V </p></li></ul><p>Apply Kirchhoff’s second law to the loop containing EMF<sub>1</sub>:</p><ul><li><p>Kirchhoff’s second law says the total EMF in a closed circuit (loop) equals the sum of potential differences across each component</p></li><li><p>Therefore, <em>ϵ</em><sub>1</sub> = <em>V</em><sub>1</sub> + <em>V</em><sub>3 </sub>(where <em>V</em><sub>1</sub> and <em>V</em><sub>3</sub> are the voltages across <em>R</em><sub>1</sub> and <em>R</em><sub>3</sub> respectively)</p></li><li><p>Using Ohm’s Law, <em>ϵ</em><sub>1</sub> = <em>I</em><sub>1</sub><em>R</em><sub>1</sub> + <em>I</em><sub>3</sub><em>R</em><sub>3</sub></p></li><li><p>Therefore 5 = 10<em>I</em><sub>1</sub> + 30<em>I</em><sub>3</sub> (equation 1) <em>[1 mark]</em> </p></li></ul><p>Apply Kirchhoff’s second law to the loop containing EMF<sub>2</sub>:</p><ul><li><p><em>ϵ</em><sub>2</sub> = <em>V</em><sub>2</sub> + <em>V</em><sub>3 </sub>(where <em>V</em><sub>2</sub> and <em>V</em><sub>3</sub> are the voltages across <em>R</em><sub>2</sub> and <em>R</em><sub>3</sub> respectively)</p></li><li><p>Again, using Ohm’s Law, <em>ϵ</em><sub>2</sub> = <em>I</em><sub>2</sub><em>R</em><sub>2</sub> + <em>I</em><sub>3</sub><em>R</em><sub>3</sub></p></li><li><p>Therefore 6 = 10<em>I</em><sub>2</sub> + 30<em>I</em><sub>3</sub> (equation 2) <em>[1 mark]</em> </p></li></ul><p>Substitute the expression from part (a) into equation 1 and equation 2:</p><ul><li><p>Since there are three unknowns, there needs to be three independent equations to solve simultaneously</p></li><li><p>Therefore, from part (a), <em>I</em><sub>1</sub> + <em>I</em><sub>2</sub> = <em>I</em><sub>3</sub> can be substituted for <em>I</em><sub>3</sub> in equation 2 and equation 1</p></li><li><p>Equation 2 becomes: 6 = 10<em>I</em><sub>2</sub> + 30(<em>I</em><sub>1 </sub>+ <em>I</em><sub>2</sub>) = 10<em>I</em><sub>2 </sub>+ 30<em>I</em><sub>1</sub> + 30<em>I</em><sub>2</sub></p></li><li><p>Simplifying, 6 = 40<em>I</em><sub>2 </sub>+ 30<em>I</em><sub>1</sub> (equation 3)</p><p><strong>AND</strong></p></li><li><p>Equation 1 becomes: 5 = 10<em>I</em><sub>1</sub> + 30(<em>I</em><sub>1 </sub>+ <em>I</em><sub>2</sub>) = 10<em>I</em><sub>1 </sub>+ 30<em>I</em><sub>1</sub> + 30<em>I</em><sub>2</sub></p></li></ul><ul><li><p>Simplifying, 5 = 30<em>I</em><sub>2 </sub>+ 40<em>I</em><sub>1</sub> (equation 4) <em>[1 mark]</em> </p></li></ul><p>Solve equation 3 and equation 4 simultaneously:</p><ul><li><p>(Equation 3) × 3 gives: 18 = 120<em>I</em><sub>2 </sub>+ 90<em>I</em><sub>1</sub> (equation 5)</p></li><li><p>(Equation 4) × 4 gives: 20 = 120<em>I</em><sub>2 </sub>+ 160<em>I</em><sub>1</sub> (equation 6)</p></li><li><p>(Equation 6) – (Equation 5) gives: (20 –18) = (120<em>I</em><sub>2</sub> – 120<em>I</em><sub>2</sub>) + (160<em>I</em><sub>1</sub> – 90<em>I</em><sub>1</sub>)</p></li><li><p>Therefore 2 = 70<em>I</em><sub>1</sub></p></li><li><p><em>I</em><sub>1</sub>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>2</mn><mn>70</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.029 A (2 s.f.) <em>[1 mark]</em> </p></li></ul><p>Substitute the value for <em>I</em><sub>1</sub> into any equation to calculate <em>I</em><sub>2</sub>:</p><ul><li><p>Any equation can be used to calculate <em>I</em><sub>2</sub> using the value for <em>I</em><sub>1</sub></p></li><li><p>Substituting <em>I</em><sub>1</sub> = 0.029 into equation 4 gives: 5 = 30<em>I</em><sub>2</sub> + 40(0.029)</p></li><li><p>5 = 30<em>I</em><sub>2</sub> + 1.16</p></li><li><p><em>I</em><sub>2</sub> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>5</mn><mo>-</mo><mn>1</mn><mo>.</mo><mn>16</mn></mrow><mn>30</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.13 A (2 s.f.) <em>[1 mark]</em> </p></li></ul><p>Calculate <em>I</em><sub>3</sub> using values for <em>I</em><sub>1</sub> and <em>I</em><sub>2</sub>:</p><ul><li><p>Using the equation from part (a): <em>I</em><sub>1</sub> + <em>I</em><sub>2</sub> = <em>I</em><sub>3</sub></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.13 + 0.029 = 0.16 A (2 s.f.) <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 6 marks]</strong></em> </p><p><em>This question is certainly very challenging; while circuits on the A Level paper are unlikely to require this level of analysis, there is nothing here outside the scope of your physics syllabus – notice, it only requires a very careful application of Kirchhoff’s laws and Ohm’s law. The image below shows how to apply Kirchhoff’s second law to closed loops in a circuit: </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q3d-ma-fig-1-hard-aqa-a-level-physics.png' alt='5-3-s-q--q3d-ma-fig-1-hard-aqa-a-level-physics' /></div><p><em>Notice that the loops ‘go in the direction’ of conventional current in the loop, and also that EMFs (power supplies) are distinct to the potential differences across components (sometimes called voltage drops, because energy from the current is transferred away from it to the component itself).</em></p><p><em>Another key takeaway from this question, which is a very useful problem-solving tool to bear in mind generally, is that there are three unknowns – i.e., the currents </em><em><em>I</em></em><em><sub>1</sub></em><em>, </em><em><em>I</em></em><em><sub>2</sub></em><em> and </em><em><em>I</em></em><em><sub>3</sub></em><em>. The number of unknown variables in any system tells you how many ‘independent’ (unique) equations you need to set up, in which every unknown appears at least once. So, in this question, we needed to set up </em><em><strong>three</strong></em><em> independent equations; after we did this, it was just a case of some mathematical juggling to solve for each unknown. The image below recaps the three unknowns and the three independent equations we set up:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q3d-ma-fig-2-hard-aqa-a-level-physics.png' alt='5-3-s-q--q3d-ma-fig-2-hard-aqa-a-level-physics' /></div><p><em>There are of course multiple equivalent ways to solve simultaneous equations (depending on which variable you choose to eliminate first, and which equation to substitute into, etc.) but you should in principle be comfortable with solving simultaneous equations (two for two unknowns and three for three unknowns!). Have a look at the Save My Exam GCSE and / or A-level maths notes to refresh your knowledge on these if you are stuck!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a potentiometer in action. The wire in the potentiometer is represented by a fixed resistor of resistance 10 Ω and the sliding contact C can move from one end of the wire (at position P) to the other end of the wire (position Q). This allows the output potential difference (p.d.) to be varied. The potentiometer is in series with another fixed resistor of 5 Ω. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q4a-hard-aqa-a-level-physics.png' alt='5-3-s-q--q4a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>This circuit is powered by a 9 V power supply and is used to supply a variable potential difference to another circuit. </p><p>Sketch a graph on the axes provided in Fig. 1.2 to show how the supplied potential difference <em>V</em> varies as the moving contact C is moved from position P to position Q.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q4a-fig-1-hard-aqa-a-level-physics.png' alt='5-3-s-q--q4a-fig-1-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Sketch a graph on the axes provided in Fig. 1.2 to show how the supplied potential difference <em>V</em> varies as the moving contact C is moved from position P to position Q.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <ul><li><p>A graph which would score 2 marks should look like:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q4a-ma-hard-aqa-a-level-physics.png' alt='5-3-s-q--q4a-ma-hard-aqa-a-level-physics' /></div><ul><li><p>Straight line with a positive gradient; <em>[1 mark]</em></p></li><li><p>At P, <em>V</em> = 0 V <strong>AND</strong> at Q, <em>V</em> = 6 V <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>This circuit is a potential divider, because there are two resistors in series sharing the same EMF. As the slider moves, the potential is ‘divided’ between them. </em></p><p><em>By inspection, the resistances are in the ratio 1:2, so the potential is also split in the ratio 1:2 (with the bigger share of voltage across the larger resistance). Hence, the 9 V EMF is divided as 3 V and 6 V. This can be seen more explicitly using the potential divider equation, shown below:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q4a-ma-fig-1-hard-aqa-a-level-physics.png' alt='5-3-s-q--q4a-ma-fig-1-hard-aqa-a-level-physics' /></div><p><em>Note that if the sliding contact C in Fig. 1.1 is at position P, then there is no potential difference across the variable pd (the voltage supplied is 0 V). The output pd (in parallel with the resistor) increases as more of the resistor is included between one end (position P) and the sliding C. This is illustrated below:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q4a-fig-2-hard-aqa-a-level-physics.png' alt='5-3-s-q--q4a-fig-2-hard-aqa-a-level-physics' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q4a-ma-fig-3-hard-aqa-a-level-physics.png' alt='5-3-s-q--q4a-ma-fig-3-hard-aqa-a-level-physics' /></div><p><em>Therefore, the potentiometer can provide a variable potential difference output between 0 V and 6 V.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Potential divider circuits generally comprise of two or more resistors in series with each other. </p><p>Some potential divider circuits have multiple branches connected in parallel, such as that shown in Fig. 1.3: </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q4b-hard-aqa-a-level-physics.png' alt='5-3-s-q--q4b-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>Show that the potential difference between X and Y, <em>V</em><sub><em>OUT</em></sub> , is 1 V.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 12 V</p></li><li><p>Resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 4 Ω</p></li><li><p>Resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2 Ω</p></li><li><p>Resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 3 Ω</p></li><li><p>Resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>4</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1 Ω </p></li></ul><p><strong>Method 1 (clockwise current)</strong></p><p>Determine the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> :</p><ul><li><p>The potential divider equation for resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (which is in a series loop with resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ) is  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>O</mi><mi>U</mi><mi>T</mi></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> =<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore  p.d. across <em>R</em><sub><em>1</em></sub><em>  </em>is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mn>1</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>4</mn><mrow><mn>4</mn><mo>+</mo><mn>2</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 12 = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>4</mn><mn>6</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 12 = 8 V <em>[1 mark]</em> </p></li></ul><p>Determine the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mn>3</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> :</p><ul><li><p>The potential divider equation for resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mn>3</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (which is in a series loop with resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mn>4</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>) is  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>O</mi><mi>U</mi><mi>T</mi></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><msub><mi>R</mi><mn>3</mn></msub><mrow><msub><mi>R</mi><mn>3</mn></msub><mo>+</mo><msub><mi>R</mi><mn>4</mn></msub></mrow></mfrac><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore p.d. across <em>R</em><sub><em>3</em></sub>  is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mn>3</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>3</mn><mrow><mn>3</mn><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 12 = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 12 = 9 V <em>[1 mark]</em> </p></li></ul><p>Determine the potential at X and Y:</p><ul><li><p>Charge transfers 8 V across resistors <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The potential at X is therefore 12 V – 8 V = 4 V</p><p><em><strong>AND</strong></em></p></li><li><p>Similarly, charge transfers 9 V of potential across resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>3</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The potential at Y is therefore 12 V – 9 V = 3 V <em>[1 mark]</em> </p></li></ul><p>Show the potential difference between X and Y is 1 V:</p><ul><li><p>The potential difference between X and Y is therefore <em>V</em><sub><em>OUT </em></sub> = 4 V – 3 V = 1 V <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><strong>Method 2 (anticlockwise current)</strong></p><p>Determine the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> :</p><ul><li><p>The potential divider equation for resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (which is in a series loop with resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ) is  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>O</mi><mi>U</mi><mi>T</mi></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><msub><mi>R</mi><mn>2</mn></msub><mrow><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><msub><mi>R</mi><mn>1</mn></msub></mrow></mfrac><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore p.d. across <em>R</em><sub><em>2</em></sub> is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mn>2</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>2</mn><mrow><mn>2</mn><mo>+</mo><mn>4</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 12 = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>2</mn><mn>6</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 12 = 4 V <em>[1 mark]</em> </p></li></ul><p>Determine the potential difference across <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mn>4</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> :</p><ul><li><p>The potential divider equation for resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mn>4</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (which is in a series loop with resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mn>3</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ) is  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>O</mi><mi>U</mi><mi>T</mi></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><msub><mi>R</mi><mn>4</mn></msub><mrow><msub><mi>R</mi><mn>4</mn></msub><mo>+</mo><msub><mi>R</mi><mn>3</mn></msub></mrow></mfrac><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore p.d. across <em>R</em><sub><em>4</em></sub>  is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mn>4</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mn>3</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 12 = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 12 = 3 V <em>[1 mark]</em> </p></li></ul><p>Determine the potential at X and Y:</p><ul><li><p>Charge transfers 4 V across resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mn>2</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The potential at X is therefore 12 V – 4 V = 8 V</p><p><em><strong>AND</strong></em></p></li><li><p>Charge transfers 3 V across resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mn>4</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The potential at X is therefore 12 V – 3 V = 9 V <em>[1 mark]</em> </p></li></ul><p>Show the potential difference between X and Y is 1 V:</p><ul><li><p>The potential difference between X and Y is therefore <em>V</em><sub><em>OUT</em></sub>  = 9 V – 8 V = 1 V <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 4 marks]</strong></em> </p><p><em><strong>Method 1</strong></em><em> assumes that the current flows in a clockwise direction through the circuit: in other words, that the terminals of the power supply are oriented as shown in the sketch below. You should work your way through the four steps, to convince yourself that the potential at point X is 4V </em><em><strong>if the current flows clockwise</strong></em><em> through the circuit.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q4b--ma-hard-aqa-a-level-physics.png' alt='5-3-s-q--q4b--ma-hard-aqa-a-level-physics' /></div><p><em>Following this reasoning, you should be able to check and see that the potential at Y is 12 V – 9 V = 3 V, so the potential </em><em><strong>difference </strong></em><em>between X and Y is 1 V. </em></p><p><em><strong>Method 2</strong></em><em> assumes the current flows in an anti-clockwise direction through the circuit; in that case, simply reverse the direction of the current in the illustration above and you should see that the potential at X is 12 V – 4 V = 8 V. Similarly, the potential at Y is 12 V – 3 V = 9 V, giving a potential difference between X and Y as 1 V again. </em></p><p><em>Clearly, either assumption is valid and will give the correct </em><em><strong>potential difference </strong></em><em>between </em><em><strong>X</strong></em><em> and </em><em><strong>Y</strong></em><em>. This question introduces you to a fact you will explore more in A Level physics: ‘potential’ as a quantity is relative (i.e., it depends on how you define directions), but potential </em><em><em>difference</em></em><em> is always absolute – so long as your working is consistent!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.4 shows another potential divider circuit which includes a thermistor with resistance <em>R</em>. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/5-3-s-q--q4d-hard-aqa-a-level-physics.png' alt='5-3-s-q--q4d-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.4</strong></p><p>The battery has an EMF of 12 V, with negligible internal resistance. At room temperature, the resistance of the thermistor is 5 kΩ.</p><p>Calculate the current in the battery at room temperature.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Resistance of the thermistor (at room temperature), <em>R</em> = 5 kΩ = 5000 Ω</p></li><li><p>Resistance between AC = 20 kΩ = 20 000 Ω</p></li><li><p>Resistance between CE = 20 kΩ = 20 000 Ω</p></li><li><p>Resistance between BD = 10 kΩ = 10 000 Ω</p></li><li><p>EMF of the battery = 12 V </p></li></ul><p>Determine the series resistances:</p><ul><li><p>Resistors in series <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>T</mi></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><msub><mi>R</mi><mn>3</mn></msub><mo>+</mo><mo>&#183;</mo><mo>&#183;</mo><mo>&#183;</mo></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>There are two resistors in series between<strong> </strong>A and E, so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>T</mi></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, the total resistance between<strong> </strong>A and E = resistance between AC + resistance between CE = 20 000 + 20 000 = 40 000 Ω</p><p><em><strong>AND</strong></em></p></li><li><p>There are two resistors in series between B and F, so <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>R</mi><mi>T</mi></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, the total resistance between B and F = resistance between BD + resistance of the thermistor (at room temperature) = 10 000 + 5000 = 15 000 Ω <em>[1 mark]</em> </p></li></ul><p>Determine the total resistance of the circuit:</p><ul><li><p>Resistors in parallel <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><msub><mi>R</mi><mi>T</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>3</mn></msub></mfrac><mo>+</mo><mo>&#183;</mo><mo>&#183;</mo><mo>&#183;</mo></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The resistance between<strong> </strong>A and E is in parallel to the resistance between B and F</p></li><li><p>Therefore <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><msub><mi>R</mi><mi>T</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>40</mn><mo>&#160;</mo><mn>000</mn></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>15</mn><mo>&#160;</mo><mn>000</mn></mrow></mfrac><mo>=</mo><mfrac><mn>11</mn><mrow><mn>120</mn><mo>&#160;</mo><mn>000</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore <em>R</em><sub>T</sub> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>120</mn><mo>&#160;</mo><mn>000</mn></mrow><mn>11</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 10 909 Ω <em>[1 mark]</em> </p></li></ul><p>Determine the current through the battery:</p><ul><li><p>Using Ohm’s law across the battery, <em>V</em> = <em>IR</em></p></li><li><p><em>V</em> is the EMF <em>ϵ </em>of the cell</p></li><li><p>Therefore 12 = <em>I</em> × 10 909</p></li><li><p><em>I</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>12</mn><mrow><mn>10</mn><mo>&#160;</mo><mn>909</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.1 × 10<sup>–3</sup> A <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

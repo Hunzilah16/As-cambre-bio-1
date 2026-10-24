@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8.2 Diffraction - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">8.2 Diffraction</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 8. Superposition</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 5 Questions (41 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State what is meant by the <em>diffraction</em> of a wave.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Diffraction is defined as:</p><ul><li><p>When a wave passes through a slit / gap / barrier / an obstruction / an edge; <em>[1 mark]</em></p></li><li><p>The wave spreads out / changes direction; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>one</strong> property of a wave that changes when it is diffracted and <strong>one</strong> that remains the same.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>A property of a wave that changes when diffracted is:</p><ul><li><p>Amplitude;<em> [1 mark]</em><em><strong> </strong></em></p></li></ul><p>A property of a wave that remains the same when diffracted is:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>Speed / velocity;<em> [1 mark]</em></p></li><li><p>Wavelength;<em> [1 mark]</em></p></li><li><p>Frequency;<em> [1 mark]</em></p></li><li><p>Phase (difference);<em> [1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use words from Table 1.1 to complete the following sentence:</p><p>................................ passing through  ................................ will produce a large diffraction effect.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-4-s-q--q3c-easy-aqa-a-level-physics.png' alt='3-4-s-q--q3c-easy-aqa-a-level-physics' /></div>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The correct sentence is as follows:</p><p><em>Any </em><em><strong>one pair</strong></em><em> from:</em></p><ul><li><p><em><strong>X–rays</strong></em><em> [1 mark] </em>passing through <em><strong>atoms</strong></em><em> [1 mark] </em>will produce a large diffraction effect.</p></li><li><p><em><strong>Radio</strong></em><em> </em><em><strong>waves</strong></em> <em>[1 mark]</em> passing through <em><strong>mountains </strong></em><em>[1 mark] </em>will produce a large diffraction effect.</p></li><li><p><em><strong>Red light</strong></em><em> [1 mark]</em> passing through <em><strong>a diffraction</strong></em><em> </em><em><strong>grating</strong></em><em> </em><em>[1 mark]</em> will produce a large diffraction effect.<em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>The largest diffraction effect when a wave passes through a gap is when the wavelength of the wave is roughly the </em><em><strong>same</strong></em><em> size as the gap itself. Therefore, it is important to revisit the order of magnitude of the wavelengths of electromagnetic waves.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a child in a hallway looking for a toy which is making a noise and emitting light.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/02/8-2-e-q1d-sq-cie-ial-physics.png' alt='8-2-e-q1d-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The child can hear the sound of the toy, but cannot see the light coming from it. </p><p>Complete the following sentences by circling the correct word:</p><p>Sound waves emitted by the toy <strong>diffract / refract</strong> around the corner because the <strong>amplitude / wavelength</strong> is<strong> </strong>similar in size to the width of the hallway.</p><p>The <strong>amplitude / wavelength</strong> of light is much<strong> larger / smaller</strong> than that of the sound waves, so light is not <strong>diffracted / refracted</strong> around the corner.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The correct sentences are as follows:</p><ul><li><p>Sound waves emitted by the toy <em><strong>diffract</strong></em> around the corner; <em>[1 mark]</em></p></li><li><p>Because the<strong> </strong><em><strong>wavelength</strong></em> is similar in size to the width of the hallway; <em>[1 mark]</em></p></li><li><p>The <em><strong>wavelength</strong></em> of light is much<strong> </strong><em><strong>smaller</strong></em> than that of the sound waves; <em>[1 mark]</em></p></li><li><p>So light is not <em><strong>diffracted</strong></em><strong> </strong>around the corner; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Diffraction is greatest when the obstacle size is similar to the wavelength </em><em><em>λ</em></em><em> of the wave. The wavelength of sound (in the range of human hearing) is roughly the same size as the hallway, so the sound waves emitted by the toy diffract greatly around the corner. Light waves have a much shorter wavelength so light does not diffract around the corner. </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/02/8-2-e-ma1d-sound-sq-cie-ial-physics.png' alt='8-2-e-ma1d-sound-sq-cie-ial-physics' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/02/8-2-e-ma1d-light-sq-cie-ial-physics.png' alt='8-2-e-ma1d-light-sq-cie-ial-physics' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Wavefronts of a water wave pass through a gap in a harbour, as shown in Fig 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-4-s-q--q5a-easy-aqa-a-level-physics.png' alt='3-4-s-q--q5a-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Complete Fig 1.1 to show four wavefronts after they have emerged from the gap.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The correct diagram is as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-4-s-q--q5a-answer-easy-aqa-a-level-physics.png' alt='3-4-s-q--q5a-answer-easy-aqa-a-level-physics' /></div><ul><li><p>At least four curved wavefronts drawn; <em>[1 mark]</em></p></li><li><p>Distance between each wavefront roughly the same as before they entered the gap; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>The distance between each wavefront should be the same after it passes through the gap since this represents the </em><em><strong>wavelength</strong></em><em> of the wave. The wavelength does </em><em><strong>not</strong></em><em> change when the wave is diffracted, so make sure to draw your sketch accurately!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>two </strong>changes to Fig. 1.1 that would decrease the amount of diffraction of the water waves.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The changes which would decrease the amount of diffraction are:</p><ul><li><p>Increasing the size of the gap; <em>[1 mark]</em></p></li><li><p>Reducing the wavelength (relative to the gap size) <strong>OR</strong> increasing the frequency of the wave;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows a water wave meeting a barrier.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/tVfXvfRn_3-1-q5d-e-diffraction-barrier-q.png' alt='tVfXvfRn_3-1-q5d-e-diffraction-barrier-q' /></div><p style='text-align: center;'><strong>Fig 1.2</strong></p><p>Complete Fig. 1.2 to show the wavefronts after they have passed the barrier.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Complete the diagram to show the wavefronts after they have passed the edge:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/screenshot-2023-02-06-at-10-51-13.png' alt='screenshot-2023-02-06-at-10-51-13' /></div><ul><li><p>Same wavelength (equal gap between wavefronts) drawn; <em>[1 mark]</em></p></li><li><p>Wavefronts curve at the end near the barrier; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.3 shows the wavefronts of a water wave moving from left to right in a harbour.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/02/8-2-e-q2d-sq-cie-ial-physics.png' alt='8-2-e-q2d-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>Complete Fig. 1.3 to show the wavefronts as they pass to the right of point A.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The correct diagram is as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/10/file-000-56.png' alt='file-000-56' /></div><ul><li><p>Same wavelength (equal gap between wavefronts) drawn; <em>[1 mark]</em></p></li><li><p>Wavefronts curve near point A; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>When sketching the continuation of a wave pattern as in part (i) of this question </em><em><strong>there will always be a mark for getting the wavelength</strong></em><em> (the distance between the lines you draw) correct.</em></p><ul><li><p><em>If the wave speed stays the same, wavelength stays the same.</em></p></li><li><p><em>If the wave gets slower then wavelength shrinks (as the waves catch up with each other).</em></p></li><li><p><em>If the wave gets faster then wavelength extends (as the leading wavefronts get away from those following).</em></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>White light is passed through a single narrow slit and illuminates a screen. </p><p>Describe the pattern observed on the screen.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Describe the pattern observed on the screen:</p><ul><li><p>(A single slit diffraction pattern with) a white central maximum; <em>[1 mark]</em></p></li></ul><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>Surrounded by coloured fringes; <em>[1 mark]</em></p></li><li><p>With red light diffracted more / further away from the centre; <em>[1 mark]</em></p></li><li><p>With blue / violet light diffracted less / closer to the centre; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Instead of &#x27;red light being further away from the centre&#x27; and &#x27;blue light closer to the centre&#x27; make sure </em><em><strong>not </strong></em><em>to just say &#x27;at a higher order&#x27; or &#x27;at a lower order&#x27;. You must relate the colours to their relation to the centre of the pattern.</em></p><p><em>The reason it wouldn’t be accurate to say that red is at a higher order/blue is a lower order of diffraction on the pattern is because each spectrum has its own order when white light is diffracted through a single slit. The zero order will be the white fringe.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/3-4-s-q--q3a-answer-medium-aqa-a-level-physics.png' alt='3-4-s-q--q3a-answer-medium-aqa-a-level-physics' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Blue light from a laser is now passed through a single narrow slit, as shown in Fig 1.1. A pattern of bright and dark regions can be observed on the screen which is placed several metres beyond the slit. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/3-4-s-q--q3b-medium-aqa-a-level-physics.png' alt='3-4-s-q--q3b-medium-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Describe the effect on the diffraction pattern if the width of the narrow slit is decreased.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The effect on the diffraction pattern if the width of the narrow slit is decreased will be:</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>The bright and dark fringes become further apart; <em>[1 mark]</em></p></li><li><p>The maxima / the pattern becomes broader; <em>[1 mark]</em></p></li><li><p>The pattern is dimmer; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>With the original slit width, state and explain the effect on the width of the fringes on the diffraction pattern if the blue light is replaced with a red light of the same intensity. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The effect on the width of the fringes on the diffraction pattern if the blue light is replaced with a red light of the same intensity will be:</p><p>State:</p><ul><li><p>The maxima / fringes become further apart / wider; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p>Explain:</p><ul><li><p>Because red light has a longer wavelength; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em><strong> </strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The intensity graph for the diffracted blue light is shown in Fig 1.2.<strong> </strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/3-4-s-q--q3d--medium-aqa-a-level-physics.png' alt='3-4-s-q--q3d--medium-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>On the axes shown in Fig 1.2, sketch the intensity graph for the laser emitting red light.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A diagram scoring 3 marks:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/3-4-s-q--q3d-answer-medium-aqa-a-level-physics.png' alt='3-4-s-q--q3d-answer-medium-aqa-a-level-physics' /></div><ul><li><p>Centre of all maxima (apart from the first/central) peaks further away from the centre; <em>[1 mark]</em></p></li><li><p>Central maximum twice the width of the other maxima <strong>AND</strong> symmetrical; <em>[1 mark]</em></p></li><li><p>The intensities of all maxima should remain the same; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Part (c) helps you to know how the graph would change. Question parts often build like this, so get into the habit of thinking of terms of a whole question, rather than individual question parts, to be sure you don&#x27;t miss any clues that are there to help you!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A beam of monochromatic light is incident upon two slits. The distance between the slits is <em>d </em>as shown in Fig 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q1a_wave-behaviour_ib-sl-physics-sq-medium.png' alt='q1a_wave-behaviour_ib-sl-physics-sq-medium' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>A series of bright and dark fringes appear on the screen. Explain how a bright fringe is formed.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Describe fringes formed by superposition causing interference:</p><ul><li><p>Superposition of light from each of the double slits will interfere both constructively and destructively; <em>[1 mark]</em></p></li></ul><p>Specific explanation of how a bright fringe is formed:</p><ul><li><p>A path difference of integer multiple of wavelengths will give bright fringes; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>If the wavelength of the incident light is halved and the distance between the slits is doubled, outline the effect on the separation of the fringes of the interference pattern.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The separation of the fringes will:</p><ul><li><p>Decrease, due to wavelength decreasing by a factor of two</p><p><strong>AND</strong></p></li><li><p>Decrease further due to the doubled distance between the slits; <em>[1 mark]</em></p></li></ul><p>Describe the overall effect on fringe separation:</p><ul><li><p>Therefore, the total decrease in the separation of fringes in this interference pattern will be 4 times smaller; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>This answer could be directly related to the equation: </em><em><em>s </em></em><em>= </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>&#955;</mi><mi>D</mi></mrow><mi>d</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>, however it does not need to reference the equation to get full marks.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>One of the slits is covered so it emits no light.</p><p>Describe how this changes the pattern&#x27;s appearance and the intensities observed on the screen.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Describe how the pattern changes:</p><ul><li><p>The width of the central maximum (fringe) will be increased</p><p><strong>AND</strong></p></li><li><p>With larger widths for each subsequent maxima (on each side); <em>[1 mark]</em></p></li></ul><p>Describe how the intensities will change:</p><ul><li><p>The intensity of the maxima next to the central maximum will decrease; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define diffraction.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The definition of diffraction is:</p><ul><li><p>The spreading out of waves around an obstacle or aperture; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>Make sure you learn the definitions of key words so that you can define them and use them correctly in extended answer questions. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The diagram shows a student in a room with an open door and a television in the next room. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-4-3b-question-stem-sl-sq-easy-phy.png' alt='4-4-3b-question-stem-sl-sq-easy-phy' /></div><p>The student can hear the sound of the television, but cannot see the picture coming from it. </p><p>Explain why this is the case. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The student can hear the sound of the television, but cannot see the picture coming from it because:</p><ul><li><p>Sound waves emitted from the television<em> </em>diffract around the opening of the door; <em>[1 mark]</em></p></li><li><p>The<strong> </strong>wavelengths of the sound waves are a similar size to the door opening; <em>[1 mark]</em></p></li><li><p>The wavelength of light is much<strong> </strong>smaller than that of the sound waves / door opening; <em>[1 mark]</em></p></li><li><p>So light is not diffracted<strong> </strong>around the opening of the door; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Diffraction is greatest when the aperture size is similar to the the wavelength </em><em><em>λ</em></em><em> of the wave. The wavelength of a speaking voice is roughly the same size as a door opening, so the soundwaves of people talking diffract greatly around door sized apertures. Light waves have a much much shorter wavelength so light does not diffract around a door sized aperture. </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-4-3b-commentary-1-sl-sq-easy-phy.png' alt='4-4-3b-commentary-1-sl-sq-easy-phy' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain what would happen in terms of diffraction of the sound waves, if the student&#x27;s room mate partially closed the door.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>If the student&#x27;s room mate partially closed the door...</p><ul><li><p>The aperture / gap would be smaller; <em>[1 mark]</em></p></li><li><p>Than the wavelength of the sound waves; <em>[1 mark]</em></p></li><li><p>So diffraction would be reduced; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em> </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

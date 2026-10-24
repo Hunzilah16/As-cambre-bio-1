@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4.3 Density & Pressure - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">4.3 Density & Pressure</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 4. Forces, Density & Pressure</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 11 Questions (125 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the word definition of density.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>State the word definition of density:</p><ul><li><p>The mass per unit volume; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When calculating density both the equation and units are required.  </p><p>(i) State the equation for density, defining all the terms used.</p><p style='text-align: right;'>[1]</p><p>(ii) State the SI units for density and a non-SI unit which is commonly used.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) The equation for density is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>m</mi><mi>V</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> where <em>ρ </em>= density, <em>m</em> = mass and <em>V</em> = volume; <em>[1 mark]</em></p></li></ul><p>(ii) State the SI units and a common non-SI unit for density:</p><ul><li><p>SI units are kg m<sup>−3</sup>; <em>[1 mark]</em></p></li><li><p>Commonly used non-SI units are g cm<sup>−3</sup>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For pressure caused by a solid, state  </p><p>(i) the definition of pressure</p><p style='text-align: right;'>[1]</p><p>(ii) the equation for pressure, defining the terms used.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) Pressure is defined as:</p><ul><li><p>Force per unit area; <em>[1 mark]</em></p></li></ul><p>(ii) The equation for pressure is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> where <em>P</em> = pressure, <em>F</em> = force and<em> A</em> = area;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a measuring cylinder containing a liquid with depth <em>h</em> and cross-sectional area <em>A.</em> </p><p>Using the equations you stated in (b) and (c), show that pressure at a point in the liquid is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mi>ρ</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1d-e-density-pressure.png' alt='4-2-1d-e-density-pressure' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Show that in a liquid the pressure at the depth h is found using <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mo>&#8710;</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><p>Write out all the equations which will be needed:</p><ul><li><p>Pressure:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>(equation 1)</em></p></li><li><p>At the depth <em>h,</em> the force is the <strong>weight</strong> of liquid at <em>h</em>:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>(equation 2)</em></p></li><li><p>Density:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>m</mi><mi>V</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>(equation 3)</em></p></li><li><p>Volume of a cylinder, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>A</mi><mo>&#160;</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>(equation 4)</em></p></li></ul><p>Substitute <em>equation 3</em> into <em>equation 1</em> to get a new term for the weight:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mo>&#160;</mo><mi>V</mi><mo>&#160;</mo><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Replace the term <em>V</em> with the expression in <em>equation 4</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mo>&#160;</mo><mi>A</mi><mo>&#160;</mo><mi>h</mi><mo>&#160;</mo><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>(equation 5)</em></p></li></ul><p>Substitute equation 5 into equation 1 and cancel to complete the derivation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>F</mi><mi>A</mi></mfrac><mo>=</mo><mfrac><mrow><mi>&#961;</mi><mo>&#160;</mo><menclose notation="updiagonalstrike"><menclose notation="updiagonalstrike"><menclose notation="updiagonalstrike"><mi>A</mi></menclose></menclose></menclose><mo>&#160;</mo><mi>h</mi><mo>&#160;</mo><mi>g</mi></mrow><menclose notation="updiagonalstrike"><mi>A</mi></menclose></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#916;</mi><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mi>&#916;</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>When doing a derivation it&#x27;s helpful to write down any relevant equations before you start.</em></p><p><em>Also keep the equation you are deriving in front of you, so that you can see when you are getting close.</em></p><p><em>Finally, practice!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The water in the measuring cylinder shown in Fig 1.1. has a depth <em>h</em> of 10 cm and a cross-sectional area <em>A</em> of 10 cm<sup>2</sup>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2a-e-density-pressure.png' alt='4-2-2a-e-density-pressure' /></div><p style='text-align: center;'><strong>Fig 1.1.</strong></p><p>(i) State the measurements of <em>h</em> and <em>A</em> in S.I. units.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the pressure at the base of the measuring cylinder due to the water. The density of water = 1000 kg m<sup>−3</sup>.</p><p style='text-align: right;'>[2]</p><p>(iii) Calculate the total pressure at the base of the measuring cylinder. Atmospheric pressure = 1.01 × 10<sup>5</sup> Pa.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>(i) State both measurements in S.I. units:</p><ul><li><p><em>h</em> = 10 cm = 0.1 m <em>[1 mark]</em></p></li></ul><p>Calculate cm<sup>3</sup> to m<sup>3</sup> in steps:</p><ul><li><p><em>A</em>  = 10 cm<sup>2</sup> = 10 × (1 × 10<sup>−2</sup>)<sup>2</sup> m<sup>2</sup></p></li><li><p><em>A</em> = 1.0 × 10<sup>−3</sup> m<sup>2</sup> <em>[1 mark]</em></p></li></ul><p>(ii) Hence calculate the pressure at the base of the measuring cylinder due to the water:</p><ul><li><p>Hydrostatic pressure:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mi>ρ</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mn>1000</mn><mo> </mo><mo>×</mo><mo> </mo><mn>9</mn><mo>.</mo><mn>81</mn><mo> </mo><mo>×</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>1</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mn>981</mn><mo> </mo><mo>=</mo><mo> </mo><mn>980</mn><mo> </mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(iii) Calculate the total pressure at the base of the measuring cylinder:</p><ul><li><p>Total pressure = pressure caused by the water + atmospheric pressure</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mn>980</mn><mo> </mo><mo>+</mo><mo> </mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>01</mn><mo> </mo><mo>×</mo><mo> </mo><msup><mn>10</mn><mn>5</mn></msup></mrow></mfenced><mo> </mo><mo>=</mo><mo> </mo><mn>1</mn><mo>.</mo><mn>02</mn><mo> </mo><mo>×</mo><mo> </mo><msup><mn>10</mn><mn>5</mn></msup><mo> </mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The water pressure is measured at the base of two other measuring cylinders of different sizes.</p><p>One of the cylinders contains water with a depth five times larger than the cylinder in (a).</p><p>The other cylinder contains the same depth of water as the cylinder in (a), but the cross-sectional area of the base is nine times larger.   </p><p>Without further calculation, state the effect on the water pressure at the base of the cylinder where    </p><p>(i) the water is five times deeper</p><p style='text-align: right;'>[1]</p><p>(ii) the surface area of the base is nine times larger.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) If the water became five times deeper:</p><ul><li><p>Pressure and depth are directly proportional, so...</p></li><li><p>(The pressure would be) five times larger; <em>[1 mark]</em></p></li></ul><p>(ii) If the surface area became nine times larger:</p><ul><li><p>The depth is the same, so...</p></li><li><p>(The pressure would be) the same;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>The instruction &#x27;without further calculation&#x27; is a clue that something straightforward will get you the answer. In this case, pressure is directly proportional to depth, but since area isn&#x27;t in the equation for pressure in a liquid, it has no effect and can be ignored.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A spherical ball is placed in the measuring cylinder so that it is submerged but floats in the water, as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2c-e-upthrust.png' alt='4-2-2c-e-upthrust' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong>.</p><p>The ball has a diameter of 3.0 cm.</p><p>Calculate the volume of the ball in S.I. units.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the volume of the ball in S.I. units:</p><p>Convert the diameter to S.I. units:</p><ul><li><p>diameter, <em>d</em> = 3.0 cm = 0.030 m </p><p><strong>OR</strong></p></li><li><p>radius, <em>r</em> = 0.015 m<em> [1 mark]</em></p></li></ul><p>Replace radius, <em>r</em> with diameter, <em>d</em> in the equation for the volume of a sphere:</p><ul><li><p>Volume of a sphere:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>3</mn></msup><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi mathvariant="normal">&#960;</mi><mo>&#160;</mo><msup><mfenced><mrow><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfenced><mn>3</mn></msup><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>41</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the upthrust on the submerged ball in part <strong>(c)</strong>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the upthrust on the submerged ball in part <strong>(c)</strong>:</p><p>Recall the equation for upthrust:</p><ul><li><p>Upthrust: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Where <em>ρ</em> and <em>V</em> are the density and volume of the displaced fluid</p></li></ul><p>Substitute known quantities:</p><ul><li><p>Density of water, <em>ρ</em> = 1000 kg m<sup>−3</sup> (from <strong>(a)</strong>)</p></li><li><p>Volume, <em>V</em> = 1.41 × 10<sup>−5</sup> m<sup>3</sup> (from <strong>(c)</strong>)</p></li></ul><p>Substitute the known quantities and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1000</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>41</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>14</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete the definition of hydrostatic pressure.</p><p>Hydrostatic pressure is the pressure that is exerted by a __________ at __________ at a given point within the fluid, due to the force of  __________.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Complete the definition of hydrostatic pressure:</p><ul><li><p>Hydrostatic pressure is the pressure that is exerted by a <em><strong>fluid</strong></em>;<em><strong> </strong></em><em>[1 mark]</em></p></li><li><p>at <em><strong>equilibrium </strong></em>at a given point within the fluid; <em>[1 mark]</em></p></li><li><p>due to the force of <em><strong>gravity</strong></em>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cylinder of length 1.8 m is submerged vertically in a tank of seawater so that the top of the cylinder is 0.2 m below the surface of the water, as shown in Fig. 1.1.</p><p>The density of the seawater is 1020 kg m<sup>−3</sup>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-3b-e-upthrust-in-sea-water.png' alt='4-2-3b-e-upthrust-in-sea-water' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Calculate the difference in hydrostatic pressure between the top and bottom surfaces of the cylinder.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the difference in hydrostatic pressure between the top and bottom surfaces of the cylinder:</p><p>List the known quantities:</p><ul><li><p>Density of seawater, <em>ρ</em> = 1020 kg m<sup>−3</sup></p></li><li><p>Height of cylinder, Δ<em>h</em> = 1.8 m</p></li><li><p>Acceleration due to gravity, <em>g</em> = 9.81 m s<sup>−2</sup></p></li></ul><p>Use the equation for hydrostatic pressure:</p><ul><li><p>Hydrostatic pressure:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mo>&#8710;</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1020</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>8</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>18</mn><mo>&#160;</mo><mn>000</mn><mo>&#160;</mo><mi>Pa</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cylinder has a diameter of 75 cm.</p><p>Calculate the upthrust on the cylinder.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Calculate the upthrust on the cylinder:</p><p>List the known quantities:</p><ul><li><p>Radius of cylinder, <em>r</em> = 75 cm ÷ 2 = 37.5 cm = 0.375 m</p></li><li><p>Density of seawater, <em>ρ</em> = 1020 kg m<sup>−3</sup></p></li></ul><p>Calculate the volume, <em>V</em> of the cylinder to find the volume of displaced sea water:</p><ul><li><p>Volume of a cylinder = height × cross-sectional area (of a circle)</p></li><li><p>Volume of a cylinder:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><mo>&#215;</mo><msup><mfenced><mrow><mn>0</mn><mo>.</mo><mn>375</mn></mrow></mfenced><mn>2</mn></msup><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>8</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>795</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>80</mn><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Substitute values for <em>ρ</em> and <em>V</em> into the equation for upthrust and calculate:</p><ul><li><p>Archimedes&#x27; Principle (upthrust):  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1020</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>795</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7955</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>8000</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The seawater in Fig. 1.1. is replaced with pure water which has a lower density than seawater.</p><p>Without further calculation</p><p>(i) State and explain the effect this would have on the upthrust on the cylinder</p><p style='text-align: right;'>[2]</p><p>(ii) Hence, state whether the cylinder would sink, float or stay at the same position in the tank.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) If the density of the liquid decreased:</p><ul><li><p>Upthrust would be <u>less</u>; <em>[1 mark]</em></p></li><li><p>(Because) upthrust is proportional to density (of the displaced fluid); <em>[1 mark]</em></p></li></ul><p>(ii) The cylinder would:</p><ul><li><p>Sink lower / float at a deeper depth </p><p><strong>OR</strong></p></li><li><p>The distance between the cylinder and surface of the water would increase / be more than 0.2 m (<strong>NOT </strong>the cylinder would sink to the bottom); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Be careful of guessing more than you can know from the information given.</em></p><p><em>We can be sure the cylinder would sink to a lower position, but not that it would rest on the bottom of the tank.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[18 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A holiday company marketing &#x27;unforgettable experiences&#x27; needs to know the maximum safe heights from which guests can jump into the sea from the end of a pier. Guests must be guaranteed they will not sink deep enough into the water to hit the bottom.</p><p>To investigate this, the designer tests how far into a measuring cylinder of water a wooden rod will sink when dropped from various heights.</p><p>The designer sets up their equipment as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1a-m-set-up-to-measure-safe-height-in-water.png' alt='4-2-1a-m-set-up-to-measure-safe-height-in-water' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The wooden rod has mass 1.30 × 10<sup>−2</sup> kg, diameter 1.5 × 10<sup>−2 </sup>m and length 7.5 × 10<sup>−2</sup> m.</p><p>(i) Calculate the density of the wood.</p><p style='text-align: right;'>[2]</p><p>(ii) State and explain why the designer chose this type of wood to use in their investigation.</p><p style='text-align: right;'>[2]</p><p>(iii) Suggest one change to the experimental set-up which the designer needs to make to model the situation they are investigating.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) To calculate the density of the wood:</p><ul><li><p>Calculate the cross-sectional area of the rod</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi mathvariant="normal">&#960;</mi><msup><mi>d</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi mathvariant="normal">&#960;</mi><mo>&#215;</mo><msup><mfenced><mrow><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfenced><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>77</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Calculate the volume of the rod </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>A</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>L</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>77</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>7</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>33</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li><li><p>Calculate the density</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>m</mi><mi>V</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>.</mo><mn>33</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>977</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>980</mn><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li></ul><p>(ii) State why the designer chose this type of wood to use in their investigation:</p><ul><li><p>Value is close to the density of water; <em>[1 mark]</em></p></li></ul><p>Explanation:</p><ul><li><p>The density of the wood is likely similar to the density of the human body</p><p><strong>OR</strong></p></li><li><p>Humans are made mostly from water; <em>[1 mark]</em></p></li></ul><p>(iii) Suggest one change to the experimental setup which the designer needs to make to model the situation they are investigating:</p><ul><li><p>Add salt / sugar / minerals to the water; <em>[1 mark]</em></p></li><li><p>To mimic / copy the density of sea water; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The wooden rod is held in a clamp so that it can be quickly released from rest.</p><p>Initially, it is clamped so that the base is at a height <em>h</em> = 0.20 m above the water surface.</p><p>Calculate the speed of the rod as its base reaches the water.</p><p>Ignore air resistance.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the speed of the rod as its base reaches the water:</p><p>List the known quantities:</p><ul><li><p>Height, <em>h</em> = 0.20 m</p></li><li><p>Initial velocity, <em>u</em> = 0 m s<sup>−1</sup></p></li><li><p>Acceleration, <em>a</em> = 9.81 m s<sup>−2</sup></p></li></ul><p>Choose the best SUVAT equation and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#8201;</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mn>2</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>2</mn></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows the wooden rod fully submerged under the water surface.</p><p>The rod is moving vertically downwards and has not yet come to rest.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1c-m-set-up-to-measure-safe-height-in-water-2.png' alt='4-2-1c-m-set-up-to-measure-safe-height-in-water-2' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>(i) Sketch on Fig. 1.2 the forces acting on the wooden rod.</p><p style='text-align: right;'>[3]</p><p>(ii) Describe and explain how the resultant force on the wooden cylinder varies from the moment the cylinder is fully submerged until it reaches its deepest point.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) The forces acting on the wooden rod should look like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/12/puqhnaKu_file-000-17.png' alt='puqhnaKu_file-000-17' /></div><ul><li><p>Downwards arrow labelled W /<em><strong> </strong></em>weight / mg; <em>[1 mark]</em></p></li><li><p>Upwards arrow labelled U / upthrust; <em>[1 mark]</em></p></li><li><p>Upwards arrow labelled D / drag / friction; <em>[1 mark]</em></p></li></ul><p>(ii) The resultant force on the wooden cylinder varies by:</p><ul><li><p>Resultant force decreases (with time or as the cylinder descends); <em>[1 mark]</em></p></li><li><p>Upthrust remains constant / drag decreases (as speed decreases) / resultant force is upwards / at the lowest point, drag is zero; <em>[1 mark]</em></p></li><li><p>At the deepest point, the resultant force is upwards; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]   </strong></em></p><ul><li><p><em>You might have phrased the last two points in part (ii) as one sentence, saying something like &#x27;the resultant force is always directed upwards&#x27;. This would be awarded two marks since it includes two ideas from the list</em></p></li><li><p><em>For part (i), you may also have annotated the diagram differently. The two upwards arrows can be drawn side by side, although showing the point which they act from is a better choice</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/12/JbbuDYtT_file-000-16.png' alt='JbbuDYtT_file-000-16' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The investigation concludes that an exciting but safe experience can be had by jumping into the water which is at least six metres deep. The designer suggests a minimum age of 15 years for guests taking part in the experience.</p><p>The density of the seawater is 1030 kg m<sup>−3</sup>.</p><p>Assuming that guests will sink to no more than 4 metres, jumping feet first, estimate the range of pressure they will feel in their ears.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Estimate the range of pressure guests will feel in their ears:</p><p>Choose a range of likely heights for the guests:</p><ul><li><p>Height of adult guests, <em>h</em><sub>g</sub> : 1.5 m ≤ h ≤ 2.1 m <em>(answers in range from 1.4 </em>m<em> to 2.2 </em>m<em>)</em><em> [1 mark]</em></p></li></ul><p>Calculate minimum and maximum pressures:</p><ul><li><p>Depth of ears below the surface, <em>h</em> = 4 - h<sub>g</sub></p><ul><li><p><em>h</em> = 4 - 1.5 = 2.5 m</p></li><li><p><em>h</em> = 4 - 2.1 = 1.9 m</p></li></ul></li><li><p>Therefore, 1.9 m ≤ h ≤ 2.5 m</p></li></ul><p>Calculate pressure in a liquid, <em>P</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1030</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>25</mn><mo>&#160;</mo><mn>260</mn><mo>&#160;</mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1030</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>9</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>19</mn><mo>&#160;</mo><mn>198</mn><mo>&#160;</mo><mi>Pa</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>State the range of pressures:</p><ul><li><p>19 kPa – 25 kPa <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>A quick sketch would help you think about the range of depths. Guests will jump in </em><em><strong>feet</strong></em><em> first, to a depth of </em><em><strong>4 m</strong></em><em>, and the question is about the pressure change in their </em><em><strong>ears</strong></em><em>.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-10-at-10-58-49.png' alt='screenshot-2023-03-10-at-10-58-49' /></div><p><em>We have already assumed a sensible range of heights for adults. One final assumption is to say that the ears are at this height. You could deduct 5 cm, say, from each height, but the point of assumptions and modelling is to get to </em><em><strong>reasonable </strong></em><em>answers more quickly and easily than by doing a full and complex calculation.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Party shops sell helium-filled balloons for various events. One such balloon is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2a-m-upthrust-balloon.png' alt='4-2-2a-m-upthrust-balloon' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The ribbon is tied to a chair to stop the balloon floating away.</p><p>By modelling the balloon as a point mass, sketch a free body force diagram for the balloon and ribbon.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>By modelling the balloon as a point mass, sketch a free body force diagram for the balloon and ribbon:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-10-at-12-14-49.png' alt='screenshot-2023-03-10-at-12-14-49' /></div><ul><li><p>Weight and tension / W and T downwards <strong>AND </strong>from a <u>point</u>, <strong>not </strong>a balloon; <em>[1 mark]</em></p></li><li><p>Upthrust / U upwards; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>At its widest point, the balloon has a diameter 40 cm. The density of the surrounding air is 1.30 kg m<sup>–3</sup>.</p><p>Calculate the upthrust on the balloon.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the upthrust on the balloon:</p><p>Determine the volume of the balloon:</p><ul><li><p>Assume the balloon is a sphere with diameter, <em>d</em> = 40 cm = 0.40 m </p></li><li><p>Volume of the balloon, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>b</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#960;</mi><mo>&#160;</mo><msup><mi>r</mi><mn>3</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#960;</mi><mo>&#215;</mo><mo>&#160;</mo><msup><mfenced><mfrac><mrow><mn>0</mn><mo>.</mo><mn>4</mn></mrow><mn>2</mn></mfrac></mfenced><mn>3</mn></msup><mo>&#160;</mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>0335</mn><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine the upthrust, <em>F</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mo>&#160;</mo><mi>g</mi><mo>&#160;</mo><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>30</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>0335</mn><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>43</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>It is reasonable to assume that the volume of the balloon can be found by treating it as a </em><em><strong>sphere</strong></em><em> with the same diameter.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Balloons filled with air do not float.</p><p>Explain why a balloon filled with helium floats.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>A balloon filled with helium floats because:</p><ul><li><p>Helium is <u>less</u> <u>dense</u> than air;<em> [1 mark]</em></p></li><li><p>(Therefore) the <u>weight of the displaced air</u> is greater than the <u>weight of the helium</u>; <em>[1 mark]</em></p></li><li><p>Upthrust is equal to weight of displaced air; <em>[1 mark]</em></p></li><li><p>Upthrust / upwards force on the (helium-filled) balloon is larger than the <u>weight of the balloon;</u> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The Galileo thermometer was invented in the 17th century and it is still popular today. The thermometer consists of a column of liquid containing roughly spherical, weighted, glass bulbs, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-3a-m-4-2-galileo-thermometer-cie-ial-sq.png' alt='4-2-3a-m-4-2-galileo-thermometer-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The spheres move up or down in the column as the temperature changes.</p><p>At a certain temperature, one of the spheres begins to fall through the liquid at an increasing<strong> </strong>speed.  </p><p>(i) State the property of the liquid that causes the spheres to move up or down as the temperature changes.</p><p style='text-align: right;'>[1]</p><p>(ii) The sphere has a radius of 1.2 cm and once settled, it displaces a total mass of 7.3 g of the liquid. </p><p>Calculate the value of the property of the liquid named in <strong>(a)(i)</strong>.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) The property of the liquid that changes with temperature is:</p><ul><li><p>Density; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Calculate the density of the liquid:</p><p>List the known quantities:</p><ul><li><p>Radius, <em>r</em> = 1.2 cm = 1.2 × 10<sup>–2</sup> m</p></li><li><p>Mass of liquid displaced, <em>m</em> = 7.3 g = 7.3 × 10<sup>–3</sup> kg</p></li></ul><p>Determine the volume of the sphere</p><ul><li><p>Volume of a sphere:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi mathvariant="normal">&#960;</mi><msup><mfenced><mrow><mn>1</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfenced><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 7.24 × 10<sup>–6</sup> m<sup>3</sup> <em>[1 mark]</em></p></li></ul><p>Determine the density of the liquid:</p><ul><li><p>Density:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>m</mi><mi>V</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>7</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><mrow><mn>7</mn><mo>.</mo><mn>24</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1008.5 = 1010 kg m<sup>–3</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>The basic principle of a Galileo thermometer is that the liquid in the column will become denser if the room temperature drops and less dense if the room temperature rises.</em></p><p><em>As a result, the spheres, which have a fixed density, will float or sink depending on the temperature of the room:</em></p><ul><li><p><em>An object will </em><em><strong>float</strong></em><em> if it is </em><em><strong>less dense</strong></em><em> than the fluid i.e. the spheres will float when the </em><em><strong>temperature is low</strong></em></p></li><li><p><em>An object will </em><em><strong>sink</strong></em><em> if it is </em><em><strong>denser </strong></em><em>than the fluid it is placed in i.e. the spheres will sink when the </em><em><strong>temperature is high</strong></em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/galileo-thermo-ma.png' alt='galileo-thermo-ma' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Sketch arrows on Fig. 1.2 to show the relative sizes of the forces acting on the sphere as it falls.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-3b-m-4-2-sphere-free-body-force-blank-cie-ial-sq.png' alt='4-2-3b-m-4-2-sphere-free-body-force-blank-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Arrows to show the relative size of the forces acting on the sphere as it falls should look like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/sphere-forces-upthrust-weight-ma.png' alt='sphere-forces-upthrust-weight-ma' /></div><ul><li><p>Arrow drawn downwards <strong>AND</strong> labelled weight / <em>W</em> / <em>mg</em>; <em>[1 mark]</em></p></li><li><p>Arrow drawn upwards <strong>AND</strong> labelled upthrust / <em>U</em>; <em>[1 mark]</em></p></li><li><p>Arrow drawn upwards <strong>AND</strong> labelled (viscous) drag / <em>D</em>; <em>[1 mark]</em></p></li><li><p>Weight is drawn <u>visibly</u> longer than upthrust and (viscous) drag; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Make sure not to be sloppy with any sketches or drawings in A-level physics, as you can lose some easy marks! Remember, these forces are </em><em><strong>vectors</strong></em><em>, so the lengths of the arrows represent their size. Since the sphere is falling, its weight will be larger than the sum of the upwards forces (unless you&#x27;re told it is at terminal velocity, in which case, the size of the arrows upwards = the size of the arrows downwards).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Show that the upthrust on the sphere is about 0.07 N.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Show that the upthrust on the sphere is about 0.07 N:</p><p>List the known quantities:</p><ul><li><p>Mass of liquid displaced, <em>m</em> = 7.3 g = 7.3 × 10<sup>–3</sup> kg</p></li><li><p>Acceleration of free fall, <em>g</em> = 9.81 m s<sup>–2 </sup></p></li></ul><p>Calculate the upthrust:</p><ul><li><p>Upthrust = Weight of liquid displaced; <em>[1 mark]</em></p></li><li><p>Upthrust = <em>mg </em>= (7.3 × 10<sup>–3</sup>) × 9.81 = 7.16 × 10<sup>–2</sup> = 0.072 = 0.07 N <em>[1 mark]</em></p></li></ul><p><em>[Total: 2 marks]</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The spheres in the column are identical but have different masses due to the counterweight attached to them. </p><p>State and explain where you would expect to find a sphere of weight 0.069 N.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>A sphere with a weight 0.069 N will:</p><ul><li><p>Have a net upwards force as the upthrust / <em>U</em> is greater than the weight / <em>W</em>;<em> [1 mark]</em></p></li><li><p>(Hence) the sphere would accelerate upwards / higher <strong>OR</strong> stay at the top; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>This value should be compared to the weight calculated in part </em><em><strong>(c)</strong></em><em>. Since it is </em><em><strong>lower</strong></em><em> than 0.07 N, the upthrust will be slightly higher on this sphere than one of weight 0.07 N. Always keep tabs on the values asked for in previous subparts.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A submarine below the surface of the sea is stationary in a region where the density of the seawater is 1.03 × 10<sup>3</sup> kg m<sup>−3</sup>.</p><p>The submarine has a volume of 5.83 × 10<sup>3</sup> m<sup>3</sup>.</p><p>Calculate the upthrust exerted on the submarine by the seawater.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the upthrust exerted on the submarine by the seawater:</p><p>List the known quantities:</p><ul><li><p>Volume of submarine, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 5.83 × 10<sup>3</sup> m<sup>3</sup></p></li><li><p>Density of seawater, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.03 × 10<sup>3</sup> kg m<sup>−3</sup></p></li><li><p>Acceleration of free fall, <em>g</em> = 9.81 m s<sup>−2</sup></p></li></ul><p>Use Archimedes&#x27; principle equation to calculate upthrust:</p><ul><li><p>Upthrust:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Upthrust:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>03</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mfenced><mrow><mn>5</mn><mo>.</mo><mn>83</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Upthrust:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 5.89 × 10<sup>7 </sup>N <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the mass of the submarine must be 6.0 × 10<sup>6</sup> kg.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The mass of the submarine must be 6.0 × 10<sup>6</sup> kg because:</p><ul><li><p>Weight (of the submarine) is equal to the upthrust; <em>[1 mark]</em></p></li></ul><p>Use a calculation to justify a mass of 6.0 × 10<sup>6</sup> kg:</p><p><strong>EITHER</strong></p><ul><li><p>Using weight:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>g</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Mass:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>5</mn><mo>.</mo><mn>89</mn><mo>&#215;</mo><msup><mn>10</mn><mn>7</mn></msup></mrow><mrow><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 6.0 × 10<sup>6</sup> kg <em>[1 mark]</em></p></li></ul><p><strong>OR</strong></p><ul><li><p>Using density:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mi>&#961;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>m</mi><mi>V</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>03</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>5</mn><mo>.</mo><mn>83</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>= 6.0 × 10<sup>6</sup> kg<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The submarine moves into a region of the sea where the water is less salty, and the density of the water reduces to 1.01 × 10<sup>3</sup> kg m<sup>−3</sup> .</p><p>Explain what would happen to the submarine as it moves into this region of lower density seawater.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>As the submarine moves into a region of lower-density seawater:</p><ul><li><p>The upthrust (of the water on the submarine) will be <u>less</u> than the weight (of the submarine); <em>[1 mark]</em></p></li><li><p>Hence, a resultant force will act downwards on the submarine; <em>[1 mark]</em></p></li><li><p>Therefore, the submarine will (begin to) <u>sink</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The submarine alters its weight by pumping water in or out of its internal tanks.</p><p>Determine the mass of water that the submarine should pump, in or out of its tanks, to maintain its depth below the surface of the sea.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the required change in mass of water needed to maintain its depth:</p><p>List the known quantities:</p><ul><li><p>Density of new water,<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mi>&#961;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.01 × 10<sup>3</sup> kg m<sup>−3</sup></p></li><li><p>Volume of submarine, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 5.83 × 10<sup>3</sup> m<sup>3</sup></p></li><li><p>Initial upthrust = 5.89 × 10<sup>7 </sup>N</p></li><li><p>Acceleration of free fall, <em>g</em> = 9.81 m s<sup>−2</sup></p></li></ul><p>Calculate the new upthrust:</p><ul><li><p>Upthrust:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Upthrust:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>01</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mfenced><mrow><mn>5</mn><mo>.</mo><mn>83</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>78</mn><mo>&#215;</mo><msup><mn>10</mn><mn>7</mn></msup><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Use the net downward force to calculate the required mass to be lost:</p><ul><li><p>Resultant force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>5</mn><mo>.</mo><mn>89</mn><mo>&#215;</mo><msup><mn>10</mn><mn>7</mn></msup></mrow></mfenced><mo>-</mo><mfenced><mrow><mn>5</mn><mo>.</mo><mn>78</mn><mo>&#215;</mo><msup><mn>10</mn><mn>7</mn></msup></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>14</mn><mo>&#215;</mo><msup><mn>10</mn><mn>6</mn></msup><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Required change in mass:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>g</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>14</mn><mo>&#215;</mo><msup><mn>10</mn><mn>6</mn></msup></mrow><mrow><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>17</mn><mo>&#215;</mo><msup><mn>10</mn><mn>5</mn></msup><mo>&#160;</mo><mi>kg</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A hollow brass cylinder with closed ends is floating on the surface of the water.</p><p>The cylinder has a length of 4.0 cm and an external diameter of 2.1 cm as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/12/q15-wph11-01-jan-2022-edexcel-int-as-a-level-phy.png' alt='q15-wph11-01-jan-2022-edexcel-int-as-a-level-phy' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>63% of the volume of the cylinder is submerged. The cylinder contains negligible weight of air.</p><p>Explain why the brass cylinder floats.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The brass cylinder floats because:</p><p><strong>EITHER</strong></p><ul><li><p>There is an upthrust which is equal to the weight of water displaced; <em>[1 mark]</em></p></li><li><p>The upthrust is equal to the weight of the cylinder (when it’s partially submerged); <em>[1 mark]</em></p></li></ul><p><strong>OR</strong></p><ul><li><p>The (overall) density (of the cylinder) is less than the density of the water; <em>[1 mark]</em></p></li><li><p>The weight of water displaced is equal to the weight of the cylinder; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The density of water is 1.0 × 10<sup>3</sup> kg m<sup>−3</sup>.</p><p>Show that the mass of the cylinder is about 9 × 10<sup>−3</sup> kg.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Show that the mass of the cylinder is about 9 × 10<sup>−3</sup> kg:</p><p>List the known quantities:</p><ul><li><p>Diameter of cylinder = 2.1 cm = 2.1 × 10<sup>−2</sup> m</p></li><li><p>Length of cylinder, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>l</mi></math></span> = 4.0 cm = 4.0 × 10<sup>−2</sup> m</p></li><li><p>Percentage of cylinder submerged = 63%</p></li><li><p>Density of water = 1.0 × 10<sup>3</sup> kg m<sup>−3</sup></p></li></ul><p>Determine the volume of the brass cylinder that is submerged:</p><ul><li><p>Volume of brass cylinder:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi><mo>=</mo><mi>&#x3C0;</mi><msup><mi>r</mi><mn>2</mn></msup><mi>l</mi></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi mathvariant="normal">&#960;</mi><mo>&#215;</mo><msup><mfenced><mfrac><mrow><mn>2</mn><mo>.</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#215;</mo><mfenced><mrow><mn>4</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfenced><mo>=</mo><mn>1</mn><mo>.</mo><mn>39</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Volume that is submerged: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>s</mi><mi>u</mi><mi>b</mi></mrow></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>63</mn><mo>&#215;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>39</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup></mrow></mfenced><mo>=</mo><mn>8</mn><mo>.</mo><mn>76</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the mass of the cylinder:</p><ul><li><p>Mass of cylinder = mass of water displaced</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3C1;</mi><mo>=</mo><mfrac><mi>m</mi><mi>V</mi></mfrac><mo>&#x21D2;</mo><mi>m</mi><mo>=</mo><mi>&#x3C1;</mi><mi>V</mi></math></span></p></li><li><p>Mass of cylinder:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi><mo>=</mo><mfenced><mrow><mn>1</mn><mo>&#xD7;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mo>&#xD7;</mo><mfenced><mrow><mn>8</mn><mo>.</mo><mn>76</mn><mo>&#xD7;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfenced></math></span> = 8.76 × 10<sup>−3</sup> kg <em>[1 mark]</em></p></li></ul><p><em>[Total: 3 marks]</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Deduce whether an identical hollow cylinder made of gold would also float.</p><p>Assume that the volume of gold is the same as the volume of brass.</p><ul><li><p>Density of gold = 19.3 × 10<sup>3</sup> kg m<sup>−3</sup></p></li><li><p>Density of brass = 8.7 × 10<sup>3</sup> kg m<sup>−3</sup></p></li></ul>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Deduce whether an identical hollow cylinder made of gold would also float:</p><p>List the known quantities:</p><ul><li><p>Density of gold = 19.3 × 10<sup>3</sup> kg m<sup>−3</sup></p></li><li><p>Density of brass = 8.7 × 10<sup>3</sup> kg m<sup>−3</sup></p></li></ul><p>Determine the equivalent volume of gold:</p><ul><li><p>Volume of gold = volume of brass</p></li><li><p>Volume of brass that floats:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>m</mi><mi>&#961;</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>8</mn><mo>.</mo><mn>76</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><mrow><mn>8</mn><mo>.</mo><mn>7</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Equivalent volume of gold:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>01</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p>Calculate the volume of water required to float the gold cylinder:</p><ul><li><p>Mass of gold cylinder:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Mass of gold cylinder:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>19</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>01</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>0194</mn><mo>&#160;</mo><mi>kg</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Minimum volume of water required to float cylinder:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>m</mi></mrow><mi>&#961;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0194</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>94</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>State a conclusion backed up by calculated values:</p><p>Minimum volume of water required to float cylinder = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>94</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p><p>Volume of gold cylinder = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>39</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>94</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup><mo>&#160;</mo><mo>></mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>39</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>5</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, therefore the gold cylinder would sink; <em>[1 mark]</em></p></li></ul><p><strong>OR</strong></p><p>Maximum mass (or weight) of water that could be displaced = 0.014 kg (0.14 N) </p><p>Mass of the gold cylinder (or weight) = 0.019 kg (0.19 N)</p><ul><li><p>0.019 kg  &gt; 0.014 kg <strong>or</strong> 0.19 N &gt; 0.14 N, therefore the gold cylinder would sink; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The Cartesian Diver is a popular science project which can be used to demonstrate physical concepts.</p><p>A &#x27;diver&#x27; is made by bending a loop of drinking straw into a U-shape and then weighting it with modelling clay.</p><p>A large plastic bottle is filled with water, leaving a small volume of air at the top.</p><p>The diver is carefully added, so that some water enters it but the straw remains floating upright due to trapped air.</p><p>Finally the lid is tightly screwed back onto the bottle, making a sealed container.</p><p>The completed Cartesian Diver and the construction of the diver are shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1a-h-cartesian-diver-1.png' alt='4-2-1a-h-cartesian-diver-1' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>When the sides of the bottle are squeezed and released in response the &#x27;diver&#x27; moves up and down rapidly as illustrated by Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1a-h--cartesian-diver-2.png' alt='4-2-1a-h--cartesian-diver-2' /></div><p style='text-align: center;'><strong>Fig. 1.2.</strong></p><p>Discuss the physics of the Cartesian Diver when the sides of the bottle are squeezed.</p><p>(i) Explain the observed motion of the &#x27;diver&#x27;.</p><p style='text-align: right;'>[5]</p><p>(ii) Predict which direction the diver moves in when the sides of the bottle are squeezed.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>Discuss the physics of the Cartesian Diver when the sides of the bottle are squeezed:</p><p>(i) Explain the observed motion of the &#x27;diver&#x27;:</p><p><em>Any </em><em><strong>five </strong></em><em>from</em></p><ul><li><p>The trapped air in the <u>bottle</u> compresses; <em>[1 mark]</em></p></li><li><p>Because gas is compressible (but water is not); <em>[1 mark]</em></p></li><li><p>The air pressure in the <u>bottle</u> increases; <em>[1 mark]</em></p></li><li><p>This increases the pressure everywhere; <em>[1 mark]</em></p></li><li><p>The bottle is a sealed unit / closed system; <em>[1 mark]</em></p></li><li><p>So, (the Increased pressure) compresses the air bubble in the diver; <em>[1 mark]</em></p></li><li><p>The density of the diver increases so it sinks; <em>[1 mark]</em></p></li><li><p>The volume of water displaced by the diver decreases; <em>[1 mark]</em></p></li><li><p>This reduces the upthrust on the diver; <em>[1 mark]</em></p></li></ul><p>(ii) Predict which direction the diver moves in when the sides of the bottle are squeezed:</p><ul><li><p>Downwards / sinks; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When the sides of the bottle are released the diver reverses direction.</p><p>Explain why the diver returns to its original position in the bottle.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Explain why the diver returns to its original position in the bottle:</p><ul><li><p>The bottle is a closed system;<em> [1 mark]</em></p></li></ul><p><em><em>Any </em></em><em><em><strong>three </strong></em></em><em><em>from:</em></em></p><ul><li><p>When the air bubble expands; <em>[1 mark]</em></p></li><li><p>The air pressure decreases; <em>[1 mark]</em></p></li><li><p>So, the compressed air bubble in the diver expands; <em>[1 mark]</em></p></li><li><p>The air is trapped; <em>[1 mark]</em></p></li><li><p>So, the diver density decreases and it moves upwards;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>To prevent the overloading and sinking of ships markings, known as load lines, are required on ships hulls since the Middle Ages.</p><p>As the ship is loaded it sinks lower in the water. Once the load line meets the waterline, the ship is deemed to be fully loaded.</p><p>In 1876 Samuel Plimsoll refined the load line to reflect the needs of increasingly international trading routes. Today the &#x27;Plimsoll line&#x27; has markings to show safe loading levels in fresh, saltwater, and warm and cold temperatures.</p><p>The Plimsoll line markings on ships today are shown in Fig. 1.1. The expected labels, their meanings and indications of temperature are written below.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2a-h-plimsoll-line-buoyancy.png' alt='4-2-2a-h-plimsoll-line-buoyancy' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Explain why the ships sit lower in the water when they are fully loaded.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Explain why the ships sit lower in the water when they are fully loaded:</p><ul><li><p>(In equilibrium the) upthrust equals the weight of the ship (and its load); <em>[1 mark]</em></p></li><li><p>Upthrust is (defined as / calculated from the) weight of displaced water; <em>[1 mark]</em></p></li><li><p>When weight increases, required upthrust increases;<em> [1 mark]</em></p></li><li><p>More water has to be displaced; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>With reference to upthrust      </p><p>(i) Explain why different load lines for types of water and times of year are useful.</p><p style='text-align: right;'>[5]</p><p>(ii) Hence complete the diagram in Fig. 1.1. by adding the missing labels S, TF, W and WNA.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (7 marks):</div>
+                    <p>(i) Explain why different load lines for types of water and times of year are useful:</p><ul><li><p>Ships will sink to <u>different depths</u> with the <u>same load</u> (depending on the water); <em>[1 mark]</em></p></li><li><p>Because <u>weight</u> of <u>displaced water</u> must remain the same / is always the same as the weight of the ship; <em>[1 mark]</em></p></li></ul><p><em>Any </em><em><strong>three </strong></em><em>from </em><em>(reverse argument allowed for all points, e.g.: freshwater is less dense than saltwater)</em></p><ul><li><p>Saltwater is more dense than freshwater; <em>[1 mark]</em></p></li><li><p>Ships are more buoyant in saltwater / saltwater provides more upthrust; <em>[1 mark]</em></p></li><li><p>Cold water is more dense than warm water; <em>[1 mark]</em></p></li><li><p>Ships are more buoyant in cold water / cold water provides more upthrust; <em>[1 mark]</em></p></li></ul><p>(ii) Hence complete the diagram in Fig. 1.1. by adding the missing labels S, TF, W and WNA:</p><p>The correctly completed diagram looks like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/08/4-2-2a-h-plimsoll-line-buoyancy-ma.png' alt='4-2-2a-h-plimsoll-line-buoyancy-ma' /></div><ul><li><p>TF and WNA correctly placed; <em>[1 mark]</em></p></li><li><p>S and W correctly placed;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 7 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a simple classroom demonstration of the principle behind the Plimsoll Line, a teacher places an egg in a beaker of distilled water at close to 0°C.</p><p>The egg sinks to the bottom of the beaker as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2c-h-egg-in-water-buoyancy.png' alt='4-2-2c-h-egg-in-water-buoyancy' /></div><p style='text-align: center;'><strong>Fig. 1.2.</strong></p><p>Suggest and comment on the likely next steps in this demonstration.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Suggest and comment on the likely next steps in this demonstration:</p><p><em>Steps must be in this order:</em></p><ul><li><p>Add salt / sugar to make water more dense <strong>AND </strong>the egg will move upwards; <em>[1 mark]</em></p><p><strong>THEN</strong></p></li><li><p>(After the egg has risen) heat the water to make it less dense <strong>AND </strong>the egg will move downwards / sink; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>This question is harder than it looks!</em></p><p><em>The egg starts sitting on the bottom of the beaker. For the classroom demonstration to work the students must see something happen. In other words, the egg must first move upwards. Only then it can be made to move back down.</em></p><p><em>Starting with a step which would make the egg sink wouldn&#x27;t work because observers wouldn&#x27;t see anything happening.</em></p><p><em>Since the water is already ice cold only one method can be used to increase density. And you can&#x27;t take the salt back out once it is dissolved, so the only way to reduce density is to heat the water.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hot air balloons consist of an envelope with an open mouth through which air can be heated using a burner. The air inside becomes much hotter than its surroundings. Lifted by this method, the balloon can carry a large amount of weight across very long distances.</p><p>A very large capacity balloon, as shown in Fig. 1.1. can carry 25-30 people.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-3a--h-hot-air-balloon.png' alt='4-2-3a--h-hot-air-balloon' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>The envelope has a diameter at its widest point of of 32 m when it is filled with air. The total mass of the balloon, air, equipment and passengers is 20 900 kg. When the air temperature is 15 °C the density of the air outside the balloon is 1.225 kg m<sup>−3</sup>.</p><p>When the air inside the envelope is hot enough, the balloon is released.</p><p>(i) Calculate the resultant upwards force on the balloon.</p><p style='text-align: right;'>[3]</p><p>(ii) Calculate the initial upwards acceleration of the balloon.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>When the air inside the envelope is hot enough, the balloon is released:</p><p>(i) Calculate the resultant upwards force on the balloon:</p><p>Determine the volume of the fully inflated balloon:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#960;</mi><mo>&#160;</mo><msup><mi>r</mi><mn>3</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#960;</mi><mo>&#160;</mo><msup><mfenced><mfrac><mi>d</mi><mn>2</mn></mfrac></mfenced><mn>3</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#960;</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>16</mn><mn>3</mn></msup><mo>&#160;</mo><mo>=</mo><mn>17</mn><mo>&#160;</mo><mn>157</mn><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Use a sketch to identify the forces:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-21-at-17-05-26.png' alt='hot air balloon MA' /></div><p>Calculate upthrust:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>V</mi><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>225</mn><mo>&#160;</mo><mo>&#215;</mo><mn>17</mn><mo>&#160;</mo><mn>157</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>206</mn><mo>&#160;</mo><mn>177</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate weight and subtract from upthrust to find the resultant force:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>20</mn><mo>&#160;</mo><mn>900</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>205</mn><mo>&#160;</mo><mn>029</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>U</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>206</mn><mo>&#160;</mo><mn>177</mn><mo>-</mo><mn>205</mn><mo>&#160;</mo><mn>029</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1148</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) Calculate the initial upwards acceleration of the balloon:</p><p>Apply Newton&#x27;s Second Law:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>R</mi><mi>m</mi></mfrac><mo>=</mo><mfrac><mn>1148</mn><mrow><mn>20</mn><mo>&#160;</mo><mn>900</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>055</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The balloon is taken to the Middle East, where the temperature is 45 °C.</p><p>Discuss how this would affect the ability of the balloon to fly and any changes the pilot could make to fly in these temperatures.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Discuss how this would affect the ability of the balloon to fly:</p><ul><li><p>Will be more difficult to take off; <em>[1 mark]</em></p></li><li><p>Reduce the weight the balloon is carrying; <em>[1 mark]</em></p></li></ul><p><em>Any </em><em><strong>two </strong></em><em>from:</em></p><ul><li><p>The air is less dense;<em> [1 mark]</em></p></li><li><p>Upthrust equals weight of displaced air / fluid; <em>[1 mark]</em></p></li><li><p>Less upthrust (but same load); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The air density at 45 °C is 4 % less than the air density at 15 °C.</p><p>For the hotter conditions</p><p>(i) Calculate the mass that must be removed in order to achieve the same initial acceleration as in part (a)(ii)</p><p style='text-align: right;'>[3]</p><p>(ii) Suggest how this might be achieved</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>For the hotter conditions</p><p>(i) Calculate the mass that must be removed in order to achieve the same initial acceleration as in part (a)(ii):</p><p>List the known quantities:</p><ul><li><p>Volume of the envelope, <em>V</em> = 17 157 m<sup>3</sup> (From part (a))</p></li><li><p>Air density at 15 °C = 1.225 kg m<sup>−3 </sup>(From part (a))</p></li><li><p>Air density at 45 °C, <em>ρ</em> = 0.96 × 1.225 kg m<sup>−3 </sup> = 1.176 kg m<sup>−3 </sup> <em>[1 mark]</em></p></li></ul><p>Calculate upthrust at the point of take-off:</p><ul><li><p>Upthrust, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>u</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>&#961;</mi><mi>g</mi><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>176</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>17</mn><mo>&#160;</mo><mn>157</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>197</mn><mo>&#160;</mo><mn>933</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul><p>Relate upthrust, weight and resultant force to calculate the resultant force using Newton&#x27;s Second Law:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-23-at-09-46-04.png' alt='screenshot-2023-03-23-at-09-46-04' /></div><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>u</mi></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>R</mi><mo>&#8593;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#8593;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>u</mi></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>u</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mfenced><mrow><mi>a</mi><mo>+</mo><mi>g</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p>Maximum mass for take-off at the hotter temperature, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>F</mi><mi>u</mi></msub><mrow><mi>a</mi><mo>+</mo><mi>g</mi></mrow></mfrac><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>197</mn><mo>&#160;</mo><mn>933</mn></mrow><mfenced><mrow><mn>0</mn><mo>.</mo><mn>055</mn><mo>+</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfenced></mfrac><mo>=</mo><mn>20</mn><mo>&#160;</mo><mn>064</mn><mo>&#160;</mo><mi>kg</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Compare this to the original mass to find the mass that must be removed:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>20</mn><mo>&#160;</mo><mn>900</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>20</mn><mo>&#160;</mo><mn>064</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>836</mn><mo>&#160;</mo><mo>&#8776;</mo><mo>&#160;</mo><mn>840</mn><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) Suggest how this might be achieved:</p><ul><li><p>Reduce the number of passengers / 12-13 less passengers / smaller basket / carry less fuel;<em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>When the air density is </em><em><strong>4% less</strong></em><em> it means that the value is </em><em><strong>96% of the original</strong></em><em>. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4.3 Density & Pressure - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">4.3 Density & Pressure</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 4. Forces, Density & Pressure</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 11 Questions (125 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the word definition of density.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When calculating density both the equation and units are required.  </p><p>(i) State the equation for density, defining all the terms used.</p><p style='text-align: right;'>[1]</p><p>(ii) State the SI units for density and a non-SI unit which is commonly used.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For pressure caused by a solid, state  </p><p>(i) the definition of pressure</p><p style='text-align: right;'>[1]</p><p>(ii) the equation for pressure, defining the terms used.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a measuring cylinder containing a liquid with depth <em>h</em> and cross-sectional area <em>A.</em> </p><p>Using the equations you stated in (b) and (c), show that pressure at a point in the liquid is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mi>ρ</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1d-e-density-pressure.png' alt='4-2-1d-e-density-pressure' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The water in the measuring cylinder shown in Fig 1.1. has a depth <em>h</em> of 10 cm and a cross-sectional area <em>A</em> of 10 cm<sup>2</sup>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2a-e-density-pressure.png' alt='4-2-2a-e-density-pressure' /></div><p style='text-align: center;'><strong>Fig 1.1.</strong></p><p>(i) State the measurements of <em>h</em> and <em>A</em> in S.I. units.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the pressure at the base of the measuring cylinder due to the water. The density of water = 1000 kg m<sup>−3</sup>.</p><p style='text-align: right;'>[2]</p><p>(iii) Calculate the total pressure at the base of the measuring cylinder. Atmospheric pressure = 1.01 × 10<sup>5</sup> Pa.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The water pressure is measured at the base of two other measuring cylinders of different sizes.</p><p>One of the cylinders contains water with a depth five times larger than the cylinder in (a).</p><p>The other cylinder contains the same depth of water as the cylinder in (a), but the cross-sectional area of the base is nine times larger.   </p><p>Without further calculation, state the effect on the water pressure at the base of the cylinder where    </p><p>(i) the water is five times deeper</p><p style='text-align: right;'>[1]</p><p>(ii) the surface area of the base is nine times larger.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A spherical ball is placed in the measuring cylinder so that it is submerged but floats in the water, as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2c-e-upthrust.png' alt='4-2-2c-e-upthrust' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong>.</p><p>The ball has a diameter of 3.0 cm.</p><p>Calculate the volume of the ball in S.I. units.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the upthrust on the submerged ball in part <strong>(c)</strong>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete the definition of hydrostatic pressure.</p><p>Hydrostatic pressure is the pressure that is exerted by a __________ at __________ at a given point within the fluid, due to the force of  __________.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cylinder of length 1.8 m is submerged vertically in a tank of seawater so that the top of the cylinder is 0.2 m below the surface of the water, as shown in Fig. 1.1.</p><p>The density of the seawater is 1020 kg m<sup>−3</sup>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-3b-e-upthrust-in-sea-water.png' alt='4-2-3b-e-upthrust-in-sea-water' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Calculate the difference in hydrostatic pressure between the top and bottom surfaces of the cylinder.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cylinder has a diameter of 75 cm.</p><p>Calculate the upthrust on the cylinder.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The seawater in Fig. 1.1. is replaced with pure water which has a lower density than seawater.</p><p>Without further calculation</p><p>(i) State and explain the effect this would have on the upthrust on the cylinder</p><p style='text-align: right;'>[2]</p><p>(ii) Hence, state whether the cylinder would sink, float or stay at the same position in the tank.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[18 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A holiday company marketing &#x27;unforgettable experiences&#x27; needs to know the maximum safe heights from which guests can jump into the sea from the end of a pier. Guests must be guaranteed they will not sink deep enough into the water to hit the bottom.</p><p>To investigate this, the designer tests how far into a measuring cylinder of water a wooden rod will sink when dropped from various heights.</p><p>The designer sets up their equipment as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1a-m-set-up-to-measure-safe-height-in-water.png' alt='4-2-1a-m-set-up-to-measure-safe-height-in-water' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The wooden rod has mass 1.30 × 10<sup>−2</sup> kg, diameter 1.5 × 10<sup>−2 </sup>m and length 7.5 × 10<sup>−2</sup> m.</p><p>(i) Calculate the density of the wood.</p><p style='text-align: right;'>[2]</p><p>(ii) State and explain why the designer chose this type of wood to use in their investigation.</p><p style='text-align: right;'>[2]</p><p>(iii) Suggest one change to the experimental set-up which the designer needs to make to model the situation they are investigating.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The wooden rod is held in a clamp so that it can be quickly released from rest.</p><p>Initially, it is clamped so that the base is at a height <em>h</em> = 0.20 m above the water surface.</p><p>Calculate the speed of the rod as its base reaches the water.</p><p>Ignore air resistance.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows the wooden rod fully submerged under the water surface.</p><p>The rod is moving vertically downwards and has not yet come to rest.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1c-m-set-up-to-measure-safe-height-in-water-2.png' alt='4-2-1c-m-set-up-to-measure-safe-height-in-water-2' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>(i) Sketch on Fig. 1.2 the forces acting on the wooden rod.</p><p style='text-align: right;'>[3]</p><p>(ii) Describe and explain how the resultant force on the wooden cylinder varies from the moment the cylinder is fully submerged until it reaches its deepest point.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The investigation concludes that an exciting but safe experience can be had by jumping into the water which is at least six metres deep. The designer suggests a minimum age of 15 years for guests taking part in the experience.</p><p>The density of the seawater is 1030 kg m<sup>−3</sup>.</p><p>Assuming that guests will sink to no more than 4 metres, jumping feet first, estimate the range of pressure they will feel in their ears.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Party shops sell helium-filled balloons for various events. One such balloon is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2a-m-upthrust-balloon.png' alt='4-2-2a-m-upthrust-balloon' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The ribbon is tied to a chair to stop the balloon floating away.</p><p>By modelling the balloon as a point mass, sketch a free body force diagram for the balloon and ribbon.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>At its widest point, the balloon has a diameter 40 cm. The density of the surrounding air is 1.30 kg m<sup>–3</sup>.</p><p>Calculate the upthrust on the balloon.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Balloons filled with air do not float.</p><p>Explain why a balloon filled with helium floats.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The Galileo thermometer was invented in the 17th century and it is still popular today. The thermometer consists of a column of liquid containing roughly spherical, weighted, glass bulbs, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-3a-m-4-2-galileo-thermometer-cie-ial-sq.png' alt='4-2-3a-m-4-2-galileo-thermometer-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The spheres move up or down in the column as the temperature changes.</p><p>At a certain temperature, one of the spheres begins to fall through the liquid at an increasing<strong> </strong>speed.  </p><p>(i) State the property of the liquid that causes the spheres to move up or down as the temperature changes.</p><p style='text-align: right;'>[1]</p><p>(ii) The sphere has a radius of 1.2 cm and once settled, it displaces a total mass of 7.3 g of the liquid. </p><p>Calculate the value of the property of the liquid named in <strong>(a)(i)</strong>.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Sketch arrows on Fig. 1.2 to show the relative sizes of the forces acting on the sphere as it falls.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-3b-m-4-2-sphere-free-body-force-blank-cie-ial-sq.png' alt='4-2-3b-m-4-2-sphere-free-body-force-blank-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Show that the upthrust on the sphere is about 0.07 N.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The spheres in the column are identical but have different masses due to the counterweight attached to them. </p><p>State and explain where you would expect to find a sphere of weight 0.069 N.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A submarine below the surface of the sea is stationary in a region where the density of the seawater is 1.03 × 10<sup>3</sup> kg m<sup>−3</sup>.</p><p>The submarine has a volume of 5.83 × 10<sup>3</sup> m<sup>3</sup>.</p><p>Calculate the upthrust exerted on the submarine by the seawater.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the mass of the submarine must be 6.0 × 10<sup>6</sup> kg.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The submarine moves into a region of the sea where the water is less salty, and the density of the water reduces to 1.01 × 10<sup>3</sup> kg m<sup>−3</sup> .</p><p>Explain what would happen to the submarine as it moves into this region of lower density seawater.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The submarine alters its weight by pumping water in or out of its internal tanks.</p><p>Determine the mass of water that the submarine should pump, in or out of its tanks, to maintain its depth below the surface of the sea.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A hollow brass cylinder with closed ends is floating on the surface of the water.</p><p>The cylinder has a length of 4.0 cm and an external diameter of 2.1 cm as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/12/q15-wph11-01-jan-2022-edexcel-int-as-a-level-phy.png' alt='q15-wph11-01-jan-2022-edexcel-int-as-a-level-phy' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>63% of the volume of the cylinder is submerged. The cylinder contains negligible weight of air.</p><p>Explain why the brass cylinder floats.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The density of water is 1.0 × 10<sup>3</sup> kg m<sup>−3</sup>.</p><p>Show that the mass of the cylinder is about 9 × 10<sup>−3</sup> kg.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Deduce whether an identical hollow cylinder made of gold would also float.</p><p>Assume that the volume of gold is the same as the volume of brass.</p><ul><li><p>Density of gold = 19.3 × 10<sup>3</sup> kg m<sup>−3</sup></p></li><li><p>Density of brass = 8.7 × 10<sup>3</sup> kg m<sup>−3</sup></p></li></ul>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 9 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The Cartesian Diver is a popular science project which can be used to demonstrate physical concepts.</p><p>A &#x27;diver&#x27; is made by bending a loop of drinking straw into a U-shape and then weighting it with modelling clay.</p><p>A large plastic bottle is filled with water, leaving a small volume of air at the top.</p><p>The diver is carefully added, so that some water enters it but the straw remains floating upright due to trapped air.</p><p>Finally the lid is tightly screwed back onto the bottle, making a sealed container.</p><p>The completed Cartesian Diver and the construction of the diver are shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1a-h-cartesian-diver-1.png' alt='4-2-1a-h-cartesian-diver-1' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>When the sides of the bottle are squeezed and released in response the &#x27;diver&#x27; moves up and down rapidly as illustrated by Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-1a-h--cartesian-diver-2.png' alt='4-2-1a-h--cartesian-diver-2' /></div><p style='text-align: center;'><strong>Fig. 1.2.</strong></p><p>Discuss the physics of the Cartesian Diver when the sides of the bottle are squeezed.</p><p>(i) Explain the observed motion of the &#x27;diver&#x27;.</p><p style='text-align: right;'>[5]</p><p>(ii) Predict which direction the diver moves in when the sides of the bottle are squeezed.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>When the sides of the bottle are released the diver reverses direction.</p><p>Explain why the diver returns to its original position in the bottle.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>To prevent the overloading and sinking of ships markings, known as load lines, are required on ships hulls since the Middle Ages.</p><p>As the ship is loaded it sinks lower in the water. Once the load line meets the waterline, the ship is deemed to be fully loaded.</p><p>In 1876 Samuel Plimsoll refined the load line to reflect the needs of increasingly international trading routes. Today the &#x27;Plimsoll line&#x27; has markings to show safe loading levels in fresh, saltwater, and warm and cold temperatures.</p><p>The Plimsoll line markings on ships today are shown in Fig. 1.1. The expected labels, their meanings and indications of temperature are written below.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2a-h-plimsoll-line-buoyancy.png' alt='4-2-2a-h-plimsoll-line-buoyancy' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>Explain why the ships sit lower in the water when they are fully loaded.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>With reference to upthrust      </p><p>(i) Explain why different load lines for types of water and times of year are useful.</p><p style='text-align: right;'>[5]</p><p>(ii) Hence complete the diagram in Fig. 1.1. by adding the missing labels S, TF, W and WNA.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a simple classroom demonstration of the principle behind the Plimsoll Line, a teacher places an egg in a beaker of distilled water at close to 0°C.</p><p>The egg sinks to the bottom of the beaker as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-2c-h-egg-in-water-buoyancy.png' alt='4-2-2c-h-egg-in-water-buoyancy' /></div><p style='text-align: center;'><strong>Fig. 1.2.</strong></p><p>Suggest and comment on the likely next steps in this demonstration.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hot air balloons consist of an envelope with an open mouth through which air can be heated using a burner. The air inside becomes much hotter than its surroundings. Lifted by this method, the balloon can carry a large amount of weight across very long distances.</p><p>A very large capacity balloon, as shown in Fig. 1.1. can carry 25-30 people.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-2-3a--h-hot-air-balloon.png' alt='4-2-3a--h-hot-air-balloon' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>The envelope has a diameter at its widest point of of 32 m when it is filled with air. The total mass of the balloon, air, equipment and passengers is 20 900 kg. When the air temperature is 15 °C the density of the air outside the balloon is 1.225 kg m<sup>−3</sup>.</p><p>When the air inside the envelope is hot enough, the balloon is released.</p><p>(i) Calculate the resultant upwards force on the balloon.</p><p style='text-align: right;'>[3]</p><p>(ii) Calculate the initial upwards acceleration of the balloon.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The balloon is taken to the Middle East, where the temperature is 45 °C.</p><p>Discuss how this would affect the ability of the balloon to fly and any changes the pilot could make to fly in these temperatures.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The air density at 45 °C is 4 % less than the air density at 15 °C.</p><p>For the hotter conditions</p><p>(i) Calculate the mass that must be removed in order to achieve the same initial acceleration as in part (a)(ii)</p><p style='text-align: right;'>[3]</p><p>(ii) Suggest how this might be achieved</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

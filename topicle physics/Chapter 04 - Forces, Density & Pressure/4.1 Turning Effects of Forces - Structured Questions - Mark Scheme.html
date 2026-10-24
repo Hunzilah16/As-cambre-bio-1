@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4.1 Turning Effects of Forces - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">4.1 Turning Effects of Forces</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 4. Forces, Density & Pressure</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 7 Questions (78 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Define couple.</p><p style='text-align: right;'>[1]</p><p>(ii) State the conditions which have to be true for the forces in a couple.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) A couple is:</p><ul><li><p>A <u>pair</u> of forces that act to produce rotation <u>only</u>; <em>[1 mark]</em></p></li></ul><p>(ii) The forces in a couple must be:</p><ul><li><p>Equal in magnitude; <em>[1 mark]</em></p></li><li><p>Opposite in direction; <em>[1 mark]</em></p></li><li><p>Perpendicular to the distance between them; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a pair of forces acting on a rotating wheel.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-3b-e-couples-and-torque.png' alt='4-1-3b-e-couples-and-torque' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>(i) State the definition and units of torque</p><p style='text-align: right;'>[1]</p><p>(ii) For the couple in Fig. 1.1 state the equation which can be used to determine the torque.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) State the definition and units of torque:</p><ul><li><p>The moment of a couple <strong>AND </strong>N m; <em>[1 mark]</em></p></li></ul><p>(ii) For the couple in Fig. 1.1 state the equation which can be used to determine the torque:</p><ul><li><p>Torque / <em>T </em>/<em> τ = Fs</em> ; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For the couple in Fig. 1.1. the two forces, <em>F</em> are both 15 N and the perpendicular distance, <em>s</em>, between them is 0.5 m.</p><p>Calculate the torque of this couple.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the torque of this couple:</p><p>List the known quantities:</p><ul><li><p>Force, <em>F</em> = 15 N</p></li><li><p>Perpendicular distance between forces, <em>s</em> = 0.5 m</p></li></ul><p>Write the equation and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#964;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#215;</mo><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>15</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>5</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#964;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The forces in Fig. 1.1 are changed so that they act at an angle of 60° to the horizontal distance between them, as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-3d-e-torque-angled-forces.png' alt='4-1-3d-e-torque-angled-forces' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Calculate the new magnitude of the torque on the wheel.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the new torque on the wheel.</p><p>Determine the component of the force, <em>F</em> which is perpendicular to the horizontal line between the forces:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-22-at-12-07-13.png' alt='screenshot-2023-03-22-at-12-07-13' /></div><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>15</mn><mo>&#215;</mo><mi>sin</mi><mn>60</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>12</mn><mo>.</mo><mn>99</mn><mo mathvariant="bold">&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mn>13</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the torque:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#964;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#215;</mo><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>12</mn><mo>.</mo><mn>99</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mn>13</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>5</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#964;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>three</strong> conditions which must apply to a pair of coplanar forces to make them a couple.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p><strong>Three</strong> conditions which must apply to a pair of coplanar forces to make them a couple:</p><ul><li><p>Equal in magnitude; <em>[1 mark]</em></p></li><li><p>Opposite in direction; <em>[1 mark]</em></p></li><li><p>Perpendicular to the distance between them <strong>OR</strong> parallel and in opposite directions; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em> </em></p><p><em>It is useful to remember the diagram below to help you explain what is meant by a couple.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q5a-easy-aqa-a-level-physics.png' alt='4-2-s-q--q5a-easy-aqa-a-level-physics' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A ship has a steering wheel of radius 52 cm, as shown in Fig. 1.1.  Under rough sea conditions the moment of the couple needed to turn the wheel is 38 N m.  </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q4c-easy-aqa-a-level-physics.png' alt='4-2-s-q--q4c-easy-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Assuming that the crewman steering the ship places both hands on the steering wheel in order to produce a couple, mark on Fig. 1.1 the positions and directions of the forces needed to turn the wheel anticlockwise.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Diagram to include:</p><ul><li><p>Two equally sized forces at opposite sides of the steering wheel, both perpendicular to the diameter of the steering wheel; <em>[1 mark]</em></p></li><li><p>Both forces acting in an opposite direction so as to produce an anticlockwise turning effect on the steering wheel; <em>[1 mark] </em></p></li></ul><p><em>Example diagram shown below:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q4c-ma-easy-aqa-a-level-physics.png' alt='4-2-s-q--q4c-ma-easy-aqa-a-level-physics' /></div><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the magnitude of the force exerted by each hand of the crewman in order to turn the ship’s wheel under rough sea conditions.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Moment of the couple needed to turn the wheel, <em>M</em> = 38 N m</p></li><li><p>Radius of the wheel, <em>r</em> = 52 cm = 0.52 m </p></li></ul><p>Calculate the perpendicular distance between the lines of action of the forces acting on the wheel, <em>d</em>:</p><ul><li><p><em>d </em>= diameter of the wheel = 2 × <em>r</em></p></li><li><p><em>d</em> = 2 × 0.52 = 1.04 m <em>[1 mark] </em></p></li></ul><p>Use the equation for moment of a couple to calculate the magnitude of the force, <em>F</em>, exerted by each hand:</p><ul><li><p><em>M</em> = <em>F </em>× <em>d</em></p></li><li><p><em>F = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>M</mi><mi>d</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>= </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>38</mn><mrow><mn>1</mn><mo>.</mo><mn>04</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> =</em> 36.5 N<em> [1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The crewman takes one hand off the steering wheel and continues to apply the same force with the other. </p><p>Use your answer to part (c) to calculate the moment produced by the hand which remains on the steering wheel.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Force applied to the steering wheel by one hand, <em>F</em> = 36.5 N (from part (c))</p></li><li><p>Distance between hand and pivot, <em>r</em> = 52 cm = 0.52 m</p></li></ul><p>Calculate the moment produced by the hand which remains on steering wheel, <em>M</em>:</p><ul><li><p><em>M</em> = 36.5 × 0.52 <em>[1 mark]</em></p></li><li><p><em>M</em> = 19.0 N m <em>[1 mark]</em><strong> </strong></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Don&#x27;t forget to use the </em><em><strong>radius</strong></em><em> for a single moment. Diameter is only used for a couple.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The torque of a couple is given by:</p><p style='text-align: center;'>torque = <em>F × s</em></p><p>With the aid of a diagram explain what is meant by a couple. Label <em>F  </em>and <em>s </em> on your diagram. State the appropriate unit for the torque of a couple.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>A couple is defined as:</p><ul><li><p>A <u>pair of forces</u> with <u>equal magnitude</u> <strong>AND</strong> <u>opposite direction</u>; <em>[1 mark]</em></p></li><li><p>They do not pass through the same point <strong>OR</strong> they are separated by a distance; <em>[1 mark]</em></p></li></ul><p>A diagram illustrating <em>F</em>  and <em>s</em>  may look like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q5a-medium-aqa-a-level-physics.png' alt='4-2-s-q--q5a-medium-aqa-a-level-physics' /></div><ul><li><p>Two forces with equal magnitude (both labelled <em>F</em>) and opposite direction; <em>[1 mark]</em></p></li><li><p><em>s </em>labelled as the perpendicular distance between the forces; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>The circle in the diagram is not necessary for the marks, but couples tend to act on objects and this circle represents the object.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The see-saw shown in Fig 1.1 consists of a uniform beam freely pivoted at the centre of the beam. Two children sit opposite each other so that the see-saw is in equilibrium.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-2-s-q--q5b-medium-aqa-a-level-physics.png' alt='4-2-s-q--q5b-medium-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>Explain why the see-saw is in equilibrium.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The see-saw is in equilibrium because:</p><ul><li><p>In equilibrium,<u> anticlockwise</u> moments = <u>clockwise</u> moments; <em>[1 mark]</em></p></li><li><p>Moment due to <u>weight</u> of child <u>on the left</u> = moments due to <u>weight</u> of child <u>on the right;</u> <em>[1 mark]</em><em> </em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the weight of the beam does not affect equilibrium.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The beam&#x27;s weight does not affect equilibrium because:</p><ul><li><p>The weight of beam acts at the centre;<em> [1 mark]</em></p></li><li><p>This is the location of the pivot; <em>[1 mark]</em></p></li></ul><p><strong>OR</strong></p><ul><li><p>Centre of mass (point where weight of the beam acts) is at the pivot; <em>[1 mark]</em></p></li><li><p>Moment = Force × Distance; at the pivot distance = 0, so moment = 0 (N m) ; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The beam is removed from the see-saw and placed on its end, as in Fig 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/seesaw-on-end.png' alt='seesaw-on-end' /></div><p style='text-align: center;'><strong>Fig 1.2</strong></p><p>Explain why the beam is much more able to topple in this position, compared to when it is laying flat on the ground.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The beam is less stable because:</p><ul><li><p>The base is narrow; <em>[1 mark]</em></p></li><li><p>The line of action of the beam&#x27;s centre of gravity can easily move out of the base; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In our galaxy, some star systems are binary. This means the system has two stars.</p><p>One example is the binary system with stars Sirius A and Sirius B. This is shown in Fig 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/binarysystem.png' alt='binarysystem' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>Compare the different positions of Sirius B&#x27;s centre of gravity and its centre of mass.</p><p>Explain your answer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To compare the centre of gravity and centre of mass:</p><ul><li><p>The centre of mass (of Sirius B) is located in the <u>centre</u> of the sphere / circle;</p></li><li><p>The centre of gravity is located <u>closer to Sirius A</u>;</p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>The centre of mass is the point which behaves the same as the object, if the object&#x27;s mass were concentrated to that single point.</em></p><p><em>The centre of gravity is the point towards which the weight of a small object appears to act. As Sirius A is so large, this point is somewhere between Sirius A&#x27;s and Sirius B&#x27;s centre of mass. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On a planet in this system, a young alien is playing with some uniform blocks on a sloped surface, shown in Fig 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/slidingblock.png' alt='slidingblock' /></div><p style='text-align: center;'><strong>Fig 1.2</strong></p><p>Assuming friction is negligible, determine whether the block will slide or topple. </p><p>Explain your answer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The block&#x27;s motion is:</p><ul><li><p>The block will slide; <em>[1 mark]</em></p></li></ul><p>This is because:</p><ul><li><p>The block&#x27;s centre of gravity is at the geometric centre / midway along the base and midway up the block&#x27;s height; <em>[1 mark]</em></p></li><li><p>This lies above the block&#x27;s base; <em>[1 mark]</em></p></li><li><p>(However,) the block will slide as there is no / negligible friction; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>If, by eye, you are unsure if the centre of gravity lies above the base, annotate the diagram to confirm. We know the centre of gravity will be at the shape&#x27;s geometric centre, as it is </em><em><strong>uniform</strong></em><em>. Drawing a line straight down from this will then confirm whether the shape will topple or not. Here, the diagram clearly shows the block will not topple, but slide.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/sliding-block-ma.png' alt='sliding-block-ma' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The young alien wonders why their cylindrical block topples, or rolls, on a much shallower slope than the rectangular block.</p><p>Explain why.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The cylinder topples easily because:</p><ul><li><p>A small region of the circle is in contact with the slope; <em>[1 mark]</em></p></li><li><p>Therefore, the base is very narrow; <em>[1 mark]</em></p></li><li><p>The line of action does not need to move far to fall outside of the base; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>After they are done playing, the young alien goes inside to wash their hands.</p><p>When turning the tap, as shown in Fig 1.3, each finger exerts a force of 12 N.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/4-1-m-q2d-sq-cie-ial-physics-hand-turning-tap.png' alt='4-1-m-q2d-sq-cie-ial-physics-hand-turning-tap' /></div><p style='text-align: center;'><strong>Fig 1.3</strong></p><p>The alien exerts a torque of 420 mN m.</p><p>Calculate the radius of the tap in centimetres.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>To calculate tap radius:</p><p>List the known quantities:</p><ul><li><p>Torque, <em>T</em> = 420 mN m = 0.42 N m <em>[1 mark]</em></p></li><li><p>Force per finger, <em>F</em> = 12 N</p></li></ul><p>Recall the equation for torque:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>where <em>d</em> is the distance between the coupled forces</p></li></ul></li></ul><p>Write this in terms of radius and rearrange:</p><ul><li><p>Distance between the coupled force is the tap&#x27;s diameter</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>r</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn><mi>r</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>T</mi><mrow><mn>2</mn><mi>F</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>42</mn></mrow><mrow><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>12</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>0175</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>75</mn><mo>&#160;</mo><mi>cm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A force of 50.0 N is applied at an angle of 43° to a spanner of length 25 cm, shown in Fig 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/spanner-rigid-body-mechanics-msq4a-ib-physics.png' alt='spanner-rigid-body-mechanics-msq4a-ib-physics' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p><p>Calculate the torque provided by this force on the spanner. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Force, <em>F </em>= 50 N</p></li><li><p>Angle, <em>θ</em>  = 43°</p></li><li><p>Distance, <em>r </em>= 25 cm = 0.25 m</p></li></ul><p>Calculate the perpendicular component of the force, <em>F</em><sub><em>2</em></sub>: </p><ul><li><p>Sketch a triangle on the diagram to determine the correct trigonometric function to use</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/file-000-18.png' alt='file-000-18' /></div><ul><li><p>Consider SOH CAH TOA</p></li><li><p>Opposite component = sin<em>θ </em>× hypotenuse</p></li><li><p><em>F</em><sub><em>2</em></sub> = sin(43) × 50 <em>[1 mark]</em></p></li><li><p><em>F</em><sub><em>2</em></sub> = 34.1 N <em>[1 mark]</em></p></li></ul><p>Calculate the torque on the spanner, <em>T</em>:</p><ul><li><p>Torque: <em>T </em>= <em>F</em><sub><em>2</em></sub><em>d</em></p></li><li><p><em>T </em>= 34.1 × 0.25</p></li><li><p><em>T </em>= 8.53 = 8.5 N m (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The person applying the force to the spanner changes their grip to obtain a bigger torque. The magnitude of the force applied remains the same.</p><p>State and give a reason for the angle the force should be applied to the spanner to obtain its maximum possible value. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The angle the force should be applied to the spanner is:</p><ul><li><p>At right angles / perpendicular / 90°; <em>[1 mark]</em></p></li></ul><p>This is because:</p><ul><li><p>The torque is calculated using the perpendicular component of the force applied; <em>[1 mark]</em></p></li><li><p>So when a force is not applied at a right angle the perpendicular component will be a fraction of the force / less than the magnitude of the force; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>In this type of question, one mark is always given for the &quot;state&quot; and the remaining marks for the explanation. Here this requires 2 marks. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Give two examples of couples. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Examples of couples are:</p><p><em>Any </em><em><strong>two </strong></em><em>from the following:</em></p><ul><li><p>Two hands turning a steering wheel; <em>[1 mark]</em></p></li><li><p>Forces acting on a rotating coil; <em>[1 mark]</em></p></li><li><p>Forces acting on a bar magnet; <em>[1 mark]</em></p></li><li><p>Turning a tap; <em>[1 mark]</em></p></li><li><p>Winding up an alarm clock / toy; <em>[1 mark]</em></p></li><li><p>Turning a spanner / screwdriver; <em>[1 mark]</em></p></li><li><p>Turning a key in a lock; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>You need to be able to give, explain and make calculations relating to different examples of couples. Use the revision notes to remind yourself of this. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Turning a uniform metal bar of length 23.5 cm rotates the mechanism that opens and closes a mains water tap in Fig 1.2. A couple of forces of magnitude 175 N each are applied at an angle of 75.0° to the bar.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/couple-bar-rigid-body-mechanics-q4d-ib-physics.png' alt='couple-bar-rigid-body-mechanics-q4d-ib-physics' /></div><p style='text-align: center;'><strong>Fig 1.2</strong></p><p>Calculate the torque provided by the couple. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Length of bar, <em>d</em> = 23.5 cm = 0.235 m</p></li><li><p>Magnitude of force, <em>F </em>= 175 N</p></li><li><p>Angle forces applied to the bar, <em>θ </em>= 75.0° </p></li></ul><p>Obtain an equation to calculate the torque provided by the couple:</p><ul><li><p><em>T </em>= 2<em>Fr </em>sin<em>θ</em></p></li><li><p><em>T </em>= <em>Fd </em>sin<em>θ </em><em>[1 mark]</em></p></li></ul><p>Calculate the magnitude of the torque provided by the couple:</p><ul><li><p><em>T </em>= 175 × 0.235 × sin(75)</p></li><li><p><em>T</em> = 39.7 N m<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Remember that the equation required to calculate torque from a couple is different to the equation required to calculate torque from one resultant force. Use the revision notes to revise this concept. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A disc made from thin card has radius 42 mm and is pinned to a board so that it hangs vertically in equilibrium.</p><p>Three forces act in the plane of the disc. Two forces act tangentially on the circumference with magnitude <em>F</em><sub>1</sub>. Another acts at a point half way between the pin and edge, at an angle of 30° from the radial line with magnitude <em>F</em><sub>2</sub>.</p><p>The arrangement is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-1a-h-torque-thin-disc.png' alt='4-1-1a-h-torque-thin-disc' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The disc has negligible weight and all frictional forces can be ignored.</p><p>For the arrangement shown, express the force <em>F</em><sub>2</sub> in terms of the forces <em>F</em><sub>1</sub></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>For the arrangement shown, express the force <em>F</em><sub>2</sub> in terms of the forces <em>F</em><sub>1</sub>:</p><p>Write expressions for the torque of the couple and the torque of the single force:</p><ul><li><p>Torque of the couple, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#964;</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mo>&#160;</mo><msub><mi>F</mi><mn>1</mn></msub><mo>&#160;</mo><mi>r</mi><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em></p></li><li><p>Torque of the single force, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#964;</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>F</mi><mn>2</mn></msub><mo>&#160;</mo><mo>&#215;</mo><mi>sin</mi><mo>&#160;</mo><mn>30</mn></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfrac><mi>r</mi><mn>2</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>25</mn><mo>&#160;</mo><msub><mi>F</mi><mn>2</mn></msub><mo>&#160;</mo><mi>r</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>The disc is in equilibrium, so apply the principle of moments:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#964;</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>&#964;</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&#160;</mo><msub><mi>F</mi><mn>1</mn></msub><mo>&#160;</mo><mi>r</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>25</mn><mo>&#160;</mo><msub><mi>F</mi><mn>2</mn></msub><mo>&#160;</mo><mi>r</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>8</mn><mo>&#160;</mo><msub><mi>F</mi><mn>1</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hence state the value of <em>F</em><sub>2 </sub>if the couple produced by the pair of forces with magnitude <em>F</em><sub>1</sub> is 0.26 Nm.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Hence state the value of <em>F</em><sub>2</sub> if the couple produced by the pair of forces with magnitude <em>F</em><sub>1</sub> is 0.26 Nm:</p><p>Calculate the value of <em>F</em><sub>1</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#964;</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>F</mi><mn>1</mn></msub><mo>&#215;</mo><mo>&#160;</mo><mi>r</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mfrac><msub><mi>&#964;</mi><mn>1</mn></msub><mi>r</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>26</mn></mrow><mfenced><mrow><mn>42</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>19</mn><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the value of <em>F</em><sub>2</sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>8</mn><mo>&#160;</mo><msub><mi>F</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>50</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the magnitude of the force of the pin on the disc.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Determine the magnitude of the force of the pin on the disc:</p><p>Since the disc is in equilibrium and the forces from the couple cancel out:</p><ul><li><p>Force = 50 N <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[17 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In the 1st century CE Greek-Egyptian engineer Hero of Alexandria described a simple steam engine, which was at least 100 years old when he wrote about it.</p><p>Now commonly called a Hero&#x27;s engine, the machine is a steam turbine which can be made to rotate by boiling water in a sealed vessel beneath it. Two pipes channel the steam produced through nozzles which project outwards.</p><p>Fig. 1.1. shows Hero&#x27;s engine in operation. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-3a-h-heros-engine-alamy.png' alt='4-1-3a-h-heros-engine-alamy' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong> </p><p>Explain why the vessel rotates around its axis</p><p>i) by referring to energy stores and transfers.</p><p style='text-align: right;'>[3]</p><p>ii) by referring to forces, naming any relevant laws.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>Explain why the vessel rotates around its axis:</p><p>i) by referring to energy stores and transfers:</p><p><em>Any </em><em><strong>three </strong></em><em>from:</em></p><ul><li><p>Chemical energy store converted to thermal energy store as the fire burns; <em>[1 mark]</em></p></li><li><p>The water boils (undergoing) vaporisation / turns to steam; <em>[1 mark]</em></p></li><li><p><u>Nozzles</u> create jets of <u>steam</u> which are <u>perpendicular</u> to the line between them; <em>[1 mark]</em></p></li><li><p>Thermal energy store transfers to kinetic energy; <em>[1 mark]</em></p></li></ul><p>ii) by referring to forces, naming any relevant laws:</p><p><em>Any </em><em><strong>three </strong></em><em>from:</em></p><ul><li><p>The vessel exerts a force on the steam to eject it; <em>[1 mark]</em></p></li><li><p>According to Newton&#x27;s third law, the steam exerts an equal and opposite reaction force on the nozzle / vessel; <em>[1 mark]</em></p></li><li><p>There is an unbalanced force on the vessel; <em>[1 mark]</em></p></li><li><p>According to Newton&#x27;s second law / F = ma, the vessel accelerates; <em>[1 mark]</em></p></li><li><p>A force applied at a distance from the pivot produces torque; <em>[1 mark]</em></p></li><li><p>Two forces applied at equal distances from the pivot produce a <u>couple</u>; <em>[1 mark]</em></p></li><li><p>Torque (of a couple) = <u>one</u> of the forces × distance between the nozzles / force; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A version of Hero&#x27;s engine can be made for demonstration purposes by puncturing the sides of an empty soda can, adding water then suspending it over a Bunsen burner, as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-3b-h-heros-engine-soda-can-1.png' alt='4-1-3b-h-heros-engine-soda-can-1' /></div><p style='text-align: center;'><strong>Fig. 1.2.</strong></p><p>The holes are made by sticking a pin directly into the metal, then pulling the pin sideways to create an angled vent. This causes the jet of steam to leave the can tangentially. as shown in Fig. 1.3.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/4-1-3b-h---heros-engine-soda-can-2.png' alt='4-1-3b-h---heros-engine-soda-can-2' /></div><p style='text-align: center;'><strong>Fig. 1.3.</strong></p><p>Explain why simply puncturing holes straight into the can will not produce the rotation seen in the original Hero&#x27;s engine.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Explain why simply puncturing holes in the can will not produce the rotation seen in the original Hero&#x27;s engine:</p><ul><li><p>The turning force is caused by a couple;<em> [1 mark]</em></p></li><li><p>Must be a pair of forces;<em> [1 mark]</em></p></li><li><p>Forces must be perpendicular to the distance between them;<em> [1 mark]</em></p></li><li><p>If the steam comes straight out / radially / not at an angle the <u>component</u> of the perpendicular force will be zero;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student tries to make a Soda Can Hero&#x27;s Engine with two pairs of steam holes rather than one.</p><p>The dimensions of the can are</p><p>height = 115 mm</p><p>diameter = 66 mm</p><p>Each of the four jets exerts a force of 0.60 N and the holes create jets of steam which are at 45° to the surface of the can.</p><p>Calculate the torque experienced by the can.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Calculate the torque experienced by the can:</p><p>Make a simplified sketch of the situation:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-16-at-16-18-30.png' alt='screenshot-2023-03-16-at-16-18-30' /></div><p>Calculate the component of the force which acts perpendicular to the line connecting the couples:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mn>45</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>424</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the torque produced by each couple:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#964;</mi><mi>c</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>424</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>66</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#964;</mi><mi>c</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>80</mn><mo>&#160;</mo><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>&#160;</mo><mi>Nm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Double the answer to get total torque, since there are two pairs of forces:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#964;</mi><mi>t</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#215;</mo><mfenced><mrow><mn>2</mn><mo>.</mo><mn>80</mn><mo>&#160;</mo><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>&#160;</mo><mi>Nm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Without adding any further holes, discuss an adjustment that could be made to the can to make it spin more quickly.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Discuss an adjustment that could be made to the can to make it spin more quickly:</p><ul><li><p>Change the angle of the holes / jets; <em>[1 mark]</em></p></li><li><p>So the angle between the jet and can is smaller / less than 45°; <em>[1 mark]</em></p></li><li><p>To increase the <u>component</u> of the force that acts in the perpendicular direction; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

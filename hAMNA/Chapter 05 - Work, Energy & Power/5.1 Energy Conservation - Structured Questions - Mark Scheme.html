@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>5.1 Energy Conservation - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">5.1 Energy Conservation</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 5. Work, Energy & Power</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 11 Questions (123 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A small child does work on a large suitcase by pushing it along a smooth floor, as shown in Fig. 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-1-1a-e-work-done-child-suitcase.png' alt='5-1-1a-e-work-done-child-suitcase' /></div><p style='text-align: center;'><strong>Fig. 1.1. </strong></p><p>State the definition of work done and write the equation.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>State the definition of work done and write the equation.:</p><ul><li><p>The energy needed to <u>displace</u> an object by an <u>external force</u> applied in the <u>direction of its displacement</u>;<em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo> </mo><mo>=</mo><mo> </mo><mi>F</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The suitcase is moved back to its original position by an adult who pulls it at an angle of 70° to the floor, as shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-1-1b-e-work-done-adult-suitcase.png' alt='5-1-1b-e-work-done-adult-suitcase' /></div><p style='text-align: center;'><strong>Fig. 1.2.</strong></p><p>Write an expression for the work done on the suitcase by the adult in terms of force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, distance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> and the angle 70°.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Write an equation which would be used to calculate the work done on the suitcase by the adult:</p><ul><li><p>Work done on an incline: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo> </mo><mo>=</mo><mo> </mo><mi>F</mi><mi>s</mi><mo> </mo><mi>cos</mi><mo> </mo><mi>θ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo> </mo><mi>cos</mi><mo> </mo><mi>θ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = the component of the force (in the direction of the motion) and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = horizontal displacement</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo> </mo><mo>=</mo><mo> </mo><mi>F</mi><mi>s</mi><mo> </mo><mi>cos</mi><mo> </mo><mn>70</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In moving the suitcase the child and adult both exerted equal forces of 20 N. They each move the suitcase a distance of 2.5 m.</p><p>Calculate the work done by</p><p>(i) the child</p><p style='text-align: right;'>[2]</p><p>(ii) the adult.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Calculate the work done by the child:</p><p>Substitute the values and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>20</mn><mo>&#215;</mo><mn>2</mn><mo>.</mo><mn>5</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>50</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>(ii) Calculate the work done by the adult:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>20</mn><mo>&#215;</mo><mi>cos</mi><mn>70</mn></mrow></mfenced><mo>&#215;</mo><mn>2</mn><mo>.</mo><mn>5</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>17</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>You must have correct values </em><em><strong>and </strong></em><em>units to get the two &#x27;final answer&#x27; marks.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State whether the child or the adult are more efficient at moving the suitcase, explaining your reasoning.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>State whether the child or the adult is more efficient at moving the suitcase, explaining your reasoning:</p><ul><li><p>The child is more efficient: <em>[1 mark]</em></p></li></ul><ul><li><p>They exert the same force over the same distance with the same energy input; <em>[1 mark]</em></p></li></ul><ul><li><p>The child pushes horizontally over a smooth floor, so all the 50 J is useful energy output; however, the adult pulls at an angle so only 17 J is useful energy output;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><div class='callout-box'><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Efficiency</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>useful</mi><mo>&#160;</mo><mi>energy</mi><mo>&#160;</mo><mi>output</mi></mrow><mrow><mi>total</mi><mo>&#160;</mo><mi>energy</mi><mo>&#160;</mo><mi>input</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p>Both exert 20 N over 2.5 m = 50 J total input each. </p><p>The child pushes horizontally on a smooth floor, so all 50 J is useful (efficiency = 100%). The adult pulls at 70°, so only F cos70 × s = 17 J is useful horizontal work (efficiency = 17/50 = 34%). </p><p>Therefore, the child is more efficient.</p></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A block of weight 4.25 N is placed on a frictionless slope inclined at 30° to the horizontal as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-1-2a-e-vector-block-on-a-slope.png' alt='5-1-2a-e-vector-block-on-a-slope' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>The block is moved up the slope at constant speed by applying a force parallel to the slope.</p><p>Calculate the component of the weight of the block which acts parallel to the slope.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the component of the weight of the block which acts parallel to the slope:</p><p>Draw a vector triangle to identify the correct component:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-23-at-13-34-54.png' alt='work done block on slope MA' /></div><p>Calculate for the component of weight parallel to slope:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mrow><mi>s</mi><mi>l</mi><mi>o</mi><mi>p</mi><mi>e</mi></mrow></msub><mo>=</mo><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mn>30</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>25</mn><mo>&#215;</mo><mi>sin</mi><mn>30</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mrow><mi>s</mi><mi>l</mi><mi>o</mi><mi>p</mi><mi>e</mi></mrow></msub><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the work done in moving the block a distance of 6.0 m up the slope.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the work done in displacing the block 6.0 m up the slope:</p><p>Use the equation for work done:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo> </mo><mo>=</mo><mo> </mo><mi>F</mi><mi>s</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> where <em>F</em> = force in the direction of the displacement</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo> </mo><mo>=</mo><mo> </mo><mn>2</mn><mo>.</mo><mn>1</mn><mo>×</mo><mn>6</mn><mo>.</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>13</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mn>12</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The block in part (a) is pushed 6.0 m up the slope in 18 s.</p><p>Calculate the power needed to move the block in this amount of time.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the power needed to move the block in this amount of time:</p><p>Use the equation for power:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>t</mi></mfrac><mo>=</mo><mfrac><mn>13</mn><mn>18</mn></mfrac><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mfrac><mrow><mn>12</mn><mo>.</mo><mn>6</mn></mrow><mn>18</mn></mfrac><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>72</mn><mo>&#160;</mo><mi mathvariant="normal">W</mi><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>70</mn><mo>&#160;</mo><mi mathvariant="normal">W</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Notice that to quote 0.7 to 2 significant figures you need to include the final zero.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[5 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A beaker is filled with ice and then an electric heater placed into it, as shown in Fig. 1.1. The heater is turned on and heats up until it glows red.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/5-1-3a-e-melting-ice.png' alt='5-1-3a-e-melting-ice' /></div><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>A student states that when the ice is being heated up the total amount of energy in the ice remains the same.</p><p>State the principle of conservation of energy.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>State the principle of conservation of energy:</p><ul><li><p>Energy cannot be created or destroyed; <em>[1 mark]</em></p></li><li><p>It can only be transferred from one store to another; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain whether the student is correct, giving your reason.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Explain whether the student is correct, giving your reason:</p><ul><li><p>The student is not correct;<em> [1 mark]</em></p></li><li><p>(Conservation of energy means the) energy in a <u>closed system</u> remains constant;<em> [1 mark]</em></p></li><li><p>Heating ice is <u>not closed</u> / <u>energy escapes</u> (from the system / from the heater / through convection / conduction);<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define work done by a force.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Work done is defined as:</p><ul><li><p>Force × displacement in the direction of the force; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>You may see mark schemes allowing &#x27;distance travelled&#x27; or &#x27;distance moved&#x27; instead of displacement in this definition.</em></p><p><em>However, the definition above is the one given in your specification, and you should learn it this way.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A heavy bag is pulled across a rough surface at a constant speed. </p><p>Describe and explain how work is done in this situation.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>When a heavy bag is pulled across a rough surface:</p><ul><li><p>Work is done against friction (between the bag and the ground); <em>[1 mark]</em></p></li><li><p>This causes it to get hot / heat up <strong>OR</strong> energy is transferred to (the bag&#x27;s) thermal energy store / internal energy; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A crane is used to lift the bag from the ground onto the loading area of a truck.</p><p>Fig. 1.1 shows the crane moving the bag from the ground to the truck.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-1c-m-5-1-work-bag-crane-lift-cie-ial-sq.png' alt='5-1-1c-m-5-1-work-bag-crane-lift-cie-ial-sq' /></div><p>The mass of the bag is 64 kg. The crane takes 0.1 minutes to lift the bag from the ground to the loading area of the truck.</p><p>Calculate the rate of work done by the crane when moving the bag.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the rate of work done moving the bag:</p><p>List the known quantities:</p><ul><li><p>Mass of the bag, <em>m</em> = 64 kg</p></li><li><p>Time, <em>t</em> = 0.1 minutes = 0.1 × 60 = 6 s</p></li></ul><p>Determine the work done against gravity:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-pythagoras-work-done-ma.png' alt='5-1-pythagoras-work-done-ma' /></div><ul><li><p>Vertical height lifted:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><msup><mfenced><mrow><mn>2</mn><mo>.</mo><mn>25</mn></mrow></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msup><mfenced><mrow><mn>1</mn><mo>.</mo><mn>25</mn></mrow></mfenced><mn>2</mn></msup></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>871</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Work done against gravity (GPE):  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#8710;</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>64</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>871</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1175</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the rate of work done using the power equation:</p><ul><li><p>Rate of work done (power):  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>E</mi><mi>t</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1175</mn><mn>6</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>196</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>200</mn><mo>&#160;</mo><mi mathvariant="normal">W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Notice that the question asks for the &#x27;rate of doing work&#x27; which is the definition of power, hence the final unit being the watt (W). The units W and J s</em><em><sup>−1</sup></em><em> are equivalent, so you can use either.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The crane is powered using an electric motor. The efficiency of the crane is 74 %.</p><p>The crane is used to load approximately 400 bags with an average mass of 60 kg each day.</p><p>(i) Calculate the power used by the crane&#x27;s motor to lift the bag in part (c).</p><p style='text-align: right;'>[1]</p><p>(ii) The typical working efficiency of a crane is 80%.     </p><p>Explain how the difference in efficiency may affect the number of bags the crane can lift in a day.</p><p style='text-align: right;'>[3]</p><p>(iii) Suggest <strong>one</strong> change which could increase the efficiency of the motor and explain how it would achieve this.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) Calculate the power used by the crane&#x27;s motor to lift the bag in part (c):</p><p>List the known quantities:</p><ul><li><p>Efficiency = 74% = 0.74</p></li><li><p>Useful power = 200 W (from <strong>(c)</strong>)</p></li></ul><p>Calculate the total power used by the motor to lift the bag:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mi>f</mi><mi>f</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>y</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>f</mi><mi>u</mi><mi>l</mi><mo>&#160;</mo><mi>p</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo>&#160;</mo><mi>p</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi></mrow></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo>&#160;</mo><mi>p</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>f</mi><mi>u</mi><mi>l</mi><mo>&#160;</mo><mi>p</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi></mrow><mrow><mi>e</mi><mi>f</mi><mi>f</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>y</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo>&#160;</mo><mi>p</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi><mo>&#160;</mo><mo>=</mo><mfrac><mn>200</mn><mstyle displaystyle="true"><mn>0</mn><mo>.</mo><mn>74</mn></mstyle></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>270</mn><mo>&#160;</mo><mi mathvariant="normal">W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) The difference in efficiency would affect the number of bags the crane can lift because:</p><p><em>Any </em><em><strong>three </strong></em><em>from:</em></p><ul><li><p>More energy is needed for the same work done; <em>[1 mark]</em></p></li><li><p>At 80% efficiency, the motor would need 120 J less per bag; <em>[1 mark]</em></p></li><li><p>Total energy difference: 120 J × 400 bags = 48 000 J; <em>[1 mark]</em></p></li><li><p>(This is significant because) this is the equivalent of 44 bags per day; <em>[1 mark]</em></p><p> </p></li></ul><p>(iii) A change which would increase the efficiency of the motor:</p><p><strong>EITHER</strong></p><ul><li><p>Lubricate / oil any moving parts; <em>[1 mark]</em></p></li><li><p>This would reduce (energy) losses due to friction / heat; <em>[1 mark]</em></p></li></ul><p><strong>OR</strong></p><ul><li><p>Tighten / secure / fasten any parts which move / rattle; <em>[1 mark]</em></p></li><li><p>This would reduce (energy) losses due to sound / kinetic energy; <em>[1 mark]</em>  </p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p><p><em>In part (ii), the full calculation is as follows:</em></p><ul><li><p><em>Energy required per 60 kg bag = </em><em><em>mg</em></em><em>Δ</em><em><em>h</em></em><em> = 60 × 9.81 × 1.871 = 1100 J</em></p></li><li><p><em>At 74% efficiency, it uses 270 × 6 = 1620 J</em></p></li><li><p><em>At 80% efficiency, it would use (200/0.80) × 6 = 1500 J</em></p></li><li><p><em>Energy difference = 1620 − 1500 = 120 J per bag</em></p></li></ul><ul><li><p><em>After lifting 400 bags, this equates to a total energy difference of 120 × 400 = 48 000 J wasted per day</em></p></li><li><p><em>Which is equivalent to (48 000/1100) ≈ 44 bags per day</em></p></li></ul><p><em>This means a motor with 80% efficiency could lift 44 more bags per day than a motor working at 74% efficiency.</em></p><p><em>In part (iii) you are asked to increase the efficiency of the motor, not the process. Responses to do with changing the height of the loading platform won&#x27;t affect the running of the motor.</em></p><p><em>To answer a question like this one, where you probably don&#x27;t know and are having to infer the answers, first think where energy losses could happen. Mostly concentrate on thermal, kinetic and sound energy. Then think how this would happen, and finally how to address the problem.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Engineers around the world are working on ways to provide enough energy to sustain human activity.</p><p>Off-shore wind farms use the kinetic energy of strong offshore winds to generate electricity.</p><p>Fig. 1.1 shows an offshore wind power installation.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-2b-m-offshore-wind-farm-cie-ial-sq.png' alt='5-1-2b-m-offshore-wind-farm-cie-ial-sq' /></div><p>State the definition of power and give the units used to measure power output.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Power is defined as:</p><ul><li><p>The work done per unit time </p><p><strong>AND</strong></p></li><li><p>(The unit of power is) watts / W; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The UK is a world leader in the installation of offshore wind power.</p><p>Located in the North Sea off the east coast of England, the Hornsea Phase 2 (Hornsea Two) offshore wind farm was the largest wind farm in the world when it opened in 2022.</p><p>It uses 165 turbines rated at 8 MW each, to generate 1.4 GW of energy, enough to supply more than 1.3 million homes. Each turbine has blades of length 81 m.</p><p>The power output of a single turbine can be calculated using</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo> </mo><mi>ρ</mi><mi>A</mi><msup><mi>v</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>               </p><p>where <em>ρ</em> is the density of the air, <em>A</em> is the area swept out by the blades and <em>v</em> is the wind speed.</p><p>Calculate the average wind speed at Hornsea Two.</p><p>The density of air is 1.225 kg m<sup>−3</sup>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the average wind speed at Hornsea Two:</p><p>List the known quantities:</p><ul><li><p>Power output of turbine, <em>P</em> = 8 MW = 8 × 10<sup>6</sup> W</p></li><li><p>Density of air, <em>ρ</em> = 1.225 kg m<sup>−3</sup></p></li><li><p>Length of blades, <em>r</em> = 81 m</p></li></ul><p>Determine the circular area swept out by the blades:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mi mathvariant="normal">&#960;</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>81</mn><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>20</mn><mo>&#160;</mo><mn>612</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Area, <em>A</em> = 20 600 m<sup>2</sup> <em>[1 mark]</em></p></li></ul><p>Use the equation given in the question:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#160;</mo><mi>&#961;</mi><mi>A</mi><msup><mi>v</mi><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Rearrange and substitute:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mroot><mfrac><mrow><mn>2</mn><mi>P</mi></mrow><mrow><mi>&#961;</mi><mi>A</mi></mrow></mfrac><mn>3</mn></mroot></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mroot><mfrac><mrow><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mn>6</mn></msup></mrow></mfenced></mrow><mrow><mn>1</mn><mo>.</mo><mn>225</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>20</mn><mo>&#160;</mo><mn>600</mn></mrow></mfrac><mn>3</mn></mroot></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>State the answer to two sig figs and include the unit:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mi>v</mi><mo>=</mo><mo>&#160;</mo><mn>8</mn><mo>.</mo><mn>59</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>8</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>&#8722;</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><mo>(</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo><mo>)</mo><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The Hornsea wind turbines are found to have an efficiency of 40%.   </p><p>(i) Calculate the energy required from the wind every second to achieve the desired power output.</p><p style='text-align: right;'>[2]</p><p>(ii) Explain why it is impossible to transfer all the energy available from the wind.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>(i) Calculate the energy from the wind to achieve the desired power output:</p><ul><li><p>Total power output = 1.4 GW = 1.4 × 10<sup>9</sup> W</p></li><li><p>Efficiency of the turbines = 40% = 0.4</p></li></ul><p>Use the efficiency equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mi>f</mi><mi>f</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>y</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>p</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi><mo>&#160;</mo><mi>o</mi><mi>u</mi><mi>t</mi><mi>p</mi><mi>u</mi><mi>t</mi></mrow><mrow><mi>p</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi><mo>&#160;</mo><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Power input = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>1</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>9</mn></msup></mrow><mrow><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Power input = energy transferred each second = 3.5 × 10<sup>9</sup> J s<sup>−1</sup> <em>[1 mark]</em></p></li></ul><p>(ii) It is impossible to transfer all the energy available from the wind because:</p><ul><li><p>The wind&#x27;s energy is in the form of <u>kinetic</u> energy; <em>[1 mark]</em></p></li><li><p>Transferring all the kinetic energy would mean the wind would stop moving; <em>[1 mark]</em></p></li><li><p>(Hence) the blades would stop moving; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[17 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A hybrid electric bike is fitted with both pedals and a battery. The cyclist can use pedals only, pedals and battery, or battery only as they ride. Fig 1.1 shows a cyclist riding a hybrid electric bike up an inclined road.</p><p>At one hill the cyclist switches to battery only. A road sign at the base of the hill states that it has an incline of 5%, meaning that for every 100 m travelled horizontally, the height increases by 5 m.</p><p>The bike travels at a steady speed of 6.0 m s<sup>−1</sup>. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-3a-m-bike-incline-cie-ial-sq.png' alt='5-1-3a-m-bike-incline-cie-ial-sq' /></div><p>The mass of the rider and bike combined is 72.8 kg. The distance from the base to the top of the hill is 35 m.</p><p>Calculate the minimum power required from the battery. Assume that there is no energy loss due to friction.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>Calculate the minimum power required from the battery:</p><p>List the known quantities:</p><ul><li><p>Mass, <em>m</em> = 72.8 kg</p></li><li><p>Weight, <em>W</em> = <em>mg</em> = 72.8 × 9.81</p></li><li><p>Velocity, <em>v</em> = 6.0 m s<sup>−1</sup></p></li></ul><p>Determine the angle of the slope:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/screenshot-2023-02-27-at-11-02-30.png' alt='screenshot-2023-02-27-at-11-02-30' /></div><ul><li><p>The force is the weight acting down the slope</p></li><li><p>The incline is 5%, therefore for each 100 m travelled height increases by 5 m</p></li><li><p>Angle of incline:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><mfenced><mfrac><mn>5</mn><mn>100</mn></mfrac></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>86</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the resistive force <em>F</em> due to the bike and cyclist:</p><ul><li><p>Force parallel to the slope:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>72</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>.</mo><mn>86</mn><mo>&#176;</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>35</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the power required:</p><ul><li><p>Power:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>35</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><mn>6</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>213</mn><mo>.</mo><mn>6</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>210</mn><mo>&#160;</mo><mi mathvariant="normal">W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (2 s.f.)  <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>Since the incline of the slope is 5% you may have instinctively assumed that the angle is 5°.</em></p><p><em>Be careful of making these quick assumptions. Always sketch diagrams (or annotate the diagram you are provided with) to check </em><em><strong>before </strong></em><em>you start calculating.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Near the top of the hill, the cyclist stops pedalling and the bicycle freewheels for 1.6 s until coming to a stop.</p><p>The frictional forces which slow down the motion are constant.  </p><p>(i) Show that the bicycle travels about 5 m before coming to a stop.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the magnitude of the frictional force which slows the bicycle down.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass, <em>m</em> = 72.8 kg</p></li><li><p>Initial velocity, <em>u</em> = 6.0 m s<sup>−1</sup>  </p></li><li><p>Final velocity, <em>v</em> = 0 m s<sup>−1</sup>  </p></li><li><p>Time, <em>t</em> = 1.6 s</p></li><li><p>Component of weight down slope, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>35</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> (from part (a))</p></li></ul><p>(i) Show that the bicycle travels about 5 m before coming to a stop:</p><ul><li><p>Frictional force is constant, therefore acceleration is constant</p></li><li><p>SUVAT (missing <em>a</em>):  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mfrac><mrow><mi>v</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>u</mi></mrow><mn>2</mn></mfrac></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mfrac><mrow><mn>6</mn><mo>.</mo><mn>0</mn></mrow><mn>2</mn></mfrac></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>6</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 4.8 m <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Calculate the frictional force which slows down the bicycle:</p><ul><li><p>SUVAT (missing <em>t</em>):  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><mi>u</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>6</mn><mo>.</mo><msup><mn>0</mn><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>8</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 3.75 m s<sup>−2</sup><em> [1 mark]</em></p></li></ul><p>Use Newton&#x27;s second law to find force:</p><ul><li><p>Frictional force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = (72.8 × 3.75) - 35.6</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 237.4 = 240 N (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Once the cyclist reaches the top, they turn off the motor and head back down to the bottom. At the bottom of the hill, they reach a velocity of 8.8 m s<sup>−1</sup>.   </p><p>(i) Calculate the energy the cyclist has at the top of the hill.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the energy the cyclist has at the bottom of the hill.</p><p style='text-align: right;'>[2]</p><p>(iii) Compare the two values you have calculated and suggest a reason for the difference.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (7 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Length of hill = 35 m</p></li><li><p>Angle of inclination = 2.86° (from <strong>(a)</strong>)</p></li><li><p>Mass of cyclist, <em>m</em> = 72.8 kg</p></li><li><p>Velocity at bottom of hill, <em>v</em> = 8.8 m s<sup>−1</sup></p></li></ul><p>(i) Calculate the energy the cyclist has at the top of the hill:</p><ul><li><p>Change in height:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>h</mi><mo> </mo><mo>=</mo><mo> </mo><mn>35</mn><mo> </mo><mi>sin</mi><mo> </mo><mo>(</mo><mn>2</mn><mo>.</mo><mn>86</mn><mo>)</mo><mo> </mo><mo>=</mo><mo> </mo><mn>1</mn><mo>.</mo><mn>75</mn><mo> </mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Gravitational potential energy:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mn>72</mn><mo>.</mo><mn>8</mn><mo> </mo><mo>×</mo><mo> </mo><mn>9</mn><mo>.</mo><mn>81</mn><mo> </mo><mo>×</mo><mo> </mo><mn>1</mn><mo>.</mo><mn>75</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mn>1250</mn><mo> </mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Calculate the energy the cyclist has at the bottom of the hill:</p><ul><li><p>Kinetic energy:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mo> </mo><mn>72</mn><mo>.</mo><mn>8</mn><mo> </mo><mo>×</mo><mo> </mo><mn>8</mn><mo>.</mo><msup><mn>8</mn><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mn>2819</mn><mo> </mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><p> </p></li></ul><p>(iii) Compare the two values you have calculated and suggest a reason for the difference:</p><p><em>Comparison:</em></p><ul><li><p>Energy has increased (between the top and bottom of the hill); <em>[1 mark]</em></p></li></ul><p><em>Suggested reason:</em></p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>Work has been done on the bicycle <u>in addition to the weight / gravity</u> in the direction of motion; <em>[1 mark]</em></p></li><li><p>Force has been applied to the bicycle; <em>[1 mark]</em></p></li><li><p>The person must have been pedaling <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 7 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a ride at a water park. Customers are seated in a circular glider which is subject to an accelerating force at point <strong>A</strong>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-1-4a-m-rollercoaster-gpe-ke-cie-ial-sq.png' alt='5-1-4a-m-rollercoaster-gpe-ke-cie-ial-sq' /></div><p>The first part of the ride is horizontal. In this section, the glider is accelerated from rest at point <strong>A</strong> to 30 m s<sup>−1</sup> at point <strong>B</strong>.</p><p>At point <strong>B</strong>, the track is angled at 30° to the horizontal for 2.5 m.</p><p>The total mass of the glider and passengers is 350 kg.</p><p>Calculate the work done by the glider against gravity when it travels through point <strong>B</strong>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the work done against gravity when the glider travels through point <strong>B</strong>:</p><p>List the known quantities:</p><ul><li><p>Mass of the glider and passengers, <em>m</em> = 350 kg</p></li><li><p>Displacement, <em>s</em> = 2.5 m</p></li><li><p>Angle, <em>θ</em> = 30°</p></li></ul><p>Calculate the vertical displacement:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#916;</mi><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><mi>sin</mi><mn>30</mn><mo>&#176;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>25</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul><p>Calculate the work done in the direction of motion:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>&#916;</mi><mi>h</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>25</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mn>350</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>25</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><em>W</em> = 4288 = 4300 J (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Calculate the maximum height above <strong>A</strong> that the passengers and glider could reach.</p><p style='text-align: right;'>[3]</p><p>(ii) Point <strong>C</strong> is 28 m above <strong>A</strong>. </p><p>Suggest why the ride is built to this height instead of the maximum height calculated in <strong>(i)</strong>.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Calculate the maximum possible height above <strong>A</strong>:</p><p>List the known quantities:</p><ul><li><p>Mass of the passengers and glider, <em>m</em> = 350 kg</p></li><li><p>Maximum speed of glider, <em>v</em> = 30 m s<sup>−1</sup></p></li></ul><p>Equate the equations for kinetic energy and GPE:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p>Equate and rearrange:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo>⇒</mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo>∆</mo><mi>h</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>h</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><msup><mn>30</mn><mn>2</mn></msup><mrow><mn>2</mn><mo> </mo><mo>×</mo><mo> </mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 45.87 = 46 m (2 s.f.) <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) The ride is built to 28 m instead of 46 m because:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>To reach 46 m, all of the kinetic energy would need to be transferred to GPE; <em>[1 mark]</em></p></li><li><p>This would require there to be no energy loss (between <strong>A</strong> and <strong>C</strong>), which is not possible; <em>[1 mark]</em></p></li><li><p>Energy losses will occur due to sound and heat from friction / drag forces; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>At point <strong>C</strong>, the glider stops momentarily before sliding down the incline until it lands in the water pool at point <strong>D</strong> with a speed of 22 m s<sup>−1</sup>.</p><p>Determine the efficiency of the energy transfer between points <strong>C</strong> and <strong>D</strong>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Determine the efficiency of the ride:</p><p>List the known quantities:</p><ul><li><p>Mass of the glider and passengers, <em>m</em> = 350 kg</p></li><li><p>Final speed, <em>v</em> = 22 m s<sup>−1</sup> </p></li><li><p>Height of ride, Δ<em>h</em> = 28 m</p></li></ul><p>Determine the GPE of the glider at <strong>C</strong>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi><mo> </mo><mo>=</mo><mo> </mo><mn>350</mn><mo> </mo><mo>×</mo><mo> </mo><mn>9</mn><mo>.</mo><mn>81</mn><mo> </mo><mo>×</mo><mo> </mo><mn>28</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>GPE at <strong>C</strong> = 96 138 J</p></li></ul><p>Determine the KE of the glider at <strong>D</strong>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo> </mo><mo>×</mo><mo> </mo><mn>350</mn><mo> </mo><mo>×</mo><mo> </mo><msup><mn>22</mn><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>KE at <strong>D</strong> = 84 700 J</p></li></ul><p>Calculate the efficiency of the ride:</p><ul><li><p>Efficiency = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>f</mi><mi>u</mi><mi>l</mi><mo> </mo><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi><mo> </mo><mi>o</mi><mi>u</mi><mi>t</mi><mo> </mo></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi><mo> </mo><mi>i</mi><mi>n</mi></mrow></mfrac><mo>×</mo><mn>100</mn><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Efficiency = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>84</mn><mo> </mo><mn>700</mn></mrow><mrow><mn>96</mn><mo> </mo><mn>138</mn></mrow></mfrac><mo> </mo><mo>×</mo><mo> </mo><mn>100</mn><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Efficiency = 88 % <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Once the glider reaches point <strong>D</strong>, the water applies a decelerating force until it comes to a stop after 8.5 m.</p><p>Calculate the decelerating force exerted on the glider by the water.   </p><p>State any assumptions you made in your calculation.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the decelerating force on the glider from the water:</p><p>List the known quantities:</p><ul><li><p>Initial velocity, <em>u</em> = 22 m s<sup>−1</sup></p></li><li><p>Final velocity, <em>v</em> = 0 m s<sup>−1</sup></p></li><li><p>Distance, <em>s</em> = 8.5 m</p></li></ul><p>Calculate the deceleration:</p><ul><li><p>SUVAT (missing <em>t</em>):  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mi>a</mi><mi>s</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><mi>u</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><mn>22</mn><mn>2</mn></msup><mrow><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>8</mn><mo>.</mo><mn>5</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 28.47 = 28 m s<sup>−2</sup> <em>[1 mark]</em></p></li></ul><p>Use Newton&#x27;s second law to find the decelerating force:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>350</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>28</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>9800</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>State any assumptions:</p><ul><li><p>The decelerating force / acceleration is constant (so SUVAT equations can be used); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a simple arrangement which can be used to investigate how the kinetic energy of a trolley varies with its distance from the top of the ramp.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-2-1a-m-trolley-on-ramp.png' alt='5-2-1a-m-trolley-on-ramp' /></div><p>In order to plan an investigation to determine the kinetic energy of the car at a particular point on the ramp:           </p><p>(i) Describe briefly any additional equipment and the method to be used.</p><p style='text-align: right;'>[3]</p><p>(ii) State the measurements to be taken and the measuring tool in each case.</p><p style='text-align: right;'>[2]</p><p>(iii) Explain how the data will be analysed.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (7 marks):</div>
+                    <p>Plan an investigation to determine the kinetic energy of the car at a point on the ramp:</p><p>(i) The additional equipment and the method to be used are:</p><p><em>Any </em><em><strong>three </strong></em><em>from:</em></p><ul><li><p>Mark a starting point (so that all readings are taken from the same position); <em>[1 mark]</em></p></li><li><p>Release the trolley from rest each time; <em>[1 mark] </em> </p></li><li><p>Add an interrupt card on the trolley; <em>[1 mark]</em></p></li><li><p>Set up a light gate (and timer /<strong> </strong>data logger) at least halfway down the ramp <strong>OR</strong> use a video camera; <em>[1 mark]</em></p></li><li><p>Repeat the experiment at least three times; <em>[1 mark] </em></p><p> </p></li></ul><p>(ii) The measurements to be taken and the measuring instruments to be used are:</p><p><em>Any </em><em><strong>two </strong></em><em>from:</em></p><ul><li><p>Measure time using timer <strong>OR </strong>light gates and data logger <strong>OR </strong>from video camera; <em>[1 mark]</em></p></li><li><p>Measure distance / ramp length using meter rule <strong>OR </strong>tape measure; <em>[1 mark]</em></p></li><li><p>Measure the width of the interrupt card using 30 cm ruler <strong>OR</strong> vernier callipers; <em>[1 mark]</em></p></li><li><p>Measure the mass of the trolley using digital balance / scales; <em>[1 mark]</em></p><p> </p></li></ul><p>(iii) Explain how the data will be analysed:</p><ul><li><p>Determine <u>average</u> velocity from <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mi>d</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo> </mo><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Calculate kinetic energy using <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 7 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The graph in Fig 1.2 shows the variation of the gravitational potential energy and kinetic energy of the trolley with distance <em>d</em> from the top of the ramp.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-2-1b-m-ke-gpe-graph.png' alt='5-2-1b-m-ke-gpe-graph' /></div><p>(i) On Fig. 1.2, identify the line representing gravitational potential energy with <strong>GPE</strong> and the line representing kinetic energy with <strong>KE</strong>.</p><p style='text-align: right;'>[2]</p><p>(ii) Line <strong>A</strong> is linear and line <strong>B </strong>is not linear. Use your answer to part <strong>(i)</strong> to explain why.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Add the labels <strong>GPE</strong> for gravitational potential energy and <strong>KE</strong> for kinetic energy:</p><ul><li><p>Line <strong>A</strong> labelled <strong>GPE</strong>;<em> [1 mark]</em></p></li><li><p>Line <strong>B</strong> labelled <strong>KE</strong>; <em>[1 mark]</em></p><p></p></li></ul><p>(ii) Line <strong>A</strong> is linear and line <strong>B</strong> is not because:</p><ul><li><p>GPE is directly proportional to height (and therefore distance on a straight ramp); <em>[1 mark]</em></p></li><li><p>Not <u>all</u> GPE is transferred to KE <strong>AND </strong><u>friction</u> causes some transfer to <u>heat / thermal</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use the graph in Fig. 1.2. to estimate the energy transferred to thermal energy.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Use the graph in Fig. 1.2. to estimate the energy transferred to thermal energy:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/5-2-ke-gpe-graph-ma.png' alt='5-2-ke-gpe-graph-ma' /></div><ul><li><p>(From the graph): max GPE = 0.50 J <strong>AND </strong>max KE = 0.36 J <em>[1 mark]</em></p></li><li><p>Energy transferred = 0.50 − 0.36 = 0.14 J <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the average resistive force acting on the toy car.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Determine the average resistive force acting on the toy car:</p><p>List the known quantities:</p><ul><li><p>Work done = 0.14 J (from <strong>(c)</strong>)</p></li><li><p>(From the graph): distance travelled = 0.9 m</p></li></ul><p>Use the equation for work done to find the force:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mi>o</mi><mi>r</mi><mi>k</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>14</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>9</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>16</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cyclist of mass 80 kg riding a bicycle of mass 12 kg freewheels from rest 650 m down a hill.</p><p>The foot of the hill is 20 m lower than the cyclist&#x27;s starting point and the cyclist reaches a top speed of 12 m s<sup>−1</sup> before they start to brake at the foot of the hill.</p><p>For this situation, calculate      </p><p>(i) the change in gravitational potential energy</p><p style='text-align: right;'>[2]</p><p>(ii) the kinetic energy gained by the cyclist.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Total mass of the cyclist and bicycle, <em>m</em> = 80 + 12 = 92 kg</p></li><li><p>Change in height, Δ<em>h</em> = 20 m</p></li><li><p>Final velocity, <em>v</em> = 12 m s<sup>−1</sup> </p></li><li><p>Gravitational field strength, <em>g</em> = 9.81 m s<sup>−2</sup> </p></li></ul><p>(i) Calculate the change in gravitational potential energy:</p><ul><li><p>Gravitational potential energy:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mn>92</mn><mo> </mo><mo>×</mo><mo> </mo><mn>9</mn><mo>.</mo><mn>81</mn><mo> </mo><mo>×</mo><mo> </mo><mn>20</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mn>18</mn><mo> </mo><mn>050</mn><mo> </mo><mo>=</mo><mo> </mo><mn>18</mn><mo> </mo><mn>000</mn><mo> </mo><mi mathvariant="normal">J</mi><mo> </mo><mfenced><mrow><mn>2</mn><mo> </mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p><p> </p></li></ul><p>(ii) Calculate the gain in kinetic energy:</p><ul><li><p>Kinetic energy:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mn>92</mn><mo>×</mo><msup><mn>12</mn><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 6624 = 6600 J (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For the cyclist and bicycle    </p><p>(i) State the main resistive forces to the motion.</p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the work done against these forces during the descent.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) The main resistive forces to the motion are:</p><ul><li><p>Air resistance <strong>AND </strong>friction between <u>tyres / wheels / bicycle</u> and the <u>road</u>; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Calculate the work done against these forces during the descent:</p><ul><li><p>Work done = Initial GPE − final KE</p></li><li><p>Work done = 18 000 − 6600 = 11 400 J <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the average resistive force acting on the cyclist during the descent.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the average resistive force on the cyclist during the descent:</p><p>List the known quantities:</p><ul><li><p>Work done, <em>W</em> = 11 400 J (from <strong>(b)</strong>)</p></li><li><p>Distance travelled, <em>s</em> = 650 m</p></li></ul><p>Use the equation relating work done to force and distance:</p><ul><li><p>Average resistive force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mo>&#215;</mo><mi>s</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>11</mn><mo>&#160;</mo><mn>400</mn></mrow><mn>650</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 17.538 = 18 N (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cyclist buys a set of tyres which claim to &#x27;increase efficiency by 30% compared to your old tyres&#x27;.</p><p>The cyclist tests out the new tyres by riding down the same hill. With the new tyres, the cyclist achieves a top speed of 14 m s<sup>−1</sup> at the bottom of the hill.</p><p>Deduce whether the claim is correct or incorrect.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>Deduce whether the claim that the new tyres <em>&#x27;increase efficiency by 30% compared to your old tyres&#x27; </em>is correct or incorrect:</p><p>List the known quantities:</p><ul><li><p>KE with old tyres = 6600 J</p></li><li><p>Change in GPE = 18 000 J</p></li><li><p>Top speed with new tyres, <em>v</em><sub><em>new</em></sub> = 14 m s<sup>−1</sup></p></li></ul><p>Determine the efficiency of the old and new tyres:</p><ul><li><p>Efficiency = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>f</mi><mi>u</mi><mi>l</mi><mo>&#160;</mo><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi><mo>&#160;</mo><mi>o</mi><mi>u</mi><mi>t</mi></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo>&#160;</mo><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi><mo>&#160;</mo><mi>i</mi><mi>n</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>In this case, the useful energy is the final kinetic energy, and the total energy is the initial GPE</p></li><li><p>Efficiency = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo>&#160;</mo><mi>K</mi><mi>E</mi></mrow><mrow><mi>i</mi><mi>n</mi><mi>i</mi><mi>t</mi><mi>i</mi><mi>a</mi><mi>l</mi><mo>&#160;</mo><mi>G</mi><mi>P</mi><mi>E</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Efficiency of old tyres = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>6600</mn><mrow><mn>18</mn><mo>&#160;</mo><mn>000</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>367</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Efficiency of new tyres = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>&#215;</mo><mn>92</mn><mo>&#215;</mo><msup><mn>14</mn><mn>2</mn></msup></mrow><mrow><mn>18</mn><mo>&#160;</mo><mn>000</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>501</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Determine the % increase in efficiency:</p><ul><li><p>Ratio of efficiencies:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>e</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>n</mi><mi>e</mi><mi>w</mi></mrow></msub></mrow><mrow><mi>e</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>o</mi><mi>l</mi><mi>d</mi></mrow></msub></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>501</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>367</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>37</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>OR</strong> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>e</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>o</mi><mi>l</mi><mi>d</mi></mrow></msub></mrow><mrow><mi>e</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>n</mi><mi>e</mi><mi>w</mi></mrow></msub></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>73</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>% increase = 1.37 = 37% <strong>OR</strong> (100 − 73)% = 37%</p></li><li><p>% increase = 37% <em>[1 mark]</em></p></li></ul><p>Write a concluding sentence:</p><ul><li><p>The claim of a 30% increase is correct as the new tyres lead to a 37% increase in efficiency (compared to the old tyres); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>Note that a 30 % increase does not mean adding 30 % to the original number, it means increasing the original number by 30 % of itself. </em></p><p><em>To make this question a lot easier, you can use the fact that efficiency is directly proportional to the kinetic energy gained, as this is the sole useful energy output we are interested in. As a result, you can simply plug in the squares of the velocities to get a ratio which is exactly the same as the ratio of the efficiencies, but you don&#x27;t have to go to the trouble of calculating the new KE or old and new efficiencies. A much more efficient approach!</em></p><ul><li><p><em>The initial GPE and the mass of the cyclist stay the same, so: </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mi>f</mi><mi>f</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>y</mi><mo> </mo><mo>∝</mo><mo> </mo><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo> </mo><mi>K</mi><mi>E</mi><mo> </mo><mo>∝</mo><mo> </mo><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em></p></li><li><p><em>% increase = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mfrac><mrow><mi>e</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>n</mi><mi>e</mi><mi>w</mi></mrow></msub></mrow><mrow><mi>e</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>o</mi><mi>l</mi><mi>d</mi></mrow></msub></mrow></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><em><strong>OR</strong></em><em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mfrac><mrow><mi>K</mi><msub><mi>E</mi><mrow><mi>n</mi><mi>e</mi><mi>w</mi></mrow></msub></mrow><mrow><mi>K</mi><msub><mi>E</mi><mrow><mi>o</mi><mi>l</mi><mi>d</mi></mrow></msub></mrow></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><em><strong>OR</strong></em><em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mfrac><msup><msub><mi>v</mi><mrow><mi>n</mi><mi>e</mi><mi>w</mi></mrow></msub><mn>2</mn></msup><msup><msub><mi>v</mi><mrow><mi>o</mi><mi>l</mi><mi>d</mi></mrow></msub><mn>2</mn></msup></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em></p></li><li><p><em>% increase = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mfrac><msup><mn>14</mn><mn>2</mn></msup><msup><mn>12</mn><mn>2</mn></msup></mfrac><mo>-</mo><mo> </mo><mn>1</mn></mrow></mfenced><mo>×</mo><mn>100</mn><mo>%</mo><mo> </mo><mo>=</mo><mo> </mo><mn>36</mn><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>It has been predicted that in the future, large offshore wind turbines may have a power output ten times that of the largest ones currently in use. These turbines could have a blade length of 50 m or more. A turbine such as this is shown in Fig. 1.1 below. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q1a-hard-aqa-a-level-physics.png' alt='4-6-s-q--q1a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the power this turbine can produce, at a wind speed of 15 m s<sup>–1</sup> assuming that it is 100% efficient.</p><p>Give your answer in MW.</p><p>The density of air is 1.2 kg m<sup>–3</sup>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>To calculate the power of the turbine:</p><p>List the known quantities:</p><ul><li><p>Blade length,<em> r</em> = 50 m</p></li><li><p>Wind speed, <em>v</em> = 15 m s<sup>–1</sup></p></li><li><p>Density of air, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#961;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 1.2 kg m<sup>–3</sup> </p></li></ul><p>Determine an equation for the power of one turbine:</p><ul><li><p>Power, <em>P</em> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>E</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi></mrow><mrow><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The type of energy that the turbine converts is the <u>kinetic energy</u>,<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>P</em> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><msub><mi>E</mi><mi>k</mi></msub><mi>t</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><ul><li><p>Power is the kinetic energy <u>per second</u> </p></li></ul></li></ul><p>Determine an equation for the kinetic energy per unit volume of air transferred from the wind to the turbine:</p><ul><li><p>Kinetic energy for a certain mass, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>mv</em><sup><em>2</em></sup></p></li><li><p>Density, <em>ρ</em> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>m</mi><mi>V</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> therefore, <em>m</em> = <em>ρV</em></p></li><li><p>Kinetic energy per unit volume of air from the wind, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>=  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>ρv</em><sup><em>2 </em></sup><em>[1 mark]</em> </p></li></ul><p>Determine an equation for the kinetic energy for the volume of air the turbine sweeps through in one second:</p><ul><li><p>The volume can be modelled as a cylinder of air passing through the turbine each second, with the turbines sweeping out an area <em>A</em> and wind speed <em>v</em></p></li><li><p>Therefore, <em>V</em> = <em>vA</em></p></li><li><p>Kinetic energy per second,<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>ρv</em><sup><em>2</em></sup><em> × vA</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>ρv</em><sup>3</sup><em>A  </em><em>[1 mark]</em> </p></li></ul><p>Calculate the area swept by the blade, <em>A </em>in one second and use this to determine the power:</p><ul><li><p>The shape of the area that the blades sweep out is a circle</p></li><li><p><em>A</em> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&#960;r</mi><mn>2</mn></msup><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> where <em>r</em> is the blade length </p></li><li><p>Therefore<em>, P</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>ρv</em><sup>3</sup>π<em>r</em><sup>2</sup></p></li><li><p><em>P</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 1.2 × (15)<sup>3</sup> × π × (50)<sup>2 </sup><em>[1 mark]</em></p></li><li><p><em>P </em>= 15.904 × 10<sup>6</sup> W = 16 MW <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em><em><strong> </strong></em></p><p><em>The key point to understand in this question is that the power is the kinetic energy </em><em><strong>per second</strong></em><em>. In other words, if we calculate the kinetic energy for 1 second, this is equal to the power. </em></p><p><em>Calculating the volume of air that the blades sweep through can be difficult to visualise. The volume of a cylinder </em><em><em>V</em></em><em> = </em><em><em>A</em></em><em> × </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> where </em><em><em>A</em></em><em> is the cross–sectional area (the circle =</em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&#960;r</mi><mn>2</mn></msup><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> ) and </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em><em> </em></em><em>is the longer side of the cylinder. In this case, we are calculating the volume </em><em><strong>per second</strong></em><em>, therefore we can use the speed </em><em><em>v </em></em><em>for this side instead of </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>. </em></p><p><em>This may be clearer through looking at the units. </em><em><em>A</em></em><em> has units m</em><em><sup>2</sup></em><em> and </em><em><em>v</em></em><em> units m s</em><em><sup>–1</sup></em><em> therefore </em><em><em>V</em></em><em> has the units m</em><em><sup>3</sup></em><em> s</em><em><sup>–1</sup></em><em> i.e. the volume per second.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q1a-ma-hard-aqa-a-level-physics.png' alt='4-6-s-q--q1a-ma-hard-aqa-a-level-physics' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A factory uses 14 100 kWh of electricity per year. </p><p>Determine the number of factories that the wind turbine from part (a) can power for 1 year. </p><p>Assume that the wind is blowing onto the wind turbine at 15 m s<sup>−1</sup> on average, for 24 hours every day, 365 days a year.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Power of wind turbine, <em>P</em><sub><em>W</em></sub> = 16 MW = 16 × 10<sup>6</sup> W (from part a)</p></li><li><p>Energy use per year per factory, <em>E</em><sub><em>F</em></sub> =14 100 kWh = 14.1×10<sup>3</sup> kWh</p></li><li><p>Time = 1 year = 365 days </p></li></ul><p>Calculate the total energy produced by one wind turbine in one year, <em>E</em><sub><em>W</em></sub>:</p><ul><li><p>When the wind blows at 15 ms<sup>-1</sup>, <em>P</em><sub><em>W</em></sub> = 16 × 10<sup>6</sup> W</p></li><li><p>Which is 16 × 10<sup>6</sup> J s<sup>−1</sup></p></li><li><p>In one year, the turbine operates for 60 × 60 × 24 × 365 = 3.15 × 10<sup>7</sup> s <em>[1 mark]</em></p></li><li><p>Therefore the energy it generates in one year is</p><ul><li><p><em>E</em><sub><em>W </em></sub>= (16 × 10<sup>6</sup> J s<sup>−1</sup>) × (3.15 × 10<sup>7</sup> s) = 5.04 × 10<sup>14</sup> J<em> [1 mark]</em></p></li></ul></li></ul><p>Convert the energy required per factory in one year to J:</p><ul><li><p>Energy required per factory, <em>E</em><sub><em>F</em></sub> = 14 100 kWh = 14.1 × 10<sup>6</sup> Wh</p></li><li><p>Convert Wh to Ws</p><ul><li><p>(14.1 × 10<sup>6</sup>) × (60 × 60) = 5.076 × 10<sup>10 </sup>Ws</p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>E</mi></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>P</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Therefore, 1 J = 1 Ws</p></li><li><p>Hence, <em>E</em><sub><em>F </em></sub>= 5.076 × 10<sup>10 </sup>Ws = 5.076 × 10<sup>10 </sup>J <em>[1 mark]</em></p></li></ul></li></ul><p>Calculate the number of factories that can be powered by the wind turbine, <em>N</em>:</p><ul><li><p>Number of factories = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>Energy</mi><mo>&#160;</mo><mi>generated</mi><mo>&#160;</mo><mi>by</mi><mo>&#160;</mo><mi>one</mi><mo>&#160;</mo><mi>wind</mi><mo>&#160;</mo><mi>turbine</mi><mo>&#160;</mo><mi>in</mi><mo>&#160;</mo><mi>one</mi><mo>&#160;</mo><mi>year</mi></mrow><mrow><mi>Energy</mi><mo>&#160;</mo><mi>required</mi><mo>&#160;</mo><mi>by</mi><mo>&#160;</mo><mi>one</mi><mo>&#160;</mo><mi>factory</mi><mo>&#160;</mo><mi>in</mi><mo>&#160;</mo><mi>one</mi><mo>&#160;</mo><mi>year</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>N </em>=<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><msub><mi>E</mi><mi>W</mi></msub><msub><mi>E</mi><mi>F</mi></msub></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>5</mn><mo>.</mo><mn>04</mn><mo>&#215;</mo><msup><mn>10</mn><mn>14</mn></msup></mrow><mrow><mn>5</mn><mo>.</mo><mn>076</mn><mo>&#215;</mo><msup><mn>10</mn><mn>10</mn></msup></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 9900 (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>You may think that it is not possible for one wind turbine to power 9900 factories for a year but actually these turbines are much bigger than current turbines and offshore the wind is blowing more quickly meaning more power is generated. The radius of the wind turbine is 50 m, this is the length of an Olympic sized swimming pool. </em></p><p><em>Don’t be put off by the unit ‘kWh’ (kilo–watt hour). This is just a unit of energy equal to 1 kW (1000 W) of power sustained for 1 hour.</em></p><p><em>If you correctly used a power of 15.9 MW from part (a), you also would have gained an answer that rounds to 9900 and full marks. The final answer is given to 2 s.f. because the input values from part (a) were to 2 s.f.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A German physicist Albert Betz concluded in 1919 that no wind turbine can convert more than 59.3 % of the kinetic energy of the wind into mechanical energy turning the rotor, which then becomes electrical energy. This is known as the Betz limit. </p><p>The coefficient of power, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>C</mi><mi>p</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> of a wind turbine is a measure of how efficiently the wind turbine converts the energy in the wind into electricity. A good wind turbine has a <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>p</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> that reaches 70 % of the Betz limit. </p><p>Assuming the wind turbine in part (a) is considered a good turbine, calculate its revised power output.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Power output from turbine, <em>P</em> = 16 MW = 16 × 10<sup>6</sup> W (from part a)</p></li><li><p>Betz limit = 59.3 % </p></li></ul><p>Calculate the coefficient of power, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>p</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>0.70 × 59.3 % = 41.51 % <em>[1 mark]</em> </p></li></ul><p>Calculate revised power output:</p><ul><li><p>Power output =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>p</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × <em>P</em> = 0.4151 × (16 × 10<sup>6</sup>) = 6.6 MW <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>The Betz limit seems like a very low value of energy conservation. Since wind turbines work by slowing down passing wind, if a wind turbine was 100% efficient, then all of the wind would have to stop completely upon contact with the turbine. We know this is not the case because the wind then travels behind it. </em></p><p><em>In order to stop the wind completely, the air wouldn&#x27;t move out of the way to the back of the turbine, which would prevent further air from coming in, causing the turbine to stop spinning. However, it would not be generating electricity if it stopped spinning! Other facts such as friction between the parts will also reduce efficiency.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cyclist rides along a road up an incline at a steady speed of 5.0 m s<sup>–1</sup>. The mass of the rider and bicycle is 70 kg and the bicycle travels 27 m along the road for every 2.0 m gained in height. Neglect energy loss due to frictional forces.</p><p>Calculate the power developed by the cyclist in riding up the slope.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed, <em>v</em> = 5.0 m s<sup>–1</sup></p></li><li><p>Mass, <em>m</em> = 70 kg</p></li><li><p>Distance, <em>s</em> = 27 m for every 2.0 m gained in height</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q2a-ma-hard-aqa-a-level-physics.png' alt='4-6-s-q--q2a-ma-hard-aqa-a-level-physics' /></div><p>Determine an equation for the force on the cyclist, <em>F</em>:</p><ul><li><p>The only force on the cyclist is their weight pulling them down the slope</p></li><li><p><em>F</em> = <em>W</em> sin<em>θ </em>= <em>mg</em> sin<em>θ</em></p><ul><li><p><em>W</em> is the weight of the rider and bicycle </p></li></ul></li></ul><p>Calculate sin<em>θ</em>:</p><ul><li><p>sin<em>θ</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>e</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>s</mi><mi>e</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>0</mn></mrow><mn>27</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em> </p></li></ul><p>Substitute in values to calculate the force, <em>F</em>:</p><ul><li><p><em>F</em> = 70 × 9.81 ×<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>0</mn></mrow><mn>27</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 50.87 N <em>[1 mark]</em> </p></li></ul><p>Calculate the power, <em>P</em>:</p><ul><li><p><em>P</em> = <em>Fv</em> = 50.87 × 5.0 = 254.35 = 250 W (2 s. f.) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em><em><strong> </strong></em></p><p><em>The power is developed by the cyclist as it moves against the resistive force of gravity. In other words, the cyclist must do work </em><em><strong>against</strong></em><em> the force of gravity to travel up the incline (this is sometimes known as ‘negative’ work). The force is the </em><em><strong>component</strong></em><em> of the weight that acts </em><em><strong>along</strong></em><em> the incline, since </em><em><em>P</em></em><em> = </em><em><em>Fv</em></em><em> is derived from </em><em><em>W</em></em><em> = </em><em><em>Fs</em></em><em> where </em><em><em>W</em></em><em> is the work done, </em><em><em>F</em></em><em> is the force and </em><em><em>s</em></em><em> is the distance moved in the direction of the force. </em></p><p><em><em>P</em></em><em> = </em><em><em>Fv</em></em><em> is very commonly misused. It can only be used if the object is moving at </em><em><strong>constant</strong></em><em> velocity (which is the case in this question) and the force must be in the direction </em><em><strong>parallel</strong></em><em> to the distance moved. Therefore, the most common way students lose marks in this question is by not resolving components of the weight.</em></p><p><em>You could also have gotten to the same answer by using the work done against the gravitational force (weight) per unit time. This method would also gain full marks.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cyclist now travels along a steeper incline at an angle of 6.5º to the horizontal. </p><p>Calculate the power output required from the cyclist on this new plane and discuss</p><p>how this value differs from that in part (a).</p><p>Assume the cyclist maintains the same speed along the road.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed, <em>v</em> = 5.0 m s<sup>–1</sup></p></li><li><p>Mass, <em>m</em> = 70 kg</p></li><li><p>Angle of incline, <em>θ</em> = 6.5º </p></li></ul><p>Write an equation with power <em>P</em> and work done <em>W</em>:</p><ul><li><p>The work done by cyclist equals their gravitational potential energy gained</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Power, <em>P</em> =<span class='math-eq'><math style="font-family:stix" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>W</mi><mi>t</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><mi>t</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li></ul><p>Calculate height, <em>h</em>:</p><ul><li><p>Sin<em>θ </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>e</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>s</mi><mi>e</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>=<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mo>∆</mo><mi>h</mi></mrow><mrow><mn>5</mn><mo>.</mo><mn>0</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Δ<em>h</em> = 5.0 sin<em>θ</em> = 5.0 sin(6.5) <em>[1 mark]</em> </p></li></ul><p>Substitute in the values:</p><ul><li><p>Since power is the change in energy per unit <strong>time</strong>, we can substitute time as 1 second</p></li><li><p><em>P</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>70</mn><mo>×</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>×</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo>×</mo><mi>sin</mi><mfenced><mrow><mn>6</mn><mo>.</mo><mn>5</mn></mrow></mfenced></mrow><mn>1</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 390 W <em>[1 mark]</em> </p></li></ul><p>Discussion:</p><ul><li><p>The power output on the steeper incline is <u>higher</u>; <em>[1 mark]</em></p></li><li><p>This is because the cyclist has to do more <u>work</u> against gravity; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>This question might look a little confusing as to why we would use the distance of the hypotenuse in m s</em><em><sup>–1</sup></em><em> (the velocity). This is because we want the unit of power to be in J s</em><em><sup>–1</sup></em><em> (W) or N m s</em><em><sup>–1</sup></em><em>, which means we don’t just want the distance but the distance </em><em><strong>each second</strong></em><em>. This might make more sense when looking at the units: </em></p><p style='text-align: center;'><em><em> P </em></em><em>= </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mrow><mi>t</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mfenced open="[" close="]"><mrow><mi>k</mi><mi>g</mi></mrow></mfenced><mfenced open="[" close="]"><mrow><mi>N</mi><mo> </mo><mi>k</mi><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced><mfenced open="[" close="]"><mi>m</mi></mfenced></mrow><mi>s</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>=</em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mfenced open="[" close="]"><mi>N</mi></mfenced><mfenced open="[" close="]"><mi>m</mi></mfenced></mrow><mfenced open="[" close="]"><mi>s</mi></mfenced></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><em>Therefore, </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>m</mi><mi>s</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> or m s</em><em><sup>–1</sup></em><em> must come from the velocity (which has units m s</em><em><sup>–1</sup></em><em>)</em></p><p><em>Since the angle of incline has now changed for this question, make sure </em><em><strong>not</strong></em><em> to use the value of Δ</em><em><em>h</em></em><em> given in part (a), since this has now changed!</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q2b-ma-hard-aqa-a-level-physics.png' alt='4-6-s-q--q2b-ma-hard-aqa-a-level-physics' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cyclist stops pedalling and the bicycle freewheels up the incline for a short time. </p><p>Considering the energy transfers, calculate the distance travelled along the slope from when the cyclist stops pedalling to where the bicycle comes to rest.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Speed, <em>v</em> = 5.0 m s<sup>–1</sup></p></li><li><p>Mass, <em>m</em> = 70 kg</p></li><li><p>Angle of incline, <em>θ</em> = 6.5º </p></li></ul><p>Determine the energy transfers:</p><ul><li><p>The initial kinetic energy of the cyclist is transferred to the gain in gravitational potential energy </p></li></ul><p>Calculate the initial kinetic energy, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>E</mi><mi>k</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>=<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>mv</em><sup><em>2</em></sup> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>× 70 × (5.0)<sup>2</sup> = 875 J</p></li><li><p>Therefore, the gain in GPE, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is also 875 J; <em>[1 mark]</em> </p></li></ul><p>Calculate the height the cyclist has travelled, <em>h</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi><mo>∆</mo><mi>h</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>∆</mo><mi>h</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mo>∆</mo><msub><mi>E</mi><mi>p</mi></msub></mrow><mrow><mi>m</mi><mi>g</mi></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>875</mn><mrow><mn>70</mn><mo>×</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 1.27 m <em>[1 mark]</em> </p></li></ul><p>Calculate displacement, <em>s</em>:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-6-s-q--q2c-ma-hard-aqa-a-level-physics.png' alt='4-6-s-q--q2c-ma-hard-aqa-a-level-physics' /></div><ul><li><p>sin<em>θ </em>=<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>e</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>s</mi><mi>e</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>h</mi><mi>s</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>s</em> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>h</mi><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo> </mo><mi>θ</mi></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mrow><mn>1</mn><mo>.</mo><mn>27</mn></mrow><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mfenced><mrow><mn>6</mn><mo>.</mo><mn>5</mn></mrow></mfenced></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 11 m <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

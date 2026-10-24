@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3.1 Momentum & Newton’s Laws of Motion - Structured Questions Question Paper</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge">CIE AS Physics (9702) &bull; Question Paper</span>
+        <h1 class="">3.1 Momentum & Newton’s Laws of Motion</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 3. Dynamics</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 11 Questions (147 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A brick of mass 2 kg is resting on the floor as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/question-4a-figure-1-.png' alt='question-4a-figure-1-' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>(i) Define equilibrium.</p><p style='text-align: right;'>[1]</p><p>(ii) State the names of forces A and B.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) State Newton’s first law of motion.</p><p style='text-align: right;'>[1]</p><p>(ii) Explain how Newton’s first law applies to the brick in Fig. 1.1.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) State Newton’s third law of motion.</p><p style='text-align: right;'>[1]</p><p>(ii) Explain how Newton’s third law can be applied to <strong>one</strong> of the forces acting on the brick.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The surface is raised at one end to form a slope as shown in Fig. 1.2. This causes the brick to accelerate at a constant rate of 0.25 m s<sup>−2</sup>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1d-e-3-1-e-brick-on-slope-newtons-second-cie-ial-sq.png' alt='3-1-1d-e-3-1-e-brick-on-slope-newtons-second-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>(i) State Newton&#x27;s second law of motion.</p><p style='text-align: right;'>[1]</p><p>(ii) Use Newton&#x27;s second law to determine the magnitude of the resultant force on the brick.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A hot-air balloon is tied to the ground by two ropes, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-3a-e-3-1-e-hot-air-balloon-force-diagram-cie-ial-sq.png' alt='3-1-3a-e-3-1-e-hot-air-balloon-force-diagram-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Label Fig. 1.1 to show the forces acting on the balloon.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The tension <em>T </em>required to keep the balloon fixed to the ground is 400 N in each rope.</p><p>The ropes are untied and the balloon starts to move upwards. The balloon and its contents have a total mass of 1500 kg.  </p><p>As the balloon begins its ascent, calculate </p><p>(i) the weight of the balloon,</p><p style='text-align: right;'>[2]</p><p>(ii) the resultant force acting on the balloon.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Calculate the initial acceleration of the balloon.</p><p style='text-align: right;'>[2]</p><p>(ii) Explain how the upward acceleration of the balloon changes during the first few seconds of its flight.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>If the passengers want to change the upward acceleration, they can release some sand from the bags. </p><p>State and explain how this affects the upward acceleration of the balloon.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>A bullet, of mass 25 g, leaves the barrel of a stationary rifle, of mass 2.1 kg, with a momentum of 4.2 kg m s<sup>–1</sup>.</p><p>Define mass.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the total momentum of the rifle and the bullet <strong>before</strong> the rifle is fired and give a reason for your answer.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the velocity of the bullet just <strong>after</strong> the rifle is fired.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The bullet has a momentum of 3.3 kg m s<sup>–1</sup> just before it hits a target.  </p><p>It takes 2.8 ms for the bullet to be stopped by the target. </p><p>Calculate the average force needed to stop the bullet.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A man with a mass of 65 kg stands in an elevator. The elevator initially accelerates uniformly for 1.8 s followed by a period of a constant velocity of 2.5 m s<sup>–1</sup> and then a final uniform deceleration for 1.8 s.</p><p>Calculate the magnitude of the reaction force on the man from the elevator floor during the time it takes the elevator to come to rest.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The man uses the elevator again to travel to a lower floor. The elevator descends at the same speed and comes to rest in the same time as in <strong>(a)</strong>.    </p><p>Calculate the reaction force on the man from the elevator floor during the time it takes to come to rest on the floor below.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Suggest and explain during the deceleration period, which direction of elevator travel would make the man feel </p><p>(i) lighter</p><p style='text-align: right;'>[2]</p><p>(ii) heavier</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a stroke of bad luck, the elevator cable snaps and it falls freely under gravity. During the fall, the man experiences a sense of weightlessness. </p><p>Explain, using appropriate laws of motion, why the man feels a sense of weightlessness in this situation.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[17 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Newton’s third law refers to pairs of forces.</p><p>For a pair of forces that obey Newton&#x27;s third law, describe:</p><p>(i) <strong>one</strong> similarity between them</p><p style='text-align: right;'>[1]</p><p>(ii) <strong>one</strong> difference between them.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two blocks A and B are joined by a string and rest on a frictionless horizontal table as shown in Fig. 1.1. A force of 200 N is applied horizontally on block B.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q3a_forces_ib-sl-physics-sq-medium.png' alt='q3a_forces_ib-sl-physics-sq-medium' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Block A has a mass of 3.0 kg and block B has a mass of 7.0 kg. </p><p>(i) Using Fig. 1.1, identify all Newton&#x27;s third law force pairs acting on box B.</p><p style='text-align: right;'>[4]</p><p>(ii) Calculate the acceleration of the blocks.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The string is removed from the blocks. Block A slides along the horizontal frictionless surface towards block B, which is stationary, as illustrated in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-3c-m-3-1-newton-second-law-momentum-blocks.png' alt='3-1-3c-m-3-1-newton-second-law-momentum-blocks' /></div><p>There are no resistive forces acting on block A as it moves towards block B. At time <em>t</em> = 0, block A has a velocity of 0.20 m s<sup>−1</sup>. A short time later, the blocks collide and then separate.</p><p>The variation with time <em>t</em> of the momentum of block B is shown in Fig. 1.3.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-3c-m-3-1--momentum-time-graph-cie-ial-sq.png' alt='3-1-3c-m-3-1--momentum-time-graph-cie-ial-sq' /></div><p>Use Fig. 1.3 to describe, without calculation, the magnitude of the acceleration of block B from:</p><p>(i) time <em>t</em> = 80 to 100 ms</p><p style='text-align: right;'>[1]</p><p>(ii) time <em>t</em> = 100 to 120 ms.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use Fig. 1.3 to determine</p><p>(i) the time interval over which the blocks are in contact with each other</p><p style='text-align: right;'>[1]</p><p>(ii) the magnitude of the force exerted by block A on block B</p><p style='text-align: right;'>[2]</p><p>(iii) the speed of A after the collision.</p><p style='text-align: right;'>[3]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cyclist carries out tests on the braking system of their bicycle.</p><p>At time <em>t </em>= 0 the cyclist is travelling at an initial speed of <em>u</em> as they apply the brakes and come to a stop at time<em> t</em> = 2.0 s.</p><p>Fig. 1.1 shows the variation of the braking force <em>F</em> on the bicycle with time <em>t.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-5a-m.png' alt='3-1-5a-m' /></div><p>Use Newton’s second law of motion to explain the physical quantity represented by the area under the graph shown in Fig. 1.1.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The total mass of the cyclist and bicycle is 82 kg.  Use Fig. 1.1 to calculate the initial speed <em>u</em>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete Fig. 1.2 to show the variation of the speed of the bicycle from <em>t</em> = 0 to <em>t</em> = 2.0 s.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/12/q20c-paper-1-june-2019-ocr-a-level-physics.png' alt='q20c-paper-1-june-2019-ocr-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Brakes testing is a crucial part of the manufacturing process of any vehicle.</p><p>A train manufacturer wants to determine the effect of a rapid deceleration on passengers riding their new model of train.</p><p>Four crash test dummies are placed on different seats on the train as shown in Fig. 1.3. During the test, the train travels at a high speed in the direction shown and after a time, the brakes are applied. Seat belts are not used on trains.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-5d-m-3-1-train-brakes-testing-safety-cie-ial-sq.png' alt='3-1-5d-m-3-1-train-brakes-testing-safety-cie-ial-sq' /></div><p>With reference to at least <strong>one</strong> of Newton’s laws of motion, discuss which seat, <strong>A</strong>−<strong>D</strong>, is the safest for a passenger to be sitting on in the event of a rapid deceleration.</p><p>You may assume that the seats all remain ﬁxed ﬁrmly to the ﬂoor and do not break.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A person stands on weighing scales in a lift, as shown in Fig. 1.1. The scales are calibrated to give readings in newtons. It reads 700 N when the lift is stationary.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1a-h-3-1-h-person-lift-weight-scales-cie-ial-sq.png' alt='3-1-1a-h-3-1-h-person-lift-weight-scales-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>When the lift starts to move, it accelerates for a short time. It continues to move upwards at a constant speed and eventually starts to decelerate until it comes to rest.</p><p>(i) Draw and label free-body force diagrams for the person during the periods of acceleration and deceleration.</p><p style='text-align: right;'>[2]</p><p>(ii) By applying one of Newton&#x27;s laws of motion, determine an expression for the apparent weight of the person during the deceleration.</p><p style='text-align: right;'>[1]</p><p>(ii) By applying one of Newton&#x27;s laws of motion, determine an expression for the apparent weight of the person during the acceleration.</p><p style='text-align: right;'>[1]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The magnitude of the lift&#x27;s acceleration is 0.7 m s<sup>−2</sup>.</p><p>On Fig. 1.2, sketch the expected readings on the weighing scales during acceleration and deceleration of the lift. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1b-h-weighing-scales-reading-cie-ial-sq.png' alt='3-1-1b-h-weighing-scales-reading-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.3 shows the variation of acceleration with time for the duration of the journey in the lift. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1c-h-lift-acceleration-time-graph-cie-ial-sq.png' alt='3-1-1c-h-lift-acceleration-time-graph-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>The total height ascended by the lift is 24 m.</p><p>Determine the value of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig. 1.4, sketch the variation of time with the person&#x27;s apparent weight over the course of the motion. </p><p>Include values on the axes. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1d-h-time-apparent-weight-graph-cie-ial-sq.png' alt='3-1-1d-h-time-apparent-weight-graph-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.4</strong></p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Three boxes A, B, and C are connected using an inextensible rope of negligible mass, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-2a-h-dynamics-ramp-boxes-pulley-cie-ial-sq.png' alt='3-1-2a-h-dynamics-ramp-boxes-pulley-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Boxes A and B each have a mass of 2.4 kg, and the magnitude of the frictional force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> between each box and the surface is equal to </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>x</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>3</mn></mfrac><msub><mi>R</mi><mi>x</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the normal reaction force and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> refers to the box in question A, B or C.</p><p>Box C descends with constant velocity.</p><p>Calculate the tension in the rope connecting boxes A and B.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the tension in the rope connecting boxes B and C.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hence, determine the mass of box C.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The rope connecting A and B breaks abruptly.</p><p>Calculate the acceleration of block C.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 9 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A rock climber of mass 80 kg slips after attaching a bolt firmly onto a piece of rock that they are climbing as shown in Fig. 1.1. </p><p>At the lowest point of the climber&#x27;s fall, the length of the rope between the harness and the bolt is 24 m. The climber comes to rest and all the energy from the fall has been absorbed by the rope.</p><p>The rope has an unstretched length of 19 m and a stiffness of 560 N m<sup>–1</sup>. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/qu-4b-figure-1.jpg' alt='qu-4b-figure-1' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Assume that the extension of the rope is proportional to its tension and the mass of the rope and the effects of air resistance are negligible.</p><p>Calculate</p><p>(i) the resultant force acting on the climber when he reaches the lowest point in the fall.</p><p style='text-align: right;'>[3]</p><p>(ii) the extension of the rope when the climber’s acceleration is zero.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Use the principle of conservation of energy to calculate the maximum speed of the climber before the rope begins to stretch.</p><p style='text-align: right;'>[2]</p><p>(ii) Suggest whether using a longer rope would reduce the force experienced by the climber when the rope begins to stretch.</p><p style='text-align: right;'>[2]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hemp is one of the strongest fibres with a very high tensile strength and is extremely rigid. Hemp ropes were the first to be used for ship rigging which adjusted the position of the sails and supported the masts. </p><p>However, rock climbers use nylon ropes to break their fall as they can stretch considerably under tension.</p><p>A climbing equipment company tests their ropes by attaching an 80 kg mass to an end of the rope and releasing it from a ledge. </p><p>Fig. 1.2 shows the results of a test carried out to compare the time it takes for a nylon rope and a hemp rope to return to their unstretched length after beginning to stretch.</p><p style='text-align: center;'><strong>Fig. 1.2</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Rope</strong></p></td><td><p style='text-align: center;'><strong>Time to return to unstretched length / s</strong></p></td></tr><tr><td><p style='text-align: center;'>Nylon</p></td><td><p style='text-align: center;'>0.664</p></td></tr><tr><td><p style='text-align: center;'>Hemp</p></td><td><p style='text-align: center;'>0.035</p></td></tr></table><p>In the test, both ropes used had identical unstretched lengths of 19.0 m and diameters of 10 mm.</p><p>Show that the average resultant force exerted by the hemp rope is about 20 times larger than the average resultant force exerted by the nylon rope.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Discuss in terms of force and momentum, why nylon ropes are favoured by rock climbers compared to hemp ropes.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[15 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A baseball is raised from the ground and dropped onto a hard plate to test its properties. A sensor measures the force exerted by the plate on the ball during its collision with the plate. </p><p>The variation of force exerted on the baseball with time is shown on the graph in Fig. 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/3-1-q4a-h-sq-cie-ial-physics.png' alt='3-1-q4a-h-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The ball of mass 150 g strikes the plate with a speed of 22.5 m s<sup>−1</sup>. It leaves the plate with a speed of 12.8 m s<sup>−1</sup>.</p><p>Show that this is consistent with the impulse obtained from the graph.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Considering the first 73 ms of the ball&#x27;s motion:</p><p>(i) Sketch a graph to show how the momentum of the ball varies.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/3-1-q4b-hsq-cie-ial-physics.png' alt='3-1-q4b-hsq-cie-ial-physics' /></div><p style='text-align: right;'>[1]</p><p>(ii) Explain how the ball&#x27;s momentum varies in the first 73 ms of the motion.   </p><p style='text-align: right;'>[5]</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The ball continues to bounce, each time losing the same fraction of its energy when it strikes the plate. Air resistance is negligible. </p><p>Determine the percentage of the original gravitational potential energy of the ball that remains when it reaches its maximum height after bouncing five times. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain, with reference to the conservation of momentum, the effect that the motion of the squash ball has on the motion of the Earth from the instant it is released until it bounces off the plate.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A stationary uranium nucleus decays by emitting an α particle and thorium nucleus. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/qu-3a-figure-1.png' alt='qu-3a-figure-1' /></div><p>Discuss how the principle of conservation of momentum applies in this explosion. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Assume that all of the energy released in the emission process is transferred as kinetic energy to the α particle and the recoiling nucleus and is equal to 6.55 MeV.</p><p>Calculate the kinetic energy of the Thorium nucleus and α particle in MeV. </p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Show that momentum is conserved in this decay.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Collisions can occur between neutrons and stationary Uranium nuclei, for example, during nuclear fission.</p><p>Discuss how this collision would be if this was inelastic as opposed to elastic.</p>
+                    <div class='student-answer-area'><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div><div class='answer-space'></div></div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

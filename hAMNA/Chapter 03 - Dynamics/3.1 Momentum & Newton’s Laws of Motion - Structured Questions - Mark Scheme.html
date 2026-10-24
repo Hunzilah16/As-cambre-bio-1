@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3.1 Momentum & Newton’s Laws of Motion - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">3.1 Momentum & Newton’s Laws of Motion</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 3. Dynamics</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 11 Questions (147 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A brick of mass 2 kg is resting on the floor as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/question-4a-figure-1-.png' alt='question-4a-figure-1-' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>(i) Define equilibrium.</p><p style='text-align: right;'>[1]</p><p>(ii) State the names of forces A and B.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) Equilibrium is defined as:</p><ul><li><p>(When a body or system has) constant velocity / zero acceleration / no resultant force / no resultant torque; <em>[1 mark]</em></p></li></ul><p>(ii) Forces A and B are:</p><ul><li><p>A is the normal / reaction / contact force </p><p><strong>AND</strong></p></li><li><p>B is the weight (of the brick); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) State Newton’s first law of motion.</p><p style='text-align: right;'>[1]</p><p>(ii) Explain how Newton’s first law applies to the brick in Fig. 1.1.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) Newton’s first law states:</p><ul><li><p>A body continues at rest or constant velocity unless acted on by a resultant (external) force; <em>[1 mark]</em></p></li></ul><p>(ii) Newton’s first law applies to the brick because:</p><p>Any <strong>two </strong>from:</p><ul><li><p>The brick is at rest / stationary; <em>[1 mark]</em></p></li><li><p>(Because) there is no resultant force acting on it; <em>[1 mark]</em></p></li><li><p>The upwards force = the downwards force <strong>OR</strong> force A = force B <strong>OR</strong> weight = normal contact / reaction force; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) State Newton’s third law of motion.</p><p style='text-align: right;'>[1]</p><p>(ii) Explain how Newton’s third law can be applied to <strong>one</strong> of the forces acting on the brick.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) State Newton’s third law:</p><ul><li><p>If body A exerts a force on body B, then body B will exert a force on body A of equal magnitude but in the opposite direction; <em>[1 mark]</em></p></li></ul><p>(ii) Explain how Newton’s third law applies to one of the forces acting on the brick:</p><p><strong>EITHER</strong></p><ul><li><p>The downward force of gravity exerted by the Earth on the brick; <em>[1 mark]</em></p></li><li><p>Is equal (in magnitude) and opposite (in direction) to; <em>[1 mark]</em></p></li><li><p>The upwards force of gravity exerted by the brick on the Earth; <em>[1 mark]</em></p></li></ul><p><strong>OR</strong></p><ul><li><p>The upwards contact force exerted by the table on the brick; <em>[1 mark]</em></p></li><li><p>Is equal (in magnitude) and opposite (in direction) to; <em>[1 mark]</em></p></li><li><p>The downward contact force exerted by the brick on the table; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>It is a common mistake to think that the reaction force and weight are a Newton’s third law pair. Make sure you understand why this is incorrect:</em></p><ol><li><p><em>They both are acting on the same object (the brick)</em></p></li><li><p><em>They are not of the same type of force</em></p></li></ol><p><em>The correct application of Newton&#x27;s third law for the </em><em><strong>contact force</strong></em><em> is shown below:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/newtons-third-law-book-table-contact-ma.png' alt='newtons-third-law-book-table-contact-ma' /></div><p><em>The correct application of Newton&#x27;s third law for </em><em><strong>weight</strong></em><em> is shown below:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/newtons-third-law-book-earth-gravity-ma.png' alt='newtons-third-law-book-earth-gravity-ma' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The surface is raised at one end to form a slope as shown in Fig. 1.2. This causes the brick to accelerate at a constant rate of 0.25 m s<sup>−2</sup>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1d-e-3-1-e-brick-on-slope-newtons-second-cie-ial-sq.png' alt='3-1-1d-e-3-1-e-brick-on-slope-newtons-second-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>(i) State Newton&#x27;s second law of motion.</p><p style='text-align: right;'>[1]</p><p>(ii) Use Newton&#x27;s second law to determine the magnitude of the resultant force on the brick.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) Newton&#x27;s second law states:</p><ul><li><p>The (resultant) force (on a body) is equal to its rate of change of momentum, and in the same direction</p><p><strong>OR</strong></p></li><li><p>The (resultant) force (on a body) is directly proportional to its acceleration and in the same direction; <em>[1 mark]</em></p></li></ul><p>(ii) Determine the magnitude of the resultant force on the brick:</p><p>List the known quantities:</p><ul><li><p>Mass of the brick, <em>m</em> = 2 kg</p></li><li><p>Acceleration of the brick, <em>a </em>= 0.25 m s<sup>−2</sup></p></li></ul><p>Use Newton’s second law to calculate the resultant force on the brick:</p><ul><li><p>Resultant force:  <em>F</em> = <em>ma</em></p></li><li><p><em>F</em> = 2 × 0.25 <em>[1 mark]</em></p></li><li><p><em>F</em> = 0.5 N <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A hot-air balloon is tied to the ground by two ropes, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-3a-e-3-1-e-hot-air-balloon-force-diagram-cie-ial-sq.png' alt='3-1-3a-e-3-1-e-hot-air-balloon-force-diagram-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Label Fig. 1.1 to show the forces acting on the balloon.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The forces acting on the balloon are:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-e-hot-air-balloon-force-diagram-cie-ial-sq-ma.png' alt='3-1-e-hot-air-balloon-force-diagram-cie-ial-sq-ma' /></div><ul><li><p>Upward force / buoyancy force drawn;<em> [1 mark]</em></p></li><li><p>Weight / <em>W</em> acting downwards from centre; <em>[1 mark]</em></p></li><li><p><u>Two</u> tension / <em>T</em> arrows acting downwards on ropes; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The tension <em>T </em>required to keep the balloon fixed to the ground is 400 N in each rope.</p><p>The ropes are untied and the balloon starts to move upwards. The balloon and its contents have a total mass of 1500 kg.  </p><p>As the balloon begins its ascent, calculate </p><p>(i) the weight of the balloon,</p><p style='text-align: right;'>[2]</p><p>(ii) the resultant force acting on the balloon.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Total mass of the balloon and contents, <em>m</em> = 1500 kg</p></li><li><p>Gravitational field strength, <em>g</em> = 9.81 N kg<sup>−1</sup></p></li><li><p>Tension in each rope, <em>T</em> = 400 N</p></li></ul><p>(i) Calculate the weight of the balloon:</p><ul><li><p>Weight:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><em>W</em> = 1500 × 9.81 = 14 715 N</p></li><li><p><em>W</em> = 14 700 N <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Calculate the resultant force acting on the balloon:</p><ul><li><p>Resultant force = upward forces − downward forces</p></li><li><p>Resultant force = 2<em>T </em><strong>OR</strong> 15 500 − 14 700 <em>[1 mark]</em></p></li><li><p>Resultant force = 800 N <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>For part (ii), the key points to realise are:</em></p><ul><li><p><em>When the ropes are tied to the ground, resultant force = 0</em></p><ul><li><p><em>Resultant: </em><em><em> F</em></em><em><sub><em>B</em></sub></em><em> − (</em><em><em>W</em></em><em> + 2</em><em><em>T</em></em><em>) = 0 </em></p></li><li><p><em>Buoyancy:</em><em><em>  F</em></em><em><sub><em>B</em></sub></em><em> = 14 700 + (2 × 400) = 15 500 N </em></p></li></ul></li></ul><ul><li><p><em>When the ropes are untied, resultant force = 2</em><em><em>T</em></em><em>, since the tension is no longer acting downwards</em></p><ul><li><p><em>Resultant:  </em><em><em>F</em></em><em><sub><em>B</em></sub></em><em> − </em><em><em>W</em></em><em> = 2</em><em><em>T</em></em></p></li><li><p><em>Resultant:  15 500 − 14 700 = 800 N</em></p></li></ul></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Calculate the initial acceleration of the balloon.</p><p style='text-align: right;'>[2]</p><p>(ii) Explain how the upward acceleration of the balloon changes during the first few seconds of its flight.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>(i) Calculate the initial acceleration of the balloon:</p><p>List the known quantities:</p><ul><li><p>Mass of the balloon, <em>m</em> = 1500 kg</p></li><li><p>Initial resultant force, <em>F </em>= 800 N </p></li></ul><p>Substitute values into the acceleration equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>F</mi><mi>m</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>800</mn><mn>1500</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em>= 0.5333 = 0.53 m s<sup>−2</sup> <em>[1 mark]</em></p></li></ul><p>(ii) The changes to the upwards acceleration during the first few seconds are:</p><ul><li><p>The speed (of the balloon) increases; <em>[1 mark]</em></p></li><li><p>The drag forces / downward forces (also) start to increase; <em>[1 mark]</em></p></li><li><p>(Hence), acceleration <u>decreases</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>We know that acceleration is the rate of change of velocity, so a simplistic approach would be to consider the motion as uniform acceleration.</em></p><p><em>However, in this situation, we have to consider the effects of drag. As velocity increases, drag forces act in the opposing direction to the motion of the balloon as it starts to move upwards.</em></p><p><em>Therefore, as drag forces increase, the </em><em><strong>magnitude</strong></em><em> of the acceleration decreases </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>If the passengers want to change the upward acceleration, they can release some sand from the bags. </p><p>State and explain how this affects the upward acceleration of the balloon.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>When sand is released from the bags:</p><ul><li><p>The acceleration <u>increases</u>; <em>[1 mark]</em></p></li></ul><p>This is because:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>The upward / resultant force (on the balloon) increases; <em>[1 mark]</em></p></li><li><p>The downward force / weight (of the balloon) decreases; <em>[1 mark]</em></p></li><li><p>The mass (of the balloon) decreases; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>A bullet, of mass 25 g, leaves the barrel of a stationary rifle, of mass 2.1 kg, with a momentum of 4.2 kg m s<sup>–1</sup>.</p><p>Define mass.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Define mass:</p><ul><li><p>Mass is the property of an object that resists change in motion; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>Take time to learn key definitions, they are easy marks to pick up in an exam if you know them!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the total momentum of the rifle and the bullet <strong>before</strong> the rifle is fired and give a reason for your answer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Total momentum of the rifle and the bullet <strong>before</strong> the rifle is fired, <em>p</em><sub><em>b</em></sub>:</p><ul><li><p><em>p</em><sub><em>b</em></sub> = 0 (kg m s<sup>–1</sup>) <em>[1 mark]</em> </p></li></ul><p>Give a reason:</p><ul><li><p>Before the rifle is fired both the rifle and the bullet are stationary; <em>[1 mark]</em></p></li><li><p>Therefore, the momentum is zero<strong> </strong></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Remember that momentum is calculated by mass multiplied by velocity. If velocity is zero, then momentum has to be zero too.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the velocity of the bullet just <strong>after</strong> the rifle is fired.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of bullet, <em>m</em> = 25 g = 0.025 kg; <em>[1 mark]</em></p></li><li><p>Momentum of the bullet <strong>after</strong> being fired, <em>p</em><sub><em>b</em></sub> = 4.2 kg m s<sup>–1</sup> </p></li></ul><p>Calculate the velocity of the bullet just <strong>after</strong> the rifle is fired, <em>v</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>b</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>p</mi><mi>b</mi></msub><mi>m</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>4</mn><mo>.</mo><mn>2</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>025</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>168</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> m s<sup>-1 </sup><em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>You are not given the equation for momentum in the exam so you will need to learn this.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The bullet has a momentum of 3.3 kg m s<sup>–1</sup> just before it hits a target.  </p><p>It takes 2.8 ms for the bullet to be stopped by the target. </p><p>Calculate the average force needed to stop the bullet.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Momentum of bullet before hitting target, <em>p</em><sub><em>b</em></sub> = 3.3 kg m s<sup>–1</sup></p></li><li><p>Time taken for bullet to stop, ∆<em>t</em> = 2.8 ms = 0.0028 s <em>[1 mark]</em> </p></li></ul><p>Calculate the change in momentum, ∆<em>p</em>, as the bullet is stopped by target:</p><ul><li><p>∆<em>p</em> = <em>p</em><sub><em>b</em></sub> – 0 = 3.3 kg m s<sup>–1 </sup><em>[1 mark]</em> </p></li></ul><p>Calculate the average force needed to stop the bullet, F:</p><ul><li><p>F = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>&#8710;</mo><mi>p</mi></mrow><mrow><mo>&#8710;</mo><mi>t</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>3</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>0028</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>F = 1179 N <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 4 marks]</strong></em><strong> </strong></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A man with a mass of 65 kg stands in an elevator. The elevator initially accelerates uniformly for 1.8 s followed by a period of a constant velocity of 2.5 m s<sup>–1</sup> and then a final uniform deceleration for 1.8 s.</p><p>Calculate the magnitude of the reaction force on the man from the elevator floor during the time it takes the elevator to come to rest.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Calculate the magnitude of the reaction force after ascending:</p><p>List the known quantities:</p><ul><li><p>Mass of man, <em>m</em> = 65 kg</p></li><li><p>Speed of elevator, <em>v</em> = 2.5 m s<sup>–1</sup></p></li><li><p>Time interval, Δ<em>t</em> = 1.8 s</p></li><li><p>Weight of the man, <em>W </em>= <em>mg</em> = 65 × 9.81</p></li></ul><p>Calculate the acceleration:</p><ul><li><p>Acceleration:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mo>&#8710;</mo><mi>v</mi></mrow><mrow><mo>&#8710;</mo><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>2</mn><mo>.</mo><mn>5</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>8</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.39 m s<sup>–2</sup> <em>[1 mark]</em></p></li></ul><p>Resolve the forces to determine the reaction force <em>R</em>:</p><ul><li><p>Newton&#x27;s second law:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Resultant force: <em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>R</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Rearrange:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mfenced><mrow><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>a</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><em>[1 mark]</em></p></li><li><p><em>R</em> = 65 × (9.81 – 1.39) <em>[1 mark]</em></p></li><li><p><em>R </em>= 547.3 = 550 N <em>[1 mark]</em></p></li></ul><p><em><strong> </strong></em><em><strong>[Total: 4 marks]</strong></em></p><p><em>Take note that although the elevator is moving upwards, for it to come to </em><em><strong>rest</strong></em><em> sometime later, this must mean it is </em><em><strong>decelerating</strong></em><em>. Its acceleration is in the opposite direction to its motion.</em></p><p><em>Drawing a diagram really helps visualise the situation. Here, </em><em><em>F</em></em><em> is the resultant force. Since this is directed downwards, this must be </em><em><em>mg</em></em><em> – </em><em><em>R</em></em><em>.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma2a_forces_sl-ib-physics-sq-medium.jpg' alt='ma2a_forces_sl-ib-physics-sq-medium' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The man uses the elevator again to travel to a lower floor. The elevator descends at the same speed and comes to rest in the same time as in <strong>(a)</strong>.    </p><p>Calculate the reaction force on the man from the elevator floor during the time it takes to come to rest on the floor below.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the reaction force on the man after descending:</p><p>List the known quantities:</p><ul><li><p>Mass of man, <em>m</em> = 65 kg</p></li><li><p>Deceleration, <em>a</em> = 1.39 m s<sup>–2</sup> (from <strong>(a)</strong>)</p></li></ul><p>Resolve the forces to determine the reaction force <em>R</em>:</p><ul><li><p>Newton&#x27;s second law:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Resultant force: <em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>R</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>R</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Rearrange:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mfenced><mrow><mi>g</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>a</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><em>[1 mark]</em></p></li><li><p><em>R</em> = 65 × (9.81 + 1.39) <em>[1 mark]</em></p></li><li><p><em>R </em>= 728 = 730 N <em>[1 mark]</em></p></li></ul><p><em><strong> </strong></em><em><strong>[Total: 3 marks]</strong></em></p><p><em>This time, the elevator is moving downwards, for it to come to </em><em><strong>rest</strong></em><em> sometime later, this must mean it is </em><em><strong>decelerating</strong></em><em>. This means its acceleration is in the opposite direction to its motion.</em></p><p><em>Drawing a diagram really helps visualise the situation. Here, </em><em><em>F</em></em><em> is the resultant force. Since this is directed upwards, this must be </em><em><em>R</em></em><em> – </em><em><em>mg</em></em><em>.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma2b_forces_sl-ib-physics-sq-medium.jpg' alt='ma2b_forces_sl-ib-physics-sq-medium' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Suggest and explain during the deceleration period, which direction of elevator travel would make the man feel </p><p>(i) lighter</p><p style='text-align: right;'>[2]</p><p>(ii) heavier</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) The man would feel lighter when:</p><ul><li><p>(The elevator is) decelerating while travelling <u>upwards</u>; <em>[1 mark]</em></p></li><li><p>Since the reaction force (on him) / <em>R</em> is smaller / lower; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) The man would feel heavier when:</p><ul><li><p>(The elevator is) decelerating while travelling <u>downwards</u>; <em>[1 mark]</em></p></li><li><p>Since the reaction force (on him) / <em>R</em> is larger / higher; <em>[1 mark]</em></p></li></ul><p><em><strong> </strong></em><em><strong>[Total: 4 marks]</strong></em></p><p><em>This question shows why it’s important that you state the forces and acceleration in parts (a) and (b) the correct way around.</em></p><p><em>The key idea here is that deceleration is </em><em><strong>always in the opposite direction to motion.</strong></em></p><p><em>Hence, ‘decelerating while travelling upwards’ means a resultant force acts </em><em><strong>downwards</strong></em><em>.</em></p><p><em>The man feels lighter because the reaction force is smaller (imagine if the reaction force was reduced to zero, the man would suddenly float off the surface of the lift and experience ‘weightlessness’!)</em></p><p><em>Similarly, ‘decelerating while travelling downwards’ means a resultant force acts </em><em><strong>upwards</strong></em><em>. The man feels heavier because the reaction force is larger (it sometimes feels like the floor is pushing itself harder into your feet, making you feel ‘heavy’)</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a stroke of bad luck, the elevator cable snaps and it falls freely under gravity. During the fall, the man experiences a sense of weightlessness. </p><p>Explain, using appropriate laws of motion, why the man feels a sense of weightlessness in this situation.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The man feels a sense of weightlessness because:</p><ul><li><p>The man <u>and</u> the elevator accelerate downwards at the same rate; <em>[1 mark]</em></p></li><li><p>This means the man no longer exerts a force on the elevator floor; <em>[1 mark]</em></p></li><li><p>(From Newton’s third law, this means) there is no normal (reaction) force acting from the elevator floor on the man; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The fact that the man no longer feels the normal force on the elevator is an important point in this question.</em></p><p><em>The feeling of a person’s weight actually comes from what they are standing on (Earth, an elevator, weighing scales) pushing up on that person with the same force as their weight downwards.</em></p><p><em>You don’t ‘feel’ your weight downwards on a pair of weighing scales, the scales push upwards on you with a force equal to your weight.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[17 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Newton’s third law refers to pairs of forces.</p><p>For a pair of forces that obey Newton&#x27;s third law, describe:</p><p>(i) <strong>one</strong> similarity between them</p><p style='text-align: right;'>[1]</p><p>(ii) <strong>one</strong> difference between them.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>For a pair of forces that obey Newton&#x27;s third law...</p><p>(i) One similarity is that both forces:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>Have the same line of action; <em>[1 mark]</em></p></li><li><p>Have the same magnitude (<strong>not</strong> size); <em>[1 mark]</em></p></li><li><p>Are of the same kind / type <strong>OR</strong> both forces are contact forces or non-contact forces; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) One difference is that both forces:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>Act in opposite directions; <em>[1 mark]</em></p></li><li><p>Act on different bodies; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two blocks A and B are joined by a string and rest on a frictionless horizontal table as shown in Fig. 1.1. A force of 200 N is applied horizontally on block B.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q3a_forces_ib-sl-physics-sq-medium.png' alt='q3a_forces_ib-sl-physics-sq-medium' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Block A has a mass of 3.0 kg and block B has a mass of 7.0 kg. </p><p>(i) Using Fig. 1.1, identify all Newton&#x27;s third law force pairs acting on box B.</p><p style='text-align: right;'>[4]</p><p>(ii) Calculate the acceleration of the blocks.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (7 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of block A, m<sub>A</sub> = 3 kg</p></li><li><p>Mass of block B, m<sub>B</sub> = 7 kg</p></li><li><p>Horizontal force on block B = 200 N</p></li></ul><p>(i) The Newton&#x27;s third law pairs on B are:</p><ul><li><p>Reaction (force) of the table on B (<em>R</em><sub><em>B</em></sub>) <strong>AND</strong> reaction (force) of B on the table (−<em>R</em><sub><em>B</em></sub>); <em>[1 mark]</em></p></li><li><p>Weight / gravitational (force) of the Earth on B (<em>W</em><sub><em>B</em></sub>) <strong>AND</strong> gravitational force of B on the Earth (−<em>W</em><sub><em>B</em></sub>); <em>[1 mark]</em></p></li><li><p>Tension / pull of the string on B (<em>T</em><sub><em>B</em></sub>) <strong>AND</strong> tension / pull back of B on the string (−<em>T</em><sub><em>B</em></sub>); <em>[1 mark]</em></p></li><li><p>200 N force from an external body / object acts on B <strong>AND</strong> −200 N force from B acts on the external body / object; <em>[1 mark]</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/zqp_3SL0_3-1-third-law-pairs-ma.png' alt='zqp_3SL0_3-1-third-law-pairs-ma' /></div><p>(ii) Calculate the acceleration of the blocks:</p><p> Apply Newton’s second law to block A:</p><ul><li><p>Newton&#x27;s second law:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>A</mi></msub><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  <em>[1 mark]</em></p></li></ul><p> Apply Newton’s second law to block B:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>200</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>200</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><em>[1 mark]</em></p></li></ul><p>Combine the expressions to calculate <em>a</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>200</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>3</mn><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mi>a</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>200</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>10</mn><mo>&#160;</mo><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>200</mn><mn>10</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 20 m s<sup>–2 </sup><em>[1 mark]</em></p></li></ul><p><em><strong> </strong></em><em><strong>[Total: 7 marks]</strong></em></p><p><em>Remember that free-body diagrams treat each object separately. These should include:</em></p><ul><li><p><em>Arrows that are drawn relative to the size of the forces</em></p></li><li><p><em>Arrows pointing in the direction of the force</em></p></li><li><p><em>All arrows labelled with the name, or symbol, of the force they represent</em></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The string is removed from the blocks. Block A slides along the horizontal frictionless surface towards block B, which is stationary, as illustrated in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-3c-m-3-1-newton-second-law-momentum-blocks.png' alt='3-1-3c-m-3-1-newton-second-law-momentum-blocks' /></div><p>There are no resistive forces acting on block A as it moves towards block B. At time <em>t</em> = 0, block A has a velocity of 0.20 m s<sup>−1</sup>. A short time later, the blocks collide and then separate.</p><p>The variation with time <em>t</em> of the momentum of block B is shown in Fig. 1.3.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-3c-m-3-1--momentum-time-graph-cie-ial-sq.png' alt='3-1-3c-m-3-1--momentum-time-graph-cie-ial-sq' /></div><p>Use Fig. 1.3 to describe, without calculation, the magnitude of the acceleration of block B from:</p><p>(i) time <em>t</em> = 80 to 100 ms</p><p style='text-align: right;'>[1]</p><p>(ii) time <em>t</em> = 100 to 120 ms.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) From time <em>t</em> = 80 to 100 ms, the magnitude of the acceleration is:</p><ul><li><p>Constant; <em>[1 mark]</em></p></li></ul><p>(ii) From time <em>t</em> = 100 to 120 ms, the magnitude of the acceleration is:</p><ul><li><p>Zero; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use Fig. 1.3 to determine</p><p>(i) the time interval over which the blocks are in contact with each other</p><p style='text-align: right;'>[1]</p><p>(ii) the magnitude of the force exerted by block A on block B</p><p style='text-align: right;'>[2]</p><p>(iii) the speed of A after the collision.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) Determine the time interval over which the blocks are in contact:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-newtons-laws-force-time-graph-cie-ial-sq-ma.png' alt='3-1-newtons-laws-force-time-graph-cie-ial-sq-ma' /></div><ul><li><p>The interval where there is a change in momentum represents the time the blocks are in contact</p></li><li><p>Time in contact:  Δ<em>t</em> = 100 − 60 = 40 ms <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Determine the magnitude of the force exerted by block A on block B:</p><ul><li><p>Momentum of B before collision = 0</p></li><li><p>Momentum of B after collision = 0.25 kg m s<sup>–1</sup></p></li><li><p>Change in momentum, Δ<em>p</em> = 0.25 kg m s<sup>–1</sup></p></li><li><p>Force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mo>&#8710;</mo><mi>p</mi></mrow><mrow><mo>&#8710;</mo><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>OR</strong> <em>F</em> = gradient of the momentum-time graph; <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>25</mn></mrow><mrow><mn>40</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 6.25 N <em>[1 mark]</em></p><p> </p></li></ul><p>(iii) Determine the speed of A after the collision:</p><p>List the known quantities:</p><ul><li><p>Mass of A = 3 kg</p></li><li><p>Velocity of A before collision = 0.20 m s<sup>–1</sup></p></li></ul><p>Determine the change in momentum Δ<em>p</em>:</p><ul><li><p>Momentum: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mi>p</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Momentum of A before collision = 3 × 0.20 = 0.60 kg m s<sup>–1</sup></p></li><li><p>Momentum of A after collision = 0.60 − 0.25 = 0.35 kg m s<sup>–1</sup> <em>[1 mark]</em></p></li><li><p>Velocity of A after collision = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>p</mi><mi>m</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>35</mn></mrow><mn>3</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Velocity of A after collision = 0.12 m s<sup>–1</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cyclist carries out tests on the braking system of their bicycle.</p><p>At time <em>t </em>= 0 the cyclist is travelling at an initial speed of <em>u</em> as they apply the brakes and come to a stop at time<em> t</em> = 2.0 s.</p><p>Fig. 1.1 shows the variation of the braking force <em>F</em> on the bicycle with time <em>t.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-5a-m.png' alt='3-1-5a-m' /></div><p>Use Newton’s second law of motion to explain the physical quantity represented by the area under the graph shown in Fig. 1.1.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The area under the graph represents:</p><ul><li><p>Change in momentum / <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mfenced><mrow><mi>m</mi><mi>v</mi></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> / <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>p</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>; <em>[1 mark]</em></p></li><li><p>Newton&#x27;s second law:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>m</mi><mo>&#8710;</mo><mi>v</mi></mrow><mrow><mo>&#8710;</mo><mi>t</mi></mrow></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>F</mi><mo>&#8710;</mo><mi>t</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mo>&#8710;</mo><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>OR</strong> force = rate of change of momentum; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The total mass of the cyclist and bicycle is 82 kg.  Use Fig. 1.1 to calculate the initial speed <em>u</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the initial speed of the bicycle:</p><p>List the known quantities:</p><ul><li><p>Mass of cyclist, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 82 kg</p></li></ul><p>Calculate the area under the graph:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-5b-m-3-1-newtons-laws-speed-time-graph-cie-ial-sq.png' alt='3-1-5b-m-3-1-newtons-laws-speed-time-graph-cie-ial-sq' /></div><ul><li><p>Area under graph = change in momemtum</p></li><li><p>Area under graph = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mo>&#8710;</mo><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Area under graph = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>900</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 900 N s <em>[1 mark]</em></p></li></ul><p>Calculate the initial speed:</p><ul><li><p>Change in momentum:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><mi>p</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>v</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>u</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mo>&#8710;</mo><mi>p</mi></mrow><mi>m</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>900</mn><mn>82</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><em>u</em> = 10.98 = 11 m s<sup>−1</sup> (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete Fig. 1.2 to show the variation of the speed of the bicycle from <em>t</em> = 0 to <em>t</em> = 2.0 s.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/12/q20c-paper-1-june-2019-ocr-a-level-physics.png' alt='q20c-paper-1-june-2019-ocr-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The variation of the speed of the bicycle from <em>t</em> = 0 to <em>t</em> = 2.0 s is as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/12/Ni-JXal2_file-000-8.png' alt='Ni-JXal2_file-000-8' /></div><ul><li><p>Smooth curve with decreasing gradient; <em>[1 mark]</em></p></li><li><p>Curve starts at (0, <em>u</em>) and ends at (2.0, 0) <strong>NOT</strong><em><strong> </strong></em>tending towards axes but meeting them; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>It helps when sketching graphs to plot any points which you already know </em></p><p><em>From the graph in the previous parts of the question, we know that the breaking force applied decreases uniformly</em></p><p><em>Consider Newton&#x27;s second law: when the force decreases, so does the acceleration </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>↓</mo><mi>F</mi><mo> </mo><mo> </mo><mo>∝</mo><mo> </mo><mo>↓</mo><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><em>By drawing two tangents to the graph we can see that the acceleration (and hence gradient) becomes less steep:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/speed-time-graph-newton-second-law-ma.png' alt='speed-time-graph-newton-second-law-ma' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Brakes testing is a crucial part of the manufacturing process of any vehicle.</p><p>A train manufacturer wants to determine the effect of a rapid deceleration on passengers riding their new model of train.</p><p>Four crash test dummies are placed on different seats on the train as shown in Fig. 1.3. During the test, the train travels at a high speed in the direction shown and after a time, the brakes are applied. Seat belts are not used on trains.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-5d-m-3-1-train-brakes-testing-safety-cie-ial-sq.png' alt='3-1-5d-m-3-1-train-brakes-testing-safety-cie-ial-sq' /></div><p>With reference to at least <strong>one</strong> of Newton’s laws of motion, discuss which seat, <strong>A</strong>−<strong>D</strong>, is the safest for a passenger to be sitting on in the event of a rapid deceleration.</p><p>You may assume that the seats all remain ﬁxed ﬁrmly to the ﬂoor and do not break.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The safest seat is:</p><ul><li><p>Seat D</p></li></ul><p>This is because:</p><p><em>Any </em><em><strong>four </strong></em><em>from:</em></p><ul><li><p>Due to Newton&#x27;s second law, passengers C and D will stay in their seats; <em>[1 mark]</em></p></li><li><p>(Due to Newton&#x27;s second law) the resultant force acts on passengers C and D <strong>OR</strong> the seats exert a (decelerating) force on C and D <strong>OR</strong> C and D will decelerate; <em>[1 mark]</em></p></li><li><p>Due to Newton’s first law, passengers A and B will continue to move at the same speed (<strong>NOT </strong>thrown / thrust / pushed forward); <em>[1 mark]</em></p></li><li><p>(Due to Newton’s first law) passenger A will collide with the back of seat B; <em>[1 mark]</em></p></li><li><p>(Due to Newton’s first law) passenger B will collide with C; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A person stands on weighing scales in a lift, as shown in Fig. 1.1. The scales are calibrated to give readings in newtons. It reads 700 N when the lift is stationary.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1a-h-3-1-h-person-lift-weight-scales-cie-ial-sq.png' alt='3-1-1a-h-3-1-h-person-lift-weight-scales-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>When the lift starts to move, it accelerates for a short time. It continues to move upwards at a constant speed and eventually starts to decelerate until it comes to rest.</p><p>(i) Draw and label free-body force diagrams for the person during the periods of acceleration and deceleration.</p><p style='text-align: right;'>[2]</p><p>(ii) By applying one of Newton&#x27;s laws of motion, determine an expression for the apparent weight of the person during the deceleration.</p><p style='text-align: right;'>[1]</p><p>(ii) By applying one of Newton&#x27;s laws of motion, determine an expression for the apparent weight of the person during the acceleration.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Sketch free-body force diagrams for the periods of acceleration and deceleration:</p><p>During acceleration:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/free-body-force-diagram-lift-ma.png' alt='free-body-force-diagram-lift-ma' /></div><ul><li><p>Contact force &gt; weight i.e. the contact force is larger than the weight; <em>[1 mark]</em></p></li></ul><p>During deceleration:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/free-body-force-diagram-lift.png' alt='free-body-force-diagram-lift' /></div><ul><li><p>Contact force &lt; weight i.e. the contact force is smaller than the weight; <em>[1 mark]</em></p><p></p></li></ul><p>(ii) The apparent weight of the person during acceleration is:</p><ul><li><p>Newton&#x27;s Second Law:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>R</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><p></p></li></ul><p>(iii) The apparent weight of the person during deceleration is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Imagine the two forces acting on the person: one upward force due to the normal reaction force from standing on the scale, and one downward force due to their weight.</em></p><p><em>The weight of the person </em><em><strong>is always constant</strong></em><em>, but there will be a </em><em><strong>resultant force </strong></em><em>acting</em><em><strong> </strong></em><em>upwards or downwards, depending on the direction of the acceleration. The </em><em><strong>apparent weight</strong></em><em> is therefore referring to the size of the </em><em><strong>contact force</strong></em><em> experienced by the person as this is the only force that changes.</em></p><p><em>When drawing free body diagrams, make sure that the size of the weight arrow stays the same size in both diagrams!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The magnitude of the lift&#x27;s acceleration is 0.7 m s<sup>−2</sup>.</p><p>On Fig. 1.2, sketch the expected readings on the weighing scales during acceleration and deceleration of the lift. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1b-h-weighing-scales-reading-cie-ial-sq.png' alt='3-1-1b-h-weighing-scales-reading-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Sketch the expected readings on the scales:</p><p>List the known quantities:</p><ul><li><p>Acceleration, <em>a</em> = 0.7 m s<sup>−2</sup></p></li><li><p>Weight of the person, <em>W</em> = 700 N</p></li></ul><p>Calculate the resultant force:</p><ul><li><p>Newton&#x27;s Second Law:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mfrac><mn>700</mn><mrow><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>7</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 49.9 = 50 N</p></li><li><p>Therefore, reading during acceleration = 700 + 50 = 750 N <em>[1 mark]</em></p></li><li><p>Therefore, reading during deceleration = 700 − 50 = 650 N <em>[1 mark]</em></p></li></ul><p>The readings on the scale would be as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-h-weighing-scales-reading-cie-ial-sq-ma.png' alt='3-1-h-weighing-scales-reading-cie-ial-sq-ma' /></div><ul><li><p>Readings from calculation correctly marked with a straight line from the centre of the dial; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>When the lift accelerates, the </em><em><strong>upward</strong></em><em> </em><em><strong>contact force</strong></em><em> increases. This is interpreted by the weighing scales as an increased reading.</em></p><p><em>When the lift decelerates, it&#x27;s the opposite. Try to imagine a lift moving upward but coming to a stop (i.e., </em><em><strong>decelerating</strong></em><em>) as it approaches the floor above. You will feel momentarily a bit &#x27;floaty&#x27; like you are about to lift off of the floor. This experience is because the upward </em><em><strong>contact force </strong></em><em>from the floor on your feet </em><em><strong>decreases</strong></em><em> as the lift slows down. </em></p><p><em>In this case, there must be a resultant force </em><em><strong>downwards</strong></em><em> (because the lift is slowing down) but the weight of the person stays constant. Hence, the contact force decreases (and the reading on the spring scale would be </em><em><strong>less</strong></em><em> than 700 N). </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/07/sl-sq-2-2-hard-q4d-comm.jpeg' alt='sl-sq-2-2-hard-q4d-comm' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.3 shows the variation of acceleration with time for the duration of the journey in the lift. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1c-h-lift-acceleration-time-graph-cie-ial-sq.png' alt='3-1-1c-h-lift-acceleration-time-graph-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>The total height ascended by the lift is 24 m.</p><p>Determine the value of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Determine the value of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p>Distance travelled (height) = average velocity of each segment × time</p></li><li><p>Distance travelled:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mrow><mn>0</mn><mo>.</mo><mn>7</mn><msub><mi>t</mi><mn>1</mn></msub></mrow></mfenced><mo>&#215;</mo><msub><mi>t</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>7</mn><msub><mi>t</mi><mn>1</mn></msub></mrow></mfenced><mo>&#215;</mo><mn>4</mn><msub><mi>t</mi><mn>1</mn></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>7</mn><msub><mi>t</mi><mn>1</mn></msub></mrow></mfenced><mo>&#215;</mo><msub><mi>t</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>24</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Distance travelled:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>7</mn><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup><mo>+</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>8</mn><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>7</mn><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>24</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Simplify and rearrange:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>.</mo><mn>2</mn><msup><msub><mi>t</mi><mn>1</mn></msub><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>24</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><msub><mi>t</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mn>24</mn><mrow><mn>4</mn><mo>.</mo><mn>2</mn></mrow></mfrac></msqrt><mo>&#160;</mo><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2.39 = 2.4 s <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Consider the equation for acceleration:</em></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mo>∆</mo><mi>v</mi></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> so </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><mi>v</mi><mo> </mo><mo>=</mo><mo> </mo><mi>a</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-h-lift-acceleration-time-graph-cie-ial-sq-ma.png' alt='3-1-h-lift-acceleration-time-graph-cie-ial-sq-ma' /></div><p><em><strong>During initial constant acceleration:</strong></em></p><ul><li><p><em>The lift accelerates from rest at 0.7 m s</em><em><sup>−2</sup></em><em> for </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> seconds</em></p></li><li><p><em>Hence, average velocity = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>7</mn><msub><mi>t</mi><mn>1</mn></msub><mo> </mo><mi mathvariant="normal">m</mi><mo> </mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p><em><strong>During the period of constant velocity: </strong></em></p><ul><li><p><em>The lift continues at </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>7</mn><msub><mi>t</mi><mn>1</mn></msub><mo> </mo><mi mathvariant="normal">m</mi><mo> </mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> for </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><msub><mi>t</mi><mn>1</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> seconds</em></p></li><li><p><em>Hence, (average) velocity = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>7</mn><msub><mi>t</mi><mn>1</mn></msub><mo> </mo><mi mathvariant="normal">m</mi><mo> </mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p><em><strong>During the final constant deceleration: </strong></em></p><ul><li><p><em>The lift decelerates at −0.7 m s</em><em><sup>−2</sup></em><em> for </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> seconds back to zero velocity</em></p></li><li><p><em>Hence, average velocity = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mn>0</mn><mo>.</mo><mn>7</mn><msub><mi>t</mi><mn>1</mn></msub><mo> </mo><mi mathvariant="normal">m</mi><mo> </mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig. 1.4, sketch the variation of time with the person&#x27;s apparent weight over the course of the motion. </p><p>Include values on the axes. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-1d-h-time-apparent-weight-graph-cie-ial-sq.png' alt='3-1-1d-h-time-apparent-weight-graph-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.4</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The variation of time with the apparent weight for the journey:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-h-time-apparent-weight-graph-cie-ial-sq-ma.png' alt='3-1-h-time-apparent-weight-graph-cie-ial-sq-ma' /></div><ul><li><p>Same shape as the acceleration-time graph in <strong>(c)</strong>; <em>[1 mark]</em></p></li><li><p>Values for apparent weight correctly marked; <em>[1 mark]</em></p></li><li><p>Values for time correctly marked (values or multiples of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The key to figuring out the shape of this graph is to realise that </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo> </mo><mo>∝</mo><mo> </mo><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>, so the shape will be exactly the same as the acceleration graph in the previous question.</em></p><p><em>You have already calculated the magnitude of apparent weight in part (b), so don&#x27;t calculate them again! </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Three boxes A, B, and C are connected using an inextensible rope of negligible mass, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-2a-h-dynamics-ramp-boxes-pulley-cie-ial-sq.png' alt='3-1-2a-h-dynamics-ramp-boxes-pulley-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Boxes A and B each have a mass of 2.4 kg, and the magnitude of the frictional force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> between each box and the surface is equal to </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>x</mi></msub><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>1</mn><mn>3</mn></mfrac><msub><mi>R</mi><mi>x</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> is the normal reaction force and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> refers to the box in question A, B or C.</p><p>Box C descends with constant velocity.</p><p>Calculate the tension in the rope connecting boxes A and B.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the tension in the rope connecting blocks A and B:</p><p>List the known quantities:</p><ul><li><p>Frictional force on A, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>A</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><msub><mi>R</mi><mi>A</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Mass of A, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mi>A</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2.4 kg</p></li><li><p>Constant velocity, so acceleration <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Consider the vertical forces acting on box A:</p><ul><li><p>Resultant force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>A</mi></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>m</mi><mi>A</mi></msub><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>A</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>A</mi></msub><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>23</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Hence frictional force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>A</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>&#215;</mo><mo>&#160;</mo><mn>23</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>.</mo><mn>8</mn><mo>&#8201;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/dynamics-ramp-boxes-pulley-ma2.png' alt='dynamics-ramp-boxes-pulley-ma2' /></div><p>Consider the horizontal forces acting on box A:</p><ul><li><p>Resultant force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>F</mi><mi>A</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore,  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>F</mi><mi>A</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/dynamics-ramp-boxes-pulley-ma1.png' alt='dynamics-ramp-boxes-pulley-ma1' /></div><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>It&#x27;s always best to spend some time drawing the free-body diagram first before jumping into any calculations</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-h-dynamics-ramp-boxes-pulley-cie-ial-sq-ma.png' alt='3-1-h-dynamics-ramp-boxes-pulley-cie-ial-sq-ma' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the tension in the rope connecting boxes B and C.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Determine the tension in the rope connecting boxes B and C:</p><p>List the known quantities:</p><ul><li><p>Frictional force on B, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><msub><mi>R</mi><mi>B</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Mass of B, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mi>B</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2.4 kg</p></li><li><p>Constant velocity, so acceleration <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Tension in rope AB, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 7.8 N (from <strong>(a)</strong>)</p></li><li><p>Angle of inclination of ramp, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#952;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 35°</p></li></ul><p>Consider the forces acting perpendicular to the slope on box B:</p><ul><li><p>Resultant force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>B</mi></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>g</mi><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>B</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>g</mi><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mi>cos</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>19</mn><mo>.</mo><mn>3</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Hence frictional force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>&#215;</mo><mn>19</mn><mo>.</mo><mn>3</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>4</mn><mo>&#8201;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Consider the forces acting parallel to the slope on box B:</p><ul><li><p>Resultant force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>B</mi><mi>C</mi></mrow></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>T</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>F</mi><mi>B</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>B</mi><mi>C</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>T</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>F</mi><mi>B</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>B</mi><mi>C</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mi>sin</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo></mrow></mfenced><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>4</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>B</mi><mi>C</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>27</mn><mo>.</mo><mn>7</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hence, determine the mass of box C.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Determine the mass of box C:</p><ul><li><p>Box C descends with a constant velocity, so resultant force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>B</mi><mi>C</mi></mrow></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>m</mi><mi>C</mi></msub><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>B</mi><mi>C</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>C</mi></msub><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>27</mn><mo>.</mo><mn>7</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Mass of C:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>C</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>27</mn><mo>.</mo><mn>7</mn></mrow><mrow><mn>9</mn><mo>.</mo><mn>81</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mi>kg</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The rope connecting A and B breaks abruptly.</p><p>Calculate the acceleration of block C.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Calculate the acceleration of block C:</p><p>List the known quantities:</p><ul><li><p>Mass of B, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mi>B</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2.4 kg</p></li><li><p>Mass of C, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mi>C</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2.8 kg (from <strong>(c)</strong>)</p></li><li><p>Weight of C, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>C</mi></msub><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 27.7 N (from <strong>(c)</strong>)</p></li><li><p>Frictional force on B, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>B</mi></msub><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 6.4 N (from <strong>(b)</strong>)</p></li><li><p>New tension in BC = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Determine the new resultant forces on B and C:</p><ul><li><p>Resultant force on B:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>F</mi><mi>B</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>[Eq. 1]  </strong><em>[1 mark]</em></p></li><li><p>Resultant force on C:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>C</mi></msub><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>C</mi></msub><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>[Eq. 2]  </strong><em>[1 mark]</em></p></li></ul><p>Add [Eq. 1] and [Eq. 2] together and rearrange for <em>a</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>F</mi><mi>B</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>C</mi></msub><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>C</mi></msub><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>C</mi></msub><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>F</mi><mi>B</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><msub><mi>m</mi><mi>B</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>C</mi></msub></mrow></mfenced><mo>&#160;</mo><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><msub><mi>m</mi><mi>C</mi></msub><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>m</mi><mi>B</mi></msub><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>F</mi><mi>B</mi></msub></mrow><mrow><msub><mi>m</mi><mi>B</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>m</mi><mi>C</mi></msub></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Substitute in the known quantities and calculate:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>27</mn><mo>.</mo><mn>7</mn><mo>&#160;</mo><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mi>sin</mi><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo></mrow></mfenced><mo>-</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>4</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>8</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.499 = 1.5 m s<sup>−2</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>There is a change in the tension in the rope between B and C because the forces acting on block B have changed. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A rock climber of mass 80 kg slips after attaching a bolt firmly onto a piece of rock that they are climbing as shown in Fig. 1.1. </p><p>At the lowest point of the climber&#x27;s fall, the length of the rope between the harness and the bolt is 24 m. The climber comes to rest and all the energy from the fall has been absorbed by the rope.</p><p>The rope has an unstretched length of 19 m and a stiffness of 560 N m<sup>–1</sup>. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/qu-4b-figure-1.jpg' alt='qu-4b-figure-1' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Assume that the extension of the rope is proportional to its tension and the mass of the rope and the effects of air resistance are negligible.</p><p>Calculate</p><p>(i) the resultant force acting on the climber when he reaches the lowest point in the fall.</p><p style='text-align: right;'>[3]</p><p>(ii) the extension of the rope when the climber’s acceleration is zero.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of the climber, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 80 kg</p></li><li><p>Stretched length of rope = 24 m</p></li><li><p>Unstretched length of rope, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 19 m</p></li><li><p>Stiffness of rope, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 560 N m<sup>–1</sup></p></li></ul><p>(i) Calculate the resultant force acting on the climber when he reaches the lowest point in the fall:</p><ul><li><p>The lowest point is when the rope reaches its maximum extension</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = stretched length – unstretched length = 24 – 19 = 5 m <em>[1 mark]</em> </p></li></ul><p>Determine the resultant force on the climber:</p><ul><li><p>Resultant = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>k</mi><mo>&#8710;</mo><mi>x</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (Hooke&#x27;s law) and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (weight)</p></li><li><p>Resultant = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&#8710;</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Resultant = (560 × 5) – (80 × 9.81) <em>[1 mark]</em></p></li><li><p>Resultant = 2015.2 = 2020 N <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Calculate the extension of the rope when the climber’s acceleration is zero:</p><ul><li><p>When acceleration = 0:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>k</mi><mo>&#8710;</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8710;</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>m</mi><mi>g</mi></mrow><mi>k</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>80</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn></mrow><mn>560</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.4 m <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>It&#x27;s useful to consider the free-body force diagrams of the climber at the different stages of his fall</em></p><p><em><strong>At the highest point (before falling):</strong></em></p><ul><li><p><em>The forces acting on the climber are his weight and the reaction force which are balanced</em></p></li><li><p><em>Hence </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo> </mo><mo>-</mo><mo> </mo><mi>m</mi><mi>g</mi><mo> </mo><mo>=</mo><mo> </mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p><em><strong>Between the highest point and </strong></em><em><em><strong>L</strong></em></em><em><strong>:</strong></em></p><ul><li><p><em>The climber freefalls under gravity, only his weight acts (as air resistance/drag is ignored)</em></p></li></ul><p><em><strong>Between </strong></em><em><em><strong>L</strong></em></em><em><strong> and Δ</strong></em><em><em><strong>x</strong></em></em><em><sub><strong>max</strong></sub></em><em><strong>:</strong></em></p><ul><li><p><em>The rope begins to stretch, and we are assuming extension is proportional to tension, so the restoring force is equal to Hooke&#x27;s law</em></p></li><li><p><em>Hence the resultant force is </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∆</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo> </mo><mo>-</mo><mo> </mo><mi>m</mi><mi>g</mi><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> is the point where the climber comes to rest</em></p></li></ul><p><em><strong>Between Δ</strong></em><em><em><strong>x</strong></em></em><em><sub><strong>max</strong></sub></em><em><strong> and Δ</strong></em><em><em><strong>x</strong></em></em><em><sub><strong>min</strong></sub></em><em><strong>:</strong></em></p><ul><li><p><em>The extension decreases as the resultant force/acceleration decrease to zero</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∆</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> is the point where the climber comes to rest again and the forces acting on him are balanced again</em></p></li><li><p><em>Hence </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∆</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo> </mo><mo>-</mo><mo> </mo><mi>m</mi><mi>g</mi><mo> </mo><mo>=</mo><mo> </mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/rock-climber-ma.png' alt='rock-climber-ma' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Use the principle of conservation of energy to calculate the maximum speed of the climber before the rope begins to stretch.</p><p style='text-align: right;'>[2]</p><p>(ii) Suggest whether using a longer rope would reduce the force experienced by the climber when the rope begins to stretch.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Calculate the maximum speed of the climber before the rope begins to stretch:</p><ul><li><p>Gain in KE = Change in GPE</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#8710;</mo><mi>h</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi>g</mi><mo>&#8710;</mo><mi>h</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mn>2</mn><mi>g</mi><mo>&#8710;</mo><mi>h</mi></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mn>2</mn><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mn>19</mn></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Max speed:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 19.3 m s<sup>−1</sup> <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) If the climber used a longer rope:</p><ul><li><p>They would fall for longer and reach a higher velocity (just before the rope stretches); <em>[1 mark]</em></p></li><li><p>(Hence) the climber’s deceleration / force (as the rope stretches) would be greater (not lower); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Hemp is one of the strongest fibres with a very high tensile strength and is extremely rigid. Hemp ropes were the first to be used for ship rigging which adjusted the position of the sails and supported the masts. </p><p>However, rock climbers use nylon ropes to break their fall as they can stretch considerably under tension.</p><p>A climbing equipment company tests their ropes by attaching an 80 kg mass to an end of the rope and releasing it from a ledge. </p><p>Fig. 1.2 shows the results of a test carried out to compare the time it takes for a nylon rope and a hemp rope to return to their unstretched length after beginning to stretch.</p><p style='text-align: center;'><strong>Fig. 1.2</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Rope</strong></p></td><td><p style='text-align: center;'><strong>Time to return to unstretched length / s</strong></p></td></tr><tr><td><p style='text-align: center;'>Nylon</p></td><td><p style='text-align: center;'>0.664</p></td></tr><tr><td><p style='text-align: center;'>Hemp</p></td><td><p style='text-align: center;'>0.035</p></td></tr></table><p>In the test, both ropes used had identical unstretched lengths of 19.0 m and diameters of 10 mm.</p><p>Show that the average resultant force exerted by the hemp rope is about 20 times larger than the average resultant force exerted by the nylon rope.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Determine the average resultant forces exerted by the hemp and nylon ropes:</p><p>List the known quantities:</p><ul><li><p>Mass, <em>m</em> = 80 kg</p></li><li><p>Initial speed, <em>u</em> = 19.3 m s<sup>−1</sup> (from <strong>(b)</strong>)</p></li><li><p>Final speed, <em>v</em> = 0</p></li><li><p>Time for nylon, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>t</mi><mrow><mi>n</mi><mi>y</mi><mi>l</mi><mi>o</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.664 s</p></li><li><p>Time for hemp, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>t</mi><mrow><mi>h</mi><mi>e</mi><mi>m</mi><mi>p</mi></mrow></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.035 s</p></li></ul><p>Use impulse to determine the average resultant force exerted:</p><ul><li><p>Impulse:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#8710;</mo><mi>t</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#8710;</mo><mi>p</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>m</mi><mo>&#8710;</mo><mi>v</mi></mrow><mrow><mo>&#8710;</mo><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Nylon:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>F</mi><mrow><mi>n</mi><mi>y</mi><mi>l</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>80</mn><mo>&#215;</mo><mn>19</mn><mo>.</mo><mn>3</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>664</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2325 N <em>[1 mark]</em></p></li><li><p>Hemp:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#8710;</mo><msub><mi>F</mi><mrow><mi>h</mi><mi>e</mi><mi>m</mi><mi>p</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>80</mn><mo>&#215;</mo><mn>19</mn><mo>.</mo><mn>3</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>035</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 44 114 N <em>[1 mark]</em></p></li></ul><p>Determine the ratio of the forces:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>&#8710;</mo><msub><mi>F</mi><mrow><mi>h</mi><mi>e</mi><mi>m</mi><mi>p</mi></mrow></msub></mrow><mrow><mo>&#8710;</mo><msub><mi>F</mi><mrow><mi>n</mi><mi>y</mi><mi>l</mi><mi>o</mi><mi>n</mi></mrow></msub></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>44</mn><mo>&#160;</mo><mn>114</mn></mrow><mn>2325</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>18</mn><mo>.</mo><mn>97</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Hence, the average resultant force exerted by hemp rope is about 20 times larger than that of the nylon rope</p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Discuss in terms of force and momentum, why nylon ropes are favoured by rock climbers compared to hemp ropes.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Nylon ropes are favoured by rock climbers because:</p><p><em>Max </em><em><strong>three</strong></em><em> from:</em></p><ul><li><p>When a rock climber falls, they have a large momentum; <em>[1 mark]</em></p></li><li><p>The rope brings the climber to a stop / their momentum to zero; <em>[1 mark]</em></p></li><li><p>As the nylon rope stretches, the change in momentum occurs over a longer period of time; <em>[1 mark]</em></p></li><li><p>(This means that) for the same change in momentum, there is a smaller force applied to the climber (since force is the rate of change in momentum); <em>[1 mark]</em></p></li><li><p>(Hence) there is a lower risk of injury to the climber; <em>[1 mark]</em></p></li></ul><p>Compared to a hemp rope:</p><ul><li><p>A hemp rope would exert the same change in momentum over a shorter period of time; </p><p><strong>AND</strong></p></li><li><p>(Therefore) it would apply a large force / injury to the climber; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[15 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A baseball is raised from the ground and dropped onto a hard plate to test its properties. A sensor measures the force exerted by the plate on the ball during its collision with the plate. </p><p>The variation of force exerted on the baseball with time is shown on the graph in Fig. 1.1. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/3-1-q4a-h-sq-cie-ial-physics.png' alt='3-1-q4a-h-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The ball of mass 150 g strikes the plate with a speed of 22.5 m s<sup>−1</sup>. It leaves the plate with a speed of 12.8 m s<sup>−1</sup>.</p><p>Show that this is consistent with the impulse obtained from the graph.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities: </p><ul><li><p>Initial velocity, <em>u </em>= 22.5 m s<sup>−1 </sup></p></li><li><p>Mass, <em>m </em>= 150 g = 150 × 10<sup>−3</sup> kg = 0.15 kg</p></li><li><p>Final velocity, <em>v </em>= 12.8 m s<sup>−1 </sup></p></li></ul><p>Calculate the impulse from the graph in Fig. 1.1: </p><ul><li><p>Impulse = change in momentum = area under force-time graph</p></li><li><p>For this graph, change in momentum = 0.5 × 145 × (73 × 10<sup>−3</sup>) = 5.30 N s <em>[1 mark]</em></p></li></ul><p>Calculate the impulse from the given data: </p><ul><li><p>Momentum before = <em>mu </em>= 0.15 × 22.5 = 3.38 N s <u>down</u></p><p><strong>AND</strong><em><strong> </strong></em></p><p>Momentum after = <em>mv </em>= 0.15 × 12.8 = 1.92 N s <u>up</u>; <em>[1 mark]</em></p></li><li><p>Therefore change in momentum = <em>mv </em>− <em>mu </em>= 1.92 − (−3.38) = 5.30 N s; <em>[1 mark]</em></p><p><strong>OR</strong></p></li><li><p><em>I </em>=<em> m </em>(<em>v</em> − <em>u</em>) = 0.15 × (12.8 − (−22.5))  <em>[1 mark]</em></p></li><li><p><em>I </em>= 5.30 N s; <em>[1 mark]</em></p></li><li><p>This is the same as the impulse from the graph, therefore, the values given in the question are consistent</p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><div class='callout-box'><p>The area under the graph is a triangle shape, so use the formula for the area of a triangle: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>h</mi><mi>e</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"color":"#FFFFFF"}</annotation></semantics></math></span>.</p></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Considering the first 73 ms of the ball&#x27;s motion:</p><p>(i) Sketch a graph to show how the momentum of the ball varies.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/3-1-q4b-hsq-cie-ial-physics.png' alt='3-1-q4b-hsq-cie-ial-physics' /></div><p style='text-align: right;'>[1]</p><p>(ii) Explain how the ball&#x27;s momentum varies in the first 73 ms of the motion.   </p><p style='text-align: right;'>[5]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) Sketch a graph to show how the momentum of the ball varies for the first 73 ms of the motion: </p><p>A sketch that would score one mark looks like this: </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/03/img-1151.jpeg' alt='img-1151' /></div><ul><li><p>The shape of the curve is correct</p><p><strong>AND</strong></p></li><li><p>The steepest gradient is around the midpoint; <em>[1 mark]</em></p></li></ul><p>(ii) Explain how the ball&#x27;s momentum varies in the first 73 ms of the motion: </p><p><em>At least one mark from each section:</em></p><p><em>Any </em><em><strong>five</strong></em><em> from: </em></p><p>Describe the overall shape of the graph:</p><ul><li><p>Change in momentum = area under force-time graph <strong>or </strong>Δ<em>p </em>= <em>F</em>Δ<em>t </em><em>[1 mark]</em></p></li><li><p>Force = rate of change of momentum <strong>or </strong><em>F </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>&#8710;</mo><mi>p</mi></mrow><mrow><mo>&#8710;</mo><mi>t</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>The force is the gradient of the momentum-time graph (or the link between force and gradient is clearly made); <em>[1 mark]</em></p></li></ul><p>Explain the shape of the graph for time interval 0 - 36.5 ms:</p><ul><li><p>(When the ball hits the plate) the force on the ball increases causing it to decelerate; <em>[1 mark]</em></p></li><li><p>Force increases linearly / not constant, acceleration is also not constant; <em>[1 mark]</em></p></li><li><p>Momentum does not change linearly; <em>[1 mark]</em></p></li><li><p>Gradient of momentum-time graph increases; <em>[1 mark]</em></p></li></ul><p>Explain the shape of the graph at 36.5 ms: </p><ul><li><p>When the force is maximum, the velocity is zero and the acceleration is maximum; <em>[1 mark]</em></p></li><li><p>This is where the gradient of the momentum-time graph is steepest; <em>[1 mark]</em></p></li></ul><p>Explain the shape of the graph at  time interval 36.5 - 73 ms:</p><ul><li><p>(When the ball is leaving the plate) force acts in the negative / opposite direction causing it to accelerate in the negative / opposite direction; <em>[1 mark]</em></p></li><li><p>The magnitude of the force decreases linearly, acceleration also decreases; <em>[1 mark]</em></p></li><li><p>The velocity of the ball increases rapidly then becomes constant; <em>[1 mark]</em></p></li><li><p>Gradient of momentum-time graph decreases; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The ball continues to bounce, each time losing the same fraction of its energy when it strikes the plate. Air resistance is negligible. </p><p>Determine the percentage of the original gravitational potential energy of the ball that remains when it reaches its maximum height after bouncing five times. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities: </p><ul><li><p>Initial velocity, <em>u </em>= 22.5 m s<sup>−1 </sup></p></li><li><p>Mass, <em>m </em>=  0.15 kg</p></li><li><p>Final velocity, <em>v </em>= 12.8 m s<sup>−1</sup></p></li></ul><p>Calculate the initial <em>E</em><sub><em>k i</em></sub>  and final kinetic <em>E</em><sub><em>k f</em></sub>  energy upon impact: </p><ul><li><p>Recall: Kinetic energy, <em>E</em><sub><em>k</em></sub> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>E</em><sub><em>k i</em></sub>  = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>u</mi><mrow><mn>2</mn><mo>&#160;</mo></mrow></msup><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>15</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>22</mn><mo>.</mo><msup><mn>5</mn><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>37</mn><mo>.</mo><mn>97</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>E</em><sub><em>k f</em></sub><em>  </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mrow><mn>2</mn><mo>&#160;</mo></mrow></msup><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>15</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mrow><mn>12</mn><mo>.</mo><mn>8</mn></mrow><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>12</mn><mo>.</mo><mn>29</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the fractional change of kinetic energy after each impact: </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>f</mi></mrow></msub><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>i</mi></mrow></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>12</mn><mo>.</mo><mn>29</mn></mrow><mrow><mn>37</mn><mo>.</mo><mn>97</mn></mrow></mfrac><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>32</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the percentage change after five bounces: </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><msup><mn>32</mn><mn>5</mn></msup><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>100</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>336</mn><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>When the ball falls, it converts its gravitational potential energy into kinetic energy. Therefore, its fractional change in kinetic energy is equal to its fractional change in gravitational potential energy, as energy needs to be conserved by transferring from one store to the other. In this calculation we are ignoring heating effects.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain, with reference to the conservation of momentum, the effect that the motion of the squash ball has on the motion of the Earth from the instant it is released until it bounces off the plate.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>State the principle of conservation of linear momentum:</p><ul><li><p>The total momentum before a collision = the total momentum after a collision provided no external forces act </p></li></ul><p>Apply the conservation of momentum to the ball and Earth before the impact: </p><ul><li><p>Momentum of ball towards the Earth = Momentum of Earth towards the ball; <em>[1 mark]</em></p></li></ul><p>Consider the momentum of the ball and Earth on impact:</p><ul><li><p>The momentum of both ball and Earth becomes zero; <em>[1 mark]</em></p></li></ul><p>Apply the conservation of momentum to the ball and Earth after impact: </p><ul><li><p>Momentum of ball away from Earth = Momentum of Earth in opposite direction; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A stationary uranium nucleus decays by emitting an α particle and thorium nucleus. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/qu-3a-figure-1.png' alt='qu-3a-figure-1' /></div><p>Discuss how the principle of conservation of momentum applies in this explosion. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>State the principle of conservation of momentum: </p><ul><li><p>The total momentum before a collision = the total momentum after a collision provided no external force acts</p></li></ul><p>Consider whether any external forces act in the explosion:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>There are no external forces acting on the overall system (thorium plus alpha); <em>[1 mark]</em></p></li><li><p>This is because the particles are moving in free space; <em>[1 mark]</em></p></li><li><p>They are far from other charges so electrostatic forces are negligible; <em>[1 mark]</em></p></li></ul><p>Consider the momentum before the explosion:</p><ul><li><p>There is no initial momentum before the explosion because the uranium atom is stationary / at rest; <em>[1 mark]</em></p></li></ul><p>Consider the momentum after the explosion: </p><ul><li><p>Momentum is conserved because there are no external forces</p></li><li><p>Momentum is a vector, so it also has direction</p></li><li><p>So for momentum to be conserved: </p></li></ul><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>There are equal and opposite forces acting between thorium and the alpha particle;<em> [1 mark]</em></p></li><li><p>The thorium atom must move along the original line of movement after the explosion in the opposite direction;<em> [1 mark]</em></p></li><li><p>The thorium and alpha particle must travel in opposite directions so there is no overall / net momentum after the decay;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Assume that all of the energy released in the emission process is transferred as kinetic energy to the α particle and the recoiling nucleus and is equal to 6.55 MeV.</p><p>Calculate the kinetic energy of the Thorium nucleus and α particle in MeV. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Total energy released, <em>E </em>= 6.55 MeV</p></li><li><p>Mass of Thorium nucleus, <em>M</em><sub><em>th</em></sub>  = 228 <em>u  </em>(from part (a))</p></li><li><p>Mass of alpha particle, <em>M</em><sub><em>α</em></sub>  = 4 <em>u  </em>(from part (a))</p></li><li><p>Unified atomic mass unit, <em>u </em>= 1.661 × 10<sup>−27</sup> kg = 931.5 MeV</p></li></ul><p>Apply the conservation of momentum to the explosion and obtain an expression for the velocity of the Thoriun nucleus, <em>v</em><sub><em>th</em></sub><em> </em>:</p><ul><li><p><em>p</em><sub><em>th</em></sub> = <em>p</em><sub><em>α</em></sub> therefore <em>M</em><sub><em>th</em></sub><em>v</em><sub><em>th</em></sub> = <em>M</em><sub>α</sub><em>v</em><sub>α </sub></p><p><strong>OR</strong></p><p>0 = <em>p</em><sub><em>α </em></sub> − <em>p</em><sub><em>th</em></sub> so 0 = <em>M</em><sub>α</sub><em>v</em><sub>α </sub>− <em>M</em><sub><em>th</em></sub><em>v</em><sub><em>th</em></sub></p></li><li><p>So, <em>v</em><sub><em>th</em></sub> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>M</mi><mi>&#945;</mi></msub><msub><mi>v</mi><mi>&#945;</mi></msub></mrow><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li></ul><p>Combine the equations, using <em>v</em><sub><em>th</em></sub> from above, for kinetic energy of alpha-particle, <em>E</em><sub><em>k</em></sub><em> </em><sub><em>α</em></sub><em>  </em>and kinetic energy of a thorium particle <em>E</em><sub><em>k th </em></sub>to obtain a ratio for kinetic energy: </p><ul><li><p>Recall: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>M</mi><mi>&#945;</mi></msub><msup><mrow><mo>(</mo><msub><mi>v</mi><mi>&#945;</mi></msub><mo>)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>AND</strong><em><strong> </strong></em> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><msup><mrow><mo>(</mo><msub><mi>v</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><msup><mfenced><mfrac><mrow><msub><mi>M</mi><mi>&#945;</mi></msub><msub><mi>v</mi><mi>&#945;</mi></msub></mrow><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub></mfrac></mfenced><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mfrac><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mo>(</mo><msub><mi>M</mi><mi>&#945;</mi></msub><mo>)</mo></mrow><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, the ratio for kinetic energy: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>M</mi><mi>&#945;</mi></msub><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the ratio of the masses and obtain an expression for <em>E</em><sub><em>k th</em></sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>4</mn><mi>u</mi></mrow><mrow><mn>228</mn><mi>u</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>57</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mn>57</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><p><em>   </em></p></li></ul><p>Calculate the kinetic energy of the Thorium nucleus  and α particle: </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>E</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mn>57</mn></mfrac><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>55</mn><mo>&#160;</mo><mi>MeV</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>58</mn><mn>57</mn></mfrac><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>55</mn><mo>&#160;</mo><mi>MeV</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>57</mn><mn>58</mn></mfrac><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>55</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>44</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Rearrange the equation to calculate <em>E</em><sub><em>k</em></sub><em> </em><sub><em>th</em></sub>:</p><ul><li><p><em>E</em><sub><em>k</em></sub><em> </em><sub><em>th </em></sub>= <em>E </em>− <em>E</em><sub><em>k</em></sub><em> </em><sub><em>α</em></sub> = 6.55 − 6.44 = 0.11 MeV <em>[1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Show that momentum is conserved in this decay.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Kinetic energy of Thorium nucleus, <em>E</em><sub><em>k</em></sub><em> </em><sub><em>th</em></sub> = 0.11 MeV (from part (b))</p></li><li><p>Kinetic energy of α particle, <em>E</em><sub><em>k</em></sub><em> </em><sub><em>α</em></sub> = 6.44 MeV (from part (b))</p></li><li><p>Mass of Thorium nucleus, <em>M</em><sub><em>th</em></sub> = 228 <em>u </em>(from part (a))</p></li><li><p>Mass of α particle, <em>M</em><sub><em>α</em></sub> = 4 <em>u </em>(from part (a))</p></li><li><p>Unified atomic mass unit, <em>u </em>= 1.661 × 10<sup>−27</sup> kg = 931.5 MeV</p></li></ul><p><strong>Method 1: Calculate the momentum of each nucleus</strong></p><p>Calculate the momentum of the Thorium nucleus: </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><msup><mrow><mo>(</mo><msub><mi>v</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Rearrange to obtain <em>v</em><sub><em>th</em></sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub></mrow><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Convert <em>M</em><sub><em>th</em></sub> into MeV:</p><ul><li><p><em>M</em><sub><em>th</em></sub> = 228 <em>u </em>= 228 × 931.5 MeV = 212 382 MeV</p></li></ul></li><li><p>Substitute <em>M</em><sub><em>th</em></sub> into the equation for <em>v</em><sub><em>th</em></sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>11</mn></mrow><mrow><mn>212</mn><mo>&#160;</mo><mn>382</mn></mrow></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.02 × 10<sup>−3</sup> m s<sup>−1 </sup></p></li></ul></li><li><p>Convert <em>M</em><sub><em>th </em></sub>into kg: </p><ul><li><p><em>M</em><sub><em>th</em></sub> = 228 <em>u </em>= 228 × (1.661 × 10<sup>−27</sup>) = 3.787 × 10<sup>−25</sup> kg</p></li><li><p><em>p</em><sub><em>th</em></sub> = <em>M</em><sub><em>th</em></sub>v<sub>th</sub> = (3.787 × 10<sup>−25</sup>) × (1.02 × 10<sup>−3</sup>) = 3.9 × 10<sup>−28</sup> kg m s<sup>−1</sup> <em>[1 mark]</em></p></li></ul></li></ul><p>Calculate the momentum of the α particle:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>M</mi><mi>&#945;</mi></msub><msup><mrow><mo>(</mo><msub><mi>v</mi><mi>&#945;</mi></msub><mo>)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Rearrange to obtain <em>v</em><sub><em>α</em></sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>&#945;</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub></mrow><msub><mi>M</mi><mi>&#945;</mi></msub></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Convert <em>M</em><sub><em>α</em></sub> into MeV:</p><ul><li><p><em>M</em><sub><em>α</em></sub> = 4 <em>u </em>= 4 × 931.5 MeV = 3726 MeV</p></li></ul></li><li><p>Substitute <em>M</em><sub><em>α</em></sub> into the equation for <em>v</em><sub><em>α</em></sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>&#945;</mi></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>44</mn></mrow><mn>3726</mn></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 58.9 × 10<sup>−3</sup> m s<sup>−1 </sup></p></li></ul></li><li><p>Convert <em>M</em><sub><em>th </em></sub>into kg: </p><ul><li><p><em>M</em><sub><em>α</em></sub> = 4 <em>u </em>= 4 × (1.661 × 10<sup>−27</sup>) = 6.644 × 10<sup>−27</sup> kg</p></li><li><p><em>p</em><sub><em>α</em></sub> = <em>M</em><sub><em>α</em></sub>v<sub><em>α</em></sub> = (6.644 × 10<sup>−27</sup>) × (58.9 × 10<sup>−3</sup>) = 3.9 × 10<sup>−28</sup> kg m s<sup>−1</sup> <em>[1 mark]</em></p></li></ul></li></ul><p>Conclusion:</p><ul><li><p>The Uranium nucleus is stationary, so the momentum before the decay = 0</p></li><li><p>Both the Thorium nucleus and α particle have the same momentum (but in opposite directions)</p><p><strong>AND</strong></p></li><li><p>(Therefore) the momentum after the decay is also 0 / is conserved; <em>[1 mark]</em></p></li></ul><p><strong>Method 2: Show that the ratio of the momentum of each nucleus equals 1</strong></p><p>Determine the equation for the ratio of the momentum of Thorium and the α particle:</p><ul><li><p>Ratio of momentum = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><msub><mi>v</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub></mrow><mrow><msub><mi>M</mi><mi>&#945;</mi></msub><msub><mi>v</mi><mi>&#945;</mi></msub></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><msup><mrow><mo>(</mo><msub><mi>v</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Rearrange to obtain <em>v</em><sub><em>th</em></sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub></mrow><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>M</mi><mi>&#945;</mi></msub><msup><mrow><mo>(</mo><msub><mi>v</mi><mi>&#945;</mi></msub><mo>)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Rearrange to obtain <em>v</em><sub><em>α</em></sub>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>&#945;</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub></mrow><msub><mi>M</mi><mi>&#945;</mi></msub></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Substitute for the velocities of Uranium and α particle into the ratio of momentum: </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><msqrt><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub></mrow><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub></mfrac></mstyle></msqrt></mrow><mrow><msub><mi>M</mi><mi>&#945;</mi></msub><msqrt><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub></mrow><msub><mi>M</mi><mi>&#945;</mi></msub></mfrac></mstyle></msqrt></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mn>2</mn><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub></mrow><mrow><mn>2</mn><msub><mi>M</mi><mi>&#945;</mi></msub><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><msub><mi>M</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi></mrow></msub></mrow><mrow><msub><mi>M</mi><mi>&#945;</mi></msub><msub><mi>E</mi><mrow><mi>k</mi><mo>&#160;</mo><mi>&#945;</mi></mrow></msub></mrow></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li></ul><p>Substitute the known values into the ratio of velocities: </p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mfrac><mrow><mn>228</mn><mi>u</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>11</mn><mo>&#160;</mo><mi>M</mi><mi>e</mi><mi>V</mi></mrow><mrow><mn>4</mn><mi>u</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>44</mn><mo>&#160;</mo><mi>M</mi><mi>e</mi><mi>V</mi></mrow></mfrac></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mn>228</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>11</mn></mrow><mrow><mn>4</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>44</mn></mrow></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.9867 = 1 <em>[1 mark]</em></p></li></ul><p>Conclusion:</p><ul><li><p>Since the Uranium nucleus is stationary, the momentum before the decay = 0</p></li><li><p>Both the Thorium nucleus and α particle have the same momentum (in opposite directions) so their ratios are equal to 1</p><p><strong>AND</strong></p></li><li><p>(Therefore) the momentum after the decay is also 0 / is conserved; <em>[1 mark]</em></p></li></ul><p><em>[Total: 3 marks]</em></p><p><em>Units are important in this question. You can either convert the mass in atomic units (u) to MeV or kg, as long as they are the same unit on the numerator and denominator of the fraction. When using the momentum equation </em><em><em>p</em></em><em> = </em><em><em>mv</em></em><em> the mass must be converted into kg from MeV or J so the final units for moments are kg m s</em><em><sup>–1</sup></em><em>.</em></p><p><em> </em></p><p><em>A small algebra trick to combine a variable outside a square root and inside a square root:</em></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><msup><mi>m</mi><mn>2</mn></msup></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>Therefore, </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msqrt><mfrac><mrow><mn>2</mn><mo>&#160;</mo><msub><mi>E</mi><mi>k</mi></msub></mrow><mi>m</mi></mfrac></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>&#160;</mo><mn>2</mn><msub><mi>E</mi><mi>k</mi></msub></mrow><mi>m</mi></mfrac></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><msup><mi>m</mi><menclose notation="updiagonalstrike"><mn>2</mn></menclose></msup><mo>&#160;</mo><mn>2</mn><msub><mi>E</mi><mi>k</mi></msub></mrow><menclose notation="updiagonalstrike"><mi>m</mi></menclose></mfrac></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mi>m</mi><mo>&#160;</mo><mn>2</mn><msub><mi>E</mi><mi>k</mi></msub></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Collisions can occur between neutrons and stationary Uranium nuclei, for example, during nuclear fission.</p><p>Discuss how this collision would be if this was inelastic as opposed to elastic.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>If this was an inelastic collision:</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>The neutrons will be <u>absorbed</u> by the Uranium nucleus; <em>[1 mark]</em></p></li><li><p>Both the Uranium nucleus and neutron will continue to travel in the same direction as the initial neutron / won’t change direction; <em>[1 mark]</em></p></li><li><p>Kinetic energy is lost;<em> [1 mark]</em></p><p> </p></li></ul><p>If this was an elastic collision:</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>The neutron will <u>rebound</u> with velocity / momentum to the left;<em> [1 mark]</em></p></li><li><p>The momentum transferred to the Uranium nucleus will be greater;<em> [1 mark]</em></p></li><li><p>The velocity of the Uranium will be greater (than in an elastic collision) / no kinetic energy is lost;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

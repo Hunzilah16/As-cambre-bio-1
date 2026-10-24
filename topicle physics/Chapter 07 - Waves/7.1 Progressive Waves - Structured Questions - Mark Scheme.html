@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7.1 Progressive Waves - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">7.1 Progressive Waves</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 7. Waves</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 6 Questions (59 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the type of wave for which the oscillations are perpendicular to the direction of energy transfer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The oscillations are perpendicular to the direction of energy transfer for...</p><ul><li><p>Transverse waves;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>If you need a handy way to remember which is which</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/transverse-longitudinal-com.png' alt='transverse-longitudinal-com' /></div><p><em>For transverse waves, the oscillations are at right angles (perpendicular) to the direction of energy transfer and wave motion. </em></p><p><em>Longitudinal waves have compressions and rarefactions and so need particles to propagate.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State two objects that can be used in the classroom to demonstrate wave motion.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Two objects that can be used in the classroom to demonstrate wave motion are...</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>Rope; <em>[1 mark]</em></p></li><li><p>Spring; <em>[1 mark]</em></p></li><li><p>Ripple tank;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>You are expected to be familiar with all three.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a waveform consisting of compressions and rarefactions. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/longitudinal-wave-form.png' alt='longitudinal-wave-form' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Annotate the diagram to show one complete wavelength, and label it <em>λ.</em></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>A wavelength on a longitudinal wave is as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/longitudinal-ma.png' alt='longitudinal-ma' /></div><ul><li><p>A line spanning from the centre of one compression (<strong>or</strong> rarefaction) to the same point on the next compression (<strong>or</strong> rarefaction); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The compression wave in Fig. 1.1 is a progressive wave in which 5 compressions pass a fixed point every 2 seconds. </p><p>Determine the frequency of the wave.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Determine the number of complete wavelengths:</p><ul><li><p>Over 5 compressions, there are 4 complete wavelengths</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/longitudinal-wave-form-ma.png' alt='longitudinal-wave-form-ma' /></div><p>Determine the frequency of the wave:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Frequency</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>number</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi>complete</mi><mo>&#160;</mo><mi>wavelengths</mi></mrow><mrow><mi>time</mi><mo>&#160;</mo><mi>taken</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&#160;</mo><mo>=</mo><mfrac><mn>4</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Be careful with the wording of the question. 5 compression points pass a fixed point. The first compression point passing triggers the timing to start. When the second compression point passes, this means that one full wavelength has passed.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a displacement-distance graph for a travelling wave.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-2-1a-question-stem-sl-sq-easy-phy.png' alt='4-2-1a-question-stem-sl-sq-easy-phy' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>On Fig. 1.1, add labels to show:</p><p>(i) the wavelength</p><p style='text-align: right;'>[1]</p><p>(ii) the amplitude</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>A correctly labelled diagram scoring two marks:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-2-1a-ms-sl-sq-easy-phy.png' alt='4-2-1a-ms-sl-sq-easy-phy' /></div><p>(i) Label the wavelength:</p><ul><li><p>Wavelength / <em>λ</em> correctly labelled from crest to crest; <em>[1 mark]</em></p></li></ul><p>(ii) Label the amplitude:</p><ul><li><p>Amplitude / <em>x</em><sub><em>0</em></sub> correctly labelled from point of zero disturbance to maximum displacement; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Writing the words, or giving the correct symbols would get you full marks.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Match the key word to its correct definition</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/ye-K4JGI_4-2-sl-sq-1b-question-stem.png' alt='ye-K4JGI_4-2-sl-sq-1b-question-stem' /></div>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>An answer scoring 5 marks:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/MeWJNZOD_4-2-sl-sq-1b-ms.PNG' alt='MeWJNZOD_4-2-sl-sq-1b-ms' /></div><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>Key words and definitions are extremely important in every topic. In extended answer questions, you will need to use key words correctly to score the marks. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows a displacement-time graph for an oscillating object.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/3b-figure-1.png' alt='3b-figure-1' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Determine the time period <em>T </em>for this oscillation</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>Determine the time period <em>T</em> from the graph:</p><ul><li><p>Measure the time between the same point on two consecutive waves </p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/file_000.png' alt='file_000' /></div><ul><li><p>Correctly determine the period <u><em>T</em></u><u> = 10 s</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>Remember that the time period on a displacement-time graph is the distance between one point on one wave and </em><em><strong>the same point</strong></em><em> on the next wave. You can measure the period from any point, such as crest to crest, or trough to trough.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/file_000-25.png' alt='file_000-25' /></div><p><em>Always chose the point that will give you the most accurate reading. In this example, the most accurate point to measure from was time </em><em><em>t</em></em><em> = 0.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The oscillation shown in Fig. 1.2 has a wavelength <em>λ</em> of 5 m.</p><p>Calculate:</p><p>(i) the frequency <em>f </em>of the oscillation</p><p style='text-align: right;'>[2]</p><p>(ii) the wave speed <em>v</em>.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Time period, <em>T</em> = 10 s (from part c)</p></li><li><p>Wavelength, <em>λ</em> = 5 m</p></li></ul><p>(i) Calculate the frequency <em>f</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>T</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mn>10</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.1 Hz <em>[1 mark]</em></p></li></ul><p>(ii) Calculate the wave speed <em>v</em>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.1 × 5 = 0.5 m s<sup>−1</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em><em> </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[5 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Circular water waves are produced by vibrating dippers at points P and Q, as illustrated in Fig. 4.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/11/q4b-paper-2-specimen-2022-cie-ial-physics.png' alt='q4b-paper-2-specimen-2022-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 4.1</strong> (not to scale)</p><p>The waves from P alone have the same amplitude at point R as the waves from Q alone. Distance PR is 44 cm and distance QR is 29 cm.</p><p>The dippers vibrate in phase with a period of 1.5 s to produce waves of speed 4.0 cm s<sup>–1</sup>.</p><p>(i) Calculate the wavelength of the waves.</p><p style='text-align: right;'>wavelength = .................................................... cm [2]</p><p>(ii) Calculate the path difference at point R of the waves from P and Q.</p><p>Give your answer in terms of the wavelength λ of the waves.</p><p style='text-align: right;'>path difference = ....................................................... λ [1]</p><p>(iii) Describe the motion, if any, of the water particles at point R.</p><p>Explain your answer.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Wave speed, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 4.0 cm s<sup>–1</sup></p></li><li><p>Time period, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo> </mo><mo>=</mo><mfrac><mn>1</mn><mi>f</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.5 s</p></li><li><p>Distance PR = 44 cm</p></li><li><p>Distance QR = 29 cm</p></li></ul><p>i) Use the wave equation to determine wavelength, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo> </mo><mo>=</mo><mo> </mo><mi>f</mi><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mi>v</mi><mi>f</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 4.0 × 1.5 = 6.0 cm <em>[1 mark]</em></p><p> </p></li></ul><p>ii) Calculate the path difference at point R of the waves from P and Q:</p><ul><li><p>The difference between distances PR and QR = 44 − 29 = 15 cm</p></li><li><p>Number of wavelengths in 15 cm = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>15</mn><mn>6</mn></mfrac><mo> </mo><mo>=</mo><mo> </mo><mfrac><mn>5</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 2.5</p></li><li><p>Path difference = 2.5<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>5</mn><mn>2</mn></mfrac><mi>λ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><p><em> </em></p></li></ul><p>iii) Describe the motion, if any, of the water particles at point R:</p><ul><li><p>The path difference is an odd number of half wavelengths <strong>OR </strong>the waves have a phase difference of 180°; <em>[1 mark]</em></p></li><li><p>(This results in destructive interference, hence) the particles are at rest / have no motion; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p><ul><li><p><em>Spotting that </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mi>v</mi><mi>f</mi></mfrac><mo> </mo><mo>=</mo><mi>v</mi><mo> </mo><mo>×</mo><mo> </mo><mfrac><mn>1</mn><mi>f</mi></mfrac><mo> </mo><mo>=</mo><mo> </mo><mi>v</mi><mo> </mo><mo>×</mo><mo> </mo><mi>T</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> can save you some time in part (i)</em></p></li><li><p><em>Remember to state </em><em><strong>path difference</strong></em><em> as a </em><em><strong>multiple of wavelength</strong></em><em> for part (ii)</em></p></li></ul>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1<strong> </strong>represents a progressive wave travelling from left to right on a stretched string.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q2a-medium-aqa-a-level-physics.png' alt='3-1-s-q--q2a-medium-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The frequency of the wave is 30 Hz. Calculate the speed of the wave.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To calculate the speed:</p><p>Determine the wavelength:</p><ul><li><p><strong>XY</strong> = 70 cm = 1<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  (or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>5</mn><mn>4</mn></mfrac><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> )</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#955;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 70 × <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>4</mn><mn>5</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 56 cm = 0.56 m <em>[1 mark]</em> </p></li></ul><p>Wave speed calculation:</p><ul><li><p><em>v</em> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>v</em> = 30 × 0.56</p></li><li><p><em>v</em> = 16.8 m s<sup>–1</sup> <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the phase difference between points <strong>X</strong> and <strong>Y</strong> on the string, giving an appropriate unit.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The phase difference is:</p><ul><li><p>90 / 450 <em>[1 mark]</em></p></li><li><p>° / degrees <em>[1 mark]</em></p></li></ul><p><strong>OR</strong></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi mathvariant="normal">&#960;</mi><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>3</mn><mi mathvariant="normal">&#960;</mi></mrow><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> or <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>5</mn><mi mathvariant="normal">&#960;</mi></mrow><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>  [1 mark]</em></p></li><li><p>Radians / rad / <strong>r</strong> <em>[1 mark]</em></p></li></ul><p><em>Do not accept R, Rad etc.</em><em><strong> </strong></em></p><p><em><strong>[Total: 2 marks]</strong></em><em><strong> </strong></em></p><p><em>It is much better to represent the phase in terms of an angle instead of the number of wavelengths, unless you are asked to do so.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Describe how the vertical displacement of point <strong>X</strong> on the string varies in the next period.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To describe how the vertical displacement of point <strong>X</strong> on the string varies in the next period:</p><p>First  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  cycle:</p><ul><li><p>Displacement of X will be <strong>positive</strong> (or ‘<strong>up’</strong>) to a maximum positive displacement; <em>[1 mark]</em></p></li></ul><p>Next  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  cycle:</p><ul><li><p><strong>Downwards</strong> to equilibrium position (<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> cycle) <strong>and </strong>maximum negative displacement ( <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> cycle); <em>[1 mark]</em></p></li></ul><p>Last  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  cycle:</p><ul><li><p><strong>Upwards</strong> to equilibrium position / zero displacement; <em>[1 mark]</em> </p></li></ul><p><em>If the motion of X is 180 degrees out of phase with the one shown then a maximum of two marks can be gained (i.e. X initially moving downwards)</em></p><p><em>Accept 0.008 s for  </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> cycle and 0.017 for </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> cycle</em> </p><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Visualising the subsequent motion of a point on the wave is tricky. The wave is travelling to the right hand side, so it&#x27;s subsequent motion will be the wave motion drawn </em><em><strong>behind</strong></em><em> it. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the phase difference between the current position of <strong>X</strong> and the position of <strong>X</strong> 0.0825 s later.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Frequency, <em>f </em>= 30 Hz (From part (a))</p></li></ul><p>To determine the phase difference between the current position of <strong>X</strong> and the position of <strong>X</strong> 0.0825 s later:</p><p>Calculate the time period of 1 wave cycle:</p><ul><li><p>1 period = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>f</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>30</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.033 s</p></li></ul><p>Determine the number of wave cycles in 0.0825 s:</p><ul><li><p>0.0825 s is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0825</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>033</mn></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 2.5 complete cycles <em>[1 mark]</em></p></li></ul><p>Determine the phase difference over 2.5 cycles:</p><ul><li><p>The phase difference of 1 cycle = 360 °</p></li><li><p>So, the phase difference of ½ cycle = 180°</p></li><li><p>(Therefore, there is a) phase difference of 180° / <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&#960;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> radians / anti-phase (between the two positions of <strong>X</strong>) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Remember that a phase difference of 360 degrees is a complete 1 wavelength cycle, so there is actually no phase difference. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[14 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a vertical cross-section through a water wave moving from left to right.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1a-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1a-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Deduce the point at which the water is moving upwards at maximum speed and explain your reasoning. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>State the position on the wave where it moves upwards with maximum speed:</p><ul><li><p>C; <em>[1 mark] </em></p></li></ul><p>Explain the motion of the progressive wave:</p><ul><li><p>Since this is a <u>progressive</u> wave moving left to right, position C will move upward; <em>[1 mark]</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1a-answer-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1a-answer-hard-aqa-a-level-physics' /></div><ul><li><p>Point<strong> </strong>C is at the equilibrium / undisturbed position / mid-point on the wave</p><p><strong>AND</strong></p><p>(Therefore) it is moving at maximum speed;<em> [1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>While a microphone is connected to a cathode-ray oscilloscope, a student strikes a tuning fork nearby. The sound wave produced by the tuning fork is displayed as a trace on the screen.</p><p>Fig. 1.2 shows the resulting trace. The time-base and gain are given on the screen.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1b-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1b-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Use Fig. 1.2<strong> </strong>to calculate the wavelength of the sound wave produced. </p><p>(The speed of sound is approximately 330 m s<sup>–1</sup>).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Wave speed, <em>v</em> = 330 m s<sup>–1</sup> </p></li></ul><p>Determine the time period of the oscilloscope trace using the time-base:</p><ul><li><p>The time-base on the X-axis is set to a scale of 400 μs / div</p></li><li><p>Therefore, each division represents 400 × 10<sup>–6</sup> s</p></li><li><p>One time period is 4 divisions (shown below); <em>[1 mark]</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1b-answer-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1b-answer-hard-aqa-a-level-physics' /></div><ul><li><p>Therefore, time period (one full cycle), <em>T </em>= 4 × (400 × 10<sup>–6</sup>) = 1.6 × 10<sup>–3</sup> s <em>[1 mark] </em></p></li></ul><p>Calculate the frequency of the wave:</p><ul><li><p><em>f</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mi>T</mi></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>f</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 625 Hz <em>[1 mark] </em></p></li></ul><p>Use the wave speed equation to calculate the wavelength of the sound wave:</p><ul><li><p><em>v = fλ</em></p></li><li><p>330 = 625 × <em>λ</em></p></li><li><p><em>λ</em> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mn>330</mn><mn>625</mn></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.53 m <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student’s lab partner strikes another identical tuning fork near the microphone, so that both sound wave signals can be overlaid on the oscilloscope trace. Fig. 1.3 shows the new trace.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1c-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1c-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>Using Fig. 1.3, determine the phase difference between the two signals as shown on the oscilloscope trace. </p><p>Give a suitable unit with your answer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Determine the displacement between the two signals in terms of number of divisions:</p><ul><li><p>The two signals are displaced by 1 division; <em>[1 mark]</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1c-answer-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1c-answer-hard-aqa-a-level-physics' /></div><p>Use the displacement to calculate a phase difference:</p><ul><li><p>If the two signals were in phase, the displacement would either be 0 divisions or 4 divisions</p></li><li><p>Therefore, 1 division of displacement represents 25% of phase difference</p></li><li><p>Phase difference = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 2π = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> π</p><p><strong>OR</strong></p><p>Phase difference = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> × 360 = 90 <em>[1 mark] </em></p></li></ul><p>State the unit for phase difference:</p><ul><li><p>Phase difference = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>π rad</p><p><strong>OR</strong></p><p>Phase difference = 90º <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The oscilloscope trace is known as a ‘time-view’ of the sound wave because it shows the displacement of an oscillating signal against time. One of the students makes a time-view sketch as shown in Fig. 1.4, including a label <em>M</em>. </p><p>An oscillating signal can also be shown in terms of a ‘space-view’, which would show the displacement of the signal against its position. The other student makes a space-view sketch as shown in Fig. 1.5, including a label <em>N</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1d-image1-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1d-image1-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.4</strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/c7YeQlBD_3-1-s-q--q1d-image2-hard-aqa-a-level-physics.png' alt='c7YeQlBD_3-1-s-q--q1d-image2-hard-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.5</strong></p><p>Show that the wave speed <em>v </em>is given by:</p><p style='text-align: center;'> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mi>N</mi></mrow><mrow><mn>2</mn><mi>M</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Show that the wave speed <em>v </em>is given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mi>N</mi></mrow><mrow><mn>2</mn><mi>M</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><p>Use Fig. 1.4 to write an expression for the time period, <em>T</em>:</p><ul><li><p>The time period is the time taken for one complete wave cycle</p></li><li><p>This is determined using the time axis in the time-view of the wave, shown below:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1d-answer-image1-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1d-answer-image1-hard-aqa-a-level-physics' /></div><ul><li><p>Therefore, <em>T</em> =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>M</mi><mn>3</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark] </em></p></li></ul><p>Write an expression for the frequency <em>f</em> of the wave:</p><ul><li><p><em>f</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>T</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore <em>f = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mstyle displaystyle="true"><mfrac><mi>M</mi><mn>3</mn></mfrac></mstyle></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>3</mn><mi>M</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark] </em></p></li></ul><p>Use Fig. 1.5 to write an expression for the wavelength <em>λ</em> of the wave:</p><ul><li><p>The wavelength of a wave is the distance between two corresponding points, e.g., peak to peak</p></li><li><p>This is determined using the position axis in the space-view of the wave, shown below:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q1d-answer-image2-hard-aqa-a-level-physics.png' alt='3-1-s-q--q1d-answer-image2-hard-aqa-a-level-physics' /></div><ul><li><p>  Therefore,<em> λ</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>N</mi><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Write an equation for the wave speed <em>v</em> using the wave speed equation:</p><ul><li><p><em>v</em> = <em>fλ </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>3</mn><mi>M</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>× <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>N</mi><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mn>3</mn><mi>N</mi></mrow><mrow><mn>2</mn><mi>M</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Ultrasound is used to measure the depth of oceans, seas and lakes. </p><p>Fig. 1.1 shows a pulse of ultrasound being emitted from the boat, travelling down to the sea bed and being reflected back to the boat.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/sl-sq-4-2-hard-q3a-ultrasound-ship.png' alt='sl-sq-4-2-hard-q3a-ultrasound-ship' /></div><p style='text-align: center;'><strong>Fig.1.1</strong></p><p>State which type of wave ultrasound is and explain your answer.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>State which type of wave ultrasound is and explain your answer:</p><ul><li><p>Ultrasound is a <u>sound wave</u> (with a frequency above the range of human hearing); <em>[1 mark]</em></p></li><li><p>Therefore, ultrasound is a <u>longitudinal wave</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A cathode-ray oscilloscope (C.R.O.) is used to trace the ultrasound pulses sent from the boat and the reflected pulses returning to the boat. The C.R.O. trace is shown in Fig. 1.2.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/09/sl-sq-4-2-hard-q3b-trace-of-ultrasound-pulses.png' alt='sl-sq-4-2-hard-q3b-trace-of-ultrasound-pulses' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>The ultrasound travels through water at 1452 m s<sup>−1</sup>, and the wavelength of the pulse is 0.023 m.</p><p>For the ultrasound pulses: </p><p>(i) Calculate the frequency</p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the distance to the sea bed</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) For the ultrasound pulses, calculate the frequency, <em>f:</em></p><p>List the known quantities:</p><ul><li><p>Speed of ultrasound wave in water, <em>v</em> = 1452 m s<sup>−1</sup></p></li><li><p>Wavelength of ultrasound pulse, <em>λ </em>= 0.023 m</p></li></ul><p>Using the wave speed equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>v</mi><mi>&#955;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1452</mn><mrow><mn>0</mn><mo>.</mo><mn>023</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 63130 Hz <em>[1 mark]</em></p></li></ul><p>(ii) For the ultrasound pulses, calculate the distance to the sea bed:</p><p>From the graph determine the time taken for the pulse to reach the sea bed:</p><ul><li><p>The tall pulses are those sent from the boat, the small pulses are those reflected from the sea floor</p></li><li><p>The time between the tall emitted pulse and the smaller echo is two divisions of the axis</p><ul><li><p>Each division of the axis is 0.10 s</p></li><li><p>Therefore, the time between sending and receiving the pulses is 0.20 s</p></li></ul></li><li><p>However, the pulse travels from the boat to the sea bed and back in this time</p><ul><li><p>Therefore, the time taken to reach the sea bed is 0.10 s</p></li><li><p><em>t</em> = 0.10 s <em>[1 mark]</em></p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>d</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p><ul><li><p>Therefore, <em>d</em> = <em>vt</em></p></li><li><p><em>d = </em>1452 × 0.10 = 145.2 m <em>[1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[8 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The boat moves out to an area where the sea is deeper. </p><p>(i) State and explain two changes that would occur on the cathode-ray oscilloscope trace. You may include diagrams in your answer.</p><p style='text-align: right;'>[4]</p><p>(ii) When the sea is over 450 m deep, the pulses must be transmitted less frequently. Explain why this is the case.</p><p style='text-align: right;'>[4]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (8 marks):</div>
+                    <p>(i) State and explain two changes that would occur on the cathode-ray oscilloscope trace:</p><p><strong>Change 1</strong></p><p>State change 1:</p><ul><li><p>The <u>horizontal separation</u> between the transmitted pulse and the reflected pulse will <u>increase;</u> <em>[1 mark]</em></p></li></ul><p>Explain change 1:</p><ul><li><p>The sea is deeper so the <u>distance</u> travelled by the pulses <u>increases</u>, and will therefore <u>take longer</u> to reach the sea bed, (and longer to return); <em>[1 mark]</em></p></li></ul><p><strong>Change 2</strong></p><p>State change 2:</p><ul><li><p>The <u>amplitude</u> of the <u>reflected pulses</u> will be <u>smaller / decrease</u>; <em>[1 mark]</em></p></li></ul><p>Explain change 2:</p><ul><li><p>Some of the <u>energy is absorbed by</u> the surrounding <u>water</u>. Since they have to travel through a <u>greater depth</u> of water, <u>more energy will be lost;</u> <em>[1 mark]</em></p></li></ul><p>(ii) When the sea is over 450 m deep, the pulses must be transmitted less frequently. Explain why this is the case</p><p>Calculate the time taken between the transmission and detection of each pulse at 450 m:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>d</mi><mi>v</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>450</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn></mrow><mn>1452</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 0.6 s<em> [1 mark]</em></p></li></ul><p>Explain why this means the pulses must be transmitted less frequently:</p><ul><li><p>The cathode-ray oscilloscope trace shows that the pulses are transmitted <u>every 0.6 s</u>; <em>[1 mark]</em></p></li><li><p><u>At a depth of 450 m</u>, the reflected pulses would coincide with / arrive at the same time as the transmitted pulses;<em> [1 mark]</em></p></li><li><p><u>At greater depths</u>, the reflected pulses would be detected after subsequent / the next pulses have been transmitted; <em>[1 mark]</em></p></li></ul><p><em> </em><em><strong>[Total: 8 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

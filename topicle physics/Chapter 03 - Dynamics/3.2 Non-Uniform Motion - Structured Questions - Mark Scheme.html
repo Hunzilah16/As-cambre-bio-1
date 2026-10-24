@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3.2 Non-Uniform Motion - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">3.2 Non-Uniform Motion</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 3. Dynamics</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 7 Questions (91 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[15 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A skydiver of mass 75 kg jumps from an aircraft.</p><p>(i) State the difference between the mass of a body and its weight.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the weight of the skydiver.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) The difference between the mass of a body and its weight is:</p><ul><li><p>Mass is the measure of a body’s resistance / inertia to changes in velocity / motion; <em>[1 mark]</em></p></li><li><p>Weight is the effect of a gravitational field on mass <strong>OR</strong> weight is the force on a mass due to gravity; <em>[1 mark]</em></p><p><em>Accept comparisons e.g. mass is constant, weight varies / mass is a scalar, weight is a vector</em></p><p> </p></li></ul><p>(ii) Calculate the weight of the skydiver:</p><p>List the known quantities:</p><ul><li><p>Mass of the skydiver, <em>m</em> = 75 kg</p></li><li><p>Acceleration of free fall, <em>g</em> = 9.81 m s<sup>−2</sup></p></li></ul><p>Substitute the values into the equations:</p><ul><li><p>Weight:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><em>W</em> = 75 × 9.81</p></li><li><p><em>W</em> = 735.75 = 740 N<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The graph in Fig. 1.1 shows the vertical velocity of the skydiver during the first 40 s of the fall before opening his parachute.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-2b-e-3-1-e-terminal-velocity-graph-cie-ial-sq.png' alt='3-1-2b-e-3-1-e-terminal-velocity-graph-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong> </p><p>Explain the shape of the graph</p><p>(i) between 0 and 5 s</p><p style='text-align: right;'>[2]</p><p>(ii) between 5 and 25 s</p><p style='text-align: right;'>[2]</p><p>(iii) between 25 and 40 s</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>Explain the shape of the velocity-time graph:</p><p>(i) Between 0 and 5 s:</p><ul><li><p>Weight is much larger than drag / air resistance so the resultant force is downwards; <em>[1 mark]</em></p></li><li><p>The skydiver accelerates downwards; <em>[1 mark]</em></p></li></ul><p>(ii) Between 5 and 25 s:</p><p>Any <strong>two</strong> from:</p><ul><li><p>Drag / air resistance increases with speed; <em>[1 mark]</em></p></li><li><p>(Hence) as speed increases, the resultant force decreases; <em>[1 mark]</em></p></li><li><p>As resultant force decreases, acceleration decreases; <em>[1 mark]</em></p></li></ul><p>(iii) Between 25 and 40 s:</p><ul><li><p>The forces (of drag and weight) are equal / balanced; <em>[1 mark]</em></p></li><li><p>(This is the point at which) the skydiver reaches <u>terminal</u> velocity; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.2 shows the skydiver falling at a constant velocity. </p><p>Add labelled arrows to Fig. 1.2 to show the forces acting on the skydiver.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-2c-e-3-1-e-skydiver-force-diagram-cie-ial-sq.png' alt='3-1-2c-e-3-1-e-skydiver-force-diagram-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The forces on the skydiver when travelling at constant velocity are:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-e-skydiver-force-diagram-cie-ial-sq-ma.png' alt='3-1-e-skydiver-force-diagram-cie-ial-sq-ma' /></div><ul><li><p>Arrow up labelled drag / air resistance / air friction; <em>[1 mark]</em></p></li><li><p>Arrow down labelled weight; <em>[1 mark]</em></p></li><li><p>Arrows drawn approximately equal length, or 740 N seen (value from <strong>(a)</strong>); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>In this question, you would score all the marks if your arrows were not touching. However, it&#x27;s more physically correct to draw the arrows from the same point, to indicate they are acting from the centre of gravity, so it&#x27;s a good habit to get into!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The skydiver opens his parachute after 40 s. </p><p>On Fig. 1.3 below, complete the graph to show how the skydiver’s vertical velocity changes after 40 s.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-2d-e.png' alt='3-1-2d-e' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The variation of vertical velocity after opening the parachute is as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/untitled3-1-e-terminal-velocity-graph-2-cie-ial-sq-ma.png' alt='untitled3-1-e-terminal-velocity-graph-2-cie-ial-sq-ma' /></div><ul><li><p>Smooth curve drawn showing a decreasing gradient; <em>[1 mark]</em></p></li><li><p>Horizontal line drawn near end to show a new lower terminal velocity; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In physics, the motion of an object falling through the atmosphere is often studied. Fig. 1.1 shows a diagram of this motion.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/2-1-3a-sl-sq-easy-phy.png' alt='2-1-3a-sl-sq-easy-phy' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The object shown moves vertically downwards through the atmosphere.</p><p>Identify the two forces acting on the object and label them on the diagram.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>A labelled diagram that would score two marks is shown below: </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/2-1-3a-ma-sl-sq-easy-phy.png' alt='2-1-3a-ma-sl-sq-easy-phy' /></div><ul><li><p>Drag <strong>OR </strong>air resistance labelled as shown; <em>[1 mark]</em></p></li><li><p>Weight labelled as shown; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Note: </em><em><strong>no credit</strong></em><em> is given if you wrote &quot;gravity&quot; instead of </em><em><strong>weight</strong></em><em>. Remember, </em><em><strong>weight</strong></em><em> is the name of the </em><em><strong>force</strong></em><em> due to gravity, tugging on all objects with mass. Strictly speaking, &quot;gravity&quot; is not the name of a force! </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Often, a simplifying condition is assumed so that, in these cases, only a single force acts on objects as they move through the atmosphere.</p><p>State the simplifying condition that is normally assumed.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>State the name of the condition that is normally assumed: </p><ul><li><p>There is <u>no air resistance</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>Exam questions will often state that &#x27;air resistance is negligible&#x27; or &#x27;assume no air resistance&#x27; which mean the same thing.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Terminal velocity is only attained if both forces act on the object. </p><p>State and explain the magnitude of the resultant force on the object if it moves at its terminal velocity. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The magnitude of the resultant force at terminal velocity is: </p><ul><li><p>Zero; <em>[1 mark]</em></p></li></ul><p>Explain the magnitude of the resultant force:</p><ul><li><p>The drag force is <u>equal</u> (and opposite) to the weight force; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Technically, the drag force is equal </em><em><strong>and</strong></em><em> opposite to the weight force. However, the question specifically asks about the </em><em><strong>magnitude</strong></em><em> of the resultant force, so the fact that the drag force and weight force are equal to in magnitude is important for this. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Sketch a graph on the axes in Fig. 1.2 to show an object that is released from rest at <em>t</em> = 0 s and falls vertically through the atmosphere, attaining terminal velocity, <em>v</em><sub>terminal</sub> after <em>t</em> = 4 s.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/2-1-3d-sl-sq-easy-phy.png' alt='2-1-3d-sl-sq-easy-phy' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>The line corresponding to <em>v</em><sub>terminal</sub> is included as guidance. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A sketch that would score three marks is shown below: </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/2-1-3d-ma-sl-sq-easy-phy.png' alt='2-1-3d-ma-sl-sq-easy-phy' /></div><ul><li><p>Correct shape of curve, as shown; <em>[1 mark]</em></p></li><li><p>Line starts at <em>v</em> = 0 m s<sup>–1</sup> and <em>t</em> = 0 s; <em>[1 mark]</em></p></li><li><p>Line is curved <strong>AND</strong> becomes horizontal after 4 s; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a stone block being pulled up a slope at a constant speed by a cable attached to an electric motor. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q5a_forces_ib-sl-physics-sq-medium.png' alt='q5a_forces_ib-sl-physics-sq-medium' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The slope is inclined at an angle of 17° with the horizontal. The mass of the block is 250 kg, and the tension <em>T</em> in the cable is 1.2 kN.</p><p>On Fig. 1.1, draw and label the forces acting on the block.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The forces acting on the block are:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma5a_forces_ib-sl-physics-sq-medium.png' alt='ma5a_forces_ib-sl-physics-sq-medium' /></div><ul><li><p>Weight vertically down; <em>[1 mark]</em></p></li><li><p>Normal / reaction / contact (force) perpendicular to the slope; <em>[1 mark]</em></p></li><li><p>Tension in cable acting up the slope (away from block); <em>[1 mark]</em></p></li><li><p>Friction / resistive (force) acting down the slope (away from block); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Don&#x27;t automatically assume that the slope is frictionless unless the question specifies so!</em></p><p><em>The direction of the frictional force is important, as it depends on the direction of motion of the mass. Since the block is moving upwards (since it&#x27;s being pulled by the cable) the frictional force must be directed in the opposite direction, i.e. down the slope</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>With reference to the motion of the block, discuss whether the block is in equilibrium.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Consider the motion of the block:</p><ul><li><p>(The block moves with) constant velocity / zero acceleration and therefore zero resultant force; <em>[1 mark]</em></p></li><li><p>Since it has no resultant force (and no resultant torque) it is in equilibrium; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The total resistive force <em>R</em> acting on the box is constant throughout its motion on the slope.</p><p>Calculate the magnitude of the resistive force <em>R</em>. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Calculate the magnitude of the resistive force:</p><p>List the known quantities:</p><ul><li><p>Angle of incline, <em>θ </em>= 17°</p></li><li><p>Mass of block, <em>m</em> = 250 kg</p></li><li><p>Tension in cable, <em>T</em> = 1.2 kN = 1200 N</p></li><li><p>Weight, <em>W</em> = <em>mg</em> = 250 × 9.81</p></li></ul><p>Determine the component of weight along the slope:</p><ul><li><p>Resolving the weight along the slope:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Resolve the forces along the slope:</p><ul><li><p>The block moves up the slope at a constant speed</p></li><li><p>This means forces up the slope = forces down the slope</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><em> </em><em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><em>R</em> = 1200 – (250 × 9.81 × sin 17°) <em>[1 mark]</em></p></li><li><p><em>R</em> = 483 = 480 N (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Make sure to use the correct </em><em><strong>component</strong></em><em> of the weight, drawing a triangle on the diagram can help you to do this</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-slope-weight-component-ma.png' alt='3-1-slope-weight-component-ma' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cable connecting the block to the electric motor abruptly breaks. </p><p>Calculate the acceleration of the block as it moves down the slope.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the acceleration of the block:</p><p>List the known quantities:</p><ul><li><p>Angle of incline, <em>θ </em>= 17º</p></li><li><p>Mass of block, <em>m</em> = 250 kg</p></li><li><p>Resistive (frictional) force, <em>R</em> = 483 N (from <strong>(b)</strong>)</p></li><li><p>Weight, <em>W</em> = <em>mg</em> = 250 × 9.81</p></li></ul><p>Determine the resultant force on the block:</p><ul><li><p>Once the cable snaps, the tension <em>T</em> no longer acts, so the block accelerates down the slope</p></li><li><p>Resultant force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul><p>Calculate the acceleration of the block:</p><ul><li><p>Newton&#x27;s second law: <em> </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>F</mi><mi>m</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo> </mo><mo>=</mo><mo> </mo><mfrac><mrow><mi>m</mi><mi>g</mi><mo> </mo><mi>sin</mi><mo> </mo><mi>θ</mi><mo> </mo><mo>-</mo><mo> </mo><mi>R</mi></mrow><mi>m</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>g</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfrac><mi>R</mi><mi>m</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#215;</mo><mi>sin</mi><mo>&#160;</mo><mn>17</mn><mo>&#176;</mo></mrow></mfenced><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfrac><mn>483</mn><mn>250</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 0.94 m s<sup>–2 </sup><em>[1 mark]</em></p></li></ul><p><em>Acceptable value for a = 0.95 m s</em><sup><em>–2</em></sup><em> if 480 N used</em></p><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student uses a motion sensor connected to a laptop to investigate the motion of a hollow ball of mass 1.5 × 10<sup>–2</sup> kg falling through the air.</p><p>The ball is dropped from rest. It reaches terminal velocity before it reaches the ground.</p><p>The upthrust on the ball is negligible.</p><p>Explain briefly why the acceleration of the ball</p><p>(i) decreases with time</p><p style='text-align: right;'>[2]</p><p>(ii) is 9.8 m s<sup>–2</sup> initially.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) The acceleration of the ball decreases with time because:</p><ul><li><p>Air resistance / drag increases with speed; <em>[1 mark]</em></p></li><li><p>(Hence) the resultant / accelerating force decreases; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) The acceleration of the ball is 9.8 m s<sup>–2</sup> initially because:</p><ul><li><p>Air resistance is (initially) zero <strong>OR</strong> weight / gravitational force is the only force acting; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The variation with time <em>t</em> of the velocity <em>v</em> of the ball as it falls towards the ground is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/3-1-4b-m-3-1-terminal-velocity-graph-cie-ial-sq.png' alt='3-1-4b-m-3-1-terminal-velocity-graph-cie-ial-sq' /></div><p>(i) Use Fig. 1.1 to determine the magnitude of the acceleration of the ball at time <em>t</em> = 0.25 s.</p><p style='text-align: right;'>[3]</p><p>(ii) Calculate the resultant force acting on the ball at time <em>t</em> = 0.25 s.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of the ball, <em>m</em> = 1.5 × 10<sup>–2</sup> kg = 0.015 kg</p></li></ul><p>(i) Draw a tangent to the curve at <em>t</em> = 0.25 s to calculate acceleration:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/3-1-terminal-velocity-graph-cie-ial-sq-ma.png' alt='3-1-terminal-velocity-graph-cie-ial-sq-ma' /></div><ul><li><p>Tangent correctly drawn (by eye); <em>[1 mark]</em></p></li><li><p>Gradient = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>&#8710;</mo><mi>v</mi></mrow><mrow><mo>&#8710;</mo><mi>t</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>9</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>325</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>0</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Acceleration = 1.15 m s<sup>–2</sup> <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for acceleration = 1.1 to 1.4 m s</em><sup><em>–2</em></sup></p><p> </p><p>(ii) Calculate the force on the ball:</p><ul><li><p>Newton&#x27;s Second Law:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.015 × 1.15 <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.017 N <em>[1 mark]</em></p></li></ul><p><em>Acceptable range for force = 0.017 to 0.021 N</em></p><p><em><strong>[Total: 5 marks]</strong></em></p><p><em>You will be awarded one mark here just for showing that you knew how to draw a tangent, and another for having tried to find the gradient, even if you don&#x27;t get the correct answer, so it&#x27;s important to show your working</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Use your answers in <strong>(b)</strong> to determine the drag on the ball at time <em>t</em> = 0.25 s.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the drag force on the falling ball at <em>t</em> = 0.25 s:</p><p>List the known quantities:</p><ul><li><p>Acceleration, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 1.2 m s<sup>−2</sup> (from <strong>(b)</strong>)</p></li><li><p>Resultant force, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.018 N (from <strong>(b)</strong>)</p></li><li><p>Mass, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.015 kg</p></li></ul><p>Calculate the weight of the ball:</p><ul><li><p>Weight: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo> </mo><mo>=</mo><mo> </mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 0.015 × 9.81 = 0.147 N <em>[1 mark]</em></p></li></ul><p>Resolve the forces to determine the drag force:</p><ul><li><p>Resolve:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo> </mo><mo>=</mo><mo> </mo><mi>W</mi><mo> </mo><mo>-</mo><mo> </mo><mi>d</mi><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo>⇒</mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mo> </mo><mi>d</mi><mo> </mo><mo>=</mo><mo> </mo><mi>W</mi><mo> </mo><mo>-</mo><mo> </mo><mi>F</mi><mo> </mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Drag = 0.147 − 0.018 <em>[1 mark]</em></p></li><li><p>Drag = 0.129 = 0.13 N <em>[1 mark]</em></p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/12/file-000-4.png' alt='file-000-4' /></div><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[5 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The student adds a small amount of sand inside the hollow ball and repeats the experiment. The ball is dropped from rest and reaches terminal velocity before it reaches the ground.</p><p>(i) Describe how the forces acting on the ball filled with sand at <em>v</em> = 0.50 m s<sup>–1</sup> compare with the forces acting on the hollow ball at this speed.</p><p style='text-align: right;'>[2]</p><p>(ii) State and explain how the terminal velocity of the ball filled with sand will differ from the terminal velocity of the hollow ball.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (5 marks):</div>
+                    <p>(i) Compare the forces on the two balls:</p><ul><li><p>Drag will be the same (at <em>v</em> = 0.50 m s<sup>–1</sup>) since surface area / shape are the same; <em>[1 mark]</em></p></li><li><p>Weight is greater <strong>OR</strong><em><strong> </strong></em>resultant force is larger; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) The terminal velocity of the ball filled with sand will be:</p><ul><li><p>Greater / faster (than the hollow ball); <em>[1 mark]</em></p></li></ul><p>Because:</p><ul><li><p>Terminal velocity is reached when weight = drag <strong>AND</strong> the weight is greater; <em>[1 mark]</em></p></li><li><p>As speed increases drag increases (so drag force is higher); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 5 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[18 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[9 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On an alien planet similar to Earth, a parachutist jumps out of an aircraft.</p><p>The graph in Fig. 1.1 shows how the vertical speed of the parachutist changes with time during the first 20 s of his jump. To avoid air turbulence caused by the aircraft, he waits a short time after jumping before pulling the cord to release his parachute. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/06/4-3-s-q--q5a-medium-aqa-a-level-physics.png' alt='Graph showing vertical speed vs time. A to B: Speed increases from 0 to 45 metres per second between 0 and 7 seconds. B to C: Speed increases at a slower rate until the graph plateaus at 50 metres per second. C to D: Speed decreases to 0 m/s  between 12 and 16 seconds. After 16 seconds, the graph plateaus at around 6 metres per second.' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>The parachute opens after 12 s.</p><p>With reference to the forces acting on the parachutist, explain the shape of: </p><p>(i) Region <strong>A</strong></p><p style='text-align: right;'>[3]</p><p>(ii) Region <strong>B</strong></p><p style='text-align: right;'>[3]</p><p>(iii) Region <strong>C</strong></p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (9 marks):</div>
+                    <p>Explain why the graph has the shape in Fig 1.1:</p><p>i) Explain the shape of region <strong>A</strong>: </p><ul><li><p>The <u>only</u> force acting on parachutist is weight <strong>OR </strong>forces <u>other than weight</u> are very <u>small;</u> <em>[1 mark]</em></p></li><li><p>Acceleration is <u>uniform</u>; <em>[1 mark]</em></p></li><li><p>(Therefore) the gradient is (roughly) constant; <em>[1 mark]</em></p></li></ul><p>ii) Explain the shape of region <strong>B</strong>:</p><ul><li><p>Air resistance increases as speed increases <strong>OR</strong> drag is proportional to speed; <em>[1 mark]</em></p></li><li><p>Resultant force / acceleration is decreasing; <em>[1 mark]</em></p></li><li><p>(Therefore) gradient is decreasing; <em>[1 mark]</em></p></li></ul><p>iii) Explain the shape of region <strong>C</strong>:</p><ul><li><p>The parachutist reaches constant speed / terminal velocity; <em>[1 mark]</em></p></li><li><p>Because <u>resultant force</u> on parachutist is zero <strong>OR</strong> drag forces are <u>equal</u> to the parachutist&#x27;s weight; <em>[1 mark]</em></p></li><li><p>The gradient decreases <u>to zero</u> / becomes <u>flat</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 9 marks]</strong></em><em> </em></p><p><em>Remember to state the </em><em><strong>obvious </strong></em><em>in your answers as well: when asked &quot;why is the graph curving?&quot;, make sure you actually say &quot;because the gradient is decreasing&quot;.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the acceleration of free fall on this planet. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>To find the acceleration of free fall on this planet:</p><p>Determine acceleration from the graph:</p><ul><li><p>In the first second, vertical speed increases to 12.5 m s<sup>−1</sup></p></li><li><p>Acceleration of freefall is 12.5 m s<sup>−2</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>To answer this question, you must use the section of the graph where drag is negligible: region </em><em><strong>A</strong></em><em>. Then it&#x27;s a simple case of finding the gradient of the graph here. </em></p><p><em>This section has a practically straight line, so gradient is simply calculated as a change in y over as change in x.</em></p><p><em>Answers in the range of 12 to 13 m s</em><em><sup>−2</sup></em><em> will gain the mark.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On Fig 1.1, draw graph lines for the following scenarios:</p><p>(i) Scenario 1: air resistance is zero.</p><p style='text-align: right;'>[2]</p><p>(ii) Scenario 2: the parachute deployed is half the size of the original scenario. You may assume that air resistance is directly proportional to the surface area of the parachute.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Draw a graph line for zero air resistance:</p><p>A graph scoring two marks looks like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/3mcma1.png' alt='Tangent drawn from the origin. Spans speed 0 to 50 metres per second and time 0 to 4 seconds.' /></div><ul><li><p>Straight line through the origin; <em>[1 mark]</em></p></li><li><p>Gradient = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>50</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 12.5 m s<sup>−2</sup>  <em>[1 mark]</em></p></li></ul><p>(ii) Draw a graph for a parachute half the size:</p><p>A graph scoring two marks looks like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2025/11/10826-3-2-q3a-medium-cie-a-level-ma.png' alt='Curve drawn with similar shape but shallower gradient and plateaus at around 10 metres per second.' /></div><ul><li><p>Gradient of region <strong>D</strong> is less steep; <em>[1 mark]</em></p></li><li><p>Terminal velocity (flat region on the right) is at a greater velocity; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>In part (ii), there are a few steps to understand why the graph takes this new shape. If the new parachute has a smaller area, the resistive force is weaker. This means there is a smaller deceleration on the parachutist. Additionally, the smaller surface area means that the parachutist must reach a greater speed before drag is equal to weight.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A light breeze exerts a constant horizontal force on the parachutist. He eventually reaches a constant horizontal speed.</p><p>Explain why this horizontal terminal speed he reaches is much lower than the vertical terminal speed, before the parachute is opened. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Explain why the horizontal terminal velocity is lower:</p><p>Compare the forces in each direction:</p><ul><li><p>The parachutist&#x27;s weight is (much) <u>larger than</u> the force from the breeze; <em>[1 mark]</em></p></li></ul><p>Compare the difference in drag forces:</p><ul><li><p>A smaller drag force is needed to equal / match the breeze&#x27;s force (than the weight force); <em>[1 mark]</em></p></li></ul><p>Explain the difference in speeds:</p><ul><li><p>Drag is proportional to speed; <em>[1 mark]</em></p></li><li><p>(Therefore) the required horizontal drag is reached at a <u>lower speed</u> (than the required vertical drag); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>This is a comparison question in disguise. This means you have to say which force you are referring to at all times, and include comparative words and phrases, such as &#x27;this is larger than that&#x27; or &#x27;this is small, whereas this is large&#x27;.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Strongman competitions involve competitors performing various challenges where they have to produce very high forces.</p><p>In one particular event, a competitor must drag a cement block across a rough floor, using a rope.</p><p>When an object is moving, the frictional force is proportional to the normal reaction force of the object.</p><p>In the first round of the competition, the competitor must drag a 200 kg block across the rough surface. In the second round, they must drag a new 280 kg block across the same surface. The force exerted by the competitor in round 2 is 1650 N.</p><p>Calculate the difference in the frictional forces between the first and second rounds, when the blocks are in motion. </p><p>You may assume the block moves with constant speed and air resistance can be ignored.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>To calculate the percentage increase of force between rounds:</p><p>List the known quantities:</p><ul><li><p>Mass of block in round 1, <em>m</em><sub><em>1</em></sub>  = 200 kg</p></li><li><p>Mass of block in round 2, <em>m</em><sub><em>2</em></sub>  = 280 kg</p></li><li><p>Frictional force in round 2, <em>F</em><sub><em>2</em></sub>  = 1650 N</p></li><li><p>Frictional force ∝ normal reaction force</p></li><li><p>Acceleration of free fall, <em>g</em>  = 9.81 m s<sup>−2</sup> (from data page)</p></li></ul><p>Calculate the normal reaction force, <em>R</em><sub><em>1</em></sub> , <em>R</em><sub><em>2</em></sub> , of each block:</p><ul><li><p>The block is not accelerating vertically, so vertical forces are balanced</p><ul><li><p><em>R  = W = mg</em></p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>W</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mn>1</mn></msub><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>200</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1962</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p><strong>AND</strong></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>W</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>280</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>9</mn><mo>.</mo><mn>81</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2747</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Compare the frictional forces, <em>F</em> , of blocks 1 and 2:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>F</mi><mn>2</mn></msub><msub><mi>F</mi><mn>1</mn></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>R</mi><mn>2</mn></msub><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>2747</mn><mn>1962</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>40</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine frictional force from round 1:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>F</mi><mn>2</mn></msub><msub><mi>F</mi><mn>1</mn></msub></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>40</mn><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><msub><mi>F</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>F</mi><mn>2</mn></msub><mrow><mn>1</mn><mo>.</mo><mn>40</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1650</mn><mrow><mn>1</mn><mo>.</mo><mn>40</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1179</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the difference:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>F</mi><mn>1</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1650</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>1179</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>470</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>At A level, the concept of proportionality comes up frequently.</em></p><p><em>You may quickly realise that the mass being 1.4× larger means that weight, reaction force and therefore friction is also 1.4× greater. But you must make this thought process known to your examiner, so write it all down. You may also have reached a similar answer by finding a constant of proportionality i.e. </em><em><em>F = kR  </em></em><em>where </em><em><em>k</em></em><em>  is the constant of proportionality and using this to calculate the difference.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Justify the decision to ignore air resistance in part (a).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To justify why air resistance is ignored here:</p><ul><li><p>The block is moving slowly (because of its large weight); <em>[1 mark]</em></p></li><li><p>Air resistance is <u>small</u> at low speeds; <em>[1 mark]</em></p></li><li><p><u>Compared</u> to the (large) frictional force; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Always state the obvious. You may well have said that air resistance is a small force at low speeds, but this has to be related to the situation. The block is indeed moving slowly, because it&#x27;s really heavy and it&#x27;s only one person pulling it!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Recall from part (a) that the competitor exerts a horizontal force of 1650 N on the 280 kg block.</p><p>They pull the rope, however, at a 15° angle to the horizontal plane, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/02/3-2-h-q1c-sq-cie-ial-physics.png' alt='3-2-h-q1c-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the vertical force the competitor exerts on the block.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Horizontal force, <em>F</em><sub><em>H</em></sub>  = 1650 N</p></li><li><p>Angle to the horizon, <em>θ  = </em>15°</p></li></ul><p>Determine the magnitude of force applied by the competitor, <em>F</em> :</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>H</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>cos</mi><mi>&#952;</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>F</mi><mi>H</mi></msub><mrow><mi>cos</mi><mi>&#952;</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1650</mn><mrow><mi>cos</mi><mfenced><mn>15</mn></mfenced></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1708</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Determine the vertical component of the force, <em>F</em><sub><em>V</em></sub> :</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>V</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>F</mi><mi>sin</mi><mi>&#952;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>V</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1708</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>sin</mi><mfenced><mn>15</mn></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>440</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Air resistance can be modelled using the following equation:</p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>v</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>k</mi><mi>A</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><p>where <em>F</em><sub><em>v</em></sub>  is the force due to air resistance at a given velocity <em>v </em>, <em>A</em> is the surface area of the object experiencing the air resistance and <em>k</em> is a constant.</p><p>Two balls are released from a high bridge. Ball A has a volume 27 times larger than ball B. </p><p>Compare the forces of air resistance on each ball when they reach a speed of 20 m s<sup>−1</sup>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To compare the forces of air resistance:</p><p>Compare the radii, <em>r</em> , of the balls:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>A</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>27</mn><mo>&#160;</mo><msub><mi>V</mi><mi>B</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Volume <em>V</em>  is proportional to radius cubed for a sphere</p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><msub><mi>r</mi><mi>A</mi></msub><mn>3</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>27</mn><msup><msub><mi>r</mi><mi>B</mi></msub><mn>3</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Cube-root both sides to show <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>A</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><msub><mi>r</mi><mi>B</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Compare surface areas:</p><ul><li><p>Area <em>A </em> is proportional to radius squared for a sphere</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><msub><mi>r</mi><mi>A</mi></msub><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>9</mn><msup><msub><mi>r</mi><mi>B</mi></msub><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>A</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>9</mn><msub><mi>A</mi><mi>B</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Compare forces:</p><ul><li><p>The balls are being compared at the same velocity</p></li><li><p>The difference in force is entirely dependent on area</p></li><li><p>The force of air resistance on ball A is 9 times stronger than the force on ball B; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The value of velocity here is unimportant. What matters is that we are comparing the force of air resistance on each ball at the same speed. Intuition tells us that the ball with a larger area will experience a greater resistance - use this to fact-check your answer.</em></p><p><em>As always, you must show each step of working that got you to that factor of 9, you will not gain all the marks just for that last sentence.</em></p><p><em>But, of course, you are writing out your answers to these questions to maximise exam-specificity, not just answering them in your head and moving on...</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The experiment is repeated, but this time with two balls of identical size. One, however, has a greater mass.</p><p>A passer-by claims that the mass difference will not affect the balls landing at the same time.</p><p>(i) Using Newton&#x27;s second law and the equation from part (a), explain the relationship between acceleration and mass when air resistance is not ignored.</p><p style='text-align: right;'>[3]</p><p>(ii) Explain why the passer-by is wrong.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) To explain why time of falling is not independent of mass when air resistance is included:</p><p>Determine the resultant force for the falling ball:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>F</mi><mi>v</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><ul><li><p><em>m</em> is the ball&#x27;s mass</p></li><li><p><em>g</em> is acceleration of free fall</p></li><li><p><em>a</em> is the acceleration of the ball</p></li></ul></li></ul><p>Write an expression for acceleration at a speed <em>v</em> :</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>m</mi><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><msub><mi>F</mi><mi>v</mi></msub></mrow><mi>m</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfrac><msub><mi>F</mi><mi>v</mi></msub><mi>m</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>As mass increases, acceleration (at a given speed) increases; <em>[1 mark]</em></p><p><em>  </em></p></li></ul><p>(ii) To explain why the passer-by is wrong:</p><ul><li><p>(Therefore) the heavier ball will land <u>before</u> / <u>sooner than</u> the lighter ball; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the units of the constant <em>k</em> , in terms of SI units.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To find the units of <em>k </em>:</p><p>Write the units of each term of the equation from part (a):</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>k</mi><mi>A</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">N</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced open="[" close="]"><mi>k</mi></mfenced><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Rearrange this to make the units of <em>k</em>  the subject:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>k</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi mathvariant="normal">N</mi><mrow><msup><mi mathvariant="normal">m</mi><mn>4</mn></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">N</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Write the newton in terms of SI units:</p><ul><li><p>Use Newton&#x27;s second law</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">N</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Write the units of <em>k</em> in SI units:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced open="[" close="]"><mi>k</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mi>kg</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>If you need to break down one unit into other units, try using a familiar equation, such as Newton&#x27;s second law.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Write an expression for terminal velocity, in terms of area <em>A</em> , mass <em>m</em> , acceleration of free fall <em>g</em> and the constant <em>k</em>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To write an expression for terminal velocity:</p><p>List the known quantities:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>g</mi><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mfrac><msub><mi>F</mi><mi>v</mi></msub><mi>m</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (from part (b))</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>v</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>k</mi><mi>A</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (from part (a))</p></li></ul><p>Recall the condition for terminal velocity:</p><ul><li><p>At terminal velocity, acceleration is zero</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>F</mi><mi>v</mi></msub><mi>m</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>OR</strong> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>v</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Substitute the equation for <em>F</em><sub><em>v</em></sub><em> </em> to find an expression for terminal velocity, <em>v</em><sub><em>t</em></sub> :</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mi>A</mi><msup><msub><mi>v</mi><mi>t</mi></msub><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>t</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mfrac><mrow><mi>m</mi><mi>g</mi></mrow><mrow><mi>k</mi><mi>A</mi></mrow></mfrac></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Using part (c), you can verify your answer by ensuring it is dimensionally homogenous (i.e. the units on the left match the units on the right).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

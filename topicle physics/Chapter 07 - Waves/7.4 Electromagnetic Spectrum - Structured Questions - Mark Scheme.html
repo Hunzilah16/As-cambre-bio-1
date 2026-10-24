@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7.4 Electromagnetic Spectrum - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">7.4 Electromagnetic Spectrum</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 7. Waves</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 7 Questions (63 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>EM waves consist of oscillations in two perpendicular fields. </p><p>State the names of the fields.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The perpendicular fields in which EM waves oscillate are:</p><ul><li><p>Electric; <em>[1 mark]</em></p></li><li><p>Magnetic; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Table 1.1 lists the names of the waves in the EM spectrum in order of increasing frequency.</p><p style='text-align: center;'><strong>Table 1.1</strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong>EM wave</strong></p></td></tr><tr><td><p style='text-align: center;'>Radio</p></td></tr><tr><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>Infrared</p></td></tr><tr><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>Ultraviolet</p></td></tr><tr><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'>Gamma</p></td></tr></table><p>Complete Table 1.1 by adding in the missing information.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A table scoring 3 marks:</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>EM wave</strong></p></td></tr><tr><td><p style='text-align: center;'>Radio</p></td></tr><tr><td><p style='text-align: center;'><em><strong>Microwave</strong></em><em>; </em><em>[1 mark]</em></p></td></tr><tr><td><p style='text-align: center;'>Infrared</p></td></tr><tr><td><p style='text-align: center;'><em><strong>Visible light</strong></em><em>; </em><em>[1 mark]</em></p></td></tr><tr><td><p style='text-align: center;'>Ultraviolet</p></td></tr><tr><td><p style='text-align: center;'><em><strong>X-rays</strong></em><em>; </em><em>[1 mark]</em></p></td></tr><tr><td><p style='text-align: center;'>Gamma</p></td></tr></table><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State two uses for infrared radiation.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Uses of infrared radiation:</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>Remote controls; <em>[1 mark]</em></p></li><li><p>Fibre optics; <em>[1 mark]</em></p></li><li><p>Wired and wireless communications; <em>[1 mark]</em></p></li><li><p>Thermal imaging; <em>[1 mark]</em></p></li><li><p>Night vision; <em>[1 mark]</em></p></li><li><p>Heating; <em>[1 mark]</em></p></li><li><p>Cooking; <em>[1 mark]</em></p></li><li><p>Motion sensors; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>You should know this already from IGCSE, but make sure you can name a couple of uses for each EM wave.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Give a value for the speed of gamma radiation travelling through a vacuum.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The speed of gamma radiation travelling through a vacuum is:</p><ul><li><p>3.00×10<sup>8</sup> m s<sup>−1</sup> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>This question can be asked in many ways, but it will always have the same answer! </em><em><strong>All</strong></em><em> EM waves travel at the speed of light!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Give the name of electromagnetic wave with the</p><p>(i) Lowest energy.</p><p style='text-align: right;'>[1]</p><p>(ii) Shortest wavelength.</p><p style='text-align: right;'>[1]</p><p>(iii) Lowest frequency.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) The EM wave with the lowest energy is...</p><ul><li><p>Radio; <em>[1 mark]</em></p></li></ul><p>(ii) The EM wave with the shortest wavelength is...</p><ul><li><p>Gamma; <em>[1 mark]</em></p></li></ul><p>(iii) The EM wave with the lowest frequency is...</p><ul><li><p>Radio; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The shorter the wavelength, the higher the frequency. The higher the frequency, the higher the energy. You need to be super confident in these relationships. Questions may be asked in terms of increasing or decreasing wavelength and frequency. Make sure you are never caught out by this. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the range of wavelengths for infrared radiation.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>EM radiation falls between...</p><ul><li><p>1×10<sup>−3 </sup>m <em>[1 mark]</em></p></li><li><p>7×10<sup>−7 </sup>m <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>You do need to know the range of wavelengths for the different EM waves.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the range of frequencies for infrared radiation. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>To determine the range of frequencies for infrared radiation:</p><p>List the known quantities:</p><ul><li><p>Longest wavelength = 1×10<sup>−3</sup> m (from part (b))</p></li><li><p>Shortest wavelength = 7×10<sup>−7</sup> m (from part (b))</p></li><li><p>Speed of light in free space, c = 3.00×10<sup>8</sup> m s<sup>−1</sup> (from the data page)</p></li></ul><p>To determine the highest frequency:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>v</mi><mi>&#955;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>H</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>7</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>H</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>14</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p>To determine the lowest frequency:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>L</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>L</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>11</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Remember that to calculate the highest frequency you need to use the shortest wavelength and vice versa.</em></p><p><em>The expected final answers here are expressed to 1 significant figure, consistent with the data given. Marks are awarded for correct working and a correct final answer — you will not be penalised for expressing a correct answer to more significant figures</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The visible region of the electromagnetic spectrum has frequencies ranging from 4.3×10<sup>14</sup> Hz to 7.5×10<sup>14</sup> Hz.</p><p>Show that the wavelength of visible light is 400 nm to 700 nm.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To show that the wavelength of visible light is 400 nm to 700 nm:</p><p>List the known quantities:</p><ul><li><p>Lowest frequency = 4.3×10<sup>14</sup> Hz</p></li><li><p>Highest frequency = 7.5×10<sup>14</sup> Hz</p></li><li><p>Speed of light in free space, c = 3.00×10<sup>8</sup> m s<sup>−1</sup> (from the data page)</p></li></ul><p>To determine the longest wavelength:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mo>=</mo><mi>f</mi><mi>&#x3BB;</mi><mo>&#x2192;</mo><mi>&#x3BB;</mi><mo>=</mo><mfrac><mi>v</mi><mi>f</mi></mfrac></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mi>L</mi></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>4</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>14</mn></msup></mrow></mfrac><mo>=</mo><mn>7</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>=</mo><mn>700</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>=</mo><mn>700</mn><mo>&#160;</mo><mi>nm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p>To determine the shortest wavelength:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mi>S</mi></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>7</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mn>14</mn></msup></mrow></mfrac><mo>=</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>=</mo><mn>400</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>=</mo><mn>400</mn><mo>&#160;</mo><mi>nm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em>[Total: 3 marks]</em></p><p><em>Remember that to calculate the longest wavelength you need to use the lowest frequency and vice versa.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[4 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>List the electromagnetic waves in order of increasing wavelength.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The electromagnetic waves in order of increasing wavelength are:</p><ul><li><p>Gamma</p></li><li><p>X-rays</p></li><li><p>Ultraviolet</p></li><li><p>Visible light</p></li><li><p>Infrared</p></li><li><p>Microwaves</p></li><li><p>Radio waves</p></li></ul><p><em><em>All correct for 1 mark</em></em></p><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the two types of electromagnetic radiation that can knock electrons out of orbit.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Two types of EM radiation that can cause ionisation are:</p><p><em>Any</em><em><strong> two</strong></em><em> from:</em></p><ul><li><p>Gamma; <em>[1 mark]</em></p></li><li><p>X-rays; <em>[1 mark]</em></p></li><li><p>Ultraviolet;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete the following sentence about electromagnetic radiation by choosing the correct word.</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>wavelength</strong></p></td><td><p style='text-align: center;'><strong>frequency</strong></p></td><td><p style='text-align: center;'><strong>amplitude</strong><sup><strong>2</strong></sup></p></td></tr></table><p>The energy of an electromagnetic wave is directly proportional to ..............................</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The energy of an electromagnetic wave is directly proportional to....</p><ul><li><p>Frequency; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>Energy is </em><em><strong>inversely</strong></em><em> </em><em><strong>proportional</strong></em><em> to wavelength (the shorter wavelengths have the highest energy), and </em><em><strong>intensity</strong></em><em> is </em><em><strong>proportional</strong></em><em> to amplitude squared. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete the table by stating the correct electromagnetic wave for each range of wavelengths.</p><table class='data-table'><tr><td><p style='text-align: center;'>EM wave</p></td><td><p style='text-align: center;'>Range of wavelengths / m</p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>10<sup>−1</sup> - 10<sup>6</sup></p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>4×10<sup>−7</sup> - 7×10<sup>−7</sup></p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>10<sup>−16</sup> -  10<sup>−10</sup></p></td></tr></table>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A table scoring three marks:</p><table class='data-table'><tr><td><p style='text-align: center;'>EM wave</p></td><td><p style='text-align: center;'>Range of wavelengths / m</p></td></tr><tr><td><p style='text-align: center;'><em><strong>Radio waves</strong></em><em>; [1 mark]</em></p></td><td><p style='text-align: center;'>10<sup>−1</sup> - 10<sup>6</sup></p></td></tr><tr><td><p style='text-align: center;'><em><strong>Visible light</strong></em><em>; [1 mark]</em></p></td><td><p style='text-align: center;'>4×10<sup>−7</sup> - 7×10<sup>−7</sup></p></td></tr><tr><td><p style='text-align: center;'><em><strong>Gamma</strong></em><em>; </em><em>[1 mark]</em></p></td><td><p style='text-align: center;'>10<sup>−16</sup> -  10<sup>−10</sup></p></td></tr></table><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine the range of frequencies for the three waves given in part (a).</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>To determine the range of frequencies for the three waves given in part (a):</p><p>Radio waves:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>R</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mn>6</mn></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>R</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Speed of light in free space, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><ul><li><p>Using the wave speed equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>c</mi><mi>&#955;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>R</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mn>6</mn></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>300</mn><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>R</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>9</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li></ul><p>Visible light:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>V</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>V</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><ul><li><p>Using the wave speed equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>V</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>7</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>14</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>V</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mn>14</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li></ul><p>Gamma radiation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>G</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>10</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>G</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>16</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><ul><li><p>Using the wave speed equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>G</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>10</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>18</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>G</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>16</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>24</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p><p><em>Remember that to find the </em><em><strong>minimum</strong></em><em> frequency of a range you need to use the </em><em><strong>maximum</strong></em><em> wavelength and vice versa.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Suggest a reasonable estimate for the wavelength of green light. Explain your answer. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A reasonable estimate for the wavelength of green light is...</p><ul><li><p>550 nm <strong>OR</strong> 5.5 × 10<sup>−7</sup> m <em>[1 mark]</em></p></li></ul><p>Explanation:</p><ul><li><p>There are seven colours in the visible spectrum and green is exactly in the middle; <em>[1 mark]</em></p><ul><li><p>Red, orange, yellow, green, blue, indigo, violet</p></li></ul></li><li><p>The range of visible light is 400 nm - 700 nm, so green light is exactly in the middle of this range; <em>[1 mark]</em></p><ul><li><p>Range = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>700</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>400</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>300</mn><mo>&#160;</mo><mi>nm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Half of range = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>300</mn><mn>2</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>150</mn><mo>&#160;</mo><mi>nm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Min wavelength + half of range  = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>400</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>150</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>550</mn><mo>&#160;</mo><mi>nm</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the three types of EM radiation that are used for communications. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The three types of EM radiation that are used for communications are...</p><ul><li><p>Radio waves</p></li><li><p>Microwaves</p></li><li><p>Infrared</p></li></ul><p><em><em>All correct for 1 mark</em></em></p><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the properties common to all electromagnetic radiation.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>The properties common to all types of EM radiation are:</p><ul><li><p>Travel at the speed of light (3.00×10<sup>8</sup> m s<sup>−1</sup>) in free space; <em>[1 mark]</em></p></li><li><p>Transverse <strong>OR</strong> oscillations are perpendicular to the direction of energy transfer; <em>[1 mark]</em></p></li><li><p>Progressive waves <strong>OR</strong> carry energy; <em>[1 mark]</em></p></li><li><p>Can be polarised / diffracted / refracted / reflected / undergo interference; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Dogs can see wavelengths in the range of 430 - 475 nm which they perceive as blue, and 500 - 620 nm which they perceive as yellow. </p><p>Determine the range of frequencies which dog&#x27;s eyes can detect.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>To determine the range of frequencies which dog&#x27;s eyes can detect:</p><p>List the known quantities:</p><p>Blue:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>B</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>475</mn><mo>&#160;</mo><mi>nm</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>475</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>B</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>430</mn><mo>&#160;</mo><mi>nm</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>430</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Yellow:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>Y</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>620</mn><mo>&#160;</mo><mi>nm</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>620</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#955;</mi><mrow><mi>Y</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>500</mn><mo>&#160;</mo><mi>nm</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>500</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>From the data page:</p><ul><li><p>Speed of light in free space, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>To determine the range for (perceived) blue light:</p><ul><li><p>Using the wave speed equation, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>c</mi><mi>&#955;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>B</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>430</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>7</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mn>14</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>B</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>475</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>.</mo><mn>32</mn><mo>&#215;</mo><msup><mn>10</mn><mn>14</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul></li></ul><p>To determine the range for (perceived) yellow light:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>Y</mi><mo>&#160;</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>500</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mn>14</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>Y</mi><mo>&#160;</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>620</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mn>15</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Remember that when calculating ranges, to find the maximum frequency you need to use the minimum wavelength and vice versa.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[7 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Justify the approximation of the speed of light in air as 3.00×10<sup>8</sup> m s<sup>−1</sup>.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Justify the approximation of the speed of light in air as 3.00×10<sup>8</sup> m s<sup>−1</sup>:</p><ul><li><p>3.00×10<sup>8</sup> m s<sup>−1 </sup>is the speed of light in free space / a vacuum;<em> [1 mark]</em></p></li><li><p>The reduction in speed as light travels through air is negligible (therefore 3.00×10<sup>8</sup> m s<sup>−1</sup> is a reasonable approximation); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>The CIE IAL Physics specification defines </em><em><strong>justify</strong></em><em> as &#x27;support a case with evidence / argument&#x27;.</em></p><p><em>Therefore, you must provide evidence (speed of light in free space) and then present your argument or reason as to why this is a reasonable approximation of the speed of light in air (that the decrease in speed is negligible).</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Frequency and wavelength are fundamental properties of all waves. The relationship between them depends on the context of interaction and on the type of wave in question. </p><p>Sketch a graph showing the relationship between the frequency and wavelength of an electromagnetic wave.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The relationship between the frequency and wavelength of an electromagnetic wave:</p><ul><li><p>A sketch graph that would score 2 marks:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q4a-answer-hard-aqa-a-level-physics.png' alt='3-1-s-q--q4a-answer-hard-aqa-a-level-physics' /></div><ul><li><p>Inverse proportion curve;<em> [1 mark]</em></p></li><li><p>Axes labelled frequency / <em>f </em><strong>AND</strong> wavelength / <em>λ</em>;<em> [1 mark] </em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em><em> </em></p><p><em>The axes could be labelled either way around because the relationship is still inversely proportional.</em></p><p><em>This question assesses your understanding of the fact that the speed of electromagnetic waves is constant. We know the equation for wave speed is given by: </em></p><p style='text-align: center;'><em><em>v = fλ </em></em></p><p><em>Therefore, if the speed </em><em><em>v</em></em><em> is constant, then it is true that </em><em><em>f</em></em><em> is inversely proportional to </em><em><em>λ</em></em><em>. Examiners sometimes like to test your recognition of inverse-proportionality graphs – not to be confused with inverse-square relationships (which look steeper). This distinction is sketched below:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q4a-answer-image1-hard-aqa-a-level-physics.png' alt='3-1-s-q--q4a-answer-image1-hard-aqa-a-level-physics' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Electromagnetic waves carry energy through the vacuum of space as progressive transverse waves. </p><p>Describe the motion of an electromagnetic wave with reference to the appropriate fields.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Describe the motion of the fields which comprise an electromagnetic wave:</p><ul><li><p>Electromagnetic waves are made of electric and magnetic fields; <em>[1 mark]</em></p></li><li><p>These fields oscillate at 90 degrees / perpendicular to each other; <em>[1 mark] </em></p></li></ul><p>Describe the direction of energy transfer:</p><ul><li><p>(Because electromagnetic waves are transverse,) energy transfer is 90 degrees / perpendicular to the direction of (field) oscillations; <em>[1 mark]</em></p></li></ul><p> <em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Microwaves can be used in communications between satellites.</p><p>Calculate the frequency range for microwaves.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To determine the range of frequencies for microwave radiation:</p><p>List the known quantities:</p><ul><li><p>Speed of light in free space, <em>c</em> = 3.00×10<sup>8</sup> m s<sup>−1</sup> (from the data page)</p></li><li><p>Range of wavelengths for microwave radiation = 0.1 m - 1×10<sup>−3</sup> m <em>[1 mark]</em></p></li></ul><p>Determine the highest and lowest frequency:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>f</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>v</mi><mi>&#955;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>H</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>11</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> </p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>L</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>0</mn><mo>.</mo><mn>1</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>9</mn></msup><mo>&#160;</mo><mi>Hz</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em></p></li><li><p>Range of frequencies of microwave radiation = 3×10<sup>11</sup> Hz - 3×10<sup>9</sup> Hz <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>You are expected to be able to recall the ranges of wavelengths for the different waves in the EM spectrum.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A satellite passing Neptune communicates with Earth using a microwave transmitter with an output power of 24.0 W and wavelength 78 900 µm. </p><p>The satellite&#x27;s controller is located on Earth, at a distance of 4.40 × 10<sup>12 </sup>m when the signal is transmitted.</p><p>For this communication</p><p>(i) Calculate the time taken for the signal to be detected by the controller. </p><p style='text-align: right;'>[1]</p><p>(ii) Calculate the energy of a microwave photon. </p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) Calculate the time taken for the signal to be detected by the controller:</p><p>List the known quantities:</p><ul><li><p>Distance from satellite to controller, <em>s</em> = 4.40 × 10<sup>12 </sup>m</p></li><li><p>Speed of light in free space, <em>c</em> = 3.00 × 10<sup>8 </sup>m s<sup>−1</sup> (from the data page)</p></li></ul><p>Using the speed equation, calculate time taken:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>d</mi><mi>t</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>t</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>d</mi><mi>v</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>4</mn><mo>.</mo><mn>40</mn><mo>&#215;</mo><msup><mn>10</mn><mn>12</mn></msup></mrow><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 1.47 × 10<sup>4</sup> s<em> [1 mark]  </em></p></li></ul><p>(ii) Calculate the energy of a microwave photon:</p><p>List the known quantities:</p><ul><li><p>Wavelength of microwave, <em>λ</em> = 78 900 µm</p></li><li><p>Planck constant, <em>h</em> = 6.63 × 10<sup>−34</sup> J s (from the data page)</p></li></ul><p>Combine the photon energy and wave speed equations to give a formula for energy using wavelength:</p><ul><li><p>Wave speed, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>f</mi><mi>&#955;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and photon energy, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>h</mi><mi>f</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>h</mi><mi>c</mi></mrow><mi>&#955;</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Substitute the known values to calculate the energy of a microwave photon:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mfenced><mrow><mn>6</mn><mo>.</mo><mn>63</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>34</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mfenced><mrow><mn>3</mn><mo>.</mo><mn>00</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow></mfenced></mrow><mrow><mn>78900</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 2.52 × 10<sup>−24</sup> J (3 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The controller dish aerial has an effective area of 258 m<sup>2</sup>.</p><p>For the communication from part (b)</p><p>(i) Determine the power received by the controller dish aerial. You may assume that the power transmitted by the satellite radiates uniformly in all directions.</p><p style='text-align: right;'>[2]</p><p>(ii) The actual power received by the controller dish aerial is 1.4 × 10<sup>−15</sup> W. Suggest why this is different to the calculated power received.</p><p style='text-align: right;'>[2]</p><p>(iii) Calculate the rate at which microwave photons arrive at the controller dish aerial.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) Determine the power received by the controller dish aerial:</p><p>List the known quantities:</p><ul><li><p>Output power of satellite = 24.0 W (from part (b))</p></li><li><p>Distance from satellite to controller = 4.40 × 10<sup>12</sup> m</p></li><li><p>Area of controller dish aerial = 258 m<sup>2</sup></p></li></ul><p>Devise a formula for the amount of power reaching the controller dish:</p><ul><li><p>Surface area of a sphere, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Since the power transmitted by the satellite is assumed to radiate uniformly in all directions</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>Output</mi><mo>&#160;</mo><mi>power</mi></mrow><mrow><mn>4</mn><mi mathvariant="normal">&#960;</mi><msup><mi>r</mi><mn mathvariant="italic">2</mn></msup></mrow></mfrac><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>area</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi>controller</mi><mo>&#160;</mo><mi>dish</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p>Substitute the known values to calculate the power reaching the controller dish:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>24</mn><mo>.</mo><mn>0</mn></mrow><mrow><mn>4</mn><mi mathvariant="normal">&#960;</mi><mo>&#160;</mo><mo>&#215;</mo><msup><mfenced><mrow><mn>4</mn><mo>.</mo><mn>40</mn><mo>&#215;</mo><msup><mn>10</mn><mn>12</mn></msup></mrow></mfenced><mn>2</mn></msup></mrow></mfrac><mo>&#160;</mo><mo>&#215;</mo><mn>258</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 2.55 × 10<sup>−23</sup> W (3 s.f.)<em> [1 mark]</em></p></li></ul><p>(ii) The actual power received by the controller dish aerial is 1.4 × 10<sup>−15</sup> W. Suggest why this is different to the calculated power received:</p><ul><li><p>The calculation <u>assumed that power is radiated uniformly in all directions</u>, but (in reality) the signal emitted by the satellite is directed to Earth (by a dish); <em>[1 mark]</em></p></li><li><p>Therefore, the calculated power received is less than the actual power received because <u>less power is lost</u> (radiating in different directions); <em>[1 mark]</em></p></li></ul><p>(iii) Calculate the rate at which the microwave photons actually arrive at the controller dish aerial:</p><p>List the known quantities:</p><ul><li><p>Energy of a microwave photon, <em>E</em> = 2.52 × 10<sup>−24 </sup>J (from part (b))</p></li></ul><p>Devise a formula for the rate of photon detection:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Rate</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi>photon</mi><mo>&#160;</mo><mi>detection</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mi>Power</mi><mo>&#160;</mo><mi>received</mi></mrow><mrow><mi>Energy</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mi>microwave</mi><mo>&#160;</mo><mi>photon</mi></mrow></mfrac><mo>&#160;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span><em>[1 mark]</em></p></li></ul><p>Substitute in the known values to calculate the rate of photon detection:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Rate</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi>photon</mi><mo>&#160;</mo><mi>detection</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>15</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>.</mo><mn>52</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>24</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = 5.6 × 10<sup>8 </sup>s<sup>-1</sup> (2 s.f.)<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p><p><em>This question is synoptic; it draws on content from multiple topics, as exam questions frequently do. If you need some help with the maths, it is covered in more detail in the </em><em>Luminosity &amp; Radiant Flux</em><em> Revision Note.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

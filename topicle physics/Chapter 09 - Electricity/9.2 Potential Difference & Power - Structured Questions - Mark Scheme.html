@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>9.2 Potential Difference & Power - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">9.2 Potential Difference & Power</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 9. Electricity</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 6 Questions (68 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the <strong>symbol</strong> and the <strong>SI unit </strong>for potential difference. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The symbol for potential difference is:</p><ul><li><p><em>V</em>; <em>[1 mark] </em></p></li></ul><p>The SI unit for potential difference is:</p><ul><li><p>Volt <strong>OR</strong> V; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 2 marks] </strong></em></p><p><em>Confusingly, the letter used for the symbol of potential difference </em><em><em>V</em></em><em> is the same as its SI unit, V. You can tell the difference because symbols are always italicised and units never are.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Electric charge and potential difference are related. </p><p>(i) State an equation that relates electric charge and potential difference </p><p style='text-align: right;'>[1]</p><p>(ii) Write one <strong>joule</strong> in terms of units of <strong>potential difference</strong> and <strong>electric charge</strong></p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>(i) The equation which relates electric charge and potential difference is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>potential</mi><mo>&#160;</mo><mi>difference</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>work</mi><mo>&#160;</mo><mi>done</mi></mrow><mi>charge</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark] </em></p></li></ul><p>(ii) Write one joule in equivalent units:</p><ul><li><p><em>W</em> = <em>VQ, </em>where <em>W</em> is the energy transferred (or work done)</p></li><li><p>Therefore, [<em>W</em>] = [<em>V</em>][<em>Q</em>]<em> [1 mark]</em></p></li><li><p>So, one joule J = volt × coulomb <strong>OR</strong> V C <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The first mark can also be gained with a symbol equation, but each symbol must be correctly defined.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A lamp is powered by a 3.0 V cell.</p><p>Calculate the work done on the lamp by a single electron in this circuit.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To find work done by a single electron:</p><p>List the known quantities:</p><ul><li><p>Potential difference, <em>V</em>  = 3.0 V</p></li></ul><p>From the data page:</p><ul><li><p>Elementary charge, <em>e</em>  = 1.60 × 10<sup>−19</sup> C</p></li></ul><p>Recall the equation for potential difference:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>Q</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Rearrange for work done and substitute the known quantities:</p><ul><li><p>Here, <em>Q</em>  is the charge on an electron</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>Q</mi><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>.</mo><mn>60</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup></mrow></mfenced><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>3</mn><mo>.</mo><mn>0</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Three more identical 3.0 V cells are added in series to the circuit.</p><p>Calculate the new work done per electron.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>To find the new work done:</p><p>List the known quantities:</p><ul><li><p>Number of 3.0 V cell in total = 4</p></li><li><p>Work done by an electron with one cell, <em>W</em>  = 4.8 × 10<sup>−19</sup> J (from part (c))</p></li></ul><p>Find the factor by which potential difference has increased:</p><ul><li><p>Potential difference was 3.0 V</p></li><li><p>New potential difference is 3.0 × 4 = 12 V <em>[1 mark]</em></p></li><li><p>Potential difference has increased by a factor of 4 </p></li></ul><p>Find the new work done per electron:</p><ul><li><p>Potential difference is directly proportional to work</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>Q</mi><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>If p.d. has increased by a factor of 4, so has work done per electron</p></li><li><p>New work done = 4 × 4.8 × 10<sup>−19</sup> = 1.9 × 10<sup>−18</sup> J <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>This method uses proportionality, but you could have equally just found the new potential difference of 12 V and put it back into the potential difference equation. Notice how the answer is still given to two significant figures, as per the given quantities.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[8 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the correct arrangement for the equation linking power, current and resistance.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The correct arrangement for the equation linking power, current and resistance is:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A current of 3.6 A passes through a 20 Ω resistor.</p><p>Calculate the power transferred to the resistor. Give your answer to 2 significant figures.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the power transferred to the resistor:</p><p>List the known quantities:</p><ul><li><p>Current, <em>I</em>  = 3.6 A</p></li><li><p>Resistance, <em>R</em>  = 20 Ω</p></li></ul><p>Substitute the known quantities into the equation from part (a):</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mfenced><mrow><mn>3</mn><mo>.</mo><mn>6</mn></mrow></mfenced><mn>2</mn></msup><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>20</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>259</mn><mo>.</mo><mn>2</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>260</mn><mo>&#160;</mo><mi mathvariant="normal">W</mi><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete the sentences. </p><p>Choose answers from the box. </p><p>Each answer can be used once, more than once or not at all.</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>current</strong></p></td><td><p style='text-align: center;'><strong>kinetic</strong></p></td><td><p style='text-align: center;'><strong>potential difference</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>thermal</strong></p></td><td><p style='text-align: center;'><strong>gravitational</strong></p></td><td><p style='text-align: center;'><strong>resistance</strong></p></td></tr></table><p>When the .............................. is increased, more energy is transferred to each coulomb of charge passing through the cell.</p><p>For a given potential difference, if .............................. is increased, then the power transferred to a component is increased.</p><p>A high current means that more power is wasted to the .............................. store of the surroundings.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The correctly completed sentences are:</p><ul><li><p>When the <em><strong>potential difference</strong></em> is increased, more energy is transferred to each coulomb of charge passing through the cell; <em>[1 mark]</em></p></li><li><p>For a given potential difference, if <em><strong>current</strong></em><em> </em>is increased, then the power transferred to a component is increased; <em>[1 mark]</em></p></li><li><p>A high current means that more power is wasted to the <em><strong>thermal </strong></em>store of the surroundings; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>When current is high, there are more collisions between charge-carrying electrons and the metal ions in the wire. This causes the ions to vibrate and in turn transfer energy to the thermal store of surroundings. This is why it is better to send electrical power over long distances with high voltages instead of high currents.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Draw a voltmeter, connected correctly, to the circuit diagram in Fig 1.1 to measure the <strong>combined </strong>potential difference across the bulb and the variable resistor. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/2-2-e-3a-circuit-variable-resistor.png' alt='2-2-e-3a-circuit-variable-resistor' /></div><p style='text-align: center;'><strong>Fig 1.1</strong></p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>A correct voltmeter looks like:</p><p><em><strong>One </strong></em><em>mark for correct placement of a voltmeter</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/2de-soln.png' alt='2de-soln' /></div><p><strong>OR</strong></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/2de-soln-2.png' alt='2de-soln-2' /></div><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>Your wires do not have to be perpendicular, or even straight, to gain this mark. This is just done for neatness. Provided the lines connecting the voltmeter to the circuit to the left of the bulb and above the variable resistor, your diagram will be correct.</em></p><p><em>Just don&#x27;t leave any gaps, however small, otherwise your voltmeter will not be connected. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The table shows a range of household appliances, supplied with 230 V, and their power ratings.</p><table class='data-table'><tr><td><p>Appliance</p></td><td><p style='text-align: center;'>Power rating</p></td><td><p style='text-align: center;'>Current drawn</p></td></tr><tr><td><p>Desk lamp</p></td><td><p style='text-align: center;'>14 W</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>55 inch OLED TV</p></td><td><p style='text-align: center;'>125 W</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>Toaster </p></td><td><p style='text-align: center;'>480 W</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p>Microwave</p></td><td><p style='text-align: center;'>900 W</p></td><td><p style='text-align: center;'> </p></td></tr></table><p>Complete the table by adding the values for the current required for each appliance.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Complete the table by adding the values for the current drawn for each appliance:</p><p><em><strong>One</strong></em><em> mark for each correct answer:</em></p><table class='data-table'><tr><td><p>Appliance</p></td><td><p style='text-align: center;'>Power rating</p></td><td><p style='text-align: center;'>Current drawn</p></td></tr><tr><td><p>Desk lamp</p></td><td><p style='text-align: center;'>14 W</p></td><td><p style='text-align: center;'><em><strong>0.061 A</strong></em></p></td></tr><tr><td><p>55 inch OLED TV</p></td><td><p style='text-align: center;'>125 W</p></td><td><p style='text-align: center;'><em><strong>0.54 A</strong></em></p></td></tr><tr><td><p>Toaster </p></td><td><p style='text-align: center;'>480 W</p></td><td><p style='text-align: center;'><em><strong>2.1 A</strong></em></p></td></tr><tr><td><p>Microwave</p></td><td><p style='text-align: center;'>900 W</p></td><td><p style='text-align: center;'><em><strong>3.9 A</strong></em></p></td></tr></table><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>The equation used to calculate the answers is </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mi>V</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>I</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>P</mi></mrow><mi>V</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em></p><p><em>The voltage for all appliances is 230 V. By substituting the powers given in the table, their corresponding currents can be easily calculated.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the electrical work done by using the toaster on full power for 3 minutes.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the electrical work done by using the toaster on full power for 3 minutes:</p><p>List the known quantities:</p><ul><li><p>Toaster power, <em>P</em>  = 480 W</p></li><li><p>Time, <em>t  = </em>3 minutes = 180 s <em>[1 mark]</em></p></li></ul><p>Recall the power equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>W</mi></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Rearrange for work and substitute the known quantities:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>P</mi><mi>t</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> </em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>480</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>180</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>86</mn><mo>&#160;</mo><mn>400</mn><mo>&#160;</mo><mi mathvariant="normal">J</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the amount of charge that flowed through the toaster circuit during the 3 minutes of use. Give your answer to 2 significant figures.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the amount of charge that flowed through the toaster circuit during the 3 minutes of use:</p><p>List the known quantities:</p><ul><li><p>Work done, <em>W</em>  = 86 400 J (from part (b))</p></li><li><p>Potential difference across toaster, <em>V</em>  = 230 V (from part (a))</p></li></ul><p>Rearrange the equation for potential difference and charge:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>Q</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>&#160;</mo><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>W</mi></mrow><mi>V</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>86</mn><mo>&#160;</mo><mn>400</mn></mrow><mn>230</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>375</mn><mo>.</mo><mn>652</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>380</mn><mo>&#160;</mo><mi mathvariant="normal">C</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the resistance of the toaster.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Potential difference across the toaster, <em>V</em> = 230 V (from part (a))</p></li><li><p>Power transferred to the toaster, <em>P</em>  = 480 W from part (a))</p></li></ul><p>Recall the equation relating power, current and resistance:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><mi>V</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Calculate the resistance:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><mi>V</mi><mn>2</mn></msup><mi>P</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msup><mn>230</mn><mn>2</mn></msup><mn>480</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>110</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>This answer can also be found using </em><em><em>P = I</em></em><em><sup><em>2</em></sup></em><em><em>R , </em></em><em>with any differences being due to rounding. </em></p><p><em>Ohm&#x27;s law can also be used, but this is covered properly in the next topic.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[17 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The power <em>P</em> dissipated in a resistor of resistance <em>R</em> is measured for a range of values of the potential difference <em>V</em> across it.</p><p>The results are shown in the table in Fig. 1.1. </p><table class='data-table'><tr><td><p style='text-align: center;'><em><strong>V</strong></em><strong> / </strong></p></td><td><p style='text-align: center;'><em><strong>V </strong></em><sup><strong>2</strong></sup><strong> / </strong></p></td><td><p style='text-align: center;'><em><strong>P</strong></em><strong> / </strong></p></td></tr><tr><td><p style='text-align: center;'>1.00</p></td><td><p style='text-align: center;'>1.0</p></td><td><p style='text-align: center;'>0.214</p></td></tr><tr><td><p style='text-align: center;'>1.71</p></td><td><p style='text-align: center;'>2.9</p></td><td><p style='text-align: center;'>0.58</p></td></tr><tr><td><p style='text-align: center;'>2.25</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>1.011</p></td></tr><tr><td><p style='text-align: center;'>2.67</p></td><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>1.43</p></td></tr><tr><td><p style='text-align: center;'>3.00</p></td><td><p style='text-align: center;'>9.0</p></td><td><p style='text-align: center;'>1.80</p></td></tr><tr><td><p style='text-align: center;'>3.27</p></td><td><p style='text-align: center;'>10.7</p></td><td><p style='text-align: center;'>2.176</p></td></tr><tr><td><p style='text-align: center;'>3.50</p></td><td><p style='text-align: center;'>12.3</p></td><td><p style='text-align: center;'>2.43</p></td></tr></table><p style='text-align: center;'><strong>Fig. 1.1.</strong></p><p>For the table in Fig. 1.1   </p><p>i) Add the correct units.</p><p style='text-align: right;'>[1]</p><p>ii) Complete the missing data.</p><p style='text-align: right;'>[1]</p><p>iii) Identify errors in the recorded the data and correct them.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>A correctly completed table looks like:</p><table class='data-table'><tr><td><p style='text-align: center;'><em><strong>V</strong></em><strong> / </strong><em><strong>V</strong></em></p></td><td><p style='text-align: center;'><em><strong>V </strong></em><sup><strong>2</strong></sup><strong> / </strong><em><strong>V </strong></em><em><sup><strong>2</strong></sup></em></p></td><td><p style='text-align: center;'><em><strong>P</strong></em><strong> / </strong><em><strong>W</strong></em></p></td></tr><tr><td><p style='text-align: center;'>1.00</p></td><td><p style='text-align: center;'>1.0</p></td><td><p style='text-align: center;'><em><strong>0.21</strong></em></p></td></tr><tr><td><p style='text-align: center;'>1.71</p></td><td><p style='text-align: center;'>2.9</p></td><td><p style='text-align: center;'>0.58</p></td></tr><tr><td><p style='text-align: center;'>2.25</p></td><td><p style='text-align: center;'><em><strong>5.1</strong></em></p></td><td><p style='text-align: center;'><em><strong>1.01</strong></em></p></td></tr><tr><td><p style='text-align: center;'>2.67</p></td><td><p style='text-align: center;'><em><strong>7.1</strong></em></p></td><td><p style='text-align: center;'>1.43</p></td></tr><tr><td><p style='text-align: center;'>3.00</p></td><td><p style='text-align: center;'>9.0</p></td><td><p style='text-align: center;'>1.80</p></td></tr><tr><td><p style='text-align: center;'>3.27</p></td><td><p style='text-align: center;'>10.7</p></td><td><p style='text-align: center;'><em><strong>2.18</strong></em></p></td></tr><tr><td><p style='text-align: center;'>3.50</p></td><td><p style='text-align: center;'>12.3</p></td><td><p style='text-align: center;'>2.43</p></td></tr></table><p>i) Add correct units.</p><ul><li><p>All three units correct;<em> [1 mark]</em></p></li></ul><p>ii) Complete the missing data.</p><p>Square the corresponding value of <em>V</em>:</p><ul><li><p>Two missing data correct; <em>[1 mark]</em></p></li></ul><p>iii) Identify errors in the recorded the data and correct them:</p><ul><li><p><u>Three</u> values of <u>power</u> rounded to <u>two decimal places</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Complete the graph of the data on Fig. 1.2. below.    </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/~oWogJyv_9-1-1b-m-graph-for-current-questions.png' alt='~oWogJyv_9-1-1b-m-graph-for-current-questions' /></div><p style='text-align: center;'><strong> Fig. 1.2.</strong></p><p>i) Plot the two missing points <strong>and </strong>complete the graph.</p><p style='text-align: right;'>[3]</p><p>ii) Determine the gradient of the graph.</p><p style='text-align: right;'>[3]</p><p>iii) Use the gradient of the graph to obtain a value for <em>R</em>. </p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (7 marks):</div>
+                    <p>Complete the graph of the data on Fig. 1.2.</p><p>i) Plot the two missing points and complete the graph</p><p>A correct graph looks like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/screenshot-2023-03-13-at-10-27-52.png' alt='screenshot-2023-03-13-at-10-27-52' /></div><ul><li><p>Plot at (5.1 , 1.01) correct to within half a small square; <em>[1 mark]</em></p></li><li><p>Plot at (7.1 , 1.43) correct to within half a small square; <em>[1 mark]</em> </p></li><li><p><em>Line of best fit: </em>thin, straight line (drawn with ruler) with approximately same number of plots on each side of the line; <em>[1 mark]</em></p></li></ul><p>ii) Determine the gradient of the graph</p><ul><li><p>Clear indication marked on the graph that the large triangle method has been used (occupying <u>at least two thirds</u> of the line); <em>[1 mark]</em></p></li></ul><p><em>Gradient calculation</em></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mi>r</mi><mi>a</mi><mi>d</mi><mi>i</mi><mi>e</mi><mi>n</mi><mi>t</mi><mo>,</mo><mo>&#160;</mo><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>&#916;</mi><mi>y</mi></mrow><mrow><mi>&#916;</mi><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>2</mn><mo>.</mo><mn>2</mn><mo>-</mo><mn>0</mn><mo>.</mo><mn>18</mn></mrow><mrow><mn>11</mn><mo>-</mo><mn>0</mn><mo>.</mo><mn>8</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>198</mn><mo>&#160;</mo><mfenced><mrow><mi mathvariant="normal">W</mi><mo>&#160;</mo><msup><mi mathvariant="normal">V</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>(answer in the range 0.190 - 0.120, to 2 or 3 sig figs)</em> <em>[1 mark]</em></p></li></ul><p>iii) Use the gradient of the graph to obtain a value for R</p><ul><li><p>Since gradient represents <em>P</em>/<em>V</em><sup>2</sup> and <em>R</em> = <em>V</em><sup>2</sup>/<em>P</em>, then <em>R</em> is the reciprocal of the gradient</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>198</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>05</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em> </p></li></ul><p><em><strong>[Total: 7 marks]</strong></em></p><p><em>We have left the &#x27;working out&#x27; annotations on our graph to demonstrate how important these are. Once you are finished with a graph question it should look like ours. By marking the scale we have made sure to get our plots correct. It&#x27;s also worth trying the line of best fit a second time if you aren&#x27;t sure about the first one.</em></p><p><em>Your teacher wants you to work in pencil so that you can erase mistakes. This is very, very good advice, which you should follow. However, if you go over your final line in pen, and then rub out working or mistakes, your </em><em><em>examiner </em></em><em>will not mind. They are looking for accuracy.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The rest of this question is based on the data in the table Fig. 1.1 in part (a).</p><p>i) Determine the value of <em>R</em> when <em>V</em> = 3.50 V.</p><p style='text-align: right;'>[1]</p><p>ii) The uncertainty in <em>V</em> is ± 0.01 V.</p><p>The uncertainty in P is ± 0.05 W.</p><p>Calculate the percentage uncertainty in the value of R calculated in part (i).</p><p style='text-align: right;'>[3]</p><p>iii) Hence calculate the uncertainty in the value of <em>R</em>.</p><p style='text-align: right;'>[1]</p><p>iv) State and explain whether the value of <em>R</em> you calculated in part (i) is consistent with the value of <em>R</em> you determined from the gradient in part (b).</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (7 marks):</div>
+                    <p>The rest of this question is based on the data in the table Fig. 1.1 in part (a)</p><p>i) Determine the value of <em>R</em> when <em>V</em> = 3.50 V</p><p>Use the data table to determine <em>P</em> when <em>V</em> = 3.50 V</p><ul><li><p><em>P</em> = 2.43 W</p></li></ul><p>Use the correct equation and substitute:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><msup><mi>V</mi><mn>2</mn></msup><mi>P</mi></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mo>.</mo><msup><mn>5</mn><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>.</mo><mn>43</mn></mrow></mfrac><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>04</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>04</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo mathvariant="bold">&#160;</mo><mn>5</mn><mo>.</mo><mn>06</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>ii) Calculate the percentage uncertainty in the value of <em>R</em> calculated in part (i):</p><p>List the known quantities:</p><ul><li><p>Uncertainty in <em>V</em> = ± 0.01 V</p></li><li><p>Value of<em> V</em> = 3.5 V</p></li><li><p>Uncertainty in <em>P</em> = ± 0.05 W</p></li><li><p>Value of<em> P</em> = 2.43 W</p></li></ul><p>Determine the percentage uncertainties in <em>V</em> and <em>P</em>:</p><p><em>All marks are for answers to 2 or 3 sig figs </em><em><strong>only</strong></em></p><ul><li><p>Percentage uncertainty in <em>V</em>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>%</mo><mi>V</mi></msub><mo>=</mo><mfenced><mfrac><mrow><mn>0</mn><mo>.</mo><mn>01</mn></mrow><mrow><mn>3</mn><mo>.</mo><mn>5</mn></mrow></mfrac></mfenced><mo>&#215;</mo><mn>100</mn><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>29</mn><mo>&#160;</mo><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Percentage uncertainty in <em>P</em>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>%</mo><mi>P</mi></msub><mo>=</mo><mfenced><mfrac><mrow><mn>0</mn><mo>.</mo><mn>05</mn></mrow><mrow><mn>2</mn><mo>.</mo><mn>43</mn></mrow></mfrac></mfenced><mo>&#215;</mo><mn>100</mn><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>Write an expression to combine the percentage uncertainties in <em>V</em> and <em>P</em> and substitute:</p><ul><li><p>Percentage uncertainty in <em>R</em>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>%</mo><mi>R</mi></msub><mo>=</mo><mfenced><mrow><mn>2</mn><mo>&#215;</mo><msub><mo>%</mo><mi>V</mi></msub></mrow></mfenced><mo>+</mo><msub><mo>%</mo><mi>P</mi></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>%</mo><mi>R</mi></msub><mo>=</mo><mfenced><mrow><mn>2</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>29</mn></mrow></mfenced><mo>+</mo><mn>2</mn><mo>.</mo><mn>1</mn><mo>=</mo><mn>2</mn><mo>.</mo><mn>7</mn><mo>&#160;</mo><mo>%</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>iii) Hence calculate the uncertainty in the value of <em>R</em>:</p><ul><li><p>Absolute uncertainty = percentage uncertainty × measured (or calculated) value</p></li><li><p>Uncertainty of <em>R</em>, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>R</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>027</mn><mo>&#215;</mo><mn>5</mn><mo>.</mo><mn>04</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>136</mn><mo>=</mo><mo>&#177;</mo><mn>0</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant="bold">or</mi><mo>&#160;</mo><mo>&#177;</mo><mn>0</mn><mo>.</mo><mn>14</mn><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p>iv) State and explain whether the value of <em>R</em> you calculated in part (i) is consistent with the value of R you determined from the gradient in part (b):</p><p>Use the calculated value and uncertainty to establish a range of values:</p><ul><li><p><em>R</em> from calculation = 5.04 ± 0.14 Ω <strong>or </strong>5.06 ± 0.14 Ω</p></li><li><p>Therefore, 4.90 Ω ≤ <em>R</em> ≤ 5.18 Ω; <em>[1 mark]</em></p></li></ul><p>Compare to the value derived from the graph:</p><ul><li><p><em>R</em> from graph = 5.05 Ω  </p></li></ul><ul><li><p>Therefore the value from the graph falls within the calculated range so they <u>are consistent</u>; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 7 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The table in Fig. 1.1 shows the power output of three heaters. All the manufacturers claim that the heaters are rated to 1500 W. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/9-2-m-q2a-sq-heaters-cie-ial-physics.png' alt='9-2-m-q2a-sq-heaters-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Determine the most efficient heater. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Calculate the power of each heater:</p><ul><li><p>From the data booklet: <em>P </em>= <em>IV</em> </p></li><li><p>Heater A: <em>P</em><sub><em>A</em></sub> = 17 × 90 = 1530 W</p><p><strong>AND</strong></p></li><li><p>Heater B: <em>P</em><sub><em>B</em></sub> = 8.0 × 220 = 1760 W</p><p><strong>AND</strong></p></li><li><p>Heater C: <em>P</em><sub><em>C</em></sub> = 6.5 × 240 = 1560 W <em>[1 mark]</em></p></li></ul><p>Determine the efficiency of each heater:</p><ul><li><p>Recall the equation for efficiency, <em>E </em>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>useful</mi><mo>&#160;</mo><mi>power</mi><mo>&#160;</mo><mi>out</mi></mrow><mrow><mi>total</mi><mo>&#160;</mo><mi>power</mi><mo>&#160;</mo><mi>in</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>E</em><sub><em>A</em></sub> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1500</mn><mn>1530</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>98</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>%</p><p><strong>AND</strong></p></li><li><p><em>E</em><sub><em>B</em></sub> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1500</mn><mn>1760</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>85</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>%</p><p><strong>AND</strong></p></li><li><p><em>E</em><sub><em>C</em></sub><em> = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1500</mn><mn>1560</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>96</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>% </em><em>[1 mark]</em></p></li></ul><p>Clarify the most efficient heater:</p><ul><li><p>Heater A is the most efficient heater; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Don&#x27;t let the efficiency confuse you. The power output is 1500 W because the heaters are all rated to provide an output power of 1500 W. The input power is the power obtained from the input current and potential difference. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain how these heaters can be made more efficient. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>These heaters can be made more efficient by:</p><p><em>Any </em><em><strong>two </strong></em><em>from:</em></p><ul><li><p>Reducing the internal resistance of the wiring / heating element; <em>[1 mark]</em></p></li><li><p>Reducing the length of the wiring in the heater; <em>[1 mark]</em></p></li><li><p>Increasing the cross-sectional area of the wires; <em>[1 mark]</em></p></li><li><p>Lubricating any moving parts within the heater; <em>[1 mark]</em></p></li><li><p>Using a heating element that produces less light; <em>[1 mark]</em></p></li><li><p>Using an LED requiring less potential difference in the heater; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the work done by heater A when operating for 20 minutes. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Current, <em>I </em>= 17 A (From part (a))</p></li><li><p>Potential difference, <em>V </em>= 90 V (From part (a))</p></li><li><p>Time, <em>t  </em>= 20 minutes = 20 × 60 = 1200 s</p></li></ul><p>Calculate the charge transferred, <em>Q</em>:</p><ul><li><p>From the data booklet: <em>Q </em>= <em>It</em> </p></li><li><p><em>Q </em>= 17 × 1200 </p></li><li><p><em>Q</em> = 20 400 C <em>[1 mark]</em></p></li></ul><p>Calculate the work done by the heater, <em>W</em>:</p><ul><li><p>From the data booklet: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>W</mi><mi>Q</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mo>&#8594;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>W </em>= <em>VQ</em> <em>[1 mark]</em></p></li><li><p><em>W </em>= 90 × 20 400</p></li><li><p><em>W </em>= 1.8 × 10<sup>6</sup> J <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two different heaters X and Y with the same internal resistance, 5<em>R</em> use currents of <em>I</em> and 2<em>I </em>respectively. </p><p>State the magnitude of the power of Y in terms of <em>I </em>and <em>R</em>. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Use the equation for power with current to obtain the power of Y:</p><ul><li><p>From the data booklet: <em>P </em>= <em>I</em><sup><em>2</em></sup><em>R </em></p></li><li><p>Substitute the given quantities: <em>P </em>= (2<em>I</em>)<sup>2 </sup>× (5<em>R</em>)</p></li><li><p>Simplify the equation: <em>P </em>= 4<em>I</em><sup>2</sup> × 5<em>R</em> <em>[1 mark]</em></p></li><li><p>So, <em>P </em>= 20<em>I</em><sup>2</sup><em>R</em> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[11 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A student is investigating the brightness of light bulbs in different arrangements connected to a 230 V power supply. One such arrangement is shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/9-2-m-q3a-circuit1-sq-cie-ial-physics-.png' alt='9-2-m-q3a-circuit1-sq-cie-ial-physics-' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>All the lightbulbs are identical. They are all rated 15 W and 230 V. The student claims the bulbs in this arrangement are all of equal brightness. </p><p>Determine and then explain whether the student is correct. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>State and explain whether the student is correct:</p><ul><li><p>The student is incorrect; <em>[1 mark]</em></p></li></ul><p>The bulbs are not equally bright because:</p><ul><li><p>From the data booklet: <em>P </em>= <em>IV</em></p></li><li><p>So, the total current in the circuit is: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#8201;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>P</mi><mi>V</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>15</mn><mn>230</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>065</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> A; <em>[1 mark]</em></p></li><li><p>However, light bulb B is in parallel with bulbs A, C and D. Therefore, according to Kirchoff&#x27;s first law the current through B is not equal to the current through A, C and D; <em>[1 mark]</em></p></li><li><p>Hence, in this circuit it is not possible for all the bulbs to have equal brightness; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A different experimental arrangement is shown in Fig. 1.2. Two bulbs are connected in series with a corresponding voltmeter in parallel. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/9-2-m-q3b-circuit2-sq-cie-ial-physics-.png' alt='9-2-m-q3b-circuit2-sq-cie-ial-physics-' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Calculate the current needed for both lamps to operate. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>From the data booklet: </p><ul><li><p><em>P </em>= <em>IV </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><semantics><mo>&#8594;</mo><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>P</mi><mi>V</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Determine the current required for the 21 W lamp:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>21</mn><mn>500</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>7</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> A <em>[1 mark]</em></p></li></ul><p>Determine the current required for the 350 W lamp:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>350</mn><mn>500</mn></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>7</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> A <em>[1 mark]</em></p></li></ul><p>Clarify the current required:</p><ul><li><p>The current needed for both lamps to operate is 0.7 A; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>Don&#x27;t forget to clarify that the current calculated is the current required, as this answers the question. For the circuit to operate correctly the same amount of current must pass through each lamp, as they are in series. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain why the voltmeter must be connected in parallel with the bulb. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The voltmeter must be connected in parallel with the bulb because:</p><ul><li><p>It needs to measure the difference in electrical potential across the component; <em>[1 mark]</em></p></li><li><p>To measure the difference it needs to be connected to two different points, before and after the component; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>In a further experimental set-up as shown in Fig. 1.3. Four identical bulbs are all connected in parallel with each other and to a power supply of 230 V.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/9-2-m-q3d-circuit-sq-cie-ial-physics.png' alt='9-2-m-q3d-circuit-sq-cie-ial-physics' /></div><p style='text-align: center;'><strong>Fig. 1.3</strong></p><p>State and explain the value of the potential difference across each bulb assuming there is no internal resistance in the power supply, the bulbs or the wires. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The value of the potential difference across each bulb is:</p><ul><li><p>230 V; <em>[1 mark]</em></p></li></ul><p>This is because:</p><ul><li><p>The potential difference from the power supply is the same as the potential difference across each branch of the parallel circuit; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>10.3 Potential Dividers - Multiple Choice Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">10.3 Potential Dividers</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 10. D.C. Circuits</span>
+            <span><strong>Paper Type:</strong> Multiple Choice (Paper 1)</span>
+            <span><strong>Total:</strong> 29 Questions (29 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A potential divider consists of a fixed resistor R and a light-dependent resistor (LDR)</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images574png.png' alt='cie-ial-images574png' /></div><p>What happens to the voltmeter reading, and why does it happen, when the intensity of light on the LDR increases?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>The voltmeter reading decreases because the LDR resistance decreases</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>The voltmeter reading decreases because the LDR resistance increases</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>The voltmeter reading increases because the LDR resistance decreases</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the voltmeter reading increases because the LDR resistance increases</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>The resistance of the LDR decreases as the light intensity increases</p></li><li><p>Ohm&#x27;s law states <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Since the resistance of the LDR decreases, the potential difference across it also decreases</p></li><li><p>Therefore, as the LDR resistance decreases, the voltmeter reading decreases</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a potentiometer circuit.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images575png.png' alt='cie-ial-images575png' /></div><p>The contact T is placed on the wire and moved along the wire until the galvanometer reading is zero. The length XT is then noted.</p><p> In order to calculate the potential difference per unit length of the wire XY, which value must also be known?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the e .m .f. of the cell E<sub>1</sub></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the e. m .f. of the cell E<sub>2</sub></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the resistance of resistor R</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the resistance of the wire XY</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>When the galvanometer reading is zero, this means that the p.d. across XT of the wire is the same as the e.m.f. E<sub>2</sub> connected to the galvanometer</p></li><li><p>To calculate the potential difference per unit length on the wire XY, we need to know the length of the wire, and the p.d. across it</p></li><li><p>The p.d. across XT is equal to the e.m.f. E<sub>2</sub> when the galvanometer reading is zero</p></li><li><p>So, we need to know the e. m .f. of the cell E<sub>2</sub><em> </em>to know the p. d. across the wire</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A source of e.m.f. 9.0 mV has an internal resistance of 6.0 Ω.</p><p>It is connected across a galvanometer of resistance 30 Ω.</p><p>What is the current in the galvanometer?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>250 µA</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>300 µA</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>1.5 mA</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>2.5 mA</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>The galvanometer and the internal resistance of the cell can be treated as two resistors in series</p></li><li><p>So, the total resistance <em>R</em> in the circuit = 6 + 30 = 36 Ω</p></li><li><p>Ohm&#x27;s law states <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>So, current <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>I</mi><mo>=</mo><mfrac><mi>V</mi><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>9</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><mn>36</mn></mfrac><mo>=</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo> </mo><mi>A</mi><mo>=</mo><mn>250</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo> </mo><mi mathvariant="normal">A</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>In a series circuit, the same current flows through the cell and the galvanometer</p><ul><li><p>Therefore, the current in the galvanometer is 250 μA</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The unknown e.m.f. <em>E</em> of a cell is to be determined using a potentiometer circuit. The balance length is to be measured when the galvanometer records a null reading.</p><p>What is the correct circuit to use ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images576png.png' alt='cie-ial-images576png' /></div><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images577png.png' alt='cie-ial-images577png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>For the galvanometer to give a null reading, the potential difference across it should be zero</p></li><li><p>This can only occur when the position at which it is connected on the wire gives a potential difference (on the wire) equal to the cell of e .m .f. <em>E</em></p></li><li><p>The cell should be connected such that its potential opposes the potential on the wire</p></li><li><p>When the potential difference across the galvanometer is zero, no current flows through it, and the galvanometer records a null reading</p><ul><li><p>This set up is demonstrated by circuit <strong>B</strong></p></li></ul></li></ul><p><strong>A </strong>is incorrect because current flows from the positive terminal to the negative terminal, so, the positive terminal of the cell cannot be connected directly to the galvanometer because this will always cause a current to flow through it</p><p><strong>C </strong>&amp;<strong> D </strong>are incorrect because the galvanometer cannot be connected directly to the negative terminal of the main supply because all the current would return to the negative terminal of the main supply, causing the galvanometer always to give a non-zero reading</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a potential divider circuit designed to provide a variable output p. d.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images578png.png' alt='cie-ial-images578png' /></div><p>Which gives the available range of output p. d ?</p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'>Maximum output</p></td><td><p style='text-align: center;'>Minimum output</p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>3.0 V</p><p style='text-align: center;'>4.5 V</p><p style='text-align: center;'>9.0 V</p><p style='text-align: center;'>9.0 V</p></td><td><p style='text-align: center;'>0</p><p style='text-align: center;'>0</p><p style='text-align: center;'>0</p><p style='text-align: center;'>4.5 V</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>The potential divider equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>×</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Where <em>R</em><sub><em>1</em></sub> = 5 kΩ, <em>R</em><sub><em>2</em></sub> = 5 kΩ and <em>V</em><sub><em>in </em></sub>= 9.0 V</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>9</mn><mo>×</mo><mfenced><mfrac><mn>5</mn><mrow><mn>5</mn><mo>+</mo><mn>5</mn></mrow></mfrac></mfenced><mo>=</mo><mn>4</mn><mo>.</mo><mn>5</mn><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the minimum output of the variable resistor is 0 V, and the maximum output is 4.5 V</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which diagram shows a potential divider circuit that can vary the voltage across the lamp ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images579png.png' alt='cie-ial-images579png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C </strong></em><em>because:               </em></p><ul><li><p>A variable potential divider (potentiometer) can be used to vary the brightness of a light bulb between zero and normal brightness</p></li><li><p>The moveable contact, represented by the arrowhead, splits the resistor in two allowing it to act as though there were two resistors in the circuit and hence like a variable potential divider or potentiometer</p></li><li><p>Changing the resistance of the potentiometer changes the potential difference of the lamp</p></li><li><p>This is represented by circuit <strong>C</strong> as the lamp needs to be directly connected to the potentiometer</p></li></ul><p><strong>A </strong>&amp;<strong> B </strong>are incorrect because a potentiometer is represented by an arrow pointing to a resistor</p><p><strong>D </strong>is incorrect because the wire with the arrowhead needs to connect the lamp directly to the potentiometer in order to vary the potential difference of the lamp</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 7 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In the circuit shown, the 6.0 V battery has negligible internal resistance. Resistors R<sub>1</sub> and R<sub>2</sub> and the voltmeter have resistance 100 kΩ.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images580png.png' alt='cie-ial-images580png' /></div><p>What is the current in the resistor R<sub>2</sub>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>20 µA</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>30 µA</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>40 µA</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>60 µA</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>We can treat the three components as two sets of components in series (<em>R</em><sub><em>1</em></sub> and the parallel combination of <em>R</em><sub><em>2</em></sub> and the voltmeter)</p></li><li><p>So, the total resistance in the circuit<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>100</mn><mo>+</mo><msup><mfenced open="[" close="]"><mrow><mfrac><mn>1</mn><mn>100</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>100</mn></mfrac></mrow></mfenced><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>100</mn><mo>+</mo><mn>50</mn><mo>=</mo><mn>150</mn><mo> </mo><mi>kΩ</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Ohm&#x27;s law states <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Therefore, the total current in circuit <em>I = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>6</mn><mo>.</mo><mn>0</mn></mrow><mn>150</mn></mfrac><mo> </mo><mo>=</mo><mo> </mo><mn>40</mn><mo> </mo><mi>μA</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>This current of 40 µA flows through resistor <em>R</em><sub><em>1</em></sub>, but it splits at the junction of <em>R</em><sub><em>2</em></sub> and the voltmeter, which are in parallel</p></li><li><p>Since both have the same resistance, the current splits equally</p><ul><li><p>So, the current in <em>R</em><sub><em>2 </em></sub><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mn>40</mn><mn>2</mn></mfrac><mo>=</mo><mn>20</mn><mo> </mo><mi>μA</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 8 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>Which electrical component is represented by the following symbol ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images581png.png' alt='cie-ial-images581png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>a diode</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>a potentiometer</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>a galvanometer</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>a thermistor</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because: </em></p><ul><li><p>This symbol represents a thermistor</p></li></ul><p><strong>A </strong>is incorrect because the symbol for a diode is  </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images582png.png' alt='cie-ial-images582png' /></div><p><strong>B </strong>is incorrect because the symbol for a potentiometer is</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images583png.png' alt='cie-ial-images583png' /></div><p><strong>C </strong>is incorrect because the symbol for a galvanometer is</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images584png.png' alt='cie-ial-images584png' /></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 9 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The circuit is designed to trigger an alarm system when the input voltage exceeds some preset value. It does this by comparing <em>V </em><sub>out</sub> with a fixed reference voltage, which is set at 4.8 V .</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images585png.png' alt='cie-ial-images585png' /></div><p><em>V </em><sub>out</sub> is equal to 4.8 V. </p><p>What is the input voltage <em>V</em><sub>in</sub>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>4.8 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>7.2 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>9.6 V</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>12 V</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>The potential divider equation is given by</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>×</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Where <em>R</em><sub><em>1</em></sub> = 10 kΩ, <em>R</em><sub><em>2</em></sub> = 15 kΩ and <em>V </em><sub><em>out </em></sub>= 4.8 V</p></li></ul></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>&#247;</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced><mo>=</mo><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>&#215;</mo><mfenced><mfrac><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><msub><mi>R</mi><mn>1</mn></msub></mfrac></mfenced></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mfenced><mfrac><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><msub><mi>R</mi><mn>1</mn></msub></mfrac></mfenced><mo>=</mo><mfrac><mrow><mn>4</mn><mo>.</mo><mn>8</mn><mfenced><mrow><mn>10</mn><mo>+</mo><mn>15</mn></mrow></mfenced></mrow><mn>10</mn></mfrac><mo>=</mo><mn>12</mn><mo> </mo><mi mathvariant="normal">V</mi></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, the input voltage is 12 V</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 10 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A low-voltage supply with an e. m. f. of 20 V and an internal resistance of 1.5 Ω is used to supply power to a heater of resistance 6.5 Ω in a fish tank.</p><p>What is the power supplied to the water in the fish tank ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>41 W</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>50 W</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>53 W</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>62 W</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>The power supplied to the heater is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mi>V</mi><mi>I</mi><mo>=</mo><mfrac><msup><mi>V</mi><mrow><mo> </mo><mn>2</mn></mrow></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>From the potential divider equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>h</mi><mi>e</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>e</mi><mo>.</mo><mi>m</mi><mo>.</mo><mi>f</mi></mrow></msub><mo>×</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>h</mi><mi>e</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi></mrow></msub><mo>=</mo><mn>20</mn><mo>×</mo><mfenced><mfrac><mrow><mn>6</mn><mo>.</mo><mn>5</mn></mrow><mrow><mn>6</mn><mo>.</mo><mn>5</mn><mo>+</mo><mn>1</mn><mo>.</mo><mn>5</mn></mrow></mfrac></mfenced><mo>=</mo><mn>16</mn><mo>.</mo><mn>25</mn><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mi>V</mi><msup><mo> </mo><mn>2</mn></msup></mrow><mi>R</mi></mfrac><mo>=</mo><mfrac><msup><mfenced><mrow><mn>16</mn><mo>.</mo><mn>25</mn></mrow></mfenced><mn>2</mn></msup><mrow><mn>6</mn><mo>.</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mn>40</mn><mo>.</mo><mn>625</mn><mo> </mo><mi mathvariant="normal">W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Therefore, the power supplied to the heater is 41 W</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 11 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a potential divider circuit which, by adjustment of the contact X, can be used to provide a variable potential difference between the terminals P and Q.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images586png.png' alt='cie-ial-images586png' /></div><p>What are the limits of this potential difference?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0 and 5 V</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0 and 20 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>0 and 25 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>5 V and 25 V</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>The potential divider equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>e</mi><mo>.</mo><mi>m</mi><mo>.</mo><mi>f</mi></mrow></msub><mo>&#215;</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Let the resistance of the variable resistor be <em>R</em><sub><em>1</em></sub> and let the resistance of the fixed resistor be <em>R</em><sub><em>2</em></sub></p><ul><li><p><em>R</em><sub><em>1</em></sub> varies from  0- 4 kΩ, <em>R</em><sub><em>2</em></sub> = 1 kΩ and the e. m .f is <em>V</em> = 25 V</p></li></ul></li><li><p>The potential difference between the terminals P and Q is <em>V</em><sub><em>2</em></sub></p></li><li><p>The p. d. across a component is proportional to its resistance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>So, the higher the resistance, the greater the p. d.</p></li></ul></li><li><p>For <em>V</em><sub><em>2</em></sub> to be maximum, the resistance of the variable resistor, <em>R</em><sub><em>1</em></sub> should be 4 kΩ</p><ul><li><p>So the maximum p. d. is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><mn>25</mn><mo>&#215;</mo><mfenced><mfrac><mn>4</mn><mrow><mn>4</mn><mo>+</mo><mn>1</mn></mrow></mfrac></mfenced><mo>=</mo><mn>20</mn><mo>&#160;</mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>For <em>V</em><sub><em>2</em></sub> to be minimum, the smallest resistance is chosen, so, <em>R</em><sub><em>1</em></sub> is zero</p><ul><li><p>So, the minimum p. d. is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><mn>25</mn><mo>&#215;</mo><mfenced><mfrac><mn>0</mn><mrow><mn>0</mn><mo>+</mo><mn>1</mn></mrow></mfrac></mfenced><mo>=</mo><mn>0</mn><mo>&#160;</mo><mi>V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 12 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In the circuit below, P is a potentiometer of total resistance 10 Ω and Q is a fixed resistor of resistance 10 Ω. The battery has an e .m f. of 4.0 V and negligible internal resistance. The voltmeter has a very high resistance .</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images587png.png' alt='cie-ial-images587png' /></div><p>The slider on the potentiometer is moved from X to Y, and a graph of voltmeter reading <em>V</em> is plotted against slider position.</p><p>Which graph would be obtained ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images588png.png' alt='cie-ial-images588png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>When the slider is at X, where the resistance of the potentiometer is taken to be zero, the voltmeter must read 4 V</p></li><li><p>The current flows: from the positive terminal — through the moving jack until the point it is connected on resistor P — from P to end X — through the voltmeter and back to the negative terminal of the supply, as shown in the diagram below</p><ul><li><p>Note at no point does the current go through Q</p></li></ul></li><li><p>When the slider is moved to Y, the potentiometer P and the voltmeter are in series</p></li><li><p>Still, no current flows through Q — resistor Q can be said to be short-circuited in both cases, with almost all the resistance in the voltmeter and hence the p.d. across the voltmeter is still 4 V</p></li><li><p>Therefore, the voltmeter reading remains 4 V as the slider is moved from X to Y</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images589png.png' alt='cie-ial-images589png' /></div><p><strong>Exam Tip:</strong> In a properly set up circuit, a voltmeter is usually connected in parallel to the component we want to know about. Connecting a voltmeter in series results in the above situation where the voltmeter always reads 4 V</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 13 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In the circuit below, the ammeter reading is <em>I,</em> and the voltmeter reading is <em>V</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images590png.png' alt='cie-ial-images590png' /></div><p>When the switch is closed, which row describes what happens to <em>I</em> and <em>V</em>? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><em><strong>I</strong></em></p></td><td><p style='text-align: center;'><em><strong>V</strong></em></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>decreases</p><p style='text-align: center;'>increases</p><p style='text-align: center;'>increases</p><p style='text-align: center;'>stays the same</p></td><td><p style='text-align: center;'>decreases to zero</p><p style='text-align: center;'>stays the same</p><p style='text-align: center;'>decreases to zero</p><p style='text-align: center;'>increases</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C </strong></em><em>because:</em></p><ul><li><p>When the switch is opened, current passes through both resistors in the circuit</p></li><li><p>Let the resistance of one resistor be R, and we will assume they are of the same resistance</p><ul><li><p>When the switch is opened, the total resistance <em>R</em><sub><em>T</em></sub> in the circuit = <em>R</em> + <em>R</em> = 2<em>R</em></p></li></ul></li><li><p>Ohm&#x27;s law states <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>This gives a current <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><msub><mi>R</mi><mi>T</mi></msub></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  where <em>E</em> is the e .m. f. of the supply</p></li></ul></li><li><p>The total e .m .f in the circuit is divided as p. d. across each of the resistor</p></li><li><p>When the switched is closed, the resistor connected in parallel to the wire is short-circuited</p></li><li><p>That means, all current would pass through the wire (of negligible resistance) instead of passing through that resistor</p><ul><li><p>When the switch is closed, the total resistance <em>R</em><sub><em>T</em></sub><em> </em>in circuit = <em>R</em> + 0 = <em>R</em></p></li></ul></li><li><p>This gives a current <em>I</em> which is now greater than before, since <em>R</em><sub><em>T</em></sub> is less</p></li><li><p>Since the current <em>I</em> through the resistor in parallel is now zero, the p .d. across it now also decreases to zero</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 14 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagram shows a potential divider connected to a 9.0 V supply of negligible internal resistance.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images591png.png' alt='cie-ial-images591png' /></div><p>What range of voltages can be obtained between P and Q?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>zero to 1.5 V</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>zero to 7.5 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>1.5 V to 7.5 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1.5 V to 9.0 V</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>The potential divider equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>e</mi><mo>.</mo><mi>m</mi><mo>.</mo><mi>f</mi></mrow></msub><mo>×</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Let the resistance of the variable resistor be <em>R</em><sub><em>1</em></sub> and let the resistance of the fixed resistor be <em>R</em><sub><em>2</em></sub></p><ul><li><p><em>R</em><sub><em>1</em></sub> varies from 0 - 50 kΩ, <em>R</em><sub><em>2</em></sub> = 10 kΩ and the e. m. f is <em>V</em> = 9.0 V</p></li></ul></li><li><p>The potential difference between the terminals P and Q is <em>V</em><sub><em>2</em></sub></p></li><li><p>The p .d. across a component is proportional to its resistance <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>So, the higher the resistance, the greater the p. d.</p></li></ul></li><li><p>For <em>V</em><sub><em>2</em></sub> to be maximum, the resistance of <em>R</em><sub><em>1</em></sub> should be 50 kΩ</p><ul><li><p>So the maximum p .d. is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn><mo>×</mo><mfenced><mfrac><mn>50</mn><mrow><mn>50</mn><mo>+</mo><mn>10</mn></mrow></mfrac></mfenced><mo>=</mo><mn>7</mn><mo>.</mo><mn>5</mn><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>For <em>V</em><sub><em>2</em></sub> to be minimum, the smallest resistance is chosen, so, <em>R</em><sub><em>1</em></sub> is zero</p><ul><li><p>So, the minimum p. d. is  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn><mo>×</mo><mfenced><mfrac><mn>0</mn><mrow><mn>10</mn><mo>+</mo><mn>0</mn></mrow></mfrac></mfenced><mo>=</mo><mn>0</mn><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the minimum output of the variable resistor is 0 V, and the maximum output is 7.5 V</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 15 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A potential divider consisting of resistors of resistance <em>R</em><sub>1</sub> and <em>R</em><sub>2</sub> is connected to an input potential difference of <em>V</em><sub>0</sub> and gives an output p .d. of <em>V</em>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images592png.png' alt='cie-ial-images592png' /></div><p>What is the value of <em>V </em>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>V</mi><mn>0</mn></msub><mo> </mo><msub><mi>R</mi><mn>1</mn></msub></mrow><msub><mi>R</mi><mn>2</mn></msub></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>V</mi><mn>0</mn></msub><mo> </mo><msub><mi>R</mi><mn>1</mn></msub></mrow><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>V</mi><mn>0</mn></msub><mo> </mo><msub><mi>R</mi><mn>2</mn></msub></mrow><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>V</mi><mn>0</mn></msub><mfenced><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfenced></mrow><msub><mi>R</mi><mn>1</mn></msub></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>We want to find the proportion of output p. d. which is equal to the p. d. across resistor <em>R</em><sub><em>1</em></sub></p></li><li><p>For this reason, the <em>R</em><sub><em>1</em></sub> is on the top of the fraction in the potential divider equation</p></li><li><p>The potential divider equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>V</mi><mo>=</mo><msub><mi>V</mi><mn>0</mn></msub><mo>×</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, V is equal to</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mi>V</mi><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mn>0</mn></msub><mo> </mo><msub><mi>R</mi><mn>1</mn></msub></mrow><mrow><msub><mi>R</mi><mn>1</mn></msub><mo> </mo><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 16 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A potential divider consists of resistors of resistance <em>R</em><sub>1</sub> and <em>R</em><sub>2</sub> connected in series across a source of potential difference <em>V</em><sub>0</sub>. The potential difference across <em>R</em><sub>1</sub> is <em>V </em><sub>out </sub>.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images593png.png' alt='cie-ial-images593png' /></div><p>Which changes to <em>R</em><sub>1</sub> and <em>R</em><sub>2</sub> will increase the value of <em>V </em><sub>out </sub>? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><em><strong>R</strong></em><sub><strong>1</strong></sub></p></td><td><p style='text-align: center;'><em><strong>R</strong></em><sub><strong>2</strong></sub></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>doubled</p><p style='text-align: center;'>doubled</p><p style='text-align: center;'>halved</p><p style='text-align: center;'>halved</p></td><td><p style='text-align: center;'>doubled</p><p style='text-align: center;'>halved</p><p style='text-align: center;'>doubled</p><p style='text-align: center;'>halved</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>The potential divider equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mn>0</mn></msub><mo>×</mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo> </mo><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>In order to increase the value of <em>V </em><sub><em>out</em></sub>, the value of <em>R</em><sub><em>1</em></sub> should be maximized, while the value of <em>R</em><sub><em>2</em></sub> should be minimized as:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mi>α</mi><mo> </mo><msub><mi>R</mi><mn>1</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo> </mo><mi>α</mi><mo> </mo><mfrac><mn>1</mn><mfenced><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfenced></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Consider option <strong>B</strong></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo> </mo><mi>α</mi><mo> </mo><mfrac><mrow><mn>2</mn><msub><mi>R</mi><mn>1</mn></msub></mrow><mfenced><mrow><mn>2</mn><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><msub><mi>R</mi><mn>2</mn></msub></mrow></mfenced></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Let’s use some test values. If <em>R</em><sub><em>1</em></sub> = 10 kΩ and <em>R</em><sub><em>2</em></sub> = 10 kΩ</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo> </mo><mi>α</mi><mo> </mo><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced><mo>=</mo><mfenced><mfrac><mn>10</mn><mrow><mn>10</mn><mo>+</mo><mn>10</mn></mrow></mfrac></mfenced><mo>=</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo> </mo></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, 2<em>R</em><sub><em>1</em></sub> = 20 kΩ and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>R</em><sub><em>2</em></sub> = 5 kΩ</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo> </mo><mi>α</mi><mo> </mo><mfrac><mrow><mn>2</mn><msub><mi>R</mi><mn>1</mn></msub></mrow><mfenced><mrow><mn>2</mn><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><msub><mi>R</mi><mn>2</mn></msub></mrow></mfenced></mfrac><mo>=</mo><mfenced><mfrac><mn>20</mn><mrow><mn>20</mn><mo>+</mo><mn>5</mn></mrow></mfrac></mfenced><mo>=</mo><mn>0</mn><mo>.</mo><mn>8</mn></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, doubling <em>R</em><sub><em>1</em></sub> and halving <em>R</em><sub><em>2</em></sub> leads to an increase in <em>V </em><sub><em>out</em></sub></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 17 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A 12 V battery is in series with an ammeter, a 2 Ω fixed resistor and a 0 – 10 Ω variable resistor. High-resistance voltmeters P and Q are connected across the variable resistor and the fixed resistor, respectively, as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images594png.png' alt='cie-ial-images594png' /></div><p>The resistance of the variable resistor is changed from its maximum value to zero.</p><p>Which graph shows the variation with current of the voltmeter readings?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images595png.png' alt='cie-ial-images595png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>Since the variable resistor and the fixed resistor are in series, the total e.m.f in the circuit is divided between them</p></li><li><p>The potential difference across each of the resistors may be obtained from the potential divider equation :<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mi>P</mi></msub><mo>=</mo><mi>V</mi><mo>×</mo><mfenced><mfrac><msub><mi>R</mi><mi>P</mi></msub><mrow><msub><mi>R</mi><mi>P</mi></msub><mo>+</mo><msub><mi>R</mi><mi>Q</mi></msub></mrow></mfrac></mfenced></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Let&#x27;s say <em>R</em><sub><em>P</em></sub> is the resistance of the variable resistor and <em>R</em><sub><em>Q</em></sub> is the resistance of the fixed resistor</p></li><li><p>As <em>R</em><sub><em>P</em></sub><em> </em>is decreased, the p.d across it decreases <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mi>V</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>I</mi><mi>R</mi></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>When <em>R</em><sub><em>P</em></sub> = 0, <em>V</em><sub><em>P</em></sub> = 0, therefore, the voltmeter reading of P should give zero - option D shows this</p></li><li><p>Decreasing <em>R</em><sub><em>P</em></sub> should also cause the p .d. across the fixed resistor to increase - this is also shown by option <strong>D</strong></p></li></ul></li></ul><p><strong>A, B &amp; C </strong>are incorrect because as <em>R</em><sub><em>P</em></sub> decreases, the p. d. across it also decreases, whereas these graphs all show the p .d. increasing</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 18 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A potentiometer is used as shown to compare the e.m.f. of two cells.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images596png.png' alt='cie-ial-images596png' /></div><p>The balance points for cells X and Y are 0.70 m and 0.90 m respectively.</p><p>If the e.m.f. of cell X is 1.1 V, what is the e.m.f. of cell Y ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>0.69 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>0.86 V</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>0.99 V</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1.4 V</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>At the balance length, the p.d. across the wire is equal to the e.m.f. of the cell</p></li><li><p>The p.d is directly proportional to the length of the wire i.e. <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mi>L</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><ul><li><p>This is because p.d is proportional to work done, which is in turn proportional to distance i.e. <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mi>W</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mi>d</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Cell X: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant="normal">V</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>70</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <strong>(1)</strong></p></li><li><p>Cell Y: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&#160;</mo><mo>&#8733;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>90</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <strong>(2)</strong></p></li><li><p>To find the ratio, divide equation <strong>(2)</strong> by <strong>(1)</strong>:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>E</mi><mrow><mn>1</mn><mo>.</mo><mn>1</mn></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>90</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>70</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>90</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>70</mn></mrow></mfrac><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>.</mo><mn>41</mn><mo>&#160;</mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the e.m.f. of cell Y is 1.4 V</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 19 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A potential divider circuit consists of fixed resistors of resistance 2.0 Ω and 4.0 Ω connected in series with a 3.0 Ω resistor fitted with a sliding contact. These are connected across a battery of e.m.f. 9.0 V and zero internal resistance, as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images597png.png' alt='cie-ial-images597png' /></div><p>What are the maximum and minimum output voltages of this potential divider circuit? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Maximum voltage / V</strong></p></td><td><p style='text-align: center;'><strong>Minimum  voltage / V</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>4.0</p><p style='text-align: center;'>5.0</p><p style='text-align: center;'>9.0</p><p style='text-align: center;'>9.0</p></td><td><p style='text-align: center;'>2.0</p><p style='text-align: center;'>2.0</p><p style='text-align: center;'>0</p><p style='text-align: center;'>2.0</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>The potential at the top of the circuit (+ terminal) is 9 V, and the potential at the bottom of the circuit (- terminal) is 0 V</p></li><li><p>There will be a p. d. across each of the fixed resistors</p></li><li><p>Potential divider equation for three resistors: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><mi>V</mi><mo>×</mo><mfenced><mfrac><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><msub><mi>R</mi><mn>3</mn></msub></mrow></mfrac></mfenced></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The output voltage is maximum at the maximum value of the variable resistor = 3.0 Ω</p><ul><li><p>Maximum output voltage <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>9</mn><mo>.</mo><mn>0</mn><mo> </mo><mo>×</mo><mfenced><mfrac><mrow><mn>2</mn><mo>+</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>4</mn></mrow></mfrac></mfenced><mo>=</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The output voltage is minimum when the minimum value of the variable resistor is taken = 0 Ω</p><ul><li><p>Minimum output voltage <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>9</mn><mo>.</mo><mn>0</mn><mo>×</mo><mfenced><mfrac><mrow><mn>2</mn><mo>+</mo><mn>0</mn></mrow><mrow><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>4</mn></mrow></mfrac></mfenced><mo>=</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 20 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A battery with e.m.f. <em>E</em> and internal resistance <em>r</em> is connected in series with an external variable resistor.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images5978png.png' alt='cie-ial-images5978png' /></div><p>The value of the external resistance <em>R</em> is slowly increased from zero.</p><p>Which statement is correct ? (Ignore any temperature effects.)</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>the potential difference across the external resistance decreases</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>the potential difference across the internal resistance increases</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>the power dissipated in <em>r</em> increases and then decreases</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>the power dissipated in <em>R</em> increases and then decreases</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>Ohm&#x27;s law states <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> , so, as the resistance of a component increases the p. d. across it increases</p></li><li><p>So, as the value of external resistance <em>R</em> is increased, the p. d. across it increases, while the p. d. across the internal resistance decreases</p></li><li><p>The external resistance <em>R</em> and the internal resistance r form a potential divider</p></li><li><p>Power dissipated in external resistor <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>I</mi><msup><mo> </mo><mn>2</mn></msup><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Initially, the value of <em>R</em> is zero, so the power dissipated across it is also zero</p></li><li><p>Similarly, if the value of <em>R</em> is infinite, the power dissipated is also zero as the current will then also be zero</p></li></ul></li><li><p>So, the power dissipated must increase and then decrease as <em>R</em> increases from zero</p><ul><li><p>As the value of <em>R</em> increases, the current I decreases and hence the p. d. across the external resistor increases</p></li><li><p>The p. d. across the internal resistor <em>r</em> decreases and the power dissipated in <em>r</em> (given by <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><msup><mo> </mo><mn>2</mn></msup><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> ) decreases</p></li><li><p>The maximum power dissipated across R occurs when <em>R</em> = <em>r</em></p></li></ul></li><li><p>Overall, the only correct statement is that the power dissipated in R increases and then decreases</p></li></ul><p><strong>A </strong>&amp;<strong> B </strong>are incorrect because the sum of p .d. in a circuit is equal to the e .m .f. in the circuit, so as the p .d. of one component rises, the other will fall</p><p><strong>C </strong>is incorrect because as the value of <em>R</em> increases, the p d. across the external resistor increases, so the p. d. across the internal resistor decreases and the power dissipation across it also decreases</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 21 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In the potentiometer circuit shown, the reading on the ammeter is zero.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images5979png.png' alt='cie-ial-images5979png' /></div><p>The light-dependent resistor (LDR) is then covered up, and the ammeter gives a non-zero reading.</p><p>Which change could return the ammeter reading to zero?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>decrease the supply voltage</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>increase the supply voltage</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>move the sliding contact to the left</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>move the sliding contact to the right</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C </strong></em><em>because:</em></p><ul><li><p>For the ammeter to read zero, the potential difference across it should be zero; hence, the terminals of the ammeter are at the same potential</p></li><li><p>The resistance of an LDR decreases when the light intensity on it increases, so, as the LDR is covered up, the light intensity decreases - this causes its resistance to increase</p></li><li><p>Considering the resistor and the LDR in the middle section, an increase in the resistance of the LDR causes the p. d. across it to increase <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>So, the terminal connected between the LDR and the resistor is now at a higher potential than before</p></li></ul></li><li><p>To return the ammeter reading to zero, the sliding contact should be moved in such a way that it is at a higher potential (and equal to the new potential of the other terminal of the ammeter)</p></li><li><p>The right end of the uniform metal wire is connected to the negative terminal of the supply and so, is at a potential of zero</p></li><li><p>The left end of the wire is connected to the positive terminal of the supply and is at the maximum potential (equal to the e. m .f of the supply)</p></li><li><p>So, as we move from right to left, the potential increases</p><ul><li><p>Therefore, to increase the potential of the sliding contact, we need to move it to the left</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 22 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A power supply and a solar cell are compared using the potentiometer circuit shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images599png.png' alt='cie-ial-images599png' /></div><p>The e.m.f. produced by the solar cell is measured on the potentiometer.</p><p>The potentiometer wire PQ is 100.0 cm long and has a resistance of 5.00 Ω. The power supply has an e. m .f. of 2.000 V, and the solar cell has an e .m. f. of 5.00 mV.</p><p>Which resistance <em>R</em> must be used so that the galvanometer reads zero when PS = 40.0 cm ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>395 Ω</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>795 Ω</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>995 Ω</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>1055 Ω</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>A galvanometer is a type of sensitive ammeter an instrument for detecting electric current</p></li><li><p>In order for the galvanometer to read zero, the e. m .f of the solar cell must be equal to the p .d. such that the p .d. across the galvanometer is zero</p></li><li><p>The potential divider equation is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mn>0</mn></msub><mfenced><mfrac><msub><mi>R</mi><mn>1</mn></msub><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>When PS = 40.0 cm, the p. d. across the length of wire, PS is given by</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>.</mo><mn>000</mn><mo> </mo><mi mathvariant="normal">V</mi><mo>×</mo><mfenced><mfrac><mrow><mn>0</mn><mo>.</mo><mn>400</mn><mo>×</mo><mn>5</mn><mo>.</mo><mn>00</mn></mrow><mrow><mi>R</mi><mo>+</mo><mn>5</mn><mo>.</mo><mn>00</mn></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>So, by equating this p .d. to the e. m .f. of solar cell (5.00 mV), resistance R can be obtained by rearranging the equation:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>.</mo><mn>000</mn><mo>×</mo><mfenced><mfrac><mrow><mn>0</mn><mo>.</mo><mn>400</mn><mo>×</mo><mn>5</mn><mo>.</mo><mn>00</mn></mrow><mrow><mi>R</mi><mo>+</mo><mn>5</mn><mo>.</mo><mn>00</mn></mrow></mfrac></mfenced><mo>=</mo><mn>5</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo> </mo><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>.</mo><mn>000</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>400</mn><mo>×</mo><mn>5</mn><mo>.</mo><mn>00</mn><mo>=</mo><mfenced><mrow><mn>5</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced><mfenced><mrow><mi>R</mi><mo>+</mo><mn>500</mn></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>.</mo><mn>00</mn><mo>=</mo><mfenced><mrow><mn>5</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced><mi>R</mi><mo>+</mo><mn>0</mn><mo>.</mo><mn>025</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mo>.</mo><mn>00</mn><mo>-</mo><mn>0</mn><mo>.</mo><mn>025</mn></mrow><mrow><mn>5</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>975</mn></mrow><mrow><mn>5</mn><mo>.</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>795</mn><mo> </mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the resistance R is equal to 795 Ω</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 23 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The diagrams show the same cell, ammeter, potentiometer and fixed resistor connected in different ways.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images600png.png' alt='cie-ial-images600png' /></div><p>The distance <em>d</em> between the sliding contact and a particular end of the potentiometer is varied. The current measured is then plotted against the distance <em>d</em>.</p><p>For which two circuits will the graphs be identical ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option correct">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>W and X</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>W and Y</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>X and Y</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>Y and Z</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>A </strong></em><em>because:</em></p><ul><li><p>A potentiometer is different than a regular resistor in that the potentiometer can allow for different values of resistance</p></li><li><p>Current always chooses the easiest way, that is, the path is the smallest resistance</p></li><li><p>The best way to approach this question is to draw out the path of the current in each circuit</p></li><li><p>As we can see from the diagram, the path of the current is the same in W and X; therefore, they will give identical graphs</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images601png.png' alt='cie-ial-images601png' /></div><p><strong>B </strong>&amp;<strong> C </strong>are incorrect because in arrangement Y, the path other than the distance <em>d</em> on the wire of the potentiometer is connected to the circuit. So, this arrangement is different from those of W and X. Even if the circuit is complete, the results obtained on a graph would not be identical to that of W or X</p><p><strong>D </strong>is incorrect because in arrangement Z, current flows from the positive terminal of the battery, then along a distance <em>d</em> on the potentiometer, but here, the current does not flow through the fixed resistor; hence it would not give the same graph as in Y</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 24 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In the circuit shown, XY is a length <em>L</em> of uniform resistance wire. R<sub>1</sub> and R<sub>2</sub> are unknown resistors. J is a sliding contact that joins the junction of R<sub>1</sub> and R<sub>2</sub> to points on XY through a small signal lamp S.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images602png.png' alt='cie-ial-images602png' /></div><p>To determine the ratio  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  of the potential differences across R<sub>1</sub> and R<sub>2</sub>, a point is found on XY at which the lamp is off. This point is at a distance <em>x</em> from <em>X</em>.</p><p>What is the value of the ratio <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>   ?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>L</mi><mi>x</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>x</mi><mi>L</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>L</mi><mo>-</mo><mi>x</mi></mrow><mi>x</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>x</mi><mrow><mi>L</mi><mo>-</mo><mi>x</mi></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>For the lamp to be off, the potential difference across it should be zero so that no current flows through it</p><ul><li><p>This means, the potential at the junction of <em>R</em><sub><em>1</em></sub> and <em>R</em><sub><em>2</em></sub> should be equal to the potential at the sliding contact J</p></li></ul></li><li><p>The p. d. across <em>R</em><sub><em>1</em></sub> is <em>V</em><sub><em>1</em></sub> and the p .d. across <em>R</em><sub><em>2</em></sub> is <em>V</em><sub><em>2</em></sub>, so, <em>V</em><sub><em>1</em></sub> should be equal to the p. d. across XJ and <em>V</em><sub><em>2</em></sub> should be equal to the p .d. across JY</p></li><li><p>Since point X is connected to the negative terminal of the supply, it can be considered to be at a potential of 0, while point Y is at the maximum potential, equal to the e .m. f. of the supply</p></li><li><p>The wire XY, together with the sliding contact J, can be considered as a potential divider</p></li><li><p>Resistance <em>R</em> of the wire <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mrow><mi>ρ</mi><mi>L</mi></mrow><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and from Ohm&#x27;s Law<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> , so, the p. d. across the wire is proportional to the length of wire <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo> </mo><mi>α</mi><mo> </mo><mi>L</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>A length of <em>L</em> corresponds to a p. d. equal to the e .m .f. <em>E</em> of the supply and a length of <em>x</em> corresponds to a p. d. equal of <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfenced><mfrac><mi>E</mi><mi>L</mi></mfrac></mfenced><mo>×</mo><mi>x</mi><mo>=</mo><mfenced><mfrac><mi>x</mi><mi>L</mi></mfrac></mfenced><mo>×</mo><mi>E</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Since X is at a potential of zero, point J would be at a potential of:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><mfenced open="[" close="]"><mrow><mfenced><mfrac><mi>x</mi><mi>L</mi></mfrac></mfenced><mo>×</mo><mi>E</mi></mrow></mfenced><mo>-</mo><mn>0</mn><mo>=</mo><mfenced><mfrac><mi>x</mi><mi>L</mi></mfrac></mfenced><mo>×</mo><mi>E</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Now, the part JY of the wire corresponds to a length (<em>L</em> – <em>x</em>) of the wire. A length of (<em>L</em> – <em>x</em>) corresponds to a p.d. equal to</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><mfenced><mfrac><mi>E</mi><mi>L</mi></mfrac></mfenced><mo>×</mo><mfenced><mrow><mi>L</mi><mo>-</mo><mi>x</mi></mrow></mfenced><mo>=</mo><mfrac><mfenced><mrow><mi>L</mi><mo>-</mo><mi>x</mi></mrow></mfenced><mi>L</mi></mfrac><mo>×</mo><mi>E</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the ratio <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mo>=</mo><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfenced><mfrac><mi>x</mi><mi>L</mi></mfrac></mfenced><mi>E</mi><mo>÷</mo><mfrac><mfenced><mrow><mi>L</mi><mo>-</mo><mi>x</mi></mrow></mfenced><mi>L</mi></mfrac><mi>E</mi><mo>=</mo><mfrac><mi>x</mi><mrow><mi>L</mi><mo>-</mo><mi>x</mi></mrow></mfrac></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 25 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>In the potentiometer circuit below, the moveable contact is placed at N on the bare wire XY, such that the galvanometer shows zero deflection.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images603png.png' alt='cie-ial-images603png' /></div><p>The resistance of the variable resistor is now increased.</p><p>What is the effect of this increase on the potential difference across the wire XY and on the position of the moveable contact for zero deflection ? </p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>Potential difference across XY</strong></p></td><td><p style='text-align: center;'><strong>Position of moveable contact</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>increases</p><p style='text-align: center;'>increases</p><p style='text-align: center;'>decreases</p><p style='text-align: center;'>decreases</p></td><td><p style='text-align: center;'>nearer to X</p><p style='text-align: center;'>nearer to Y</p><p style='text-align: center;'>nearer to X</p><p style='text-align: center;'>nearer to Y</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>D </strong></em><em>because:</em></p><ul><li><p>Let&#x27;s say the resistance of the variable resistor = <em>R</em></p><ul><li><p>e. m .f of driver cell = p .d. across variable resistor + p .d. across wire XY</p></li></ul></li><li><p>As the resistance <em>R</em> of the variable resistor is increased, the p. d. across it also increases <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfenced><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow></mfenced><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>  and hence, the p. d. across the wire XY decreases</p></li><li><p>For the galvanometer to show zero deflection, the potential difference across it should be zero, i.e. no current flowing through it</p><ul><li><p>This means the potential at one side of the galvanometer should be equal to the potential on the other side, making the potential difference zero</p></li></ul></li><li><p>Initially, before the resistance of the variable resistor is increased, the galvanometer showed zero deflection</p><ul><li><p>So, the potential difference across it was zero and the p. d. across XN was equal to the e .m .f. of the cell</p></li></ul></li><li><p>But an increase in the resistance of the variable resistor causes the p. d. across XY to decrease</p><ul><li><p>So, to cause the galvanometer to show zero deflection again, the p .d. across wire XN should be increased so that it becomes equal to the e .m .f of the cell again</p></li></ul></li><li><p>Using the equations  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mrow><mi>ρ</mi><mi>L</mi></mrow><mi>A</mi></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>, we can see that <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo> </mo><mi>α</mi><mo> </mo><mi>L</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p><ul><li><p>Therefore, to increase the p. d. the length must be increased</p></li><li><p>This is done by moving the contact closer to end Y</p></li></ul></li></ul><p><strong>A </strong>&amp;<strong> B </strong>are incorrect because when the resistance <em>R</em> increases, the p. d. across it also increases and hence, the p. d. across the wire XY decreases</p><p><strong>C </strong>is incorrect because to cause the galvanometer to show zero deflection again, the moveable contact must move nearer to Y since  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo> </mo><mi>α</mi><mo> </mo><mi>L</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 26 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The graph below shows how resistance <em>R</em> of a thermistor varies during part of a day. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images604png.png' alt='cie-ial-images604png' /></div><p>The thermistor is connected to the potential divider circuit as shown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images605png.png' alt='cie-ial-images605png' /></div><p>At 0730, an output of 6.0 V is required.</p><p>What value of the variable resistor should be set at this time?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>1.5 kΩ</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>3.0 kΩ</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>4.5 kΩ</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>6.0 kΩ</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>Section A is made up of a 1.5 kΩ fixed resistor and the thermistor</p></li><li><p>Section B is made up of the variable resistor and another 1.5 kΩ fixed resistor</p><ul><li><p>If the output is to be set at 6.0 V, then across the section A, the voltage drop needs to be 3.0 V</p></li></ul></li><li><p>From the graph, at 0730, the resistance of the thermistor = 1.5 kΩ</p></li><li><p>From Ohm&#x27;s Law: <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>The current flowing through section A:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>V</mi><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mo>.</mo><mn>0</mn><mo> </mo><mi>V</mi></mrow><mfenced><mrow><mn>1500</mn><mo>+</mo><mn>1500</mn></mrow></mfenced></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>001</mn><mo> </mo><mi>A</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Similarly, the same current flows through section B:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>.</mo><mn>0</mn><mo> </mo><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi><mo>=</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>001</mn></mrow></mfenced><mfenced><mrow><msub><mi>R</mi><mi>v</mi></msub><mo>+</mo><mn>1500</mn></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mn>001</mn><mo> </mo><msub><mi>R</mi><mi>V</mi></msub><mo>=</mo><mn>6</mn><mo>.</mo><mn>0</mn><mo>-</mo><mfenced><mrow><mn>1500</mn><mo>×</mo><mn>0</mn><mo>.</mo><mn>001</mn></mrow></mfenced><mo>=</mo><mn>4</mn><mo>.</mo><mn>5</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>V</mi></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>.</mo><mn>5</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>001</mn></mrow></mfrac><mo>=</mo><mn>4500</mn><mo> </mo><mi>Ω</mi><mo>=</mo><mn>4</mn><mo>.</mo><mn>5</mn><mo> </mo><mi>k</mi><mi>Ω</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, at 0730 the variable resistor should be set to 4.5 kΩ</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 27 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The contact is connected one at a time to points X, Y and Z to test the circuit. The lamps do not light up because lamp L is blown.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images606png.png' alt='cie-ial-images606png' /></div><p>Which of the following are the readings of the voltmeter when the contact is connected to each of the points?<strong> </strong></p><table class='data-table'><tr><td><p style='text-align: center;'><strong> </strong></p></td><td><p style='text-align: center;'><strong>X</strong></p></td><td><p style='text-align: center;'><strong>Y</strong></p></td><td><p style='text-align: center;'><strong>Z</strong></p></td></tr><tr><td><p style='text-align: center;'><strong>A</strong></p><p style='text-align: center;'><strong>B</strong></p><p style='text-align: center;'><strong>C</strong></p><p style='text-align: center;'><strong>D</strong></p></td><td><p style='text-align: center;'>12 V</p><p style='text-align: center;'>8 V</p><p style='text-align: center;'>12 V</p><p style='text-align: center;'>8 V</p></td><td><p style='text-align: center;'>8 V</p><p style='text-align: center;'>8 V</p><p style='text-align: center;'>12 V</p><p style='text-align: center;'>12 V</p></td><td><p style='text-align: center;'>4 V</p><p style='text-align: center;'>0 V</p><p style='text-align: center;'>0 V</p><p style='text-align: center;'>4 V</p></td></tr></table>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>For point X, the voltmeter is merely measuring the voltage between the terminals of the battery as there are no electrical components in between</p><ul><li><p>Hence, the reading is that of the voltage of the battery, which is 12 V</p></li></ul></li><li><p>For point Y, there is a lamp in between the ends of the voltmeter</p></li><li><p>However, due to the broken filament of lamp L, no current flows in the circuit</p></li><li><p>According to <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> , the voltage across the lamp between X and Y will be zero</p><ul><li><p>Hence, the voltage measured by the voltmeter will still be that between the terminals of the battery, which is 12 V</p></li></ul></li><li><p>Finally, placing the contact at point Z has the same effect as placing it at the negative terminal, so, the voltmeter will read the voltage between the negative terminal and itself</p><ul><li><p>Hence, the reading registered will be 0 V</p></li></ul></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 28 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>A potential divider has a constant supply of 6.0 V, as shown in the diagrams.</p><p>Which circuit will provide a potential difference between X and Y that can be varied between zero and 3.0 V ?</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images607png.png' alt='cie-ial-images607png' /></div>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">B</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">C</span>
+                <span class="option-text"></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p><em>The correct answer is </em><em><strong>B </strong></em><em>because:</em></p><ul><li><p>Since the two resistors are in series, the total e.m.f in the circuit is divided between them</p></li><li><p>The variable resistor controls the range of the output voltage, so X and Y must be placed across the variable resistor</p></li><li><p>Consider option B:</p><ul><li><p>When the resistance of the top resistor is maximized to R, the potential difference between X and Y = 3.0 V</p></li><li><p>When the resistance of the top resistor is minimized to 0, the potential difference between X and Y = 0 V</p></li></ul></li><li><p>Therefore, option <strong>B</strong> is correct</p></li></ul><p><strong>A </strong>is incorrect because the range of output voltage of this circuit would be 3 - 6 V as it includes both resistors</p><p><strong>C </strong>&amp;<strong> D </strong>are incorrect because the variable resistor controls the range of the output voltage, so X and Y must be placed across the variable resistor</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 29 <span class="difficulty-badge diff-hard">hard</span></span>
+                <span class="question-marks">[1 mark]</span>
+            </div>
+            <div class="question-body">
+                <p>The resistance <em>R</em> of an unknown resistor is compared with a fixed 100 Ω resistor using the circuit as shown in the diagram.</p><p>The balance length <em>l</em> is 30.0 cm and 48.3 cm when P is connected to Q and R, respectively. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/cie-ial-images608png.png' alt='cie-ial-images608png' /></div><p>The length of the wire XY is 100 cm and has a resistance of 40 Ω. The two cells E<sub>1</sub> and E<sub>2,</sub> have negligible internal resistances.</p><p>What is the value of resistance <em>R </em>?</p>
+                <div class="mcq-options">
+                    
+            <div class="mcq-option">
+                <span class="option-letter">A</span>
+                <span class="option-text"><p>38 Ω</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">B</span>
+                <span class="option-text"><p>47 Ω</p></span>
+            </div>
+            
+            <div class="mcq-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text"><p>61 Ω</p></span>
+            </div>
+            
+            <div class="mcq-option">
+                <span class="option-letter">D</span>
+                <span class="option-text"><p>161 Ω</p></span>
+            </div>
+            
+                </div>
+                
+            <div class="solution-box">
+                <div class="sol-title">Mark Scheme & Explanation:</div>
+                <p> <em>The correct answer is </em><em><strong>C</strong></em><em> because:</em></p><ul><li><p>When P is connected to Q, the potential difference across the balance length is equal to the potential difference across the 100 Ω resistor</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>l</mi><mrow><mi>X</mi><mi>Y</mi></mrow></mfrac><mo>×</mo><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>100</mn><mrow><mn>100</mn><mo>+</mo><mi>R</mi></mrow></mfrac><mo>×</mo><msub><mi>E</mi><mn>2</mn></msub><mspace linebreak="newline"/></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>              <strong>(1)</strong></p></li></ul></li><li><p>When P is connected to R, the potential difference across the balance length is equal to the potential difference across the 100 Ω resistor and the unknown resistor (which is the same as the e. m .f. as cell E)</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>l</mi><mo>'</mo></mrow><mrow><mi>X</mi><mi>Y</mi></mrow></mfrac><mo>×</mo><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><msub><mi>E</mi><mn>2</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>                                           <strong>(2)</strong></p></li></ul></li><li><p>Substitute equation <strong>(2)</strong> into <strong>(1)</strong></p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathsize="16px"><mfrac><mi>l</mi><mrow><mi>X</mi><mi>Y</mi></mrow></mfrac><mo>×</mo><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>100</mn><mrow><mn>100</mn><mo>+</mo><mi>R</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mi>l</mi><mo>'</mo></mrow><mrow><mi>X</mi><mi>Y</mi></mrow></mfrac><mo>×</mo><msub><mi>E</mi><mn>1</mn></msub></mstyle><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>30</mn><mo>.</mo><mn>0</mn></mrow><mrow><mi>X</mi><mi>Y</mi></mrow></mfrac><mo>×</mo><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>100</mn><mrow><mn>100</mn><mo>+</mo><mi>R</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mn>48</mn><mo>.</mo><mn>3</mn></mrow><mrow><mi>X</mi><mi>Y</mi></mrow></mfrac><mo>×</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>The E<sub>1</sub> and XY terms cancel out, so we have:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>.</mo><mn>0</mn><mo>=</mo><mfrac><mn>100</mn><mrow><mn>100</mn><mo>+</mo><mi>R</mi></mrow></mfrac><mo>×</mo><mn>48</mn><mo>.</mo><mn>3</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mo>+</mo><mi>R</mi><mo>=</mo><mfrac><mrow><mn>100</mn><mo>×</mo><mn>48</mn><mo>.</mo><mn>3</mn></mrow><mrow><mn>30</mn><mo>.</mo><mn>0</mn></mrow></mfrac><mo>=</mo><mn>161</mn></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>161</mn><mo>-</mo><mn>100</mn><mo>=</mo><mn>61</mn><mo> </mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul></li><li><p>Therefore, the resistance <em>R</em> of the unknown resistor is 61 Ω</p></li></ul>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7.2 Transverse & Longitudinal Waves - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">7.2 Transverse & Longitudinal Waves</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 7. Waves</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 5 Questions (44 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[7 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Define a transverse wave.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>A wave is transverse if...</p><ul><li><p>The oscillations are perpendicular / at right angles to the direction of wave motion / energy transfer; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>two</strong> properties of a longitudinal wave.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The properties of a longitudinal wave are:</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>The oscillations are parallel to the direction of wave motion / energy transfer;<em> [1 mark]</em></p></li><li><p>Comprises of areas of compressions and rarefactions; <em>[1 mark]</em></p></li><li><p>Requires a medium to propagate; <em>[1 mark]</em></p></li><li><p>Cannot be polarised; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>two </strong>examples of transverse waves.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Examples of transverse waves are:</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>Water waves; <em>[1 mark]</em></p></li><li><p>Secondary waves / S-waves; <em>[1 mark]</em></p></li><li><p>Vibrations on a (guitar) string; <em>[1 mark]</em></p></li><li><p>Electromagnetic waves / any named EM wave (gamma, X-ray, ultraviolet, visible light, infrared, microwave, radio); <em>[1 mark] </em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>two</strong> examples of longitudinal waves.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Examples of longitudinal waves are:</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>Sound waves;<em> [1 mark]</em></p></li><li><p>Ultrasound; <em>[1 mark]</em></p></li><li><p>Primary waves / P-waves; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows graphs of waves X and Y. The scales of the graphs are identical.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/4-3-q2d-question-stem-sl-sq-easy-phy.png' alt='4-3-q2d-question-stem-sl-sq-easy-phy' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Describe <strong>two </strong>similarities between the properties of waves X and Y.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The similarities between waves X and Y are:</p><ul><li><p>Both waves have the <u>same period</u> (10 squares); <em>[1 mark]</em></p></li><li><p>Both waves have the <u>same frequency</u> (3 complete waves in the time shown); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Wavelength would not be an acceptable answer here, because the graph shows time on the x-axis not distance, therefore the distance between each trough or crest is the period.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State <strong>one </strong>difference between waves X and Y.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The difference between waves X and Y is:</p><ul><li><p>The waves have different amplitudes <strong>OR</strong> wave X has a greater amplitude than wave Y;<em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Distinguish between transverse and longitudinal waves.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Transverse waves are:</p><ul><li><p>Vibrations / oscillations that are perpendicular / normal to the direction of energy transfer; <em>[1 mark]</em></p></li></ul><p>Longitudinal waves are:</p><ul><li><p>Vibrations / oscillations that are parallel to the direction of energy transfer; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain how it could be determined whether waves X and Y are transverse or longitudinal.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The wave type can be determined by:</p><p><strong>EITHER</strong></p><ul><li><p>Determining the motion of the particles relative to the direction of propagation / energy transfer; <em>[1 mark]</em></p></li></ul><p><strong>OR</strong></p><ul><li><p>Polarisation since only transverse waves can be polarised; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[10 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain what is meant by a progressive wave.    </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Explain what is meant by a progressive wave:</p><ul><li><p>A transfer of energy; <em>[1 mark]</em></p></li><li><p>With no transfer of matter; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>An elastic cord is fixed at one end and attached to a mechanical oscillator at the other end. Fig. 1.1 shows, at time <em>t</em> = 0, the shape of a section of the cord as the wave travels from left to right. W, X, Y and Z are four marked points on the cord.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/7-1-3b-m-waves-graph-1.png' alt='7-1-3b-m-waves-graph-1' /></div><p>The mechanical oscillator has a steady frequency of 5.0 Hz. The wave has a wavelength of 0.60 m and an amplitude of 0.030 m.</p><p>On the axes of Fig. 1.2 sketch the graph of the displacement of point X over the period <em>t</em> = 0 to 0.40 s. Add suitable scales to the axes.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/7-1-3b-m-waves-graph-2.png' alt='7-1-3b-m-waves-graph-2' /></div>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>A correctly completed graph of the oscillation looks like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/screenshot-2023-02-27-at-12-24-48.png' alt='screenshot-2023-02-27-at-12-24-48' /></div><ul><li><p>Shape is sinusoidal with exactly two wavelengths shown; <em>[1 mark]</em></p></li><li><p>Amplitude at ± 0.03; <em>[1 mark]</em></p></li><li><p>Period = 0.2 s <strong>AND </strong>x-axis labelled 0.1, 0.2, 0.3 and 0.4; <em>[1 mark]</em></p></li><li><p>Curve starts at (0, 0.03); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>For time <em>t</em> = 0, state which of the points W, X, Y and Z   </p><p>i) is instantaneously at rest</p><p style='text-align: right;'>[1]</p><p>ii) has the greatest speed</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>For time <em>t</em> = 0, state which of the points W, X, Y and Z:</p><p>i) Is instantaneously at rest:</p><ul><li><p>X;<em> [1 mark]</em></p></li></ul><p>ii) Has the greatest speed:</p><ul><li><p>W; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The speed of point W on the cord at <em>t</em> = 0 is 0.94 m s<sup>–1</sup>. With the cord at its original tension, the frequency of oscillation is now doubled to 10 Hz.</p><p>The amplitude is kept at 0.030 m. Calculate the new speed of point W at <em>t</em> = 0. Explain your reasoning.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the new speed of point W at <em>t</em> = 0. Explain your reasoning:</p><ul><li><p>Frequency has doubled so point W has got to move <u>double the distance in the same time</u> <strong>OR </strong>move the <u>same distance in half the time</u>; <em>[1 mark]</em></p></li><li><p>Therefore speed doubles OR new speed = 1.9 m s<sup>–1 </sup><em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[12 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain briefly how transmission of energy by a longitudinal wave differs from transmission of energy by a transverse wave. Give <strong>one</strong> example of a transverse wave.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Explain:</p><ul><li><p>The disturbances/oscillations/vibrations are parallel for longitudinal and perpendicular for transverse <em>[1 mark]</em></p></li><li><p>To the direction of transmission of energy/wave/propagation/direction <em>[1 mark]</em></p></li></ul><p><em>Do not accept ‘movement’ of the wave</em> </p><p>Example:</p><p><em>Any </em><em><strong>one</strong></em><em> from:</em></p><ul><li><p>Electromagnetic waves e.g. microwaves, radio waves, UV <em>[1 mark]</em></p></li><li><p>Waves on a string <em>[1 mark]</em></p></li><li><p>Seismic S-waves <em>[1 mark]</em></p></li><li><p>Ripples on the surface of water <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>With the aid of a clearly labelled diagram explain how a sound wave in air transmits energy away from its source.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q3b-answer-medium-aqa-a-level-physics.png' alt='3-1-s-q--q3b-answer-medium-aqa-a-level-physics' /></div><ul><li><p>Clear diagram of particle oscillations / pressure variations (compressions and rarefactions)</p></li></ul><p><strong>AND</strong></p><ul><li><p>Includes label indicating direction of propagation;<em> </em><em>[1 mark]</em> </p></li></ul><p>Explain:</p><p><em>Any </em><em><strong>two</strong></em><em> from:</em></p><ul><li><p>The sound source is a vibrating source (e.g. speaker); <em>[1 mark]</em></p></li><li><p>Energy is transferred to (air) molecules; <em>[1 mark]</em></p></li><li><p>Energy is transferred by collisions between molecules; <em>[1 mark]</em></p></li><li><p>Oscillations of (air) molecule neighbours are slightly out of phase; <em>[1 mark]</em></p></li><li><p>Oscillations / waves are longitudinal / energy transfer is parallel to vibrations; <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Short pulses of sound are reflected from a wall 30 m from the sound source. The reflected pulses return to the source after 0.18 s.</p><p>Calculate the speed of sound.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The total distance is equal to the distance to and from the wall</p><ul><li><p>Distance travelled = 2 × 30 = 60 m <em>[1 mark]</em> </p></li></ul><p>Calculating the speed of sound:</p><ul><li><p>Speed = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>distance</mi><mi>time</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Speed =<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>60</mn><mrow><mn>0</mn><mo>.</mo><mn>18</mn></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Speed = 333.3 = 330 m s<sup>–1</sup> (2 s .f.) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig.1.1 represents the sound wave from part (c).</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/05/3-1-s-q--q3d-answer-medium-aqa-a-level-physics.png' alt='3-1-s-q--q3d-answer-medium-aqa-a-level-physics' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Calculate the frequency of the sound wave.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>To calculate the frequency of the sound wave:</p><p>List the known quantities:</p><ul><li><p>Speed of sound, <em>v</em> = 333<em> </em>m s<sup>–1</sup> (from part (c))</p></li></ul><p>Determine the wavelength:</p><ul><li><p>From Fig. 1.1: 140 cm = 2<span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#955;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&#955;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>= 70 cm <em>[1 mark]</em> </p></li></ul><p>Calculate the frequency:</p><ul><li><p><em>f</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>v</mi><mi>&#955;</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>f</em> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>333</mn><mrow><mn>0</mn><mo>.</mo><mn>70</mn></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em>[1 mark]</em></p></li><li><p><em>f </em>= 476 =<em> </em>480 Hz (2 s. f.) <em>[1 mark]</em><em><strong> </strong></em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A large water tank is set up so that a wave can be generated at each end of the tank. The two waves, A and B, travel towards each other at the same speed.</p><p>Fig. 1.1 shows the variation of displacement of the water surface with distance travelled at a particular instant.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q1a_wave-characteristics_ib-sl-physics-sq-medium.png' alt='q1a_wave-characteristics_ib-sl-physics-sq-medium' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>Deduce how many times greater the amplitude of B is to the amplitude of A.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Determine the amplitudes from the graphs:</p><ul><li><p>In each case reading maximum displacement from the <em>y</em>-axis of the graph:</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma1a_wave-characteristics_ib-sl-physics-sq-medium.png' alt='ma1a_wave-characteristics_ib-sl-physics-sq-medium' /></div><ul><li><p>Wave A = 4 cm <strong>AND </strong>Wave B = 6 cm; <em>[1 mark]</em></p></li></ul><p>Calculate how much B is larger than A:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>B</mi><mi>A</mi></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span>= <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>6</mn><mn>4</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>3</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li><li><p>B is <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>3</mn><mn>2</mn></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span> <strong>OR</strong> 1.5 times larger than A; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Wave A has a frequency of 8.0 Hz.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q1a_wave-characteristics_ib-sl-physics-sq-medium.png' alt='q1a_wave-characteristics_ib-sl-physics-sq-medium' /></div><p style='text-align: center;'><strong>Fig. 1.1 </strong></p><p>(i) Calculate the velocity of wave A.</p><p style='text-align: right;'>[2]</p><p>(ii) Determine the frequency of wave B.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) The velocity of wave A:</p><p>List the known quantities:</p><ul><li><p>Frequency A, <em>f</em><sub><em>A</em></sub> = 8.0 Hz</p></li></ul><p>Determine wavelength of A from the graph:</p><ul><li><p>Wavelength A, <em>λ</em><sub><em>A</em></sub> = 4.0 cm <strong>OR</strong><em> </em>= 0.04 m <em>[1 mark]</em></p><ul><li><p>You can read wavelength it from the x-axis, at the point where one wave completes</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma1b-1_wave-characteristics_ib-sl-physics-sq-medium.png' alt='ma1b-1_wave-characteristics_ib-sl-physics-sq-medium' /></div></li></ul></li></ul><p>Calculate the speed of the wave:</p><ul><li><p>velocity of wave A:</p><ul><li><p><em>v = fλ</em></p></li><li><p><em>v</em><sub><em>A</em></sub><em> = f</em><sub><em>A</em></sub><em>λ</em><sub><em>A</em></sub>= 4.0 × 8.0</p></li><li><p><em>v  </em>= 32 cm s<sup>–1</sup> <strong>OR</strong><em> </em>= 0.32 m s<sup>–1</sup> <em>[1 mark]</em></p></li></ul></li></ul><p>(ii) Determine the frequency of wave B:</p><p>List the known quantities:</p><ul><li><p>Velocity of wave A, <em>v</em><sub>A</sub>= 32 cm s<sup>–1</sup></p></li></ul><p>Determine wavelength of B from the graph:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma1b-2_wave-characteristics_ib-sl-physics-sq-medium.png' alt='ma1b-2_wave-characteristics_ib-sl-physics-sq-medium' /></div><ul><li><p>Wavelength B, <em>λ</em><sub><em>B</em></sub> = 1.8 cm <strong>OR</strong><em> </em>= 0.018 m <em>[1 mark]</em></p></li></ul><p>Determine velocity of wave B:</p><ul><li><p>Velocity of wave B = velocity wave A, <em>v</em><sub><em>B</em></sub><em> </em>= 32 cm s<sup>–1</sup> (because they are travelling at the same speed)</p></li></ul><p>Calculate the frequency of the wave:</p><ul><li><p><em>f</em><sub><em>B</em></sub><em> = </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msub><mi>v</mi><mi>B</mi></msub><msub><mi>&#955;</mi><mi>B</mi></msub></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span><em>= </em><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>32</mn><mrow><mn>1</mn><mo>.</mo><mn>8</mn></mrow></mfrac><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18"}</annotation></semantics></math></span></p></li><li><p><em>f</em><sub><em>B</em></sub><em> =</em> 18 Hz <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>In a question like this, where measurements are given in non-SI units, you must state your units in your final answer. It is reasonable to calculate for these waves in either centimetres or metres, so be careful to show which you worked in and clearly show in your answer which is applicable. Notice that in the final calculation for frequency, as long as you do not mix up your units, i.e.: use all centimetres or all metres, then the value for frequency will be correct as the unit of length has cancelled out as this is a ratio.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Explain how the stationary wave is generated in the tank.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The stationary wave is generated in the tank by:</p><ul><li><p>Two (water) waves (in the tank) move in opposite directions; <em>[1 mark]</em></p></li><li><p>As they are reflected from the fixed ends of the tank; <em>[1 mark]</em></p></li><li><p>The two waves interfere / superpose to produce a standing / stationary wave; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The key words here are the ‘interfere’ or ‘superpose’ for how the waves ‘meet’ to create the stationary wave. It is better to use these terms instead of just ‘meet’ or ‘overlap’ as they are more relevant to this scenario and not as vague. This makes it much easier for the examiner to award you the mark!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

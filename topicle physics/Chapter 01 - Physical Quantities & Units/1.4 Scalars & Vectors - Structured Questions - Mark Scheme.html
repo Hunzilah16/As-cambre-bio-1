@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1.4 Scalars & Vectors - Structured Questions Mark Scheme & Model Answers</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 18mm 15mm 20mm 15mm;
+    @top-right {
+        content: "CIE AS Physics (9702)";
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        color: #888;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    border-bottom: 2.5px solid #0d47a1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.header-banner .badge {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.header-banner .badge.ms {
+    background-color: #1b5e20;
+}
+
+.header-banner h1 {
+    font-size: 15pt;
+    color: #0d47a1;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.header-banner h1.ms {
+    color: #1b5e20;
+}
+
+.header-banner .meta-info {
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 6px 10px;
+    border-left: 4px solid #0d47a1;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 10.5pt;
+}
+
+.question-header.ms {
+    border-left-color: #1b5e20;
+    background-color: #f0fdf4;
+}
+
+.question-marks {
+    font-weight: 600;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.difficulty-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.diff-easy { background: #e0f2fe; color: #0369a1; }
+.diff-medium { background: #fef3c7; color: #b45309; }
+.diff-hard { background: #fee2e2; color: #b91c1c; }
+
+.mcq-options {
+    margin: 12px 0 10px 15px;
+}
+
+.mcq-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.option-letter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.mcq-option.correct .option-letter {
+    background: #22c55e;
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+    padding-top: 2px;
+}
+
+.figure-wrap {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.figure-wrap img {
+    max-width: 90%;
+    max-height: 280px;
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 4px;
+    background: #fff;
+}
+
+.figure-wrap .caption {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.part-block {
+    margin: 12px 0 16px 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.part-header {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-space {
+    border-bottom: 1px dotted #94a3b8;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.solution-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+}
+
+.solution-box .sol-title {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 6px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+}
+
+.final-answer {
+    font-weight: bold;
+    color: #15803d;
+}
+
+.exam-mark {
+    font-weight: bold;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 8.5pt;
+}
+
+.commentary {
+    font-style: italic;
+    color: #64748b;
+}
+
+.math-eq math {
+    font-size: 1.1em;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 9pt;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+</style>
+</head>
+<body>
+    <div class="header-banner">
+        <span class="badge ms">CIE AS Physics (9702) &bull; Mark Scheme & Model Answers</span>
+        <h1 class="ms">1.4 Scalars & Vectors</h1>
+        <div class="meta-info">
+            <span><strong>Syllabus Section:</strong> 1. Physical Quantities & Units</span>
+            <span><strong>Paper Type:</strong> Structured Questions (Paper 2)</span>
+            <span><strong>Total:</strong> 6 Questions (60 Marks)</span>
+        </div>
+    </div>
+    <div class="questions-container">
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 1 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[16 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Distinguish between scalar and vector quantities.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The difference between scalars and vectors is:</p><ul><li><p>Scalar quantities have magnitude / size <u>only</u>; <em>[1 mark] </em></p></li><li><p>Vector quantities have <u>both</u> magnitude / size and direction; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[6 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) Energy is a scalar quantity. State <strong>three</strong> other scalar quantities.</p><p style='text-align: right;'>[3]</p><p>(ii) Force is a vector quantity. State <strong>three</strong> other vector quantities.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (6 marks):</div>
+                    <p>(i) Examples of scalar quantities:</p><p><em>Any </em><em><strong>three</strong></em><em> from:</em></p><ul><li><p>Distance; <em>[1 mark]</em></p></li><li><p>Speed; <em>[1 mark]</em></p></li><li><p>Time; <em>[1 mark]</em></p></li><li><p>Mass; <em>[1 mark]</em></p></li><li><p>Power; <em>[1 mark]</em></p></li><li><p>Temperature; <em>[1 mark]</em></p></li><li><p>Electrical quantities e.g. resistance / current / potential difference; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Examples of vector quantities:</p><p><em>Any </em><em><strong>three</strong></em><em> from:</em></p><ul><li><p>Displacement; <em>[1 mark]</em></p></li><li><p>Velocity; <em>[1 mark]</em></p></li><li><p>Acceleration; <em>[1 mark]</em></p></li><li><p>Momentum; <em>[1 mark]</em></p></li><li><p>Moments / torque; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 6 marks]</strong></em></p><p><em>In part (i), answers such as &#x27;kinetic energy&#x27; or &#x27;gravitational potential energy&#x27; would not score a mark as these are </em><em><strong>types</strong></em><em> of energy</em></p><p><em>In part (ii), answers such as &#x27;weight&#x27; or &#x27;tension&#x27; would not score a mark as these are </em><em><strong>types</strong></em><em> of forces</em></p><p><em>You might think that current and potential difference </em><em><strong>could</strong></em><em> be vectors because they can have both magnitude and direction. However, they </em><em><strong>cannot</strong></em><em> be added together or resolved </em><em><strong>as vectors </strong></em><em>in the same way that force and velocity can, so they are classed as scalar quantities</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a block at rest on a slope.</p><p>Three forces, weight <em>W</em>, normal contact force <em>N</em> and the frictional force <em>F</em> act on the block. The forces are in equilibrium.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-1-1c-e-1-1-e-box-slope-vector-combine-cie-ial-sq.png' alt='1-1-1c-e-1-1-e-box-slope-vector-combine-cie-ial-sq' /></div><p>(i) Explain what is meant by &#x27;the forces are in equilibrium&#x27;.</p><p style='text-align: right;'>[2]</p><p>(ii) Complete the vector triangle in Fig. 1.2. Label the missing vector and the angle between <em>W</em> and <em>N</em>.  </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-1c-e-1-1-e-box-slope-vector-triangle-cie-ial-sq.png' alt='1-1-1c-e-1-1-e-box-slope-vector-triangle-cie-ial-sq' /></div><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) The &#x27;forces are in equilibrium&#x27; means:</p><p><em>Any</em><em><strong> two</strong></em><em> from:</em></p><ul><li><p>There are no resultant / net forces (acting on the block); <em>[1 mark]</em></p></li><li><p>All the forces are balanced (so the block doesn&#x27;t move); <em>[1 mark]</em></p></li><li><p>The forces form a closed vector triangle; <em>[1 mark]</em></p><p><em> </em></p></li></ul><p>(ii) The completed vector triangle is as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-e-box-slope-vector-triangle-cie-ial-sq-ma.png' alt='1-1-e-box-slope-vector-triangle-cie-ial-sq-ma' /></div><ul><li><p>Frictional force <em>F</em> correctly drawn and labelled; <em>[1 mark]</em></p></li><li><p>Angle labelled 30°; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>When drawing forces in </em><em><strong>equilibrium</strong></em><em>, the arrows should always form a complete triangle with arrows matching head-to-tail</em></p><p><em>The geometry of triangles and angle addition rules shown below outline why the angle between </em><em><em>N</em></em><em> and </em><em><em>W</em></em><em> is the same as the angle of inclination of the slope</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-e-box-slope-vector-combine-cie-ial-sq-ma.png' alt='1-1-e-box-slope-vector-combine-cie-ial-sq-ma' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The frictional force has a magnitude of 60 N.</p><p>By resolving the vector, calculate the component of the force that acts </p><p>(i) horizontally</p><p style='text-align: right;'>[2]</p><p>(ii) vertically.</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities: </p><ul><li><p>Frictional force, <em>F</em> = 60 N</p></li><li><p>Angle between <em>F</em> and the horizontal = 30°</p></li></ul><p>(i) Resolving the vector horizontally:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-e-resolving-vector-cie-ial-sq-ma1.png' alt='1-1-e-resolving-vector-cie-ial-sq-ma1' /></div><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>cos</mi><mo>&#160;</mo><mn>30</mn><mo>&#176;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>adjacent</mi><mi>hypotenuse</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>F</mi><mfenced><mo>&#8594;</mo></mfenced></mrow><mn>60</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mfenced><mo>&#8594;</mo></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>60</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mn>30</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mfenced><mo>&#8594;</mo></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 51.96 = 52 N <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Resolving the vector vertically:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-e-resolving-vector-cie-ial-sq-ma2.png' alt='1-1-e-resolving-vector-cie-ial-sq-ma2' /></div><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>&#160;</mo><mn>30</mn><mo>&#176;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mi>opposite</mi><mi>hypotenuse</mi></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>F</mi><mfenced><mo>&#8593;</mo></mfenced></mrow><mn>60</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mfenced><mo>&#8593;</mo></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>60</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mn>30</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mfenced><mo>&#8593;</mo></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 30 N <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>Drawing the triangles is essential to answering this question correctly.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-1-resolving-vectors-triangle.png' alt='1-1-resolving-vectors-triangle' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 2 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the definition of a vector quantity. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>A vector is a quantity that has: </p><ul><li><p>A magnitude/size; <em>[1 mark]</em></p></li><li><p>And a direction; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Don&#x27;t forget that vector quantities carry </em><em><strong>two </strong></em><em>pieces of information: a </em><em><strong>magnitude</strong></em><em> as well as a </em><em><strong>direction</strong></em><em>! This is not always obvious, e.g. 4 N is a force, therefore is a vector quantity. Its magnitude of &#x27;4 N&#x27; is clear, but what about its direction? Remember </em><em><strong>direction </strong></em><em>is associated with a positive sign + or a negative sign –. Strictly speaking, the example force given should be written as +4 N, which implies a force of –4 N would be directed in the </em><em><strong>opposite direction. </strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A list of scalar quantities and their SI unit is given.</p><table class='data-table'><tr><td><p style='text-align: center;'><strong>Quantity</strong></p></td><td><p style='text-align: center;'><strong>SI unit</strong></p></td></tr><tr><td><p style='text-align: center;'>Temperature</p></td><td><p style='text-align: center;'> </p></td></tr><tr><td><p style='text-align: center;'> </p></td><td><p style='text-align: center;'>kg m s<sup>-1</sup></p></td></tr><tr><td><p style='text-align: center;'>Mass</p></td><td><p style='text-align: center;'> </p></td></tr></table><p>Complete the information missing from the table. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>Complete the missing information: </p><ul><li><p><em><strong>One</strong></em><em> mark for each correct answer</em></p></li></ul><table class='data-table'><tr><td><p style='text-align: center;'><strong>Quantity</strong></p></td><td><p style='text-align: center;'><strong>SI unit</strong></p></td></tr><tr><td><p style='text-align: center;'>Temperature</p></td><td><p style='text-align: center;'><em><strong>K</strong></em></p></td></tr><tr><td><p style='text-align: center;'><em><strong>Momentum</strong></em></p></td><td><p style='text-align: center;'>kg m s<sup>-1</sup></p></td></tr><tr><td><p style='text-align: center;'>Mass</p></td><td><p style='text-align: center;'><em><strong>kg</strong></em></p></td></tr></table><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>You must know the difference between the SI (standard international) unit for a quantity and other equivalent units. For instance, mass can be measured in grams, g. But its standard international unit is the kilogram, kg. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A person cycles along a path every day, from their front garden at X to a bench by the nearby lake at Y, as shown in Fig. 1.1.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/1-3-q1c-easy-sq-sl-phy.png' alt='1-3-q1c-easy-sq-sl-phy' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>(i) Sketch a line on the image that would indicate the distance travelled by the person between X and Y. Label this distance <em>d</em>.  </p><p style='text-align: right;'>[1]</p><p>(ii) State whether the distance travelled <em>d</em> by the person is greater than, equal to, or less than their displacement between X and Y.</p><p style='text-align: right;'>[1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) Draw and label a line to show the distance travelled, <em>d</em>:</p><p>A sketch on the image that would score 1 mark should look like:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/06/sl-sq-1-3-easy-q1c-ma.jpeg' alt='sl-sq-1-3-easy-q1c-ma' /></div><ul><li><p>A line joining X and Y <u>along the path as shown</u> <strong>AND </strong>clearly labelled with a lower case <em>d</em>; <em>[1 mark]</em></p></li></ul><p>(ii) State whether the person&#x27;s distance travelled <em>d</em> is greater than, equal to, or less than their displacement between X and Y:</p><p>The distance <em>d</em> is: </p><ul><li><p>Greater (than the displacement between X and Y); <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em> </p><p><em>Be really careful when distinguishing </em><em><strong>distance</strong></em><em> (a scalar) and </em><em><strong>displacement</strong></em><em> (a vector). </em></p><p><em>Though similar, the distance measures the </em><em><strong>length</strong></em><em> of a given path or trajectory, whereas the displacement measures the distance travelled </em><em><strong>in a particular direction</strong></em><em>. Therefore, in this question, the distance the length travelled along the cycle path. The displacement, however, is a </em><em><strong>vector</strong></em><em> line directly from X to Y. This is sketched below: </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/cie-ial-1-4e-q3c.png' alt='cie-ial-1-4e-q3c' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The person continues their journey and walks along the same path back home, from Y to X. The total distance for their complete journey which was logged by their smartwatch is 4.3 km. State and explain what the total displacement for their journey is. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>The total displacement for the person&#x27;s journey is: </p><ul><li><p>Zero / 0 (m) <em>[1 mark]</em></p></li></ul><p>The total displacement is zero because: </p><ul><li><p>The person returns to their starting/initial position / to X <strong>OR</strong> she returns home; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Displacement is a </em><em><strong>vector</strong></em><em> between a starting or initial position and a final position. Hence, for any object that moves an arbitrary distance (i.e., it could be a very short or very long length) </em><em><strong>but then returns to its initial position</strong></em><em>, its displacement is </em><em><strong>zero</strong></em><em>. This is because the vector between the </em><em><strong>initial position</strong></em><em> and </em><em><strong>final position</strong></em><em> would have zero magnitude, because both positions are at the same point! </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 3 <span class="difficulty-badge diff-easy">easy</span></span>
+                <span class="question-marks">[7 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>A small cannon fires a projectile at an angle of 22° to the horizontal with an initial velocity <em>v</em>. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/08/1-3-q4a-easy-sq-sl-phy.png' alt='1-3-q4a-easy-sq-sl-phy' /></div><p>Calculate the vertical component of velocity if its initial velocity has a magnitude of <em>v</em> = 15 m s<sup>–1</sup>. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>List the known quantities: </p><ul><li><p>Initial velocity <em>v</em> = 15 m s<sup>–1</sup></p></li><li><p>Angle to the horizontal <em>θ</em> = 22°</p></li></ul><p>Resolve the velocity into its vertical component:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/cie-ial-1-4e-q3a.png' alt='cie-ial-1-4e-q3a' /></div><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>&#160;</mo><mn>22</mn><mo>&#176;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>e</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>s</mi><mi>e</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><msub><mi>v</mi><mi>v</mi></msub><mn>15</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>v</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>15</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mn>22</mn><mo>&#176;</mo></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>v</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>6</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>You should be able to resolve vectors into their vertical and horizontal components by applying rules of trigonometry. Remember the components are based on sin </em><em><em>θ </em></em><em>or cos </em><em><em>θ </em></em><em>depending on where the angle </em><em><em>θ </em></em><em>is drawn. In this example the angle is given to the horizontal, therefore the vertical component (opposite the angle) uses sin </em><em><em>θ.</em></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[1 mark]</span>
+                </div>
+                <div class="part-body">
+                    <p>State the direction of the horizontal component of velocity. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (1 marks):</div>
+                    <p>The horizontal component of velocity is directed: </p><ul><li><p>To the right; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 1 mark]</strong></em></p><p><em>Don&#x27;t forget, components of vectors </em><em><strong>must </strong></em><em>have a direction as well! They too are vectors; any vector can be resolved into two perpendicular vectors. </em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/cie-ial-1-4e-q4b-commetary.png' alt='cie-ial-1-4e-q4b-commetary' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The cannon fires a second projectile. The initial horizontal component of velocity is 8.4 m s<sup>-1</sup> and the initial vertical component of velocity is 5.8 m s<sup>-1</sup>.</p><p>Calculate the initial velocity, <em>v</em><sub>2</sub>, of the second projectile.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the initial velocity, <em>v</em><sub><em>2</em></sub><em> </em>, of the projectile:</p><p>List the known quantities:</p><ul><li><p>Vertical component of initial velocity, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>v</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Horizontal component of initial velocity, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>h</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>8</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li></ul><p>Calculate the resultant vector using Pythagoras’ Theorem:</p><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><msub><mi>v</mi><mn>2</mn></msub><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><msub><mi>v</mi><mi>v</mi></msub><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msup><msub><mi>v</mi><mi>h</mi></msub><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><msub><mi>v</mi><mn>2</mn></msub><mn>2</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>.</mo><msup><mn>8</mn><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>8</mn><mo>.</mo><msup><mn>4</mn><mn>2</mn></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><mn>5</mn><mo>.</mo><msup><mn>8</mn><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>8</mn><mo>.</mo><msup><mn>4</mn><mn>2</mn></msup></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>10</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><msup><mi mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Two vectors perpendicular to each other will have a resultant that is the hypotenuse of a right-angled triangle. This is an important relationship to recognise in this unit of scalars and vectors and is always how you calculate the magnitude of two perpendicular vectors.</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/KJznMFrs_cie-ial-1-4e-q4c.png' alt='KJznMFrs_cie-ial-1-4e-q4c' /></div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Calculate the angle to the horizontal that the second projectile was fired at.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the angle of the second projectile:</p><p>Draw a diagram of the situation and state the relationship of each side of the triangle to angle <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&#952;</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span>:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/cie-ial-1-4e-q4d.png' alt='cie-ial-1-4e-q4d' /></div><ul><li><p>Identify the correct angle</p></li><li><p>8.4 m s<sup>-1</sup> is the adjacent side of the triangle</p></li><li><p>5.8 ms<sup>-1</sup> is the opposite side of the triangle</p></li><li><p>10.2 m s<sup>-1</sup> is the hypotenuse of the triangle (from part (c))</p></li></ul><p>Identify the trigonometric function and calculate the angle:</p><ul><li><p>Using the opposite and adjacent sides of the triangle:</p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>tan</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>d</mi><mi>j</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>5</mn><mo>.</mo><mn>8</mn></mrow><mrow><mn>8</mn><mo>.</mo><mn>4</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>OR </strong>0.69 <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mrow><mn>0</mn><mo>.</mo><mn>69</mn></mrow></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>34</mn><mo>.</mo><mn>6</mn><mo>&#176;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>35</mn><mo>&#176;</mo><mo>&#160;</mo><mfenced><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant="normal">s</mi><mo>.</mo><mi mathvariant="normal">f</mi><mo>.</mo></mrow></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span><em> [1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>As all three sides of the triangle are known, any of the trigonometric functions can be used to determine the angle:</em></p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2024/01/wl2HraOE_cie-ial-1-4e-q4d-commetary.png' alt='wl2HraOE_cie-ial-1-4e-q4d-commetary' /></div><p><em>In this question, you are best using the opposite and adjacent sides to calculate the angle as these are the quantities given to you in the question, whereas using sin and cos rely on you using the value that you calculated for hypotenuse. </em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 4 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[9 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[7 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The resistive force <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> acting on a spherical raindrop falling vertically in the air can be described by the relationship </p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>k</mi><mi>r</mi><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span></p><p>where <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is the radius of the raindrop, <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is the velocity of the raindrop, and <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> is a constant.</p><p>Fig. 1.1 shows the forces acting on the raindrop as it accelerates downwards.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-1-3c-m-1-1-raindrop-sphere-vector-forces-cie-ial-sq.png' alt='1-1-3c-m-1-1-raindrop-sphere-vector-forces-cie-ial-sq' /></div><p>The raindrop has a radius of 1.5 mm and falls at a velocity of 3.5 m s<sup>−1</sup>. The constant <em>k</em> has a magnitude of 0.0124 in air.</p><p>Other than the resistive force <em>F</em>, two other forces, X and Y, act on the raindrop drop as it falls through the air. </p><p>(i) State the names of forces X and Y.</p><p style='text-align: right;'>[2]</p><p>(ii) Calculate the magnitude of the resistive force <em>F</em> in µN.</p><p style='text-align: right;'>[2]</p><p>(iii) Force X has a value of 137 µN and force Y has a value of 0.18 µN. </p><p>Using Fig. 1.1, determine the magnitude and direction of the resultant force on the raindrop.</p><p style='text-align: right;'>[3]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (7 marks):</div>
+                    <p>(i) The names of forces X and Y are:</p><ul><li><p>Force X = Weight; <em>[1 mark]</em></p></li><li><p>Force Y = Upthrust; <em>[1 mark]</em></p></li></ul><p>(ii) Calculate the magnitude of the resistive force <em>F</em>:</p><p>List the known quantities:</p><ul><li><p>Radius, <em>r</em> = 1.5 mm = 1.5 × 10<sup>−3</sup> m</p></li><li><p>Velocity, <em>v</em> = 3.5 m s<sup>−1</sup></p></li><li><p>Constant, <em>k</em> = 0.0124 (kg m<sup>−1</sup> s<sup>−1</sup>)</p></li></ul><p>Calculate the resistive force <em>F</em>:</p><ul><li><p>Resistive force:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>k</mi><mi>r</mi><mi>v</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>F</em> = 0.0124 × (1.5 × 10<sup>−3</sup>) × 3.5 = 6.51 × 10<sup>−5</sup> N <em>[1 mark]</em></p></li></ul><p>Convert to µN (10<sup>−6</sup> N): </p><ul><li><p><em>F</em> = 6.51 × 10<sup>−5</sup> N  →  65.1 × 10<sup>−6</sup> N</p></li><li><p><em>F</em> = 65.1 µN <em>[1 mark]</em></p></li></ul><p>(iii) Determine the magnitude and direction of the resultant force on the raindrop:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-raindrop-sphere-vector-forces-cie-ial-sq-ma.png' alt='1-1-raindrop-sphere-vector-forces-cie-ial-sq-ma' /></div><ul><li><p>(From Fig 1.1)  Resultant force = X − Y − <em>F</em>  <strong>OR </strong> X − (Y + <em>F</em>) <em>[1 mark]</em></p></li><li><p>Resultant force = 137 − 0.18 − 65.1 = 71.72 µN</p></li><li><p>Magnitude of the resultant = 72 µN (2 s.f.) <em>[1 mark]</em></p></li><li><p>Direction of the resultant = downwards / in the direction of X <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 7 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On a windy day, the resultant force on the raindrop is 105 µN at an angle of <em>θ</em> to the vertical as shown in Fig. 1.2. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-1-3d-m-1-1-raindrop-sphere-vector-angle-cie-ial-sq.png' alt='1-1-3d-m-1-1-raindrop-sphere-vector-angle-cie-ial-sq' /></div><p>Use your answer to <strong>(a)iii</strong> to show that the angle <em>θ</em> between the resultant and the vertical is about 47°.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Show that the angle <em>θ</em> between the resultant and the vertical is about 47°:</p><ul><li><p>Resultant force (down) = 71.72 µN</p></li><li><p>Resultant force (windy day) = 105 µN</p></li></ul><p>Draw a vector triangle and use trigonometry to find the angle <em>θ</em>:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-raindrop-sphere-vector-angle-cie-ial-sq-ma.png' alt='1-1-raindrop-sphere-vector-angle-cie-ial-sq-ma' /></div><ul><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>cos</mi><mi>&#952;</mi><mo>=</mo><mfrac><mi>adj</mi><mi>hyp</mi></mfrac><mo>=</mo><mfrac><mrow><mn>71</mn><mo>.</mo><mn>72</mn></mrow><mn>105</mn></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>=</mo><msup><mi>cos</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mrow><mn>71</mn><mo>.</mo><mn>72</mn></mrow><mn>105</mn></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"fontFamily":"Times New Roman","fontSize":"18","autoformat":true,"toolbar":"<toolbar ref='general'><tab ref='general'><removeItem ref='setColor'/><removeItem ref='bold'/><removeItem ref='italic'/><removeItem ref='autoItalic'/><removeItem ref='setUnicode'/><removeItem ref='mtext' /><removeItem ref='rtl'/><removeItem ref='forceLigature'/><removeItem ref='setFontFamily' /><removeItem ref='setFontSize'/></tab></toolbar>"}</annotation></semantics></math></span> = 46.918 = 46.9° <em>[1 mark]</em></p></li></ul><p><em>[Total: 2 marks]</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 5 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[6 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>(i) State the difference between a scalar quantity and a vector quantity.</p><p style='text-align: right;'>[1]</p><p>(ii) Underline all the vectors in the list below.</p><table class='data-table'><tr><td><p style='text-align: center;'>power </p></td><td><p style='text-align: center;'>   length</p></td><td><p style='text-align: center;'>density</p></td><td><p style='text-align: center;'>velocity</p></td><td><p style='text-align: center;'>momentum</p></td></tr></table><p style='text-align: right;'> [1]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>(i) The difference between scalar and vector quantities is:</p><ul><li><p>Scalars have <u>magnitude only </u></p><p><strong>AND</strong></p></li><li><p>Vectors have both <u>magnitude</u> and <u>direction</u>; <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) The vector quantities are:</p><ul><li><p>Velocity and momentum <u>only</u>; <em>[1 mark]</em></p></li><li><p>Power, length and density are scalars</p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Two gusts of wind exert forces of magnitude 5.5 N and 11.9 N on a wind turbine at a point O. Both forces act away from point O and the angle between them is 30°.</p><p>Fig. 1.1 shows two lines at an angle of 30° to one another. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/04/1-1-4b-m-1-1-vector-force-triangle-cie-ial-sq.png' alt='1-1-4b-m-1-1-vector-force-triangle-cie-ial-sq' /></div><p style='text-align: center;'><strong>Fig. 1.1</strong></p><p>On Fig. 1.1, draw a vector diagram to determine the magnitude of the resultant of the two forces.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>Draw a vector diagram of the two forces and determine the resultant:</p><p>List the known quantities:</p><ul><li><p>Force from wind 1 = 11.9 N</p></li><li><p>Force from wind 2 = 5.5 N</p></li><li><p>Angle between the forces = 30°</p></li></ul><p>Construct a vector triangle:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/E7hcV9up_1-1-vector-graph.png' alt='E7hcV9up_1-1-vector-graph' /></div><ul><li><p>Forces drawn end to tail with arrows and labels (either way around); <em>[1 mark]</em></p></li><li><p>Angle between the forces is used correctly; <em>[1 mark]</em></p></li><li><p>Resultant drawn correctly to form a triangle; <em>[1 mark]</em></p></li></ul><p>Determine the magnitude of the resultant:</p><ul><li><p>Resultant = 17.1 N (at least 2 sig. fig) <em>[1 mark]</em></p><p><em>Acceptable range for resultant = 16.8 to 17.4 N</em></p><p><em>Calculated answer with no sketch = no marks</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>The best approach to a vector drawing question is to follow these steps:</em></p><ul><li><p><em>First, draw one of the vectors, either is fine</em></p></li><li><p><em>Next, draw the next vector with its </em><em><strong>tail</strong></em><em> at the </em><em><strong>head</strong></em><em> of the first vector</em></p></li><li><p><em>Then, draw the resultant from the </em><em><strong>tail of the first</strong></em><em> vector to the </em><em><strong>head of the second</strong></em><em> vector</em></p></li></ul><p><em>In this example, we have used gridlines to help to show the scale, however, in an exam you will be expected to draw on plain paper with just your ruler and protractor, so make sure you get lots of practice with these!</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="question-header ms">
+                <span>Question 6 <span class="difficulty-badge diff-medium">medium</span></span>
+                <span class="question-marks">[13 marks]</span>
+            </div>
+            <div class="question-body">
+                
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (a)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Fig. 1.1 shows a 2 tonne wrecking ball being used on a demolition site. </p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/02/1-1-5a-m-1-1-wrecking-ball-resolving-vectors-cie-ial-sq.png' alt='1-1-5a-m-1-1-wrecking-ball-resolving-vectors-cie-ial-sq' /></div><p>The ball is suspended from a cable which makes an angle <em>θ</em> with the vertical. The ball is pulled into the position shown by a rope that is kept horizontal. The tension in the rope is 6400 N.</p><p>Write expressions for tension <em>T</em> using</p><p>(i) the vertical component of the tension in the cable</p><p style='text-align: right;'>[2]</p><p>(ii) the horizontal component of the tension in the cable. </p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>List the known quantities:</p><ul><li><p>Mass of the wrecking ball, <em>m</em> = 2 tonne = 2000 kg</p></li><li><p>Tension in horizontal rope = 6400 N</p></li></ul><p>(i) Write an expression for the vertical component of the tension in the cable:</p><ul><li><p>Weight:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p><em>W</em> = 2000 × 9.81 = 19 620 N</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-wrecking-ball-resolving-vectors-cie-ial-sq-ma1.png' alt='1-1-wrecking-ball-resolving-vectors-cie-ial-sq-ma1' /></div><ul><li><p>Resolving vertically:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mfenced><mo>&#8593;</mo></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>W</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mfenced><mo>&#8593;</mo></mfenced><mo>&#160;</mo><mo>=</mo><mfrac><mi>W</mi><mrow><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>19</mn><mo>&#160;</mo><mn>620</mn></mrow><mrow><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p><p> </p></li></ul><p>(ii) Write an expression for the horizontal component of the tension in the cable:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2023/03/1-1-wrecking-ball-resolving-vectors-cie-ial-sq-ma2.png' alt='1-1-wrecking-ball-resolving-vectors-cie-ial-sq-ma2' /></div><ul><li><p>Resolving horizontally:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mfenced><mo>&#8594;</mo></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>T</mi><mo>&#160;</mo><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>6400</mn><mo>&#160;</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mfenced><mo>&#8594;</mo></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>6400</mn><mrow><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (b)</span>
+                    <span class="question-marks">[4 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>Determine</p><p>(i) the angle <em>θ</em> the cable makes with the vertical</p><p style='text-align: right;'>[2]</p><p>(ii) the magnitude of the tension <em>T</em> in the cable</p><p style='text-align: right;'>[2]</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (4 marks):</div>
+                    <p>(i) Determine the angle <em>θ</em> the cable makes with the vertical: </p><ul><li><p>Equate the expressions for <em>T</em>:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>19</mn><mo>&#160;</mo><mn>620</mn></mrow><mrow><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>6400</mn><mrow><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Rearrange to get tan <em>θ</em>:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi></mrow><mrow><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi></mrow></mfrac><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>tan</mi><mo>&#160;</mo><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#160;</mo><mfrac><mn>6400</mn><mrow><mn>19</mn><mo>&#160;</mo><mn>620</mn></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Use the inverse tan function:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#952;</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><mfenced><mfrac><mn>6400</mn><mrow><mn>19</mn><mo>&#160;</mo><mn>620</mn></mrow></mfrac></mfenced></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> = 18.1° <em>[1 mark]</em></p></li></ul><p>(ii) Determine the magnitude of the tension <em>T</em> in the cable:</p><ul><li><p>Use either expression for <em>T</em>:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>19</mn><mo>&#160;</mo><mn>620</mn></mrow><mrow><mi>cos</mi><mo>&#160;</mo><mi>&#952;</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <strong>OR  </strong><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mn>6400</mn><mrow><mi>sin</mi><mo>&#160;</mo><mi>&#952;</mi></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p></li><li><p>Substitute in the angle:  <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mn>19</mn><mo>&#160;</mo><mn>620</mn></mrow><mrow><mi>cos</mi><mo>&#160;</mo><mn>18</mn><mo>.</mo><mn>1</mn><mo>&#176;</mo></mrow></mfrac></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Magnitude of tension, <em>T</em> = 20 637 = 21 000 N (2 s.f.) <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 4 marks]</strong></em></p><p><em>In part (ii), you could also get the same result by using Pythagoras:</em></p><p style='text-align: center;'><span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo> </mo><mo>=</mo><mo> </mo><msqrt><mn>19</mn><mo> </mo><msup><mn>620</mn><mn>2</mn></msup><mo> </mo><mo>+</mo><mo> </mo><msup><mn>6400</mn><mn>2</mn></msup></msqrt><mo> </mo><mo>=</mo><mo> </mo><mn>20</mn><mo> </mo><mn>637</mn><mo> </mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (c)</span>
+                    <span class="question-marks">[3 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>On the same demolition site, there is a uniform beam supported by two light cables, <strong>AB</strong> and <strong>AC</strong>, which are attached to a single steel cable from a crane, as shown in Fig. 1.2.</p><p>The beam is stationary and in equilibrium.</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/q5c_vectors--scalars-in-physics_ib-sl-physics-sq.png' alt='q5c_vectors--scalars-in-physics_ib-sl-physics-sq' /></div><p style='text-align: center;'><strong>Fig. 1.2</strong></p><p>Draw the vector triangle for this situation labelling the tension in both cables and the weight of the beam. </p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (3 marks):</div>
+                    <p>The correct vector triangle is as follows:</p><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma5c1_vectors--scalars-in-physics_ib-sl-physics-sq.jpg' alt='ma5c1_vectors--scalars-in-physics_ib-sl-physics-sq' /></div><ul><li><p>All vectors are the correct size by eye; <em>[1 mark]</em></p></li><li><p>The vector triangle is closed and all vectors are joined tip to tail; <em>[1 mark]</em></p></li><li><p>All three vectors are correctly labelled; <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 3 marks]</strong></em></p><p><em>The key to answering this question correctly is realising that the weight of the beam will act vertically straight down. The other two vectors can then be slotted into the correct position.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="part-block">
+                <div class="part-header">
+                    <span>Part (d)</span>
+                    <span class="question-marks">[2 marks]</span>
+                </div>
+                <div class="part-body">
+                    <p>The tension in the cable <strong>AB</strong> is 9 N and the tension in the cable <strong>AC</strong> is 12 N.</p><p>Calculate the resultant force required in the beam <strong>BC </strong>to keep the system in equilibrium.</p>
+                    
+                <div class="solution-box">
+                    <div class="sol-title">Mark Scheme (2 marks):</div>
+                    <p>Calculate the resultant force required to keep the system in equilibrium:</p><p>List the known quantities:</p><ul><li><p>Magnitude <strong>AB</strong> = 9 N</p></li><li><p>Magnitude <strong>AC</strong> = 12 N</p></li></ul><div class='figure-wrap'><img src='https://cdn.savemyexams.com/uploads/2022/04/ma5d_vectors--scalars-in-physics_ib-sl-physics-sq.jpg' alt='ma5d_vectors--scalars-in-physics_ib-sl-physics-sq' /></div><ul><li><p>Force <strong>BC</strong> is the resultant force of <strong>AB</strong> and <strong>AC </strong>and is equal to the magnitude of the weight of the beam</p></li></ul><p>Use Pythagoras to calculate resultant force:</p><ul><li><p>Resultant <strong>BC</strong> = <span class='math-eq'><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>A</mi><msup><mi>C</mi><mn>2</mn></msup></msqrt><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msqrt><msup><mn>9</mn><mn>2</mn></msup><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><msup><mn>12</mn><mn>2</mn></msup></msqrt></mrow><annotation encoding="application/vnd.wiris.mtweb-params+json">{"language":"en","fontFamily":"Times New Roman","fontSize":"18","autoformat":true}</annotation></semantics></math></span> <em>[1 mark]</em></p></li><li><p>Resultant <strong>BC </strong>= 15 N <em>[1 mark]</em></p></li></ul><p><em><strong>[Total: 2 marks]</strong></em></p><p><em>Remember you only need to be able to resolve and calculate resultant components of vectors for right angle triangles. If you have an exam question about this you will most often need to use Pythagoras.</em></p>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
